@@ -1,0 +1,145 @@
+2024-02 https://cep.dev/posts/every-infrastructure-decision-i-endorse-or-regret-after-4-years-running-infrastructure-at-a-startup/
+2024-11 https://vercel.com/blog/how-we-built-the-v0-ios-app
+2026-02 https://cpojer.net/posts/fastest-frontend-tooling
+[ ] +++ Technology Radar https://www.thoughtworks.com/en-us/radar https://www.thoughtworks.com/en-us/radar/tools
+[ ] https://blog.cloudflare.com/voidzero-joins-cloudflare/
+[ ] https://github.com/millionco/react-doctor/issues/105#issuecomment-4265013082
+[ ] https://stackingthebricks.com/bootstrapper-tech-stack/
+API → openapi → openapi trpc / hono ??
+auth -- ? https://www.propelauth.com/
+BE -- https://tanstack.com/
+BE -- nanoservices
+BE -- orm -- https://drizzle.team/
+BE -- PostgreS queues https://news.ycombinator.com/item?id=37636841
+BE -- serverless https://punits.dev/blog/vercel-netlify-cloudflare-serverless-cold-starts/
+BE -- ⚠ graph db = https://codingplainenglish.medium.com/we-replaced-sql-with-a-graph-db-then-nothing-made-sense-92dbc409b7a5
+case studies -- whitehouse 2026/03 https://blog.thereallo.dev/blog/decompiling-the-white-house-app
+CI/CD -- ? https://mergify.com/
+cloud -- Cloudflare
+CloudFlare = https://rwsdk.com/blog/why-cloudflare-unified-platform
+CMS -- listing https://docs.astro.build/en/guides/cms/
+CMS -- vs. MarkDown + frontmatter https://blog.sentry.io/cut-build-times-delete-cms/
+company OS -- Fathom AI note taking https://www.fathom.ai/
+containers -- docker -- MacOS inside a Docker container = https://github.com/dockur/macos
+containers -- images -- choice https://stackoverflow.com/a/42965092/587407
+containers -- images -- optimisation https://ubuntu.com/containers/chiseled
+containers -- images -- Ubuntu minimal https://cloud-images.ubuntu.com/minimal/releases/
+containers -- macOs = https://tart.run/quick-start/
+cron https://croner.56k.guru/
+dashboards https://github.com/chartbrew/chartbrew
+designed for Cloudflare/Vercel -- https://upstash.com/
+documentation site https://www.mintlify.com/
+durable workflows https://www.inngest.com/uses/durable-workflows
+ecosystem -- cli = ex. npx @tanstack/cli@latest create
+ecosystem -- schemas = ex. 	"$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+ecosystem -- sdk ? https://liblab.com/ https://www.speakeasy.com/
+env vars = ? https://env.t3.gg/
+env vars = ? https://infisical.com/blog/stop-using-dotenv-in-nodejs-v20.6.0+
+FE -- charts -- +++ https://www.tradingview.com/lightweight-charts/
+FE -- charts -- https://www.chartjs.org/ visx
+FE -- charts -- micro https://franktisellano.github.io/datatype/
+FE -- chatbot https://www.assistant-ui.com/docs
+FE -- colors -- https://npmx.dev/package/chroma-js
+FE -- CSS -- framework -- ? tailwind https://tailwindcss.com/docs https://github.com/dcastil/tailwind-merge https://tremor.so/
+FE -- CSS-in-js -- ? https://github.com/vercel/styled-jsx
+FE -- dektop app -- packaged web app = nw.js https://jslegenddev.substack.com/p/the-struggle-of-wrapping-a-javascript
+FE -- https://agentation.dev/
+FE -- https://itty.dev/
+FE -- https://slowmo.dev/
+FE -- https://tanstack.com/
+FE -- https://www.react.doctor/
+FE -- i18n -- comparison https://inlang.com/m/gerre34r/library-inlang-paraglideJs/comparison
+FE -- images -- https://unpic.pics/
+FE -- microfrontends
+FE -- mobile -- expo https://expo.dev/
+FE -- polish https://number-flow.barvian.me/
+FE -- presentation https://revealjs.com
+FE -- React
+FE -- React -- avatars https://www.facehash.dev/
+FE -- React -- custom scroll https://rommguy.github.io/react-custom-scroll/exampleDist/index.html
+FE -- React -- router https://reactrouter.com/home ?
+FE -- React -- sticky header https://adesignl.github.io/Peek/
+FE -- React -- tooltips https://react-tooltip.com/docs/getting-started
+FE -- server components https://tanstack.com/blog/react-server-components
+FE -- syntax highlighter https://prismjs.com/
+FE -- TUI https://github.com/vadimdemedes/pastel
+FE -- viz https://visx.airbnb.tech/gallery
+FE -- web apps -- ? expo https://expo.dev/
+FE -- ⚠ React Native
+FE -- ⚠ Tailwind https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
+FE -- ⚠ Tailwind https://www.mux.com/blog/tailwind-is-the-worst-form-of-css-except-for-all-the-others
+feature flags
+FFlags https://openfeature.dev/docs/tutorials/getting-started/node/
+fonts -- from homebrew = https://formulae.brew.sh/cask-font/
+generic heuristic = "At TanStack, we have always strived to build tools that cover the 90% use case with ease, but still give you the flexibility to break out of the box for advanced use cases. Why? Because we know that when things get serious, you know what's best for your application and deserve the freedom to take control." https://tanstack.com/blog/react-server-components
+GHA https://github.com/step-security
+git -- git crypt https://github.com/AGWA/git-crypt
+git -- https://codeberg.org/
+GitHub -- ⚠ https://sfconservancy.org/GiveUpGitHub/
+GraphQL https://gql-tada.0no.co/
+https://npmx.dev/package/gitpick = Clone exactly what you need aka straightforward project scaffolding
+IaC -- pulumi https://www.pulumi.com/
+IaC -- terraform / opentofu = more established but strange syntax
+IaC -- terraform https://github.com/cloudflare/terraform-provider-cloudflare/issues/5573
+just https://just.systems/man/en/further-ramblings.html
+linter -- eslint, oxlint
+linter -- https://biomejs.dev/
+localias = securely manage local aliases for development servers https://github.com/peterldowns/localias
+log -- pino https://www.reddit.com/r/node/comments/eyfhlq/bunyan_hasnt_been_updated_in_almost_3_years_is/
+logs https://betterstack.com/
+marketing -- howto https://x.com/MarkKnd/status/2023413937719672979
+meta -- CNCF -- landscape = https://landscape.cncf.io/
+meta -- CNCF = the open source, vendor-neutral hub of cloud native computing, hosting projects like Kubernetes and Prometheus to make cloud native universal and sustainable https://landscape.cncf.io/
+meta -- https://stackshare.io/
+mise = https://mise.jdx.dev/ https://www.thoughtworks.com/en-us/radar/tools/summary/mise
+mobile -- capacitor https://capacitorjs.com/  https://capawesome.io/  https://capgo.app/
+monorepo -- aware -- turborepo
+monorepo -- aware -- ✖ bolt
+next.js https://nextjs.org/docs
+npm -- security https://cheatsheetseries.owasp.org/cheatsheets/NPM_Security_Cheat_Sheet.html
+pdf libs https://documenso.com/blog/introducing-libpdf-the-pdf-library-typescript-deserves
+pkg -- ai -- integrated skills https://tanstack.com/intent/latest/docs/registry
+pkg -- BigNum https://dev.to/fvictorio/a-comparison-of-bignumber-libraries-in-javascript-2gc5
+pkg -- creation https://www.totaltypescript.com/how-to-create-an-npm-package
+pkg -- evaluation -- npm https://github.com/antfu/node-modules-inspector
+pkg -- evaluation https://node-modules.dev/graph#install=@solana/web3.js
+pkg -- manager -- corepack / pnpm ? https://blog.hyperknot.com/p/corepacks-packagemanager-field https://www.reddit.com/r/node/comments/1hw1iyh/the_curious_case_of_the_packagemanager_field_in/
+pkg -- manager -- corepack https://github.com/nodejs/corepack?tab=readme-ov-file
+pkg -- manager -- corepack https://www.totaltypescript.com/how-to-use-corepack
+pkg -- manager -- corepack still considered experimental? https://vercel.com/docs/builds/configure-a-build#corepack
+pkg -- manager -- ✅ pnpm (+ turbo) case study: https://pnpm.io/blog/2025/12/05/newsroom-npm-supply-chain-security
+pkg -- manager -- ✅ yarn v4
+pkg -- manager -- ✖ npm
+pkg -- publishing https://github.com/changesets/changesets
+pkg -- registry = https://www.verdaccio.org/ recommended by pnpm 2026/05
+polish -- textures https://transparenttextures.com/
+search -- postgres https://tech.instacart.com/how-instacart-built-a-modern-search-infrastructure-on-postgres-c528fa601d54
+secrets management -- ? https://infisical.com/
+SVW Speedy Web Compiler https://swc.rs/
+templates -- https://opensaas.sh/
+test runner -- comparison https://vitest.dev/guide/comparisons.html
+tracing https://www.jaegertracing.io/ (used by Cloudflare)
+transactional emails https://react.email/
+ts -- bases https://github.com/tsconfig/bases
+ts -- https://github.com/gvergnaud/ts-pattern
+ts -- https://openapi-ts.dev/
+ts -- run = ts-node vs tsx vs node vs ts-exec vs deno vs bun https://github.com/poppinss/ts-exec?tab=readme-ov-file#-why-ts-exec-exists
+ts -- tRPC https://trpc.io/docs/getting-started
+ts -- ts-pattern https://github.com/gvergnaud/ts-pattern
+ts -- zod, https://valibot.dev/guides/comparison/, typebox, ow https://valibot.dev/blog/why-migrate-to-valibot/
+ts-- scaling issues https://engineering.usemotion.com/moving-off-of-typescript-e7bb1f3ad091
+UI -- components -- https://mantine.dev/
+ui -- markdown -- editor https://overtype.dev/
+UX -- copy/paste -- ghost cut = https://ishmael.textualize.io/blog/ghost-cut/
+UX -- sound https://rexa-developer.github.io/tiks/
+vite -- npm create vite@latest my-project
+vite -- vitest
+vite ✅ https://vite.dev/
+VMs -- containers -- Apple https://github.com/apple/container/blob/main/docs/tutorial.md
+VMs -- https://mac.getutm.app/
+VMs -- Lume / Apple Virtualization
+webextensions https://extension.js.org/
+wire protocol https://capnproto.org/l ?
+yalc
+✖ Nix https://nixos.org/
+✖ xml

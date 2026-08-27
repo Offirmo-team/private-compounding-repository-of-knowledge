@@ -1,0 +1,4 @@
+AWS -- accounts -- limitations = https://www.atlassian.com/blog/atlassian-engineering/multi-account-strategy
+AWS -- against https://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html
+AWS Shield
+AWS WAF

@@ -1,0 +1,262 @@
+2009 Stuxnet https://en.wikipedia.org/wiki/Stuxnet
+2014-04-07 heart bleed = serious vulnerability in the popular OpenSSL cryptographic software library. This weakness allows stealing the information protected https://heartbleed.com/
+2015-09 XcodeGhost https://en.wikipedia.org/wiki/XcodeGhost
+2025-11-24 Shai Hulud 2 https://helixguard.ai/blog/malicious-sha1hulud-2025-11-24
+2025-11-29 React2Shell https://react2shell.com/
+2026-04 Mythos
+2026-07-09 state of PQ https://blog.cloudflare.com/ml-dsa-will-have-to-do/
+[ ] +++ http://zesty.ca/capmyths/usenix.pdf
+[ ] ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations https://attack.mitre.org/
+[ ] crypto primitives https://keccak.team/glossary.html
+[ ] d3fend® matrix https://d3fend.mitre.org/
+[ ] https://cwe.mitre.org/documents/glossary/index.html
+[ ] https://techcrunch.com/2025/01/31/techcrunch-reference-guide-to-security-terminology/
+[ ] https://www.cisa.gov/audiences/high-risk-communities/projectupskill
+[ ] https://www.cisa.gov/spotlight
+[ ] https://www.reddit.com/r/privacy/ https://www.reddit.com/r/PrivacyGuides/
+account takeover (ATO) https://www.kasada.io/use-cases/account-takeover/
+Alice & Bob https://en.wikipedia.org/wiki/Alice_and_Bob#Cast_of_characters
+attacks -- 0 click && = exploit in software that handles incoming data, like messaging apps, email clients, or web browsers https://medium.com/@davidsehyeonbaek/zero-click-attacks-how-your-device-can-be-infected-with-spyware-without-even-opening-a-message-1e1699850ecc
+attacks -- business email compromise (BEC)
+attacks -- credential stuffing https://owasp.org/www-community/attacks/Credential_stuffing
+attacks -- direct blackmail = example of letter to individual https://www.reddit.com/r/cybersecurity_help/comments/1f7tbec/demand_for_bitcoin_payment_made_with_threats/
+attacks -- DPRK remote IT  = https://www.dfat.gov.au/news/media-release/combating-dprk-remote-it-worker-threats https://cloud.google.com/blog/topics/threat-intelligence/mitigating-dprk-it-worker-threat
+attacks -- griefing
+attacks -- harvest-now-decrypt-later
+attacks -- harvest-now/decrypt-later = advancein cryptography
+attacks -- hash collision https://en.wikipedia.org/wiki/Collision_attack
+attacks -- homographs = using unicode for visual deception https://x.com/sheeki03/status/2018382483465867444
+attacks -- Local Privilege Escalation (LPE) = a type of security vulnerability that allows a user who already has limited access to a system to elevate their permissions to a higher level — typically root (full administrative control) on Linux/Unix systems.
+attacks -- N day = old systems unpatched
+attacks -- O day = even in most up-to-date systems
+attacks -- open redirect = exploiting a site's redirect mechanism to go to another website
+attacks -- phishing -- (many variants)
+attacks -- phishing https://www.azarask.in/blog/post/a-new-type-of-phishing-attack/
+attacks -- process over cryptographic strength "Though Enigma had some cryptographic weaknesses, in practice it was German procedural flaws, operator mistakes, failure to systematically introduce changes in encipherment procedures, and Allied capture of key tables and hardware that, during the war, enabled Allied cryptologists to succeed." https://history.stackexchange.com/a/79374
+attacks -- push notifications = they're stored in the OS and can be diclosed if ordered to (Apple, Android) https://x.com/KitKlarenberg/status/2042338634062299422
+attacks -- shoulder surfing
+attacks -- supply chain -- npm https://blog.vlt.sh/blog/the-massive-hole-in-the-npm-ecosystem
+attacks -- SVG https://arstechnica.com/security/2025/08/adult-sites-use-malicious-svg-files-to-rack-up-likes-on-facebook/
+attacks -- timing https://timing.attacks.cr.yp.to/programming.html
+attacks -- webextensions https://ia.acs.org.au/article/2025/four-million-browsers-infected-with-spyware.html
+attacks -- wrench
+authentication
+authorization
+best practices -- CISA = https://www.cisa.gov/topics/cybersecurity-best-practices
+browser security -- PrivacyTests https://privacytests.org/ (close to Brave)
+browser security https://hackread.com/why-browser-security-matters-more-than-you-think/
+bucketsquatting = an attacker can register a bucket with the same name as a previously deleted bucket and potentially gain access to sensitive data or disrupt services that rely on that bucket https://onecloudplease.com/blog/bucketsquatting-is-finally-dead
+BULLRUN (decryption program) clandestine, highly classified program to crack encryption of online communications and data, which is run by the United States National Security Agency (NSA) https://en.wikipedia.org/wiki/Bullrun_(decryption_program)
+canary -- tokens = https://canarytokens.org/
+Capture The Flag (CTF) competitions = hacking contests consisting of challenges in categories such as web security, cryptography, reverse engineering, exploitation which are open to everyone
+castle-and-moat concept (legacy) = In castle-and-moat security, it is hard to obtain access from outside the network, but everyone inside the network is trusted by default. The problem with this approach is that once an attacker gains access to the network, they have free rein over everything inside. https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
+cat-phishing
+checkout fraud = scalpers https://www.kasada.io/use-cases/checkout-fraud/
+china-nexus
+CIS benchmarks https://www.cisecurity.org/insights/blog/getting-to-know-the-cis-benchmarks
+CISA = https://www.cisa.gov/
+cloud -- Cloudbleed https://en.m.wikipedia.org/wiki/Cloudbleed
+compartmentalize - so your system is not all or nothing
+content scrapping = can be anti-competitive https://www.kasada.io/use-cases/content-scraping/
+Content security policy (CSP) https://web.dev/articles/csp
+credential stealer = harvests browser data, SSH keys, npm tokens, GitHub CLI credentials, AWS secrets, and cryptocurrency wallets
+cryptographic safe = safe custody service for various technology owners who require secure offline storage of their cryptographic materials and other highly sensitive information
+cryptography -- ciphertext indistinguishability = important security property of encryption schemes = an adversary will be unable to distinguish pairs of ciphertexts based on the message they encrypt. indistinguishability under chosen plaintext attack is considered a basic requirement for most provably secure public key cryptosystems  https://cse.iitkgp.ac.in/~debdeep/courses_iitkgp/FCrypto/scribes/scribe8.pdf
+cryptography -- don't write your own
+cryptography -- elliptic curves https://growingswe.com/blog/elliptic-curve-cryptography
+cryptography -- fancy = uses primitives beyond symmetric ciphers, (EC)DH as key agreement, digital signatures, public key encryption such as RSA-OAEP, or KEMs, or uses those primitives in unusual ways, especially if it relies on properties beyond IND-CCA2. https://github.com/fancy-cryptography/fancy-cryptography
+cryptography -- hash -- attacks = collision, HashDos / hash flooding, preimage https://en.wikipedia.org/wiki/Collision_attack https://en.wikipedia.org/wiki/Preimage_attack https://nodejs.org/en/blog/vulnerability/march-2026-hashdos
+cryptography -- hash -- evaluation = ex. avalanche matrix https://cacm.acm.org/practice/questioning-the-criteria-for-evaluating-non-cryptographic-hash-functions/
+cryptography -- hash -- puzzle friendliness https://en.wikipedia.org/wiki/Puzzle_friendliness
+cryptography -- hash = the MOST important primitive
+cryptography -- MAC -- HMAC "hash-based message authentication code" https://en.wikipedia.org/wiki/HMAC
+cryptography -- MAC/MIC = a short piece of information used for authenticating and integrity-checking a message. In other words, it is used to confirm that the message came from the stated sender (its authenticity) and has not been changed (its integrity) https://en.wikipedia.org/wiki/Message_authentication_code
+cryptography -- salting https://en.wikipedia.org/wiki/Salt_(cryptography)
+cryptography -- SHA "Secure Cryptographic Hashing"
+cryptography -- using cryptography doesn't mean you're secure (attackers will look for a weaker link)
+CVE "Common Vulnerabilities and Exposures" = a catalog of publicly disclosed vulnerabilities and exposures. Each CVE includes a unique identifier, summary, associated metadata like the Common Weakness Enumeration (CWE) and Common Platform Enumeration (CPE), and a severity score that can range from None to Critical. The format of a CVE ID consists of a fixed prefix, the year of the disclosure and an arbitrary sequence number ​​like CVE-2017-0144. Memorable names such as "EternalBlue"  (CVE-2017-0144)  are often associated with high-profile exploits to enhance recall. https://blog.cloudflare.com/vulnerability-transparency-strengthening-security-through-responsible/#what-is-a-cve
+CVE -- CNA "CVE Numbering Authority" = an authorized party that  can assign CVE identifiers for vulnerabilities discovered within its products and ecosystems https://blog.cloudflare.com/vulnerability-transparency-strengthening-security-through-responsible/#what-is-a-cna
+Cybersecurity Assessment Tool (CAT) https://cybercat.tools/#assessment
+cybervolunteer https://www.cisa.gov/audiences/high-risk-communities/cybervolunteerresourcecenter
+dark web https://www.group-ib.com/blog/dark-web-fraud/
+DDoS -- interstitial challenge = https://developers.cloudflare.com/cloudflare-challenges/challenge-types/challenge-pages/
+DDoS -- report http://www.ddosreport.com
+DEF CON = one of the oldest continuously running hacker conventions around, and also one of the largest https://defcon.org/
+defense -- in depth = https://en.wikipedia.org/wiki/Defense_in_depth_(computing)
+defense -- Primary / Secondary / Tertiary
+denial of wallet = like DoS but service down due to no more credits https://www.kasada.io/use-cases/genai-abuse-73-percent-have-experienced-genai-security-incidents/
+device posture
+digital security https://securitylab.amnesty.org/digital-resources/
+DPRK "Democratic People's Republic of Korea" = a common attacker (or scapegoat)
+email -- SPF https://www.digitalocean.com/community/tutorials/how-to-use-an-spf-record-to-prevent-spoofing-improve-e-mail-reliability
+encryption of stored data
+end‑to‑end encryption (E2EE)
+eviction / eradication = the process of removing a cyber threat actor or malicious code from a compromised environment https://www.cisa.gov/resources-tools/resources/eviction-strategies-tool
+fake account creation = to harm https://www.kasada.io/use-cases/fake-account-creation/
+FIDO "Fast IDentity Online" keys = physical pieces of hardware containing cryptographic keys. One of several hardware-based MFA tools designed to protect users from inherent weaknesses in some forms of MFA. Often regarded as one of the pinnacles of secure MFA https://expel.com/blog/poisonseed-downgrading-fido-key-authentications-to-fetch-user-accounts/
+FIDO Alliance
+FIDO keys -- attack https://expel.com/blog/poisonseed-downgrading-fido-key-authentications-to-fetch-user-accounts/
+File Path (Directory) Traversal
+filtering = to pass input data through a logic that will hold parts of input that match a certain criteria and let other input pass through as is. The filter logic then makes a specific decision on the data that is in hold - possibly discarding it or transforming it.
+functions -- one-way
+functions -- one-way -- trapdoor & = is easy to compute in one direction, yet difficult to compute in the opposite direction (finding its inverse) without special information, called the "trapdoor" https://en.wikipedia.org/wiki/Trapdoor_function
+glassbox review = vs blackbox, looking at what happens when stimulated
+Google Project Zero https://googleprojectzero.blogspot.com/p/about-project-zero.html
+guidelines -- CGI security https://www.cgisecurity.com/owasp/html/ch04.html
+guidelines -- S/O https://stackoverflow.com/questions/2794016/what-should-every-programmer-know-about-security
+hacking kingpin = no remorse https://www.bbc.com/news/articles/cm2w0pvg4wko
+have I been pwned? https://www.troyhunt.com/
+high-risk communities = activists, journalists, human rights defenders, academics, and other employees associated with civil society organizations that are at heightened risk of being targeted by cyber threat actors because of their identity or work https://www.cisa.gov/audiences/high-risk-communities
+In-the-Wild (ITW) exploit
+input -- never trust any input!
+input -- validate input from all untrusted sources - use whitelists not blacklists
+input -- validation -- Client-Side (nice to have) and / or Server-Side (mandatory)
+input -- validation -- levels -- semantic validation = correctness of their values in the specific business context (e.g. start date is before end date, price is within expected range)
+input -- validation -- levels -- syntactic validation = correct syntax of structured fields (e.g. SSN, date, currency symbol).
+input -- validation -- levels : Syntactical and Semantic
+input -- validation aka data validation = testing of any input (or data) provided by a user or application against expected criteria i.e. to confirm that the data is in the correct format and within the constraints set by the application
+Internet Security Research Group (ISRG) https://www.abetterinternet.org/
+iphone lockdown mode = an optional, extreme protection that’s designed for the very few individuals who, because of who they are or what they do, might be personally targeted by some of the most sophisticated digital threats. Most people are never targeted by attacks of this nature. https://support.apple.com/en-us/105120
+keep it simple - complexity increases the likelihood of security holes
+keep your attack surface to a minimum
+KEV "Known Exploited Vulnerability" = https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+key stretching https://en.wikipedia.org/wiki/Key_stretching
+least privilege = https://www.cloudflare.com/learning/access-management/principle-of-least-privilege/
+list -- allow list -- predefined set
+list -- allow list -- regex = more flexible but less secure
+list -- allow list = operate on a deny by default policy, where anything that hasn’t been expressly allowed will be blocked.
+list -- deny list -- WARNING not sufficient to provide strong validation. They can be often bypassed very easily and should rather be used as part of defence in depth mechanisms  i.e. they should be used in conjunction with other validation mechanisms like allow lists, Regex checks etc.
+list -- deny list = opposite of allowlist. It operates on an allow by default policy where everything is permitted except for the cases that a user has specified.
+living-off-the-Land techniques
+make sure you fail securely
+Malicious File Upload
+managed detection and response (MDR) = ~outsourced security https://expel.com/
+memory safe -- rewrites https://www.memorysafety.org/
+MFA = email, SMS, biometrics, FIDO keys, and authenticator apps. If an attacker gains access to either of these sources, they can gain access to the resource that the authentication source protects. https://expel.com/blog/poisonseed-downgrading-fido-key-authentications-to-fetch-user-accounts/
+Microsegmentation = practice of breaking up security perimeters into small zones to maintain separate access for separate parts of the network https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
+MITRE = "the most important company you’ve never heard of" https://www.fastcompany.com/3017927/30mitre https://www.mitre.org/who-we-are
+network ACL
+network security -- lateral movement = when an attacker moves within a network after gaining access to that network. Lateral movement can be difficult to detect even if the attacker's entry point is discovered, because the attacker will have gone on to compromise other parts of the network. https://www.cloudflare.com/learning/security/glossary/what-is-lateral-movement/
+NIST "United States National Institute of Standards and Technology"  https://blog.cloudflare.com/nist-sp-1300-85/
+NIST -- Computer Security Resource Center https://csrc.nist.gov/
+OAuth 2.0 PKCE flow = ???
+OWASP Top 10:2025 -- A01:2025 - Broken Access Control
+OWASP Top 10:2025 -- A02:2025 - Security Misconfiguration
+OWASP Top 10:2025 -- A03:2025 - Software Supply Chain Failures
+OWASP Top 10:2025 -- A04:2025 - Cryptographic Failures
+OWASP Top 10:2025 -- A05:2025 - Injection
+OWASP Top 10:2025 -- A06:2025 - Insecure Design
+OWASP Top 10:2025 -- A07:2025 - Authentication Failures
+OWASP Top 10:2025 -- A08:2025 - Software or Data Integrity Failures
+OWASP Top 10:2025 -- A09:2025 - Logging & Alerting Failures
+OWASP Top 10:2025 -- A10:2025 - Mishandling of Exceptional Conditions
+OWASP Top 10:2025 https://owasp.org/Top10/2025/0x00_2025-Introduction/
+passkeys -- 2026/05 update = https://www.dashlane.com/blog/passkeys-long-way
+passkeys -- test https://github.com/Dashlane/passkeys-resources
+passkeys = a modern cryptographic alternative to passwords and seed phrases. Passkeys combine something you have (a physical device such as a laptop, mobile phone, or a security key like YubiKey) with something you are or know (a fingerprint, face, or PIN) to generate a cryptographic public/private key pair that secures an account.
+password -- peppering (pwd managers) https://passwordbits.com/salting-passwords/
+pin codes -- most common https://informationisbeautiful.net/visualizations/most-common-pin-codes/
+PKI = Public Key Infrastructure
+plan for security from the start - it's not something you can bolt on at the end
+post-quantum target = now 2029 post-quantum https://blog.cloudflare.com/post-quantum-roadmap/
+principle of least privilege
+privacy advices -- https://tails.net/doc/about/warnings/index.en.html
+privacy pass -- issuance protocol https://www.rfc-editor.org/rfc/rfc9578.html
+privacy pass -- token
+privacy pass = ???
+private relay -- iCloud = "ensures that no single party handling user data has complete information on both who the user is and what they are trying to access." = Internet privacy service from Apple that allows users with iOS 15, iPadOS 15, or macOS Monterey on (...) their devices and an iCloud+ subscription, to connect to the Internet and browse with Safari in a more secure and private way  https://blog.cloudflare.com/icloud-private-relay/
+production-grade cryptography
+pwned = https://haveibeenpwned.com/API/v3 https://github.com/BlinqOSS/is-pwned
+randomness -- "nothing up my sleeve" (hard to prove) https://en.wikipedia.org/wiki/Nothing-up-my-sleeve_number
+RAT "remote-access trojan" = gives the attacker control over infected computers
+risks -- software -- bad defaults -- firebase https://env.fail/posts/firewreck-1
+risks -- software -- buffer overflows and how to protect against them
+risks -- software -- cache poisoning https://en.wikipedia.org/wiki/Cache_poisoning
+risks -- software -- Cross Site Scripting (XSS) -- defense = escaping
+risks -- software -- Cross Site Scripting (XSS) = attack where a user is able to exploit weaknesses in a web application to inject arbitrary scripts that execute on the browsers of victim users.  This code executes from the origin of the vulnerable domain. https://portswigger.net/web-security/cross-site-scripting
+risks -- software -- Cross-Site Request Forgery (CSRF / XSRF) -- defense -- double submit
+risks -- software -- Cross-Site Request Forgery (CSRF / XSRF) -- defense -- manual confirmation
+risks -- software -- Cross-Site Request Forgery (CSRF / XSRF) -- defense -- sync token https://hirunimirando.blogspot.com/2018/10/synchronizer-token-pattern-nodejs.html
+risks -- software -- Cross-Site Request Forgery (CSRF / XSRF) = attack where requests can be made from an attacker-controlled site to an endpoint to perform actions on behalf of the victim without the victim’s knowledge or consent.
+risks -- software -- dependency chain abuse = (~ supply chain at CICD time) exploitation of vulnerabilities within a project's dependency chains in a CI/CD https://www.paloaltonetworks.com.au/cyberpedia/dependency-chain-abuse-cicd-sec3
+risks -- software -- insufficient Transport Layer Security (TLS)
+risks -- software -- Open / Unvalidated Redirects
+risks -- software -- open redirect = a trusted website lets user-controlled input redirect users to external URLs and does not validate it properly. Malicious actors can craft scenarios where a malicious website, through the open redirect, appears as a trusted source https://hackread.com/brave-desktop-browser-vulnerability-malicious-sites-trusted/ https://owasp.org/www-community/attacks/open_redirect
+risks -- software -- OS Command Injection = attacker is able to inject and execute malicious code within a command that is passed to an application's operating system shell
+risks -- software -- OWASP top 10 https://owasp.org/www-project-top-ten/
+risks -- software -- request smuggling https://blog.cloudflare.com/resolving-a-request-smuggling-vulnerability-in-pingora/#what-is-request-smuggling
+risks -- software -- Server Side Request Forgery (SSRF) -- defense -- outbound proxy
+risks -- software -- Server Side Request Forgery (SSRF) = attacker to send a crafted request from a vulnerable server to an arbitrary destination. The attack can be used to bypass security restrictions and access internal systems and network resources that are not intended to be publicly accessible.
+risks -- software -- shadow APIs -- by the organization using it. If exploited, shadow APIs can lead to data exposure, unpatched vulnerabilities, data compliance violations, lateral movement, and other threats
+risks -- software -- supply chain -- dependency confusion = abusing internal packages (not just typo squatting) https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610
+risks -- software -- supply chain -- famous examples https://www.wiz.io/blog/github-action-tj-actions-changed-files-supply-chain-attack-cve-2025-30066
+risks -- software -- supply chain -- famous examples web3.js https://www.theregister.com/2024/12/05/solana_javascript_sdk_compromised/
+risks -- software -- supply chain -- famous examples zx https://www.akamai.com/blog/security-research/critical-linux-backdoor-xz-utils-discovered-what-to-know
+risks -- software -- supply chain -- solutions https://github.blog/changelog/2025-07-31-npm-trusted-publishing-with-oidc-is-generally-available/
+risks -- software -- supply chain -- solutions https://github.com/google/oss-rebuild
+risks -- software -- supply chain https://david-gilbertson.medium.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5 https://david-gilbertson.medium.com/part-2-how-to-stop-me-harvesting-credit-card-numbers-and-passwords-from-your-site-844f739659b9
+sandbox
+sandbox -- escape https://googleprojectzero.blogspot.com/2025/05/breaking-sound-barrier-part-i-fuzzing.html
+sanitization -- data as part of database query
+sanitization -- data as part of the query string in a link's URL
+sanitization -- data as the value for a JavaScript variable
+sanitization -- data as the value for an HTML attribute
+sanitization -- data within an HTML element
+sanitization -- encoding -- escaping = subset of encoding where characters are encoded using an escape character. It involves adding a special character before the character/string to avoid it being misinterpreted, for example, adding a \ character before a " (double quote) character so that it is interpreted as text and not as closing a string.
+sanitization -- encoding aka “Output Encoding” = type of Sanitization technique which involves translating special characters into some different but equivalent form that is no longer dangerous in the target interpreter, for example translating the < character into the &lt; string when writing to an HTML page.
+sanitization -- even more contexts
+sanitization -- filtering -- filtering and transforming (replacing) the unwanted characters in the input data.
+sanitization -- filtering -- filtering out (removing)
+sanitization -- using a well-tested library
+sanitization = elimination of unwanted characters from the input by means of removing, replacing, encoding, or escaping the characters. Sanitization should be implemented before the data is passed across a trust boundary (output sanitization). The appropriate method for escaping content will depend a lot on the context in which the data will be used.
+scams -- dream job
+scams -- fake invoice https://ia.acs.org.au/article/2024/how-ai-is-helping-beat-invoice-scammers.html
+scams -- poison ad
+scams -- problem with your account
+scams -- scam payments = receiver is a scammer https://ia.acs.org.au/article/2025/banks-finally-unite-to-block-scam-payments.html
+secrets -- hiding secrets is hard - and secrets hidden in code won't stay secret for long
+secure by default = security is ON by default, need to be manually disabled if not needed (ex. dev).  Historically, many libraries had to be configured for them to be used securely.  For example, user content in JSP applications presented a cross site scripting risk, and developers needed to use special functions such as c:out or fn:escapeXml in order to prevent such vulnerabilities.  In a secure by default library, the risk is inherently prevented in the library implying that the developer does not need to think about special functionality in order to use it securely.
+secure data at rest
+secure-by-design -- CISA https://www.cisa.gov/securebydesign
+secure-by-design -- CISA’s Secure By Design pledge = https://blog.cloudflare.com/vulnerability-transparency-strengthening-security-through-responsible/
+secure-by-design -- pledge = voluntary pledge focused on enterprise software products and services. software manufacturers are pledging to make a good-faith effort to work towards the goals listed below over the following year. https://www.cisa.gov/securebydesign/pledge
+secure-by-design = https://blog.cloudflare.com/tag/cisa/
+secure-by-design = prioritize the security of customers as a core business requirement, rather than merely treating it as a technical feature https://www.cisa.gov/securebydesign
+security posture = overall cybersecurity strength and readiness of an organization, ability to recognize threats and your readiness to mitigate them or recover from an attack
+security-in-a-box = digital security tools and tactics https://securityinabox.org/en/
+shadow APIs = APIs that have not been managed or secured
+shift left = earlier security
+software-defined perimeter (SDP) https://www.cloudflare.com/learning/access-management/software-defined-perimeter/
+solutions -- https://libsodium.gitbook.io/doc
+source maps leaking secrets https://lachlan.nz/blog/x-marks-the-spot
+spectre = class of attacks https://www.cloudflare.com/en-au/learning/security/threats/meltdown-spectre/
+surveillance self-defense = Tips, Tools and How-tos for Safer Online Communications https://ssd.eff.org/
+Tails = a portable operating system that protects your privacy and helps you avoid censorship https://tails.net/about/
+the exploit economy https://x.com/gothburz/status/2018695140718649469
+threat modeling = e.g. https://github.com/expressjs/security-wg/blob/main/docs/ThreatModel.md
+through obscurity -- ok if not only https://security.stackexchange.com/questions/32064/at-what-point-does-something-count-as-security-through-obscurity
+through obscurity -- still useful https://news.ycombinator.com/item?id=24444497
+through obscurity https://en.wikipedia.org/wiki/Security_through_obscurity
+timed-release encryption scheme = to encrypt messages toward the future that anybody can decrypt when the time has come, even if you or your services are off-line by then https://docs.drand.love/
+TLS "Transport Layer Security"
+Tor "The Onion Routing" network https://en.wikipedia.org/wiki/Tor_(network)
+Tor -- .onion
+Tor -- onion addresses
+Tor -- oniux = Kernel-level Tor isolation for any Linux app  https://blog.torproject.org/introducing-oniux-tor-isolation-using-linux-namespaces/
+Tor -- relay https://blog.torproject.org/happy-families/
+tracking devices = aka. airTag, tag compared security https://blog.adafruit.com/2026/03/05/tiles-security-is-so-bad-its-a-feature-for-stalkers/
+Trusted Execution Environments (TEEs, sometimes referred to as “enclaves”) are processing environments that enable secure execution of code by isolating themselves from the host system’s operating system, kernel, and hypervisor. This isolation is often achieved through hardware separation, making it difficult (but not impossible) for external systems to tamper with or inspect enclave processes. https://a16zcrypto.com/posts/article/trusted-execution-environments-tees-primer/
+VPN = spy and sell private data https://ia.acs.org.au/article/2025/popular-free-vpn-caught-spying-on-users.html
+VPNs -- are lawful technical tools = https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling
+vulnerability -- sourcemaps leak = sourcemaps = https://neciudan.dev/everything-you-need-to-know-about-sourcemaps
+weakness -- CWE "Common Weakness Enumeration" https://cwe.mitre.org/
+weakness =
+XML External Entity (XXE) = attack where an attacker is able to exploit applications processing XML inputs using improperly configured parser
+YubiKey = not necessarily safer if no pin = if stolen and no pin, cooked
+Zero Trust  = an IT security model that requires strict identity verification for every person and device trying to access resources on a private network, regardless of whether they are sitting within or outside of the network perimeter https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
+Zero Trust -- Architecture (ZTA) https://blog.cloudflare.com/nist-sp-1300-85/
+zero trust -- beyond zero = https://spawn-queue.acm.org/doi/10.1145/3819083
+Zero Trust -- Network Access (ZTNA) https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
+zero-day = a vulnerability that attackers know about, and there is no patch available from the vendor
+ZK-SNARKs https://vitalik.eth.limo/general/2022/06/15/using_snarks.html
+zxcvbn = password strength estimation https://zxcvbn-ts.github.io/zxcvbn/

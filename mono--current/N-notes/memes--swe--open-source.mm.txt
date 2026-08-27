@@ -1,0 +1,30 @@
+[ ] https://vitalik.eth.limo/general/2024/09/28/alignment.html
+as a financial weapon = to deny the opportunity for a private code to sell e.g. vs. Oracle
+bags.fun
+commercial vs non-commercial OSS https://leerob.substack.com/p/reflections-on-the-react-community
+contribution ladder https://modelcontextprotocol.io/community/contributor-ladder
+definition -- FSF free software definition
+definition -- OSI open source definition
+fair code = generally free to use and distribute, source code openly available, can be extended by anybody in public and private communities BUT is commercially restricted by its authors https://faircode.io/
+fellowship https://clerk.com/blog/zod-fellowship
+financing -- google -- peer bonus https://opensource.google/documentation/reference/growing/peer-bonus https://opensource.googleblog.com/2023/05/google-open-source-peer-bonus-program-announces-first-group-of-winners-2023.html
+formats -- proprietary = silent and persistent friction that makes any work outside the Microsoft ecosystem seem slightly off, slightly unreliable, slightly unprofessional https://blog.documentfoundation.org/blog/2026/07/17/microsofts-main-tool-for-lock-in/
+hacktoberfest -- abuse https://joel.net/how-one-guy-ruined-hacktoberfest2020-drama https://blog.domenic.me/hacktoberfest/ https://www.reddit.com/r/programming/comments/j2ux69/digitaloceans_hacktoberfest_is_hurting_open_source/
+https://news.itsfoss.com/cockcroachdb-no-open-source/
+https://opensourcepledge.com/
+https://oss.love/
+https://polar.sh/
+licence -- vanity
+license -- proliferation https://en.wikipedia.org/wiki/License_proliferation
+license -- Sustainable Use License (SUL).
+lightweight opensource = response to mixed results of open standards (ex. J2EE standard) when trying to avoid vendor lock-in  https://qconlondon.com/london-2009/qconlondon.com/london-2009/presentation/Java%2benterprise%2bapplication%2bstandards%2band%2bwhy%2bthe%2bindustry%2bmoved%2bto%2blightweight%2bopen%2bsource.html
+monetary value https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4693148
+source available = https://news.itsfoss.com/open-source-source-available/
+sponsors -- corporate tiers https://zod.dev/?id=sponsors
+sponsors https://zod.dev/?id=sponsors
+standards vs standardization https://qconlondon.com/london-2009/qconlondon.com/london-2009/presentation/Standards%2bare%2bGreat%2c%2bbut%2bStandardisation%2bis%2ba%2bReally%2bBad%2bIdea.html
+tea https://tea.xyz/rewards-for-oss-contributions
+threshold of originality = for copyrightable source code https://fsfe.org/news/2025/news-20250515-01.en.html
+tidelift https://tidelift.com/
+UN Open Source Principles https://unite.un.org/fr/news/france-becomes-first-government-endorse-un-open-source-principles-joined-19-organizations
+vs. permissionless = e.g. open LLM models are not open source, but they are portable and permissionless https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/

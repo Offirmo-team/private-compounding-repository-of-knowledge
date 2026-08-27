@@ -1,0 +1,27 @@
+
+WoW menus:
+- character Info
+  - character tab
+    - stats
+    - titles
+    - Equipment manager
+  - Reputation
+- 🛠 Professions 
+  - Primary
+    - First, Second
+    - recommended 1 gathering 1 crafting
+  - cooking, fishing, archaeology
+- 🎯Talents & Spellbook
+  - Specialization
+  - Talents
+  - Spellbook
+    - class
+    - general
+- 🏆Achievements
+- ❗️Quest log
+- Guild Finder
+- Group Finder
+- 🧲Warband Collections
+- 📕Adventure Guide
+- 💰Shop
+- ❓Game Menu (escape)

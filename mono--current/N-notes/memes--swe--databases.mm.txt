@@ -1,0 +1,207 @@
++++ Oops, You Wrote a Database = those who fail to study databases are doomed to write them https://dx.tips/oops-database
+? https://www.dbpro.app/blog/do-you-even-need-a-database
+[ ] Database Design Patterns Every https://www.bytebase.com/blog/database-design-patterns/
+[ ] https://www.bytebase.com/blog/database-design-patterns/
+ACID -- 1 Atomicity = transactions are "all or nothing"
+ACID -- 2 Consistency = integrity constraints: "valid state" before AND after a transaction
+ACID -- 3 Isolation = "independent transactions"
+ACID -- 4 Durability = transaction resistance to system failures "once committed, always committed"
+ACID = a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps https://en.wikipedia.org/wiki/ACID
+append-only
+backup
+BASE -- 1. BA = Basically available = the system does guarantee availability, in terms of the CAP theorem.
+BASE -- 2. S = Soft state = state of the system may change over time, even without input. This is because of the eventual consistency model.
+BASE -- 3. E = Eventual consistency = the system will become consistent over time, given that the system doesn't receive input during that time.
+BASE = properties of certain databases, usually NoSQL databases. A BASE system gives up on consistency in CAP. opposite of ACID
+batch
+benchmarking -- How does the database perform under a "typical" OLTP load? (TPS, QPS, etc)
+benchmarking -- How does the database perform under high read / write pressure? (IOPS, caching)
+benchmarking -- How much does it cost to achieve some bar of performance relative to other options? (price:performance ratio)
+benchmarking -- How quickly can I reach my database? (latency)
+benchmarks https://clickhouse.com/blog/postgresbench
+benchmarks https://planetscale.com/benchmarks
+best practices -- binary Columns = Should generally be avoided for data that has a well established text encoding (eg. hex, base64, base58, etc.). In these case a varchar column should be used. Binary may be a reasonable type for data that has no established text representation (eg. an image) but such data probably doesn’t belong in the DB to start with.
+best practices -- boolean Columns -- 1 = The column/field name should start with is... or was... if grammar demands it. Eg: isEnabled not simply enabled. This improves readability and makes conditional statements more natural.
+best practices -- boolean Columns -- 2 = should be non-nullable and have a default value. An explicit false is always clearer than null and null equality is evaluated differently in JavaScript and SQL. In theory, a nullable boolean column can be used to store a value that can exist in 3 discrete states but in practice, once you get beyond true and false, you’re better off labelling your states with an enum-like varchar column.
+best practices -- Dates, Times and timestamp = All stored should be in UTC. If the value relates to an event in a specific time zone, an additional column should be used to store the time zone. Time zones are reference using their identifier from the tz database (https://www.iana.org/time-zones https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). Offset information should be resolved from the time zone at runtime, not stored.
+best practices -- enum Columns = Should only be used when the list of options is well established and unlikely to change. Eg. months of the year. Values defined by biz domain are unlikely to fulfill this requirement: are better as varchar columns with options restricted in code. However these columns should be well protected by type validation.
+best practices -- naming -- Lowercase – all names should be lowercase
+best practices -- naming -- Pluralisation – table names should be singular (eg. user not users)
+best practices -- naming -- Reserved terms – it’s preferable to avoid reserved terms wherever possible. Usually names will be correctly escaped by the tooling (ie. Drizzle) but it’s still a pain https://dev.mysql.com/doc/refman/8.4/en/keywords.html
+best practices -- naming -- Underscores – use underscores to separate terms in all DB objects names (tables, columns, etc.)
+best practices -- pg -- don't do this =https://wiki.postgresql.org/wiki/Don't_Do_This
+best practices -- primary keys = All tables should have a non-compound, varchar, primary key, called id. It should be populated with something UUID-shaped, usually either UUID v4 or something smarter (see below). Beyond sharding considerations, id values should not attempt to store, represent or encode meaning and should not have a natural order
+best practices -- Segmentation by user_id = Any table that can be related back to a single user should have a non-nullable user_id column, storing the user’s id in a varchar column
+best practices -- timestamp Columns = should be named in the past tense (when practical) and should end with ..._at, (eg. created_at, not created or create_at). This convention should be followed even for columns that schedule events in the future (eg. expired_at not expires_at).
+BM25 (Best Matching 25) = a ranking function that uses lexical matching to find precise word or phrase matches. It's particularly effective for queries that include unique identifiers or technical terms https://www.anthropic.com/news/contextual-retrieval
+bytea
+cardinality
+case studies -- Reddit’s database has two tables = https://news.ycombinator.com/item?id=32407873
+case studies -- TigerBeetle = specialized double DB https://tigerbeetle.com/blog/2025-11-06-the-write-last-read-first-rule/
+case studies -- TimescaleDB https://tech.wmg.com/why-we-shrank-our-timescaledb-chunks-from-30-days-to-7-07cab8afefc5
+case studies -- ugliest https://jimmyhmiller.com/ugliest-beautiful-codebase
+case-sensitivity = The concept of “case” isn’t as simple as it may seem and conversion is a non-trivial https://dba.stackexchange.com/a/217502
+cluster -- migration = dump -> restore
+collation -- provider -- default = beware! still "system" for pg 18 https://www.pgedge.com/blog/what-is-a-collation-and-why-is-my-data-corrupt
+collation -- provider = to isolate from shifting system-provided
+collation = defines how text is compared and sorted (critical !) must follow Unicode standard https://www.pgedge.com/blog/what-is-a-collation-and-why-is-my-data-corrupt
+common table expressions (CTEs) = smaller sub-queries for expressing complex SQL queries
+connection string ex. mysql://user:pass@host:port/dbname
+data corruption -- incidents -- collation update https://www.pgedge.com/blog/what-is-a-collation-and-why-is-my-data-corrupt https://www.postgresql.org/message-id/F8268DB6-B50F-429F-8289-DA8FFA5F22BA@tripadvisor.com
+data retrieval
+data store -- compaction filter = logic/heuristic to garbage/evict some data to avoid size explosion https://github.com/facebook/rocksdb/wiki/Compaction-Filter
+data store -- data type -- BLOB (Binary Large Object) https://stackoverflow.com/questions/211895/storing-documents-as-blobs-in-a-database-any-disadvantages
+data store -- data type -- CLOB (character large object) value can be up to 2,147,483,647 characters long. A CLOB is used to store unicode character-based data, such as large documents in any character set. https://docs.oracle.com/javadb/10.10.1.2/ref/rrefclob.html
+data store -- data type -- JSON, BSON = BSON supposed to be more efficient in space but at the same time also wants to improve traversal by storing extra data, so not always better. depends on the data.
+data store -- database -- Bigtable -- Cassandra = open source Bigtable-like
+data store -- database -- Bigtable -- HBase = open source Bigtable-like for Hadoop https://en.wikipedia.org/wiki/Apache_HBase
+data store -- database -- Bigtable = wide-column and key-value NoSQL database https://en.wikipedia.org/wiki/Bigtable
+data store -- database -- blockchain
+data store -- database -- denormalization = improving the performance of the database by adding redundant data
+data store -- database -- Graph = Neo4J,
+data store -- database -- indexes
+data store -- database -- key -- primary, foreign
+data store -- database -- N+1 query problem = cascade, naive, inefficient query https://guides.rubyonrails.org/active_record_querying.html#n-1-queries-problem https://thoughtbot.com/blog/what-is-counter-cache
+data store -- database -- NoSQL -- Cassandra https://cassandra.apache.org/_/index.html
+data store -- database -- NoSQL -- MongoDB
+data store -- database -- NoSQL/document = unstructured or semi-structured, less of everything SQL
+data store -- database -- partitioning -- multiple DBs or tables
+data store -- database -- partitioning vs sharding vs replication
+data store -- database -- RDBMS (Relational database management system)
+data store -- database -- relational -- Codd's 12 rules = to tick to be a "relational" database https://en.wikipedia.org/wiki/Codd%27s_12_rules
+data store -- database -- relational = structured, schema, relationships, transactions ~SQL
+data store -- database -- replica = copy for redundancy or/and perf -- read replica
+data store -- database -- sharding -- by key, range, directory https://dgraph.io/blog/post/sharding-database/
+data store -- database -- sharding -- uneven distribution
+data store -- database -- sharding https://dgraph.io/blog/post/sharding-database/
+data store -- database -- SQL "Structured Query Language"
+data store -- database -- SQL vs NoSQL - NoSQL = less features, more perf (trade offs, debatable)
+data store -- database = specialised, for data not binary, relationships, querying, indexing, transactions https://dgraph.io/blog/post/data-store-vs-database/
+data store -- file system -- Google File System (GFS)
+data store -- file system -- Hadoop Distributed File System (HDFS)
+data store -- file system -- local / distributed
+data store -- file system = for binary, hierarchical (tree)
+data store -- google sheets https://www.jacobparis.com/content/submit-form-google-sheet https://thenewstack.io/how-to-use-google-sheets-as-a-database-with-react-and-ssr/
+data store -- KV -- negative lookups = requests for keys which don't exist in the database, perf issue if distributed as it's mistaken for a cache miss
+data store -- KV store
+data store -- KV store -- Memcached
+data store -- KV store -- Redis
+data store -- live query: A live query is a query that is re-run when the data it depends on changes.
+data store -- live store: Manages live query subscribers and invalidations on the server. The current implementation is in-memory. Other stores can be implemented in the future (Redis, etc.).
+data store -- monotonic reads = ensures that if a process performs read r1, then r2, then r2 cannot observe a state prior to the writes which were reflected in r1; intuitively, reads cannot go backwards. Monotonic reads does not apply to operations performed by different processes, only reads by the same process. https://jepsen.io/consistency/models/monotonic-reads
+data store -- object store -- AWS S3
+data store -- object store -- Cloudflare R2
+data store -- object store = flat structure of objects + uid + metadata
+data store -- sequential consistency https://jepsen.io/consistency/models/sequential
+data store -- tombstone = a deleted record in a replica of a distributed data store. The tombstone is necessary, as distributed data stores use eventual consistency, where only a subset of nodes where the data is stored must respond before an operation is considered to be successful.  https://en.wikipedia.org/wiki/Tombstone_(data_store)
+data types -- pg -- integer, smallint, bigint
+data types -- pg = https://orm.drizzle.team/docs/column-types/pg
+DBMS (Database Management System)
+DevSecOps https://www.bytebase.com/
+differential dataflow = a data-parallel programming framework designed to efficiently process large volumes of data and to quickly respond to arbitrary changes in input collections https://github.com/TimelyDataflow/differential-dataflow
+git-based https://github.com/dolthub/dolt
+graph
+in-memory
+incidents -- https://shatteredsilicon.net/aws-lambda-kiss-of-death/
+index lookup
+index rebuild -- concurrently = needed for ex if algorithm change (ex. collation)
+indexes
+indexes -- cost -- Only When Needed = you shouldn’t create index a column unless there’s a clear need, such as: The column is regularly used to filter the table; You want to enforce the uniqueness of values
+indexes -- cost = Indexes aren’t free. All indexes take time to maintain (on insert and update) but in the worst case, using an index can slow query performance down as well by adding additional steps without reducing the records that need to be retrieved (see cardinality and selectivity).
+indexes -- Knowing which indexes to add to a table often isn’t trivial. The best and only true way to determine the value of an index is to test it against real world data. Run your queries in a DB IDE (like Table Plus) and use EXPLAIN ANALYZE (docs) to see how they’re being run and which indexes are used.
+indexes -- trade-offs
+information lifecycle = collection (recording, capturing), organization, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure (by transmission, dissemination or otherwise making available), alignment or combination, restriction, erasure or destruction
+initialization -- cluster  = initdb --locale-provider=builtin --locale=C.UTF-8
+initialization -- db = CREATE DATABASE mydb LOCALE_PROVIDER = builtin BUILTIN_LOCALE = 'C.UTF-8' TEMPLATE = template0;
+joins
+joins https://justinjaffray.com/joins-13-ways/
+latency / distance to
+locking -- should be avoided at all cost
+modern data stack = single DB/warehouse instead of spread across products. a set of products that a) redesigned the analytics workflow to take advantage of the cloud and b) all interacted with one another via SQL. (could happen thanks to AI?) https://benn.substack.com/p/the-return-of-the-modern-data-stack https://web.archive.org/web/20241009135733/https://www.moderndatastack.xyz/
+multiversion concurrency control (MVCC) = a popular database mechanism for tracking changes in a non-blocking fashion, where for any key we can keep multiple versions of its values for different points in time https://en.wikipedia.org/wiki/Multiversion_concurrency_control
+MySQL -- gotchas -- varchar columns return data with the case stored but, by default, are case-insensitive for comparisons.
+MySQL -- stop using it https://optimizedbyotto.com/post/reasons-to-stop-using-mysql/
+normal forms -- 4NF "fourth normal form" = https://minimalmodeling.substack.com/p/historically-4nf-explanations-are
+normal forms -- 5NF "fifth normal form"= https://kb.databasedesignbook.com/posts/5nf/
+normalization
+normalization -- de& = ex. for perf or ease of query
+NoSQL
+OLAP (Online Analytical Processing) = for rapid, complex analysis of large volumes of business data from multiple perspectives. It organizes data into multidimensional cubes, allowing users to efficiently analyze trends, calculate aggregations, and perform "slice-and-dice" operations (like filtering and drilling down) for business intelligence https://learn.microsoft.com/en-us/azure/architecture/data-guide/relational-data/online-analytical-processing
+OLAP -- HOLAP (Hybrid OLAP) = A combination that stores large volumes in a relational database while keeping aggregated data in a multidimensional format
+OLAP -- MOLAP (Multidimensional OLAP) = Data is stored in specialized, pre-calculated arrays, offering the fastest performance but higher storage needs
+OLAP -- ROLAP (Relational OLAP) = Data stays in a relational database, providing better scalability for large datasets by running complex SQL queries
+OLAP -- vs. OLTP = Unlike Online Transaction Processing (OLTP) which handles fast, real-time record updates, OLAP is designed for heavy-read, analytical queries
+OLTP (Online Transaction Processing) = handles fast, real-time record updates
+OLTP -- performance = achieving high throughput and sub-millisecond latency for concurrent, small-scale transactions like bank transfers or order processing
+orm
+orm -- drizzle
+orm -- drizzle -- gotchas -- insert behaviour = references all known cols
+pg "PostgreSQL" = https://www.postgresql.org/
+pg -- backup https://thebuild.com/blog/pgxbackup-continuity-support-for-pgbackrest/
+pg -- durable exec = https://lucumr.pocoo.org/2025/11/3/absurd-workflows/
+pg -- exam https://www.postgresql.org/about/news/call-for-technical-members-3233/
+pg -- job queue https://github.com/timgit/pg-boss
+pg -- pgmq
+pg -- survival guide = +++ https://hatchet.run/blog/postgres-survival-guide
+polyglot persistence = using multiple data storage technologies within a single system, in order to meet varying data storage needs https://en.wikipedia.org/wiki/Polyglot_persistence
+prepared statements = you do SQL concatenation once on the ORM side and then database driver is able to reuse precompiled binary SQL instead of parsing query all the time. It has extreme performance benefits on large SQL queries.
+primary / replica
+ranged scan
+RDF -- SPARQL = query language for querying RDF data
+redis/valkey https://glama.ai/blog/2026-01-26-redis-vs-ioredis-vs-valkey-glide
+relational
+retrieval -- bag-of-words https://en.wikipedia.org/wiki/Bag_of_words_model
+retrieval -- Okapi BM25 (BM = best matching) = a ranking function used by search engines to estimate the relevance of documents to a given search query https://en.wikipedia.org/wiki/Okapi_BM25
+row security
+scaling
+search
+selectivity
+sharding
+sharding -- middleware -- gizzard (legacy) = sharding middleware https://github.com/twitter-archive/gizzard
+sharding https://www.mongodb.com/docs/manual/sharding/
+single table design https://aws.amazon.com/blogs/compute/creating-a-single-table-design-with-amazon-dynamodb/
+solutions -- financial transactions database -- https://tigerbeetle.com
+solutions -- Google Spreadsheet -- npm https://github.com/theoephraim/node-google-spreadsheet
+solutions -- Google Spreadsheet = https://www.levels.fyi/blog/scaling-to-millions-with-google-sheets.html
+solutions -- GUI tool -- DataGrip
+solutions -- GUI tool -- TablePlus https://tableplus.com/
+solutions -- MySQL = NO, destroyed by Oracle https://dev.mysql.com/
+sql
+sql -- CURRENT_TIMESTAMP()
+sql -- dialect = e.g. Postgres vs Mysql
+sql -- EXPLAIN = show the execution plan of a statement https://www.postgresql.org/docs/current/sql-explain.html
+sql -- LIMIT
+sql -- ORDER BY
+sql -- RETURNING
+sql -- SELECT = can be slow
+sql -- UPDATE = very tricky, usually lock
+sql -- WHERE
+sqlite
+subqueries = WHERE user_id IN (SELECT id FROM users)
+system of -- record = The champion. If the account exists here, the account exists on a system level
+system of -- reference = The supporter. If the account exists here but not in the system of record, the account does not exist on a system level.
+tables -- columns
+tables -- columns -- computed & = generated from other
+tables -- rows
+transactions
+transactions -- across different systems -- composition = e.g. Write Last, Read First https://tigerbeetle.com/blog/2025-11-06-the-write-last-read-first-rule/
+transactions -- across different systems = e.g. 3rd party, not always possible, need coordination or special provisions https://tigerbeetle.com/blog/2025-11-06-the-write-last-read-first-rule/
+transactions -- boundary
+transactions -- isolation levels -- READ COMMITTED
+transactions -- isolation levels -- READ UNCOMMITTED
+transactions -- isolation levels -- REPEATABLE READ
+transactions -- isolation levels -- SERIALIZABLE
+transactions -- isolation levels =  https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-isolation-levels.html
+underlying os -- upgrade -- collation = data corruption
+underlying os -- upgrade -- locks = perf reduction https://www.phoronix.com/news/Linux-7.0-AWS-PostgreSQL-Drop
+UUID "Universally Unique Identifier" = label used to uniquely identify a resource among all other resources of that type https://developer.mozilla.org/en-US/docs/Glossary/UUID
+UUIDs -- as primary keys https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html
+UUIDs -- challenges -- perf, security, privacy
+UUIDs -- comparison https://www.linkedin.com/posts/raul-junco_uuidv7-for-everything-is-starting-to-sound-share-7457040861004980224-Icdf
+UUIDs -- db = supported as type, ex. MySQL
+UUIDs -- snowflakes = twitter https://en.wikipedia.org/wiki/Snowflake_ID
+UUIDs -- v4 -- challenges -- perf = UUIDv4's completely random structure significantly impacts performance by forcing random insertions into B-tree indexes, leading to index page splits and reduced cache efficiency. https://aiven.io/blog/exploring-postgresql-18-new-uuidv7-support
+UUIDs -- v4 = completely random
+UUIDs -- v4 https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID
+UUIDs -- v7 -- challenges -- privacy = generally discouraged for security when the primary key is exposed to end users in external-facing applications or APIs. The main issue is that UUIDv7 incorporates a 48-bit Unix timestamp as its most significant part, meaning the identifier itself leaks the record's creation time. This leakage is primarily a privacy concern https://aiven.io/blog/exploring-postgresql-18-new-uuidv7-support
+UUIDs -- v7 = 128-bit structure, incorporates a timestamp as the most significant part, allowing for natural sortability based on the creation time https://aiven.io/blog/exploring-postgresql-18-new-uuidv7-support

@@ -1,0 +1,695 @@
++++ https://courses.joshwcomeau.com/
++++ https://developer.mozilla.org/en-US/curriculum/
++++ https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3 + https://medium.com/@cramforce/designing-even-larger-applications-460ee029012d
++++ macintosh -- folklore = Anecdotes about the development of Apple's original Macintosh, and the people who made it https://folklore.org/
+1979-05-28 Design Considerations for an Anthropophilic Computer https://web.stanford.edu/dept/SUL/sites/mac/primary/docs/bom/anthrophilic.html
+2023-09 React -- server components https://www.joshwcomeau.com/react/server-components/
+2024 https://socket.dev/blog/tc39-advances-10-ecmascript-proposals-key-features-to-watch
+[ ] +++ https://dev.to/anze_kop1tar/acronyms-you-should-know-when-going-to-a-job-interview-369l
+[ ] 37signals suite https://stimulus.hotwired.dev/
+[ ] advanced architecture -- Background Synchronization API
+[ ] advanced architecture -- https://devdocs.io/dom/content_index_api
+[ ] advanced architecture -- navigator.sendBeacon() for backup
+[ ] advanced architecture -- Web Periodic Background Synchronization API https://devdocs.io/dom/web_periodic_background_synchronization_api
+[ ] book "Building Large Scale Web Apps" https://largeapps.dev/
+[ ] CSS https://ishadeed.com/articles/
+[ ] design https://www.youtube.com/@phoebeyutbt/videos
+[ ] https://browser.engineering/index.html
+[ ] https://component.gallery/design-systems/
+[ ] https://csswizardry.com/archive/
+[ ] https://htmlcat.net/
+[ ] https://patrickbrosset.com/articles/
+[ ] perf https://github.com/prettydiff/wisdom/blob/master/performance_frontend.md
+[ ] security https://portswigger.net/web-security/all-topics
+[ ] security https://xsleaks.dev/
+[ ] shearing layers https://en.wikipedia.org/wiki/Shearing_layers
+a11y -- Heydon's 12 principles https://github.com/Heydon/principles-of-web-accessibility
+a11y -- support https://a11ysupport.io/
+a11y -- tracking e.g. https://heydonheydon.gumroad.com/l/notion-accessibility-tracker
+a11y = Accessibility
+AI -- If you had a machine that could instantly recall or create any facet of information, do you need a link?
+AI -- super app = LLM becomes the super app? https://aifoc.us/a-link-is-all-you-need/
+alert fatigue = desensitized
+AMP "Accelerated Mobile Pages"
+animations -- API https://devdocs.io/dom/web_animations_api
+API intl https://intlin.site/
+APIs web
+app -- architecture: LAMP / JAMStack / SSR...
+app -- auth
+app -- BFFE / GraphQL / REST
+app -- collaboration: which model? https://zknill.io/posts/collaboration-no-crdts/
+app -- components https://www.componentdriven.org/
+app -- constraints: mobile first ? offline first ? low latency ? criticity ?
+app -- i18n
+app -- navigation
+app -- performance
+app -- reliability
+app -- router
+app -- scalability: where will it scroll? perf?
+app -- security
+app -- session
+app -- state
+app -- state -- structure
+app -- super app https://aifoc.us/super-apps/
+app's domain = ex. app.domain.com / https://web.telegram.org/
+application posture -- 1 sovereign = monopolizes the user's attention for long periods of time.
+application posture -- 2 transient = comes and goes, presenting a single, high-relief function with a tightly restricted set of accompanying controls. The program is called when needed, it appears and performs its job, then it quickly leaves, letting the user continue her more normal activity, usually a sovereign application.
+application posture -- 3 daemonic = background processes that require no direct user interaction.
+application posture -- 4 parasitic/auxiliary = similar to transient applications in providing a limited, focused set of functionality and occupy a small space, but they are shown persistently and can be used for a long period of time.
+application posture = sovereign, transient, background, auxiliary https://en.wikipedia.org/wiki/Application_posture
+architecture -- AJAX "Asynchronous JavaScript And XML" (outdated) = LEGACY interactive web apps: now fetch + json
+architecture -- flux/react(ive)
+architecture -- islands
+architecture -- JAMStack = "JavaScript, APIs, Markup" as much HTML as possible is pre-built and stored in a content delivery network (CDN). Instead of running a monolithic backend application on the server side to generate dynamic content, dynamic components of the application are based on APIs. Ideally, this results in a much faster user experience and a much simpler developer experience. https://www.cloudflare.com/learning/performance/what-is-jamstack/  https://jamstack.org/what-is-jamstack/
+architecture -- JAMStack = decouples the web experience layer from data and business logic, improving flexibility, scalability, performance, and maintainability
+architecture -- LAMP (outdated) Linux, Apache, MySQL, PHP/Python/Perl
+architecture -- MEAN "MongoDB, Express.js, Angular, Node.js"
+architecture -- micro frontends
+architecture -- microservices, API-first, cloud-native SaaS, headless (MACH) https://machalliance.org/mach-technology
+architecture -- MVC "Model-View-Controller" = DEPRECATED (flux, react) Model = data, View = UI, Controller = business logic.  The controller is responsible for updating the model and the view = missing the "reactive"
+architecture -- MVP "Model-View-Presenter" = MVC
+architecture -- MVVM
+architecture -- SPC "Store-Presenter-Component" = Presenters operate on the stores, Components are unaware of S&P, they're wired together by the factories and react to store changes
+architecture -- SSR, ISR, CSR, PPR = see [rendering]
+ARIA "Accessible Rich Internet Applications" https://www.w3.org/WAI/ARIA/apg/
+awards -- awwwards https://www.awwwards.com/websites/developer/
+Backends For Frontends (BFF) https://samnewman.io/patterns/architectural/bff/
+background patterns https://heropatterns.com/
+blocking -- css -- Stylesheets are render blocking
+blocking -- fetching -> parsing -> rendering https://csswizardry.com/2024/08/blocking-render-why-whould-you-do-that/
+blocking -- inline = still blocking but not as bad
+blocking -- js -- scripts are parse blocking
+blocking -- not = async, defer, and type=module
+blocking render https://csswizardry.com/2024/08/blocking-render-why-whould-you-do-that/
+bookmarklets https://css-tricks.com/a-complete-guide-to-bookmarklets/
+books -- Usability Engineering -- Designers Are Not Users
+books -- Usability Engineering -- Details Matter
+books -- Usability Engineering -- Help Doesn't
+books -- Usability Engineering -- Less Is More
+books -- Usability Engineering -- our Best Guess Is Not Good Enough
+books -- Usability Engineering -- The User Is Always Right
+books -- Usability Engineering -- The User Is Not Always Right
+books -- Usability Engineering -- Usability Engineering Is Process
+books -- Usability Engineering -- Users Are Not Designers
+books -- Usability Engineering -- Vice Presidents Are Not Users
+books -- Usability Engineering = Jakob Nielsen, 1993 https://www.nngroup.com/books/usability-engineering/
+bot detection
+bounce tracking https://brave.com/glossary/bounce-tracking/
+browser compatibility data -- watch https://bcd-watch.igalia.com/
+browserlist = a declaration, not a transform. Its value is being a single source of truth. You declare your support matrix once, and every tool in the chain reads the same info https://github.com/browserslist/browserslist https://browserslist.dev/
+browsers -- Chrome -- is not the standard https://v4.chriskrycho.com/2017/chrome-is-not-the-standard.html
+browsers -- supported browsers https://support.atlassian.com/atlassian-account/docs/supported-browsers-for-atlassian-cloud-products/ https://www.canva.com/en_au/help/technical-requirements/
+browsing contexts = such as several windows, iframes or even workers
+bundling -- dead code elimination
+bundling -- solutions = Parcel, Webpack, Rollup, Vite...
+bundling -- tree shaking
+button vs link -- Button = Use when you want to trigger an immediate action on the current page, for example, opening a modal, or playing a video.
+button vs link -- Link = Use when you want to navigate to a different page, or to a different part of the same page without causing any action to the current page. Used for basic navigation, mailto: links, phone numbers, or changing the URL path in some way.
+button vs link -- Link button = Use when you want to navigate to a different page or a different part of the same page, but maintain visual consistency with other buttons. Works like a link (for navigation), but looks like a button. Use to maintain consistent visual styles and semantic accuracy. Link button shares visual style with Button but shares behaviour & semantics with Link.
+cache https://csswizardry.com/2024/08/cache-grab-how-much-are-you-leaving-on-the-table/
+can I -- webview https://caniwebview.com/
+case study -- 2024/09 Josh Comeau's blog https://www.joshwcomeau.com/blog/how-i-built-my-blog-v2/
+CDN
+CDN -- quality = hot/cold potato routing https://vercel.com/blog/latency-numbers-every-web-developer-should-know
+challenges -- accessibility
+challenges -- browser support
+challenges -- layout shift
+challenges -- load time
+challenges -- mobile
+Chrome -- book https://www.google.com/googlebooks/chrome/big_00.html
+client/server -- multi-tier architecture -- 01 presentation
+client/server -- multi-tier architecture -- 02 application
+client/server -- multi-tier architecture -- 03 business
+client/server -- multi-tier architecture -- 04 data access
+client/server -- multi-tier architecture https://en.wikipedia.org/wiki/Multitier_architecture
+coding -- Claude -- version history https://cchistory.mariozechner.at/
+colors -- colour schemes --
+colors -- colour schemes -- cubehelix = increasing intensity, good for astronomy https://people.phy.cam.ac.uk/dag9/CUBEHELIX/
+components https://www.componentdriven.org/
+composition -- embed
+composition -- shared view
+contrast ratio https://www.siegemedia.com/contrast-ratio
+core web vitals = https://addyosmani.com/blog/core-web-vitals/
+CORS "Cross-Origin Resource Sharing"
+CSS -- @function https://una.im/5-css-functions/
+CSS -- alignment https://css-tip.com/explore/alignment/
+CSS -- atomic = small, single-purpose classes with names based on visual function https://css-tricks.com/lets-define-exactly-atomic-css/
+CSS -- BEM https://getbem.com/introduction/
+CSS -- breakpoints https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+CSS -- cascade https://2019.wattenberger.com/blog/css-cascade
+CSS -- centering = https://css-tip.com/center-block-element/
+CSS -- color -- formats = hex, rgb(), hsl(), lch() https://www.joshwcomeau.com/css/color-formats/
+CSS -- color -- interpolation https://css-tricks.com/what-you-need-to-know-about-css-color-interpolation/
+CSS -- color -- oklch = recommended https://jakub.kr/components/oklch-colors
+CSS -- combinators https://courses.joshwcomeau.com/css-for-js/00-recap/04.03-combinators
+CSS -- containing block
+CSS -- directions = block (vertical) and inline (horizontal)
+CSS -- fixed -- https://meyerweb.com/eric/thoughts/2011/09/12/un-fixing-fixed-elements-with-css-transforms/
+CSS -- geometric properties = affect the layout = width height top left
+CSS -- grid -- blowout https://css-tricks.com/preventing-a-grid-blowout/
+CSS -- grid -- fraction (fr) = the fr unit distributes extra space. fr-based columns are flexible, and so the column won't shrink below its minimum content size, even if that means breaking the proportions
+CSS -- grid -- gap ~~grid-gap~~
+CSS -- grid -- implicit = default, wants to fill the available space
+CSS -- grid -- minmax https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
+CSS -- grid https://www.joshwcomeau.com/css/interactive-guide-to-grid/ https://courses.joshwcomeau.com/css-for-js/07-css-grid/
+CSS -- immutable = classes are never to be modified, thus producing highly dependable results
+CSS -- isolate
+CSS -- layers
+CSS -- layout -- layout, paint and composite
+CSS -- layout -- reflow
+CSS -- layout -- subgrid https://www.joshwcomeau.com/css/subgrid/
+CSS -- layout modes -- flex
+CSS -- layout modes -- flow -- block = fill whole horizontal space (unless `width: fit-content`)
+CSS -- layout modes -- flow -- inline = treated as typography, not sizable!, can line-wrap, whitespace between elements have magic space
+CSS -- layout modes -- flow -- inline-block = bit like block, but no longer wrap!
+CSS -- layout modes -- flow = block + inline
+CSS -- layout modes -- grid https://css-tricks.com/snippets/css/complete-guide-grid/
+CSS -- layout modes -- positioned = static, relative https://courses.joshwcomeau.com/css-for-js/02-rendering-logic-2/01-positioning
+CSS -- margin -- collapse
+CSS -- margin -- negative https://www.quirksmode.org/blog/archives/2020/02/negative_margin.html
+CSS -- Media Queries https://courses.joshwcomeau.com/css-for-js/00-recap/03-media-queries
+CSS -- methodologies -- BEM
+CSS -- modules https://github.com/css-modules/css-modules
+CSS -- nesting https://developer.chrome.com/blog/css-nesting-relaxed-syntax-update/
+CSS -- optimization -- containment https://blogs.igalia.com/mrego/2019/01/11/an-introduction-to-css-containment/ https://developer.mozilla.org/en-US/docs/Web/CSS/contain https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Using_CSS_containment
+CSS -- overflow https://www.bram.us/2024/02/14/scroll-driven-animations-you-want-overflow-clip-not-overflow-hidden/ https://frontendmasters.com/blog/single-directionally-allowed-overflow/
+CSS -- perf -- avoid modifying the layout (geometric properties)
+CSS -- properties -- full list https://nikolai-shabalin.github.io/css-properties/en/
+CSS -- properties -- inheritance (or not)
+CSS -- pseudo-classes :xyz https://courses.joshwcomeau.com/css-for-js/00-recap/04.01-pseudo-classes
+CSS -- pseudo-elements ::xyz  https://courses.joshwcomeau.com/css-for-js/00-recap/04.02-pseudo-elements
+CSS -- rule = selector + property + value + unit https://courses.joshwcomeau.com/css-for-js/00-recap/02-anatomy
+CSS -- selectors -- descendant combinator -- expensive (perf) https://medium.com/@devdevcharlie/things-nobody-ever-taught-me-about-css-5d16be8d5d0e
+CSS -- selectors -- descendant combinator `ul li {`
+CSS -- specificity
+CSS -- stacking context https://github.com/andreadev-it/stacking-contexts-inspector
+CSS -- styled components https://styled-components.com/ https://emotion.sh/docs/introduction
+CSS -- targeting chars https://shkspr.mobi/blog/2025/09/targetting-specific-characters-with-css-rules/
+CSS -- transforms
+CSS -- triggers https://csstriggers.com/ https://css-triggers.com/
+CSS -- width = auto, fit-content, min-content https://courses.joshwcomeau.com/css-for-js/01-rendering-logic-1/10-widths
+CSS -- z-index
+CSS -- zen garden https://www.csszengarden.com/pages/alldesigns/
+CSS -- zoom https://www.oddbird.net/2024/07/09/zoomies/
+CSS https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started
+CSS vs HTML separation of concerns = Tailwind intro blog https://adamwathan.me/css-utility-classes-and-separation-of-concerns/
+CSS-in-JS
+dark patterns -- hall of shame https://hallofshame.design/
+dark patterns https://www.uxtigers.com/post/dark-design
+data fetching -- 1 fetch on render
+data fetching -- 2 Fetch-Then-Render
+data fetching -- 3 Render-as-You-Fetch
+data fetching -- 3 Render-as-You-Fetch -- Relay EntryPoints https://github.com/relay-tools/typescript-relayjs-examples/issues/1
+data fetching -- extra: preload-on-intent
+data fetching https://17.reactjs.org/docs/concurrent-mode-suspense.html#traditional-approaches-vs-suspense
+data fetching https://martinfowler.com/articles/data-fetch-spa.html
+Data Layer Abstraction (DLA)
+design -- design aesthetic
+design -- ease of use vs. clunky, all over the place,
+design -- guides https://owickstrom.github.io/the-monospace-web/
+design -- intuitiveness vs. confusing, cluttered, dense, not practical, lack of visual hierarchy
+design quality -- 1 Intuitiveness vs complicated, overwhelming, cluttered, steep learning curve, significant cognitive load.
+design quality -- 2 Ease of Use: difficult to navigate and locate features, concerns about accessibility, efficiency, consistency, and readability
+design quality -- 3 outdated design aesthetic
+design system
+design system -- CSS is tech debt ;)
+design system -- design tokens
+Design System -- vs. Web Pattern Library (WPL) = Built specifically for web, with the intention of helping makers publish pages with speed, scale, and consistency.
+Design System = foundational base for which all other user interfaces are built upon. DS built with the intention to make it easy for makers (designers and developers) to design, develop, and deliver UI at scale.
+desk metaphor
+desk metaphor -- ornaments https://folklore.org/Desk_Ornaments.html
+desklet / desk accessory = small transient or auxiliary application that can be run concurrently in a desktop environment with any other application on the system https://en.wikipedia.org/wiki/Desk_accessory
+desktop app wrapping -- solution -- https://jslegenddev.substack.com/p/the-struggle-of-wrapping-a-javascript
+devices -- support
+dialogs
+dialogs -- alert
+dialogs -- confirmation
+dialogs -- modals -- avoid https://modalzmodalzmodalz.com/
+dithering https://ditherimage.online/
+div soup
+DNS = distributed database for IP address translation
+Document = The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. It provides functionality globally to the document, like how to obtain the page's URL and create new elements in the document.
+document.currentScript = https://frontendmasters.com/blog/document-currentscript-is-more-useful-than-i-thought/
+DOM -- CSSOM "CSS Object Model" = part of the DOM
+DOM -- fake = JSDOM, HappyDOM https://github.com/capricorn86/happy-dom/wiki/
+DOM -- Nodes -- 01 Elements = like <p> or <div>.
+DOM -- Nodes -- 02 Attributes -- data-* https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*
+DOM -- Nodes -- 02 Attributes -- global https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes
+DOM -- Nodes -- 02 Attributes -- item* = WHATWG HTML Microdata feature https://html.spec.whatwg.org/multipage/microdata.html#microdata
+DOM -- Nodes -- 02 Attributes = attribute of an element https://devdocs.io/dom/attr
+DOM -- Nodes -- 03 Text = text between elements (lot of white space) https://devdocs.io/dom/text
+DOM -- Nodes -- 04 CDATA = <!CDATA[[ … ]]> https://devdocs.io/dom/cdatasection
+DOM -- Nodes -- 05, 06 (not in the list) https://devdocs.io/dom/node/nodetype
+DOM -- Nodes -- 07 Processing Instruction = <?xml-stylesheet … ?>
+DOM -- Nodes -- 08 Comments = <!-- … -->
+DOM -- Nodes -- 09 Document
+DOM -- Nodes -- 10 Document Type = <!DOCTYPE html>
+DOM -- Nodes -- 11 Fragment
+DOM -- Nodes -- types =  ELEMENT, ATTRIBUTE, TEXT, CDATA, PROCESSING_INSTRUCTION, COMMENT, DOCUMENT, DOCUMENT_TYPE https://devdocs.io/dom/node/nodetype
+DOM tree = Nodes = text, elements, attributes, comments... includes elements such as <body> and <table>, among many others.
+domain -- longest = http://theofficialabsolutelongestdomainnameregisteredontheworldwideweb.international/
+e18e Ecosystem Performance = initiative to improve the performance of JS packages: Cleanup, Speedup, Levelup. One Package at a time. https://e18e.dev/
+ECMAScript - European Computer Manufacturers Association Script (ES)
+effects -- https://dev.to/madsstoumann/the-golden-ratio-in-css-53d0
+effects -- https://yuanchuan.dev/multi-stroke-text-effect-in-css
+email -- && verification protocol = https://github.com/WICG/email-verification-protocol
+emojis https://nolanlawson.com/2024/09/17/the-continuing-tragedy-of-emoji-on-the-web/
+engine -- deno
+engine -- node
+engine -- v8
+engine -- winter
+engine -- workerd https://github.com/cloudflare/workerd
+events -- custom & https://medium.com/@pankajpatil822/understanding-custom-events-in-javascript-ad23cc759617 https://www.aaron-powell.com/posts/2020-08-21-custom-events-in-javascript/
+events -- event delegation
+fetch -- DIFFERENT from async state management = fetch is simple, handling remote (server) state is not https://tkdodo.eu/blog/why-you-want-react-query
+fetch -- why it doesn't reject on error = bc fetch promise is promise of a successful REQUEST https://kettanaito.com/blog/why-fetch-promise-doesnt-reject-on-error-responses
+figures -- 10 rules for better figures -- Rule 01: Know Your Audience
+figures -- 10 rules for better figures -- Rule 02: Identify Your Message
+figures -- 10 rules for better figures -- Rule 03: Adapt the Figure to the Support Medium
+figures -- 10 rules for better figures -- Rule 04: Captions Are Not Optional
+figures -- 10 rules for better figures -- Rule 05: Do Not Trust the Defaults
+figures -- 10 rules for better figures -- Rule 06: Use Color Effectively
+figures -- 10 rules for better figures -- Rule 07: Do Not Mislead the Reader
+figures -- 10 rules for better figures -- Rule 08: Avoid “Chartjunk”
+figures -- 10 rules for better figures -- Rule 09: Message Trumps Beauty
+figures -- 10 rules for better figures -- Rule 10: Get the Right Tool
+figures -- 10 rules for better figures https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
+fingerprinting https://amiunique.org/fingerprint https://github.com/fingerprintjs/fingerprintjs
+flash of -- empty state = "you have no friends"
+flash of -- fallback font (FOFT)
+flash of -- Undefined Custom Elements (FOUCE) https://www.abeautifulsite.net/posts/flash-of-undefined-custom-elements/
+flash of -- unstyled content (FOUC) https://dev.to/lyqht/what-the-fouc-is-happening-flash-of-unstyled-content-413j
+font -- loading https://www.jonoalderson.com/performance/youre-loading-fonts-wrong/
+fonts
+fonts -- calibration https://web.dev/articles/css-size-adjust#calibrating_fonts
+fonts -- concepts +++ https://fonts.google.com/knowledge/glossary
+fonts -- concepts -- subsetting https://fonts.google.com/knowledge/glossary/subsetting
+fonts -- Font Friday https://pimpmytype.com/fontfriday/
+FORC "Fear of Removing CSS" = https://x-team.com/blog/forc-fear-of-removing-css
+formats -- jpg = https://guillaumetech.github.io/posts/jpg-scaling-chrome/
+formats -- webp
+frameworks -- "Remember that time when 3 out of 4 websites look like Bootstrap?"
+frontend cross-concerns = hosting, cache configuration, security headers, DDoS protection, progressive rollout...
+frontend routing
+frontend treadmill -- working closer to the web platform with a lot less complex abstractions. We need to relearn what the web is capable of and go back to that.
+frontend treadmill https://polotek.net/posts/the-frontend-treadmill/
+funnel -- CREATE -- 1. Cue = Capturing the user’s attention and reminding them of the action.
+funnel -- CREATE -- 2. Reaction: Ensuring the cue triggers the right emotional or cognitive response.
+funnel -- CREATE -- 3. Evaluation: Helping the user assess whether the action is worth their effort.
+funnel -- CREATE -- 4. Ability: Ensuring the user can perform the action without significant barriers.
+funnel -- CREATE -- 5. Timing: Ensuring the action is prompted at the most opportune moment.
+funnel -- CREATE -- 6. Execution: Supporting the user in completing the action successfully.
+funnel -- CREATE = "action" funnel for UX https://medium.com/@kusumadoni77/stephen-wendels-create-action-funnel-for-ux-design-7ae7d7fe80de
+GraphQL
+GraphQL -- against https://bessey.dev/blog/2024/05/24/why-im-over-graphql/
+GraphQL -- relay
+GraphQL -- relay -- EntryPoints https://hello.atlassian.net/wiki/spaces/UAF/pages/1180782282
+hot module replacement (HMR) https://webpack.js.org/concepts/hot-module-replacement/
+HTML -- concepts
+HTML -- elements
+HTML -- first https://html-first.com/
+HTML -- metadata https://github.com/wikimedia/html-metadata
+HTML -- tags
+html tool = single page tool https://simonwillison.net/2025/Dec/10/html-tools/
+htmx https://htmx.org/
+http "happy eyeballs" https://www.checklyhq.com/blog/how-a-tcpdump-led-us-to-a-bug-in-nodes-ipv6-handli/
+HTTP -- QUERY = safe, idempotent request method that can carry request content https://www.ietf.org/archive/id/draft-ietf-httpbis-safe-method-w-body-05.html
+https://disable-javascript.org/
+humane design https://codeberg.org/delightful-commons/delightful-humane-design
+hydration = rendering a web app from existing (pre-rendered) HTML instead of from scratch. Can fail if the data mismatch (shouldn't!) "Hydration is like watering the “dry” HTML with the “water” of interactivity and event handlers."
+hypercard https://hypercard.org
+hypermedia
+hypertext
+i18n -- MessageFormat https://github.com/unicode-org/message-format-wg/tree/main/spec
+i18n -- messages extraction
+i18n -- plurals
+i18n -- plurals -- interval & = many / a few / none https://www.i18next.com/overview/comparison-to-others#b-or-like-to-say-something-like-interval-plurals
+i18n -- solutions https://phrase.com/blog/posts/react-i18n-best-libraries/
+i18n -- tab order
+iframe
+iframe -- fenced
+iframe -- sandbox
+iframe -- seamless
+interface layout patterns -- holy grail
+interface layout patterns -- masonry https://ishadeed.com/article/css-grid-masonry/
+interface layout patterns https://web.dev/patterns/layout/
+interop https://developer.mozilla.org/en-US/blog/interop2023-mdn-doc-updates/
+Javascript fatigue
+Javascript pressure = pressure to adopt JavaScript only grow as your investment in the JavaScript front end ecosystem grows https://htmx.org/essays/hypermedia-on-whatever-youd-like/#feeling-the-javascript-pressure
+jpeg https://spectrum.ieee.org/jpeg-image-format-history
+js -- AbortController https://betterstack.com/community/guides/scaling-nodejs/understanding-abortcontroller/
+js -- apply / call / bind
+js -- exports https://webpack.js.org/guides/package-exports/
+js -- IIFE "Immediately-Invoked Function Expression"
+js -- incoming features https://github.com/tc39/proposals?tab=readme-ov-file#stage-3
+js -- latest features by year https://github.com/tc39/proposals/blob/main/finished-proposals.md
+js -- learning rsrcs -- Exploring JavaScript (ES2024 Edition) https://exploringjs.com/js/book/index.html
+js -- promises -- withResolvers
+js -- promises https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md
+JS -- string literals -- raw vs cooked https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw#building_an_identity_tag
+js -- style observer https://github.com/LeaVerou/style-observer
+js -- tasks & microtasks https://devdocs.io/dom/html_dom_api/microtask_guide
+JSON "Javascript Object Notation"
+JSX -- transform = the way to do the actual transform https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
+JSX = a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file (initially for React)  https://react.dev/learn/writing-markup-with-jsx
+latency -- high latency environments https://csswizardry.com/2024/09/optimising-for-high-latency-environments/
+lawsofux.com -- Aesthetic-Usability Effect = Users often perceive aesthetically pleasing design as design that’s more usable.
+lawsofux.com -- Choice Overload = The tendency for people to get overwhelmed when they are presented with a large number of options, often used interchangeably with the term paradox of choice.
+lawsofux.com -- Chunking = A process by which individual pieces of an information set are broken down and then grouped together in a meaningful whole.
+lawsofux.com -- Cognitive Bias = systematic error of thinking or rationality in judgment that influence our perception of the world and our decision-making ability.
+lawsofux.com -- Cognitive Load = amount of mental resources needed to understand and interact with an interface.
+lawsofux.com -- Doherty threshold = Productivity soars when a computer and its users interact at a pace (<400ms) that ensures that neither has to wait on the other. https://lawsofux.com/doherty-threshold/
+lawsofux.com -- Fitts’s Law = The time to acquire a target is a function of the distance to and size of the target.
+lawsofux.com -- Flow = mental state in which a person performing some activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity.
+lawsofux.com -- Goal-Gradient Effect = tendency to approach a goal increases with proximity to the goal.
+lawsofux.com -- Hick’s Law = the time it takes to make a decision increases with the number and complexity of choices.
+lawsofux.com -- Jakob’s Law = Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.
+lawsofux.com -- Law of Common Region = elements tend to be perceived into groups if they are sharing an area with a clearly defined boundary.
+lawsofux.com -- Law of Proximity = objects that are near or proximate to each other tend to be grouped together.
+lawsofux.com -- Law of Prägnanz = people will perceive and interpret ambiguous or complex images as the simplest form possible, because it is the interpretation that requires the least cognitive effort of us.
+lawsofux.com -- Law of Similarity = the human eye tends to perceive similar elements as a complete picture, shape, or group, even if those elements are separated.
+lawsofux.com -- Law of Uniform Connectedness = elements that are visually connected are perceived as more related than elements with no connection.
+lawsofux.com -- Mental Model = a compressed model based on what we think we know about a system and how it works.
+lawsofux.com -- Miller’s Law = the average person can only keep 7 (plus or minus 2) items in their working memory.
+lawsofux.com -- Occam’s Razor = among competing hypotheses that predict equally well, the one with the fewest assumptions should be selected.
+lawsofux.com -- Paradox of the Active User = users never read manuals but start using the software immediately.
+lawsofux.com -- Pareto Principle = for many events, roughly 80% of the effects come from 20% of the causes.
+lawsofux.com -- Parkinson’s Law = Any task will inflate until all of the available time is spent.
+lawsofux.com -- Peak-End Rule = people judge an experience largely based on how they felt at its peak and at its end, rather than the total sum or average of every moment of the experience.
+lawsofux.com -- Postel’s Law = be liberal in what you accept, and conservative in what you send. (IT DEPENDS)
+lawsofux.com -- Selective Attention = the process of focusing our attention only to a subset of stimuli in an environment — usually those related to our goals.
+lawsofux.com -- Serial Position Effect = users have a propensity to best remember the first and last items in a series.
+lawsofux.com -- Tesler’s Law = also known as The Law of Conservation of Complexity, states that for any system there is a certain amount of complexity which cannot be reduced.
+lawsofux.com -- Von Restorff Effect = also known as The Isolation Effect, predicts that when multiple similar objects are present, the one that differs from the rest is most likely to be remembered.
+lawsofux.com -- Working Memory = a cognitive system that temporarily holds and manipulates information needed to complete tasks.
+lawsofux.com -- Zeigarnik Effect = People remember uncompleted or interrupted tasks better than completed tasks.
+lawsofux.com = collection of best practices that designers can consider when building user interfaces https://lawsofux.com/
+layout -- & engine = ex. https://www.yogalayout.dev/docs/about-yoga
+layout -- &composer https://github.com/namecheap/ilc
+layout -- &trashing https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing
+layout = determining the size and position of boxes https://www.yogalayout.dev/docs/about-yoga
+lazy loading -- preloading https://www.differentshelf.com/lazy-loading-isnt-just-lazy-its-late-the-web-deserves-faster/
+loading code from a random person's GitHub Pages https://blog.thereallo.dev/blog/decompiling-the-white-house-app
+MDN
+MDN curriculum https://developer.mozilla.org/en-US/curriculum/
+memory leaks -- 2026 = useEffect without a cleanup return, .subscribe() without .unsubscribe(), and addEventListener without removeEventListener. Together these account for 42.2% of all findings https://stackinsight.dev/blog/memory-leak-empirical-study/
+MIME "Multipurpose Internet Mail Extensions"
+monitoring -- labs = made by a lab, ex. camera
+monitoring -- real user & (RUM) = passive monitoring technology that records all user interaction with a website or client interacting with a server or cloud-based application (vs. lab) https://en.wikipedia.org/wiki/Real_user_monitoring
+monitoring -- synthetic = own test bot https://en.wikipedia.org/wiki/Synthetic_monitoring
+native apps with JS https://v2.tauri.app/
+navigation -- client side vs full refresh
+next -- hot patching libs https://github.com/vercel/next.js/blob/canary/packages/next/next-runtime.webpack-config.js#L37-L42
+node -- tenant isolation = node is single thread, hence issues with security, esp. AWS lambda! solutions: workerd?
+noopener https://mathiasbynens.github.io/rel-noopener/
+oklch https://oklch.com/
+Open Web Advocacy https://open-web-advocacy.org/
+optical alignment = to look nice, vs, mathematical alignment. Ex. centering a digit inside a circle
+optimisation -- fonts https://nextjs.org/learn/dashboard-app/optimizing-fonts-images
+optimisation -- images https://nextjs.org/learn/dashboard-app/optimizing-fonts-images
+organic vs inorganic concept = coming from a real user or a bot/AI or app etc.
+Page Assembly Service = responsible for generating HTML for pages
+Page Rank
+perf -- content jump = https://css-tricks.com/content-jumping-avoid/
+perf metrics -- "9 must known" https://twitter.com/alexxubyte/status/1769748487317651962
+perf metrics -- core web vitals -- 01 Largest Contentful Paint (LCP) = loading performance. LCP must occur within 2.5 seconds of when the page first starts loading
+perf metrics -- core web vitals -- 02 Interaction to Next Paint (INP) = interactivity. To provide a good user experience, pages must have a INP of 200 milliseconds or less. https://www.debugbear.com/blog/inp-element-interactions
+perf metrics -- core web vitals -- 03 Cumulative Layout Shift (CLS) = visual stability. To provide a good user experience, must should maintain a CLS of 0.1. or less.
+perf metrics -- core web vitals -- First Input Delay (FID) DEPRECATED https://web.dev/articles/fid
+perf metrics -- core web vitals https://web.dev/articles/vitals  https://web.dev/explore/learn-core-web-vitals
+perf metrics -- DOMContentLoaded (DCL) = time it takes for the full HTML code of a webpage to be loaded. The faster this happens, the faster users can see useful functionality. doesn’t include loading CSS and other assets
+perf metrics -- First Contentful Paint (FCP) = time at which content first begins to be “painted” by the browser. It can be a text, image, or even background color. timestamp of the first render frame with visible content
+perf metrics -- Largest Contentful Paint (LCP) = timestamp of the render frame which introduced the largest visible block-level element
+perf metrics -- Load Time = time taken by the web browser to download and display the webpage. measured in milliseconds
+perf metrics -- Page Size = total file size of all content and assets that appear on the page. Over the last several years, the page size of websites has been growing constantly
+perf metrics -- Render Blocking Resources = Some resources block other parts of the page from being loaded. It’s important to track the number of such resources. The more render-blocking resources a webpage has, the greater the delay for the browser to load the page.
+perf metrics -- Request Count = number of HTTP requests a browser has to make to fully load the page. The lower this count, the faster a website will feel to the user
+perf metrics -- Round Trip Time (RTT) = amount of time a round trip takes. A round trip constitutes a request traveling from the browser to the origin server and the response from the server going to the browser. Reducing RTT is one of the key approaches to improving a website’s performance.
+perf metrics -- Time to above-the-fold load
+perf metrics -- Time to First Byte (TTFB) = from the browser, time taken to receive the first byte of data from the web server. TTFB is crucial because it indicates the general ability of the server to handle traffic
+perf metrics -- Time to Interactive (TTI) = time at which the page becomes consistently responsive to user input. This is a less well-defined milestone, but is sometimes calculated as the point when the CPU and network both become idle
+perf metrics -- Time to Visually Complete (TTVC) = time of the last visible paint event. Nothing on the user’s screen should change without user input https://dropbox.tech/frontend/measuring-ttvc-web-performance-metric-open-source-library
+Person In The Street (PITS) = normal user, need ease of use https://web.stanford.edu/dept/SUL/sites/mac/primary/docs/bom/anthrophilic.html
+PFP "Profile Picture"
+PFP -- NFT https://opensea.io/learn/nft/what-are-profile-picture-nfts
+polyfills = https://github.com/zloirock/core-js/tree/master
+postXYZ = postCSS, postHTML https://postcss.org/ https://posthtml.org/
+progressive enhancement -- "next billion" = They’ll mostly be running Android. They’ll have decent specs (1GB RAM, quad-core processors). They’ll have an evergreen browser and WebView (Android 5+). What they won’t have, however, is a reliable internet connection.
+progressive enhancement -- solution -- https://csswizardry.com/Obs.js/demo/
+progressive enhancement https://nolanlawson.com/2016/10/13/progressive-enhancement-isnt-dead-but-it-smells-funny/
+puppeteer -- firefox https://hacks.mozilla.org/2024/08/puppeteer-support-for-firefox/
+puppeteer -- vs Selenium, Playwright, Cypress https://www.testim.io/blog/puppeteer-selenium-playwright-cypress-how-to-choose/
+puppeteer https://pptr.dev/
+PWA https://whatpwacando.today/ https://web.dev/learn/pwa
+quality -- why so rare? https://linear.app/blog/why-is-quality-so-rare
+React
+React
+React -- 3 ways to store variables = https://www.readwriterachel.com/things-i-learned/2026/04/23/back-to-basics-react-variables.html
+React -- Building Bulletproof React Components = +++ https://shud.in/thoughts/build-bulletproof-react-components
+React -- error boundary = BEWARE it doesn't catch everything! https://github.com/bvaughn/react-error-boundary
+React -- hooks
+React -- render props https://github.com/donavon/render-props/tree/develop
+React -- RSC "React server components" https://www.joshwcomeau.com/react/server-components/
+React -- RSC = architecture https://aurorascharff.no/posts/component-architecture-for-react-server-components/
+React -- server… -- actions https://www.developerway.com/posts/server-actions-for-data-fetching
+React -- server… -- components
+React -- server… -- side rendering
+React -- trigger, render, commit https://react.dev/learn/render-and-commit
+React -- v19 = https://vercel.com/blog/whats-new-in-react-19
+realtime -- patterns -- poke/pull
+realtime -- patterns -- push biz events
+realtime -- patterns -- push state
+realtime -- patterns -- push state diff
+realtime updates https://zknill.io/posts/how-to-adopt-realtime/
+redirections https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Redirections
+rendering strategy -- client-side rendering (CSR) = give customers ingredients to prepare themselves
+rendering strategy -- incremental static re-generation = refire cold plates
+rendering strategy -- partial pre-rendering
+rendering strategy -- server-side rendering (SSR) = cook dishes as orders come in
+rendering strategy -- static rendering = pre-cook everything
+rendering strategy https://vercel.com/blog/how-to-choose-the-best-rendering-strategy-for-your-app
+requestAnimationFrame
+requestAnimationFrame -- double = https://github.com/ryanve/draf
+Resource Description Framework (RDF) = a language for representing information about resources in the World Wide Web https://www.w3.org/TR/rdf-primer/
+routing -- extension (lazy load)
+routing -- generic app = a fundamental aspect of web development that allows users to navigate through different pages or views within an application.
+routing -- hypermedia = resources returning representation + hyperlinks
+routing -- react-resource-router
+routing -- uri -- 1 path (incl path params)
+routing -- uri -- 2 query (incl query params)
+routing -- uri -- 3 fragment
+scraping -- crawling -- stealth -- camoufox https://camoufox.com/
+scraping -- crawling -- stealth https://camoufox.com/stealth/
+scraping https://github.com/omkarcloud/botasaurus
+security -- clickjacking https://portswigger.net/web-security/clickjacking
+security -- cross-site leaks https://xsleaks.dev/
+security -- CSP
+security -- CSP -- scanner = good? https://centralcsp.com/
+security -- domain name registration, DNS, hosting = don't use the same provider so that a compromise don't allow to access everything (from a domain recovery expert) https://www.reddit.com/r/Domains/comments/1gdpqdk/comment/miu1osc/
+security -- Google Tag Manager = a handy way for people you’ve never met to inject JavaScript into your site without the hindrance of a code review
+security -- injections -- Apple "isolated world" WKContentWorld
+security -- injections -- in-app browsers https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser
+security -- supply chain https://david-gilbertson.medium.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5 https://david-gilbertson.medium.com/part-2-how-to-stop-me-harvesting-credit-card-numbers-and-passwords-from-your-site-844f739659b9
+security https://david-gilbertson.medium.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5
+Server Side Rendering = an umbrella term that includes several different rendering strategies. They all have one thing in common: the initial render happens in a server runtime like Node.js, using the ReactDOMServer APIs. It doesn't actually matter when this happens, whether it's on-demand or at compile-time. https://www.joshwcomeau.com/react/server-components/
+settings -- Mac https://aresluna.org/frame-of-preference/ (with cool virtual machines)
+shearing layers -- domain name
+shearing layers -- utils = outdated browser detection, error reporting, theming etc.
+skew -- flags skew
+skew -- occurs when different versions of your application run on client and server, causing application errors and other unexpected behavior https://www.industrialempathy.com/posts/version-skew/
+skew -- version skew -- protection https://vercel.com/docs/skew-protection
+solutions -- http://ashleynolan.co.uk/blog/frontend-tooling-survey-2015-results
+solutions -- jQuery
+solutions -- js -- oxf formatter & linter https://oxc.rs/
+solutions -- mobile apps https://expo.dev/
+SPA -- what is even a SPA? https://jakelazaroff.com/words/whats-a-single-page-app/
+SPA https://www.matuzo.at/blog/2023/single-page-applications-criticism
+SPA vs MPA
+speed -- best practices -- yahoo https://developer.yahoo.com/performance/rules.html
+speed -- cookie-free domain https://sstatic.net/
+speeding up the JS ecosystem https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-12/
+spirit -- browsing https://christianheilmann.com/2024/09/15/lets-bring-back-browsing/
+spirit -- fun websites, silly websites, curious websites, websites that bend, delight, amuse and entertain, websites for people on planet earth, and there will be no shareholder value, but the websites will be built, and they will be enjoyed https://dev.to/whitep4nth3r/the-promise-that-wasnt-kept-3554
+spirit -- the web contract = Everyone who publishes on the Web knows that their content can be copied and used by anyone for any purpose. This has always been a risk of providing content on the Web. https://meiert.com/en/blog/the-web-contract/
+spirit -- the web is a big tent
+spirit -- the web is for everyone
+spirit -- view source affordance https://htmx.org/essays/right-click-view-source/
+spirit https://info.cern.ch/hypertext/WWW/Summary.html
+SRI "Subresource Integrity" https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity
+SSR = good explanation https://single-spa.js.org/docs/ssr-overview/
+SVG = https://www.joshwcomeau.com/svg/friendly-introduction-to-svg/
+Tailwind -- pro/cons https://colton.dev/blog/tailwind-is-the-worst-of-all-worlds/
+Tailwind -- responsiveness -- Be careful with responsive visibility classes: <Button className="hidden sm:block" /> The element layout may not behave as expected, if it's expecting e.g. "flex". Prefer the max-* prefix, in most cases: <Button className="max-sm:hidden" />
+temporal dead zone (TDZ) https://devdocs.io/javascript/statements/let#temporal_dead_zone_tdz
+test -- jsdom https://github.com/jsdom/jsdom
+testing -- component https://storybook.js.org/blog/component-testing/
+testing -- data-testid https://www.educative.io/answers/what-is-the-data-testid-attribute-in-testing
+testing -- frontend testing pyramid -- confidence vs. time / cost / flakiness
+testing -- frontend testing pyramid = unit < VR < Integ < E2E
+testing -- Netflix's SafeTest https://www.infoq.com/news/2024/02/netflix-safetest-front-end-test/
+testing https://www.testingjavascript.com/
+The time to acquire a target is a function of the distance to and size of the target.
+The web will always win = over confidence? https://aifoc.us/a-link-is-all-you-need/
+There’s an app for that
+This is a web page. = https://justinjackson.ca/words.html
+Three Cs: 🤝 Concatenate, 🗜️ Compress, 🗳️ Cache https://csswizardry.com/2023/10/the-three-c-concatenate-compress-cache/
+transclusion = the inclusion of part or all of an electronic document into one or more other documents by reference via hypertext. Transclusion is usually performed when the referencing document is displayed and is normally automatic and transparent to the end user. The result of transclusion is a single integrated document made of parts assembled dynamically from separate sources, possibly stored on different computers in disparate places. https://aifoc.us/a-link-is-all-you-need/ https://en.wikipedia.org/wiki/Transclusion
+TUI "Text User Interface" / "terminal user interfaces" https://ratatui.rs/
+TUI -- showcase -- Claude CLI https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built
+TUI -- solutions https://github.com/Dicklesworthstone/frankentui https://ratatui.rs
+typography -- quotes https://smartquotesforsmartpeople.com/
+typology -- dead simple site https://deadsimplesites.com/
+typology -- landing site
+typology -- naked site
+UI -- best practices -- +++ https://interfaces.dev/
+UI -- bleed
+UI -- block -- color
+UI -- block -- iconography
+UI -- block -- spacing
+UI -- block -- typography
+UI -- challenges -- template trap = "Overreliance on frameworks as universal solutions rather than adaptable starting points undermines critical thinking and threatens our field's intellectual rigor." https://www.nngroup.com/articles/template-trap/
+UI -- chrome = the graphical framework and elements surrounding the content. means different things depending on the context: In the context of a web browser it is the navigation, toolbar etc. In the context of a website it is navigation, ad-space and other fixed aspects of the design https://stackoverflow.com/a/5072092/587407
+UI -- cursor -- Buttons shouldn’t have a hand cursor https://medium.com/simple-human/buttons-shouldnt-have-a-hand-cursor-b11e99ca374b
+UI -- event -- blur, hover, focus, click, auxclick, double click...
+UI -- failures -- double cancel https://www.linkedin.com/posts/alicia-knight-mba-017a851_dear-product-teams-words-matter-im-currently-activity-7340777748782530560-3Rgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABCMjsBlsnsypQrujQIErVuOdIdbCIH5O0
+UI -- floating action button (FAB) = the primary action of a screen in Material UI / Android https://m2.material.io/components/buttons-floating-action-button
+UI -- flow vs. float https://floating-ui.com/
+UI -- fonts -- multiplexed aka. duplexed aka. uniwidth https://fonts.google.com/knowledge/glossary/multiplexed_duplexed_uniwidth https://en.wikipedia.org/wiki/Uniwidth_typeface
+UI -- HUD
+UI -- layout -- algorithms https://www.youtube.com/watch?v=by9lQvpvMIc
+UI -- layout -- bleed = wider https://www.joshwcomeau.com/css/full-bleed/
+UI -- layout -- list -- details = with detailed preview on the side
+UI -- layout -- list -- simple
+UI -- layout -- masonry
+UI -- layout -- table
+UI -- layout -- tree
+UI -- loading skeleton = a simplified version of the UI shown during loading
+UI -- modes https://en.wikipedia.org/wiki/User_interface#Modalities_and_modes
+UI -- overlays -- avoid https://www.nngroup.com/articles/overuse-of-overlays/
+UI -- overlays -- dismissal https://www.nngroup.com/articles/accidental-overlay-dismissal/
+UI -- popover https://developer.mozilla.org/en-US/docs/Web/API/Popover_API
+UI -- primitives -- checkbox
+UI -- primitives -- dropdown = avoid https://www.youtube.com/watch?v=hcYAHix-riY
+UI -- primitives -- modals -- sheets = ~semi-modal https://en.wikipedia.org/wiki/Modal_window#Modal_sheets_in_Mac_OS_X
+UI -- primitives -- modals https://en.wikipedia.org/wiki/Modal_window
+UI -- primitives -- radio
+UI -- primitives -- radio -- context chips https://lea.verou.me/blog/2024/context-chips/#idea-4%3A-context-chips
+UI -- primitives -- toggle
+UI -- primitives -- toggle -- triple, ex. system/dark/light mode
+UI -- primitives = box, stack, table, grid, flex...
+UI -- principles -- Don Norman
+UI -- properties -- Attentive = manage the user attention deciding when to interrupt the user, the kind of warnings, and the level of detail of the messages presented to the user.
+UI -- properties -- Intelligent = improve the efficiency, effectiveness, and naturalness of human–machine interaction by representing, reasoning, and acting on models of the user, domain, task, discourse, and media (e.g., graphics, natural language, gesture).
+UI -- properties -- Multi-screen = take advantage of multiple displays
+UI -- properties -- Natural-language = User types in a question and waits for a response. used for search engines and on webpages.
+UI -- properties -- Permission-driven = show or conceal menu options or functions depending on the user's level of permissions. The system is intended to improve the user experience by removing items that are unavailable to the user. A user who sees functions that are unavailable for use may become frustrated. It also provides an enhancement to security by hiding functional items from unauthorized persons.
+UI -- proximal toolbar = a small toolbar appearing like a tooltip on an item when interacting with it
+UI -- snowflake = +++ "web design in 4 minutes" https://jgthms.com/web-design-in-4-minutes/
+UI -- tooltip -- hysteresis = tooltips need a delay, and then they need to skip it https://blog.master.dev/tooltips-need-a-delay-and-then-they-need-to-skip-it/
+UI -- tooltip -- should not exist https://tkdodo.eu/blog/tooltip-components-should-not-exist
+UI -- transitions
+UI -- views
+UI = https://en.wikipedia.org/wiki/User_interface
+user -- agency = give them some slack/choice/affordance, ex. "interestingly, they still chose to use it as a two-step process for some of the questions, presumably to reduce cognitive load for difficult to answer questions by breaking down the decision into two smaller ones" https://lea.verou.me/blog/2024/context-chips/#what-worked-well%3A-context-chips
+User Agent Interface (UA) https://www.bram.us/2021/07/08/the-large-small-and-dynamic-viewports/#large-viewport
+user effort
+user effort -- as a currency = Respect user effort. Treat it as a scarce resource — just like regular currency — and keep it close to the minimum necessary to declare intent "to create a product users love, design the tradeoff curve of use case complexity to user effort with the same care you design your pricing scheme" https://lea.verou.me/blog/2025/user-effort/
+user effort -- maximize signal-to-noise ratio = keep user effort close to the minimum necessary to declare intent
+user effort -- usability -- “But I just wanted to _________, why is it so hard?”
+user effort -- usability cliffs = When a small increase in use case complexity results in a disproportionately large increase in user effort cost "Incremental user effort cost should be proportional to incremental value gained"
+UX -- "every fucking website" = don't do https://lxe.github.io/everywebsite/
+UX -- Above the fold = is the area of a webpage that fits in a browser window without a user having to scroll down. This is the content that is first seen by the user and often dictates whether they’ll continue reading the webpage.
+UX -- action limiting = better delay effect than permission "I hate it when I get stopped from doing an action and being told to come back in X days"
+UX -- bad practices -- 50Mb webpages https://thatshubham.com/blog/news-audit
+UX -- calendar = non-trivial https://blog.thunderbird.net/2026/08/desktop-calendar-a-design-journey/
+UX -- cancel vs close https://www.nngroup.com/articles/cancel-vs-close/
+UX -- challenges -- information overload
+UX -- collaborative experiences https://zknill.io/posts/collaboration-no-crdts/
+UX -- delightful = "the app cares about my experience" easy to sell to stakeholders
+UX -- evaluation/review -- "User Experience Honeycomb" = useful + usable + findable + desirable + accessible + credible = valuable https://en.wikipedia.org/wiki/User_interface#A_model_of_design_criteria:_User_Experience_Honeycomb
+UX -- good practices -- stick to established patterns https://medium.com/@daniel.stoyanov/not-following-well-established-ux-design-patterns-is-almost-always-a-bad-idea-58ae01b4f48a https://www.nngroup.com/articles/power-law-learning/
+UX -- mobile -- sheet = a modal component that slides in from the bottom edge of the mobile device screen, similar to Tray. However, unlike Tray, Sheet has a fixed height. It's particularly useful for displaying interfaces with long content or those requiring interaction with the virtual keyboard.
+UX -- mobile -- tray = a lightweight, dismissible modal component anchored to the bottom of a mobile device's screen. It slides up from the bottom and overlays existing content. Users can dismiss the tray by swiping down.
+UX -- modality = a design technique that presents UI content in a separate, focused view. This dedicated mode prevents interaction with the parent view and requires a specific action to exit
+UX -- patterns -- Algorithmic Transparency = Algorithms that make their reasoning visible
+UX -- patterns -- Ambient Co-presence = Creating a subtle, peripheral, and synchronous sense of shared space and context on the web
+UX -- patterns -- Assumed Audiences = Naming your invisible audiences to free yourself from unspoken obligations
+UX -- patterns -- Command K Bars = Command line bars you can quickly summon with a keyboard shortcut
+UX -- patterns -- Computational Notebooks = Shareable, browser-based documents that can compile and run code
+UX -- patterns -- Daily Notes Pages = Daily notes as a frictionless default input for personal knowledge management systems
+UX -- patterns -- Epistemic Disclosure = Providing clear metadata on the epistemic validity of content
+UX -- patterns -- Folk Interfaces = People reappropriating existing software to solve their own unique problems
+UX -- patterns -- Historical Trails = Giving people a visible, useful trail of where they've been over the course of an exploratory journey
+UX -- patterns -- Programmable Notes = Agent-based note-taking systems that can prompt and facilitate custom workflows
+UX -- patterns -- Programming Portals = Small, scoped areas within a graphical interface that allow users to read and write simple programmes
+UX -- patterns -- Spatial Web Browsing = Adding spatial affordances to the experience of browsing the web
+UX -- principle of least astonishment (POLA) = general principle in the design of all kinds of interfaces. It is based on the idea that human beings can only pay full attention to one thing at one time, leading to the conclusion that novelty should be minimized.
+UX -- principles and cognitive bias relevant https://growth.design/psychology
+UX -- properties https://en.wikipedia.org/wiki/User_interface#Types
+UX -- surveys -- neutral option = allow or not? https://en.wikipedia.org/wiki/Likert_scale
+UX -- surveys = hard to get right
+UX -- types -- Batch = non-interactive user interfaces, where the user specifies all the details of the batch job in advance to batch processing, and receives the output when all the processing is done. The computer does not prompt for further input after the processing has started.
+UX -- types -- Command line interfaces (CLIs) = provide input by typing a command string with the computer keyboard and respond by outputting text to the computer monitor. Used by programmers and system administrators, in engineering and scientific environments, and by technically advanced personal computer users.
+UX -- types -- Conversational interface agents = attempt to personify the computer interface in the form of an animated person, robot, or other character (such as Microsoft's Clippy the paperclip), and present interactions in a conversational form.
+UX -- types -- Conversational interfaces = enable users to command the computer with plain text English (e.g., via text messages, or chatbots) or voice commands, instead of graphic elements. These interfaces often emulate human-to-human conversations.
+UX -- types -- Direct manipulation interface = allow users to manipulate objects presented to them, using actions that correspond at least loosely to the physical world.
+UX -- types -- Hardware interfaces = physical, spatial interfaces found on products in the real world from toasters, to car dashboards, to airplane cockpits. They are generally a mixture of knobs, buttons, sliders, switches, and touchscreens.
+UX -- types -- Task-focused = address the information overload problem of the desktop metaphor by making tasks, not files, the primary unit of interaction.
+UX -- types -- Text-based user interfaces (TUIs) are user interfaces which interact via text. TUIs include command-line interfaces and text-based WIMP environments.
+UX -- types -- Zooming = information objects are represented at different levels of scale and detail, and where the user can change the scale of the viewed area in order to show more detail.
+UX -- UI response times -- 0.1 second = limit for having the user feel that the system is reacting instantaneously, meaning that no special feedback is necessary except to display the result.
+UX -- UI response times -- 0.4 second = max acceptable response time https://tidyfirst.substack.com/p/the-precious-eyeblink
+UX -- UI response times -- 1.0 second = limit for the user's flow of thought to stay uninterrupted, even though the user will notice the delay. Normally, no special feedback is necessary during delays of more than 0.1 but less than 1.0 second, but the user does lose the feeling of operating directly on the data.
+UX -- UI response times -- 10 seconds = limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect.
+UX -- UI response times -- computers can be too fast! = https://www.nngroup.com/articles/too-fast-ux/
+UX -- UI response times -- percent indicator
+UX -- UI response times = heuristics about impact of (wait, waiting, delay) times https://www.nngroup.com/articles/response-times-3-important-limits/
+UX -- unified experience
+UX -- unified experience -- design system, component reuse
+UX -- you don't need animations https://emilkowal.ski/ui/you-dont-need-animations
+vanilla https://plainvanillaweb.com/index.html
+viewport
+viewport -- small <= dynamic <= large
+viewport -- visual
+viewport -- Visual Viewport API = Window.visualViewport https://developer.mozilla.org/en-US/docs/Web/API/VisualViewport
+virtualization = an advanced technique that uses JS to remove DOM nodes not currently on-screen
+viz -- solutions -- visx https://visx.airbnb.tech/gallery
+voice = https://docs.google.com/presentation/d/e/2PACX-1vS21WzxDs4dlTQDrKf83cYYu-KtvcIU8JEmECcASDusx49R_F9VMU8VFoehbagvSQs7ckn3hqn3nUUF/pub?slide=id.p1
+web -- positive aspects as a platform for users and developers -- SLICE -- Composable - Iframes and JavaScript allow us to quickly compose and embed new sites, apps and services just by dropping in some JS and hooking things together.
+web -- positive aspects as a platform for users and developers -- SLICE -- Ephemeral - There is nothing to install, you go to the page and interact with it, leave the page and when you do it stops taking up resources.
+web -- positive aspects as a platform for users and developers -- SLICE -- Indexable - Because you can link to anything, if public it can be discovered by any person or machine that can index it to make it universally discoverable to everyone.
+web -- positive aspects as a platform for users and developers -- SLICE -- Linkable - You can point to any page or piece of content just by sharing a URL
+web -- positive aspects as a platform for users and developers -- SLICE -- Secure - All domains are sand-boxed from each other and sites are sand-boxed away from the users machine. The user can go to any site and know they are safe.
+web -- positive aspects as a platform for users and developers -- SLICE https://paul.kinlan.me/slice-the-web/
+web app dev vs web site dev = so different now that they probably shouldn’t be called the same thing anymore
+Web Application Firewall (WAF)
+web apps -- isolated && = proposal for direct download https://github.com/WICG/isolated-web-apps/blob/main/README.md
+web apps -- pinned &&
+web capabilities -- Google's fugu team https://www.chromium.org/teams/web-capabilities-fugu/
+web components -- "autonomous" = no extends, no "is", must inherit from HTMLElement
+web components -- "is XXX" not supported on Safari!
+web components -- custom elements
+web components -- publish https://www.webcomponents.org/publish
+web components -- shadow DOM
+web components -- templates
+web components -- templates -- slots https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot
+web components https://developer.mozilla.org/en-US/docs/Web/API/Web_components
+web design https://www.webdesignmuseum.org/
+web features -- baseline https://web-platform-dx.github.io/web-features/
+web features https://github.com/web-platform-dx/web-features
+Web Linking (RFC 5988) https://datatracker.ietf.org/doc/html/rfc5988
+web text editing https://lord.io/text-editing-hates-you-too/
+web workers -- dedicated = utilized by a single script https://devdocs.io/dom/worker
+web workers -- service = proxy https://devdocs.io/dom/service_worker_api
+web workers -- shared = can be utilized by multiple scripts running in different windows, IFrames, etc., as long as they are in the same domain as the worker https://devdocs.io/dom/sharedworker
+WebAssembly https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/
+WebAuthn
+WebDriver BiDi https://developer.chrome.com/blog/firefox-support-in-puppeteer-with-webdriver-bidi
+WebGPU / WebGL = https://devdocs.io/dom/webgpu_api
+WebRTC = https://moq.dev/blog/webrtc-is-the-problem/
+website critique https://americabydesign.fail/ https://americabydesign.gov/
+WebXR / WebVR = VR / AR
+Wep pages UX design -- concepts https://www.nngroup.com/courses/web-page-design/
+What happens when you type google.com into your browser's address box and press enter? https://github.com/alex/what-happens-when
+XSS -- injection sinks https://devdocs.io/dom/trusted_types_api
+“Your” vs “My” in user interfaces = In summary 1) Use “your” when communicating to the user 2) Use “my” when the user is communicating to us https://adamsilver.io/blog/your-vs-my-in-user-interfaces/

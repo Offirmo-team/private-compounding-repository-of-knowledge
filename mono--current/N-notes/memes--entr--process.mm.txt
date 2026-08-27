@@ -1,0 +1,150 @@
+Agile
+antipattern -- promotion-driven development = need shiny new stuff to get promoted https://medium.com/@quarterdome/promotion-driven-development-fbc6f48d43e8
+Architectural Decision Records (ADRs) https://adr.github.io/
+AWS learning -- Failure is normal at scale = The goal is not perfection. It is designing systems that minimise blast radius and recover quickly.
+AWS learning -- Great technical leadership is socio-technical = The hard problems are rarely just about software. They are about incentives, communication, ownership, and culture.
+AWS learning -- Leaders should optimise for systems, not heroics = Sustainable scale comes from mechanisms, clear ownership, and repeatable processes - not from relying on a handful of brilliant individuals to save the day.
+AWS learning -- Operational excellence is engineering excellence = Running software in production is part of the craft, not somebody else’s job.
+AWS learning -- Organisational structure shapes architecture = Conway’s Law is not theory. It is reality. Centralised orgs build tightly coupled systems.
+AWS learning -- Some duplication between teams is actually healthy = The occasional overlap is often worth the trade-off for speed and experimentation.
+AWS learning -- Speed matters. A lot = Much of Amazon’s architecture evolution was fundamentally about enabling faster iteration and faster learning.
+AWS learning -- Team autonomy is the foundation of scale = Amazon’s move away from monoliths wasn’t just technical. It was about reducing coordination overhead so teams could move independently.
+AWS learning -- You build better systems when teams own the operational outcomes, not just the code = Reliability changes when the builders carry the pager.
+AWS learning = https://www.linkedin.com/feed/update/urn:li:activity:7461078591028637696/
+Big Hairy Audacious Goals (BHAG) https://www.jimcollins.com/article_topics/articles/BHAG.html
+big rocks
+brainstorming -- Whole Product Game -- Circle 1: Generic Product – the fundamental “thing” that you are marketing
+brainstorming -- Whole Product Game -- Circle 2: Expected Product – the minimal conditions customers expect from your product
+brainstorming -- Whole Product Game -- Circle 3: Augmented Product – aspects of your product that go beyond customer expectations
+brainstorming -- Whole Product Game -- Circle 4: Potential Product – what could be done to your product to attract and keep customers
+brainstorming -- Whole Product Game https://www.figma.com/community/file/1197107722202544166/gamestorming-whole-product-game-workshop
+brainstorming https://gamestorming.com/
+break glass procedures
+comms -- the loop -- 01 -- Open up your work in progress = Avoid after-the-fact advice by sharing your work-in-progress for feedback early and often
+comms -- the loop -- 02 -- Curate, don’t automate = Information overload does not have to paralyze your project. Get and give just the right amount of data and details so your stakeholders stay in the loop and your work gets noticed.
+comms -- the loop -- 03 -- Common vocabulary over common tooling = Whether we know it or not, every time we communicate we make comprehension and speed trade-offs
+comms -- the loop -- 04 -- Show that you’re paying attention = We spend too much time on status reports for them not to be read
+comms -- the loop https://www.atlassian.com/loop/
+conference driven development
+Conway's law = soft architecture maps teams
+corporate innovation https://marcrandolph.substack.com/p/the-real-reason-innovation-dies-inside
+corporate memory = museum-like / vault / preservation
+culture -- learning fast = vs. avoiding risk (see [[corporate innovation]])
+culture -- startup culture -- disagreement = https://blog.staysaasy.com/p/high-amplitude-disagreeableness
+culture = is what people observe — who gets celebrated, who gets promoted, who gets fired, and why. Everything else is decoration. https://marcrandolph.substack.com/p/the-real-reason-innovation-dies-inside
+cuse studies -- Google's 23 messaging products = https://arstechnica.com/gadgets/2021/08/a-decade-and-a-half-of-instability-the-history-of-google-messaging-apps/
+decision making -- 01 LDR "lightweight decision record" = for 2 way doors, lightweight decisions that have already been made and should be recorded. Should reference the slack threads, pages, comments, and tasks where the decision was made.
+decision making -- 02 RFC "request for comments" = the first - in some cases the only - formal step in agreeing on a proposal. should only ever contain a single option with the intention to receive comments and additional insights. Does not require an explicit approver, although it does require a general consensus. It is expected that the correct stakeholders are included on the page with a reasonable timeframe to provide their inputs.
+decision making -- 03 DACI "driver, approver, contributor, informed" = will contain multiple solutions to be discussed and one chosen. expensive process both as it requires significant time and mental investment. required for higher impact decisions or when a consensus cannot be found from an RFC document https://www.atlassian.com/team-playbook/plays/daci
+developmental leaders = do not ask, “How do we get these tasks done faster?” They ask, “How do we advance the frontier of what is possible for this team?” https://www.practicalengineering.management/p/developmental-leadership-vs-transactional
+Directly Responsible Individual (DRI) individuals who own and drive outcomes for specific parts of the business funnel, making decisions, collaborating across functions, and escalating when necessary. They are accountable for developing and evolving the thesis on how to drive their assigned metrics, and represent the funnel in business rhythms like OKRs and WBRs
+documentation -- CEDAR -- 01 Clear = How easy was it to read? Does the document contain ambiguity?
+documentation -- CEDAR -- 02 Effective = How useful is it? Does the document help readers achieve objectives?
+documentation -- CEDAR -- 03 Discoverable = How can someone find it? Is the document findable when needed?
+documentation -- CEDAR -- 04 Appealing = How interesting is it? Does the document use visual aids?
+documentation -- CEDAR -- 05 Relevant = How applicable is it? Is the document trustworthy (maintained and up-to-date)?
+documentation -- divio system -- 01 Tutorials = learning-oriented, practical steps
+documentation -- divio system -- 02 How-to guides = task-oriented, practical steps
+documentation -- divio system -- 03 Technical references = information-oriented, theoretical knowledge
+documentation -- divio system -- 04 Explanations (or discussions) = understanding-oriented, theoretical knowledge
+documentation -- divio system = https://documentation.divio.com/  https://nick.groenen.me/posts/the-4-types-of-technical-documentation/
+Edwards Deming 14 principles for management https://deming.org/explore/fourteen-points/
+Every piece of business finance I could come up with after 10 years as a CFO https://twitter.com/KurtisHanni/status/1560986912613072899
+exec summary https://lethain.com/present-to-executives/
+fix broken windows https://frontendatscale.com/issues/22/
+full service ownership https://nick.groenen.me/notes/full-service-ownership/#full-service-ownership
+good customer vibes = trust from the customer, in the product and that it will get better. If not = screwed
+governance -- vs policy = a policy that is followed only when someone is watching is not governance
+headline driven development (Amazon) https://www.spakhm.com/headline-development
+hiring -- flexibility
+hiring -- paper ceiling https://www.tearthepaperceiling.org/
+hiring -- Skilled Through Alternative Routes (STAR)
+How Might We? (HMW) = technique used to frame design challenges by formulating questions that focus on the desired outcome, are broad, and are phrased positively to encourage creativity and generate ideas
+Kanban https://en.wikipedia.org/wiki/Kanban_(development)
+KPI "Key Product Indicators"
+KPI -- examples https://kpiexamples.operately.com/
+legibility -- vs. productivity -- tradeoff = ability to rapidly deploy skilled engineers onto whatever the problem-of-the-month is “how fast can you pivot to something AI-related”
+legibility -- vs. productivity = treating engineers as fungible and moving them around destroys their ability to develop long-term expertise in a single codebase
+legibility = the ability to see at a glance who’s working on what and to change it at will https://www.seangoedecke.com/bad-code-at-big-companies/
+management -- "Human Jira Router" = transactional leaders aka. "glorified babysitters" https://www.practicalengineering.management/p/we-are-done-as-managers-according
+management -- added value -- org flattening https://www.businessinsider.com/middle-manager-hiring-white-collar-recession-layoffs-jobs-efficiency-2024-12
+management -- being in the details https://www.theengineeringmanager.com/managing-managers/being-in-the-details/
+management -- Good engineering management is a fad = highly changing over decades https://lethain.com/good-eng-mgmt-is-a-fad/
+management -- help flow = a sense that one’s skills are adequate to cope with the challenges at hand, in a goal-directed, rule-bound action system that provides clear clues as to how well one is performing.
+management = to make trust scale https://x.com/hnshah/status/1917224856426291240
+manager's impact -- Andy Grove's equation = the output of a manager is the output of their team, plus the output of the neighboring teams under their influence
+merge queues https://engineering.shopify.com/blogs/engineering/successfully-merging-work-1000-developers
+moonshots = "sheer audacity of the challenge inspired motivation and passion in a way that a smaller goal never could" https://x.company/moonshot/
+north star
+nudges = PRs nudges for speed https://dl.acm.org/doi/abs/10.1145/3544791
+OKR
+older employees -- pro/cons https://longevity.stanford.edu/why-more-companies-are-recognizing-the-benefits-of-keeping-older-employees/
+planning -- Goals, Ideas, Step-Projects, and Tasks (GIST) https://www.productplan.com/glossary/gist-planning/
+planning -- Hofstadter's Law = It always takes longer than you expect, even when you take into account Hofstadter's Law https://en.wikipedia.org/wiki/Hofstadter's_law
+platform engineering
+pointy-haired boss
+policies -- Environmental Sustainability
+policies -- Intellectual Property Rights
+policies -- Occupational Health & Safety
+policies -- Privacy
+policies -- Quality = achieve customer and other stakeholders satisfaction by delivering solutions which meet their needs and expectations
+policies -- Risk management
+policies -- Security
+prioritization -- P0 = crisis
+prioritization -- P0 P1 P2 P3 P4 requirements = https://fibery.io/blog/product-management/p0-vs-p1/
+prioritization -- P1
+prioritization -- P2
+prioritization -- P3
+prioritization -- P4 = nice to have
+progressive deployment strategy -- 01 Soak time in pre-production = Soak all changes in a pre-production environment before promoting to production to try catch issues before they affect customers
+progressive deployment strategy -- 02 Multi-region rollout = Roll out to an initial set of regions in different geographies sequentially, before the remaining regions in parallel, to limit the potential impact to a smaller number of regions.
+progressive deployment strategy -- 03 Rollout percentages = Progressively roll out to production environment with the following set of percentages: LOW THROUGHPUT [1, 30, 65, 100] HIGH THROUGHPUT [1, 5, 10, 20, 40, 60, 80, 100]
+progressive deployment strategy -- 04 Stage interval = Allow at least 10 minutes interval between each stage during progressive rollout to production environment so that it is long enough for alerts to trigger
+progressive deployment strategy -- 06 old stack retention time = Retain the old stack for at least 60 minutes as a reliable fallback option, so that we can promptly restore service if something goes wrong with the new version shortly after deployment
+progressive deployment strategy for controlled rollouts
+quality = need QC + s/o with authority to shut a project down if it was not meeting spec. "We need that guy!" the manager said, and I came back, "If you had that guy you'd fire him the first time he told you something you didn't want to hear" https://science.slashdot.org/comments.pl?sid=23723043&cid=65462461
+RACI matrix = project role and responsibility assignment chart that maps out every task, milestone, or key decision to: Responsible, Accountable, Consulted or Informed
+recruitment -- work trials https://linear.app/blog/why-and-how-we-do-work-trials-at-linear
+recurring meeting = serves as a powerful forcing function for long-running projects. creates pressure on everyone to make progress https://www.mooreds.com/wordpress/archives/3734
+revenue -- vibe revenue = are you really creating change?
+role and responsibility
+Safe Release Management (SRM) = minimizing the customer impact from change-related incidents
+Safe Release Management -- 01 Improving Rollout Safety = i.e. Progressive rollout, Feature Flag Rollout
+Safe Release Management -- 02 Improving Post Deployment checks = i.e. Anomaly Detection, Post Deployment Verification
+Safe Release Management -- 03 Addressing known issues = i.e. Auto-scaling
+Safe Release Management -- Production Change Control (PCC)
+Scrum = an agile team collaboration framework; PM, dev, Scrum master, sprint, daily scrum, backlog, retro, velocity
+Scrumban https://en.wikipedia.org/wiki/Scrumban
+team -- Lencioni model of team dysfunction https://www.linkedin.com/posts/addyosmani_softwareengineering-productivity-leadership-activity-7000540911050907648-vxzN
+team -- performance -- four key metrics -- Change Failure Rate = The percentage of deployments causing a failure in production
+team -- performance -- four key metrics -- Deployment Frequency = How often an organization successfully releases to production
+team -- performance -- four key metrics -- Lead Time for Changes = The amount of time it takes a commit to get into production
+team -- performance -- four key metrics -- Time to Restore Service = How long it takes an organization to recover from a failure in production
+team -- performance -- four key metrics https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance
+team -- Tuckman model "Forming, Storming, Norming, and Performing"
+toxic = worst than low perf https://hbr.org/2016/11/isolate-toxic-employees-to-reduce-their-negative-effects
+vision -> goal -> milestones -> build -> refine -> launch (+ learn, repeat)
+wartime/peacetime https://newsletter.pragmaticengineer.com/p/wartime-vs-peacetime
+we'll know it when we see it = bad, need clear expectations
+X alarm fire -- 1 Alarm Fire -- decider = Dev Manager / Team Lead
+X alarm fire -- 1 Alarm Fire -- involved = A handful of staff
+X alarm fire -- 1 Alarm Fire -- response = Some delivery work should be stopped such that the team can correct what problems exist. Priorities of the existing iteration should be adjusted to focus on these problems - we need to unblock these immediate concerns for our customers and staff.
+X alarm fire -- 2 Alarm Fire -- decider = Dev Manager
+X alarm fire -- 2 Alarm Fire -- involved = Whole team
+X alarm fire -- 2 Alarm Fire -- response = Most delivery work should stop to focus on correcting the outcome that isn’t being met, and preventing future occurrences.
+X alarm fire -- 3 Alarm Fire -- decider = Senior Dev Manager / Head of department
+X alarm fire -- 3 Alarm Fire -- involved = Whole department
+X alarm fire -- 3 Alarm Fire -- response = Almost all delivery work stops in order to focus on correcting the outcomes, and preventing future regression of these outcomes.
+X alarm fire -- 4 Alarm Fire -- decider = Head of Engineering
+X alarm fire -- 4 Alarm Fire -- involved = Whole Product
+X alarm fire -- 4 Alarm Fire -- response = TBD
+X alarm fire -- 5 Alarm Fire -- decider = CTO
+X alarm fire -- 5 Alarm Fire -- involved = All of Engineering
+X alarm fire -- 5 Alarm Fire -- response = everything stops
+X alarm fire -- alarm conditions -- Inability to obtain a proper balance between reliability and delivery
+X alarm fire -- alarm conditions -- Not meeting SLOs
+X alarm fire -- alarm conditions -- Practices that lead to re-work in production
+X alarm fire -- alarm conditions -- Semi constant stream of incidents = either with a similar root cause or a similar pattern of being unable to get on top of your PIR actions to address an incident before a new one occurs
+X alarm fire -- alarm conditions -- Unable to keep up scale concerns as load on your service grows
+X alarm fire = https://en.wikipedia.org/wiki/Multiple-alarm_fire
+XBRL = reporting standard https://www.xbrl.org/the-standard/what/what-is-xbrl/

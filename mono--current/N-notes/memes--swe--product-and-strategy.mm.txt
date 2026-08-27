@@ -1,0 +1,473 @@
+
++++ https://www.sequoiacap.com/article/the-templeton-compression/
+1997 Amazon shareowners letter https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm
+[ ] +++ growth.design
+[ ] +++ https://www.threads.com/@prodmgmt.world
+[ ] digital product strategy and marketing https://lukew.com/
+[ ] https://basecamp.com/books
+[ ] https://basecamp.com/books ++ Getting Real https://basecamp.com/gettingreal
+[ ] https://skamille.medium.com/
+[ ] https://stratechery.com/
+[ ] https://stratechery.com/category/year-in-review/
+[ ] personal MBA
+[ ] public relations https://vannattapr.com/2020/12/03/dont-yell-at-clouds/
+absolute advantage = a situation in which a company can produce the same product as other companies using fewer resources https://coinmarketcap.com/academy/glossary/absolute-advantage
+adaptability = turn the challenges into opportunities
+adoption -- technology adoption -- usually non-linear = due to so-called complementary network effects
+agency arbitrage = buy an agency, extract into a SaaS https://x.com/toddsaunders/status/2011108996728701399"
+alignment -- challenges -- risk of social layer capture: means "having the right friends"
+alignment -- of incentives = https://vitalik.eth.limo/general/2024/09/28/alignment.html
+alignment -- of tech
+alignment -- of values
+another Uber = unethical, untenable, profit-driven startup who took a gambit evading the law, hoping to grow too big to fail before the law catches up. Except Uber was good at being bad, but X combined malfeasance with incompetence https://www.sandofsky.com/lambda-school/
+antisocial profit-maximizing corporations = https://www.androidpolice.com/why-so-evil-google/
+B2B (Business to Business)
+B2C (Business to Customer)
+B2C -- DTC (direct-to-consumer)
+B2C -- DTC -- companies = often do well at the beginning, then a bunch of copycats come out and it's a race to the bottom funded by VC dollars https://www.youtube.com/watch?v=WcNbIm0fRxk
+B2C -- DTC -- companies = sell products directly to consumers, bypassing traditional retail channels, allowing them to control the entire customer experience and build strong brand relationships
+B2G (Business to Government)
+barriers -- to entry -- doing a good job = ex. of epic store not displacing Steam because no competitive advantage
+barriers -- to entry -- low = low entry barrier to enable global adoption
+barriers -- to entry = moat against competitors
+barriers -- to exit -- -> right of exit
+barriers -- to exit -- costs -- switching -- disruption = if not 100% feature match / bugs
+barriers -- to exit -- costs -- switching -- integration = retire & replace needs re-integrate
+barriers -- to exit -- costs -- switching -- learning = re-training needed
+barriers -- to exit -- costs -- switching https://www.cloudflare.com/the-net/platform-consolidation-costs/
+barriers -- to exit = users can't leave (switch) ex. cost
+Bezos principles -- customer obsession rather than competitor obsession
+Bezos principles -- eagerness to invent and pioneer
+Bezos principles -- patience to think long-term
+Bezos principles -- taking of professional pride in operational excellence
+Bezos principles -- willingness to fail
+Bezos principles = https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm
+billing model -- one-time purchase with lifetime access
+billing model -- pay-as-you-go
+billing model -- portion of future income = dangerous (coding bootcamps) https://www.sandofsky.com/lambda-school/
+billing model -- subscription = everyone hates it
+billing model -- tokenomics = e.g. require staking
+billing model -- transaction fees
+bloated, forgettable software dripping with mediocrity. Blech. = https://basecamp.com/gettingreal/01.1-what-is-getting-real
+books -- zero-to-one = Peter Thiel’s advice on startups, a summary https://paulmillr.com/posts/zero-to-one/
+boring -- culture
+boring -- plans https://skamille.medium.com/make-boring-plans-9438ce5cb053
+boring -- technology https://mcfunley.com/choose-boring-technology
+bottom-up adoption = Individual users adopt it → teams follow → company pays
+build vs. buy = example https://www.svix.com/build-vs-buy/
+build-boost-discard cycle of internet applications = scourge https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_deploy-web-apps-anywhere-activity-7305513792275169281-C2-h
+business -- as a by-product = structure that ultimately has to exist around a group of people to make things and service customers over the long term, but not inherently interesting https://www.linkedin.com/posts/jason-fried_ive-always-thought-of-business-as-a-by-product-activity-7236805665627717632-_s96/
+churn -- involuntary = issues often beyond a customer’s control, such as a company no longer offering that product or service, technical or payment issues, and natural disasters. There can also be an unforeseen reason why a customer can no longer use a service. Examples include a company no longer paying for an individual to use a service or a change in occupation renders that product or service no longer valuable.
+churn -- subscription -- involuntary or delinquent churn = missed payments causing an automated cancellation
+churn -- subscription -- voluntary = subscriber actively cancelling their subscription
+churn -- voluntary = customers’ change in preference. Examples of voluntary churn include customers choosing to no longer use a product in that category, switching to a competitors’ product, reaction to price increases or bad customer experience.
+churn = change that occurs in a business over a period of time as existing customers are lost and new customers are added
+click fraud = very important, we can't trust anything / analytics / etc. https://www.cloudflare.com/learning/bots/what-is-click-fraud/
+commoditization -- commodity businesses generally compete on price alone and are plagued by high inventories and low profit margins. In other non-commodity businesses, you would say “innovate”
+commoditization = undifferentiated mass, one no different than the other. We can pick the cheapest.
+competition -- for narrative
+competition -- for revenue
+competition -- for users
+complex contagion = the phenomenon in social networks in which multiple sources of exposure to an innovation are required before an individual adopts the change of behavior https://en.wikipedia.org/wiki/Complex_contagion
+compliance -- due diligence (CDD = customer due diligence)
+compliance -- due diligence -- delayed = sometimes possible
+compliance -- due diligence -- enhanced = for risky curstomers
+compliance -- due diligence -- enhanced customer due diligence (ECDD) https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/your-amlctf-program/customer-due-diligence/enhanced-customer-due-diligence
+compliance -- due diligence -- initial https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/your-amlctf-program/customer-due-diligence/initial-customer-due-diligence
+compliance -- due diligence -- ongoing (OCDD)
+compliance -- KYC "know your customer" = https://www.austrac.gov.au/business/core-guidance/customer-identification-and-verification
+compliance -- KYC -- KYB "know your business" (vs. individual)
+compliance -- KYC -- risks levels = Low, Medium, High, and Prohibited
+compliance -- money laundering and terrorism financing (ML/TF)
+compliance -- politically exposed persons (PEPs) = individual who holds a prominent public position or role in a government body or international organisation. Immediate family members and/or close associates of these individuals are also considered PEPs.
+compliance -- suspicious matter reports (SMRs)
+computers should adapt to users = not necessarily if the solution is good (ex. typing on a keyboard, Palm Graffiti) https://www.creativitypost.com/technology/the_memory_prediction_framework_of_intelligence_and_the_subject_of_creativi
+conseil corporate
+consistency vs. comprehensiveness = consistency may be more important than comprehensiveness, e.g. Google Product Search vs. Amazon
+consolidation = common across multiple industries, which is fueling competition. But, competition was in turn fueling commoditization
+consolidation = not always the right move https://www.cloudflare.com/the-net/platform-consolidation-costs/
+constructive confrontation = spot threats/issues/problems, debate aggressively, make bold moves before competitors/enemies
+consumer technology = intended for use by consumers in the general public, as opposed to technology created for businesses or government organizations https://builtin.com/consumer-tech
+consumer technology = usually ads supported :/
+content is king -- small payments = failed to materialize
+content is king = (not true, profit get stolen by the medium: youtube, instagram) https://medium.com/@HeathEvans/content-is-king-essay-by-bill-gates-1996-df74552f80d9
+core -- && actions -- active users
+core -- && mental models (of the product)
+core -- Critical User Journeys (CUJ)
+corporate cannibalism = prioritize short-term profits over long-term sustainability
+corporation forms -- Japan = do lots of things https://davidoks.blog/p/why-japanese-companies-do-so-many
+corporation forms -- United States = specialized, market-oriented, governed by shareholders
+corporation forms = https://davidoks.blog/p/why-japanese-companies-do-so-many
+cost of delay = decision tool https://en.wikipedia.org/wiki/Cost_of_delay
+creator/user gap https://blog.jpl-consulting.com/2010/03/creator-user-gap/
+culture -- value vs. money = +++ https://alexwennerberg.com/blog/2025-11-28-engineering.html
+customer segmentation = Strategic, Enterprise, Mid-Market, SMB
+customer sentiment -- not-totally-unhappy-but-also-not-totally-happy = https://opensauce.it/cloudflare-ai-psychosis/
+decision -- avoiding hard decisions = bad https://newsletter.manager.dev/p/feature-flags-are-ruining-your-codebase
+decision maker = https://www.youtube.com/watch?v=qf-_bRjZ38U
+deep appeal = something that a few people love, even if most people don't get it right away https://paulbuchheit.blogspot.com/
+deployment gap = between lab/demo to actual use https://www.a16z.news/p/the-physical-ai-deployment-gap
+disruptive -- Clay Christensen’s theory = the next big thing always starts out being dismissed as a “toy” observation that technologies tend to get better at a faster rate than users’ needs increase. From this simple insight follows all kinds of interesting conclusions about how markets and products change over time. https://cdixon.org/2010/01/03/the-next-big-thing-will-start-out-looking-like-a-toy
+disruptive -- Scott Adams heuristic = "Don't judge a market by early product quality. Judge it by early niche enthusiasm." https://www.linkedin.com/posts/nikhilcreates_media-attachment-share-7468569813158735872-BbIP/
+disruptive technologies = see [The Innovator's Dilemma]
+dogfooding "Eating our own Dogfood" = ranges wider than testing your end-product, and can be the difference between good and great products https://gregtidanian.substack.com/p/eating-our-own-dog-food
+duty of care = actively shield users from harm “rather than the reactive system that exists now” https://ia.acs.org.au/article/2025/govt-ramps-up-big-tech--duty-of-care--reforms.html
+economies of scale = aren’t available to smaller players in a market, including increased visibility, increased buying power, and lower customer acquisition costs https://dealroom.net/blog/industry-consolidation
+ecosystem -- Application Development Kit (ADK) = encompasses the code that enables licensed distributors to port the application onto their own platforms and streamline the process straight to testing and QA with us. The ADK is available as a software package that contains all the tools a distributor could need to build on their diverse device platform. https://medium.com/disney-streaming/introducing-the-disney-application-development-kit-adk-ad85ca139073
+Embrace, Extend, and Extinguish https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish
+enshittification -- hate = ex. Adobe https://petapixel.com/2025/04/10/adobe-deletes-bluesky-posts-after-furious-backlash/
+enshittification -- temu-fication = externalization and compression of cost making low-quality goods attractive and profitable https://マリウス.com/the-temu-fication-of-software-digital-goods-services/
+enshittification = first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die. https://doflo.com/blog/what-is-enshitification-and-can-we-stop-it https://en.wikipedia.org/wiki/Enshittification
+exit -- shutting down = https://cdixon.org/2010/01/09/shutting-down
+extract value vs. claw back all the value (enshittification)
+failures -- inVision -- https://www.linkedin.com/pulse/one-reason-why-invision-failed-greg-nudelman/
+failures -- kodak -- "kodak moment"
+failures -- MullCa 510 = too strong, company went bankrupt https://elsiegreen.com/blogs/musings/the-history-of-the-mullca-510-school-chair
+failures -- Osborne effect = self-cannibalization by announcing a new product too early, killing their sales instantly https://en.wikipedia.org/wiki/Osborne_effect
+features -- 6 Reasons Users Hate Your New Feature -- The Feature’s Not Finishable
+features -- 6 Reasons Users Hate Your New Feature -- The Feature’s Not Finished
+features -- 6 Reasons Users Hate Your New Feature -- You Built EXACTLY What They Asked For
+features -- 6 Reasons Users Hate Your New Feature -- You Didn’t Build What They Asked For
+features -- 6 Reasons Users Hate Your New Feature -- Your Existing Product Needs Too Much Work
+features -- 6 Reasons Users Hate Your New Feature -- Your Product Interface Is a Giant Mess
+features -- 6 Reasons Users Hate Your New Feature https://www.slicedbreaddesign.com/blog/6-reasons-users-hate-your-new-feature
+features -- collaboration https://zknill.io/posts/collaboration-no-crdts/
+features -- creep
+features -- cue = e.g. empty state
+features -- enterprise scale -- access control
+features -- enterprise scale -- authorship tracking
+features -- enterprise scale -- billing
+features -- enterprise scale -- change aversion
+features -- enterprise scale -- comments
+features -- enterprise scale -- comments -- resolve
+features -- enterprise scale -- comments -- threaded
+features -- enterprise scale -- compliance
+features -- enterprise scale -- cross-orgs (shared channels)
+features -- enterprise scale -- data residency
+features -- enterprise scale -- diffs
+features -- enterprise scale -- drafts
+features -- enterprise scale -- integrations
+features -- enterprise scale -- IT / admin (user management)
+features -- enterprise scale -- permissions
+features -- enterprise scale -- personal workspace = to use the feature for themselves
+features -- enterprise scale -- regulated industries
+features -- enterprise scale -- search
+features -- enterprise scale -- security
+features -- enterprise scale -- sharing + security
+features -- enterprise scale -- similar
+features -- enterprise scale -- sort
+features -- enterprise scale -- SSO
+features -- enterprise scale -- templates
+features -- enterprise scale -- user management
+features -- fake => see fake door
+features -- flintstoning = when your app, product, or business itself lacks a feature… buuuuuuuuut, you can make up for it manually https://stackingthebricks.com/the-fine-art-of-flintstoning/
+features -- funnel -- Entered the feature? ✅ Yes ❌ No
+features -- funnel -- intent = Had intent? ✅ Yes ❌ No / unclear
+features -- funnel = funnel of using a feature = cued / reached -> Started -> submitted -> rejected / failed / succeeded -> shared, abandonned
+features -- gating
+features -- infantile level = https://www.linkedin.com/pulse/one-reason-why-invision-failed-greg-nudelman/
+features -- next-of-kin
+features -- worse is better = there is a point where less functionality ("worse") is a preferable option ("better") in terms of practicality and usability. Software that is limited, but simple to use, may be more appealing to the user and market than the reverse https://en.wikipedia.org/wiki/Worse_is_better
+financing cycle https://en.wikipedia.org/wiki/Seed_money
+first-mover advantage -- handicap of a head start https://en.wikipedia.org/wiki/Law_of_the_handicap_of_a_head_start
+first-mover advantage -- second mover advantage / "fast followers" / "free riders" https://en.wikipedia.org/wiki/First-mover_advantage#Second-mover_advantage
+first-mover advantage https://en.wikipedia.org/wiki/First-mover_advantage
+flexible planning = scope changes and unexpected risks: adaptability is crucial
+full-stack builder = If you're going it alone, you can't afford to be blocked on anything. You need to build, sell, recruit, and fundraise, all by yourself https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
+funding -- CAP table = ???
+funding -- runway
+funding -- SAFE "Simple Agreement for Future Equity"
+funding -- seed money -- how much? https://cdixon.org/2009/12/28/whats-the-right-amount-of-seed-money-to-raise
+funding -- VC -- founder dilution https://www.linkedin.com/feed/update/urn:li:activity:7341812076463439873/
+funnel
+funnel -- AARRR -- 1 Acquisition = How do users find you? (SEO, ads, social, referrals)
+funnel -- AARRR -- 2 Activation = Do users have a great first experience? (onboarding, "aha moment")
+funnel -- AARRR -- 3 Retention = Do users come back? (DAU/WAU, churn rate)
+funnel -- AARRR -- 4 Referral = Do users tell others? (NPS, viral coefficient)
+funnel -- AARRR -- 5 Revenue = Do users pay? (LTV, MRR, conversion rate)
+funnel -- AARRR / Pirate Metrics = Coined by Dave McClure in 2007, a framework for tracking and optimizing the customer lifecycle across five stages
+funnel -- case studies -- bingo card creator = example of a breakage with tracking https://www.kalzumeus.com/2009/10/23/the-ie-css-bug-which-cost-me-a-months-salary/
+funnel -- FFP "First Full Purchase" = the moment customers finally decide it’s time to go from ‘just browsing’ to ‘fine, take my money already'
+funnel -- RARRA (reordered AARRR) = Retention → Activation → Referral → Revenue → Acquisition important in high churn products, where retention is critical https://www.chameleon.io/blog/aarrr-vs-rarra
+funnel -- RARRA -- 1 Retention = Focuses on building a customer-centric platform, with great UX/UI. It focuses on making your app a place users love.
+funnel -- RARRA -- 2 Activation = Focuses on mapping your users’ journeys with repeat value moments. Enabling users to get their job done, go beyond that job, and discover new “aha!” moments with new tools and features.
+funnel -- RARRA -- 3 Revenue = It’s 60-70% easier to sell to current customers than it is to new ones. It makes sense that retaining customers should be more financially viable than trying to acquire new ones.
+funnel -- RARRA -- 4 Referral = Build products your users will love, and let them do the legwork for you. Studies show that people are 4x more likely to buy because of a recommendation from a friend or colleague than from any marketing material. Plus, it leads to a near 40% higher retention rate. Give your users the tools they need to refer your product: make it easy.
+funnel -- RARRA -- 5 Acquisition = All of your above efforts should lead to you acquiring more customers. Sure, it may happen at a slower rate, but at a much longer lifespan. Hence, an increase in customer lifetime value.
+gamification = usually bad
+get big fast / get large or get lost
+globalization -- Institutional trust and cultural permission are now inseparable from the product itself  https://open.substack.com/pub/a16z/p/the-sovereign-wall-why-ais-next-billion
+globalization = is not a product feature; it is a geopolitical negotiation ex. Thailand lèse-majesté, Germany GEMA (no fair use)... https://open.substack.com/pub/a16z/p/the-sovereign-wall-why-ais-next-billion
+go-to-market (GTM) = +++ plan of an organization, utilizing their outside resources (e.g., sales force and distributors), to deliver their unique value proposition to customers and to achieve a competitive advantage https://en.wikipedia.org/wiki/Go-to-market_strategy
+gold rush tools = during a gold rush, the one selling tools is the one making money
+good business = one that makes good products at a fair price to a sustainable and loyal market OR one that can display the most stock price growth from quarter to quarter? https://www.wheresyoured.at/the-era-of-the-business-idiot/
+grab playbook = start with a high-frequency vertical, build an agent network, then layer on financial services https://x.com/dbarabander/status/2047367533477400721
+growth -- bootstrapping
+growth -- bundles
+growth -- case studies = https://growth.design/case-studies
+growth -- cognitive load
+growth -- concepts https://growth.design/psychology
+growth -- fake door testing https://www.chameleon.io/blog/fake-door-testing
+growth -- fluidity = Eventually, every growth channel gets competitive and expensive https://web.archive.org/web/20260217224228/https://speedrun.substack.com/p/your-next-customer-is-asking-chatgpt
+growth -- friction
+growth -- get to scale
+growth -- get to scale -- how?
+growth -- if we build it, they will come (not)
+growth -- labor perception / perceived labor https://growth.design/case-studies/labor-perception-bias
+growth -- onboarding -- fatigue
+growth -- should never be a goal in itself, relevance+engagement is
+growth -- viral = helpful but not necessary
+growth = +++ https://growth.design/
+house ads = surfacing 1p content / features to user
+how do we survive a Google I/O keynote? = https://dev.to/dannwaneri/google-is-one-feature-away-from-killing-an-entire-startup-category-jk
+how to make something great -- Act from Instinct and Build to Learn
+how to make something great -- Assemble the Believers, Not the Bureaucrats
+how to make something great -- Begin with the Ambiguous Artifact = A truly fertile concept often resists immediate clarity
+how to make something great -- Delay the Funnel, Widen the Field = at the genesis of a thing that might be great, strict focus is a ruse. The best solutions emerge after you’ve wandered through a landscape of problems
+how to make something great -- Don’t Validate Ideas to Death = In a world saturated with A/B tests, focus groups, and the fetishization of “data-driven” everything, it’s easy to strangle a young idea in the crib
+how to make something great -- Pursue Quality and Agility in Equal Measure
+how to make something great = https://ryolu.notion.site/how-to-make-something-great
+illegal practices -- monopoly / oligopoly
+illegal practices -- payola = illegal practice of paying a commercial radio station to play a song without the station disclosing the payment (boosted) https://en.wikipedia.org/wiki/Payola
+illegal practices -- predatory pricing
+illegal practices -- price fixing -- Jedi Blue = agreement between Alphabet and Meta Platforms that allegedly gave Facebook an illegal advantage in Google's ad auctions in exchange for Facebook's word that it would end its own ad service plans https://en.wikipedia.org/wiki/Jedi_Blue
+illegal practices -- price gouging
+illegal practices -- price skimming
+incentives -- perverse https://en.wikipedia.org/wiki/Perverse_incentive
+incumbent inertia -- locked into a specific set of fixed assets
+incumbent inertia -- organizationally inflexible
+incumbent inertia -- reluctant to cannibalize existing product lines
+incumbent inertia https://en.wikipedia.org/wiki/Law_of_the_handicap_of_a_head_start#Incumbent_inertia
+Jobs to be Done (JTBD) = https://en.wikipedia.org/wiki/Jobs-to-be-done_theory
+justification filler = "Best Practice", "Industry Standard", "Security Posture" https://serce.me/posts/2025-05-19-justification-filler-phrases
+knowledge creating company = https://hbr.org/2007/07/the-knowledge-creating-company
+land grab https://fastercapital.com/topics/understanding-the-concept-of-land-grab-strategies.html
+layers in the stack between humans and the money -- for every layer: dominate it or commoditize it
+layers in the stack between humans and the money = ex. Google Human - device – OS – browser – bandwidth –  websites - ads – ad tech – relationship to advertiser – $$$ https://cdixon.org/2009/12/30/whats-strategic-for-google
+learning from users https://paulgraham.com/users.html
+lighthouse customer = a customer that brings other customers in. But sometimes if there's not a good lighthouse customer, going deep in a narrow vertical can be really interesting. https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
+link out = send the user to a third-party website (user vs. business) https://coda.io/@shishir/eigenquestions-the-art-of-framing-problems
+listen, build, ship, tell the customer, then repeat forever
+looking like a toy = Disruptive technologies are dismissed as toys because when they are first launched they “undershoot” user needs https://cdixon.org/2010/01/03/the-next-big-thing-will-start-out-looking-like-a-toy
+M&A
+M&A -- Apple = predatory, see [[killer zone]]
+M&A -- fb / insta = https://www.linkedin.com/posts/olivermolander_technology-facebook-instagram-activity-7241726426826059776-IOE4
+M&A -- killer zone = https://www.trendingtopics.eu/tech-talent-the-intricate-mechanisms-behind-apples-startup-killer-zone/
+make it work, make it good, make it fast, make it work again
+management maturity -- Level 0: Bliss
+management maturity -- Level 1: Fire Fighting
+management maturity -- Level 2: Global Baselines & Metrics
+management maturity -- Level 3: P75+, Site-specific Baselines & Metrics
+management maturity -- Level 4: Variance Control & Regression Prevention
+management maturity -- Level 5: Strategic Performance
+management maturity = high-management-maturity organisations https://infrequently.org/2022/05/performance-management-maturity/
+market fit -- founder-market = proving you're the exact right people to pursue the idea, whether from your experience or because you've somehow gone super deep into “the idea maze” https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
+market fit -- product-market -- Arc archetype -- Future Vision = enable a new reality through visionary innovation
+market fit -- product-market -- Arc archetype -- Hair on Fire = solve a problem that’s a clear, urgent need for customers
+market fit -- product-market -- Arc archetype -- Hard Fact = pain point universally accepted as a hard fact of life, and see that it’s merely a hard problem that your product solves
+market fit -- product-market = PMF https://www.sequoiacap.com/article/pmf-framework/
+market fit -- team-market = Why are you the right team to do this? Why are you amazing? And then why is the problem you're working on important to you? https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
+market fit -- traction = measurable proof that you’re already making progress toward product-market fit. just whatever validation you can get from the outside world https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
+marketing -- "killer app"
+marketing -- apps https://www.businessofapps.com/
+marketing -- case studies
+marketing -- case studies -- "flagship app" It's not that there wasn't a lot of interest in WPF, it's just there weren't any flagship apps showing off what it could do that previous frameworks couldn't. Even if Evernote had stayed with it, they still have a fairly simple client so a lot of people would simply shrug and say "I can do that in WinForms." They aren't wrong. https://www.reddit.com/r/csharp/comments/x0nu7h/comment/im9kesb/
+mature market
+mediocre success = the worst thing that can happen to your startup = enough to keep you going but not enough to change your life. most founders are trapped there. respect to shutting down or doubling down on projects https://x.com/gregisenberg/status/1906697683089101113
+metrics -- 40 something
+metrics -- active users -- daily (DAU) https://www.socialmediatoday.com/news/look-comparative-mau-and-dau-stats-major-social-apps/694563/
+metrics -- active users -- monthly (MAU) https://www.socialmediatoday.com/news/look-comparative-mau-and-dau-stats-major-social-apps/694563/
+metrics -- Annual Recurring Revenue (ARR)
+metrics -- average revenue per user (ARPU)
+metrics -- CSAT
+metrics -- CSAT -- hard to move
+metrics -- CSAT -- visual appeal
+metrics -- exotic (bad practices) = hard to compute, move, etc https://www.linkedin.com/pulse/exotic-metrics-parable-product-people-shreyas-doshi-8ghje/
+metrics -- functional onboarding = If a user has hit all the functional onboarding milestones, it is a strong indication that they have begun to adopt the product. Measured over 2w, chose reqs, ex. have 2 users, 2 core actions...
+metrics -- funnel
+metrics -- lifetime value = https://statwonk.com/lifetime-value-calculation-ltv.html
+metrics -- Monthly Core Action Users = used to measure engagement by tracking users who perform core actions within a specific time frame.
+metrics -- Monthly Core User (MCU) = a user who do core actions at least X times in the last 28 days
+metrics -- product velocity -- core 4 = https://www.lennysnewsletter.com/p/introducing-core-4-the-best-way-to
+metrics -- retention
+metrics -- serviceable addressable market (SAM) = TAM we can reasonably reach
+metrics -- total addressable market (TAM)
+moat https://www.semianalysis.com/p/google-we-have-no-moat-and-neither
+moment -- aha &&
+moment -- magic moment -> habit moment
+moment -- push && = the breaking point leading to churn = The moment when someone realizes their current way of doing things isn’t working. It’s rarely about missing features. Or price. It’s a moment of frustration so painful they have no choice but to look for a solution or an alternative: Ex. “Lost in Jira?” (Linear) https://www.linkedin.com/posts/enzoa_the-1-reason-people-come-to-june-is-when-activity-7309959729164812288-_u7k
+MVP "minimum viable product"
+MVP -- 1 🛹 The Skateboard = aka the Pessimist’s MVP = What is the absolute minimum we can ship, if need be? Utilitarian, bare-bones, and somewhat embarrassing, but shippable — barely. Anything that can be flintstoned gets flintstoned.
+MVP -- 2 🚲 The Bicycle = aka the Optimist’s MVP = Stretch goals — UX polish, “sprinkles of delight”, nonessential but high I/E features. Great if we get here, fine if we don’t.
+MVP -- 2 🛴 The Scooter = aka the Realist’s MVP = The minimum product that delivers value. Usable, but no frills. This is the target.
+MVP -- 3 🏍️ The Motorcycle = Post-launch highest priority items.
+MVP -- 4 🚗 The Car = Our ultimate vision, taking current constraints into account.
+MVP -- 5 🏎️ The Hovercar = aka the North Star UI = The ideal experience — unconstrained by time, resources, or backwards compatibility. Unlikely to ship, but a guiding light for all of the above. "what if the key to shipping great products wasn’t starting small — but starting big?" https://lea.verou.me/blog/2025/hovercar/
+MVP -- earliest -- 01 && feedback-able product (EFP)
+MVP -- earliest -- 02 && testable product = first release that customers can actually do something with
+MVP -- earliest -- 03 && usable product = first release that early adopters will actually use, willingly
+MVP -- earliest -- 04 && lovable product = first release that customers will love, tell their friends about, and be willing to pay for
+MVP -- earliest -- 05 && marketable product = packaged?
+MVP -- earliest -- 06 && "app store"-able product
+MVP -- earliest -- 07 && "pro" = entitlements, billing, compliance...
+MVP -- earliest = "why I prefer Earliest Testable/Usable/Lovable" https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp
+MVP -- Most Advanced Yet Acceptable (MAYA) = UX concept https://every.to/p/the-most-advanced-yet-acceptable-products-win
+mvp -- satisficing = satisfy + suffice = good enough even if not optimal https://en.wikipedia.org/wiki/Satisficing
+MVP -- SRP "sales ready product" = converts prospects in the moment—during a demo, and then shortens the sales cycle, ramps revenue quickly, and pushes a company towards market dominance https://www.sequoiacap.com/article/the-templeton-compression/
+near-success syndrome = nearly there but fail https://x.com/garrytan/status/2062760454649487491
+network -- defensible? path to critical mass?
+network -- degrees, clustering, clusters types
+network -- heterogeneous -- chicken-and-egg problem = which side comes first?
+network -- heterogeneous -- money side and subsidy side
+network -- heterogeneous = different nodes, ex. restaurants and customers network around delivery
+network -- homogeneous = same nodes, ex. users of a messaging app
+network -- marketplaces, platforms...
+network effect = a product or service becomes more valuable to its users as more people use it https://www.slideshare.net/slideshow/network-effects-59206938/59206938
+network effect = key dynamic behind many successful software companies
+never-ending feature party = but tech debt "clean up and restocking" https://corgibytes.com/blog/2018/01/02/neverending-feature-party/
+no one was ever fired for using...
+novelty tax = problem where users found the novel product too different to adopt it widely
+only the paranoid survive (Andy Grove) = success breeds complacency, complacency breeds failure, only the paranoid survives. If you're winning, that's when you should be the most paranoid, bc disruption is always coming
+only the paranoid survive -- 1 assume disaster is coming
+only the paranoid survive -- 2 spot threats before they explode = if you wait until a crisis is obvious, it's already too late
+only the paranoid survive -- 3 reinvent before you're forced to = industries shit, adapt or die
+organic = is this user organic? ex. insider (test account, QA account, employee account /adjacent), bot, abuser...
+outsiders = Sometimes you need folks who have a “beginner’s mind” when looking at a problem and haven’t been jaded by the status quo https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
+overfitting = the solution accomplishes one goal — but as soon as it needs to do something else, it’s almost back to square one https://medium.com/design-bootcamp/overfitting-and-the-problem-with-use-cases-337d9f4bf4d7
+path to commercial viability = e.g. X moonshots "proved much longer and riskier than hoped"
+personas -- data savvy vs. data shy
+piracy -- anti = do not make the product worse for paying customers, pirates wouldn't have paid anyway
+piracy -- pirates = not usually people who were ever considering paying for it
+pitch -- 01 Why the world needs this now
+pitch -- 02 Our approach, team, and why we win
+pitch -- 03 How big this could get. Napkin math
+pitch -- 04 Demo of app. Review beta feedback and metrics
+pitch -- 05 How will we monetize
+pitch -- 06 What do we need money for now
+pitch -- extra -- How much money do you want? How will you spend it in the coming year?
+pitch -- extra -- references
+pitch -- extra -- YC application https://docs.google.com/document/d/1lkRIGrssL5W3DbrFTE-PoY8KctN1dtCBWg_Yuoq8RT4/edit#heading=h.b76a5v3s4kuy
+pitch -- extra -- “what we don’t know” or “what assumptions we’ve made that need to be true” (to make it more rounded and less pitchy. Maybe that’s why I’ve never got an investor! Ha)
+pitch -- first = The goal of the first pitch should be to get a second meeting https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
+pitch -- Q -- If you get no investments what alternatives do you have in mind
+play nicely or risk regulation if you don't
+PLG "Product-Led Growth" Companies = go-to-market strategy where the product itself is the primary driver of customer acquisition, conversion, and expansion — rather than a sales or marketing team.
+PLG -- vs. traditional SLG "Sales-Led Growth" = Marketing → Sales → Product
+PLG = Product → Adoption → Revenue using freemium, self-serve, viral loops, usage thresholds, bottom-up adoption
+policy -- internal -- no politics https://www.linkedin.com/posts/jason-fried_inevitably-around-major-elections-or-political-activity-7260061274544234496-tSB1
+PRD "product requirements document" https://www.atlassian.com/agile/product-management/requirements
+pre-product = doesn't mean that you don't have a waitlist or LOIs (letters of intent) https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
+pre-revenue (lol)
+pricing
+pricing -- capability
+pricing -- competitive pricing reaction strategy.
+pricing -- position
+pricing -- segment
+pricing -- strategy = strategic choice from a business, need to chose the most effective https://en.wikipedia.org/wiki/Pricing_strategy
+principles -- canva -- Beginners become experts = While we should make sure that new customers have a great experience creating their first design, they should also find it exciting to create their 100th design and be able to create new and unique content each time they come back. This means gradually handing over the reins of design to them as they become more confident with the product and with their own skills.
+principles -- canva -- Great defaults = It's not a sin to have more powerful options available to our customers, but if they don't tweak any settings or change any values, they should still end up with a great design. Make sure that any new feature is optimized to create great design right out of the box
+principles -- canva -- Just simple enough  = We always strive for a simple product that is understandable by a non-designer. This means no jargon and no knobs that only a professional can figure out how to use. But "simple" is not the opposite of "powerful". Canva needs to provide the flexibility and usefulness of a real design tool in an easy-to-use package.
+principles -- canva -- Understand the problem = Having a clear definition of the problem that you're trying to solve before you start designing is incredibly important to the design process– it can stop you from chasing your own tail, trying to find the solution to a problem that keeps changing
+principles -- canva -- Weigh up every line = We want customers to feel a connection with the people who make Canva. This should be reflected in the tone of voice and interface cues that we use to communicate with our customers. We are all humans, so let your human side show, but know when it's appropriate to be more playful and when you have to communicate serious matters.
+principles -- canva -- Words are design = What customers read is as important to their experience as the interactions and visuals. Clear and meaningful labels and written content are an important part of an interface, therefore language and writing are an important skill to have as a designer.
+principles -- canva https://www.canva.dev/docs/apps/design-guidelines/principles/
+principles -- end-to-end principle = fundamental principle of the Internet in which the role of a network is to reliably deliver data from willing senders to willing receivers
+principles -- right of exit = users of a platform can easily go elsewhere if they are dissatisfied with it. This requires interoperability, countering the network effects
+procurement
+product life cycle -- stage 1 = Market Development is where you engage in experiments and innovation
+product life cycle -- stage 2 = Growth is where you iterate on differentiation features
+product life cycle -- stage 3 = Maturity is where you shift to “good enough” and start optimizing for cost of operation
+product life cycle -- stage 4 = Decline is where you look at how to efficiently exit.
+product mode -- come for the tool, stay for the network "best X I've ever used"
+product mode -- multiplayer = no utility for a single user or until a critical mass of users is reached
+product mode -- single = has immediate value for a single user
+product mode = single or multiplayer? (sometimes both)
+proposition -- selling = What makes your product or service unique? What sets you apart from your competition?
+proposition -- value
+quality vs. speed = sacrificing code quality for speed leads to compounding issues later. balance speed with long-term sustainability
+real-world context https://contextsdk.com/insights#product
+realistic scheduling = overly optimistic deadlines lead to burnout and missed milestones. Always add a (secret?) buffer.
+reputation management
+reputation management -- REPCOM
+revenue -- evergreen = able to survive to bear markets
+revenue -- hyper-revenue = catch on
+revenue -- multiple diversified revenue streams
+risk -- management = be proactive instead of reactive
+risk -- management = coordinated set of activities carried out throughout an organisation aimed at identifying, understanding and controlling its risks
+risk = effect of uncertainty on an organisation’s ability to meet its objectives
+sales -- high-skills sales reps https://blog.staysaasy.com/p/this-is-the-person-selling-your-product
+sales -- operations = it's hard for many customers to "just buy" they need a lot of support from dedicated teams
+sales -- Sales Development Representative (SDR) https://www.salesforce.com/blog/sales-development-representative/
+sales learning curve -- compression -- [SRP] https://www.sequoiacap.com/article/the-templeton-compression/
+sales learning curve -- compression -- provocative demo = convert prospects in the moment. Instead of showcasing lots of features, the product squarely addressed customer pain. Because the product had such incredible fit with market needs, Don’s companies could shrink the sales cycle, hence the term the Templeton Compression.
+sales learning curve = need time and money to climb the sales learning curve, don't ramp up sales too quickly https://www.sequoiacap.com/article/the-templeton-compression/
+scalability -- organizational -- collaboration = bigger team size can no longer efficiently collaborate, ex. merge conflicts, coordination
+scalability -- organizational -- collaboration = no limiting "gate keeping" core team
+scalability -- speed = of the product BUT ALSO of developing new features
+scalability -- technical -- complexity = devs can no longer reason about the code
+scale frontiers - 01 Generous free product
+scale frontiers - 02 Affordable Paid Product
+scale frontiers - 03 Teams of all sizes
+scale frontiers - 04 Large Orgs
+scaling -- managers who get promoted quickly into upper manager and leader positions often try to apply what worked locally to what might feasibly work globally. When that fails, their first instinct is to carve out the autonomy and boundaries they once enjoyed as managers of smaller teams, which works in the short term but can lead to problems when collaborating across messier boundaries.
+second product -- syndrome https://www.hubspot.com/startups/resources/second-product-tips-for-success
+second product -- When and How https://caseyaccidental.com/second-products/
+shared vision = maintaining a shared vision across the board to help stay on course
+side -- dark side = selling the users https://www.androidpolice.com/mozilla-firefox-new-privacy-terms-raise-red-flags/
+side projects -- outside of job https://www.reddit.com/r/SideProject/comments/1br62xb/building_side_projects_outside_fulltime_job/
+simplicity "no ads, no gimmicks, no games"
+sleeper technology
+social features -- complex "block" feature of other users https://dcurt.is/block-carefully
+solutions engineering -- post‑sales = implementations end‑to‑end: discovery → design → build → UAT → launch → hypercare; owning scope, acceptance criteria, timelines, risks, cutover, and stakeholder comms.
+solutions engineering -- pre‑sales = targeted discovery, demos/POCs, solution diagrams, and implementation estimates/SOW inputs.
+stalking horse = figure used to test a concept or mount a challenge on behalf of a third party. If the idea proves viable or popular, the third party can then declare its interest and advance the concept with little risk of failure. If the concept fails, the third party will not be tainted by association with the failed concept and can either drop the idea completely or bide its time and wait until a better moment to launch an attack https://en.wikipedia.org/wiki/Stalking_horse
+startups should avoid being held hostage by the preferences of their early user base if it deviates from the broader market, ex. social feed or reels
+stay fast https://newsletter.posthog.com/p/how-to-design-your-company-for-speed
+Stock Keeping Unit (SKU) = a clearly identified product https://en.wikipedia.org/wiki/Stock_keeping_unit
+strategic dissonance = (Andy Grove) = mismatch between a company's current strategies and changes in the industry due to strategic inflection points
+strategic inflection point = a moment when everything changes (most react too late)
+strategy -- 01 "where we play"
+strategy -- 02 "how we win"
+strategy -- bowling pin = starts with a niche segment easily attainable then move to next niche or broader market
+strategy -- evergreen vs. cyclic
+strategy -- red ocean vs. blue ocean https://www.blueoceanstrategy.com/tools/red-ocean-vs-blue-ocean-strategy/
+strategy tax = negative pattern in a big company where every project / new product has to synergise/contribute to the cash-cow product = can be killer
+support loops = ex. help desk + social media + phone etc.
+system of work = A connected portfolio of products with clear and discrete value propositions; built on a common platform and data model; can help implement an opinionated set of practices for effective teamwork across all kinds of teams
+target
+teams moving from spreadsheet
+The Innovator's Dilemma = describes how large incumbent companies lose market share by listening to their customers and providing what appears to be the highest-value products, but new companies that serve low-value customers with poorly developed technology (disruptive technologies) can improve that technology incrementally until it is good enough to quickly take market share from established business. Christensen recommends that large companies maintain small, nimble divisions that attempt to replicate this phenomenon internally to avoid being blindsided and overtaken by startup competitors https://en.wikipedia.org/wiki/The_Innovator%27s_Dilemma
+the last 1% = that delivers 100% of the experience https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and
+the next billion users = after early adopters / explorers / tech-optimists
+too big to fail
+too big to tame https://tech.slashdot.org/story/25/12/09/141227/indias-aviation-crisis-is-all-about-too-big-to-tame
+tool tech stack -- review https://www.lennysnewsletter.com/p/whats-in-your-stack-the-state-of
+top complaints -- actual case J. -- 01 Performance and Speed
+top complaints -- actual case J. -- 02 User Interface and Usability
+top complaints -- actual case J. -- 03 Onboarding and Adoption: Simplify the onboarding process to make it easy for non-technical users to adopt the product.
+top complaints -- actual case J. -- 04 Customization and Flexibility: Enable easier project setup with templates and pre-configured workflows. Expand customization options to include tailored templates, custom fields, views, dashboards and reports, and colour coding.
+top complaints -- actual case J. -- 05 Task and Project Management Enhancements: Improve features for task dependencies and tasks that need to be tracked against multiple teams/projects. Develop spreadsheet-like views with functionalities like copy/paste, formulas, and conditional formatting.
+top complaints -- actual case J. -- 06 Reporting and Visualization: Strengthen reporting and visualization features to provide clear, customizable dashboards, project summaries, and roadmaps that can be easily interpreted by teams and executives.
+top complaints -- actual case J. -- 07 Communication and Collaboration: Improve external collaboration features to facilitate working with partners and stakeholders who may not have full access to the product
+top complaints -- actual case J. -- 08 Integration and Automation: Enhance integration capabilities with popular related tools and platforms. Improve automation features to reduce manual repetitive tasks and streamline workflows.
+top complaints -- actual case J. -- 09 Blended Features and Cross-Platform Integration: Explore the possibility of blending features from the suite to offer a more holistic project management experience.
+top complaints -- actual case J. -- 10 Training and Support: Provide dedicated training resources and support tailored for targe teams, including guides on using the product for targeted tasks.
+top complaints -- actual case J. -- 11 Positioning and Value Proposition
+triad -- quad = + data analyst
+triad = product, design, engineering
+trickle-down product adoption = from high to low class https://en.wikipedia.org/wiki/Trickle-down_fashion
+try/test/graduate
+Uber model = Make it so useful that you can’t shut it down
+User Experience Research (UXR) https://medium.com/getting-started-in-user-experience-and-design
+USP "Unique Selling Point" = secret sauce, difference with competition
+utility-seekers = the users don’t want to chat with a ghost in the machine; they want a tool that navigates the friction of their reality
+UX -- principles and cognitive bias relevant https://growth.design/psychology
+UX -- stick to established patterns https://medium.com/@daniel.stoyanov/not-following-well-established-ux-design-patterns-is-almost-always-a-bad-idea-58ae01b4f48a
+value extraction -- creating value, not extracting it
+verbal contracts -- beware https://old.reddit.com/r/KitchenConfidential/comments/1ro61g2/how_the_sriracha_guys_screwed_over_their_supplier/
+wartime vs. peacetime https://newsletter.pragmaticengineer.com/p/wartime-vs-peacetime
+what got us here won't get us there…
+what is the actual problem we're trying to solve?
+what the product is NOT = ex. https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not
+winner-take-all
+You can develop the best strategy in the world, but if it isn’t producing the desired results, it’s time to reassess. "It’s not that we aren’t doing as well as we could, but it’s not the best strategy we could be doing to win." https://worldofwarcraft.blizzard.com/en-us/news/21952451/midgame-moves-adapt-survive-and-thrive

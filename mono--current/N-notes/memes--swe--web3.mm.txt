@@ -1,0 +1,949 @@
+&& -- warning -- Investing in crypto assets involves a high degree of risk. Crypto owners can lose their entire investment due to inherent risks. Past performance is not indicative of future results. Make sure to conduct your own research before investing in cryptocurrencies.
+&& -- warning -- proactively manage your on-chain footprint -> might prevent you from having security issues in the future
+&& = "the distributed web" = a set of technologies that enables hosting of content and web applications in a serverless manner by leveraging distributed systems and consensus protocols https://developers.cloudflare.com/web3/
+&& = umbrella term for technologies like blockchain that decentralize data ownership and control on the internet. Most internet applications are controlled by centralized entities that determine how they save and use end-user data. https://aws.amazon.com/what-is/web3/
+&&-enabled browser = a browser with a wallet (e.g. a webextension MetaMask, Rainbow, Coinbase Wallet)
++++ https://casebitcoin.com/critiques
++++ https://ethereum.org/en/whitepaper/
+1% using crypto, then 3% paying with it https://cointelegraph.com/magazine/porn-payments-crypto-killer-app/
+1933 executive order 6102 = relinquish all gold https://en.wikipedia.org/wiki/Executive_Order_6102
+1980 precursors https://ethereum.org/en/whitepaper/#history
+2005 precursors -- reusable proof of work https://nakamotoinstitute.org/finney/rpow/
+2009 Bitcoin by Satoshi Nakamoto
+2009-01-09 Bitcoin genesis "Chancellor on brink of second bailout for banks"
+2010-05-22 = Bitcoin Pizza day = well-known Bitcoin purchase of two pizzas for 10,000 BTC https://crypto.com/en/glossary/bitcoin-pizza https://www.forbes.com/sites/rufaskamau/2022/05/09/what-is-bitcoin-pizza-day-and-why-does-the-community-celebrate-on-may-22/
+2014 Ethereum whitepaper by Vitalik Buterin https://ethereum.org/en/whitepaper/
+2016-06-17 attack on DAO smart contract's vulnerabilities https://en.wikipedia.org/wiki/The_DAO https://www.gemini.com/en-AU/cryptopedia/the-dao-hack-makerdao
+2016-07-20 DAO fork https://en.wikipedia.org/wiki/Ethereum_Classic
+2017 Binance created https://www.binance.com/
+2017 bitfinex "packaged loss" https://bitfinexed.medium.com/bitfinex-never-repaid-their-tokens-bitfinex-started-a-ponzi-scheme-86a9291add29
+2017 bull run, where the Ethereum network saw a surge in project launches known as the “ICO craze.”
+2017 CryptoPunks introduced for free https://cryptopunks.app/cryptopunks/details/7804
+2017-09 China bans crypto
+2017-11-07 Parity wallet contract "killed" = $250M of Eth lost https://github.com/openethereum/parity-ethereum/issues/6995
+2018-05-15 EIP-999 proposal to revert the Parity contract (rejected) https://www.reddit.com/r/ethereum/comments/9083sn/eip999_drama_explained_simply_catch_up_discuss/ https://news.ycombinator.com/item?id=16843991 https://github.com/ethereum/EIPs/blob/master/EIPS/eip-999.md
+2018-07 Augur "assassination market" https://www.newsweek.com/welcome-augur-cryptocurrency-death-market-where-you-can-bet-donald-trump-1043571
+2019-04 Bankman-Fried founds the FTX cryptocurrency derivatives exchange
+2020 "DeFi summer" = ???
+2021 NFT "EVERYDAYS: THE FIRST 5000 DAYS" sold at Christies for MM https://onlineonly.christies.com/s/beeple-first-5000-days/beeple-b-1981-1/112924
+2022-01 facebook abandons its Libra/Diem cryptocurrency project https://en.wikipedia.org/wiki/Diem_(digital_currency)
+2022-05 Terra-Luna de-peg TerraUSD = algorithmic stablecoin https://www.sciencedirect.com/science/article/abs/pii/S1544612322005359
+2022-05-02 Bored Ape Virtual Land Sale Breaks Ethereum, Wastes $180 Million in Fees https://www.vice.com/en/article/bored-ape-virtual-land-sale-breaks-ethereum-wastes-dollar180-million-in-fees/
+2022-11-11 "never again"
+2023 Binance pleads guilty to violating US money-laundering laws and other violations and the justice department fined it a whopping $4bn
+2024 Ethereum 7702 = https://blog.quicknode.com/eip-7702-explained-the-future-of-ethereum/
+2024 Trump promises during his White House run to be a “crypto president”, becoming the first major presidential candidate to accept crypto donations, and pledged to reverse an industry crackdown
+2024 Wyoming "makes corporate history" again by extending that same liability shield and legal recognition to decentralized crypto communities: Decentralized Unincorporated Nonprofit Association (DUNA) was created to give DAOs legal standing without forcing them to sacrifice decentralization. https://blockworks.co/news/uniswap-duna-decentralization
+2024-02 Genesis bankrupt https://www.reuters.com/legal/bankrupt-genesis-global-settles-ny-attorney-generals-lawsuit-2024-02-09/
+2024-03 Sam Bankman-Fried, who founded the now bankrupt FTX crypto exchange, was sentenced to 25 years in prison in March 2024 by a New York judge for bilking customers out of $8bn
+2024-09 alternative fundraising https://cointelegraph.com/news/patronage-model-fix-crypto-fundraising-says-kain-warwick
+2024-09 FBI revealed that fraud related to crypto businesses soared in 2023 with Americans suffering $5.6bn in losses, a 45% jump from the previous year.
+2024-10-16 https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/
+2025 -- perps meta = perps on Hyperliquid instead of futures on exchanges: “It’s just so much easier. It’s also more fun.
+2025 Institutions are stacking
+2025 summary against crypto https://www.theguardian.com/us-news/2025/jun/17/trump-crypto-memecoin-corruption
+2025-01 Sony's Soneium https://blockworks.co/news/soneium-mainnet-censorship-complaints
+2025-02-14 Javier Milei scandal = the Argentinian president "pump" $libra for money before it's rugpulled https://www.theguardian.com/world/2026/apr/12/crypto-javier-milei-bribery-argentina
+2025-03 Trump "crypto summit" for biggest backers of his $TRUMP = criticized as open influence trading
+2025-04-07 Trump disbanding a national cryptocurrency enforcement team that was set up in 2022, and had brought some high-profile cases against North Korean hackers and other crypto criminals.
+2025-05 SEC abandon crypto regulation https://yro.slashdot.org/story/25/05/29/2155215/sec-voluntarily-dismisses-lawsuit-against-binance
+2025-05 USA strategic reserve https://news.slashdot.org/story/25/05/31/0636246/whats-in-the-us-governments-new-strategic-reserve-of-seized-crytocurrencies
+2025-06 crypto fully banned in China https://www.idnfinancials.com/news/54986/china-tightens-financial-control-crypto-now-fully-banned
+2025-07 Mainnet = Ethereum relevant again https://blog.synthetix.io/synthetix-mainnet/
+2025-07-18 GENIUS act in USA https://decrypt.co/325659/senate-passes-stablecoin-bill-genius-act-major-boon-crypto https://en.wikipedia.org/wiki/GENIUS_Act
+2025-08-08 Trump signs order to allow crypto and real estate investments in retirement plans (despite being risky) https://www.theguardian.com/us-news/2025/aug/07/trump-executive-order-cryptocurrency
+2025-08-13 Google briefly bans wallets webextensions https://blocknews.com/google-bans-crypto-wallets-the-u-s-and-eu-here-is-why/ https://blocknews.com/google-drops-plans-to-ban-non-custodial-crypto-wallets-here-is-the-full-story/
+2025-08-21 Kanye West launches his coin https://crypto.news/kanye-west-launches-yzy-memecoin-on-solana-2025/
+2025-10-10 "10/10" Crypto market flash crash due to tariff announcement > sell-off > mass perps liquidation > auto de-exposure > network congestion... https://caladan.xyz/crypto-black-friday/ https://www.binance.com/en/square/post/35795256795473
+2025-10-11 huge liquidation https://blockworks.co/news/crypto-liquidations-drive-historic-market-turbulence
+2025-10-21 Nobel Prize "Bitcoin tool of resistance" https://blockworks.co/news/bitcoin-currency-of-resistance
+2025-11 list of some crypto problems https://mail.blockworks.com/p/problems-are-the-conduit-of-progress
+2025-11-11 Ethereum's trustless manifesto https://trustlessness.eth.limo/general/2025/11/11/the-trustless-manifesto.html
+2025-12-17 nice recap of current state of crypto https://x.com/dougiedeluca/status/2000957512862884100
+2025-12-26 wallet drainer via store API compromise https://x.com/0xakinator/status/2004297673067704651 https://x.com/eowynchen/status/2004649284537647161 https://x.com/TradesTyr/status/2004674309923725735
+2026-01 crypto illegal could be ~50% https://mail.blockworks.com/p/thursday-links-de7b
+2026-03-12 aave incident https://x.com/aave/status/2032959512244518962
+2026-03-14 "The Ethereum foundation mandate" https://x.com/ethereumfndn/status/2032460726728573298
+2026-03-22 $25M Resolv USR Minting Heist https://x.com/chainalysis/status/2035882965449019640 https://bfmtimes.com/hacker-mints-80-million-worth-of-fake-stablecoins-and-swaps-them-for-eth/ https://cryptopotato.com/how-the-25m-resolv-usr-minting-heist-happened/
+2026-03-31 new quantum breaktrhough Q-day now set to 2029 https://x.com/drakefjustin/status/2038847732152996108
+2026-04-01 Drift hack https://x.com/DriftProtocol/status/2040611161121370409 https://www.cyfrin.io/blog/drift-hack-learnings
+2026-04-12 Jusin Sun "discovers" that WLF is not honest 🤣 https://x.com/justinsuntron/status/2043234272622883074
+? +++ https://support.ledger.com/topic?topic=Crypto_Concepts https://support.ledger.com/topic?topic=Ledger_Live
+? abstracts on many chains https://www.circle.com/multi-chain-usdc
+? alchemy https://www.alchemy.com/docs
+? book https://www.amazon.com.au/Read-Write-Own-Building-Internet/dp/0593731387
+? book https://www.goodreads.com/book/show/222162693-magic-money
+? criticism https://bitfinexed.medium.com/
+? gas network https://www.blocknative.com/
+? https://consensys.io/
+? https://defi-skills.nethermind.io/
+? https://iancoleman.io/
+? https://intel.arkm.com/
+? https://openanonymity.ai/
+? https://projectjin.ai/
+? https://www.codex.io/
+[ ] documentaries https://www.tomsguide.com/entertainment/streaming/watch-vitalik-an-ethereum-story-online
+[ ] endgame https://vitalik.eth.limo/general/2021/12/06/endgame.html
+[ ] Gitcoin https://grants.gitcoin.co/
+[ ] great videos on DeFi https://www.youtube.com/@Finematics
+[ ] https://beincrypto.com/
+[ ] https://blog.labeleven.dev
+[ ] https://brave.com/web3/
+[ ] https://dev.to/100daysofsolana
+[ ] https://github.com/paulmillr
+[ ] https://giveth.io/
+[ ] https://info.etherscan.com/
+[ ] https://overreacted.io/ into privacy stuff
+[ ] https://support.infinex.xyz/en/articles/9719898-crypto-terms
+[ ] https://tenderly.co/
+[ ] https://vitalik.eth.limo/
+[ ] https://www.arringtoncapital.com/blog/
+[ ] https://www.coingecko.com/en/categories
+[ ] https://www.forbes.com/digital-assets/news/
+[ ] https://www.kaleido.io/blog-categories/product-technology
+[ ] list https://en.wikipedia.org/wiki/List_of_cryptocurrencies
+[ ] list of chains
+[ ] news https://www.binance.com/en/square/trending
+[ ] news https://x.com/beincrypto
+[ ] Sydney guy https://zorz.substack.com/
+Aave = decentralized lending protocol https://aave.com/
+address -- evm = the right-most 160 bits of a Keccak hash of an ECDSA public key https://info.etherscan.com/what-is-an-ethereum-address/
+address -- screening = "against sanctions lists and high-risk activity"
+address gap limit = chains that use address derivation recommend a limit of derived checks https://support.ledger.com/article/360010892360-zd
+advocacy -- "Stand with crypto" https://www.standwithcrypto.org/au
+Airdrop = gift of assets, usually as an incentive to use a new thing
+airdrops -- double claiming
+altcoin = anything not BitCoin (or maybe Ether, depending on who you ask)
+Annual Energy Consumption https://ethereum.org/energy-consumption/
+antifragility = ?? https://www.reddit.com/r/ethereum/comments/7beq39/ethereum_and_antifragility/
+Aptos https://aptosfoundation.org/whitepaper
+arbitrage bots https://x.com/RetroValix/status/2032439170333810778 https://bfmtimes.com/this-crypto-bot-turned-2000-into-176k-in-1-month-its-design-explained/
+Arbitrum
+Arbitrum -- thesis = "Your Chain, Your Rules" https://arbitrum.io/launch-chain
+Arweave = ?? https://2hsfyi4t5fiqdcanybdez4e4admrjeqghts22viz7uuo3d5k2nna.arweave.net/0eRcI5PpUQGIDcBGTPCcANkUkgY85a1VGf0o7Y-q01o/#/en/main https://www.arweave.org/ https://github.com/ArweaveTeam
+asset tokenization layer = ???
+assets -- top = ranking website https://www.coingecko.com/
+AT Protocol = an open, decentralized network for building social applications https://atproto.com/
+attacks -- 51% = where a group gains control of the majority of nodes = allow them to defraud the blockchain by reversing transactions and double spending https://ethereum.org/en/glossary/#51%-attack
+attacks -- 51% double spend, happens mainly on smaller chains ex. https://en.wikipedia.org/wiki/Ethereum_Classic#51%_double_spend_attacks
+attacks -- 7702 delegation to drainer https://x.com/wiimee/status/1985074040781070716
+attacks -- address poisoning = https://paragraph.com/@x-explore/address-poisoning-attack-a-continuing-threat https://x.com/specteranalyst/status/2002075668570309054 https://x.com/tayvano_/status/1605801004141727745
+attacks -- armed heist = extorting crypto ex. https://x.com/beausecurity/status/1972333331049312437
+attacks -- donation https://www.cyfrin.io/blog/solodit-checklist-explained-3-donation-attacks https://medium.com/@ankitacode11/part-3-protecting-smart-contracts-from-donation-attacks-a-guide-to-secure-eth-handling-b05561228ab2
+attacks -- ex. of recel https://thenewscrypto.com/crypto-hacker-behind-infini-exploit-returns-moves-32m-eth-in-fresh-transfers/
+attacks -- fake price (illiquid) = manipulating the price of a low-liquidity token to fake its value
+attacks -- kidnappings and Robberies = https://x.com/beausecurity/status/1995487124544491784
+attacks -- new vault https://www.halborn.com/blog/post/explained-the-resupply-hack-june-2025
+attacks -- oracle -- manipulation = pricing can be manipulated before calling a smart contract
+attacks -- seed phrase leak https://gizmodo.com/south-korean-police-lose-seized-crypto-by-posting-password-online-2000728191
+attacks -- spam tokens = sent to leaked address to pollute and maybe phish
+attacks -- supply chain -- case studies -- @solana/web3.js = https://www.mend.io/blog/the-solana-web3-js-incident-another-wake-up-call-for-supply-chain-security/
+attacks -- supply chain https://cointelegraph.com/explained/what-is-a-supply-chain-attack-in-crypto-and-how-to-prevent-it
+attacks -- transaction malleability (BitCoin) = old vulnerability in Bitcoin that caused the closure of Mt Gox https://en.wikipedia.org/wiki/Transaction_malleability_problem
+au -- Australian Privacy Foundation https://privacy.org.au/  https://www.smh.com.au/technology/no-warrants-needed-to-access-opal-card-records-20140708-zt02j.html
+au -- https://www.standwithcrypto.org/au
+automated market-making (AMM)
+automatic license plate reader (ALPR) https://www.aclu.org/campaigns-initiatives/get-the-flock-out
+bag check = what crypto do you hold?
+bags.tm = https://bags.fm https://steve-yegge.medium.com/bags-and-the-creator-economy-249b924a621a
+bear/bull markets = alternance of several months of falling prices (bear) and several months of rising prices (bull). Hard to time. Need to survive a bear market.
+beginner issues -- network mismatches https://www.reddit.com/r/CoinBase/comments/1jh0xgp/coinbase_wrapped_bitcoin_stuck_in_coinbase_wallet/
+Berachain
+big ideas -- balance of power = If we need powerful forces in society, then they should be balanced - either each force balanced within itself (eg. competition between companies), or between each other, or ideally both https://vitalik.eth.limo/general/2025/12/30/balance_of_power.html
+big ideas -- democratized finance
+big ideas -- internet-native money
+big ideas -- self-sovereignty
+big ideas / high minded ideals
+BIP -- statuses -- process = “Workflow > Progression through BIP Statuses > Deployed > Process BIPs”  “A Process BIP may change status from Complete to Deployed when... https://groups.google.com/g/bitcoindev/c/j4_toD-ofEc/m/TgSc-CRvAwAJ
+BIP https://www.ledger.com/academy/what-is-a-bitcoin-improvement-proposal-bip
+BIP-141 Segregated Witness "SegWit" https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+BIP-32 Hierarchical Deterministic Wallets https://www.ledger.com/academy/crypto/what-are-hierarchical-deterministic-hd-wallets
+BIP-39 seed phrases https://www.ledger.com/academy/bip-39-the-low-key-guardian-of-your-crypto-freedom
+BIPs "Bitcoin Improvement Proposals" = https://github.com/bitcoin/bips
+Bitcoin "2023, over 70% of BTC hadn’t moved in over a year." https://x.com/ArchNtwrk/status/1991527213473083614
+Bitcoin -- Alkanes = ???
+Bitcoin -- challenges -- miner subsidies "the block subsidy is disappearing fast. And it’s by design. How do you keep miners incentivized to secure the network when block rewards dwindle below the cost to mine and trend closer to zero?" https://x.com/ArchNtwrk/status/1991527213473083614
+BitCoin -- dev mailing list https://groups.google.com/g/bitcoindev
+Bitcoin -- forks https://en.wikipedia.org/wiki/List_of_bitcoin_forks
+Bitcoin -- fundamental principle = Bitcoin constitutes a peer-to-peer electronic cash system for the bitcoin currency.
+Bitcoin -- OCEAN mining https://ocean.xyz/about
+Bitcoin -- Ordinals = ???
+Bitcoin -- Runes = ???
+Bitcoin = the first decentralized cryptocurrency https://en.wikipedia.org/wiki/Bitcoin
+bitcoin:1NXvAo6tDoSxAqsrcNQ5PPJJM87gR4dHr7
+Blast
+block -- genesis = The first block in a blockchain, used to initialize a particular network and its cryptocurrency https://ethereum.org/en/glossary/#genesis-block
+block = batch of transactions
+blockchain -- accounts -- 1/3 EOA (Externally Owned Account) = key pair + balance, can send transactions
+blockchain -- accounts -- 2/3 SCA (Smart Contract Account) = conatins code, responds to transactions
+blockchain -- accounts -- 3/3 account abstraction (AA) = smart contract accounts that can initiate and execute transactions without needing an EOA. "Aims to make web3 so seamless that everyday users might not even notice they're using it, while still reaping all its benefits" https://blog.quicknode.com/eip-7702-explained-the-future-of-ethereum/
+blockchain -- accounts -- delegation = 7702
+blockchain -- accounts -- interactions -- connected = ex. connect wallet to a dapp
+blockchain -- accounts -- interactions -- imported = access private key (should rarely do this unless it's a wallet app)
+blockchain -- accounts -- interactions -- linked = ex. track activity "watch"
+blockchain -- accounts = ~wallet
+blockchain -- intelligence = for investigations, risk, and security https://www.chainalysis.com/
+blockchain -- permissioned = ex Hyperledger Fabric by IBM https://www.kaleido.io/blockchain-blog/what-is-hyperledger-fabric
+blockchain -- permissioned = private, use an access control layer to govern who has access to the network. Ex. facebook Libra/Diem https://en.wikipedia.org/wiki/Blockchain#Permissioned_(private)_blockchain
+blockchain -- permissionless = public, anyone can join and participate in the network. Ex. Bitcoin, Ethereum https://en.wikipedia.org/wiki/Blockchain#Permissionless_(public)_blockchain
+blockchain -- permissionless v. permissioned -- cons = implicit premanent 100% attack, either pirate or politically powerful actors may make decisions that favor some groups at the expense of others https://en.wikipedia.org/wiki/Blockchain#Disadvantages_of_permissioned_blockchain
+blockchain -- permissionless v. permissioned -- pros = "permissioned blockchains can guarantee a certain level of decentralization, if carefully designed, as opposed to permissionless blockchains, which are often centralized in practice" https://en.wikipedia.org/wiki/Blockchain#Permissioned_(private)_blockchain
+blockchain -- programmable chain = allow other activity than just payment, ex BTC vs Eth. Also provides more value (fees) due to economic activity https://x.com/ArchNtwrk/status/1991527213473083614
+blockchain -- transaction -- step 1 – Record the transaction
+blockchain -- transaction -- step 2 – Gain consensus = Most participants on the distributed blockchain network must agree that the recorded transaction is valid. Depending on the type of network, rules of agreement can vary but are typically established at the start of the network.
+blockchain -- transaction -- step 3 – Link the blocks = Once the participants have reached a consensus, transactions on the blockchain are written into blocks equivalent to the pages of a ledger book. Along with the transactions, a cryptographic hash is also appended to the new block. The hash acts as a chain that links the blocks together. If the contents of the block are intentionally or unintentionally modified, the hash value changes, providing a way to detect data tampering. Thus, the blocks and chains link securely, and you cannot edit them. Each additional block strengthens the verification of the previous block and therefore the entire blockchain. This is like stacking wooden blocks to make a tower. You can only stack blocks on top, and if you remove a block from the middle of the tower, the whole tower breaks.
+blockchain -- transaction -- step 4 – Share the ledger = The system distributes the latest copy of the central ledger to all participants.
+blockchain -- transaction = shows the movement of physical or digital assets from one party to another in the blockchain network. It is recorded as a data block and can include details like these: who, what, when, where, why, how much, preconditions
+blockchain -- transaction model = e.g. UTxO (BitCoin?) vs Account (Eth?) = an architecture decision with pro & cons https://www.kaleido.io/blockchain-blog/utxo-vs-account-model
+blockchain -- vs. network = blockchain is only a block of Bitchoin/Eth, and is only a database
+blockchain = database = stores data in chronologically consistent blocks that you can delete or modify only with consensus from the peer-to-peer network. Built-in mechanisms prevent unauthorized transaction entries and create consistency in the shared view of these transactions. As a result, you can use it to create an unalterable or immutable ledger for tracking all types of transactions https://ethereum.org/en/developers/docs/intro-to-ethereum/ https://aws.amazon.com/what-is/blockchain/
+blockchains -- arrow of time = the way of solving double spending ~forcing the "database" to only move forward (with PoW initially) https://mail.blockworks.com/p/bitcoin-s-arrow-of-time
+blockchains -- sizes = ex. Ethereum Mainnet 2025 2300Gb https://chainstats.org/
+BNB Chain
+boosters = ppl who try to pump a tech/coin
+bridging https://specs.optimism.io/interop/token-bridging.html
+builder codes = e.g. https://x.com/DeriveXYZ/status/2020993875482149111
+Cairo paper https://eprint.iacr.org/2021/1063.pdf
+cardano https://cardano.stackexchange.com/
+case study -- privacy https://newsletter.systemdesign.one/p/how-do-airtags-work
+CBDC "Central bank digital currencies" = cryptonite for crypto? (centralized) https://cointelegraph.com/magazine/cbdcs-kryptonite-for-crypto/
+CEX-like -- beware, ex. storing private keys in DB https://x.com/retardmode/status/1991067539539902942
+chain -- native currency = the native currency of a chain, ex. ETH for Ethereum, SOL for Solana
+chains -- &"that matters" = chain that matters. BSC, HyperEVM, Solana, Base, ETH L1, etc. (2025) https://x.com/dwr/status/1976029779783790680
+chains -- EVM-compatible
+chains -- list -- EVM-based https://chainlist.org/
+chains -- memecore https://memecore.com/ecosystem
+chains -- Solidity compatible
+chains -- sovereign blockchains aka. parachains = ??? (Polkadot)
+chains -- superchain (Optimism) = a network of chains that share bridging, decentralized governance, upgrades, a communication layer and more https://www.superchain.eco/ https://docs.optimism.io/superchain/introduction/superchain-explainer
+chains -- tribalism
+challenges -- crypto malaise = lack of tokenholder rights, slow revenue growth, and low-quality revenue
+challenges -- distribution
+challenges -- double spend
+challenges -- form vs substance = "the prosecution asked jurors to ignore the form of X — non-custodial, immutable smart contract code — and instead focus on the substance of what it enabled: money laundering"  In short, prosecutors accused X of using a technical innovation to cleverly sidestep the law. This is what the rest of crypto is often accused of, too. In substance, skeptics say,  tokens are stocks, protocols are companies, labs entities are c-suites, staking yields are dividends, token burns are buybacks, airdrops are sometimes IPOs, DAOs are general partnerships, and stablecoins are bank accounts. It’s often hard to argue with. https://blockworks.co/news/crypto-substance-vs-form
+challenges -- Governance = can be challenging in decentralized systems. It requires effective structures that involve community participation and don’t centralize power.
+challenges -- mistakes https://ia.acs.org.au/article/2026/crypto-exchange-makes--58bn-mistake.html
+challenges -- multibillion-dollar implosions of FTX, BlockFi, Celsius, and Voyager Digital
+challenges -- narrative-driven prices = sky-high prices during boom, goes down eventually
+challenges -- need to purchase crypto first, have to endure a steep learning curve with wallets and exchanges as well as additional costs "It’s really hard to get non crypto people to use it" https://cointelegraph.com/magazine/porn-payments-crypto-killer-app/
+challenges -- oracle = pricing can be buggy, especially under market stress
+challenges -- predictable transaction inclusion https://a16zcrypto.substack.com/p/what-blockchains-need-to-compete
+challenges -- quantum https://a16zcrypto.com/posts/podcast/quantum-computing-what-when-where-how-fact-vs-fiction/
+challenges -- Regulatory compliance = Web3 applications must follow existing data protection and financial security requirements.
+challenges -- scalability = a primary concern, because lack of trust is expensive: blockchain networks get very expensive and computationally demanding as data volumes increase
+challenges -- User experience and adoption = Complex interfaces and a steep learning curve limit mainstream adoption. Improving the user experience by designing intuitive interfaces that abstract the complexities of blockchain technology is essential.
+challenges -- UX -- "the chasm" = 87% of new wallet users leave within a week. Beautiful UI won't save you if the mental model is wrong. https://ethux.design/#/chasm
+challenges -- UX -- 1 User Onboarding = Make the first 5 minutes effortless.
+challenges -- UX -- 2 Transaction Clarity = Help users understand every transaction.
+challenges -- UX -- 3 Cross-chain Flow = Make moving between chains invisible.
+challenges -- UX -- 4 Safety & Security = Build trust through transparency and user control.
+challenges -- UX -- 5 Mobile & Connectivity = Bring wallet connection up to mobile standards.
+challenges -- UX -- 6 Accessibility = Open the door for 75% of non-English speakers.
+challenges -- UX -- 7 Protocol Design = Unlock better UX at the protocol layer.
+challenges -- UX -- 8 Daily Operations = Polish the flows people use every day.
+challenges -- UX https://ethux.design/
+client diversity = green > yellow > red https://clientdiversity.org/
+CLOB "Central Limit Order Book" = system where all buy and sell orders for an asset are collected, sorted, and matched based on price and time priority
+code is law "Hundreds of millions stolen in a spree of massive crypto heists - but the hackers say they broke no laws" https://www.journeyman.tv/film/8785
+coinbase = some bitcoin concept
+coins -- “If you own spot, you own the market.” https://x.com/TheWhiteWhaleV2/status/2018745502439964861
+colored coins = on-blockchain digital assets to represent custom currencies and financial instruments https://docs.google.com/a/buterin.com/document/d/1AnkP_cVZTCMLIzw4DvsW6M8Q2JC0lIzrTLuoWu2z1BE/edit
+compliance -- AU -- AUSTRAC https://www.austrac.gov.au/business/new-to-austrac
+compliance -- US
+concepts -- key pairs -- unicity = astronomically low chance of collision, cf. https://keys.lol/
+consensus -- &mechanisms = complete stack of ideas, protocols and incentives that enable a distributed set of nodes to agree on the state of a blockchain https://ethereum.org/en/developers/docs/consensus-mechanisms/
+consensus = a general agreement has been reached. Consider a group of people going to the cinema. If there is no disagreement on a proposed choice of film, then a consensus is achieved. If there is disagreement, the group must have the means to decide which film to see. In extreme cases, the group will eventually split https://ethereum.org/en/developers/docs/consensus-mechanisms/
+corporate blockchains = "Big companies launching L1s is kind of a rejection of the L2 thesis, but it’s even more of a rejection of the Solana thesis" https://blockworks.co/news/stripe-circle-l1s-solana
+corporate havens = easy to hide wealth and launder money e.g. Delaware https://www.a16z.news/p/charts-of-the-week-dexit-real-or https://en.wikipedia.org/wiki/Wyoming_as_a_corporate_haven https://www.icij.org/investigations/pandora-papers/the-cowboy-cocktail-how-wyoming-became-one-of-the-worlds-top-tax-havens/
+covenants tech = ???
+crapto = anything not BitCoin (maybe Ether?)
+creator coins -- vitlik opinion = https://x.com/VitalikButerin/status/2017956762347835488
+creator coins https://x.com/VitalikButerin/status/2017956762347835488
+cross-chain
+cross-chain -- chain abstraction
+cross-chain -- swaps = swidge??
+CRQC "Cryptographically Relevant Quantum Computer" = a quantum computer powerful and stable enough to break the public-key cryptographic algorithms that currently secure most of the world's digital communications and data.
+crypto cash machine
+crypto crashes (at the bottom) https://caladan.xyz/crypto-black-friday/
+crypto image problem -- crypto-adjacent = pejorative for "borderline crypto" = "borderline scam/shit"
+crypto image problem = "growing perception that most of the industry’s profits accrue to a small number of insiders at the expense of its retail investors.  (...)  especially unfortunate because a big part of crypto’s original appeal was that bitcoin was fair-launched and equally accessible to all.  " https://mail.blockworks.com/p/when-100m-isn-t-enough
+crypto signals = advice to invest https://www.tokenmetrics.com/blog/crypto-signals
+crypto-asset service providers” (CASPs)
+CryptoArt
+cryptocurrency -- legal definition -- AU = A type of currency that only exists in digital rather than physical form (not coins or notes, for example). Digital currency: can be exchanged for goods, services, or physical currency; is not issued by or under the authority of a government. https://www.austrac.gov.au/glossary/digital-currency-or-cryptocurrency
+cryptocurrency -- legality https://en.wikipedia.org/wiki/Legality_of_cryptocurrency_by_country_or_territory
+cryptocurrency = a medium of exchange secured by a blockchain-based ledger https://ethereum.org/en/developers/docs/intro-to-ether/#what-is-a-cryptocurrency
+CT "Crypto Twitter" = a subset of the popular social media platform Twitter, specifically focused on cryptocurrency, blockchain technology, and decentralized finance https://www.bitget.com/wiki/what-is-ct-in-crypto
+CT -- "manipulation caller" = genre on Crypto Twitter with a strong survivorship-bias problem
+culture -- "Be your own bank" and personally secure your assets
+culture -- "HODL"
+culture -- "horrifically adversarial environment. Anything that can be exploited will be exploited" @kayn
+culture -- "Ignoring sensible advice is what we do in crypto"
+culture -- "skill issue" = newbie hostile culture, learn by yourself etc.
+culture -- "to the moon"
+culture -- cypherpunk = (1993) "The Cypherpunks are actively engaged in making the networks safer for privacy" https://www.activism.net/cypherpunk/manifesto.html
+culture -- dark forest = detection means certain death at the hands of advanced predators, ex. frontrunning, wrench etc.  https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest
+culture -- slang -- degen = slang derived from "degenerate", typically refers to someone who engages in high-risk, speculative trading or investment with the potential for high rewards. It describes individuals who prioritize potential gains over calculated risks and are known for their aggressive and sometimes reckless approach.
+culture -- slang -- GM = good morning
+culture -- slang -- KOL = Key Opinion Leader = crypto influencer (can also be booster / rug puller)
+culture -- slang -- printing = making money?
+culture -- slang -- RICO'd = charged under the RICO Act or disappeared, went silent, or faced major legal trouble
+culture -- slang -- WAGMI = we're all gonna make it
+culture -- slang https://www.coinbase.com/en-au/learn/tip-and-tutorials/crypto-slang-guide
+custody -- against custodial exchanges = "n July 2025, @MEXC_Official froze over $3 million of my funds" https://x.com/TheWhiteWhaleHL/status/1959650308319047902
+custody -- non-custodial = "even if someone goes and nukes the platform, censors it, DDoS’s it, or takes down AWS, you can still go to the chain and get your assets back."
+custody -- partially custodial = ex. Infinex
+custody -- self-custody = funds are not waived
+D.Y.O.R. Checklist -- Scope the app = Is there a security audit? Check their smart contract on bcheck.edu. Are there any red flags? Check their smart contract on tokensniffer.com. Are there any red flags? Is their whitepaper clear with their project roadmap?
+D.Y.O.R. Checklist -- Scope the ecosystem = Are there any collaborations with other trusted projects?
+D.Y.O.R. Checklist -- Scope the team = Check their Twitter, Discord, Website, and other socials: Is the team present and responsive? Do community members seem real and engage with sustained excitement? Does their website explain what they do in a way you understand? Are the founders doxx’d (publicly identified)?
+D.Y.O.R. Checklist -- Scope the tokenomics = If the project has a token, make sure to check the following information:  What is the token utility, market cap, volume, and liquidity? Can you buy and sell the token? (Check Poocoin / Bogged / Dextools) Is the token listed on CoinGecko and CoinMarketCap? Is the token listed on exchanges? Is there fair and healthy distribution of tokens allocation?
+D.Y.O.R. Checklist = If you’d like to dig deeper into this project, here is a recommended list of a non-exhaustive steps you can take to Do Your Own Research. We don't affiliate with any of the sources. https://portal.arbitrum.io/
+DAO -- DUNA "Decentralized Unincorporated Nonprofit Association" https://a16zcrypto.com/posts/article/duna-for-daos/
+dapp "decentralized application" = app built on a decentralized network that combines a smart contract and a frontend user interface https://ethereum.org/en/developers/docs/dapps/#definition-of-a-dapp
+dapps -- cryptokitties
+dapps -- stores = https://dappradar.com/
+decentralization -- as a strategy = "& as a strategy, a kind of adaptive trait to resist censorship. It should be obvious from this definition that regulation is from this perspective a form of censorship." https://web.archive.org/web/20180702220151/https://blog.havven.io/defining-decentralisation-60afa00efa2a
+decentralization -- challenges -- incentives = ex. Bluesky. In theory P2P but in practice no one has incentives to do so https://kevinak.se/blog/be-wary-of-bluesky
+decentralization -- continuum = no perfect decentralization
+decentralization -- limits = hard to iterate, ex. Synthetix trade-off until PMF
+decentralization -- metric -- insider attack test = if your team itself tries to attack the system, how much will break, and how much harm could you do?
+decentralization -- metric -- the walkaway test = if your team and servers disappear tomorrow, will your application still be usable?
+decentralization = avoiding points of trust, minimizing censorship vulnerabilities and minimizing centralized infrastructure dependency
+decentralization doesn't matter = ??
+Decentralized Application (DApp) = A web page that relies upon one or many Web3 platform APIs which are exposed to the web page via the Wallet https://eips.ethereum.org/EIPS/eip-6963
+decentralized autonomous organization (DAO) = agreed-upon smart contract that automates decentralized decision-making over a pool of resources (tokens). Users with tokens vote on how resources get spent, and the code automatically performs the voting outcome.
+decentralized identifiers https://www.w3.org/TR/did-1.0/#identifier
+decentralized identity = technology that aims to give individuals more control and ownership over their digital identity. In traditional online systems, users often rely on centralized identity providers (like social media platforms or email services) to manage their identities and access various online services. Decentralized identity shifts the control of identity information back to the individual user. It uses globally unique identifiers associated with a decentralized identifier (DID) document. This document contains public keys, cryptographic material, and service endpoints related to identity. The technology uses selective disclosure to share specific identity attributes and minimize exposure to personally identifiable information (PII) during identity verification processes.
+DeFi
+DeFi -- lending / borrowing -- Compound, AAVE
+defi -- low-risk && = basic function of payments and savings, and well-understood tools like synthetic assets and fully collateralized lending, and the ability to exchange between these assets. https://vitalik.eth.limo/general/2025/09/21/low_risk_defi.html
+DePin = decentralized physical infrastructure networks
+DeSci = ???
+Difficulty Bomb = designed to push the Ethereum chain from proof-of-work consensus mechanism to proof-of-stake in the future by exponentially increasing the difficulty of mining
+digital asset treasury (DAT) companies -- Many DATs pay an outside asset manager just to hold on to their crypto for them
+digital asset treasury (DAT) companies = ??
+digital security -- solutions -- browser -- brave? https://www.reddit.com/r/browsers/comments/1j1pq7b/list_of_brave_browser_controversies/
+digital security -- solutions -- browser -- PrivacyTests = browser ranking https://privacytests.org/ (close to Brave)
+digital security -- solutions -- browser -- Tor
+digital security -- solutions -- https://www.privacyguides.org/
+digital security = an important pre-requisite https://securitylab.amnesty.org/digital-resources/
+Directed Acyclic Graph recalibration = ??
+Dogecoin https://cointelegraph.com/magazine/elon-musk-dogecoin-rally-bitcoin-ethereum-solana-predictions-trade-secrets/
+domain names -- Ethereum Name Service (ENS) domain names
+domain names -- Solana Name Service (SNS) domain names
+domain names -- Unstoppable = https://github.com/brave/brave-browser/wiki/Resolve-Methods-for-Unstoppable-Domains https://unstoppabledomains.com/
+domain names = .crypto https://support.unstoppabledomains.com/support/solutions/articles/48001181690-what-are-web3-domains-
+domain names = .eth
+domain names = .xyz introduced in 2014, but "top 5 for malicious domain registrations [2024]" https://en.wikipedia.org/wiki/.xyz
+dominance = coin dominance (BitCoin) https://www.coingecko.com/en/charts/bitcoin-dominance
+don't invest recklessly https://www.reddit.com/r/Bitcoin/comments/7gi55s/dont_invest_recklessly/
+dWebsite -- .limo https://eth.limo/
+dWebsite https://eth-limo.gitbook.io/documentation/introduction/what-is-a-dwebsite
+DYOR
+EIP-1559 (Type 2) transactions
+EIP-6963: Multi Injected Provider Discovery = Using window events to announce injected Wallet Providers https://eips.ethereum.org/EIPS/eip-6963
+Enjin
+ENS - history https://ens.swiss-knife.xyz/history
+ENS -- .limo https://eth.limo/
+Epstein close to BTC https://x.com/beincrypto/status/2018680040934769074
+ERC-1155 = fungible + non-fungible tokens = good for games currency + items
+ERC-20 = fungible tokens "each token of a given type is identical and interchangeable with another token of the same type"  https://trezor.io/learn/supported-assets/ethereum-layer-2-EVM/what-are-erc20-tokens
+ERC-721 = non-fungible tokens "each NFT is unique and has distinct properties that set it apart from others"
+ETC -- ECIP "Ethereum Classic Improvement Proposal"
+ETC = Ethereum Classic https://en.wikipedia.org/wiki/Ethereum_Classic
+eth.limo = provides a free, open-source gateway to decentralized web content built with the Ethereum Name Service (ENS) and various decentralized storage protocols https://ethlimo.substack.com/p/ethlimo-everything-youve-wanted-to https://eth-limo.gitbook.io/documentation
+Ethena
+Ether -- value? https://medium.com/ethhub/why-ether-is-valuable-2b4e39e01eb3
+Ethereum -- & Virtual Machine (EVM) = a decentralized virtual environment that executes code consistently and securely across all Ethereum nodes. Nodes run the EVM to execute smart contracts, using "gas" to measure the computational effort required for operations, ensuring efficient resource allocation and network security. https://ethereum.org/en/developers/docs/evm/
+Ethereum -- books -- "Mastering Ethereum" = +++ https://masteringethereum.xyz/
+Ethereum -- EIP "Ethereum Improvement Proposal" https://eips.ethereum.org/
+Ethereum -- ENS = .eth
+Ethereum -- ERC "Ethereum Request for Comment" https://eips.ethereum.org/erc
+Ethereum -- ether = the coin
+ethereum -- gas https://ethereum.stackexchange.com/questions/3/what-is-meant-by-the-term-gas
+Ethereum -- https://devcon.org/
+Ethereum -- L2 -- Base vs Arbitrum vs Optimism https://medium.com/@diteliti/base-vs-arbitrum-vs-optimism-who-will-win-the-l2-war-analysis-of-reach-retention-and-revenue-e7a87a1cc76f https://themarketperiodical.com/2024/10/13/base-vs-arbitrum-the-battle-for-ethereum-l2-dominance-heats-up/
+Ethereum -- L2 -- grades Emerging => Developing => Maturing => Robust https://ethereum.org/layer-2/networks/
+Ethereum -- L2 -- list https://ethereum.org/layer-2/networks/
+Ethereum -- L2 -- saturation point https://x.com/DefiIgnas/status/1951238740526993611
+Ethereum -- lean & = https://blog.ethereum.org/2025/07/31/lean-ethereum https://leanroadmap.org/ https://github.com/leanEthereum
+Ethereum -- platform
+Ethereum -- protocol
+Ethereum -- REth https://github.com/paradigmxyz/reth
+Ethereum -- roadmap (incl past) +++ https://ethereum.org/roadmap/
+Ethereum -- roadmap https://ethereum.org/en/roadmap/
+Ethereum -- s/o https://ethereum.stackexchange.com/questions?sort=votes
+Ethereum -- staking https://rocketpool.net/ https://x.com/Rocket_Pool
+ethereum -- top questions https://ethereum.stackexchange.com/questions?sort=votes
+Ethereum -- trustlessness "Ethereum was not created to make finance efficient or apps convenient. It was created to set people free — to empower anyone, anywhere to coordinate without permission and without trusting anyone they cannot hold accountable." https://trustlessness.eth.limo/general/2025/11/11/the-trustless-manifesto.html
+Ethereum -- trustlessness https://trustlessness.eth.limo/general/2025/11/11/the-trustless-manifesto.html
+Ethereum -- whitepaper https://ethereum.org/whitepaper/
+Ethereum 2.0 (Serenity) = users able to become a validator and help secure the network by providing computational resources and locking up 32 Ether per validator
+Ethereum = blockchain with a built-in fully fledged Turing-complete programming language that can be used to create "contracts" that can be used to encode arbitrary state transition functions, allowing users to create any systems we have not yet imagined, simply by writing up the logic in a few lines of code https://ethereum.org/en/whitepaper/#a-next-generation-smart-contract-and-decentralized-application-platform https://ethereum.org/en/what-is-ethereum/ https://aws.amazon.com/blockchain/what-is-ethereum/
+Ethereum L2 -- https://l2beat.com/
+everything is just fine = ad by coinbase, banned https://www.youtube.com/watch?v=l0bmJlrhRg4 https://www.theguardian.com/technology/2026/jan/28/coinbase-adverts-banned-uk-crypto
+EVM and non-EVM chains
+EVM network
+exchanges -- Binance -- against https://www.theguardian.com/business/binance
+exchanges -- Binance = largest cryptocurrency exchange in terms of daily trading volume of cryptocurrencies (Malta) https://en.wikipedia.org/wiki/Binance https://www.binance.com/
+exchanges -- CEX = centralized exchange = not really on-chain
+exchanges -- Coinbase = the largest US cryptocurrency exchange
+exchanges -- DEX = decentralized = ?? https://www.coingecko.com/en/exchanges/decentralized
+exchanges -- Mt. Gox
+exchanges -- proof of reserve https://www.binance.com/en/proof-of-reserves
+exchanges -- uphold https://uphold.com/ = the only one for Brave's BAT
+exchanges = cryptocurrency exchange
+fiat
+fiat ramps
+fiat-backed
+Flippening = the day Ethereum (ETH) finally becomes #1 coin https://flippening.org/
+fogo -- foggots
+Fogo -- sessions = a novel chain primitive that enable users to interact with apps on the chain without paying for gas or signing individual transactions https://docs.fogo.io/fogo-sessions.html
+Fogo = L1 built for DeFi applications. It is based on Solana's architecture and implements multi-local consensus to achieve minimal latency https://docs.fogo.io/
+Fogo https://www.fogo.io/
+fork -- hard
+fork -- soft
+frontrunning -- flashbots https://www.flashbots.net
+frontrunning -- generalized frontrunning bots https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest
+frontrunning -- protection -- https://protectrpc.flashbots.net/about
+FTX -- FTT = FTX's token
+FTX = cryptocurrency derivatives exchanges known for its bankruptcy https://en.wikipedia.org/wiki/Bankruptcy_of_FTX
+FTX crash
+fungibility
+fungibility -- non-fungible
+games -- some game in dev with own coin https://staratlas.com/
+games = always end up being a casino?
+gaming = report of web3 gaming https://messari.io/report-pdf/7fbdbf30ec57b9a7fa0d4df8b4193b768597a88b.pdf
+gaming https://www.immutable.com/
+gas
+gas -- market? https://blog.gas.network/
+gas account ?? https://x.com/phantom/status/1991271831458963629
+gas-optimized = a contract using less gas (how?)
+gelato
+gossip
+governance -- plutocracy? https://www.reddit.com/r/CryptoCurrency/comments/zy6koh/onchain_cryptocurrency_governance_is_an_example/
+governance -- skin in the game
+grand ideas -- no more bailouts https://nomorebailouts.org
+griefing attacks = no gain for the attacker, just issues for the victim. ex "Just create 100k accounts get $5 in each and burn it"
+https://freeromanstorm.com/
+https://memecore.com/ = ?
+https://web3bounty.io/
+https://www.archivalsurvival.com.au/collections/document-copy-paper
+humanity protocol = ? https://www.humanity.org/
+Hyperledger Fabric = open-source project with a suite of tools and libraries. Enterprises can use it to build private blockchain applications quickly and effectively. It is a modular, general-purpose framework that offers unique identity management and access control features. These features make it suitable for various applications, such as track-and-trace of supply chains, trade finance, loyalty and rewards, and clearing settlement of financial assets. https://aws.amazon.com/blockchain/what-is-hyperledger-fabric/
+Hyperliquid -- ? https://hyperunit.xyz/
+Hyperliquid -- app = https://app.hyperliquid.xyz/
+Hyperliquid -- HYPE
+Hyperliquid -- HyperBFT consensus
+Hyperliquid -- HyperCore
+Hyperliquid -- HyperEVM
+Hyperliquid = https://hyperfoundation.org/
+ICO (banned)
+ICO -- alternatives -- patrons https://cointelegraph.com/news/patronage-model-fix-crypto-fundraising-says-kain-warwick https://finance.yahoo.com/news/infinex-raises-67-7-million-140229371.html
+ICO -- boom
+ICO -- crackdown
+ICO -- mills = help ICO for a % then immediately sell
+ICO https://en.wikipedia.org/wiki/Initial_coin_offering
+illegal -- exchanges -- unlawfully facilitating the trading of several cryptocurrency tokens that SEC leadership (...) believed should have been registered as securities
+immutability
+incident -- response template https://frameworks.securityalliance.org/incident-management/incident-response-template/overview/
+Infinex "solve onchain user experience" https://infinex.xyz/
+inflationary rewards = ??
+InfoFi "Information Finance" -- Today’s dominant approach tracks social sentiment. Leading platforms scan Crypto Twitter for mentions, measure engagement rates, and rank projects by mindshare. These tools excel at capturing conversation volume but miss a fundamental truth: talk is cheap, especially in crypto https://caladan.xyz/layer3/
+InfoFi -- challenge, esp farmers and bullposters https://caladan.xyz/layer3/
+intermediation
+internet censorship -- 2025 Russia https://news.ycombinator.com/item?id=44392221
+InterPlanetary File System (IPFS) = a decentralized and distributed file storage system that provides a more efficient and resilient way to store and access content on Web 3.0. It gives a unique cryptographic hash (content-based address) to every file. It uses a peer-to-peer network, where each IPFS node acts as a client and server. Nodes cooperate to store, retrieve, and distribute content across the web, eliminating the need for centralized servers. https://docs.ipfs.tech/concepts/
+iota https://iota.stackexchange.com/
+ISO/TC 307 = standardization effort "Blockchain and distributed ledger technologies" https://www.iso.org/committee/6266604.html
+jargon 2026/04 https://mail.blockworks.com/p/grokking-the-new-lexicon
+Jurisdiction shopping
+kaito -- Yaps As Proof-of-Attention https://yaps.kaito.ai/social-card
+katana https://app.katana.network/
+kolibri.io = MEV sharing RPC
+L1
+L2 -- Rollup ??
+L2 -- vs L1 2026/03 https://blog.ethereum.org/en/2026/03/23/l1-l2-ethereum
+launchpad tokens
+launchpads
+layer 0 = ??? https://www.coingecko.com/en/categories/layer-0-l0
+layer 2 = https://vitalik.eth.limo/general/2024/05/29/l2culture.html
+Libra 2.0 https://x.com/MikeZajko/status/2029233637925818855
+licenses -- MiCA license in the European Union
+licenses -- Money Service Business (MSB) = license in the U.S
+liquidity -- & drive = ??
+liquidity -- & mining = ??
+liquidity -- & pool = ?? https://support.infinex.xyz/en/articles/9924193-liquidity-pools
+liquidity -- deep &
+liquidity -- incentives = attracting liquidity and retaining it are fundamentally different challenges https://caladan.xyz/report-the-ten-commandments-of-liquidity-incentives/
+Litecoin = "You can dislike me all you want, but I was here before most of your pet projects and I will be here after you die. I'm not fiat and I'm not some software to fill the pockets of VC's. I'm sound money and I don't bend the knee to anyone."
+mantras of blockchain -- Don’t trust, verify
+mantras of blockchain -- not your keys, not your coins = see custodiality. only keep bitcoin in exchanges for as long as you need to https://blockworks.co/news/bitomat-exchange-deleted-17000-bitcoin
+market maker -- fraud = easy to move the price, esp. ICO -> need right incentives
+market maker -- illicit https://www.justice.gov/usao-ndca/pr/ten-foreign-nationals-charged-international-operation-targeting-cryptocurrency-market
+marketing -- https://etherscan.io/
+Markets in Crypto Assets (MiCA) regulation to oversee the crypto industry
+Mastercard https://www.mastercard.com/us/en/news-and-trends/stories/2026/mastercard-crypto-partner-program.html
+MegaETH = MegaETH is real-time Ethereum, streaming transactions at lightning speed: 10-millisecond latency and over 20,000 transactions per second https://x.com/megaeth
+memecoin
+memecoins -- $WHITEWHALE  https://beincrypto.com/white-whale-solana-meme-coin-analysis/ https://whitewhale.watch/
+memecoins -- bucketing / distribution tiers -- 1 Whales
+memecoins -- bucketing / distribution tiers -- 2 Sharks
+memecoins -- bucketing / distribution tiers -- 3 Dolphins
+memecoins -- bucketing / distribution tiers -- 4 Fishes
+memecoins -- bucketing / distribution tiers -- 5 Crabs
+memecoins -- bucketing / distribution tiers -- 6 Shrimps, krill
+memecoins -- spirit "the entire point of a meme is that it doesn’t try to dress up as something it’s not. Many projects fail because they try to pretend to be more than what they are" https://beincrypto.com/white-whale-solana-meme-coin-analysis/
+memecoins -- status 2025 https://www.coingecko.com/research/publications/state-of-memecoins-2025
+MetaDAO = “a place for crypto-native enterprises to raise money that doesn’t suck.” https://docs.metadao.fi/benefits/founders
+metas -- revenue = have revenue, generate a token, buy back
+metrics -- active addresses count
+metrics -- TPS "Transactions Per Second"
+metrics -- TVL "Total Value Locked"
+metrics = to evaluate a chain / project
+MEV -- or rather TOV = https://x.com/buffalu__/status/2041541434008866970
+MEV https://x.com/buffalu__/status/2041541434008866970
+mining
+mining -- algorithms -- Ethash = used by Ethereum when PoW https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/ethash/
+mining -- algorithms -- goals -- ASIC-resistance = the benefit from creating specialized hardware for the algorithm should be as small as possible
+mining -- algorithms -- goals -- Full chain storage = mining should require storage of the complete blockchain state (due to the irregular structure of the Ethereum state trie, we anticipate that some pruning will be possible, particularly of some often-used contracts, but we want to minimize this).
+mining -- algorithms -- goals -- Light client verifiability = a block should be efficiently verifiable by a light client.
+mining -- algorithms -- goals = https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/#dagger-hashimoto
+mining -- algorithms -- Scrypt, Dagger, Hashimoto, Dagger-Hashimoto = https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/ https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/#dagger-hashimoto
+mining -- algorithms = https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/
+mining -- cost = quickly goes up, hence pools https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/#cost-of-mining
+mining -- pool https://casebitcoin.com/critiques/china-controls-bitcoin
+mining -- pooled
+mining -- profitability = complex, ex. using cheap power, stolen computing etc.
+mining = process of creating a block of transactions to be added to a blockchain using proof-of-work  https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/
+minting -- burning = remove from circulation permanently
+minting = https://ethereum.org/en/developers/docs/intro-to-ether/#minting-ether
+mixer / tumbler https://en.wikipedia.org/wiki/Cryptocurrency_tumbler
+Monad = high-performance Layer-1 blockchain designed to deliver high throughput with full EVM compatibility
+monero https://monero.stackexchange.com/
+movement
+Mr Average = "You must be below the radar belt, you must be essentially invisible to the government, the spooks dossier on you must read Mr Average and be entirely wholesome. Then you must have one or more alter-egos, for your real interests" https://mailing-list-archive.cryptoanarchy.wiki/archive/1998/01/3fa930df6253cd6f9cfb56bdbf16164513d3f3a19ea414c492ecdd7aa0ed6614/
+multi-chain https://arxiv.org/abs/2112.01472
+multichain strategy
+multisig
+namecoin = non-fungible assets such as domain names http://namecoin.org/
+narratives = to bring interest into crypto
+near https://www.near.org/
+NEAR intents = a new type of transaction paradigm where "intents" — user goals or desired outcomes — can be executed by agents on behalf of users, abstracting away blockchain complexity and enabling powerful cross-chain and AI-native applications https://github.com/near/intents https://messari.io/copilot/share/understanding-near-intents-03a2c85b-3e29-47c3-8fb8-a1de5da81b3c
+network effect = when a product or service becomes more valuable to users as more people use it. In industries where network effects are strong, market leaders often benefit disproportionately, and the “winner takes most” or even “winner takes all” scenarios are common.
+networks -- Avalanche C-Chain
+networks -- Base
+networks -- Bitcoin Mainnet
+networks -- BNB Smart Chain
+networks -- Ethereum Mainnet
+networks -- Filecoin EVM Mainnet
+networks -- Filecoin Mainnet
+networks -- Neon EVM
+networks -- network REV (Real Economic Value) = a blockchain metric measuring total user demand for transactions, calculated as the sum of in-protocol transaction fees and out-of-protocol tips (often MEV). It serves as a "top line" revenue metric for chains like Ethereum, representing the total value paid for blockspace execution https://blockworks.com/news/valuing-blockchains-rev-debate
+networks -- Optimism
+networks -- Polygon Mainnet
+networks -- Solana Mainnet Beta
+networks -- Tempo https://tempo.xyz/
+networks -- Zcash Mainnet
+networks = groups of connected computers that communicate using a protocol. There is only one Mainnet, but independent networks conforming to the same protocol rules can be created for testing and development purposes. There are many independent "networks" that conform to the protocol without interacting with each other. You can even start one locally on your own computer for testing your smart contracts and web3 apps. https://ethereum.org/developers/docs/networks/
+NFTs -- "BAYC wall" = pricier than BAYC
+NFTs -- "buy before the news"
+NFTs -- 2023 war https://blockworks.co/news/blur-opensea-royalties-nft-creators
+NFTs -- as collateral -- NFTti
+NFTs -- blue chip = "most wanted" "have taken hold" "demonstrated high and stable market value" https://dappradar.com/blog/what-are-blue-chip-nft-collections
+NFTs -- Bored Ape Yacht Club (BAYC) = https://dappradar.com/blog/what-is-bored-ape-yacht-club
+NFTs -- collections -- dominance = https://dappradar.com/rankings/nft/collections
+NFTs -- CryptoPunks = the OG. 24x24 pixel art images, generated algorithmically. Most are punky-looking guys and girls, but there are a few rarer types mixed in: Apes, Zombies and even the odd Alien. Every Punk has their own profile page that shows their attributes as well as their ownership/for-sale status https://cryptopunks.app/ https://github.com/larvalabs/cryptopunks
+NFTs -- ERC-721 https://eips.ethereum.org/EIPS/eip-721
+NFTs -- games -- CryptoKitties
+NFTs -- games -- Decentraland https://decentraland.org/
+NFTs -- games -- Gods Unchained
+NFTs -- https://www.artblocks.io/
+NFTs -- marketplaces -- Blur
+NFTs -- marketplaces -- OpenSea
+NFTs -- marketplaces -- Rare, SuperRare
+NFTs -- marketplaces = https://dappradar.com/blog/best-nft-marketplaces-to-buy-sell-nfts
+NFTs -- OpenSea Flagship Collection = https://opensea.io/OpenSeaFlagshipCollection https://opensea.io/learn/nft/the-opensea-flagship-collection https://blockworks.co/news/opensea-nft-archive-with-1m-acquisition-plan
+NFTs -- Patrons -- locked/unlocked
+NFTs -- Patrons = ~shares with no return = not a security = not under law, but get exclusive rewards and benefits? https://cointelegraph.com/magazine/crypto-four-years-grow-cant-be-shut-down-kain-warwick-infinex/
+NFTs -- royalties -- issue https://mirror.xyz/blurdao.eth/vYOjzk4cQCQ7AtuJWWiZPoNZ04YKQmTMsos0NNq_hYs
+NFTs -- secondary = derived from another one, ex. BAYC -> BAKC (kennel), BAYC -> MAYC (mutant)
+NFTS -- simple profile picture (PFP) = simple NFT usable as a profile picture https://dappradar.com/blog/best-top-nft-pfp-avatars
+NFTs -- spam score https://web.archive.org/web/20230924010632/https://blog.simplehash.com/blog/how-simplehash-fights-nft-spam-using-ai-and-crowdsourcing
+NFTs -- standards -- ERC-1155 = https://eips.ethereum.org/EIPS/eip-1155#non-fungible-tokens
+NFTs -- standards -- ERC-20 = the original https://dappradar.com/blog/ten-things-everybody-should-know-about-nfts
+NFTs -- standards = https://transak.com/blog/popular-nft-types https://scand.com/company/blog/nft-standards-erc-721-vs-erc-1155-and-beyond/
+NFTs -- traits
+NFTs -- wrapping = taking an existing NFT and creating a new type of fungible token that represents ownership of that NFT. Wrapping makes it possible to use a non-fungible token (like a CryptoPunk) on platforms or in ecosystems that primarily support fungible tokens, like NFT marketplaces and decentralized finance applications https://721.cryptopunks.app/
+NFTs = https://www.youtube-nocookie.com/embed/Xdkkux6OxfM
+node
+node -- non-validating = may still perform other functions, such as relaying transactions, storing a copy of the blockchain, or providing read access to the network
+node -- specs = ex. Hyperliquid non-validating: 16 vCPUs / 64GB RAM / 550GB SSD as minimum, running in Tokyo for lowest latency, writes 100GB of data per day locally https://github.com/hyperliquid-dex/node
+node -- validating = a node that participates in the consensus mechanism of a blockchain network by verifying and validating transactions and blocks These nodes play a crucial role in maintaining the integrity and security of the blockchain. They ensure that transactions are legitimate, adhere to the network's rules, and are added to the blockchain in a valid manner. Validating nodes typically require more resources, such as computational power and storage, compared to non-validating nodes.
+node -- validating vs. non-validating
+nodes -- & discovery = https://en.bitcoin.it/wiki/Satoshi_Client_Node_Discovery
+nodes -- & mempool = Nodes store transactions waiting to get into a block in their memory pool (or mempool) after receiving them, complex rules https://en.bitcoin.it/wiki/Vocabulary
+nodes -- & policy = Any rule which a node can change freely at will, ex. allow/blocklist, fees etc.
+nodes -- full &
+nodes -- running -- solutions -- https://dappnode.com/
+nodes -- seed = Nodes whose IP addresses are included in the Bitcoin client for use during a new installation when the normal bootstrapping process through IRC wasn't possible.
+nodes -- super & = A participant in a p2p network which connects to as many other nodes as possible
+normie friendly = to break out of the limited circle
+North Korea = crypto thiefs. 2024-12 = North Korean hackers had stolen $1.34bn of cryptocurrency in 2024, a record total and double what they stole the year before (Chainalysis)
+on-chain -- off-chain = not really on the blockchain, ex. exchanges, custodial wallets = pay for nothing, may not have the reserves, may not be able to survive a panic
+on-chain = also describes a provider of services that operates directly on a blockchain = not a CEX
+on-chain = really on the blockchain, vs. off-chain
+on-chain protocols = such as Ethena, Synthetix, Wormhole
+on-chain randomness = ??? https://www.pyth.network/entropy
+on/off ramp -- off-ramp = sell crypto for fiat
+on/off ramp -- on-ramp = buy crypto with fiat
+onramp -- solutions = https://apidocs.bridge.xyz/get-started/guides/move-money/virtualaccounts https://docs.onramper.com/
+open source -- benefits -- code being inspectable = to ensure security
+open source -- benefits -- enabling permissionless third-party improvements
+open source -- benefits -- reducing the risk of proprietary lock-in
+open standards -- striving for interoperability. If you want to introduce a new feature that is not well-served by existing standards, write a new proposal in collaboration with others. Applications can be rated by which proposals they are compatible with.
+Optimism
+orange pill = https://bitcoinmagazine.com/culture/what-does-it-mean-to-orange-pill-someone
+ossification
+P2WPKH-nested-in-P2SH (BIP 141) serialization format for segregated witness transactions.
+passkey
+Pay-to-script-hash (P2SH)
+peer-to-peer -- distributed hash table https://en.wikipedia.org/wiki/Kademlia#System_details
+perps -- Auto-Deleveraging (ADL) = When massive long liquidations occur simultaneously without new willing counterparties, the system closes profitable positions to maintain system solvency, ranking positions by... https://caladan.xyz/crypto-black-friday/
+perps -- hyperliquid
+perps = perpetual futures
+physical cryptocurrency -- woodchain = more of a mind experiment https://woodcoincrypto.com/
+Plasma https://www.plasma.to/
+Polygon
+polymarkets -- arbitrage https://x.com/browomo/status/2018630984015483061
+ponzi https://www.sec.gov/enforcement-litigation/litigation-releases/lr-25794
+Popmart = physical NFT
+portfolio -- viewer https://1inch.com/portfolio/overview/address/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+prediction markets -- distribution = what is betted on https://predictions.paradigm.xyz/
+prediction markets -- insiders https://x.com/peterjliu/status/2024901585806225723 https://www.reddit.com/r/OpenAI/comments/1rgg1gt/openai_fires_an_employee_for_prediction_market/
+predictions https://polymarket.com/
+price oracles = pricing of some resource
+privacy -- "I Verified My LinkedIn Identity. Here's What I Actually Handed Over" https://thelocalstack.eu/posts/linkedin-identity-verification-privacy/
+privacy -- Google handing to gvt without warning/delay https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data
+privacy-maximalists vs normal non-technical user
+programmable finance
+programmable recovery = ??
+proof of personhood -- World ID XXX Sam Altman https://world.org/world-id
+proof of personhood = https://world.org/blog/world/proof-of-personhood-what-it-is-why-its-needed
+proof-of -- 1999 proof of work (PoW) = keep chain secure by needing 51% of the network's computing power to defraud the chain. This would require such huge investments in equipment and energy; you're likely to spend more than you'd gain. https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/ https://en.wikipedia.org/wiki/Proof_of_work
+proof-of -- 2011 proof of stake (PoS) = keep chain secure by needing to destroy tokens to control the chain + rewards incentives https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/
+proof-of -- 2017 proof of authority (PoA) = modified version of proof-of-stake (PoS) that is a reputation-based consensus algorithm instead https://ethereum.org/en/developers/docs/consensus-mechanisms/poa/
+proof-of -- 2018 proof of history -- https://medium.com/solana-labs/proof-of-history-a-clock-for-blockchain-cf47a61a9274 https://quark.house/en/2024/12/11/what-is-proof-of-history-poh/
+proof-of = component in consensus mechanisms that protect against Sybil attacks by making it "crypto-economically" not worth it to do a Sybil attack https://ethereum.org/en/developers/docs/consensus-mechanisms/
+Provider Discovery Library = A library or piece of software that assists a DApp to interact with the Wallet https://eips.ethereum.org/EIPS/eip-6963
+public key cryptography
+pump.fun -- manipulation = pump.fun is rigged by the house (as expected) https://x.com/WhiteWhaleLabs/status/2045184600029254102
+quantum procrastinators
+r/CryptoCurrency https://www.reddit.com/r/CryptoCurrency/
+read/write/own paradigm = data creators own and control their own data and have a greater say in how it is used and managed
+RICO Act "Racketeer Influenced and Corrupt Organizations Act" = a U.S. federal law originally created in 1970 to combat organized crime (like the Mafia). It allows prosecutors to charge people or organizations who engage in a pattern of criminal activity (called racketeering) as part of an enterprise — even if they didn’t personally commit every crime.
+risks -- cryptostealer -- example https://gist.github.com/jdstaerk/9e73837f0ba23735ef04a736c6b97c09
+risks -- private key loss -- ex. https://bitcoinhistorynl.beehiiv.com/p/17-000-btc-lost https://blockworks.co/news/bitomat-exchange-deleted-17000-bitcoin
+role blind and clear signing = ???
+rotation = swapping crypto around cycles, ex. BTC-to-ETH
+RPC = interface to interact with a blockchain through a node
+RWAfi = real-world asset finance
+sanctionned by US https://en.wikipedia.org/wiki/Nicolas_Guillou
+Satochi
+satoshi coins https://bitslog.com/2013/04/17/the-well-deserved-fortune-of-satoshi-nakamoto/
+Satoshi Nakamoto https://gnusha.org/pi/bitcoindev/6EC9DDF352DC4838AE9B088AB372428A25E1F42A@DS04/ https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-nakamoto-identity-adam-back.html
+scalability
+scalability -- transactions per second
+scams -- (sort of) example of sweeping the market by a big player https://x.com/mlmabc/status/1960462635314635207
+scams -- artificially inflating trading volumes
+scams -- ex. Celsius = a risky crypto lending venture masquerading as a safe, bank-like platform that provided unusually high interest on crypto savings accounts
+scams -- exchanges -- diverting customer funds
+scams -- exchanges -- misleading investors about its surveillance controls
+scams -- fake trading = accepting order not backed by real stuff ex. MEXC
+scams -- internal order desk = selling sth not liquid yet (fake trades) https://x.com/TheWhiteWhaleV2/status/2008648520748986422
+scams -- pig butchering = people are lured by flirtatious strangers online into investing in fraudulent cryptocurrency trading platforms. Victims are coached to invest more and more money into what appears to be an extremely profitable trading platform, only to find their money is gone when they wish to cash out. https://yro.slashdot.org/story/25/05/30/2151248/us-sanctions-cloud-provider-funnull-as-top-source-of-pig-butchering-scams
+scams -- ponzi schemes -- expectation of new people depositing, once new people stop depositing, the system can collapse within hour
+scams -- pyramid scheme
+scams -- rug pull -- checker https://rugcheck.xyz/
+scams -- rug pull = disappear after cashing early success
+scams -- wash trading = artificially inflating volume https://bitfinexed.medium.com/wash-trading-bitcoin-how-bitfinex-benefits-from-fraudulent-trading-8bd66be73215
+seasons -- autumn = ex. altcoin autumn
+seasons -- summer = ex. DeFi summer
+seasons -- winter = ex. AI winter
+secret splitting -- 2-of-3 multisig
+secret splitting -- https://groups.google.com/g/bitcoindev/c/8LkdxVc_nI0
+secure enclave https://whitepaper.turnkey.com/
+securities -- Howey Test -- four key criteria -- 1 Investment of Money: An investor must put their money into the venture.
+securities -- Howey Test -- four key criteria -- 2 Common Enterprise: There must be a shared investment pool or a group of individuals collectively participating in the venture.
+securities -- Howey Test -- four key criteria -- 3 Expectation of Profit: The investor anticipates a financial return from the investment.
+securities -- Howey Test -- four key criteria -- 4 Reliance on Efforts of Others: The investor's profits are primarily derived from the efforts of the promoters or a third party, not their own efforts.
+securities -- Howey Test = a legal framework used to determine if a transaction or scheme constitutes an "investment contract" and is therefore subject to U.S. securities law https://gordonlaw.com/learn/howey-test-is-your-token-security/
+securities -- jurisprudence -- SEC 2018 "If the network on which the token or coin is to function is sufficiently decentralized — where purchasers would no longer reasonably expect a person or group to carry out essential managerial or entrepreneurial efforts — the assets may not represent an investment contract." https://web.archive.org/web/20180702220151/https://blog.havven.io/defining-decentralisation-60afa00efa2a
+security -- token sniffer https://tokensniffer.com/
+seed phrase
+seed phrase -- split -- Codex32 https://secretcodex32.com/
+seed phrase -- split -- PenLock penlock.io
+seed phrases = "Traditional crypto security places an enormous burden on users. Memorise this 24-word phrase. Don't lose it. Don't screenshot it. Don't store it in the cloud. If you fail at any of these, your funds are gone forever."
+Shamir's secret sharing (SSS) = an efficient secret sharing algorithm for distributing private information (the "secret") among a group, first developed by Adi Shamir in 1979. The secret cannot be revealed unless a minimum number of the group's members act together to pool their knowledge https://en.wikipedia.org/wiki/Shamir%27s_secret_sharing
+silk road / Ross Ulbricht
+slippage = the difference the expected price of a trade against the actual executed price with slippage being most common in times of high volatility, low liquidity or when there is insufficient liquidity to meet a large order https://support.infinex.xyz/en/articles/9719898-crypto-terms#h_cd4c6697b8
+slippage https://github.com/jup-ag/dynamic-slippage-config
+smart contract -- auditing = https://iosiro.com/services/smart-contract-auditing
+smart contract -- bug = ex. of loss of everything
+smart contract -- developers https://secure-contracts.com/index.html
+smart contract -- secure https://secure-contracts.com/index.html
+smart contract -- uninitialized https://www.reddit.com/r/ethereum/comments/9083sn/eip999_drama_explained_simply_catch_up_discuss/
+smart contract = more complex applications involving having digital assets being directly controlled by a piece of code implementing arbitrary rules http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/idea.html
+smart contract = self-implementing contracts with predefined rules written in code. They automatically enforce the terms of the agreement when certain conditions are met. For example, if a contract says that ownership of an item transfers to whoever pays for it, you simply send the asking price to that contract. The ledger then automatically updates by using a transaction in the next block to reflect you as the new owner.
+smart contracts -- attacks https://red.anthropic.com/2025/smart-contracts/
+smart contracts -- audit = https://sentinel.sigintzero.com
+smart property = ownership of an underlying physical device https://en.bitcoin.it/wiki/Smart_Property
+so you want to build a crypto startup? = https://medium.com/dragonfly-research/so-you-want-to-build-a-crypto-startup-8904ca300794
+social tokens = digital assets issued by creators to monetize their content and engage with their fan base https://www.coinbase.com/en-au/learn/crypto-basics/what-are-social-tokens-and-how-do-they-redefine-value-in-the-creator-economy
+Solana -- advocacy = fastest, cheapest, designed from the ground up to maximise the throughput of the chain https://blog.labeleven.dev/why-solana
+Solana -- challenges -- superminority = Solana's validator set has been criticized because a relatively small number of validators (sometimes as few as 19–20) have historically controlled over 33% of staked SOL — meaning a small group could theoretically collude to halt the network.
+Solana -- gaming https://www.playsolana.com/about
+Solana -- Meteora platform ??
+Solana -- scanner https://solscan.io/
+Solana -- SVM = Solana Virtual Machine
+Solana -- vision -- “everything can fit in one computer”
+solana = better Ethereum? https://solana.com/learn/what-is-solana
+Solana https://medium.com/solana-labs
+Solana network
+solidity -- ABI
+solidity -- calldata = ??
+solidity -- events
+Solidity -- ex. of abuse + frontrunning https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest
+Solidity -- known bugs https://etherscan.io/solcbuginfo
+solidity https://en.wikipedia.org/wiki/Solidity
+solo validating
+solutions -- "the only nationally chartered bank built to enable developers and builders to create new financial products" https://column.com/
+solutions -- Amazon Managed Blockchain (AMB) = https://aws.amazon.com/managed-blockchain/
+solutions -- ccxt = CryptoCurrency eXchange Trading Library https://github.com/ccxt/ccxt
+solutions -- Cloudflare -- Ethereum gateway https://developers.cloudflare.com/web3/ethereum-gateway/
+solutions -- Cloudflare -- IFPS
+solutions -- CoinGecko = ranking website https://www.coingecko.com/
+solutions -- Geth (Go Ethereum) = an open source blockchain protocol implementing the standard Ethereum specification plus other useful features such as a pluggable consensus engine. Geth is among the most widely used implementations of Ethereum nodes. It supports both the standard DAG based Proof-of-Work consensus and Proof-of-Authority (PoA) consensus with its implementation called Clique https://github.com/ethereum/go-ethereum
+solutions -- hardhat = Ethereum development environment https://github.com/NomicFoundation/hardhat
+solutions -- https://www.infura.io/
+solutions -- https://www.moderntreasury.com/
+solutions -- https://x.com/meshpay ?
+solutions -- Lighter = a decentralized trading platform that is designed to deliver unmatched security and scale. Lighter is the first and only exchange that provides verifiable matching and liquidations, while operating at the best in class traditional exchange level performances.
+solutions -- phishing detect https://github.com/MetaMask/eth-phishing-detect
+solutions -- Swapper
+some goals = immune to inflationary abuse, resistant to seizure, and adaptable to global economic growth https://woodcoincrypto.com/whitepaper/
+Sonic
+stablecoin -- algorithmic = no reserve
+stablecoin -- peg -- depeg = can't withstand a bank run. https://www.theblock.co/post/261727/large-cap-stablecoins-have-depegged-609-times-this-year-moodys-analytics-says
+stablecoin -- peg https://privatebank.jpmorgan.com/apac/en/insights/markets-and-investing/demystifying-stablecoins
+stablecoins -- pro/cons https://mail.blockworks.com/p/thursday-links-448a
+staking -- active / passive / pooled / delegated / active / liquid https://www.britannica.com/money/what-is-crypto-staking
+staking -- chain-agnostic
+staking -- community -- lido https://operatorportal.lido.fi/modules/community-staking-module#block-3ded10dd080f4967af88552cf76d2553
+staking -- Liquid staking derivatives (LSD) = ??? https://notes.ethereum.org/@djrtwo/risks-of-lsd
+staking -- Liquid Staking Token (LST) = ex. stETH from Lido
+staking -- types -- solo / non-custodial / custodial / liquid https://www.sec.gov/newsroom/speeches-statements/corpfin-certain-liquid-staking-activities-080525
+staking = https://www.britannica.com/money/what-is-crypto-staking https://www.coinbase.com/en-au/learn/crypto-basics/what-is-staking https://www.bitpanda.com/academy/en/lessons/what-is-staking/
+STARK = ?
+stylometry
+Succinct Proofs of Random Access (SPoRAs) https://github.com/ArweaveTeam/arweave/releases/tag/N.2.3.0.0
+superminority -- Nakamoto Coefficient = directly measures the superminority = minimum number of validators needed to reach 33.3% of stake. A higher Nakamoto Coefficient = more decentralized and harder to attack.
+superminority -- threshold 1 = 1/3 + 1 of the stake is enough to break the network.
+superminority -- threshold 2 = ⅔ (66.7%) of stake is enough to control the consensus
+superminority = a group of validators that collectively control enough stake to disrupt or halt a blockchain network, without necessarily having enough to control or manipulate it outright
+sUSD = USD on Synthetix
+swidge -- bridge
+swidge -- provider
+swidge -- swap https://swap.defillama.com/
+swidge = "swap and bridge" https://support.infinex.xyz/en/articles/10336734-how-to-swidge https://terablock.com/swidge
+Sybil attack = actor pretending to be a lot of actors to control the chain. Resistance to this type of attack is essential for a decentralized blockchain and enables miners and validators to be rewarded equally based on resources put in. Proof-of-work and proof-of-stake protect against this. https://ethereum.org/en/developers/docs/consensus-mechanisms/#sybil-chain
+Sybil resistance = measures how a protocol fares against a Sybil attack.
+Synthetix -- centralization https://www.reddit.com/r/ethereum/comments/bzxxv2/synthetix_is_a_disaster_waiting_to_happen_devs/
+Synthetix -- https://sips.synthetix.io/
+Synthetix = "Perps on Mainnet; Onchain custody. Offchain performance." https://www.synthetix.io/ https://paragraph.com/@kain/and-here-you-thought-we-were-dead
+talent -- network https://careers.near.org/talent-network
+talent pools -- New-York = #1 many finance turned to crypto
+talent pools -- San Francisco = #3, focused on AI / robotics
+techno-optimism
+Telegram Distribution Layer https://tac.build/blog/deploy-evm-distribute-on-telegram
+terminology -- chain -- & runtime = All chains operate on a runtime that dictates the functionality and features of the chain, it’s smart contract support, etc. Some chains have a common chain runtime, notably those in the EVM ecosystem: Ethereum itself, Avalanche, Polygon... Ex. of runtimes: evm, svm, nearIntents
+terminology -- chain -- asset = an asset on a specific chain, ex. ETH on Ethereum, USDC on Solana, etc.
+terminology -- chain = a chain/blockchain. Ex. BitCoin, Ethereum, Arbitrum, Base, Optimism, Polygon, Solana... Testnets are considered different chain. aka. “networks” (EVM) or “clusters“ (Solana)
+terminology -- token = not recommended, unclear. Prefer "asset"
+TG = token generation?
+TGE / ICO / liquidity incentives -- 10 commandments for success https://caladan.xyz/wp-content/uploads/2025/10/Caladan_Mercenary_Report.pdf
+thesis -- Solana = ??
+thesis -- superapp = Infinex https://mirror.xyz/kain.eth/HbaT4MYs6uZXVymRJDRSyZpCFVMAoyeBSv7wVrAQe2o  https://paragraph.com/@kain/the-superapp-thesis
+thesis = some sort of hypothesis a project believes in / is based on
+threshold signing systems
+token gating -- examples for brands https://www.arianee.com/post/what-is-token-gating
+token gating = exclusive content to token (F/NF) holders https://www.coinbase.com/en-au/learn/crypto-basics/what-is-token-gating-and-what-are-the-benefits-of-doing-it
+token sale -- ex. 2025 https://sale.megaeth.com/
+Token Transparency = A standardized, open-source disclosure framework for token issuers. Leveling the playing field for all investors. https://blockworks.com/token-transparency
+Token Transparency Filings (TTF) = projects aligning their token with the success of their business https://x.com/Blockworks/status/2024122326682640734
+tokenization = process of representing real-world or digital assets as digital tokens on a blockchain
+tokenomics
+tokenomics -- burn
+tokenomics -- buybacks https://x.com/metaproph3t/status/2021426384799993939
+tokenomics -- it's all about attention and liquidity = anything else is useless https://x.com/TheWhiteWhaleV2/status/2022421870805401622
+tokenomics -- market manipulation -- "spoofed sell wall" by Market Makers https://x.com/TheWhiteWhaleV2/status/2020257514546217138
+tokenomics -- market manipulation -- defense https://x.com/TheWhiteWhaleV2/status/2020257514546217138
+tokenomics -- net asset value (NAV) = indicative value of the token based on the value of the underlying assets it represents, minus any liabilities = used as a reference
+tokenomics -- price discovery
+tokenomics -- utility
+tokenomics = designing alignment so that everyone benefits
+tokens
+tokens -- a16z categories -- Arcade tokens
+tokens -- a16z categories -- Asset-backed tokens
+tokens -- a16z categories -- Collectible tokens
+tokens -- a16z categories -- Company-backed tokens
+tokens -- a16z categories -- Memecoins
+tokens -- a16z categories -- Network tokens
+tokens -- a16z categories -- Security tokens
+tokens -- a16z categories https://a16zcrypto.com/posts/article/defining-tokens/
+tokens -- BAT "Basic Attention Token" = Brave Browser's own cryptocurrency that users can earn by viewing advertisements shown by Brave
+tokens -- Ether (ETH) = the cryptocurrency used for many things on the Ethereum network. Fundamentally, it is the only acceptable form of payment for transaction fees, and after The Merge, ether is required to validate and propose blocks on Mainnet the cryptocurrency used for many things on the Ethereum network. Fundamentally, it is the only acceptable form of payment for transaction fees, and after The Merge, ether is required to validate and propose blocks on Mainnet
+tokens -- net dolar https://netdollar.cloudflare.com/
+tokens -- standards
+tokens -- tainted = can be differentiated = less fungible
+tokens -- tokenomics = see [tokenomics]
+tokens -- vs coins = digital assets that live on a specific blockchain. Instead of having their own network, like coins, tokens are stored on other blockchains. Because they use a token standard, all of the tokens on a given blockchain are interoperable, as long as they come in the same format. Tokens come in two main forms; fungible (such as ERC-20 tokens) and non-fungible (NFTs). https://www.ledger.com/ru/academy/topics/crypto/what-is-token-gating
+tokens -- wrapped & = quasi-token "pegged" to the real token, useful to move cross-chains https://coinmarketcap.com/academy/article/what-is-wrapped-ethereum-weth
+tokens = cryptographic representations of ownership, access rights, or other forms of value. Ex. physical and digital assets like real estate, stocks, commodities, art, music, and even in-game items
+tokens = deprecated terminology in favor of "assets"
+trading -- limit orders = instructions like “buy 1 ETH at $3,000 or lower.”
+trading -- orders = buy/bid/long = buy the asset, sell/ask/short = sell the asset
+trading -- OTC = ex. https://x.com/TheWhiteWhaleHL/status/1976001057483288991
+trading -- pattern recognition https://mojo3324106.substack.com/p/everyone-has-a-process
+trading -- process https://mojo3324106.substack.com/p/everyone-has-a-process
+trading -- revenge trading = ex. https://x.com/TheWhiteWhaleHL/status/1977101908583088458
+transaction -- fee = higher = picked by nodes https://ethereum.org/en/developers/docs/gas/
+transaction -- Hiding = No party, except for the node that a transaction is submitted to, learns any information about a transaction before its inclusion has been finalized by the protocol https://a16zcrypto.substack.com/p/what-blockchains-need-to-compete
+transaction -- inclusion -- eventual = robust guarantee over the span of seconds https://a16zcrypto.substack.com/p/what-blockchains-need-to-compete
+transaction -- inclusion -- predictable = hard (see challenges) https://a16zcrypto.substack.com/p/what-blockchains-need-to-compete
+transaction -- per second (tps) -- 2024 https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/#section--5
+transaction -- processing -- stages -- batch storage
+transaction -- processing -- stages -- block metadata ordering
+transaction -- processing -- stages -- ledger certification
+transaction -- processing -- stages -- parallel transaction execution
+transaction -- processing -- stages -- transaction dissemination
+transaction -- processing -- stages = needed, can happen concurrently on some runtimes https://aptosfoundation.org/whitepaper
+transaction -- Short-Term Censorship Resistance = Any valid transaction that reaches any honest node on time will certainly be included in that next possible block https://a16zcrypto.substack.com/p/what-blockchains-need-to-compete
+transaction -- simulation https://support.rabby.io/hc/en-us/articles/11495560464143-Why-do-I-see-Simulation-Failed-error
+Trezor https://github.com/trezor
+trust -- digital = reflexion https://consensys.io/ethereum/trust
+trust = needed to avoid scams, see CoinGecko trust score
+Trusted Execution Environments (TEEs) = see security
+trustlessness manifesto -- A system is trustless when any honest participant can join, verify, and act without permission and without fear. https://trustlessness.eth.limo/general/2025/11/11/the-trustless-manifesto.html
+trustlessness manifesto -- Accessibility = participation must be within reach of ordinary users, not only experts with servers and capital.
+trustlessness manifesto -- Censorship resistance = any valid action can be included, within a reasonable timeframe and without undue cost.
+trustlessness manifesto -- Self-sovereignty = each user authorizes their own actions; no one acts on their behalf.
+trustlessness manifesto -- Transparency of incentives = participants are governed by protocol rules, not private contracts or opaque APIs.
+trustlessness manifesto -- Verifiability = anyone can confirm what happened from public data.
+trustlessness manifesto -- Walkaway test = if one operator disappears or misbehaves, another can step in without approval.
+Unichain
+unspent transaction output (UTxO) = a certain amount of cryptocurrency that has been authorized by a sender and is available to be spent by a recipient https://en.wikipedia.org/wiki/Unspent_transaction_output
+unstable coins https://cointelegraph.com/magazine/unstable-coins-de-pegging-bank-runs-other-risks-2023/
+USD1 = Stablecoin from WLF
+USDC https://www.circle.com/multi-chain-usdc
+use case -- digital passport for devices = warranty tracking https://www.arianee.org/protocol
+use case -- Executive Order 6102 = no right to hold gold coins
+use case -- not -- porn = surprisingly didn't happen https://cointelegraph.com/magazine/porn-payments-crypto-killer-app/
+value -- extraction = just profit, not delivering anything
+vault
+verifiable compute = a way to run complex tasks off-chain & then prove to the chain that it was properly done
+wallet
+wallet -- & consolidation
+wallet -- & ops = draining, refilling, sweeping...
+wallet -- & structure = usually starts from a seed phrase, derived according to the preferences of each chain, then HD'd derivation paths...
+wallet -- active & = with balance or recent activity
+wallet -- address -- change ex. https://support.ledger.com/article/360034336713-zd
+wallet -- address -- constant change = UTxO BitCoin, Cardano https://support.ledger.com/article/360033802154-zd
+wallet -- blind sign
+wallet -- brainwallet = don't https://bitcointalk.org/index.php?topic=311000.msg3345309#msg3345309
+wallet -- burner & = a single-use account, designed to interact with potentially risky blockchain applications. similar to a burner phone, meant to be discarded after serving its purpose. However, unlike getting a new phone, creating a burner wallet is a quick and easy process.
+wallet -- cold/hot
+wallet -- cold/hot -- cold& = safe
+wallet -- cold/hot -- hot& = the most vulnerable, need to assume will be compromised, must be balanced to the minimum needed amount
+wallet -- cross-chain&
+wallet -- deposit& = ~public and stable wallets we expect to receive funds into (must be sweeped regularly!)
+wallet -- derivation path -- deduplication = recognize same root but different paths? (possible?)
+wallet -- derivation path = ex. m/44'/60'/0'/0/0
+wallet -- derived address = ??? related to KP
+wallet -- derived key pair = ??? standard? different tools / wallets may derive differently
+wallet -- dormant = old, huge wallets that have not been used in a long time https://www.okx.com/en-au/learn/galaxy-btc-wallet-transfer
+wallet -- doxx'ing = linking to an identity https://support.ledger.com/article/5989580852125-zd
+wallet -- drain
+wallet -- drain -- example https://x.com/0xzak/status/1955265807807545763
+wallet -- embedded = (Defi App) latest gen, seedless, self-custodial ??
+wallet -- Extended public key (xPub) = ?? https://support.ledger.com/article/360011069619-zd
+wallet -- hardware -- replaced by passkeys? https://www.youtube.com/shorts/OncIJSV6hBE
+wallet -- metal https://keyst.one/shop/products/keystone-tablet-plus
+wallet -- MPC& = ???
+wallet -- multisig& = ??
+wallet -- password
+wallet -- phishing = ex. https://www.ledger.com/phishing-campaigns-status
+wallet -- recovery = ex. https://rewallet.de/en/
+wallet -- recovery phrase = 24 words to recover/transfer a wallet
+wallet -- refill& = intermediate between hot and cold, buffer used to refill hot wallets when needed + target of sweeps. If too full, go cold wallet
+wallet -- refilling
+wallet -- seed
+wallet -- seed phrase -- splitting
+wallet -- seed phrase = BEWARE 1) it's equivalent to the private key! 2) it's interpreted differently by different wallets!!! https://www.reddit.com/r/sui/comments/1bplcvh/different_wallet_address_when_importing_account/
+wallet -- self-custody = "I understand that this is a self-custody wallet, and that I am solely responsible for any associated funds, assets or accounts, and for taking any appropriate action to secure, protect and back up my wallet. I understand that X cannot access my wallet or reverse transactions on my behalf and that my recovery phrase is the ONLY way to regain access in the event of a lost password, stolen device or similar circumstance."
+wallet -- solution -- brave https://brave.com/wallet/
+wallet -- solution -- coinbase https://www.coinbase.com/en-au/wallet/smart-wallet
+wallet -- solution -- metamask https://metamask.io/download
+wallet -- solution -- okx https://web3.okx.com/
+wallet -- solution -- phantom
+wallet -- solution -- physical -- ledger
+wallet -- solution -- physical -- trezor
+wallet -- solution -- rabby -- gas account = "a unique feature of Rabby Wallet that allows you to deposit USDT or USDC and use it to pay gas fees for any address across all networks integrated with Rabby. It provides a unified gas solution for all your addresses on any chain." https://support.rabby.io/hc/en-us/articles/11477594883599-How-does-Rabby-GasAccount-work
+wallet -- solution -- rabby = best ETH? https://rabby.io/
+wallet -- solution -- telegram
+wallet -- solution -- uphold = https://wallet.uphold.com/
+wallet -- supported networks
+wallet -- sweeping = transfer all assets (esp. from hot) to another "deposit" wallet
+wallet -- withdrawal & =
+Wallet Provider = A user agent that manages keys and facilitates transactions with Ethereum https://eips.ethereum.org/EIPS/eip-6963
+wallets -- external providers -- solutions = Turnkey, Zerodev, Dynamic, Privy, or similar services
+Web Ontology Language (OWL) = language for defining ontologies, or formal representations of knowledge and relationships between concepts. You can use it to specify classes, properties, and instances, as well as facilitate reasoning and inferencing.
+Web1 = read-only
+Web2 = interactive, but challenges with centralized providers: data portability, data abuse (privacy), censorship, ban (democracy)...
+Web2.5 = where content creators have benefited from the rise of social media, but what they create is owned by centralized groups
+Web3 -- decentralization = aim to distribute and store data in decentralized networks. In these networks, different entities own the underlying infrastructure and the user pays directly to the storage provider to access that space. Decentralized applications also store information replicas in multiple locations and ensure data consistency throughout. Individual users can control where their data resides instead of handing it over to a centralized infrastructure. Decentralized internet users can sell their own data if they want to.
+Web3 -- interoperability = Web 3.0 aims to create more interconnections between diverse technologies, so data flows between different platforms without intermediaries. Interoperability makes data portable so users can seamlessly switch between services while maintaining their preferences, profiles, and settings.
+Web3 -- semantic web = enables applications to perform complex tasks by understanding the content and context of web data. It uses metadata and artificial intelligence to provide meanings (semantics) to user-generated data. Web 3.0 aims to move more fully towards semantic web technologies currently found in some aspects of existing web technologies. For example, a search engine provides more accurate and contextually relevant search results, and intelligent agents assist users in performing tasks more efficiently.
+Web3 -- trustlessness = In centralized web applications and services, users often need to place trust in a central authority to manage their data, transactions, and interactions. These central authorities have control over user data, and they can manipulate the system's rules. The data may be subject to security risks or mismanagement, potentially resulting in the loss or misuse of user information. In contrast, Web3 introduces trustlessness, so users can engage in transactions and interactions without trusting any specific party.
+Web4 ? “where AI agents read, write, own, earn, and transact—without needing a human in the loop.”
+whale -- fighting over the same whales
+whale = big asset holder
+who's who -- Anthony Di Iorio
+who's who -- Charles Hoskinson
+who's who -- CZ Binance https://x.com/cz_binance
+who's who -- Gavin Wood = Eth, inventor of Solidity? DAO hack
+who's who -- Jeffrey Yan = genius founder of Hyperliquid https://colossus.com/article/beyond-the-sky-jeffrey-yan-hyperliquid/
+who's who -- Joseph Lubin
+who's who -- Kain Warwick https://paragraph.com/@kain
+who's who -- Kevin O'Leary
+who's who -- Luke Dashjr = https://x.com/LukeDashjr/bio https://blockspace.media/podcast/inside-the-mind-of-luke-dashjr-bitcoins-most-polarizing-developer/
+who's who -- Mike Winkelmann
+who's who -- Pak
+who's who -- Paul Miller = open-source dev of core libs + KoL https://paulmillr.com/
+who's who -- Paul Sebastien
+who's who -- Sam Bankman-Fried https://en.wikipedia.org/wiki/Sam_Bankman-Fried
+who's who -- Satoshi Nakamoto = https://en.wikipedia.org/wiki/Satoshi_Nakamoto
+who's who -- Taylor Gerring
+who's who -- The White Whale https://x.com/TheWhiteWhaleV2 https://x.com/WhiteWhaleLabs
+who's who -- Virgil Griffith
+who's who -- Vitalik Buterin = https://en.wikipedia.org/wiki/Vitalik_Buterin https://x.com/VitalikButerin
+who's who -- William Entriken
+WLF "World Liberty Financial" = "Inspired by Trump" https://worldlibertyfinancial.com/
+x402 -- "pay per crawl" https://blog.cloudflare.com/introducing-pay-per-crawl/
+x402 = "402 Payment Required response with pricing" https://www.x402.org/
+XMR = ??? https://x.com/PerpetualCow/status/2010820707991650542
+XMTP https://docs.xmtp.org/
+zCash https://z.cash/learn/
+zk -- zk-SNARKs = zero-knowledge succinct non-interactive arguments of knowledge
+zk -- zkVM "zero-knowledge Virtual Machine" = a virtual machine whose execution produces a cryptographic proof. You run a program inside it, and the VM gives back two things: the program's public output, and a proof that the output was produced by running that exact program on some input. Anyone can check the proof without re-running the program and without seeing the input. https://github.com/Roasbeef/go-zkvm/blob/main/docs/tutorial.md

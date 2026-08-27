@@ -22,7 +22,10 @@ Commands to transfer contributions when no access:
 
 ## exporting staged uncommited changes
 git diff --staged --patch --binary > ~/work/tmp/otpcrk.patch
-git apply ~/work/tmp/otpcrk.patch
+## git apply is intentionally strict: it expects the patch to match the target files closely.
+## --3way lets it fall back to a merge if the target tree has drifted slightly.
+git apply --3way ~/work/tmp/otpcrk.patch
+
 
 ## exporting last commits
 ## am = archive mail, designed for the "mail patches around" 

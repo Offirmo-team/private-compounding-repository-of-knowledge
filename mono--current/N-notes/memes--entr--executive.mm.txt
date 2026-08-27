@@ -1,0 +1,53 @@
+10x -- PostHog -- 1. Always prototyping and experimenting
+10x -- PostHog -- 2. Comfortable writing
+10x -- PostHog -- 3. A genuine love for building
+10x -- PostHog -- 4. Customer obsessed
+10x -- PostHog -- 5. Understands the broader context
+10x -- PostHog -- 6. Easy to work with
+10x -- PostHog https://newsletter.posthog.com/p/beyond-the-10x-engineer
+[ ] high growth handbook https://growth.eladgil.com/
+[ ] https://coda.io/@shishir/
+[ ] https://posthog.com/handbook/company/management
+[ ] https://www.execsandthecity.com/
+[ ] Thinkies https://tidyfirst.substack.com/s/thinkies
+A technical stakeholder wants the feature detail and the failure modes; an executive wants the outcome, the oversight in place, and the risk posture
+assumptions -- check them
+assumptions -- do not assume
+bets
+C-level
+CAIO "Chief AI Officer" = would champion AI use cases and bring business & technology together to push through the difficulties and disruption
+CEO -- "If I/we got fired today, what would the new CEO do?"
+challenges -- ask questions
+company rot https://www.linkedin.com/news/story/kpmg-halts-partner-exits-8915506/
+create space for the best ideas to emerge
+dog energy vs cat energy = junior = dog, senior = cat?
+DORA = (Google) largest and longest running research program (...) to understand the capabilities that drive software delivery and operations performance https://dora.dev/
+exec table = C-levels
+executive presence
+executive presence -- don't panic
+executive presence -- dress code = don't make leaders, but they sure announce them
+fail upward
+failures -- leadership -- Quantas https://www.australianfrequentflyer.com.au/the-chairmans-lounge-joe-aston-book-review/
+failures modes = possible wrong ways https://newsletter.posthog.com/p/tech-lead-failure-modes
+feedback -- Keeper Test = "If this person resigned today, would I fight to keep them?"
+head of -- growth
+LT "Leadership Team"
+managing stakeholder expectations
+meta -- producing context
+meta -- symbolic executive = aka. business idiot https://www.wheresyoured.at/the-era-of-the-business-idiot/
+next scale issue?
+not just an entrepreneur, but also a visionary and a nation builder
+outputs vs. outcomes
+Pre-emptive Control Framework -- Control the flow before walking in
+Pre-emptive Control Framework -- Make their objections work for you
+Pre-emptive Control Framework -- Turn questions into opportunities
+Pre-emptive Control Framework = "after failing spectacularly in front of senior leadership" https://www.threads.com/@prodmgmt.world/post/DKr5V_Gtnqx
+pressure tests -- "why does it matter?" = need link to company goals, customer experience, or competitive advantage
+pressure tests -- "Why is this our priority right now?" = CEO Actually asking about: Resource allocation; Market timing; Competitive threats; Revenue impact
+pressure tests -- questions -- use AI to simulate ahead
+pressure tests -- questions = address the meta concern, not just the surface question
+pressure tests = can be encountered
+shut up
+tech -- neverending support https://www.herodevs.com/support
+visibility -- invisible = not noticed (bad) https://medium.com/change-your-mind/the-1-minute-introduction-that-makes-people-remember-you-forever-30d0e8265854
+visibility -- unremembered = "sticky introduction" https://medium.com/change-your-mind/the-1-minute-introduction-that-makes-people-remember-you-forever-30d0e8265854

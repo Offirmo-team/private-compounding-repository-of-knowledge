@@ -1,0 +1,1245 @@
++++ https://roadmap.sh/
+// +++ https://explorer.globe.engineer/
+// +++ https://www.hackterms.com/about/all
+// +++ https://www.linfo.org/main_index.html
+// +++ important history https://qconlondon.com/london-2009/qconlondon.com/dl/qcon-london-2009/slides/RodJohnson_JavaEnterpriseApplicationStandardsAndWhyTheIndustryMovedToLightweightOpenSource.pdf
+// http://meta.programmers.stackexchange.com/questions/6166/open-letter-to-students-with-homework-problems
+// http://nodeschool.io/#workshoppers
+// http://rethinkdb.com/blog/node-4/
+// http://www.letudiant.fr/palmares/palmares-des-ecoles-d-ingenieurs/ouverture-internationale-2.html
+// https://blog.quastor.org/
+// https://craftinginterpreters.com/
+// https://devpedia.pages.dev/
+// https://en.wikipedia.org/wiki/Reference_class_forecasting
+// https://github.com/anvaka/npmrank/blob/master/sample/dependencies.md
+// https://github.com/kilimchoi/engineering-blogs
+// https://iancoleman.io/quotes/
+// https://medium.com/javascript-scene/the-single-biggest-mistake-programmers-make-every-day-62366b432308
+// https://tratt.net/laurie/blog/
+// https://trustworthy.technology/
+// https://www.atlassian.com/team-playbook/plays/elevator-pitch
+// https://www.managingtheunmanageable.net/morerulesofthumb.html
+// https://www.reddit.com/r/ExperiencedDevs/
+// https://www.tedinski.com/archive/
+// https://zknill.io/posts/every-programmer-should-know/
+// patterns https://www.patterns.dev/
+// testing https://testing.googleblog.com/
+1969 ARPANET, forerunner of the Internet, starts operating
+1971 email
+1973 BASIC games https://blog.codinghorror.com/updating-the-single-most-influential-book-of-the-basic-era/
+1973 FTP
+2010 tech bubble, a period where mediocre people could raise ludicrous money amid a venture capitalist echo chamber fueled by low-interest rates https://www.sandofsky.com/lambda-school/
+2025 https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/
+5 min zoom vs 10 emails/comments volley = https://blog.jpl-consulting.com/2010/04/ten-email-volley-or-five-minute-phone-call/
+? [ ] performance https://www.seangoedecke.com/bad-code-at-big-companies/ https://news.ycombinator.com/item?id=46082223
+? https://kiss-and-solid.com/blog
+? microformats https://web.archive.org/web/20250926192326/https://www.hotelsmallorca24.com/microformatiquecom/
+[ ] performance -- https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise
+abort controller https://kettanaito.com/blog/dont-sleep-on-abort-controller
+abstract = something that exists in thought as an idea
+abstraction -- level
+abstraction -- wrong / premature = "most of the issues arise from trying to eagerly solve a problem before it fully exists in reality" https://www.transcendsoftware.se/posts/the-perils-of-premature-abstraction/ https://zackoverflow.dev/writing/premature-abstraction
+abstraction https://www.merrickchristensen.com/articles/abstraction/
+access control
+access control -- discretionary https://en.wikipedia.org/wiki/Discretionary_access_control
+access control -- fine-grained (FGAC)
+access control -- mandatory https://en.wikipedia.org/wiki/Mandatory_access_control
+access control -- role-based (RBAC)
+actually portable executables https://justine.lol/ape.html
+adapters = specific to sth non-standard
+all means are fair except solving the problem = a minor change can break workflows so no changes https://yosefk.com/blog/all-means-are-fair-except-solving-the-problem.html
+allocation
+annotation
+anomaly detection
+anti-pattern -- constants file = https://softwareengineering.stackexchange.com/a/290009/39510 https://bytedev.medium.com/the-god-constant-class-30d82cd4f677
+anti-pattern -- god class / file
+anyone can code https://world.hey.com/jorge/anyone-can-cook-c6346f84
+API "Application Programming Interface" = interface (set of subroutine definitions, protocols, and tools) for exposing a software feature, defines interactions that allows two applications to talk to each other https://www.postman.com/what-is-an-api/
+API -- AIPs "API Improvement Proposals" https://google.aip.dev/
+API -- approach design with real-life scenarios and code in mind.
+API -- avoid introducing breaking changes as much as possible.
+API -- bad = make assumptions about what you are trying to do, but then break when those assumptions are not exactly right, ex. AppCache
+API -- deprecation -- decommission = end support for an API in production. A decommissioned API will no longer appear in any supported Public API surface, and calls made to it are not guaranteed to succeed
+API -- deprecation -- deprecate = To formally indicate that support for an API has been withdrawn, and that the API will be decommissioned in the future. Deprecation of an API has no immediate functional impact on the API itself or existing consumers of the API
+API -- deprecation -- deprecation period = time between an API being marked as deprecated and it being decommissioned
+API -- deprecation -- process = decide, analyse existing use, document, consult, announce, outreach, support, track, turn off
+API -- deprecation -- retiring = decommissioning of an API without a suitable replacement
+API -- design -- Don’t contradict past decisions, Don’t reduce future options
+API -- easy to build one, hard to build the **right** one
+API -- economy = the depth and breadth of APIs that are available for developers to use in the current landscape.
+API -- endpoint types -- mutation = creates, updates, or deletes some data
+API -- endpoint types -- query = gets some data
+API -- endpoint types -- query, mutation, or subscription https://trpc.io/docs/concepts#vocabulary
+API -- endpoint types -- subscription = creates a persistent connection and listens to changes
+API -- enums over booleans https://www.teamten.com/lawrence/programming/prefer-enums-over-booleans.html
+API -- external-facing = are where "design up front" and consideration about future use cases really matters. Changing APIs is a pain for us and for our users, and creating backwards incompatibility is horrible (although sometimes impossible to avoid). https://opensource.com/article/17/5/30-best-practices-software-development-and-testing
+API -- features should be small, atomic and composable.
+API -- follow existing patterns and conventions.
+API -- future proof https://protobuf.dev/programming-guides/api/
+API -- guide developers into the pit of success.
+API -- Hyrum's Law = With a sufficient number of users of an API, all observable behaviors (public or not) of your system will be depended on by somebody https://www.hyrumslaw.com/ https://xkcd.com/1172/
+API -- input = Prefer objects for inputs. If a function accepts multiple pieces of data — or may accept multiple pieces of data in the future — create a single object parameter, rather than using multiple parameters. This ensures that: We can add parameters without breaking the contract + The order of the parameters becomes unimportant
+API -- internal / external / partner
+API -- keys -- format https://github.com/seamapi/prefixed-api-key
+API -- must not violate the principle of least astonishment.
+API -- output = prefer objects, same reasons as input = extensible without breaking the contract
+API -- pagination -- token https://protobuf.dev/best-practices/api/#define-pagination-api
+API -- public = Requires a commitment to maintain it; Can affect the velocity of the underlying feature
+API -- result = Prefer declarative interfaces: An API that describes a result, rather than how to achieve that result, is more stable, since the underlying implementation can evolve without affecting the API signature
+API -- should not force developers to do anything that could easily be done for them.
+API -- should present the mechanism, not the experience.
+API -- should provide helper functions to compose small features into common use-cases where appropriate.
+API -- solutions -- devtool https://mockapi.io/
+API -- solutions -- devtool https://reqres.in/
+API -- tokens -- M2M "machine to machine"
+API -- tradeoffs = ex. safety / flexibility / extensibility / speed
+architecture -- architect thinking -- example https://www.linkedin.com/posts/activity-7455416156187951106-5IAL
+architecture -- architect thinking = What's upstream? What API contracts am I actually working with? Have they been built? If so, do we need to extend those? As tech is moving super fast with AI, where does this UI live in 18 months? Is this a product or a prototype someone will want to scale? What does the team's capability look like? What are the integration seams? Where does the frontend end and something else's problem begin? https://www.linkedin.com/posts/activity-7452112698827276288-m-2S
+architecture -- architectural decision (AD) = a justified design choice that addresses a functional or non-functional requirement that is architecturally significant
+architecture -- architectural decision -- && record (ADR) = captures a single AD and its rationale; can help one understand the reasons for a chosen architectural https://adr.github.io/
+architecture -- architectural decision -- tactical bet = another useful framing
+architecture -- architectural styles = independent of any specific implementation
+architecture -- architecturally significant requirement (ASR) = a requirement that has a measurable effect on the architecture and quality of a software and/or hardware system
+architecture -- service-oriented && = https://en.wikipedia.org/wiki/Service-oriented_architecture
+architecture = Sustainable Architectural Decisions https://adr.github.io/
+architecture = the art of delaying decisions to the most responsible moment (ideally next scaling issue) https://www.linkedin.com/pulse/embrace-glorious-art-architectural-procrastination-david-knott/
+arithmetic -- arbitrary-precision & = aka. bignum https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic
+arithmetic -- decimal
+arithmetic -- floating point -- "What Every Computer Scientist Should Know About Floating-Point Arithmetic" https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
+arithmetic -- floating point -- "Your language isn’t broken, it’s doing floating point math" https://0.30000000000000004.com
+arithmetic -- integers encoding
+arithmetic -- precision
+arithmetic -- rounding
+asking smart questions http://www.catb.org/esr/faqs/smart-questions.html
+assembly
+async -- "coloring" https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/
+async -- design pattern -- reactor pattern
+async -- sync = By synchronous we mean a function that calls its callback on the same tick in the javascript event loop, without doing any I/O or using any timers
+atomic
+audit trail = what happened, when, who made the request and how?
+authentication
+awesome falsehoods https://github.com/kdeldycke/awesome-falsehood
+bash -- pitfalls https://mywiki.wooledge.org/BashPitfalls
+battle short = a condition in which some military equipment can be placed so it does not shut down when circumstances would be damaging to the equipment or personnel. The origin of the term is to bridge or "short" the fuses of an electrical apparatus before entering combat, so that the fuse blowing will not stop the equipment from operating. https://en.wikipedia.org/wiki/Battleshort
+BDD "Behavior-Driven Development" https://cucumber.io/school/ Discovery -> Formulation -> Automation
+Beyoncé Principle = If you liked it, then you shoulda put a test on it
+big companies software = At big companies, software tends to be written by large and frequently changing teams of mediocre programmers https://paulgraham.com/noop.html
+bill of material = CycloneDX
+bit-flips causing 25% of errors in Firefox https://mas.to/@gabrielesvelto/116171750653898304
+Bitter Lessons from the ISSpresso = Why launch costs aren't the reason it costs a fortune to do things in space https://mceglowski.substack.com/p/bitter-lessons-from-the-isspresso
+blocking
+blocklist/blacklist -- https://paulgraham.com/spamhausblacklist.html
+books -- clean code = https://www.reddit.com/r/ExperiencedDevs/comments/1g2l3wc/comment/lrpupgp/
+books -- https://github.com/charlax/professional-programming
+books -- https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-subjects.md
+books -- https://www.developing.dev/p/5-books-every-software-engineer-should
+books -- Philosophy of Software Design = controversed https://www.reddit.com/r/ExperiencedDevs/comments/1g2l3wc/book_club_i_dont_understand_why_philosophy_of/
+books -- SWE at Google = +++ https://abseil.io/resources/swe-book/html/toc.html
+bootcamps https://www.sandofsky.com/lambda-school/
+bossware https://ia.acs.org.au/article/2024/workers-and-bosses-engage-in-sneaky-tactics.html
+bro culture in tech https://www.smh.com.au/technology/australias-tech-darling-atlassian-in-sexism-row-20140605-zryjd.html
+BSOD "blue screen of death" https://ia.acs.org.au/article/2025/microsoft-retires-blue-screen-of-death-after-40-years.html?ref=newsletter&deliveryName=DM26606
+bug-for-bug compatibility
+bugs -- $370M bug https://en.wikipedia.org/wiki/Ariane_flight_V88
+bugs -- 3 questions -- 1. Have I made this error anywhere else?
+bugs -- 3 questions -- 2. What happens when I fix the bug?
+bugs -- 3 questions -- 3. How can I change my ways to make this bug impossible?
+bugs -- 3 questions https://mental-reverb.com/blog.php?id=42
+bugs -- mail in 500 miles radius https://www.ibiblio.org/harris/500milemail.html
+bugs -- significant https://en.wikipedia.org/wiki/List_of_software_bugs
+build & delivery part of a product
+build vs buy
+building blocks that just work = create building blocks that handle the undifferentiated heavy lifting, which freed developers to focus on higher-level work https://aws.amazon.com/blogs/aws/twenty-years-of-amazon-s3-and-building-whats-next/
+C++ 26 https://thenewstack.io/coming-to-iso-c-26-standard-an-ai-acceleration-edge/
+C10k problem https://en.wikipedia.org/wiki/C10k_problem
+cache
+cache -- caching tiers = edge cache → upper tier cache → central data store https://developers.cloudflare.com/kv/concepts/how-kv-works/
+cache -- hot and cold reads https://developers.cloudflare.com/kv/concepts/how-kv-works/
+cache -- lock = a small program, possibly distinct from your cache, that indicates if a request is already going to your origin. This is called request collapsing. https://developers.cloudflare.com/cache/concepts/revalidation/ https://blog.cloudflare.com/sometimes-i-cache/ https://developers.cloudflare.com/cache/concepts/revalidation/
+cache -- revalidation https://developers.cloudflare.com/cache/concepts/revalidation/
+cache -- S3 FIFO https://s3fifo.com/
+cache -- service affinity = some apps can't be cached, ex. atomic or read-write in transaction, but good for immutable assets, config, etc https://developers.cloudflare.com/kv/concepts/how-kv-works/#guidance
+cache -- stampede -- prevention = Optimal Probabilistic Cache Stampede Prevention https://cseweb.ucsd.edu/~avattani/papers/cache_stampede.pdf
+cache -- stampede https://en.wikipedia.org/wiki/Cache_stampede
+Cambrian explosion = time of quick development / pattern emergence, alluding to the period of rapid animal diversification 540 million years ago
+capability = an end-to-end user experience or a set of related functionality. Example: “a user can create a ticket in a Jira project”
+career -- "close to the frontier" The ones staying are making a bet that the stability and comp are worth more than being close to the frontier. The ones leaving are making a bet that the frontier is where the next decade of career value gets built and every quarter they wait is a quarter of compounding they miss https://x.com/amytam01/status/2023593365401636896
+career -- degrees -- must unlock a path or not worth it
+career -- envy = https://shreyasdoshi.substack.com/p/on-mid-career-satisfaction
+career -- small business programmer https://smallbusinessprogramming.com/how-to-be-a-wildly-successful-small-business-programmer/
+career -- staff engineer https://www.linkedin.com/posts/alexewerlof_no-one-is-talking-about-staff-engineer-mental-activity-7297125140159471617-_J1-
+cargo cult = Let’s face it. You are not Google scale and you never will be. Stop cargo-culting technology just because “Google uses it” and therefore “it’s an industry best-practice.” https://reasonablypolymorphic.com/blog/protos-are-wrong/
+case -- CamelCase
+case -- SHOUTY_CASE
+case -- snake_case
+CD (continuous delivery) -- [see dedicated file]
+certificates -- root
+change -- category -- C1 = removing a product
+change -- category -- C2 = Widespread change requiring high customer/ecosystem effort
+change -- category -- C3 = Localised change requiring high customer/ecosystem effort
+change -- category -- C4 = Change requiring low customer/ecosystem effort
+change -- category -- C5 = Change requiring no customer/ecosystem effort
+change -- category -- dynamic categorization = gathered through tooling + PRs
+change -- management
+change -- release tracks https://support.atlassian.com/organization-administration/docs/manage-product-release-tracks/
+change -- support readiness
+change -- type -- experiment – temporary change intended to be visible to a small cohort of customers
+change -- type -- technical only – invisible to customers
+change -- type -- user-facing – permanent change that users will notice
+change = what causes most of the failures
+changelog -- conventional https://github.com/conventional-changelog
+changelog -- standard https://keepachangelog.com/  https://common-changelog.org/
+CHOP "chat-oriented programming"
+CI (Continuous Integration) https://www.browserstack.com/guide/difference-between-continuous-integration-and-continuous-delivery
+CI -- merge queue
+class
+CLI -- guidelines https://clig.dev/
+client/server -- multi-tier architecture
+clippy https://www.mentalfloss.com/article/504767/tragic-life-clippy-worlds-most-hated-virtual-assistant
+close / destroy / terminate / dispose / release / free / delete / destruct / finalize / teardown / cleanup / shutdown / stop / end / abort / cancel / halt / kill / exit / quit / unload / dispose...
+code -- range -- prompt "make it pop" https://theoatmeal.com/comics/design_hell
+code -- range -- spec = less formal
+code -- range = prompt > spec > code
+code = what is it? https://martinfowler.com/articles/what-is-code.html
+code is read more than written https://olano.dev/blog/code-is-run-more-than-read/
+code is the enemy = It can go wrong, and it needs maintenance. Write less code. Delete code. Don’t write code you don’t need https://opensource.com/article/17/5/30-best-practices-software-development-and-testing
+code quality = the only definition of quality in code that makes any sense is our ability to change the code. If it's easy to change, it's high quality; if it's hard to change, it's not.
+code quality https://blog.jim-nielsen.com/2024/easy-changes/
+code readability -- visual patterns https://seeinglogic.com/posts/visual-readability-patterns/
+code reuse -- DRY
+code reuse -- reduce reuse recycle
+code reuse -- small focused modules = Make small focused modules for reusability and to make it possible to build larger more advanced things that are easier to reason about https://sindresorhus.com/blog/small-focused-modules
+code review https://www.linkedin.com/posts/ajgreenwell_code-reviews-have-unwritten-laws-i-had-activity-7239611908914319360-_MHW/
+codebase -- type -- hobby
+codebase -- type -- large established codebase = single-digit million lines of code (~5M, let’s say); Somewhere between 100 and 1000 engineers working on the same codebase; The first working version of the codebase is at least ten years old
+codebase -- type -- open source
+codebase -- type https://www.seangoedecke.com/large-established-codebases/
+codebase drag -- audit -- Apology Estimate = “Knowing this codebase, it’ll probably take about two weeks.”
+codebase drag -- audit -- Deploy Fear = When’s the last time your team deployed on a Friday? If that question gets a laugh, you have deploy fear
+codebase drag -- audit -- The Coverage Lie = 80% test coverage. The dashboard looks healthy. But the three models that handle money have zero tests, and the coverage number is carried by hundreds of tests on serializers, helpers, and utility methods that rarely break.
+codebase drag -- audit -- Time to First Commit = Hand a new engineer a laptop. How long until they open a pull request with a real change? Not a README fix. An actual bug fix or small feature. In a healthy codebase, this takes a day or two.
+codebase drag -- audit -- “Don’t Touch That” File = I hear it on almost every engagement. Usually within the first two days, always casual. Like it’s just how things work around here.
+codebase drag -- audit https://piechowski.io/post/codebase-drag-audit/
+codebase drag -- vs. tech debt = Technical debt is what’s wrong with the code. Codebase drag is what it costs your team to work in it anyway. https://piechowski.io/post/codebase-drag-audit/
+codebase drag = when the codebase makes every task take longer than it should. It doesn’t show up in any dashboard or sprint report https://piechowski.io/post/codebase-drag-audit/
+codemod
+cohesion = degree to which the elements inside a module belong together https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+command query separation (CQS)
+comments
+comments -- conventional
+comments -- leading, trailing, detached https://github.com/microsoft/TypeScript/wiki/FAQ#trailing-leading-and-detached-comments
+commits
+commits -- conventional  https://www.conventionalcommits.org/  https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
+commits -- the perfect commit = https://simonwillison.net/2022/Oct/29/the-perfect-commit/
+compatibility -- backward = consumer's new version can read producer's old data
+compatibility -- forward = consumer's old version can read producer's new data
+compatibility -- window = duration deployed code needs to remain compatible
+compatibility = 2x things being able to live together without issues
+compatibility window = how long should we attempt to ensure that a deployment of code doesn’t get blown up by incompatible payloads. Ex. mobile app = 6 month, web page = 1d, server = 1 release
+compile to js
+compilers -- Dear Sir, You Have Built a Compiler = https://people.csail.mit.edu/rachit/post/you-have-built-a-compiler/
+compilers -- https://nanopass.org/
+compilers -- stanford course http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=Compilers
+compilers = translates code from one language to another at a different level of abstraction. As a result, the compiled code from a compiler is much harder for a human to read than the original.
+compilers = Want to Write a Compiler? Just Read These Two Papers https://prog21.dadgum.com/30.html
+complexity -- tends to increase exponentially in multi-threaded systems, and quadratically in distributed parallel systems https://qconlondon.com/london-2009/qconlondon.com/dl/qcon-london-2009/slides/CameronPurdy_TraditionalProgrammingModelsStoneKnivesAndBearskinsInTheGoogleAge.pdf
+complexity = Most codebases get harder to work with over time because each feature you add injects more complexity. After 10 years, teams spend more time fighting their system than building on it because each new feature is a negotiation with the old ones. Over time, the codebase becomes harder to understand, harder to modify, and harder to trust. https://every.to/guides/compound-engineering
+complexity budget https://htmx.org/essays/complexity-budget/
+compute
+compute -- hosted compute
+concurrency -- ABA problem
+concurrency -- atomic
+concurrency -- atomic -- operations -- compare-and-swap (CAS) = an atomic instruction used in multithreading to achieve synchronization https://en.wikipedia.org/wiki/Compare-and-swap
+concurrency -- atomic -- operations -- fetch-and-add (FAA) = an atomic instruction used in multithreading to achieve synchronization https://en.wikipedia.org/wiki/Fetch-and-add
+concurrency -- atomic -- operations -- load-link/store-conditional (LL/SC) = an atomic instruction used in multithreading to achieve synchronization https://en.wikipedia.org/wiki/Load-link/store-conditional
+concurrency -- atomic -- operations -- Read–modify–write https://en.wikipedia.org/wiki/Read%E2%80%93modify%E2%80%93write
+concurrency -- atomic -- operations -- test-and-set (TAS) = an atomic instruction used in multithreading to achieve synchronization https://en.wikipedia.org/wiki/Test-and-set
+concurrency -- critical sections
+concurrency -- fiber
+concurrency -- lock-free
+concurrency -- locks -- deadlock, distributed deadlock https://en.wikipedia.org/wiki/Deadlock
+concurrency -- locks -- livelock https://en.wikipedia.org/wiki/Deadlock#Livelock
+concurrency -- locks -- mutex
+concurrency -- locks -- semaphore
+concurrency -- non-blocking
+concurrency -- non-blocking -- collections
+concurrency -- optimistic concurrency control
+concurrency -- scheduling -- priority inversion https://en.wikipedia.org/wiki/Priority_inversion
+concurrency -- spinlock
+concurrency -- starvation https://en.wikipedia.org/wiki/Starvation_(computer_science)
+concurrency -- thread
+concurrency -- thread pool
+concurrency -- wait-free, lock free
+concurrent ownership
+config -- fallback chains = ex. Forgejo checks .forgejo/ → .gitea/ → .github/
+config -- formats = json / jsonc / json5 / js / ts
+config -- in code = defineConfig()
+connascence https://en.wikipedia.org/wiki/Connascence
+considered harmful
+considered harmful -- clever code https://www.joshwcomeau.com/career/clever-code-considered-harmful/
+considered harmful -- NODE_ENV
+consistency = lack of consistency is the primary long-term killer of large codebases, because it makes it impossible to make any general improvements https://www.seangoedecke.com/large-established-codebases/
+constructor
+containers -- podman https://docs.podman.io/en/latest/Introduction.html
+content age rating -- "Common Sense" Media (private org) https://www.commonsensemedia.org/about-us/our-mission/about-our-ratings
+content age rating -- culture = Different cultures have different standards for what is age-appropriate: some find graphic violence more acceptable than nudity, and some vice versa.
+content age rating -- G (General) = aka Safe for School, Appropriate for ages 13+
+content age rating -- identify = content need to be identified and labelled as safe or unsafe for each age rating. Given the volume, human review may not be a practical option.
+content age rating -- PG (Parental Guidance) = aka Not Safe For School (NSFS) = Appropriate for ages 15+
+context switch
+convention over configuration
+Conway's law https://en.wikipedia.org/wiki/Conway%27s_law
+copyright -- clean-room design = copying a design by reverse engineering and then recreating it without infringing any of the copyrights associated with the original design https://en.m.wikipedia.org/wiki/Clean-room_design
+copyright -- code, binary, BIOS, APIs...
+copyright -- license -- REUSE https://reuse.software/tutorial/
+copyright -- statement https://matija.suklje.name/how-and-why-to-properly-write-copyright-statements-in-your-code
+corporate politic https://www.breakingpoint.tech/p/where-do-corporate-politics-come
+correlation
+coupling -- loose https://en.wikipedia.org/wiki/Loose_coupling
+courbe d'expertise
+CPU https://cpu.land/
+CQRS "command query responsibility segregation"
+CRDT -- against https://www.moment.dev/blog/lies-i-was-told-pt-2
+CRDT / automerge / local first https://automerge.org/
+cron -- explainer https://onlineornot.com/cron-jobs/crontab
+cron -- monitoring
+cron https://onlineornot.com/the-complete-guide-to-cron-jobs
+cross cutting concerns = aspects of a program that affect several modules without the possibility of being encapsulated in any of them https://en.wikipedia.org/wiki/Cross-cutting_concern
+cross-platform https://en.m.wikipedia.org/wiki/Cross-platform_software
+CRUD "create, read, update and delete"
+crunch
+CTAP
+culture -- low/high context https://journals.sagepub.com/doi/10.1177/0146167212455828
+Cupertino effect = bad spell checking
+currying https://en.wikipedia.org/wiki/Currying
+data -- description = for discoverability
+data -- hydration
+data -- insert
+data -- lake
+data -- lineage tracking = who created it, transformed it, enriched it...
+data -- parse-dont-validate = avoiding validation functions and encoding invariants in the type level instead (can be heavy on the type system + not always doable) https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/
+data -- privacy
+data -- re-extraction = of vx.y.z
+data -- semi-structured = markdown, html, microformats
+data -- structured = Excel files, Tabular form of data etc.,
+data -- unstructured = Emails, PDFs, Images, Audio & Video files, Social media posts.
+data -- upsert
+data -- versioning = of content + schema
+data = the most important. just data types = can compile, good data types = trivial code
+data format -- consumer vs producer
+data format -- consumer vs producer -- independent release/deploy
+data format -- do NOT conflate serialization w/ working representation w/ persisted w/ interchange! (cf. protobuf)
+data format -- future proofing = vastly overrated now that we have semver!! (+ migrations)
+data format -- interchange -- https://en.wikipedia.org/wiki/Advanced_Scientific_Data_Format
+data format -- interchange -- JS https://github.com/yahoo/serialize-javascript
+data format -- interchange -- JSON -- binary -- BSON https://bsonspec.org
+data format -- interchange -- JSON -- binary https://msgpack.org/
+data format -- interchange -- JSON -- JSX wire https://overreacted.io/jsx-over-the-wire/
+data format -- interchange -- JSON -- progressive = aka. stramable https://overreacted.io/progressive-json/
+data format -- interchange -- JSON -- RPC https://www.jsonrpc.org/
+data format -- interchange -- JSON -- schema = https://json.schemastore.org/
+data format -- interchange -- JSON https://www.json.org/
+data format -- interchange -- JSON mini = some sort of protobuf-derived space-saving representation (single letters for keys)
+data format -- interchange -- JSON5 https://json5.org/ https://github.com/json5/json5
+data format -- interoperability, fungibility, hackability, debuggability, anti-fragility
+data format -- linting = ex. for JSON compatibility, for backward/forward compatibility...
+data format -- one goal of defining the type once then generating code in various languages (hard!)
+data format -- protobuf -- XXX criticized "the worst serialization format and schema" BC conflate transport representation w work representation + bad type system https://news.ycombinator.com/item?id=21871514
+data format -- protobuf = (at the time of XML, before JSON, also bc Java doesn't work well with JSON) language-neutral, platform-neutral extensible mechanisms for serializing structured data https://protobuf.dev/overview/ https://github.com/protocolbuffers/protobuf
+data format -- serialization -- interchange = more complex usually aiming at interoperability between byte encodings, endianess, languages, platforms...
+data format -- serialization -- persistence
+data format -- serialization -- stability! ex. sorting by keys in k/v, important for immutability! (ex. stable hashing, caching, diff...)
+data format -- serialization -- wire format
+data format -- serialization -- wire format -- https://capnproto.org/ = serialization only! (better than protobuf)
+data format -- serialization -- wire format -- protobuffers BAD https://reasonablypolymorphic.com/blog/protos-are-wrong/index.html
+data format -- serialization = converting a complex data structure/object into a format (like a stream of bytes or text) that can be easily stored (in a file/database) or transmitted (over a network) and later reconstructed back into its original form (deserialization) https://en.wikipedia.org/wiki/Serialization
+data residency -- storing = storing user data in the same jurisdiction as the customer’s residence.
+data residency = helps customers feel confident that the data they own (or about them) is subject to their local laws and regulations. This is especially important for enterprise, education, and government customers, many of whom might have rules and regulations mandating the use of data-resident software.
+database fundamentals https://tontinton.com/posts/database-fundementals/
+databases = (see dedicated file)
+dataset
+datastreams -- scatter/gather
+debugger
+debugging
+defensive programming = Always think about what can go wrong, what will happen on invalid input, and what might fail, which will help you catch many bugs before they happen https://opensource.com/article/17/5/30-best-practices-software-development-and-testing
+defensive programming https://dev.to/cubiclebuddha/is-defensive-programming-actually-healthy-5flj
+define “good” = what “good” looks like to your org. Achieving that ideal doesn’t depend on which technology you use. It depends on understanding your company’s requirements and what assumptions will remain true regardless of the tools you use.
+definition of done (DoD)
+definition of done -- proven to work = I tested on my machine, not wasting reviewers/testers time https://simonwillison.net/2025/Dec/18/code-proven-to-work/
+degrees https://world.hey.com/jorge/programmers-and-degrees-94eaa940
+demos
+dependencies
+dependency -- hell https://en.wikipedia.org/wiki/Dependency_hell
+dependency -- transitive problem https://htmx.org/essays/vendoring/
+dependency -- vendoring = a technique where you copy the source of another project directly into your own project https://htmx.org/essays/vendoring/
+dependency injection -- containers = frameworks that manage the dependencies of objects https://blog.ploeh.dk/2014/06/10/pure-di/
+dependency injection -- pure = no framework https://blog.ploeh.dk/2014/06/10/pure-di/
+dependency injection -- vs. func = if magic, makes everything functionally impure https://blog.ploeh.dk/2017/01/30/partial-application-is-dependency-injection/
+dependency injection = passing parameters. no need for complex lib
+deployment maturity levels https://itnext.io/deployment-maturity-levels-feab55c20d04
+design patterns
+design patterns -- behavioral -- command = command, receiver, invoker and client https://en.wikipedia.org/wiki/Command_pattern
+design patterns -- facade https://en.wikipedia.org/wiki/Facade_pattern
+design patterns -- strangler https://paulhammant.com/2013/07/14/legacy-application-strangulation-case-studies/
+design patterns -- visitor = not recommended, see grug
+design smell https://en.wikipedia.org/wiki/Design_smell
+desirables -- changeability
+desirables -- isolation
+desirables -- no complexity
+desirables -- no maintenance
+desirables -- no surprises
+desirables -- quality = vague requirement
+desirables -- readability
+desirables -- reliability
+desirables -- resilience
+desirables -- side-effect free
+deterministic -- entropy sources = bad, ex. date, path
+deterministic = always returning the same https://blog.onepatchdown.net/2026/02/22/are-compilers-deterministic-nerd-version/ https://www.mcherm.com/deterministic-programming-with-llms.html
+dev style -- TDD
+dev style -- TDD -- red → green → refactor
+development containers https://containers.dev/implementors/spec/
+DevEx
+DevOps -- DevOps Research and Assessment (DORA) = how we should develop our software right and what numbers we should show to our managers to make them happy https://medium.com/booking-com-development/a-step-by-step-guide-on-how-not-to-implement-dora-metrics-85081f0d4484
+DevOps -- DevSecOps
+DevOps https://www.browserstack.com/guide/difference-between-continuous-integration-and-continuous-delivery
+differential spec analysis = you write multiple implementations from a spec and then compare their behavior, to find deviations https://commaok.xyz/ai/differential-spec/
+digital hygiene = obvious if tech/dev https://x.com/karpathy/status/1902046003567718810
+do what I mean (DWIM) = computer systems attempt to anticipate what users intend to do, correcting trivial errors automatically rather than blindly executing users' explicit but potentially incorrect input
+dogfooding = practice of a company using its own products or services internally as a way to test, evaluate, and improve them. Essentially, the company's employees become the primary users of their own products.
+domain -- DDD "Domain-Driven Design" = software development philosophy that emphasizes the importance of understanding and modeling the business domain. It is a strategy aimed at improving the quality of software by aligning it more closely with the business needs it serves https://redis.io/glossary/domain-driven-design-ddd/ https://en.wikipedia.org/wiki/Domain-driven_design
+domain -- DSL (Domain Specific Language)
+domain -- top-level = collection of services, libraries, and other components you can logically group into an API for a specific business function to represent a unit of autonomous decision-making.
+domain -- top-level = should be a grouping based on functionality, not organizational hierarchy; Able to operate as an independent area of decision-making; Stable in the face of organizational changes.
+domain = a targeted subject area of a computer program
+domain name -- && reverse syntax ordering = ex. com.example.subdomain
+domain name -- DNS "Domain Name System"
+DoS "Denial of Service"
+DoS -- DDoS "Distributed Denial of Service"
+DoS -- DDoS -- self https://waxy.org/2023/07/twitter-bug-causes-self-ddos-possibly-causing-elon-musks-emergency-blocks-and-rate-limits-its-amateur-hour/
+DRY (don't repeat yourself)
+DRY -- see premature abstraction
+DRY -- WET "write everything twice" https://overreacted.io/the-wet-codebase/
+dry run
+durable execution = crucial layer of fault tolerance that shields applications from external issues, such as API or internal infrastructure failures. It's a key part of keeping everything running smoothly https://www.inngest.com/blog/introducing-durable-endpoints
+durable execution = development paradigm that preserves application state so that upon host or software failure it can seamlessly retry (sometimes on another machine) https://stackoverflow.blog/2024/05/28/an-open-source-development-paradigm/
+dynamic configuration -- feature flags -- addiction https://newsletter.manager.dev/p/feature-flags-are-ruining-your-codebase
+dynamic configuration -- feature flags -- also called toggle, feature control
+dynamic configuration -- targeting = env, group, user...
+dynamic configuration = dynamically change the state of production, can be injected at several levels https://replane.dev/blog/dynamic-configuration-nodejs/
+dynamic configuration = https://replane.dev/blog/dynamic-configuration-nodejs/
+dynamic configuration https://docs.getjoystick.com/quick/
+eBPF https://ebpf.io/ https://en.wikipedia.org/wiki/EBPF
+ecosystem -- ADK "App Development Kit" = https://medium.com/disney-streaming/introducing-the-disney-application-development-kit-adk-ad85ca139073
+ecosystem -- Apps
+ecosystem -- create
+ecosystem -- repositories = npm, jsr https://deno.com/blog/openai-on-jsr
+ecosystem -- SDK
+ecosystem -- templates
+Effect<Success, Error, Requirements> https://effect.website/docs/guides/essentials/the-effect-type
+effective engineer -- LeadDev -- 01. Care about the user and their needs
+effective engineer -- LeadDev -- 02. Be a great problem solver
+effective engineer -- LeadDev -- 03. Keep things simple, while caring about quality
+effective engineer -- LeadDev -- 04. Communicate effectively with your team
+effective engineer -- LeadDev -- 05. Build trust, autonomy, and social capital
+effective engineer -- LeadDev -- 06. Understand team strategy
+effective engineer -- LeadDev -- 07. Prioritize appropriately and execute independently
+effective engineer -- LeadDev -- 08. Think long term = e.g. implications of decisions
+effective engineer -- LeadDev -- 09. Leave software projects better than you found them
+effective engineer -- LeadDev -- 10. Be comfortable taking on new challenges
+effective engineer -- LeadDev https://www.linkedin.com/posts/addyosmani_softwareengineering-programming-effectiveness-activity-7018966411389661184-pVev
+egress/ingress
+Emergency Stop (E-Stop) = fail-safe control switch used to immediately halt machinery in hazardous situations to prevent injury or equipment damage
+emscripten
+encabulator https://en.wikipedia.org/wiki/Turbo_encabulator  https://www.youtube.com/watch?v=RXJKdh1KZ0w
+encoding -- binary-to-text -- risk of accidental words
+encoding -- binary-to-text https://en.wikipedia.org/wiki/Binary-to-text_encoding
+end-of-life -- "stuck upgrading" https://github.com/NullVoxPopuli/package-majors
+end-of-life -- debate https://github.com/endoflife-date/endoflife.date/pull/6684
+end-of-life https://endoflife.date/
+engineer's notions of simplicity, economies of scale, and design integrity https://en.wikipedia.org/wiki/Planned_obsolescence#History
+engineering https://en.wikipedia.org/wiki/Citicorp_Center_engineering_crisis
+engineering laws https://newsletter.manager.dev/p/the-13-software-engineering-laws
+engineering manager -- don't (2026 / AI) https://newsletter.manager.dev/p/dont-become-an-engineering-manager
+entitlements -- non-standard offerings or commercial terms to meet their needs through high touch sales motions. High touch Sales teams work closely with our customers to understand their solution needs and buying preferences like Multi-year billed annual, ELAs, Ramp discounts. There is a significant volume of customers and revenue from such deals
+EOL "end of life"
+EOL -- support = https://www.herodevs.com/support
+epochs: a backward-compatible language evolution mechanism https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1881r0.html
+error -- failure type – open / close = open = allow, close = deny, best choice depends on context https://community.opentext.com/cybersec/b/cybersecurity-blog/posts/security-fundamentals-part-1-fail-open-vs-fail-closed
+error -- handling -- exceptions, error codes, monads, etc. https://www.boost.org/doc/libs/1_84_0/libs/outcome/doc/html/alternatives.html
+error -- handling -- fail fast = Check input and fail on nonsensical input or invalid state as early as possible, preferably with an exception or error response that will make the exact problem clear to your caller https://opensource.com/article/17/5/30-best-practices-software-development-and-testing
+error -- handling -- fail fast and loudly
+error -- handling -- late/lazy evaluation vs. fail fast
+error -- reuse error codes
+error -- type -- domain error = out of the specification, ex. sqrt(-x) https://cplusplus.com/reference/stdexcept/domain_error/
+error -- type -- logic error = errors in the internal logical of the program, such as violation of logical preconditions or class invariants https://cplusplus.com/reference/stdexcept/logic_error/
+error -- type -- runtime error = errors that can only be detected during runtime https://cplusplus.com/reference/stdexcept/runtime_error/
+error = failure = inability of a function to return a valid result, instead producing an error object describing the reason for the failure https://boostorg.github.io/leaf/#tutorial
+ethics = responsibilities https://en.wikipedia.org/wiki/British_Post_Office_scandal
+ETL “extract, transform, load” = the three interdependent processes of data integration used to pull data from one database and move it to another
+event loop
+every rule is born from blood
+evolution -- "that's the old way and it sucks, do it this way now..."
+evolution -- I'm old and I yell at clouds
+evolution -- nothing ages faster than a (UI) framework
+exceptions -- checked vs unchecked = only Java does checked, no-one followed, too much boilerplate https://en.wikipedia.org/wiki/Criticism_of_Java#Checked_exceptions
+execution model https://en.wikipedia.org/wiki/Execution_model
+express
+expressions -- immutable, statically analysable switches = e.g. prod/staging https://github.com/WinterTC55/proposal-minimum-common-api/issues/89
+extreme programming
+FAANG https://www.faangfire.com/
+feedback loop -- speed needed
+fields -- brownfield development = problem spaces needing the development and deployment of new software systems in the immediate presence of existing (legacy) software applications/systems https://en.wikipedia.org/wiki/Brownfield_(software_development)
+fields -- greenfield development = brand new software development projects that are not constrained by prior work
+FIFO
+file read
+file watcher -- watchman
+file watcher https://github.com/parcel-bundler/watcher
+file write
+finished software https://josem.co/the-beauty-of-finished-software/
+finops
+flank speed = American nautical term referring to a ship's true maximum speed, in case of immediate danger. It is not equivalent to the term full speed ahead.
+flatmap
+flow state = deep concentration, enjoyment, and a sense of progress
+flushing
+flux architecture
+format -- container format https://en.wikipedia.org/wiki/Resource_Interchange_File_Format
+forward deployed engineer https://engineering.ramp.com/post/forward-deployed-engineering
+framework -- "a new framework a day"
+framework -- motivations -- avoiding duplication = BUT premature abstraction
+framework -- motivations -- don't like the language = e.g. Java style on Javascript
+framework -- motivations -- underlying complexities = BUT may not be still there
+framework -- spectrum = spectrum of more features v. loss of architectural control https://reactrouter.com/start/modes
+frameworks = you have to build projects around them and not with them https://orm.drizzle.team/docs/overview#headless-orm
+free software -- Four Essential Freedoms of Software -- to distribute copies of your modified versions to others. By doing this you can give the whole community a chance to benefit from your changes.
+free software -- Four Essential Freedoms of Software -- to redistribute copies so you can help your neighbor.
+free software -- Four Essential Freedoms of Software -- to run the program as you wish, for any purpose.
+free software -- Four Essential Freedoms of Software -- to study how the program works, and change it so it does your computing as you wish. Access to the source code is a precondition for this.
+free software -- Four Essential Freedoms of Software https://en.wikipedia.org/wiki/The_Free_Software_Definition
+free software -- glossary https://sfconservancy.org/copyleft-compliance/glossary.html
+freedesktop.org
+FTU – First Time Use
+function
+function -- 1st-class object
+function -- first-class function
+function -- higher-order function
+functional programming
+GAFAM "Google, Amazon, Facebook, Apple, Microsoft"
+GAFAM -- "megacap companies"
+GAFAM -- Amazon https://www.vanityfair.com/news/story/inside-amazon-business-practices
+garbage collector
+general dependency injection and inversion of control problem
+geohash = compact representations of latitude and longitude https://en.wikipedia.org/wiki/Geohash
+git
+git -- forges = github, gitlab, gitea, forgejo, bitbucket
+git -- gitattributes
+git -- gitignore https://git-scm.com/docs/gitignore#_pattern_format
+git -- gitops
+git -- glossary https://git-scm.com/docs/gitglossary
+git -- worktrees https://git-scm.com/docs/git-worktree
+global variable
+go-to person = becoming one gets you promoted https://read.highgrowthengineer.com/p/becoming-a-go-to-person-gets-you
+God object https://en.wikipedia.org/wiki/God_object
+good to great = real expert at a tech (cf. T-shaped)
+graph
+GRASP (object-oriented design) = General Responsibility Assignment Software Patterns = nine fundamental principles in object design and responsibility assignment https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)
+GRASP -- 1 Information expert = Assign responsibility to the class that has the information needed to fulfill it
+GRASP -- 2 Creator = Who creates object A? In general, Assign class B the responsibility to create object A if one, or preferably more, of the following apply...
+GRASP -- 3 Controller = A controller object is a non-user interface object responsible for receiving or handling a system event
+GRASP -- 4 Indirection = Assign the responsibility to an intermediate object to mediate between other components or services so that they are not directly coupled
+GRASP -- 5 Low coupling = lower dependency between the classes, change in one class having a lower impact on other classes, higher reuse potential
+GRASP -- 6 High cohesion = keep objects appropriately focused, manageable and understandable
+GRASP -- 7 Polymorphism = responsibility for defining the variation of behaviors based on type is assigned to the type for which this variation happens
+GRASP -- 8 Protected variations = Identify points of predicted variation or instability; assign responsibilities to create a stable interface around them
+GRASP -- 9 Pure fabrication =
+GRASP -- see also: SOLID
+groupware = collaboration software = helps members of a group work better together. Groupware makes it possible for group members to easily share information and to use that information to more easily support working together.
+grug brain = complexity, readability https://grugbrain.dev/
+Grug Brained Developer = A layman's guide to thinking like the self-aware smol brained https://grugbrain.dev/
+hallway usability testing https://en.wikipedia.org/wiki/Usability_testing#Hallway_testing
+handle
+hashbang (aka. shebang) https://github.com/tc39/proposal-hashbang
+helping -- XY problem = wrongly asking about your attempted solution rather than your actual problem https://xyproblem.info/
+HI-C (High-impact IC) = An individual contributor who can complete a project that delivers business value, end-to-end, on their own. Usually an ex-leader (manager, director, VP). https://www.elenaverna.com/p/ic-work-is-the-new-career-flex
+historically bad ideas https://qconlondon.com/london-2009/qconlondon.com/london-2009/tracks/show_trackd04f.html?trackOID=232
+history -- Unix IV http://squoze.net/UNIX/v4/README
+Hofstadter's Law = It always takes longer than you expect, even when you take into account Hofstadter's Law https://en.wikipedia.org/wiki/Hofstadter's_law
+hoisting des vars de boucle for et switch
+homoiconicity https://en.wikipedia.org/wiki/Homoiconicity
+hooks
+hotfix
+how to -- fix any bug https://overreacted.io/how-to-fix-any-bug/
+how to stay on the cutting edge without drawing blood? -- always keep experimenting
+how to stay on the cutting edge without drawing blood? -- build projects to test new ideas
+how to stay on the cutting edge without drawing blood? -- DON’T watch every new shiny new thing that appears... a new framework, a new approach, a new library. Sometimes the new hotness doesn’t really do anything new. But, if it fills a gap or expands a capability, I dive deeper. If it’s hype without a clear use case, I file it away. Maybe it’ll be useful some day, maybe it won’t… but I’ll at least be familiar with the idea, the name, and what it purports to do.
+how to stay on the cutting edge without drawing blood? -- focus on understanding the fundamentals
+how to stay on the cutting edge without drawing blood? -- If you’re feeling overwhelmed by the pace of change, just getting started, or spent some time away from the technology treadmill: get your bearings
+how to stay on the cutting edge without drawing blood? -- reach out to folks in your network and chat to them
+how to stay on the cutting edge without drawing blood? -- read the stuff no-one else bothers to read: the documentation
+how to stay on the cutting edge without drawing blood? = suggested by Matt Pocock in an email (no link)
+http -- ohttp "oblivious" https://support.mozilla.org/en-US/kb/ohttp-explained
+hypermedia
+hypertext
+IAM "identity and access management"
+IAM -- CIAM "Customer Identity and Access Management" = a type of identity and access management (IAM) that integrates authentication and authorization into customer-facing applications
+IAM -- CIAM -- 01 Improves customer registration and login experiences while reducing the risk of account takeover = a rampant problem in the consumer space because of password reuse
+IAM -- CIAM -- 02 Offers customized and branded experiences for consumers, businesses, and enterprise customers
+IAM -- CIAM -- 03 Provides a scalable solution that can support hundreds of millions of customers
+IC vs management https://theengineeringmanager.substack.com/p/should-managers-still-code
+IDE (Integrated Development Environment)
+IDE -- "You're not productive enough without a productive IDE"
+IDEALS -- 1 Interface segregation
+IDEALS -- 2 Deployability = is on you
+IDEALS -- 3 Event-driven
+IDEALS -- 4 Availability over consistency
+IDEALS -- 5 Loose coupling
+IDEALS -- 6 Single responsibility
+IDEALS = principles for microservice design
+idempotent = make mutations idempotent. A full retry of a partial failure shouldn’t corrupt/duplicate data.
+identitiy -- identities = You can be a member of a social network, an employee of one company, a citizen of a country…
+if it ain't broken, don't fix it
+IIFE https://codilime.com/blog/iffe-forgotten-javascript-pattern/
+illusion of clean code = "the good news is that my code is quite beautiful and well organized, with perfectly uniform indentation and formatting, completely consistent conventions, and immaculately well factored. Any developer who is worth their salt in the language I have laid down will be able to understand, trace, and build upon my code within one day of poring over it. (If not, fire them. Trust me.)" https://blog.jpl-consulting.com/2011/03/what-happens-if-i-get-hit-by-a-bus/
+immutability
+inheritance -- diamond
+inheritance -- prototypal
+inheritance -- substitutability = an object (such as a class) may be replaced by a sub-object (such as a class that extends the first class) without breaking the program
+inner-platform effect https://en.wikipedia.org/wiki/Inner-platform_effect
+interface
+interface -- abstract = no implementation, only to be extended (OOP)
+Interface segregation principle = instead of a class interface with all possible methods clients might need, there should be separate interfaces catering to the specific needs of each type of client https://en.wikipedia.org/wiki/Interface_segregation_principle
+internal developer platform (IDP) = central source of truth, golden paths, https://www.pulumi.com/docs/idp/get-started/
+internal developer platform -- private registry
+interpreters = make your own programming language https://craftinginterpreters.com/
+Inversion of control (IoC) = programming principle whereby flow is managed in the opposite way to traditional procedural programming. With inversion of control, custom-written portions of a program receive the flow of control from a generic framework, as opposed to the traditional procedural approach whereby custom code calls into reusable libraries to take care of generic tasks. With inversion of control, the framework calls into custom, or task-specific, code
+is it worth the time? https://will-keleher.com/posts/its-not-worth-the-time-yet/
+job -- as tool = "It is simply a fact that software engineers are tools in the political game being played at large companies" https://alexwennerberg.com/blog/2025-11-28-engineering.html
+jobs -- meaningful -- vs. hyper optimisation of ads delivery = https://www.reddit.com/r/ExperiencedDevs/comments/1sq5y4t/advice_on_moving_from_big_tech_to_something_more/
+Joel test -- 01 Do you use source control?
+Joel test -- 02 Can you make a build in one step?
+Joel test -- 03 Do you make daily builds?
+Joel test -- 04 Do you have a bug database?
+Joel test -- 05 Do you fix bugs before writing new code?
+Joel test -- 06 Do you have an up-to-date schedule?
+Joel test -- 07 Do you have a spec?
+Joel test -- 08 Do programmers have quiet working conditions?
+Joel test -- 09 Do you use the best tools money can buy?
+Joel test -- 10 Do you have testers?
+Joel test -- 11 Do new candidates write code during their interview?
+Joel test -- 12 Do you do hallway usability testing?
+Joel test -- revised -- 01 Do you use Git, or some lesser source control system?
+Joel test -- revised -- 02 Can you build and release in one step?
+Joel test -- revised -- 03 Do you build and test before merging to master?
+Joel test -- revised -- 04 Do you have a bug database?
+Joel test -- revised -- 05 Do you fix bugs before writing new code?
+Joel test -- revised -- 06 Do you have an up-to-date schedule?
+Joel test -- revised -- 07 Do you write a spec before writing code?
+Joel test -- revised -- 08 Do programmers have quiet working conditions free of interruptions?
+Joel test -- revised -- 09 Do you use the best development tools money can buy?
+Joel test -- revised -- 10 Do you have human testers?
+Joel test -- revised -- 11 Do you do automated testing?
+Joel test -- revised -- 12 Do new candidates write code as part of the hiring process?
+Joel test -- revised -- 13 Do you watch people actually try to use your software?
+Joel test -- revised https://dev.to/checkgit/the-joel-test-20-years-later-1kjk
+Joel test https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/
+JS -- 2026 https://pawelgrzybek.com/whats-new-in-ecmascript-2026/
+jump/goto
+junior -- https://vadimkravcenko.com/shorts/falsehoods-junior-developers-believe-about-becoming-senior/
+justification filler = "Best Practice", "Industry Standard", "Security Posture" https://serce.me/posts/2025-05-19-justification-filler-phrases
+kebab-case vs snake etc
+kill switch
+KISS
+KTLO
+l10n "localization" = process of adapting a product to local markets (for example, by i18n'ing it)
+l10n -- g11n = Globalization
+l10n -- i18n (internationalization) = planning and implementing products and services so that they can be adapted easily localized to specific languages and cultures
+l10n -- i18n -- blocking languages = core business
+l10n -- i18n -- exclusions -- admin
+l10n -- i18n -- exclusions -- dev doc / portal = really hard - you need engineers fluent in both languages (and the tools/sdks/etc)
+l10n -- i18n -- ICU format https://formatjs.github.io/
+l10n -- i18n -- pseudolocalization = [Lóôõrēĕėęm iìíîpsúûüũm]
+l10n -- i18n -- text size change https://www.w3.org/International/articles/article-text-size
+l10n -- truly local = more than just translation
+lang -- Bend = massively parallel, high-level programming language https://github.com/HigherOrderCO/Bend
+lang -- Clojure = ~lisp https://clojure.org/ https://clojure.org/guides/getting_started
+lang -- confuguration -- https://medv.io/blog/things-i-dont-like-in-configuration-languages
+lang -- confuguration -- JSON5
+lang -- confuguration -- TS
+lang -- E = https://www.crockford.com/ec/etut.html
+lang -- F# https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
+lang -- go
+lang -- go -- advocacy https://github.com/microsoft/typescript-go/discussions/411
+lang -- JS -- engines http://developer.telerik.com/featured/a-guide-to-javascript-engines-for-idiots/
+lang -- JS -- equality
+lang -- JS -- interview http://www.toptal.com/javascript/interview-questions
+lang -- JS -- interview https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
+lang -- JS -- parseInt http://stackoverflow.com/questions/17106681/parseint-vs-unary-plus-when-to-use-which/17106702#17106702
+lang -- JS -- realms https://stackoverflow.com/questions/49832187/how-to-understand-js-realms/49832343#49832343
+lang -- JS -- runtimes https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/
+lang -- JSX = Javascript XML, from React
+lang -- Lean = Math language https://lean-lang.org/ https://overreacted.io/the-math-is-haunted/
+lang -- OCaml
+lang -- Rust https://www.rust-lang.org/
+lang -- swiftlang = from Apple https://x.com/awesomekling/status/1822236888188498031
+lang -- Tcl = very compact, often embedded https://en.wikipedia.org/wiki/Tcl
+lang -- There are only two kinds of languages: the ones people complain about and the ones nobody uses.
+lang -- TS -- tsconfig https://json.schemastore.org/tsconfig
+lang -- wasp = high level website / SaaS https://wasp.sh/
+lang -- wolfram = https://woxi.ad-si.com/
+language -- && Server Index Format (LSIF)
+language -- && Server Protocol https://microsoft.github.io/language-server-protocol/
+language -- features -- contract enforcement
+language -- features -- data hiding
+language -- features -- encapsulation
+language -- features -- polymorphism
+language -- interpreted && -- types simples / types par référence
+language -- language tags
+language -- type -- markup = a text-encoding system which specifies the structure and formatting of a document and potentially the relationships among its parts.[1] Markup can control the display of a document or enrich its content to facilitate automated processing https://en.wikipedia.org/wiki/Markup_language
+language -- types https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
+languages -- configuration -- https://github.com/bazelbuild/starlark/
+languages -- generations = (disputed) https://en.wikipedia.org/wiki/Programming_language_generations
+languages -- higher level -- wrongly against = Von Neumann https://www.reddit.com/r/compsci/comments/zx1eu8/von_neumann_was_admonishing_people_who_built/
+languages -- trends
+languages -- ur-languages = ALGOL, Lisp, ML, Self, Forth, APL, Prolog https://madhadron.com/programming/seven_ur_languages.html
+languages -- weekend = for fun https://stackoverflow.blog/2017/02/07/what-programming-languages-weekends/
+layers
+layers -- abstraction
+layers -- shearing && = +++ very important concept
+lazy-loading
+leaking
+learning -- https://roadmap.sh/
+legacy code = code without good testing coverage that we don’t recall writing https://www.booktopia.com.au/working-effectively-with-legacy-code-michael-feathers/book/9780131177055.html
+let's deploy to production https://www.youtube.com/watch?v=5p8wTOr8AbU
+LIFO
+Line-of-business (LOB) software = critical, specialized applications used to manage essential, day-to-day operations and core processes of an organization. Often customized or industry-specific, these tools—such as CRM, ERP, or accounting systems—streamline workflows and increase productivity, differentiating them from general-purpose office software https://en.wikipedia.org/wiki/Line_of_business
+linear programming = ? https://bitsavers.org/pdf/ibm/generalInfo/E20-0156-0_Linear_Programming_-_Ice_Cream_Blending.pdf
+linked list
+linting
+linux
+linux -- eBPF https://ebpf.io/what-is-ebpf/
+linux -- namespaces = an isolation feature found in the Linux kernel that were introduced around the year 2000 https://blog.torproject.org/introducing-oniux-tor-isolation-using-linux-namespaces/
+locality
+locality -- conflict locality = reducing conflicts on close changes, ex. enforcing trailing commas, sorting...
+locality -- of behaviour "LoB" https://htmx.org/essays/locality-of-behaviour/
+lock-in
+lock-in -- vendor
+lodash
+log
+logging -- wide events = https://jeremymorrell.dev/blog/a-practitioners-guide-to-wide-events/
+logs -- excessive = https://github.com/systemd/systemd/issues/40262
+long-term support (LTS)
+loop
+loop -- breaking out of
+lore -- NSC "Nocturnal Self Correction" = improved performance after long weekends
+low level -- boot / kernel https://bryankeller.github.io/2026/04/08/porting-mac-os-x-nintendo-wii.html
+LTS, maintenance LTS, active LTS https://nodejs.org/en/about/previous-releases
+LxTHW "Learn X The Hard Way" Philosophy = has students do exercises, focuses on practice and rote repetition, and instills an attitude that to learn anything one must be prepared to work at it https://github.com/georgeowen1993/learn-git-the-hard-way/
+magic number
+maintainability = https://cant-maintain.saschb2b.com/play
+manifest
+map
+math https://math4devs.com/
+MDN
+media types https://www.iana.org/assignments/media-types/media-types.xhtml
+memory -- arena > heap > chunk https://sourceware.org/glibc/wiki/MallocInternals
+memory -- fragmentation
+memory -- garbage collection
+memory -- garbage collection -- --max-old-space-size
+memory -- heap
+memory -- issues = ex. https://frn.sh/pmem/
+memory -- malloc = "One Heap to malloc them all, One Heap to free them, One Heap to coalesce, and in the memory bind them..." https://sourceware.org/glibc/wiki/MallocInternals
+memory -- mmap
+memory -- OOMKills = Out Of Memory crashes
+memory -- pressure = high usage is good, pressure is bad https://planetscale.com/blog/high-memory-usage-in-postgres-is-good-actually
+memory -- RAM
+memory -- safety -- "about 40% of all security problems in curl can be blamed on us using C instead of a memory-safe language. 50% of the high/critical severity ones" https://daniel.haxx.se/blog/2024/12/12/a-twenty-five-years-old-curl-bug/comment-page-1
+memory -- safety -- borrow-checking system = Rust https://thenewstack.io/c-committee-divided-on-memory-safety-plans/
+memory -- safety -- profiles https://thenewstack.io/c-committee-divided-on-memory-safety-plans/
+memory -- stack
+memory -- stack -- && overflow
+message passing https://en.wikipedia.org/wiki/Message_passing
+meta -- If Architects Had To Work Like Programmers = +++ https://web.archive.org/web/20251214162602/https://paws.kettering.edu/~jhuggins/humor/design.html
+MFA -- 2FA
+MFA -- double auth
+microcode
+microprocessor https://firstmicroprocessor.com/
+mid-level https://www.developing.dev/p/what-i-wish-i-knew-as-a-mid-level
+middleware
+migrations
+mission-critical software
+mixins -- considered harmful https://legacy.reactjs.org/blog/2016/07/13/mixins-considered-harmful.html
+mocha / chai
+monads
+monads and category theory = advanced concepts from functional programming, usually unpractical + would require all libs to natively use it https://blog.jcoglan.com/2026/03/23/uses-for-nested-promises/ https://github.com/promises-aplus/promises-spec/issues/94
+monitoring = observing systems, collecting metrics, evaluating those metrics over time, and then using them to make decisions or take actions
+Monitoring vs. Observability = Traditional monitoring is about watching for pre-defined failure states, while observability is about building a system that can be interrogated to understand any state, expected or not. https://blog.mergify.com/software-observability/
+monolith = over time become poorly structured, containing many different, sometimes competing conventions. These conventions and “styles” sprawl throughout the monolith and make it difficult to understand what is going on. Because structures are built with different conventions, to work in the monolith safely, you have to examine everything to make sure you understand this instance of this pattern. It’s not safe to assume anything. This, combined with the lack of boundaries in the monolith means that every change incurs a huge cost in examination and understanding before it can be safely implemented. This skews developer performance to tenure - the longer you have been staring at the code, the more you have wrapped your head around and the faster you can go (mostly). New developers should not be worried about the time it takes to be effective in the monolith - it's the monolith’s fault, not yours."
+monolith refactoring -- 1. Move code into a good module structure, unpicking code and dependencies along the way
+monolith refactoring -- 2. Understand the domain and build good and scalable abstractions = in the form of new APIs which are backed directly by the database (no managers, etc.)
+monolith refactoring -- 3. Replace usage of the old mess with the new APIs, validate consistency, etc.
+monorepo -- boundaries = don't conflate the main codebase vs things needed to run the build vs things produced by the build
+monorepo -- megarepo
+multi tenant -- isolation
+MVC "Model View Controller"
+myth of the code monkey = belief that developers are dumb, can't use advanced features, will make wrong decisions and need to be forced to use good practices https://qconlondon.com/london-2009/qconlondon.com/dl/qcon-london-2009/slides/RodJohnson_JavaEnterpriseApplicationStandardsAndWhyTheIndustryMovedToLightweightOpenSource.pdf
+Named Entity Recognition (NER) = identifying proper nouns from a piece of text and classifying them into appropriate categories. These categories can be generic like ‘Organization’, ‘Person’, ‘Location’, etc. or they can be tailor-made for a particular application, e.g. ‘Programming Language’, ‘Blogging site’, etc. https://medium.com/swlh/a-beginners-introduction-to-named-entity-recognition-ner-2002b1a010c1
+namespace
+naming -- must leave no room for interpretation
+naming -- must not overload pre-existing, well known meanings
+naming -- must use American English
+naming -- should be chosen based on essential function, rather than UI presentation or internal-only conventions
+naming -- should be consistent
+naming -- should be precise
+naming -- should be purposeful
+naming -- should be short and simple
+naming https://ntietz.com/blog/when-to-use-cute-names-or-descriptive-names/
+network -- autonomous system (AS) = very large network or group of networks with a single routing policy https://www.cloudflare.com/learning/network-layer/what-is-an-autonomous-system/
+network -- traceroute https://tech.stonecharioteer.com/posts/2026/traceroute/
+no silver bullet in engineering = we cannot expect ever to see two-fold gains every two years https://en.wikipedia.org/wiki/No_Silver_Bullet
+node.js -- principles https://www.platformatichq.com/node-principles
+Not Invented Here (NIH) = https://en.wikipedia.org/wiki/Not_invented_here
+npm
+null -- JS -- "intent to stop using null" = sindresorhus opinion (I strongly disagree and many other as well) https://github.com/sindresorhus/meta/discussions/7
+null -- The Billion Dollar Mistake = opinion that null is bad (I disagree) https://qconlondon.com/london-2009/qconlondon.com/london-2009/presentation/Null%2bReferences_%2bThe%2bBillion%2bDollar%2bMistake.html
+nyan cat
+o11y observability https://o11y.eu/blog/what-is-o11y/
+object
+object model = memory, working representation ex. DOM, CCSOM...
+observability = is just another word for “understanding”
+OOP -- against https://paulgraham.com/noop.html
+OOP -- fake strengths -- abstraction -> any interface
+OOP -- fake strengths -- code re-use
+OOP -- fake strengths -- Dependency inversion principle
+OOP -- fake strengths -- design benefits
+OOP -- fake strengths -- encapsulation = Once an Object is created, knowledge of its implementation is not necessary for its use + Objects have the ability to hide certain parts of themselves from programmers. This prevents programmers from tampering with values they shouldn’t. Additionally, the object controls how one interacts with it, preventing other kinds of errors. For example, a programmer (or another program) cannot set the width of a window to -400.
+OOP -- fake strengths -- inheritance -> use composition instead https://r.je/you-do-not-need-inheritance-oop
+OOP -- fake strengths -- Interface segregation principle
+OOP -- fake strengths -- Open/closed principle
+OOP -- fake strengths -- polymorphism
+OOP -- fake strengths -- Single responsibility principle
+OOP -- fake strengths -- software maintenance
+OOP -- fake strengths -- Static type checking -> not related to OOP
+OOP -- fake strengths https://medium.com/@jacobfriedman/object-oriented-programming-is-an-expensive-disaster-which-must-end-2cbf3ea4f89d
+OOP -- layer https://en.wikipedia.org/wiki/Layer_(object-oriented_design)
+OOP -- problems -- cross cutting concerns, diamond
+OOP -- problems -- encourages promiscuous sharing of mutable state
+OOP -- problems -- side effects
+opaque = data, types
+optim des || et && effet de bord
+optimization -- solutions -- Accept a less precise solution
+optimization -- solutions -- Use a better algorithm
+optimization -- solutions -- Use a better data-structure
+optimization -- solutions -- Use a lower-level system
+optimization -- we believe that we can easily know how to make the slow parts of a program run faster.
+optimization -- we believe that we can easily know where a program spends most of its time.
+optimization https://tratt.net/laurie/blog/2023/four_kinds_of_optimisation.html
+ORM (Object-Relational Mapping)
+ORM -- vs. data frameworks https://orm.drizzle.team/docs/overview#headless-orm
+ORM https://github.com/typeorm/typeorm
+orthogonality https://en.wikipedia.org/wiki/Orthogonality_(programming)
+overengineering https://blog.matt-rickard.com/p/stop-overengineering
+ownership
+ownership -- CODEOWNERS
+ownership -- CODEOWNERS = file defining individuals or teams that are responsible for code in a repository. Code owners are automatically requested for review when someone opens a pull request that modifies code that they own.  https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+ownership -- if you build it, you own it
+ownership -- shift left = lower levels own
+package manager = +++ https://nesbitt.io/2025/12/02/what-is-a-package-manager.html
+pair-programming
+partial application = creating a new version of a function with one or more of its parameters bound to some predefined value
+pattern -- actor model https://en.wikipedia.org/wiki/Actor_model
+pattern -- anti -- lava flow = code written under sub-optimal conditions is deployed into a production environment and subsequently expanded upon while still in a developmental state https://en.wikipedia.org/wiki/Lava_flow_(programming)
+pattern -- matching = checking a given sequence of tokens for the presence of the constituents of some pattern. In contrast to pattern recognition, the match usually has to be exact: "either it will or will not be a match." The patterns generally have the form of either sequences or tree structures. Uses of pattern matching include outputting the locations (if any) of a pattern within a token sequence, to output some component of the matched pattern, and to substitute the matching pattern with some other token sequence (i.e., search and replace).
+pattern -- recognition = same but not exact match
+patterns -- anti -- dependency threading = aka. prop drilling = parent component takes props for the sole purpose of passing them to a nested component -> fix it by passing the pre-wired nested component
+PEBKAC -- PICNIC = problem in chair, not in computer
+PEBKAC = problem exists between chair and keyboard https://en.wiktionary.org/wiki/PEBCAK
+peer review, green build = condition to merge a code change
+perf
+perf -- as a feature
+perf -- only pay for what you need
+performance -- analysis https://www.brendangregg.com/methodology.html
+permacomputing = a design practice that encourages the maximization of hardware lifespan, minimization of energy usage and focuses on the use of already available computational resources. It values maintenance and refactoring of systems to keep them efficient, instead of planned obsolescence, permacomputing practices planned longevity. It is about using computation only when it has a strengthening effect on ecosystems https://wiki.xxiivv.com/site/permacomputing.html
+permissions -- AppArmor https://en.wikipedia.org/wiki/AppArmor
+PHP (recursive acronym for PHP: Hypertext Preprocessor)
+pipeline express: success / error / next / send
+plain old -- java object / component object (POJO/POCO) = plain data container objects that don’t depend on external libraries
+platform engineering -- backstage, pulumi
+platform engineering = approach where one or more teams (often referred to as the platform engineering team or the platform team) build a comprehensive set of shared tools and services (aka “the platform”) to help development teams develop, deploy, and operate cloud infrastructure on a self-service basis. This includes cloud infrastructure, container orchestration platforms, databases, networking, monitoring, code repositories, and deployment pipelines. https://www.pulumi.com/what-is/what-is-platform-engineering/
+pointer
+polyfill
+polyfill -- shim vs polyfill vs ponyfill
+polymorphism https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+practices -- best vs. standard
+preprocessor macros
+principle of least surprise / principle of least astonishment https://en.wikipedia.org/wiki/Principle_of_least_astonishment
+principles -- KISS
+principles -- SOLID
+privacy
+privacy -- collect and use someone's info respectfully
+privacy -- Data Retention and Deletion Policy
+privacy -- PD "personal data"
+privacy -- personal data -- processing -- high-risk -- automated decision-making = e.g., rejecting employment based on automatic scoring
+privacy -- personal data -- processing -- high-risk -- children's data
+privacy -- personal data -- processing -- high-risk -- enriching or matching data with a third party’s data sets
+privacy -- personal data -- processing -- high-risk -- machine learning = unless it is a pre-approved use case
+privacy -- personal data -- processing -- high-risk -- monitoring of people/employees = e.g., CCTV footage or productivity metrics
+privacy -- personal data -- processing -- high-risk -- processing people’s data without their knowledge, consent or reasonable expectation = the person doesn’t know we have their data)
+privacy -- personal data -- processing -- high-risk -- profiling = building a profile of a person based on different pieces of personal data, such as user behaviour
+privacy -- personal data -- processing -- high-risk -- retargeting = sharing with third parties for marketing / re-marketing purposes
+privacy -- personal data -- processing -- high-risk -- sensitive data
+privacy -- personal data -- processing -- high-risk -- tracking precise user location = geolocation
+privacy -- personal data -- sensitive
+privacy -- PI "personal information" = any information about an individual
+privacy -- PI -- PII "personal identifiable information"
+privacy -- PI -- PII -- PFI "personal financial information"
+privacy -- PI -- PII -- PHI "personal health information"
+privacy -- PI -- PII -- SPI "sensitive personal information" = would create risk if compromised
+privacy -- PI -- processing
+privacy -- PI -- subject, controller, processor
+privacy -- PRINCIPLED -- 01 P = Privacy by Design and Default
+privacy -- PRINCIPLED -- 02 R = Remove personal data once the purpose is served
+privacy -- PRINCIPLED -- 03 I = Inform privacy office and take guidance as and when required
+privacy -- PRINCIPLED -- 04 N = Notify users with 100% transparency
+privacy -- PRINCIPLED -- 05 C = Collect only what is required
+privacy -- PRINCIPLED -- 06 I = Identify purpose of collection and processing
+privacy -- PRINCIPLED -- 07 P = Protect and Secure collected data
+privacy -- PRINCIPLED -- 08 L = Limit usage of data to the identified and notified purpose(s)
+privacy -- PRINCIPLED -- 09 E = Enable access and correction of information
+privacy -- PRINCIPLED -- 10 D = Disclose what is used
+privacy -- PRINCIPLED = helper
+privacy -- Privacy Impact Assessments (PIA)
+privacy -- readiness = of products, services, solutions
+privacy -- regulations/compliance AND expectations
+privacy -- right of access
+privacy -- right to correct
+privacy -- right to delete
+privacy -- right to portability
+privacy -- right to restrict
+programmer resistance https://blog.jpl-consulting.com/2010/07/programmer-resistance/
+programming -- application
+programming -- systems https://en.wikipedia.org/wiki/Systems_programming
+programming languages -- top -- 2024 https://spectrum.ieee.org/top-programming-languages-2024
+programming model https://en.wikipedia.org/wiki/Programming_model
+programming paradigm -- dataflow https://en.wikipedia.org/wiki/Dataflow_programming
+programming paradigm -- declarative
+programming paradigm -- functional
+programming paradigm -- imperative
+programming paradigm -- object oriented
+programming paradigm -- reactive
+promises -- deferred
+promises -- pipelining https://capnproto.org/rpc.html
+prompt
+protocol buffers (protobuf) = outdated by capnproto (same author). see data interchange format
+prototypes
+proxy
+pull vs push = (IoC, promises vs observables...)
+pure https://react.dev/learn/keeping-components-pure
+quality in tech https://linear.app/blog/why-is-quality-so-rare
+questions for a new technology -- 1 What problem are we trying to solve? = Tech should never be introduced as an end to itself)
+questions for a new technology -- 2 How could we solve the problem with our current tech stack? = If the answer is we can’t, then we probably haven’t thought about the problem deeply enough
+questions for a new technology -- 3 Are we clear on what new costs we are taking on with the new technology? = monitoring, training, cognitive load, etc
+questions for a new technology -- 4 What about our current stack makes solving this problem in a cost-effective manner = in terms of money, people or time difficult?
+questions for a new technology -- 5 If this new tech is a replacement for something we currently do, are we committed to moving everything to this new technology in the future? Or are we proliferating multiple solutions to the same problem? = aka “Will this solution kill and eat the solution that it replaces?”
+questions for a new technology -- 6 Who do we know and trust who uses this tech? Have we talked to them about it? What did they say about it? What don’t they like about it? = if they don’t hate it, they haven’t used it in depth yet
+questions for a new technology -- 7 What’s a low risk way to get started?
+questions for a new technology -- 8 Have you gotten a mixed discipline group of senior folks together and thrashed out each of the above points? Where is that documented?
+questions for a new technology https://kellanem.com/notes/new-tech
+queue
+reactive programming
+recursion
+red / blue deployment -- compatibility window = period, measured either in elapsed time or number of releases, where all versions of a component released during this window must be compatible with all components of the current version, and vice versa.
+regex -- bring more problems = Some people, when confronted with a problem, think “I know, I'll use regular expressions.” Now they have two problems. https://regex.info/blog/2006-09-15/247
+regex -- lookahead/lookbehind https://www.regular-expressions.info/lookaround.html
+regex https://regexlearn.com/
+regex – email https://colinhacks.com/essays/reasonable-email-regex
+register
+release channels = offer a trade-off between feature availability and stability https://support.google.com/chrome/a/answer/9027636?hl=en https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels
+release channels https://techcrunch.com/2020/06/15/microsoft-moves-its-windows-10-insider-program-from-rings-to-release-channels/
+release phases = alpha → beta → private beta → limited beta → public beta → general availability → deprecated → sunset https://vercel.com/docs/release-phases
+Religious application of principles learned from a presentation attended at an industry tradeshow is not a substitute for common sense.
+REST "REpresentational State Transfer"
+REST HTTP = How to GET a Cup of Coffee https://www.infoq.com/articles/webber-rest-workflow/
+Reverse Polish Notation
+revisions
+rewrite trap https://medium.com/@herbcaudill/lessons-from-6-software-rewrite-stories-635e4c8f7c22 https://skamille.medium.com/avoiding-the-rewrite-trap-b1283b8dd39e
+rewrites -- don't
+rewrites -- foundational rewrites
+rewrites -- rearchitectures
+RFC "Request For Comments" https://rfc.fyi/
+RFC 2119 terminology = must, must not, should, should not, and may. The terms prefer and avoid correspond to should and should not, respectively. Imperative and declarative statements are prescriptive and correspond to must.
+robustness -- principle (beware bad effects) https://en.wikipedia.org/wiki/Robustness_principle
+robustness https://en.wikipedia.org/wiki/Robustness_principle
+roles -- dps, tank, utility, healer https://x.com/karrisaarinen/status/2038356036390998229
+rollback
+rolling deploy
+RPC -- advocacy https://blog.cloudflare.com/javascript-native-rpc/
+RPC -- archi = contract (isomorphic) -> client (for consumers) + server (implement)
+RPC -- deadline https://protobuf.dev/programming-guides/api/
+RPC -- flawed = "RPC and its Offspring: Convenient, Yet Fundamentally Flawed" = can't hide the underlying distributed system  https://qconlondon.com/london-2009/qconlondon.com/london-2009/presentation/RPC%2band%2bits%2bOffspring_%2bConvenient%2c%2bYet%2bFundamentally%2bFlawed.html https://qconlondon.com/london-2009/qconlondon.com/dl/qcon-london-2009/slides/SteveVinoski_RPCAndItsOffspringConvenientYetFundamentallyFlawed.pdf
+RPC -- solution -- Google RPC https://grpc.io/
+RPC -- solution -- protocol = ex. https://capnproto.org/rpc.html
+RPC -- solution -- TS https://trpc.io/docs/concepts intro https://colinhacks.com/essays/painless-typesafety
+rsrcs -- learning = Lear X in Y minutes https://learnxinyminutes.com/
+rsrcs -- learning https://matklad.github.io/2023/08/06/fantastic-learning-resources.html
+rule of composition https://www.linfo.org/rule_of_composition.html
+rule of silence https://www.linfo.org/rule_of_silence.html
+runtime -- environment = collection of software and resources that support the execution of a program. It includes things like the virtual machine (e.g., the Java Virtual Machine), libraries, garbage collection, and other services the program needs while running.
+runtime = period during which a program is running — after it’s been compiled (if applicable) and while it’s executing instructions
+Rust -- TRACTOR "Translating All C to Rust"
+SAAS -- Shared responsibility model
+safety -- defense in depth = incident only when all the layers failed (rare but happens)
+sandboxing https://www.computesdk.com/benchmarks/
+schema
+schema -- normalization https://www.npmjs.com/package/normalize-url
+schema -- sanitization  https://www.npmjs.com/package/normalize-url
+schema -- validation -- standard interface https://standardschema.dev/
+schema explorer
+SCM (Source Control Management)
+scope
+script
+scripts -- should be written using the project main language https://joaomagfreitas.link/scripts-should-be-written-using-the-project-main-language/
+scrum
+SDK "Software Development Kit"
+security -- [see dedicated file]
+semaphore
+senior -- as "problem solvers who happen to code" = "job market is flooded with 8-year JavaScript veterans who can't debug a slow API" https://www.linkedin.com/posts/jordanambra_technicalleadership-hiring-engineeringmanagement-activity-7337913255601848320-t6m4/
+settings = managed > project > project.local > user > system ex. https://code.claude.com/docs/en/memory#choose-where-to-put-claude-md-files
+SHA "Secure Hash Algorithm"
+shaving the yak
+shell -- aliases -- collisions = use commas https://rhodesmill.org/brandon/2009/commands-with-comma/
+should know -- 165 Things Every Programmer Should Know https://news.slashdot.org/story/17/03/19/2323250/oreilly-site-lists-165-things-every-programmer-should-know
+should know -- 97 Things Every Programmer Should Know http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book
+should know -- technical things every software developer should know https://github.com/mtdvio/every-programmer-should-know
+show me the code!
+shrinkwrap
+side effects = avoid them!
+significant change
+silly "make software silly again" https://www.linkedin.com/posts/addyosmani_softwareengineering-programming-javascript-ugcPost-7296794102514229248-m976
+single executable application (SEA) -- node https://codesnip.sh/posts/building-standalone-nodejs-executables
+single executable application (SEA) https://joyeecheung.github.io/blog/2026/01/26/improving-single-executable-application-building-for-node-js/
+single responsibility principle -- challenge https://kiss-and-solid.com/blog/keep-it-simple
+single source of truth (SSoT) = aka. single point of truth (SPOT) = https://en.wikipedia.org/wiki/Single_source_of_truth
+site-specific browser https://en.wikipedia.org/wiki/Site-specific_browser
+SLI "Service Level Indicator" = a measurement of how reliable or performant a Capability is. Example: “time it takes to create a ticket”
+SLO "Service Level Objective" = (proactive) A target set on the SLI. Failing to hit the target == unhappy customer! Example: “Jira ticket created in less than 1s”
+SME Subject Matter Expert
+SOAP "Simple Object Access Protocol"
+software acceptance = How Is Technology Accepted? https://www.dreamsongs.com/Files/AcceptanceModels.pdf
+Software Bill of Materials (SBOM)
+Software Composition Analysis (SCA) detects open source libraries in both your repositories and running services, providing end-to-end visibility of library vulnerabilities and license management from development to production. https://docs.datadoghq.com/security/code_security/software_composition_analysis/
+software crisis https://en.wikipedia.org/wiki/Software_crisis
+software development philosophies = +++ https://en.wikipedia.org/wiki/List_of_software_development_philosophies
+software engineering -- is programming integrated over time = from Software Engineering at Google: Lessons Learned from Programming Over Time
+software projects failures -- case studies = https://ia.acs.org.au/article/2026/qld-s--183m-child-safety-it-redevelopment-slammed.html
+SOLID
+SOLID -- 1 Single responsibility = https://en.wikipedia.org/wiki/Single_responsibility_principle
+SOLID -- 2 Open–closed = https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
+SOLID -- 3 Liskov substitution https://en.wikipedia.org/wiki/Liskov_substitution_principle
+SOLID -- 4 Interface segregation https://en.wikipedia.org/wiki/Interface_segregation_principle
+SOLID -- 5 Dependency inversion https://en.wikipedia.org/wiki/Dependency_inversion_principle
+SOLID -- critique https://www.tedinski.com/2019/04/02/solid-critique.html
+solution -- bazel https://github.com/bazelbuild/bazelisk
+source maps
+source maps -- blanks, ex. type stripping
+source maps -- should NOT be public = attack vector https://lachlan.nz/blog/x-marks-the-spot
+sourcemaps = https://neciudan.dev/everything-you-need-to-know-about-sourcemaps
+space shuttle disasters -- Challenger = https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster
+space shuttle disasters -- Columbia = https://en.wikipedia.org/wiki/Space_Shuttle_Columbia_disaster
+spec
+spell corrector https://norvig.com/spell-correct.html
+SSH (Secure Shell)
+stack overflow
+standard deviation
+standards -- checklist -- 01 Will the pace of change and innovation required be met in a standards process cycle
+standards -- checklist -- 02 Do we benefit from competing implementations?
+standards -- checklist -- 03 Does this affect wire protocols = in which standards are probably outside Java
+standards -- checklist -- 04 Is there an entrenched open source solution, in which case competition may not occur?
+standards -- checklist -- 05 Is the field mature and well understood? Has the proposal been tested in the market? Do not want design by committee?
+standards -- checklist -- 06 Is the standards committee representative of the users of the technology?
+standards -- checklist -- 07 Does the standard exist to lock out newcomers? When standards become too complex, like J2EE, they effectively lock out new entrants and benefit existing franchisees, not consumers
+standards -- checklist https://qconlondon.com/london-2009/qconlondon.com/dl/qcon-london-2009/slides/RodJohnson_JavaEnterpriseApplicationStandardsAndWhyTheIndustryMovedToLightweightOpenSource.pdf
+standards -- dangerous when not based on experience and actual implementations
+standards -- do not ignore prior art = s39 https://qconlondon.com/london-2009/qconlondon.com/dl/qcon-london-2009/slides/RodJohnson_JavaEnterpriseApplicationStandardsAndWhyTheIndustryMovedToLightweightOpenSource.pdf
+standards -- standardization -- death by committee
+standards -- vs. standardization = If standards represent peace, then formal standardisation can be war. Dark, political, expensive and exclusive games played out between large vendors often behind closed doors. https://qconlondon.com/london-2009/qconlondon.com/london-2009/presentation/Standards%2bare%2bGreat%2c%2bbut%2bStandardisation%2bis%2ba%2bReally%2bBad%2bIdea.html
+standards = good, arise from consensus between competitors signaling maturity in a marketplace. Can ensure interoperability and assist portability, allowing the switching of suppliers. A widely adopted standard can create new markets, and impose useful constraints which in turn foster good design and innovation. Standards are great, and as the old joke goes, that's why we have so many of them! https://qconlondon.com/london-2009/qconlondon.com/london-2009/presentation/Standards%2bare%2bGreat%2c%2bbut%2bStandardisation%2bis%2ba%2bReally%2bBad%2bIdea.html
+standards/standardization -- "build sth -> build a community -> observe, edit" https://qconlondon.com/london-2009/qconlondon.com/dl/qcon-london-2009/slides/PaulDowney_StandardsAreGreatButStandardisationIsAReallyBadIdea.pdf
+standards/standardization = history https://qconlondon.com/london-2009/qconlondon.com/dl/qcon-london-2009/slides/PaulDowney_StandardsAreGreatButStandardisationIsAReallyBadIdea.pdf
+state
+state -- making impossible states impossible https://medium.com/elm-shorts/how-to-make-impossible-states-impossible-c12a07e907b5
+state -- management
+state -- stateless
+Static Code Analysis (SAST)
+stats course https://www.youtube.com/playlist?list=PLltdM60MtzxNwhL4sg7swFFlUlH7EEy7H []
+status codes
+stick to boring architecture for as long as possible https://addyosmani.com/blog/boring-architecture/
+stories to help you grow as a software developer https://medium.com/@MediumStaff/list/stories-to-help-you-grow-as-a-software-developer-b1d913188c20
+straw-dog proposal = (jargon) a brainstormed simple draft proposal intended to generate discussion of its disadvantages and to spur the generation of new and better proposals https://en.wikipedia.org/wiki/Straw_man_proposal#Software_development
+streams
+strict -- use strict
+stringbool = string convertible to a bool, ex.yes, no, Y, false, true, 0, 1...
+style guides https://google.github.io/styleguide/
+superapp
+syntactic salt https://en.wikipedia.org/wiki/Syntactic_sugar#Syntactic_salt
+syntactic sugar https://en.wikipedia.org/wiki/Syntactic_sugar
+system boundaries = a publicly exposed interface that third-party developers are going to use. It’s the inability to make breaking changes because you have external users to support that really defines a boundary. As a result, you have to pay special attention to get the design of a system boundary right—it’s not easy to make changes in the future. Boundaries are more important than other parts of our programs that we can refactor at will. https://www.tedinski.com/2018/02/06/system-boundaries.html
+system call
+tainting an object https://react.dev/reference/react/experimental_taintObjectReference
+taste = Every codebase reflects the taste of the developers who built it, from naming conventions to error handling patterns and testing approaches https://every.to/guides/compound-engineering
+tech debt -- buckets -- 1 strategic = directly impacts business outcomes: what specific user or business capabilities will be blocked? what's our timeline before we hit critical constraints? what's the minimum investment needed to unblock progress?
+tech debt -- buckets -- 2 tactical = slows delivery speed: focus on velocity metrics: "our deploy time has increased from 15 minutes to 4 hours in the last quarter""bug fix turnaround has gone from 2 days to 2 weeks""feature development estimates have doubled"
+tech debt -- buckets -- 3 brand = the product works but doesn't exude quality/trust, ex. slow, clunky, "infantile"
+tech debt -- buckets -- 4 cosmetic = affects code quality but not outcomes
+tech debt -- origin -- accidental - e.g. bugs due to human error that unknowingly increases the cost of future work.
+tech debt -- origin -- deliberate - e.g. optimising for short term delivery, knowing it increases the cost of future work.
+tech debt -- origin -- incidental - e.g. organic changes in complexity over time that increases the cost of future work.
+tech specs https://hybridhacker.email/p/how-to-write-great-tech-specs
+technostress = negative psychological relationship between people and the introduction of new technologies. can erode productivity, dampen morale, and even impact overall wellbeing https://ia.acs.org.au/article/2025/are-you--technostressed--.html
+Temporal Dead Zone (TDZ)
+temporary solutions https://80.lv/articles/this-30-year-old-windows-feature-was-created-as-a-temporary-solution/
+tenant -- isolation -- sandboxing / isolates / individual processes / individual VMs / individual containers
+tenant -- multi-tenant
+terminal -- ENV -- DO_NOT_TRACK https://consoledonottrack.com/
+terminal -- ENV -- NO_COLOR https://no-color.org/
+testing -- fixture -- general = setup designed to hold the OUT in place and allow it to be tested by being subjected to controlled test signals https://en.wikipedia.org/wiki/Test_fixture
+testing -- fixture = (also called "test context") setup of state and input data designed to allow the OUT to be tested by being subjected to controlled test signals, ex. a fake database with data https://en.wikipedia.org/wiki/Test_fixture#Software
+testing -- mutation testing = tests your test suite by introducing a bug into the code under test, running the tests, and verifying the tests failed (i.e. that your tests are good enough to catch the bug) https://sentry.engineering/blog/js-mutation-testing-our-sdks https://stryker-mutator.io/
+testing -- Object Under Test (OUT)
+testing -- property based = instead of “it works for this case”, it’s “it works for any arbitrary input of this pattern” (e.g. “all integers”, “all alphanumeric strings”, “all List<Foo>s of length less than 10”) https://en.wikipedia.org/wiki/Property_testing
+testing -- TDD
+testing -- test double -- 01 dummy = objects are passed around but never actually used. Usually they are just used to fill parameter lists
+testing -- test double -- 02 fake = have working implementations, but usually take some shortcut which makes them not suitable for production (an in memory database is a good example)
+testing -- test double -- 03 stub = provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test.
+testing -- test double -- 04 spy = stubs that also record some information based on how they were called. One form of this might be an email service that records how many messages it was sent.
+testing -- test double -- 05 mock = objects pre-programmed with expectations which form a specification of the calls they are expected to receive.
+testing -- test double = dummy, fake, stub, spy, mock - Every class or object created is a fake. It is a mock if you assert against it. Otherwise it is a stub. https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub
+testing -- test double https://martinfowler.com/articles/mocksArentStubs.html
+testing -- testing library https://testing-library.com/docs/guiding-principles
+The Mythical Man-Month
+the room = https://lethain.com/getting-in-the-room/
+theory of programming = combination of reasoning ability, working memory capacity, and long-term memory recall https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/
+this
+threads
+threads -- virtual https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html
+time -- clock time = can jump backwards or forward (NTP adjustments, clock drift correction)
+time -- monotonic = only goes forward, unaffected by NTP sync, DST, or the user changing their system clock.
+time-travel https://docs.snowflake.com/en/user-guide/data-time-travel
+tool -- ast-grep https://ast-grep.github.io/guide/quick-start.html
+tool -- curl = https://curl.se/
+tool -- grep -- ast-grep https://ast-grep.github.io/
+tool -- http://devdocs.io/
+tool -- sprawl
+tracing -- distributed = ex. https://zipkin.io/
+tracing https://andydote.co.uk/2023/09/19/tracing-is-better/
+transparent functional reactive programming (TFRP) = MobX concept
+transpilation / transpiler / transpiling
+transpiler -- vs compiler
+transpiler = translates code from one language to another in a human-readable form. Therefore, you can still read the transpiled files.
+tree
+tree -- walk
+tree shaking https://en.wikipedia.org/wiki/Tree_shaking
+true, false, true = name the params https://allthingssmitty.com/2026/05/11/i-keep-tripping-over-true-false-true/
+trustworthy technology -- Freedom, including: The Right to Repair, Interoperability and Accessibility, Digital Sovereignty
+trustworthy technology -- Informed Consent
+trustworthy technology -- Privacy, and Data Sovereignty
+trustworthy technology = https://trustworthy.technology/
+TUIs "terminal user interfaces" = see [tech-bites--frontend-web.mm.txt]
+tutorial hell
+typecast
+types
+types -- abstract (class) = base (or common def) not supposed to be used "as is" but extended
+types -- abstract vs. concrete = may not be relevant, ex. TypeScript, and "duck typing"
+types -- casting -- up/down
+types -- concrete type/class = vs abstract, the one supposed to be actually used
+types -- contextual typing = occurs when the context of an expression gives a hint about what its type might be https://github.com/microsoft/TypeScript/wiki/FAQ#why-am-i-getting-an-error-about-a-missing-index-signature
+types -- duck typing
+types -- erasure https://github.com/microsoft/TypeScript/wiki/FAQ#what-is-type-erasure https://en.wikipedia.org/wiki/Type_erasure
+types -- interface = An interface decouples what needs to be implemented from how it is implemented
+types -- Liskov substitution principle = L of [[SOLID]] https://en.wikipedia.org/wiki/Liskov_substitution_principle
+types -- litteral
+types -- method bivariance https://github.com/microsoft/TypeScript/wiki/FAQ#why-method-bivariance
+types -- nominal https://github.com/Microsoft/TypeScript/issues/202
+types -- parameter arity variance https://github.com/microsoft/TypeScript/wiki/FAQ#parameter-arity-variance-is-correct
+types -- parameter contravariance https://github.com/KiaraGrouwstra/typical?tab=readme-ov-file#similar-projects
+types -- signature = type annotation = defines the inputs and outputs of a function, subroutine or method
+types -- slow types = hard for the parser/compiler https://jsr.io/docs/about-slow-types (also in Swift: The compiler is unable to type-check this expression in reasonable time)
+types -- structural typing = two types are compatible if their members are compatible https://github.com/microsoft/TypeScript/wiki/FAQ#why-method-bivariance
+types -- substitutability https://github.com/microsoft/TypeScript/wiki/FAQ#substitutability
+types -- subtyping -- circle/ellipse problem = aka. or square/rectangle "hierarchical taxonomies are difficult to make universal" https://en.wikipedia.org/wiki/Circle%E2%80%93ellipse_problem
+types -- subtyping -- contravariance
+types -- subtyping -- covariance
+types -- subtyping -- invariants = cannot be weakened in the subtype
+types -- subtyping -- polymorphism
+types -- subtyping -- postconditions = cannot be weakened in the subtype
+types -- subtyping -- preconditions = cannot be strengthened in the subtype
+types -- subtyping https://en.wikipedia.org/wiki/Liskov_substitution_principle
+types -- systems -- "modern" https://reasonablypolymorphic.com/blog/protos-are-wrong/
+types -- systems -- role -- (disputable pre-semver citation!) the main challenge in real-world software engineering is not writing code but changing code once it is written and deployed. In general, type systems can be both helpful and harmful when it comes to changing code -- type systems are invaluable for detecting problems introduced by a change, but an overly-rigid type system can be a hindrance if it means common types of changes are difficult to make. https://news.ycombinator.com/item?id=18188519
+types -- union -- discriminated & = a special kind of union in which a) all the options are object schemas that b) share a particular key (the "discriminator"). Based on the value of the discriminator key, the language is able to "narrow" the type signature as you'd expect.
+typescript -- declaration merging https://stackoverflow.com/a/52416229/31353119
+typescript -- learning resource https://github.com/type-challenges/type-challenges
+typescript -- performance https://trpc.io/blog/typescript-performance-lessons
+uid -- use strings = "2^64 isn’t as big as it used to be" https://protobuf.dev/programming-guides/api/
+unicode -- byte-order mark
+unicode -- encodings -- WTF-8 "wobbly UTF-8" = not needed with normalization / well formed https://simonsapin.github.io/wtf-8/
+unicode -- encodings https://simonsapin.github.io/wtf-8/#motivation
+unicode -- FAQ https://unicode.org/faq/utf_bom.html#utf16-2
+unicode -- is hard https://mcilloni.ovh/2023/07/23/unicode-is-hard/
+unicode -- terminology https://simonsapin.github.io/wtf-8/#terminology
+unicode -- variation selectors = https://cssence.com/2026/font-variant-emoji/
+Unix philosophy -- A.01 Make each program do one thing well = To do a new job, build afresh rather than complicate old programs by adding new "features"
+Unix philosophy -- A.02 -- OUTDATED = support outputing JSON ;)
+Unix philosophy -- A.02 Expect the output of every program to become the input to another, as yet unknown, program = Don't clutter output with extraneous information. Avoid stringently columnar or binary input formats; Don't insist on interactive input
+Unix philosophy -- A.03 Design and build software, even operating systems, to be tried early, ideally within weeks = Don't hesitate to throw away the clumsy parts and rebuild them
+Unix philosophy -- A.04 Use tools in preference to unskilled help to lighten a programming task = even if you have to detour to build the tools and expect to throw some of them out after you've finished using them
+Unix philosophy https://en.wikipedia.org/wiki/Unix_philosophy
+untrusted code
+uptime / downtime
+use boring technology
+User Generated Content (UGC)
+UX "User Experience" = see dedicated file
+validate everything
+validation = "Does this input data contain the right stuff?" see zod
+vaporware
+variables pointer / natives
+vendoring https://htmx.org/essays/vendoring/
+versioning -- outdated -- ecosystem drift https://nodejs.org/en/eol
+versioning -- outdated -- EOL "End-Of-Life" = no longer receive updates, including security patches https://nodejs.org/en/eol
+versioning -- outdated -- NES "never ending support" https://nodejs.org/esp/herodevs
+versioning -- outdated -- tool-chain breakage https://nodejs.org/en/eol
+versioning -- outdated -- vulnerabilities https://nodejs.org/en/eol
+versioning -- semver -- alternatives -- compatibility date = https://developers.cloudflare.com/workers/configuration/compatibility-dates/
+versioning -- semver -- case studies -- TS = https://react.dev/community/versioning-policy (see also TS)
+versioning -- semver -- case studies -- zod = preparing a major with a subpath = https://github.com/colinhacks/zod/issues/4371
+versioning -- semver -- considered harmful = https://jolynch.github.io/posts/semver_considered_harmful/
+versioning -- semver -- loose vs strict = "spirit of semver" https://www.learningtypescript.com/articles/why-typescript-doesnt-follow-strict-semantic-versioning https://news.ycombinator.com/item?id=24224975
+versioning -- semver -- major -> minor -> patch
+versioning -- semver -- not an obligation!
+versioning -- semver -- online tools = https://semver.npmjs.com/
+versioning -- semver -- operators = https://www.npmjs.com/package/semver
+versioning -- semver = https://semver.org/ https://docs.npmjs.com/about-semantic-versioning
+vibe coding https://x.com/karpathy/status/1886192184808149383
+virtual private cloud (VPC)
+war emergency power (WEP) = a throttle setting that is present on some military aircraft engines: In emergency situations, it produced more than 100% of the engine's normal rated power for a limited amount of time, often about five minutes https://en.wikipedia.org/wiki/War_emergency_power
+web assembly (asm.js)
+WebAuth
+who's who -- Aaron Swartz https://en.wikipedia.org/wiki/Aaron_Swartz
+who's who -- Eric Elliot https://medium.com/javascript-scene/the-single-biggest-mistake-programmers-make-every-day-62366b432308
+who's who -- James Hamilton = famous AWS eng https://perspectives.mvdirona.com/
+who's who -- Linus Torvald https://www.goodreads.com/author/quotes/92867.Linus_Torvalds
+who's who -- Martin Fowler +++ https://martinfowler.com/
+who's who -- Terry A. Davis = TempleOS https://en.wikipedia.org/wiki/Terry_A._Davis
+who's who -- Tim Berners-Lee https://en.wikipedia.org/wiki/Tim_Berners-Lee
+who's who -- Tom Preston-Werner = GitHub, Semver, Jekill https://tom.preston-werner.com/
+who's who -- Vittorio Bertocci = identity titan https://auth0.com/blog/in-celebration-of-vittorio-bertocci/ https://digitalidadvancement.org/news/meet-the-2025-vittorio-bertocci-award-recipients/
+Wirth's law = software systems grow faster in size and complexity than methods to handle complexity are invented. software is getting slower more rapidly than hardware is becoming faster. https://en.wikipedia.org/wiki/Wirth%27s_law
+WORA "write once, run anywhere" https://en.m.wikipedia.org/wiki/Write_once,_run_anywhere
+WORA -- Write Once, Debug Everywhere = because of subtle incompatibilities
+worse is better https://www.dreamsongs.com/WorseIsBetter.html
+XML "Extensible Markup Language" = no
+XML -- zalgo is tony the pony = You can't parse [X]HTML with regex https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454
+XSLT
+XSS (Cross-site scripting)
+YAGNI "you aren't gonna need it" -- Too general too soon https://frontendatscale.com/issues/15/
+yaml -- NO https://noyaml.com/
+yet another guideline I need to follow (YAGINTF)
+you build it, you run it

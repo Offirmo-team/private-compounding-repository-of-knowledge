@@ -1,0 +1,113 @@
+"engage and farm"
+0 -- marketing funnel = TOFU -> MOFU -> BOFU, TOFU casts the widest net, while BOFU is the narrowest and most conversion-focused
+1 -- TOFU "Top of Funnel" = the earliest stage of the marketing (or sales) funnel = potential customers are becoming aware of a problem they have or discovering your brand for the first time. They're not ready to buy yet; they're just exploring or learning.
+1 -- TOFU goals -- Attract a broad audience
+1 -- TOFU goals -- brand awareness
+1 -- TOFU goals -- Educate and inform
+1 -- TOFU goals -- Generate leads
+1 -- TOFU tactics -- "life at our company" = e.g. https://www.instagram.com/lifeatimmutable/
+1 -- TOFU tactics -- "we're hiring" (but not too often)
+1 -- TOFU tactics -- Blog posts and SEO articles
+1 -- TOFU tactics -- Infographics
+1 -- TOFU tactics -- job openings = force candidates to research the company and its offerings (don't abuse)
+1 -- TOFU tactics -- local scene
+1 -- TOFU tactics -- local scene -- Conferences
+1 -- TOFU tactics -- local scene -- Meetups
+1 -- TOFU tactics -- Paid awareness ads (display, YouTube pre-roll)
+1 -- TOFU tactics -- personal content
+1 -- TOFU tactics -- personal content -- bridge = to business offer
+1 -- TOFU tactics -- Podcasts and webinars
+1 -- TOFU tactics -- Short-form video (Reels, TikToks)
+1 -- TOFU tactics -- Social media content
+2 -- MOFU "Middle of Funnel" = where leads are nurtured and considered
+3 -- BOFU "Bottom of Funnel" — where purchase decisions are made
+[ ] +++ marketing -- https://a16zcrypto.substack.com/p/your-product-wont-sell-itself
+[ ] advices -- startup -- https://www.kalzumeus.com/greatest-hits/ section "marketing"
+[ ] https://hnry.com.au/resources/business/marketing-101-for-sole-traders/
+[ ] https://speedrun.substack.com/p/the-founders-guide-to-blogging
+[ ] SEO -- advices https://www.kalzumeus.com/2010/01/24/startup-seo/ + follow up https://www.kalzumeus.com/2010/01/25/followup-questions-for-strategic-seo-for-startups/
+ads -- https://ads.openai.com/
+affiliation -- ambassador program = e.g. https://qwen.ai/ambassador
+best practices -- don't build castles in others people's kingdoms
+brand -- 6 what's? = what we stand for, what we believe in, what people we seek to engage, what distinguishes us, what we offer, what we say and show https://hbr.org/2014/06/start-ups-need-a-minimum-viable-brand
+brand -- PERSONAL -- dev blog https://adamcoster.com/
+brand -- rebrand = https://www.msrebrandregistry.com/index.html
+brand -- relationship = https://en.wikipedia.org/wiki/Brand_relationship
+CEMs "Commercial Electronic Messages" = emails, texts, instant messages, group messages and even app/website notifications when they are commercial
+CEMs -- consent -- express = Ticking a box on a form or website. Signing up to receive newsletters or offers. Verbally agreeing during a call or in person (if documented appropriately). Selecting preferences in a digital platform or app. Agreeing to terms and conditions which contain a provision regarding consent to receive CEMs.
+CEMs -- consent = express or inferred
+CEMs -- not = Avoid images (esp. lifestyle/promotional) and use simple logos. Use neutral (not positive/persuasive) language about the Group. Avoid calls to action that encourage customers to use Group products or services. Messages containing factual instructions for customers may be permitted. Avoid links and URLs.
+CEMs -- SPAM compliance = consent of the recipient, accurate sender identification and a simple way to unsubscribe
+CEMs = offers, advertises, or promotes a product, service, or supplier, and includes promotional language, imagery, or links
+channels -- attacks = fishing https://fly.io/blog/kurt-got-got/
+channels -- LinkedIn -- https://typegrow.com/tools/linkedin-text-formatter
+channels -- reddit = very important for LLMs.
+coding challenges = e.g. https://dev.to/challenges
+creator strategy
+cringe = https://www.cringebot3000.com/
+discoverability -- AEO "agentic-engine-optimization" = https://addyosmani.com/blog/agentic-engine-optimization/
+discoverability -- AEO -- use case = https://www.linkedin.com/feed/update/urn:li:activity:7472064080594350080/
+discoverability -- review platforms
+discoverability -- SEO -- content freshness
+discoverability -- SEO = ranking high on SERP
+discoverability -- SERP "Search Engine Results Page" = the page you see after typing a query into a search engine
+discoverability -- SERP -- sections = Organic results; Paid ads (PPC); Featured snippets; Knowledge panels; Local pack; Image/video results; People Also Ask
+discoverability -- stores
+email -- ALWAYS re-pitch the product = we don't remember what it was
+email -- drip = regular email for existing users
+email -- newsletter
+email -- refresher = "Since you first signed up for X, the product’s changed a lot..."
+email -- resurrect
+email -- updates
+growth & activation
+house ads = surfacing first-party content / features to user
+how to plan 1 month of content = https://www.instagram.com/p/DFvFOJyNBY9/
+local scene = 1) need a scene to perform (feedback, emulation) 2) if not known on local scene, where?
+martech
+material -- https://www.getmimic.lol/
+material -- screenshots?
+material -- video https://www.capcut.com/newsroom/dreamina-seedance-2
+mind share = When people think of examples of a product type or category, they usually think of a limited number of brand names https://en.wikipedia.org/wiki/Mind_share
+presence -- AI skills = e.g. https://clerk.com/docs/guides/ai/skills
+presence -- GitHub = e.g. https://github.com/langchain-ai
+presence -- marketplaces
+presence -- social networks -- LinkedIn
+presence -- social networks -- LinkedIn -- cringe generator https://www.cringebot3000.com/
+presence -- social networks -- LinkedIn -- featured customers
+presence -- stores -- app stores
+presence -- stores -- webextensions
+presence -- wikipedia -- beware: notability, neutrality, primary source
+presence -- wikipedia = e.g. https://en.wikipedia.org/wiki/N8n
+reputation management
+reputation management -- REPCOM
+reputation management = https://en.wikipedia.org/wiki/Reputation_management
+SEO -- agentic -- insights = https://knownagents.com/insights
+talks -- how to speak = +++ https://gist.github.com/StevenMaude/280eadc60938ce4b6960dc60e830662d
+transfer of enthusiasm https://x.com/jasonfried/status/1961157371235111304
+trust building
+web property -- about
+web property -- blog
+web property -- careers
+web property -- comparison with competitors = also stealing their SEO
+web property -- CTAs = needed everywhere!
+web property -- docs
+web property -- free tools = tools / calculators = SEO magnet e.g. https://lorikeet.tools/
+web property -- integrations = e.g. https://www.lorikeetcx.ai/integrations
+web property -- landing -- "get"xyz
+web property -- landing -- "nominate a customer" = e.g. https://www.lorikeetcx.ai/nominate
+web property -- landing -- contact
+web property -- landing -- llms.txt
+web property -- landing -- use case = https://expressjs.com/en/blog/2026-05-18-a-new-look-for-express/
+web property -- learning = e.g. https://academy.langchain.com/
+web property -- LLM readiness = https://evilmartians.com/chronicles/how-to-make-your-website-visible-to-llms
+web property -- LLM readiness = https://isitagentready.com/
+web property -- partner = e.g. https://www.lorikeetcx.ai/partner
+web property -- pricing
+web property -- RSS/Atom = important! https://shkspr.mobi/blog/2026/05/rss-feeds-send-me-more-traffic-than-google/
+web property -- static
+web property -- support
+web property -- trust = e.g. https://trust.lorikeetcx.ai/
+web-property -- liveness = need updates, need ditplay of activity: release, podcasts, conferences...
+web-property -- mascot-dex https://octodex.github.com/
+web-property -- social validation
+web-property -- swag shop = e.g. https://remix.run/blog/oss-remix-store + rationale inside https://au.pcmag.com/security/117827/kash-patels-apparel-site-is-trying-to-trick-visitors-into-installing-malware

@@ -1,0 +1,188 @@
+1992 sterling crisis "Black Wednesday" https://en.wikipedia.org/wiki/Black_Wednesday
+1999–2002 sale of British gold reserves https://en.wikipedia.org/wiki/1999%E2%80%932002_sale_of_British_gold_reserves
+2008 financial crisis https://en.wikipedia.org/wiki/2008_financial_crisis
+2023-10 bank run collapsing Silicon Valley Bank https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank
+? eToro
+[ ] AI https://github.com/georgezouq/awesome-ai-in-finance
+[ ] https://en.wikipedia.org/wiki/Portal:Money
+accounting -- bottom line -- 3BL "triple bottom line" = an accounting framework with three parts: social, environmental (or ecological) and economic https://en.wikipedia.org/wiki/Triple_bottom_line
+accounting system
+adverse selection = in case of finance, fear the market is rigged and not entering https://en.wikipedia.org/wiki/Adverse_selection
+alt currency -- frequent flyer miles = building a currency in that airline’s name, has ~intrinsic value (to the specific airline) 1) “Fun with accounting” 2) the airlines can release the liability in a breakage process if "look like lost account" https://weekly.visualapproach.io/p/airlines-as-loss-leaders
+alt currency -- gift cards
+AML -- cash transaction limit = https://www.theguardian.com/us-news/2026/aug/11/us-mexico-border-area-money-transfer-rule-change-small-businesses
+AML/CTF -- new industries = Real estate professionals; Dealers in precious stones, metals and products; Lawyers; Conveyancers; Accountants; Trust and company service providers.
+AML/CTF -- Proliferation financing = funding or providing services and transactions that facilitate the development of weapons of mass destruction (‘WMD’)
+AML/CTF = Anti-Money Laundering and Counter-Terrorism Financing
+applicable laws and regulations
+arbitrage https://bfmtimes.com/this-crypto-bot-turned-2000-into-176k-in-1-month-its-design-explained/
+asset
+asset -- seizure
+bailouts = https://nomorebailouts.org
+bank run = when many customers withdraw their funds from a bank due to concerns about the bank's insolvency or bankruptcy. https://en.wikipedia.org/wiki/Bank_run
+banking
+banking -- reserve -- fractional / full https://en.wikipedia.org/wiki/Fractional-reserve_banking
+banking -- reserve -- requirement (legal)
+banknote
+blue sky law = state law in the United States that regulates the offering and sale of securities to protect the public from fraud https://en.wikipedia.org/wiki/Blue_sky_law
+bond https://en.wikipedia.org/wiki/Bond_(finance)
+borrowing
+bull/bear = https://www.coinbase.com/en-au/learn/crypto-basics/what-is-a-bull-or-bear-market
+buy now pay later (BNPL)
+cash -- sustainability = Although digital payments continue to grow, cash remains critical, especially for regional communities, and plays a vital role during emergencies and outages. As cash use declines, the sector has become more concentrated and costly to operate. A regulatory framework is needed to ensure the system continues to operate in the public interest.
+central bank https://en.wikipedia.org/wiki/Central_bank
+CFTC "Commodity Futures Trading Commission" = https://www.cftc.gov/PressRoom/PressReleases/9281-26
+CFTC -- Emergency Authority to Ensure Market Stability = https://www.cftc.gov/PressRoom/PressReleases/9281-26
+churn = to make the account of a client excessively active by frequent purchases and sales primarily in order to generate commissions
+clearing = https://tradersunion.com/news/central-banks/show/2973571-deutsche-bank-becomes/
+coin
+coinage -- free = bring gold / silver and have it minted for free or low fee
+coinage acts = ex. https://en.wikipedia.org/wiki/Coinage_Act_of_1857
+commodity = tradeable object. Any thing necessary, useful or pleasant in life, an object of human wants, a means of existence in the widest sense of the term (Marx)
+compliance -- AU -- AUSTRAC https://www.austrac.gov.au/business/new-to-austrac
+Confirmation of Payee (CoP) = cross-checks the details of customer payments to ensure that the account name, BSB and account number of the recipient’s account match what the sender believes them to be. https://www.ausbanking.org.au/scam-safe-accord/confirmation-of-payee/
+Consumer Price Index https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release
+crash -- fundamental &
+crash -- technical &
+currencies -- virtual -- Bitcoin
+currency -- alternative = ex. https://en.wikipedia.org/wiki/Goldback
+currency -- code USD AUD EUR
+currency -- collapse = ex. hyperinflation
+currency -- debasement
+currency -- digital
+currency -- fiat = government-issued currency, authorized by government regulation to be legal tender https://en.wikipedia.org/wiki/Fiat_money
+currency -- issuer vs holder
+currency -- local https://en.wikipedia.org/wiki/Local_currency
+currency -- manipulation = usually debasement, impopular
+currency -- physical
+currency -- private = ex. https://en.wikipedia.org/wiki/Liberty_dollar_(private_currency)
+currency -- right to issue
+currency -- sign $ €
+currency -- standard = sub standard / high standard = less (weak) / more value (strong)
+currency = a system of money in common use within a specific environment over time, especially for people in a nation state https://en.wikipedia.org/wiki/Currency
+DCA "Dollar Cost Average"
+due diligence
+economic hardship
+economic order
+economics -- ecological ex. https://en.wikipedia.org/wiki/Ithaca_Hours
+economics -- ecological https://en.wikipedia.org/wiki/Ecological_economics
+economics https://en.wikipedia.org/wiki/Economics
+equity
+ETF "exchange-traded fund" = a type of fund that directly tracks the price of an underlying asset, such as a commodity or cryptocurrency, by holding it in reserve https://www.forbes.com/sites/digital-assets/article/what-is-ethereum-spot-etf/
+ETF -- Futures & = futures ETFs rely on contracts that speculate on the asset's future price. This can lead to discrepancies between the price of the shares of a futures ETF and the current market price of the underlying asset. Futures ETFs can also exhibit phenomena like contango or backwardation, where prices deviate from spot market prices due to the structure of futures contracts.
+ETF -- spot & = A fund manager purchases some amount of the asset, holds it in custody, and issues shares against it. Investors buy the shares, which represent fractional ownership of the fund's asset holdings. If the fund is managed effectively, the price of the shares should mirror the asset’s price on the spot market. This model lets investors gain exposure to the asset’s spot price without the complications of asset management, such as storage or security. Instead, they can simply buy and sell shares with a brokerage account.
+exchange
+executive order 6102 = 1933 relinquish all gold https://en.wikipedia.org/wiki/Executive_Order_6102
+finance -- Benjamin Franklin's The Way to Wealth = 85 maxims https://www.artofmanliness.com/career-wealth/wealth/money-and-career-advice-from-benjamin-franklins-way-to-wealth/
+finance -- buy now pay later (BNPL)
+finance -- debt spiral
+finance -- FIRE "Financial Independence Retire Early" = not necessarily retire, but more like being free from worry / able to pick lower-paying jobs (no gambling / weapons / hyper competitive), not being a scared slave https://www.reddit.com/r/financialindependence/
+finance -- FIRE = be careful of life balance, not all eggs in the same basket, see [flourishing]
+finance -- FIRE = preparing for the 40s = lower motivation, disillusion, sandwich generation...
+finance terminal
+financial -- agency
+financial -- freedom
+financial -- future
+financial -- incapacitation -- de-banking
+financial -- incapacitation -- megacorp risk-averse
+financial -- incapacitation -- political repression -- "designated person" https://www.cbc.ca/news/politics/emergencies-act-banks-ottawa-protests-1.6353968
+financial -- incapacitation -- political repression -- 2022 Canada Trudeau https://www.cato.org/blog/canadian-court-trudeaus-use-emergency-powers-crush-protests-was-illegal
+financial -- institutions -- trusted / corrupt
+financial -- privacy
+financial -- repression = policies that result in savers earning returns below the rate of inflation https://en.wikipedia.org/wiki/Financial_repression
+financial -- security
+financial -- system -- decentralized (DeFi)
+financial -- system -- global
+Financial contagion = spread of market disturbances—mostly on the downside https://en.wikipedia.org/wiki/Financial_contagion
+financial crime = illicit activities aimed at exploiting, deceiving and defrauding financial systems for personal or organisational gain. It includes money laundering, terrorism financing, proliferation financing, sanctions violations, bribery and corruption as well as tax evasion.
+Financial Crime Compliance (FCC)
+financially (il)literate = https://www.smh.com.au/business/the-economy/our-financial-literacy-crisis-can-you-answer-these-5-money-questions-20230109-p5cb6c.html
+FinCEN = U.S. Treasury’s Financial Crimes Enforcement Network
+fintech au https://www.thefinnies.org.au/
+fraud -- external = deceptive practices intended to secure unlawful financial gain. It poses significant risks to businesses, economies, and communities. Key types of external fraud include identity theft, malware, sim swap and porting.
+fraud -- internal = intentional acts of deception carried out by employees, contractors, or suppliers with the aim of obtaining unauthorised financial or personal gain.
+funding -- quadratic
+funding -- stock exchange
+gold clause = clause on contracts to be paid in gold in case currency changes https://en.wikipedia.org/wiki/Gold_clause
+government -- budget deficit
+government -- fiscal austerity
+government -- high public spending
+government confiscation = forced to give precious metal
+hedge fund = risky, no longer hedge https://www.investor.gov/introduction-investing/investing-basics/investment-products/private-investment-funds/hedge-funds
+hedge funds -- blowups = e.g. https://weightythoughts.com/p/when-genius-failsthe-intellectual
+https://en.wikipedia.org/wiki/Impossible_trinity
+https://www.auspayplus.com.au/about-us
+index -- big mac = compare purchasing power across countries https://en.wikipedia.org/wiki/Big_Mac_Index
+index -- cosmetics -- theory contends that consumers will be more willing to buy less costly luxury goods when they are facing an economic crisis https://en.wikipedia.org/wiki/Lipstick_effect
+index -- men's underwear https://en.wikipedia.org/wiki/Men%27s_underwear_index
+index -- skirt length "Hemline index" theory that the typical hemline of women’s skirts and dresses (hereafter, referred to as ‘skirts’) can be predicted from economic trends  https://en.wikipedia.org/wiki/Hemline_index
+index fund = designed to follow certain preset rules so that it can replicate the performance of a specified basket of underlying securities (most often a stock market index or a bond market index) https://en.wikipedia.org/wiki/Index_fund
+inflation -- greedflation = mainly companies using inflation as a pretext to increase prices = increasing margin & profit https://en.wikipedia.org/wiki/Greedflation
+inflation -- hedge https://en.wikipedia.org/wiki/Inflation_hedge
+inflation -- runaway
+inflation -- shrinkflation = e.g. https://sina.bio/posts/costco-hotdog.html
+inflation -- unwanted = ex. 2002 https://en.wikipedia.org/wiki/2021%E2%80%932023_inflation_surge
+inflation -- wanted = usually >= 2% https://en.wikipedia.org/wiki/Pound_sterling#Annual_inflation_rate
+inflation / deflation / hyperinflation
+insider trading "funding secured" https://www.latimes.com/business/story/2020-04-15/tesla-musk-funding-secured-trial
+institution
+instrument = https://en.wikipedia.org/wiki/Legal_instrument
+insurance
+interest rate
+investor -- retail vs. accredited = retail limited to simpler investments + protection, accerited needs high income, less protection, higher risks https://www.investor.gov/introduction-investing/investing-basics/investment-products/private-investment-funds/hedge-funds
+KYC
+laws
+ledger
+ledger = data store that keeps track of transactions https://ethereum.org/en/developers/docs/intro-to-ether/#what-is-a-cryptocurrency
+legal tender
+lending
+liquidity -- & formation -- CCA "Continuous Clearing Auctions" https://blog.uniswap.org/continuous-clearing-auctions https://cca.uniswap.org/
+liquidity -- & formation -- liquidity seeding
+liquidity -- & formation -- price discovery
+loss leader = a pricing strategy where a product is sold at a price below its market cost[2] to stimulate other sales of more profitable goods or services. With this sales promotion/marketing strategy, a "leader" is any popular article, i.e., sold at a low price to attract customers. https://en.wikipedia.org/wiki/Loss_leader
+macro/micro
+market correction
+market making
+medium of exchange = anything widely accepted as payment for goods and services https://ethereum.org/en/developers/docs/intro-to-ether/#what-is-a-cryptocurrency
+microfoundations = an effort to understand macroeconomic phenomena in terms of individual agents' economic behavior and interactions https://en.wikipedia.org/wiki/Microfoundations
+middleman
+money
+money -- supply
+money laundering
+payment
+payment rail -- blockchain
+payment rail -- credit card
+payment rail -- PayPal / Venmo...
+payment rail = a payment platform or a payment network that moves money from a payer to a payee. Either party could be a consumer or business, and both parties are able to move funds on the network https://en.wikipedia.org/wiki/Payment_rail
+peg = ex. HKD's peg to the USD https://privatebank.jpmorgan.com/apac/en/insights/markets-and-investing/demystifying-stablecoins
+pouvoir d'achat
+poverty -- Sherman Alexie = It sucks to be poor, and it sucks to feel that you somehow deserve to be poor. You start believing that you're poor because you're stupid and ugly. And then you start believing that you're stupid and ugly because you're Indian. And because you're Indian you start believing you're destined to be poor. It's an ugly circle and there's nothing you can do about it. Poverty doesn't give you strength or teach you lessons about perseverance. No, poverty only teaches you how to be poor.
+private extortion of debt, labour and waste
+purchasing power https://en.wikipedia.org/wiki/Purchasing_power
+recession
+regulatory protection = are subject to oversight by financial regulators
+reserve banking -- fractional = https://en.wikipedia.org/wiki/Fractional-reserve_banking
+saving
+scam -- situations = The customer is led to believe the payment or action is for a legitimate purpose (e.g. investing, helping a romantic partner, or resolving an issue for their benefit), when in fact the true intent is to steal funds; or The perpetrator uses a false identity or impersonates someone else to gain the customer’s trust.
+scam = when a customer suffers a financial loss after being deceived or psychologically manipulated into: making payment/s to a perpetrator or third party; or providing a perpetrator access to, or disclosing information (such as online banking login details, one-time passcodes, or card details) that enables the perpetrator to access, the customer’s account so that the perpetrator can transfer the customer’s funds or make payments.
+scrip = pseudo legal tender ~exploitative payment of employees ex. company scrip / https://en.wikipedia.org/wiki/Truck_wages
+security
+security -- stocks, bonds, ETFs (exchange traded funds), options, and mutual funds
+security = a financial asset that can be sold or traded in a financial market + investments that can be exchanged and used to raise capital. https://gordonlaw.com/learn/what-is-a-security/
+shares
+solutions -- https://plaid.com/ ?
+spot
+stock = all the shares https://en.wikipedia.org/wiki/Stock
+stock market
+stock market -- crash = https://en.wikipedia.org/wiki/Stock_market_crash
+tax loss harvesting https://en.wikipedia.org/wiki/Tax_loss_harvesting
+terminal value
+tips = complicated https://www.bbc.com/news/articles/c4g36yze692o
+value
+value -- created internally = ex. fiat money since no backing value
+value -- intrinsic = calculated with regard to an inherent, objective measure https://en.wikipedia.org/wiki/Intrinsic_value_(finance)
+value -- perceived
+value -- store of value = keep value despite inflation etc. ex. gold or house or bitcoin (maybe) https://en.wikipedia.org/wiki/Store_of_value
+value -- use = tangible features of a commodity (a tradeable object) which can satisfy some human requirement, want or need, or which serves a useful purpose https://en.wikipedia.org/wiki/Use_value
+Wells Notice https://en.wikipedia.org/wiki/Wells_notice
+“If you own spot, you own the market.” https://x.com/WhiteWhaleLabs/status/2018745502439964861

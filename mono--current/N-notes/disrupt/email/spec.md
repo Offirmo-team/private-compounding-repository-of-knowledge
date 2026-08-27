@@ -1,0 +1,51 @@
+
+rewriting email
+
+- inbox 0
+  - clear classification of mails = ads / action
+  - built-in notification
+    - updatable
+    - aggregatable
+    - stackable
+- no spam, no scam
+  - built-in unsubscribe
+  - user score
+  - user country
+  - can't be contacted if not introduced (incl. data broker)
+- no lock-in
+  - universal id system = single "handle"
+  - no fear of changing provider
+  - public service
+- delight
+  - graphics
+  - themes
+  - built-in i18n and naming (deadnaming)
+  - modern html
+- no exploitation
+  - unsafe content detection (unless doctor for ex.)
+  -
+- dark age
+  - semantic portable format
+- flow
+  - parcels
+  - money
+- attachments
+  - parcels
+  - money
+- universes + hierarchy
+  - virtual worlds
+  - org / team / etc
+- redirections
+  - team
+  - household
+  - couple, family
+  -  support@ press@ etc.
+  - personas
+  - if s/o leave, redirect to manager etc.
+- TODO list
+  - pre-filled: who / when / blocking etc.
+- environment
+  - reusable emails
+  - editable / revisionable
+
+CSAT

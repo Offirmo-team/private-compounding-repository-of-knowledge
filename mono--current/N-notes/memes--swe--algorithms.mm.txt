@@ -1,0 +1,183 @@
++++ https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/
++++ https://www.geeksforgeeks.org/courses/data-structures-and-algorithms-in-javascript
+[ ] count bits
+[ ] Elements of Programming Interviews (EPI) book https://elementsofprogramminginterviews.com/2017/11/27/2017-11-27-buying-epi/
+algorithm = finite sequence of mathematically rigorous instructions, typically used to solve a class of specific problems or to perform a computation https://en.wikipedia.org/wiki/Algorithm
+algorithmic paradigm -- backtracking = incrementally builds solutions by exploring potential paths (Systematic Exploration) and abandoning (candidate abandonment, decision point) those that cannot lead to a valid solution (dead end)
+algorithmic paradigm -- branch and bound = systematically explores a solution space by branching into smaller subproblems (branches) and using bounds to eliminate (pruning) subproblems that cannot contain the optimal solution (bounding, upper / lower) https://www.google.com/search?q=algo+branch+and+bound
+algorithmic paradigm -- brute-force search
+algorithmic paradigm -- divide and conquer = breaking (divide) into smaller, independent sub-problems then combining the solutions (conquered). particularly effective when the subproblems are of the same type as the original problem, making the process recursive (base cases) https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm
+algorithmic paradigm -- dynamic programming = problem is broken down into smaller, overlapping subproblems (optimal substructure). Solutions to these subproblems are then stored (memoization) to avoid redundant calculations and efficiently find the optimal solution to the larger problem (exhaustive, vs. greedy) https://en.wikipedia.org/wiki/Dynamic_programming ex. Fibonacci, Knapsack
+algorithmic paradigm -- greedy -- canonical
+algorithmic paradigm -- greedy -- optimal substructure = an optimal solution to the problem contains optimal solutions to the sub-problems https://en.wikipedia.org/wiki/Greedy_algorithm#Specifics
+algorithmic paradigm -- greedy = approach that makes the best immediate (local) choice at each step to find a solution, without considering future consequences. While often efficient, a greedy algorithm doesn't always guarantee the globally optimal solution bc. not exhaustive https://en.wikipedia.org/wiki/Greedy_algorithm
+algorithmic paradigm -- prune and search = technique where a problem's search space is reduced by eliminating parts that are known not to lead to a solution
+algorithmic paradigm -- recursion = algo calling itself on the subproblems
+algorithmic paradigm -- recursion = see [[recursion]]
+algorithmic paradigm = https://en.wikipedia.org/wiki/Algorithmic_paradigm
+analysis -- best case, worst case, expected case
+analysis -- big -- academy -- O = upper bound = "algo it at least as fast as"
+analysis -- big -- academy -- Θ (theta) = O and Ω = tighter bounds, ex. Θ(N) means both O(N) and Ω(N)
+analysis -- big -- academy -- Ω (omega) = lower bound = "algo is no faster than"
+analysis -- big -- amortized time, ex. auto-growing array that takes time once in a while = compute limits
+analysis -- big -- combining = add if sequence, multiply if "for each, do work"
+analysis -- big -- identifying N
+analysis -- big -- industry -- O = "asymptotized" = no constant (ex. O(2N)), only the dominant (ex. O(N²+N))
+analysis -- big -- industry -- O = ~Θ = tightest
+analysis -- big O -- analysis 01 = Figure out what the input is and what n represents.
+analysis -- big O -- analysis 02 = Express the maximum number of operations, the algorithm performs in terms of n
+analysis -- big O -- analysis 03 = Eliminate all excluding the highest order terms
+analysis -- big O -- analysis 04 = Remove all the constant factors
+analysis -- big O -- cheatsheet https://www.bigocheatsheet.com/
+analysis -- big O -- intro https://builtin.com/software-engineering-perspectives/nlogn https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/ https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/
+analysis -- big O -- warning, O(1) is not necessarily better than O(N) (because O notation is asymptotic). There is a point where O(1) will be faster for a big N, but may be high, ex. O(1) could be asymptotised 100, O(n) could be asymptotised 10*n
+analysis -- big O / asymptotic notation https://en.wikipedia.org/wiki/Big_O_notation#Infinite_asymptotics
+analysis -- big O = good intro https://adrianmejia.com/how-you-can-change-the-world-learning-data-structures-algorithms-free-online-course-tutorial/
+analysis -- big O = interactive https://samwho.dev/big-o/
+analysis -- big Oa -- O(1) = constant
+analysis -- big Ob -- O(log n) = logarithm
+analysis -- big Oc -- O(n) = linear
+analysis -- big Od -- O(n^2) = squared / quadratic
+analysis -- big Oe -- O(n^3) = cubic
+analysis -- big Oe -- O(n^x) = polynomial
+analysis -- big Of -- O(2^n) O(x^n) = exponential
+analysis -- big Og -- O(n!) = factorial
+analysis -- time vs space = big space can be inefficient (processor cache)
+analysis = evaluating performance of algorithms and programs, in terms of time and space https://www.geeksforgeeks.org/design-and-analysis-of-algorithms/
+antisymmetric
+approximation algorithms = efficient algorithms that find approximate solutions to optimization problems (in particular NP-hard problems) with provable guarantees on the distance of the returned solution to the optimal one https://en.wikipedia.org/wiki/Approximation_algorithm
+automated reasoning = related to formal verification https://www.amazon.science/blog/aws-team-wins-best-paper-award-for-work-on-automated-reasoning
+Best, Average and Worst Cases
+binary search: Lower bound, Upper bound, Questions where binary search is not the obvious choice
+bloom filter = space-efficient probabilistic data structure used to test whether a given element is a member of a set. Achieves this by using multiple hash functions to map elements to a bit array https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/
+BPE / Byte pair encoding https://github.com/openai/tiktoken
+cache-oblivious https://en.wikipedia.org/wiki/Cache-oblivious_algorithm
+checksum
+Communication-avoiding https://en.wikipedia.org/wiki/Communication-avoiding_algorithm
+complexity chart https://flexiple.com/algorithms/big-o-notation-cheat-sheet
+computational complexity -- Deletion time = time required for the update of the data structure when an input element is deleted;
+computational complexity -- Initialization time = time required for the initial construction of the data structure;
+computational complexity -- Insertion time = time required for the update of the data structure when one more input element is added;
+computational complexity -- Other = operations specific to the problem in question
+computational complexity -- Query time = time required to answer a query;
+computational complexity -- Space = the amount of memory space required to store the data structure;
+consensus -- raft https://en.wikipedia.org/wiki/Raft_(algorithm) https://raft.github.io/
+crossword generation https://puzzling.stackexchange.com/a/132987
+cryptocurrency mining
+Day–Stout–Warren = amortized binary tree balancing https://en.wikipedia.org/wiki/Day%E2%80%93Stout%E2%80%93Warren_algorithm
+decision trees https://mlu-explain.github.io/decision-tree/
+deque = double-ended queue
+disjoint set union
+dynamic = ex. For an initial set of N numbers, dynamically maintain the maximal one when insertion and deletions are allowed.
+EdgeRank = Facebook’s News Feed Algorithm https://buffer.com/resources/understanding-facebook-news-feed-algorithm/
+effacement d'une liste pendant qu'on la parcourt
+efficiency = property of an algorithm which relates to the amount of computational resources (time, space, energy…) used by the algorithm https://en.wikipedia.org/wiki/Algorithmic_efficiency
+finite-state machine
+graph -- BFS https://en.wikipedia.org/wiki/Breadth-first_search
+graph -- DFS
+graph -- shortest path
+graph -- shortest path -- A*
+graph -- shortest path -- Djikstra https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+graph -- traversal -- topological sorting https://en.wikipedia.org/wiki/Topological_sorting
+greatest common divisor (GCD) -- https://en.wikipedia.org/wiki/Euclidean_algorithm
+greatest common divisor (GCD) https://en.wikipedia.org/wiki/Greatest_common_divisor
+hashing
+hashing -- consistent hashing https://en.wikipedia.org/wiki/Consistent_hashing
+hashing -- extendible hashing https://en.wikipedia.org/wiki/Extendible_hashing
+heap -- median in a stream
+heap -- sliding window maximum
+heap -- top k elements
+heuristic https://en.wikipedia.org/wiki/Heuristic_(computer_science)
+Highest common factor (HCF) = greatest common divisor
+horizon effect / horizon problem = sometimes the search space (nb of states/positions) is too big to be exhaustively searched = need use greedy https://en.wikipedia.org/wiki/Horizon_effect
+Huffman coding https://en.wikipedia.org/wiki/Huffman_coding
+idempotent = operation can run multiple times without changing the result
+identity function
+lexorank = algo to custom reorder in O(1) + background clean (based on lexicographic order)
+list -- floyd's cycle detection
+loop invariant https://en.wikipedia.org/wiki/Loop_invariant
+loop variant -- bound function = 0..N
+loop variant -- does it terminate? no infinite descending chain
+loop variant = function on state space that monotonically decrease ~= loop being iterated on https://en.wikipedia.org/wiki/Loop_variant
+Luleå algorithm https://en.wikipedia.org/wiki/Lule%C3%A5_algorithm
+MapReduce https://en.wikipedia.org/wiki/MapReduce
+Markov Chains -- absorbing -- standard form
+Markov Chains -- absorbing = only if absorbing state(s) and non-absorbing state(s) can end up in absorbing state(s)
+Markov Chains -- absorbing state https://www.youtube.com/watch?v=bTeKu7WdbT8
+Markov Chains -- limiting matrix
+Markov Chains -- stationary distribution
+Markov Chains -- transition matrix
+Markov Chains https://www.youtube.com/watch?v=JHwyHIz6a8A
+master theorem = (formula) easiest way of obtaining runtime of recursive algorithms https://adrianmejia.com/analysis-of-recursive-algorithms/
+minimax https://en.wikipedia.org/wiki/Minimax
+negamax https://en.wikipedia.org/wiki/Negamax
+NP-overrated = NP are hard to solve perfectly but in practice they're tractable https://gruhn.me/blog/2026-08-13/
+operation -- binary = combining 2 operands/elements
+operation -- unary
+Order of Growth
+P versus NP -- NP = "nondeterministic polynomial time" = quickly checkable (polynomially) = Class of computational decision problems for which any given yes-solution can be verified as a solution in polynomial time by a deterministic Turing machine (or solvable by a non-deterministic Turing machine in polynomial time)
+P versus NP -- NP-complete = Class of decision problems which contains the hardest problems in NP. Each NP-complete problem has to be in NP. A fast solution to any one of the NP could be used to build a quick solution to any other problem in NP https://en.wikipedia.org/wiki/NP-complete
+P versus NP -- NP-hardness -- easy = At most as hard as NP, but not necessarily in NP.
+P versus NP -- NP-hardness -- equivalent = Decision problems that are both NP-hard and NP-easy, but not necessarily in NP.
+P versus NP -- NP-hardness -- hard = Class of problems which are at least as hard as the hardest problems in NP. Problems that are NP-hard do not have to be elements of NP; indeed, they may not even be decidable.
+P versus NP -- NP-hardness https://en.wikipedia.org/wiki/NP-hardness
+P versus NP -- NP-intermediate = If P and NP are different, then there exist decision problems in the region of NP that fall between P and the NP-complete problems. (If P and NP are the same class, then NP-intermediate problems do not exist because in this case every NP-complete problem would fall in P, and by definition, every problem in NP can be reduced to an NP-complete problem.)
+P versus NP -- P = easily solvable (Polynomial time)
+P versus NP https://en.wikipedia.org/wiki/P_versus_NP_problem
+problems -- change making https://en.wikipedia.org/wiki/Change-making_problem
+problems -- Chocolate Distribution
+problems -- Josephus = counting-out https://en.wikipedia.org/wiki/Josephus_problem
+problems -- knapsack https://en.wikipedia.org/wiki/Knapsack_problem
+problems -- packing unit squares in bigger squares https://www.combinatorics.org/files/Surveys/ds7/ds7v5-2009/ds7-2009.html
+problems -- shortest path
+problems -- sort
+pruning -- alpha beta https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning
+recursion -- base cases = end of recursion chain
+recursion -- indirect/mutual = direct = calls itself, indirect = family f calls g calls f etc.
+recursion -- single/multiple -- multiple = ex. Fibonacci badly implemented
+recursion -- single/multiple -- single = classic
+recursion -- structure = wrapper (top, prepare the actual recursion) + short-circuit (check for base case) + (optional, optimization) hybrid algo depending on data, since recursion is often inefficient on small data
+recursion -- tail / tail-end = optimizable recursion
+recursion -- tail call elimination = see tail call optimization
+recursion -- tail call optimization -- support = the language/interpreter/compiler has to support it!
+recursion -- tail call optimization = allow saving stack space when doing recursion by only doing a call as the last ("tail") action https://stackoverflow.com/questions/310974/what-is-tail-call-optimization
+recursion https://en.wikipedia.org/wiki/Recursion_(computer_science)
+reflexive
+resolution -- 01 brute force = to understand the problem. usually recursion. Sometimes it's enough or missing considerations, ex. time vs space
+resolution -- 02 evaluate complexity
+resolution -- 03 improve -- remove useless work = remove recursion? remove duplicated computations? prune areas of the search space that can't yield a good solution
+RNG -- Lehmer https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/mining/mining-algorithms/dagger-hashimoto/#lehmer-random-number
+rounding -- banker's = https://www.reddit.com/r/Python/comments/1txuzkb/i_just_learned_round_uses_bankers_rounding/
+S3FIFO https://blog.jasony.me/system/cache/2023/08/01/s3fifo
+SAT "Satisfiability problems" = ask whether it’s possible to assign variables true/false values that satisfy a set of constraints https://www.amazon.science/blog/a-billion-smt-queries-a-day
+SAT -- SMT "satisfiability modulo theories" = a generalization of SAT to involve integers, real numbers, strings, or functions. It is a mainstay of formal methods — the use of automated reasoning to prove that a computer program will behave the way it’s supposed to. https://www.amazon.science/blog/a-billion-smt-queries-a-day
+search -- binary O(log n) = half-interval, logarithmic, binary chop, dichotomic https://en.wikipedia.org/wiki/Binary_search_algorithm
+search -- exponential https://en.wikipedia.org/wiki/Exponential_search
+search -- interpolation https://en.wikipedia.org/wiki/Interpolation_search
+search -- linear O(n) = the worst
+search -- ternary https://en.wikipedia.org/wiki/Ternary_search
+search -- unary
+simple average
+sliding window and 2 pointers based questions
+sort -- alphadev https://www.nature.com/articles/s41586-023-06004-9
+sort -- bubble
+sort -- burstsort
+sort -- k-sorting = roughly sorting https://cir.nii.ac.jp/crid/1050564287846744704
+sort -- merge
+sort -- quick
+sort -- radix sort O(nw) https://en.wikipedia.org/wiki/Radix_sort
+sort -- topological = a graph traversal in which each node is visited only after all its dependencies are visited. (need DAG) https://en.wikipedia.org/wiki/Topological_sorting
+sort https://en.wikipedia.org/wiki/Sorting_algorithm
+string -- Approximate string matching = matching despite insertion, deletion, substitution or transposition https://en.wikipedia.org/wiki/Approximate_string_matching
+string -- pattern searching
+string -- sorting
+string -- word searching -- Knuth–Morris–Pratt algorithm (KMP) https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
+sudoku https://blog.veitheller.de/Six_Simple_Sudoku_Solvers_I:_Python_(Reference).html
+termination
+termination -- proving
+tower of Hanoi
+Trabb Pardo-Knuth (TPK) = demo program https://en.wikipedia.org/wiki/TPK_algorithm
+transitive
+traveling salesman https://en.wikipedia.org/wiki/Held%E2%80%93Karp_algorithm
+unsolved https://en.wikipedia.org/wiki/Karp%27s_21_NP-complete_problems
+Zstandard = a fast compression algorithm, providing high compression ratios. It also offers a special mode for small data, called dictionary compression https://facebook.github.io/zstd/
