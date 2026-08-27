@@ -1,8 +1,12 @@
 {
-	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file",
-	"// @infinite-monorepo/plugin--parcel": "auto generated some content in this file",
-	"@parcel/resolver-default": {
-		"packageExports": true
+	"name": "@monorepo-private/root",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"scripts": {
+		"check:boundaries": "turbo boundaries",
+		"clean:x": ".config/mise/tasks/clean.bash"
 	},
 	"devDependencies": {
 		"oxfmt": "catalog:",
@@ -12,28 +16,24 @@
 		"typescript": "catalog:",
 		"zx": "catalog:"
 	},
+	"resolutions": {
+		"sharp": "^0.34"
+	},
 	"devEngines": {
 		"runtime": {
 			"name": "node",
-			"onFail": "error",
-			"version": "^24"
+			"version": "^24",
+			"onFail": "error"
 		}
 	},
 	"engines": {
 		"node": "^24",
 		"pnpm": ">=11"
 	},
-	"name": "@monorepo-private/root",
 	"packageManager": "pnpm@11.10.0+sha512.0b7f8b98060031904c017e3a41eb187a16d40eeb829b95c4f8cb03681761fc4ab53dd219115b9b447f4dce1a05a214764461e7d3703392a9f32f9511ce8c86c8",
-	"private": true,
-	"resolutions": {
-		"sharp": "^0.34"
-	},
-	"scripts": {
-		"check:boundaries": "turbo boundaries",
-		"clean:x": ".config/mise/tasks/clean.bash"
-	},
-	"sideEffects": false,
-	"type": "module",
-	"version": "0.0.1"
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file",
+	"// @infinite-monorepo/plugin--parcel": "auto generated some content in this file",
+	"@parcel/resolver-default": {
+		"packageExports": true
+	}
 }
