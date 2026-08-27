@@ -1,0 +1,35 @@
+autoInstallPeers: false
+catalog:
+  oxfmt: ^0.65
+  oxlint: ^1
+  oxlint-tsgolint: ^7
+  turbo: ^2
+  typescript: ^6
+  zx: ^8
+catalogMode: prefer
+cleanupUnusedCatalogs: true
+dangerouslyAllowAllBuilds: false
+dedupePeers: true
+enablePrePostScripts: false
+engineStrict: true
+hoist: false
+ignoreScripts: true
+minimumReleaseAge: 10080
+minimumReleaseAgeIgnoreMissingTime: true
+minimumReleaseAgeStrict: true
+packages:
+  - 0-meta/*
+  - 1-isomorphic/*
+  - 2-engine--winter/*
+  - 3-engine--node/*
+  - 4-engine--browser/*
+  - H-hello-world/
+publicHoistPattern:
+  - tslib
+  - "*oxlint*"
+  - "*oxfmt*"
+savePrefix: ^
+strictPeerDependencies: true
+trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 129600
+verifyDepsBeforeRun: warn

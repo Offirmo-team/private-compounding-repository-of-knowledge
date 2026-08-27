@@ -1,0 +1,5 @@
+## contains auto-generated content from @infinite-monorepo/plugin--git
+## https://nesbitt.io/2026/02/05/git-magic-files.html
+* text=auto eol=lf
+*.json diff=json
+*.png binary

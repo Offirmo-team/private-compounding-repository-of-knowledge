@@ -1,0 +1,4 @@
+## contains auto-generated content from @infinite-monorepo/plugin--git
+## contains auto-generated content from @infinite-monorepo/plugin--pnpm
+## https://nesbitt.io/2026/02/05/git-magic-files.html
+pnpm-lock.yaml merge=ours

@@ -1,0 +1,3 @@
+## contains auto-generated content from @infinite-monorepo/plugin--git
+## https://code.claude.com/docs/en/worktrees#copy-gitignored-files-into-worktrees
+.claude/settings.local.json
