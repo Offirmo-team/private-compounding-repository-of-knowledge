@@ -1,0 +1,16 @@
+*.env.staging
+*.local
+.*.vars
+.cache/
+.env
+.env.dev
+.env.local
+.env.prod
+.env.production.local
+.env.staging
+.env.test
+.env.test.local
+.parcel-cache/
+.parcel/
+node_modules/
+tmp-*/

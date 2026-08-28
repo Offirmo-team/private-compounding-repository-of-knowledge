@@ -20,6 +20,7 @@ asset
 asset -- seizure
 bailouts = https://nomorebailouts.org
 bank run = when many customers withdraw their funds from a bank due to concerns about the bank's insolvency or bankruptcy. https://en.wikipedia.org/wiki/Bank_run
+bank war = https://en.wikipedia.org/wiki/Bank_War
 banking
 banking -- reserve -- fractional / full https://en.wikipedia.org/wiki/Fractional-reserve_banking
 banking -- reserve -- requirement (legal)
@@ -96,6 +97,7 @@ financial -- system -- global
 Financial contagion = spread of market disturbances—mostly on the downside https://en.wikipedia.org/wiki/Financial_contagion
 financial crime = illicit activities aimed at exploiting, deceiving and defrauding financial systems for personal or organisational gain. It includes money laundering, terrorism financing, proliferation financing, sanctions violations, bribery and corruption as well as tax evasion.
 Financial Crime Compliance (FCC)
+financial crisis -- Panic of 1873 = railway bubble https://en.wikipedia.org/wiki/Panic_of_1873
 financially (il)literate = https://www.smh.com.au/business/the-economy/our-financial-literacy-crisis-can-you-answer-these-5-money-questions-20230109-p5cb6c.html
 FinCEN = U.S. Treasury’s Financial Crimes Enforcement Network
 fintech au https://www.thefinnies.org.au/

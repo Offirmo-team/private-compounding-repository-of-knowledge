@@ -1,0 +1,39 @@
+{
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"onFail": "error"
+		},
+		"packageManager": {
+			"name": "pnpm",
+			"onFail": "error"
+		}
+	},
+	"engines": {
+		"node": "24",
+		"pnpm": "10"
+	},
+	"name": "@offirmo/monorepo",
+	"packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
+	"private": true,
+	"type": "module",
+	"version": "0.0.0",
+	"dependencies": {
+		"@scure/base": "catalog:",
+		"@scure/bip32": "catalog:",
+		"@scure/bip39": "catalog:",
+		"@scure/btc-signer": "catalog:",
+		"@scure/starknet": "catalog:",
+		"bip44-constants": "catalog:",
+		"ethereum-cryptography": "catalog:",
+		"ethers": "catalog:",
+		"hardhat": "catalog:",
+		"micro-eth-signer": "catalog:",
+		"micro-key-producer": "catalog:",
+		"micro-ordinals": "catalog:",
+		"micro-sol-signer": "catalog:",
+		"solc": "catalog:",
+		"viem": "catalog:",
+		"zod": "catalog:"
+	}
+}

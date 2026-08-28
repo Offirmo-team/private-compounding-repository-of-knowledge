@@ -1,4 +1,4 @@
-# Private, compounding repository of code and knowledge
+# Offirmo Team's private, compounding repository of code and knowledge
 
 ## Description
 

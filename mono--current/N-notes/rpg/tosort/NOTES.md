@@ -1,10 +1,7 @@
 
-CLE Credibility Logic Emotion
-
 https://knowyourmeme.com/memes/thelegend27
 
 https://elijahmanor.com/blog/format-js-numbers
-
 
 http://www.mythencyclopedia.com/
 https://forgottenrealms.fandom.com/wiki/Cosmology
@@ -27,8 +24,7 @@ Livre de classe avec un titre, intro et prez des skills (avec style caractérist
 
 Frost silver
 
-Choix de classe = choix de self- buff
-
+Choix de classe = choix de self-buff
 
 
 https://baldursgate3.wiki.fextralife.com/Equipment+Features
@@ -239,7 +235,7 @@ Adventures
 		name: 'Happy Looter',
 		name: 'Grand Looter',
 		🔹🔷💠	large blue diamond	blue | diamond | geometric | large blue diamond
-1369	🔸🔶
+		🔸🔶
 🥀
 
 🌱

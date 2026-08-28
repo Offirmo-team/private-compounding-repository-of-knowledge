@@ -1,0 +1,55 @@
+autoInstallPeers: false
+
+catalog:
+  '@open-wallet-standard/core': 1.1.2
+  '@scure/base': 2.0.0
+  '@scure/bip32': 2.0.1
+  '@scure/bip39': 2.0.1
+  '@scure/btc-signer': 2.0.1
+  '@scure/starknet': 2.0.0
+  bip44-constants: 399.0.0
+  ethereum-cryptography: 3.2.0
+  ethers: 6.15.0
+  hardhat: 3.1.4
+  micro-eth-signer: 0.18.1
+  micro-key-producer: 0.8.2
+  micro-ordinals: 0.3.0
+  micro-sol-signer: 0.8.2
+  solc: 0.8.33
+  viem: 2.41.2
+  #wagmi: 3.0.1 requires React, TODO later
+  zod: 4.1.13
+
+catalogMode: strict
+
+disallowWorkspaceCycles: true
+
+hoist: false
+
+hoistWorkspacePackages: false
+
+ignoredBuiltDependencies:
+  - esbuild
+
+minimumReleaseAge: 10080
+
+minimumReleaseAgeExclude:
+  - hardhat@3.1.4
+  - '@nomicfoundation/*'
+
+preferWorkspacePackages: true
+
+resolutionMode: time-based
+
+resolvePeersFromWorkspaceRoot: false
+
+savePrefix: ''
+
+saveWorkspaceProtocol: rolling
+
+strictDepBuilds: true
+
+strictPeerDependencies: true
+
+## not working?
+#trustPolicy: no-downgrade

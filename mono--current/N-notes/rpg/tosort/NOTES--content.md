@@ -25,7 +25,13 @@ LOOK FOR A PATTERN OF...
 
 
 elves https://en.wikipedia.org/wiki/Directional_selection
-Maria is under pressure to finish a project. She has a strong personality and always puts her work first. She is easily angered when details are missed and struggles to productively handle other people’s mistakes. She is ambitious, eager to be promoted, and values team members who have been around the longest, as they have the most experience. She is wary of new people—not knowing whether she can rely on them makes her very nervous.
+
+Maria is under pressure to finish a project.
+She has a strong personality and always puts her work first.
+She is easily angered when details are missed and struggles to productively handle other people’s mistakes.
+She is ambitious, eager to be promoted, and values team members who have been around the longest, as they have the most experience.
+She is wary of new people—not knowing whether she can rely on them makes her very nervous.
+
 
 villains https://www.news.com.au/entertainment/books-magazines/books/mary-trump-book-review-donald-trumps-father-fred-painted-as-the-true-villain/news-story/eb590b4237ffd5f7db207ff9d5e79ae0
 
@@ -94,7 +100,12 @@ personalité
 https://www.personalityresearch.org/bigfive.html
 
 
-She learned that you should never try to intimidate people into telling you the truth. They’ll just put up their guard. Instead, watch for signs of unsuitable nervousness and anxiety, and any pretense of a lack of interest in your questions. The more you talk, the less you’ll learn about the other person – including his or her deceptions. Listen instead. If what the person says sounds rehearsed, you may not be getting the truth. Active listening is the best way to tell truths from lies.
+She learned that you should never try to intimidate people into telling you the truth. They’ll just put up their guard.
+Instead, watch for signs of unsuitable nervousness and anxiety, and any pretense of a lack of interest in your questions.
+The more you talk, the less you’ll learn about the other person – including his or her deceptions.
+Listen instead. If what the person says sounds rehearsed, you may not be getting the truth.
+Active listening is the best way to tell truths from lies.
+
 
 https://en.wikipedia.org/wiki/Trichotomy_(philosophy)
 
