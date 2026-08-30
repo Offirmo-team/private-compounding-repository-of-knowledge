@@ -25,6 +25,7 @@ git diff --staged --patch --binary > ~/work/tmp/otpcrk.patch
 ## git apply is intentionally strict: it expects the patch to match the target files closely.
 ## --3way lets it fall back to a merge if the target tree has drifted slightly.
 git apply --3way ~/work/tmp/otpcrk.patch
+git apply --3way ./otpcrk.patch
 
 
 ## exporting last commits
