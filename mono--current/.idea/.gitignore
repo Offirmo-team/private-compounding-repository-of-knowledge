@@ -1,0 +1,4 @@
+## contains auto-generated content from @infinite-monorepo/plugin--jetbrains
+*.iml
+/shelf/
+/workspace.xml

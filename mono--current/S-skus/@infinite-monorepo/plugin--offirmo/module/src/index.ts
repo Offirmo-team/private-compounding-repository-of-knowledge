@@ -191,7 +191,10 @@ Note: changes to packages in this folder may warrant a bump to TURBO_CACHE_BUSTI
 (if unsure, bump, should only lose a bit of caching)
 `,
 						},
-						"1-isomorphic/README.md": { text: `# Isomorphic packages` },
+						"1-isomorphic/README.md": { text: `# Isomorphic packages
+
+= using only pure ECMAScript, no dependency on an engine (ex. node, browser, lambda...)
+` },
 						"2-engine--winter/README.md": {
 							text: `# Web-interoperable Server Runtimes (Winter) packages
 
