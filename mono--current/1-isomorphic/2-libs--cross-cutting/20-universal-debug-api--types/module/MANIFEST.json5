@@ -1,0 +1,4 @@
+{
+	// used to be public @offirmo/*
+	description: "TypeScript types for a universal debug API (no code)",
+}

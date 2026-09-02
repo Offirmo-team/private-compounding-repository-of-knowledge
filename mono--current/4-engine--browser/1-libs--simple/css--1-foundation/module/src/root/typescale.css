@@ -1,0 +1,35 @@
+/* Reminder: Do NOT use "fluid" typography, cf. https://adrianroselli.com/2019/12/responsive-type-and-zoom.html
+ * Design choice: h4~h6 usage is recommended, we cap at <h4> = same size as <p>
+ */
+
+:root {
+	font-size: 100%; /* explicit inheritance of the browser, cf. https://adrianroselli.com/2019/12/responsive-type-and-zoom.html */
+
+	/* the ratio between the h1 font size and the baseFontSize.
+	 * So if the max scale ratio is 2 and the baseFontSize is 16px then the h1 font size is 32px
+	 * inspired by https://kyleamathews.github.io/typography.js/
+	 * (Note: Another possible option could be using https://type-scale.com/)
+	 */
+	--o⋄header__scale-ratio: 2;
+}
+
+:is(h1, h2, h3, h4) {
+	font-size: calc(1rem * (1 + ((var(--o⋄header__scale-ratio) - 1) * var(--o⋄header__scale-ratio__modifier))));
+}
+
+h1 {
+	--o⋄header__scale-ratio__modifier: calc(3/3);
+}
+h2 {
+	--o⋄header__scale-ratio__modifier: calc(2/3);
+}
+h3 {
+	--o⋄header__scale-ratio__modifier: calc(1/3);
+}
+h4 {
+	--o⋄header__scale-ratio__modifier: calc(0/3);
+}
+
+small {
+	font-size: 0.8rem;
+}

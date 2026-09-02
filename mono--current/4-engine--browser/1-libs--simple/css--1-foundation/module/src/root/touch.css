@@ -1,0 +1,8 @@
+* {
+	/**
+	 * Faster clicks on touch devices
+	 * https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action#manipulation
+	 * cf. https://ishadeed.com/article/photoshop-web-css/ = they enable it on every element
+	 */
+	touch-action: manipulation;
+}

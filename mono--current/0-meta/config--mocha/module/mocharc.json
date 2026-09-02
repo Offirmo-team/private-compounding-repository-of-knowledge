@@ -1,0 +1,7 @@
+{
+	"reporter": "spec",
+	"check-leaks": true,
+	"global": ["_debug", "__global_root_sec"],
+	"recursive": true,
+	"fail-zero": true
+}

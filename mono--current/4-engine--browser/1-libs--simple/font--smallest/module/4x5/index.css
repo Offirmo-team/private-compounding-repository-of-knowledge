@@ -1,0 +1,30 @@
+/*********************/
+
+@font-face {
+	font-family: "CG-pixel--4x5--raw";
+	src: url("regular.ttf");
+}
+
+.omr⋄font⁚CG-pixel--4x5--raw {
+	font-family: "CG-pixel--4x5--raw", sans-serif;
+}
+
+/*********************/
+
+@font-face {
+	font-family: "CG pixel 4x5";
+	src: url("regular.ttf");
+}
+
+.omr⋄font⁚CG-pixel--4x5 {
+	--o⋄font-family--main: "CG pixel 4x5", sans-serif;
+	font-family: var(--o⋄font-family--main);
+	font-size: 5px;
+	/*line-height: 1; */
+	/*font-stretch: 150%;*/
+	/*letter-spacing: .02em;*/
+	/*font-synthesis: style small-caps weight position;*/
+	/* font-variant-numeric */
+}
+
+/*********************/

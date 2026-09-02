@@ -1,0 +1,151 @@
+<!doctype html>
+<!-- AUTOMATICALLY GENERATED, DO NOT EDIT MANUALLY! -->
+
+<!-- maximum language hints to prevent Chrome from incorrectly suggesting a translation -->
+<html lang="en" xml:lang="en">
+	<head>
+		<!-- https://github.com/h5bp/html5-boilerplate/blob/main/docs/html.md#the-order-of-the-title-and-meta-tags -->
+		<meta charset="utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1,viewport-fit=cover"
+		/>
+		<meta http-equiv="content-language" content="en" />
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="generator" content="@offirmo/generator--website-entry-points" />
+		<meta http-equiv="theme-color" content="hsl(248,  9%, 17%)" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>"
+		/>
+		<link rel="manifest" href="./index.webmanifest" />
+
+		<title>[title--page]The Boring RPG</title>
+
+		<style>
+			 /******* critical CSS https://www.smashingmagazine.com/2015/08/understanding-critical-css/ */
+				/* define namespaces for usage in following CSS, needs to be at the top https://github.com/parcel-bundler/parcel/issues/9534 */
+			@namespace svg url(http://www.w3.org/2000/svg);
+			/* define layers order, needs to be a the top to properly enforce the intended order */
+			@layer offirmo--foundation, offirmo--framework;
+			/* critical minimal design system */
+			:root {
+				/* FG+BG colors are the basics of identity */
+				--o⋄color⁚bg--main: hsl(337, 16%, 28%);
+				--o⋄color⁚fg--main: hsl(42, 100%, 87%);
+				/* https://systemfontstack.com/ simplified */
+				--o⋄font-family--system--sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+				margin: 0;
+				padding: 0;
+
+				color: var(--o⋄color⁚fg--main);
+				background-color: var(--o⋄color⁚bg--main);
+				font-family: var(--o⋄font-family--system--sans);
+
+				/* https://www.the-koi.com/projects/how-to-disable-pull-to-refresh/ */
+				overscroll-behavior: none;
+
+
+			/* apply a natural box layout model to all elements
+			 * https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+			 * https://github.com/mike-engel/a11y-css-reset/pull/12#issuecomment-516582884
+			 */
+			:root                  { box-sizing: border-box; }
+			*, *::before, *::after { box-sizing: inherit; }
+
+
+			/* make this app use the full viewport */
+			html, body {
+				margin: 0;
+				padding: 0;
+				border: initial;
+			}
+			body, .o⋄full-viewport {
+			/* In order to get a true fullscreen when pinned on iPhone
+			 * - position must NOT be "fixed", or it strangely crops to the small viewport! (2023/11 iOs 16.6.1 iPhone 14)
+			 *   - absolute is ok
+			 * - height MUST be 100lvh;
+			 *
+			 * If :root has 0 padding, margin & border, no need to explicitly position, BUT:
+			 * - if the first child has a margin, it collapses with the parent!
+			 * Thus it's safer to position.
+			 */
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				width: 100lvw;
+				height: 100lvh;
+			}
+		</style>
+
+		<script>
+			/////// critical JS ///////
+			;(function normalize_trailing_slash() {
+				/* IF the current path doesn't end with a trailing slash, this may be an issue
+				 * ex if we're located by our parent folder (implicit file, a lot of servers automatically do that)
+				 *    foo/bar/index.html   served as  /foo/bar (no trailing slash)
+				 * It messes with relative paths!
+				 * ex. (continued) link rel=site.webmanifest = /foo/site.webmanifest
+				 * https://searchfacts.com/url-trailing-slash/
+				 * https://ahrefs.com/blog/trailing-slash/
+				 *
+				 * Could we use <base> instead? Pb. is when the content is served on different domains: dev, staging, prod...
+				 *
+				 * SO we decide to ensure folders have a trailing slash
+				 * ex. /foo/bar/index.html => ✔ no change
+				 * ex. /foo/bar/           => ✔ no change
+				 * ex. /foo/bar            => ✖ REDIRECT foo/bar/
+				 */
+				const trailing_segment = location.pathname.split('/').at(-1) || ''
+				if (!trailing_segment) {
+					// ✔ located by a folder, location ends with a trailing slash
+					return
+				}
+				const is_trailing_segment_a_html_file =
+					trailing_segment.endsWith('.html') || trailing_segment.endsWith('.htm')
+				if (is_trailing_segment_a_html_file) {
+					// ✔ located by a file, no trailing slash
+					return
+				}
+				// ✖ we are located by a folder without a trailing slash.
+				// Redirect to the version with slash
+				const locationᐧpathnameⵧfixed = location.pathname + '/'
+				location.replace(location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
+			})()
+		</script>
+	</head>
+
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+
+		<main id="react-root" class="o⋄full-viewport">
+			<!-- React will render here and replace this -->
+			<section
+				style="
+					text-align: center;
+					--width: 60ch;
+					max-width: var(--width);
+					margin: 0 max(1ch, (100vw - var(--width))/2);
+				"
+			>
+				<h1>[title--page]The Boring RPG</h1>
+				<em>Loading…</em>
+			</section>
+		</main>
+
+		<style>
+			/******* NON-critical styles https://www.smashingmagazine.com/2015/08/understanding-critical-css/ */
+			@import '@monorepo-private/css--framework' layer(framework);
+		</style>
+
+		<!-- NON-critical JS -->
+		<script type="module">
+			import './app/index.js'
+		</script>
+	</body>
+</html>

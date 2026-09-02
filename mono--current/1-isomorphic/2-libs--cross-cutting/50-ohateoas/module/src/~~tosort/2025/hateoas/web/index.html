@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<main id="react-root">
+	<!-- React will render here and replace this -->
+	Loading…
+</main>
+
+<style>
+	/******* NON-critical styles https://www.smashingmagazine.com/2015/08/understanding-critical-css/ */
+	@import '@monorepo-private/css--framework';
+</style>
+
+<script type="module">
+	/* NON-critical JS */
+	import init from './index.tsx'
+	init()
+</script>
+</body>
+</html>

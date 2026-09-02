@@ -1,0 +1,15 @@
+# Browsers that we support
+# This is used by some tools such as parcel
+
+# [Format for browserslist](https://github.com/browserslist/browserslist)
+
+# DO NOT use `last X <browsername>` with X = 1 to avoid accidentally dropping browser support once a new version is released
+# from a company experience: "we have 5 recent versions of chrome among top 10 most used browsers"
+
+# no environment specified - used as the default
+Firefox ESR
+last 2 Firefox versions
+last 2 Chrome versions
+last 2 iOS versions
+last 2 ChromeAndroid versions
+not dead

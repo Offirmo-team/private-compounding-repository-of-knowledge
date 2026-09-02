@@ -1,0 +1,39 @@
+{
+	"name": "@tbrpg/ui--browser--react",
+	"version": "0.0.1",
+	"author": "Offirmo <offirmo.net@gmail.com>",
+	"license": "Unlicense",
+	"private": true,
+
+	"esnext": "src/index.jsx",
+	"module": "src/index.jsx",
+	"source": "src/index.jsx",
+	"sideEffects": false,
+
+	"peerDependencies": {
+		"@monorepo-private/soft-execution-context": "^0",
+		"react": "^18"
+	},
+	"dependencies": {
+		"@monorepo-private/react--error-boundary": "^0",
+		"@tbrpg/ui--browser--css": "^0",
+		"classnames": "^2",
+		"react-burger-menu": "^3",
+		"react-notification-system": "^0.4",
+		"tiny-invariant": "^1"
+	},
+
+	"scripts": {
+		"clean": "monorepo-script--clean-package …dist …cache",
+		"start:parcel": "parcel --out-dir .parcel --no-autoinstall doc/demo/index.html",
+		"demo": "run-s clean start:parcel"
+	},
+	"devDependencies": {
+		"@monorepo-private/monorepo-scripts": "*",
+		"@babel/core": "^7",
+		"@monorepo-private/soft-execution-context": "*",
+		"@monorepo-private/xoff": "^0",
+		"react": "^18"
+	},
+	"repository": "https://github.com/Offirmo/offirmo-monorepo--2022/tree/main/stack--2021/A-apps--core/the-boring-rpg/ui--browser--react"
+}

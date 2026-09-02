@@ -1,0 +1,20 @@
+:root {
+	/**
+	 * required to safely override one of the sub-setting while inheriting the rest.
+	 * https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric
+	 *
+	 * We select those values as the default:
+	 */
+
+	/* ordinal: nicer
+	 * slashed-zero: Help discriminate 0 and O if the font supports it.
+	 * Not mathematically correct but...
+	 */
+	--o⋄font-variant--keywords: slashed-zero; /* no ordinal: on some font, it make everything ordinal! */
+	--o⋄font-variant--numeric-figure: lining-nums;
+	--o⋄font-variant--numeric-spacing: ; /* nothing, we want proportional-nums only on demand */
+	--o⋄font-variant--numeric-fraction: ; /* nothing! or isolated digits get promoted to fractions */
+
+	--o⋄font-variant--default: var(--o⋄font-variant--keywords) var(--o⋄font-variant--numeric-figure)
+		var(--o⋄font-variant--numeric-spacing) var(--o⋄font-variant--numeric-fraction);
+}

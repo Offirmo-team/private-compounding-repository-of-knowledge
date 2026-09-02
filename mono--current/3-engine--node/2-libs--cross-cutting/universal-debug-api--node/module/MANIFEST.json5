@@ -1,0 +1,5 @@
+{
+	// used to be public @offirmo/*
+	description: "Implementation of Offirmo’s Universal Debug Api for node",
+	hasꓽside_effects: true,
+}

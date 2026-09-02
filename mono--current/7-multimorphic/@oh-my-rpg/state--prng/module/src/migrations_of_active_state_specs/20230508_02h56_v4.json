@@ -1,0 +1,15 @@
+{
+	"schema_version": 4,
+	"uuid": "uu1~example~state~PRNG~~",
+	"revision": 108,
+	"prng_state": {
+		"algorithm_id": "MT19937",
+		"call_count": 107,
+		"seed": -54321
+	},
+	"recently_encountered_by_id": {
+		"item": ["axe", "sword"],
+		"adventures": ["dragon", "king"],
+		"mystery": []
+	}
+}

@@ -1,0 +1,10 @@
+
+/******* emojis as icons *******
+ * https://preethisam.com/2018/06/25/how-to-use-emojis-as-icons/
+ * TODO does it render well enough?
+ */
+.o⋄character-as-icon { /* TODO clarify. Emojis or more? */
+	color: transparent;
+	text-shadow: 0 0;
+	vertical-align: text-top; /* visually better, this is not text */
+}

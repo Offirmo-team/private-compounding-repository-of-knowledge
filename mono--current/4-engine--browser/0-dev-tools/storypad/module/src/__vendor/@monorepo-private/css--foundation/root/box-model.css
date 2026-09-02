@@ -1,0 +1,21 @@
+/**
+ * Apply a natural box layout model to all elements, but allowing components to change
+ * https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://github.com/mike-engel/a11y-css-reset/pull/12#issuecomment-516582884
+ */
+:root {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/**
+ * ...but allow to reset it if needed
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+.box-sizing-reset {
+	box-sizing: initial;
+}

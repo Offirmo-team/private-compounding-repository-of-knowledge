@@ -1,0 +1,49 @@
+/* On all browsers, for "monospaced" elements (code, kbd, pre, samp),
+ * the default font-size=1em ends up smaller (ex. seen 13px for a root font-size of 16px)
+ * This is an old design choice.
+ * Last checked: Chrome102, Firefox91 and Safari15
+ *
+ * While this design choice is questionable, it's not entirely wrong.
+ * We keep it but we improve it.
+ */
+
+pre,
+code:not(pre code), /* no double styling for <code> already inside a <pre> */
+kbd,
+samp {
+	/* First cancel the browser-engine level font resizing.
+	 * Strangely, the solution is to redefine the font-family twice.
+	 * "Nobody knows why this works; it just does." (last checked was working on Chrome102, Firefox91 and Safari15)
+	 * cf. https://stackoverflow.com/questions/38781089/font-family-monospace-monospace
+	 * (see var definition)
+	 */
+	font-family: var(--o⋄font-family--code);
+
+	/* Now re-enable the font resizing with proper css
+	 * (we tweak the value)
+	 */
+	font-size: 0.9em;
+
+	/* Apply a slightly different background on those elements.
+	 * This is now a widely accepted semantic style.
+	 */
+	background-color: var(--o⋄color⁚bg--code, var(--o⋄color⁚bg--highlight, ButtonFace));
+	border-radius: 0.2em;
+
+	/* To prevent the background from being too close to the content,
+	 * Add a separator padding on inline elements
+	 */
+	padding-inline: 0.5ch;
+
+	/* replace the abominable default to 8
+	 * https://caniuse.com/css3-tabsize
+	 */
+	tab-size: 3;
+}
+
+pre {
+	/* Code can easily overflow on small screens
+	 * We don't necessarily want a scroll (TODO refine)
+	 */
+	overflow-inline: auto;
+}

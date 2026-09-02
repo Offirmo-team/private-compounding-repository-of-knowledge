@@ -1,0 +1,6 @@
+{
+	description: "Audio assets for a RPG",
+	hasꓽside_effects: true, // because of the lib we use + asset usage registration
+	status: 'experimental', // ideally it should work for node & browser, right now it's browser only?
+	// TODO asset usage registration
+}

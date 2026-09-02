@@ -1,0 +1,51 @@
+.storypad⋄ui-element {
+	--o⋄font-family--system--sans:
+		-apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Helvetica, "Ubuntu",
+		Roboto, Noto, Arial;
+
+	--clrs--silver: #dddddd;
+	--clrs--blue: #0074d9;
+
+	--o⋄color⁚fg--main: black; /*var(--clrs--silver);*/
+	--o⋄color⁚bg--main: white; /*var(--clrs--blue);*/
+
+	font-family: var(--o⋄font-family--system--sans, "sans-serif");
+	font-size: 12px;
+	color: var(--o⋄color⁚fg--main);
+	background-color: var(--o⋄color⁚bg--main);
+}
+
+/************************************/
+
+.storypad⋄manager {
+	padding: 0;
+	margin: 0;
+
+	width: 100vw;
+	max-width: 100%;
+
+	/* children layout */
+	display: flex;
+	align-items: stretch;
+	.storypad⋄sidebar {
+		height: 100dvh;
+		resize: horizontal;
+		overflow-y: scroll;
+	}
+	.storypad⋄story-area {
+		flex-grow: 9999;
+	}
+}
+
+/************************************/
+/* DEBUG *
+.storypad⋄manager {
+	background-color: red;
+}
+.storypad⋄sidebar {
+	background-color: lightgreen;
+}
+.storypad⋄story-area {
+	background-color: lightskyblue;
+}
+ */

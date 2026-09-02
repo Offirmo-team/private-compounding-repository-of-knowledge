@@ -1,0 +1,8 @@
+{
+	name: "parcel-resolver",
+	description: "Special Parcel plugin (resolver) to mitigate some bugs",
+	target: "system",
+	/*engines: {
+		parcel: "2.x",
+	},*/
+}

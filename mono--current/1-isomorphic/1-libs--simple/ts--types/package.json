@@ -1,0 +1,40 @@
+{
+	"name": "@monorepo-private/ts--types",
+	"version": "0.0.1",
+	"private": true,
+	"description": "TypeScript base types definitions",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/index.ts"
+	},
+	"scripts": {
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/ts--types\" && tsc --noEmit",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"type-fest": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

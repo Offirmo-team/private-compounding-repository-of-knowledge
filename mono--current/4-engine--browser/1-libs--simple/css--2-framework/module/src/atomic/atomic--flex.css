@@ -1,0 +1,31 @@
+.o⋄flex--directionꘌrow {
+	/* appearance of a line = horizontal */
+	display: flex;
+	flex-wrap: wrap; /* defensive CSS, feel free to override https://ishadeed.com/article/defensive-css/ */
+	flex-direction: row;
+}
+.o⋄flex--directionꘌcolumn {
+	/* appearance of a column = vertical */
+	display: flex;
+	flex-wrap: wrap; /* defensive CSS, feel free to override https://ishadeed.com/article/defensive-css/ */
+	flex-direction: column;
+}
+
+.o⋄flex--centered-content {
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+/* https://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space */
+.o⋄flex-element--no-grow {
+	flex-grow: 0;
+}
+.o⋄flex-element--grow {
+	flex-grow: 1;
+}
+
+/* https://piccalil.li/quick-tip/prevent-squishy-elements-with-flex-none/ */
+.o⋄flex-element--no-squish {
+	flex: none;
+}

@@ -1,0 +1,4 @@
+{
+	description: "Generator of html documents from a typed spec",
+	status: "experimental",
+}

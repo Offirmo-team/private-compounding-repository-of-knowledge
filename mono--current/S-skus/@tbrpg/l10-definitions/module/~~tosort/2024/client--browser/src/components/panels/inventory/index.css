@@ -1,0 +1,13 @@
+
+.tbrpg-panel--inventory {
+
+}
+
+.tbrpg-panel--inventory  .item__name {
+	font-weight: normal;
+}
+
+.tbrpg-panel--inventory .panel-top-content {
+	padding: .5em .8em .4em;
+	border-radius: .4em;
+}

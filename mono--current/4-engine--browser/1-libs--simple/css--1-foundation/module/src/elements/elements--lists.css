@@ -1,0 +1,5 @@
+ul,
+ol {
+	/* instead of fixed */
+	padding-inline-start: 1.5em; /* nice and aligns with a <details> */
+}

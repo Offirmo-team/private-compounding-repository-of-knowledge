@@ -1,0 +1,6 @@
+:root {
+	/* https://evilmartians.com/chronicles/scroll-to-the-future-modern-javascript-css-scrolling-implementations */
+	scroll-behavior: smooth;
+}
+
+/* TODO review https://fdossena.com/?p=html5cool/smooth/i.frag */

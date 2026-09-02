@@ -1,0 +1,71 @@
+:root {
+	/******* better defaults *******/
+
+	/* TODO bigger default root font? */
+
+	/* font sans serif = #1 most important styling according to https://jgthms.com/web-design-in-4-minutes/#font-family
+	 */
+	font-family: var(--o⋄font-family--main);
+
+	/* #3 most important styling according to https://jgthms.com/web-design-in-4-minutes/#spacing
+	 * 1.5 is recommended by accessibility https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html
+	 */
+	line-height: 1.5; /* TODO custom */
+
+	/* do NOT change the root font-size as it's used as a default zoom by accessibility users cf. https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/
+	*/
+
+	font-variant-numeric: var(--o⋄font-variant--default);
+
+	text-decoration-thickness: var(--o⋄border--thickness);
+
+	/******* modern standards *******/
+
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+	 * We assume all modern development is already done with mobile in mind ✔
+	 */
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+
+	/******* font smoothing/rendering *******/
+
+	/*
+	 * (from https://www.leejamesrobinson.com/blog/how-stripe-designs-beautiful-websites/
+	 *  see also https://www.webdesignerdepot.com/2013/05/how-to-optimize-for-legibility-using-text-rendering/
+	    and https://wp-mix.com/font-smoothing-chrome-firefox/)
+	 * tested 2023/10 on high and low DPI:
+	 * -> on Chrome, geometricPrecision is REALLY the best ✅
+	 *    for ex. it enables the computing of lighter/bolder variants if you don't provide them
+	 *    (on Safari and FF the effect is less clear)
+	 * challenge about perf: https://marco.org/2012/11/15/text-rendering-optimize-legibility
+	 * -> TODO test on mobile!
+	 * -> TODO allow switch in some prefs?
+	 */
+	text-rendering: geometricPrecision;
+
+	/* chrome / safari only, macOs only
+	 * (from https://www.leejamesrobinson.com/blog/how-stripe-designs-beautiful-websites/
+	 *  see also https://wp-mix.com/font-smoothing-chrome-firefox/)
+	 * Also, OMITTING this triggers an apparent weight change on color-scheme switch
+	 *   https://css-tricks.com/dark-mode-and-variable-fonts/#comment-1757477
+	 * tested 2023/10 on high and low DPI
+	 * -> antialiased is the best all-rounder ✅ esp. when coupled with 'optimizeLegibility' above
+	 *    (subpixel is mushy on low-dpi but no much better on high dpi)
+	 * Note: There are claims that -webkit-font-smoothing doesn't properly inherit down
+	 * ex. https://courses.joshwcomeau.com/css-for-js/06-typography-and-media/02-text-rendering
+	 * ex. (10y old) https://stackoverflow.com/questions/13556481/font-smoothing-not-applied-to-buttons
+	 * However as of 2023 I couldn't reproduce it. (Chrome, Safari, FF)
+	 */
+	-webkit-font-smoothing: antialiased;
+	/* Firefox only, macOs only
+	 * (from https://www.leejamesrobinson.com/blog/how-stripe-designs-beautiful-websites/
+	 *  see also https://wp-mix.com/font-smoothing-chrome-firefox/)
+	 * tested 2023/10 on high and low DPI
+	 * -> grayscale is always better ✅
+	 */
+	-moz-osx-font-smoothing: grayscale;
+	/* See also
+	 * https://szafranek.net/blog/2009/02/22/font-smoothing-explained/
+	 */
+}

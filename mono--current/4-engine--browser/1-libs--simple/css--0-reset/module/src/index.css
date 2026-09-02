@@ -1,0 +1,10 @@
+/* TODO use https://www.browserstack.com/guide/create-browser-specific-css */
+@import "./browser--chrome/index.css" layer(offirmo--reset);
+@import "./browser--firefox/index.css" layer(offirmo--reset);
+@import "./browser--safari/index.css" layer(offirmo--reset);
+
+@layer offirmo--reset {
+	.offirmo--layer--debug {
+		color: red;
+	}
+}

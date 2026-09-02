@@ -1,0 +1,42 @@
+/* "colorhunt 212" light on dark theme
+ */
+@import "../consts/consts--colors--colorhunt--212.css";
+@import "../consts/consts--colors--modifiers.css";
+
+[data-o-theme="dark--colorhunt212"] {
+	/* data-o-theme="dark--colorhunt212" */
+
+	--o⋄color⁚fg--main: var(--o⋄color⁚co212__beige);
+
+	--o⋄color⁚fg--secondary: hsla(42, 100%, 87%, 0.66); /* TODO color functions */
+	--o⋄color⁚fg--ancillary: hsla(42, 100%, 87%, 0.33);
+
+	--o⋄color⁚accent: var(--o⋄color⁚co212__beige);
+	--o⋄color⁚activity-outline: var(--o⋄color⁚co212__blue);
+	--o⋄color⁚bg--main: var(--o⋄color⁚co212__brown);
+	--o⋄color⁚bg--code: #75636a;
+
+	/* "app" mode, we don't emphasize links */
+	--o⋄color⁚fg--link: var(--o⋄color⁚co212__beige);
+	--o⋄color⁚fg--link--visited: var(--o⋄color⁚co212__beige); /* TODO alt */
+
+	/* no need to redefine
+	--o⋄color⁚fg--error: red;
+	--o⋄color⁚fg--warning: var(--o⋄color⁚boz__yellow);
+	--o⋄color⁚fg--info: var(--o⋄color⁚boz__blue);
+	--o⋄color⁚fg--success: var(--o⋄color⁚boz__green);
+*/
+
+	/* using var to allow composing filters */
+	--o⋄filter⁚black-icon-to-color--fg: invert(86%) sepia(40%) saturate(307%) hue-rotate(333deg) brightness(104%)
+		contrast(103%);
+	/* TODO dynamic color */
+	--o⋄filter⁚img-visible-on-any-background: drop-shadow(0px 0px 4px black);
+}
+
+[data-o-theme="dark--colorhunt212"] .black-icon-to-color--fg {
+	/* computed with https://codepen.io/sosuke/pen/Pjoqqp */
+	filter: var(--o⋄filter⁚black-icon-to-color--fg);
+}
+
+/* TODO link visited doesn't work */

@@ -1,0 +1,15 @@
+:root {
+	/* transfer the env() to variables so that
+	 * - we can programmatically read them
+	 * - we can override them (carefully)
+	 * Of course only the var() version must be used in the framework.
+	 *
+	 * https://developer.chrome.com/docs/web-platform/virtual-keyboard/#the-css-environment-variables
+	 */
+	--keyboard-inset-top: env(keyboard-inset-top, 0px);
+	--keyboard-inset-right: env(keyboard-inset-right, 0px);
+	--keyboard-inset-bottom: env(keyboard-inset-bottom, 0px);
+	--keyboard-inset-left: env(keyboard-inset-left, 0px);
+	--keyboard-inset-width: env(keyboard-inset-width, 0px);
+	--keyboard-inset-height: env(keyboard-inset-height, 0px);
+}

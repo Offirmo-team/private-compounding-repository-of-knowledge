@@ -1,0 +1,13 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element
+ * typical: embed, iframe, img, video
+ * sometimes: audio, canvas, object, option
+ * NO: picture, svg ⭆ they are a bit harder to style
+ */
+
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#responsive_images
+ */
+img,
+video {
+	max-width: 100%; /* to avoid "blowout" on very big img cf. https://css-tricks.com/preventing-a-grid-blowout/ */
+	display: block; /* to remove the "magic space" https://www.joshwcomeau.com/css/understanding-layout-algorithms/#inline-magic-space-5 */
+}

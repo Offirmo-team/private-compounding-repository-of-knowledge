@@ -1,0 +1,4 @@
+{
+	// used to be public @offirmo/*
+	description: "Mathematically correct pseudo random generation (ESM / TypeScript)",
+}

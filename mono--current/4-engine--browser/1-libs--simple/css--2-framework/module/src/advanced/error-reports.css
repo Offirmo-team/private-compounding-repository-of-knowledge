@@ -1,0 +1,18 @@
+.o⋄error-report {
+	/* REMINDER this class has a special treatment in the theming definition
+	 * to ensure it's well contrasted.
+	 */
+	font-size: xx-small;
+	font-family: monospace;
+	color: var(--o⋄color⁚fg--error); /* reminder: we force inherit from dark theme = compatible */
+	background-color: var(--o⋄color⁚darker--66);
+	border: 2px dashed var(--o⋄color⁚fg--error);
+	padding: 0.3em;
+	margin: auto;
+	z-index: 100000; /* just in case TODO check useful / works */
+}
+.o⋄error-report > pre,
+.o⋄error-report > samp {
+	white-space: pre-wrap;
+	text-align: initial;
+}

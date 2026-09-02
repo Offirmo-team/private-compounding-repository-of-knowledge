@@ -1,0 +1,51 @@
+{
+	"name": "@infinite-monorepo/plugin--pnpm",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@infinite-monorepo/plugin--pnpm\" && tsc --noEmit",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@infinite-monorepo/package-details": "workspace:*",
+		"@infinite-monorepo/plugin--git": "workspace:*",
+		"@infinite-monorepo/plugin--mise": "workspace:*",
+		"@infinite-monorepo/plugin--npm": "workspace:*",
+		"@infinite-monorepo/plugin--package-json": "workspace:*",
+		"@infinite-monorepo/state": "workspace:*",
+		"@infinite-monorepo/types-for-plugins": "workspace:*",
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/fs--ls": "workspace:*",
+		"@monorepo-private/merge": "workspace:*",
+		"@monorepo-private/utils--error": "workspace:*",
+		"@pnpm/constants": "catalog:",
+		"tinyglobby": "catalog:"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

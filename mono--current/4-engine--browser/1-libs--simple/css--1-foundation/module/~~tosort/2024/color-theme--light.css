@@ -1,0 +1,78 @@
+/* [OPTIONAL FILE not included by default]
+ * Automatic theme generation from a single "hue", for LIGHT MODE. (dark mode would have different calculations)
+ * A very easy way to add personality to your site is to start with a "brand" color
+ * (ex. facebook and twitter have their special "blue" color)
+ * and decline it into the other colors.
+ * It's quite easy to do arithmetic with hsl https://hslpicker.com/
+ * H = hue = the color
+ * S = saturation = the vividness of the color
+ * L = luminosity = the brightness of the color = 50% is the middle ground, 0% is black, 100% is white
+ *
+ * (WARNING Result is not great, you VERY LIKELY will have to tweak it, especially for green)
+ *
+ * TODO REVIEW THIS FILE (is it even needed with @offirmo framework?) (in use in some tests)
+ * TODO use https://developer.mozilla.org/en-US/blog/color-palettes-css-color-mix/
+ * TODO use relative colors when supported on FF https://caniuse.com/?search=relative%20color
+ * https://developer.chrome.com/blog/css-relative-color-syntax/
+ */
+
+:root {
+	--o⋄color⁚brand__h: 240; /* customize here. 0 = red, 120 = green, 240 = blue */
+	--o⋄color⁚brand__s: 100%;
+
+
+	/* An "accent color" is an easy way to add "that dash of visual flair to your UI"
+	 * cf. https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886 §6
+	 * It's also an easy way to style inputs.
+	 * Note: because browsers will do auto-contrast, we need to use a light accent on light mode and vice versa
+	 */
+	--o⋄color⁚fg--accent: hsl(calc(var(--o⋄color⁚brand__h) - 23), var(--o⋄color⁚brand__s), 55%);
+
+	/* Outline color for elements being interacted with,
+	 * ex. buttons being pressed, links being pressed/hovered.
+	 * Also used as focus ring color (if enabled).
+	 */
+	--o⋄color⁚fg--activity-outline: hsl(calc(var(--o⋄color⁚brand__h) - 23), var(--o⋄color⁚brand__s), 65%);
+
+
+	/* foreground color = "primary content" = text, icons etc.
+	 * we want black or quasi black
+	*/
+	--o⋄color⁚fg--main__h: var(--o⋄color⁚brand__h);
+	--o⋄color⁚fg--main__s: 80%; /* slightly desaturate, allow margin for the "strong" version */
+	--o⋄color⁚fg--main__l: 20%; /* 0 = full black, 10% = hint of a tint, 20% = clearly visible */
+	--o⋄color⁚fg--main: hsl(var(--o⋄color⁚fg--main__h), var(--o⋄color⁚fg--main__s), var(--o⋄color⁚fg--main__l));
+
+	/* Slightly stronger color for headers and <strong>.
+	 * As suggested by https://jgthms.com/web-design-in-4-minutes/#color-contrast "Color & contrast"
+	 * "nice to have", can be equal to the main color without any problem.
+	 *
+	 * = fully saturate + slightly darken
+	 */
+	--o⋄color⁚fg--strong: hsl(var(--o⋄color⁚fg--main__h), 100%, clamp(0%, calc(var(--o⋄color⁚fg--main__l) - 10%), 20%));
+
+	/* Links
+	 * @see ../elements/elements--a.css
+	 */
+	--o⋄color⁚fg--link:          hsl(var(--o⋄color⁚brand__h)          , 100%, 50%);
+	--o⋄color⁚fg--link--visited: hsl(calc(var(--o⋄color⁚brand__h) + 31), 70%, 30%); /* emulate default links being +31 from the normal blue */
+
+
+	/* background color
+	 * we want white or quasi white
+	 */
+	--o⋄color⁚bg--main__h: var(--o⋄color⁚brand__h);
+	--o⋄color⁚bg--main__s: 100%;
+	--o⋄color⁚bg--main__l: 100%; /* 100 = full white, the best bg, ~90% =  slightly not white to allow a hint of a tint */
+	--o⋄color⁚bg--main: hsl(var(--o⋄color⁚bg--main__h), var(--o⋄color⁚bg--main__s), var(--o⋄color⁚bg--main__l));
+
+
+	/* Variation of background color for code.
+	 * This is a very common pattern.
+	 * We use S = 0~5% to make a gray (desaturate) then lower the luminosity
+	 */
+	--o⋄color⁚bg--code: hsl(var(--o⋄color⁚bg--main__h), 0%, clamp(90%, calc(var(--o⋄color⁚bg--main__l) - 7%), 100%));
+
+	--o⋄color⁚bg--highlight--1: hsla(var(--o⋄color⁚fg--main__h), var(--o⋄color⁚fg--main__s), var(--o⋄color⁚fg--main__l), .1); /* bg color visible on normal bg, ex. for buttons */
+	--o⋄color⁚bg--highlight--2: hsla(var(--o⋄color⁚fg--main__h), var(--o⋄color⁚fg--main__s), var(--o⋄color⁚fg--main__l), .3); /* alt, ex. for hovered/clicked buttons */
+}

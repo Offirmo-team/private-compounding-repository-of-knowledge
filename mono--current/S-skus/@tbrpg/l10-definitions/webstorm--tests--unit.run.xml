@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" name="@tbrpg/definitions -- TESTS -- UNIT" type="mocha-javascript-test-runner">
+		<node-interpreter>project</node-interpreter>
+		<node-options>--env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local</node-options>
+		<mocha-package>$USER_HOME$/work/src/x-external/off/offirmo/offirmo-monorepo/stack--current/node_modules/mocha</mocha-package>
+		<working-directory>$USER_HOME$/work/src/x-external/off/offirmo/offirmo-monorepo/stack--current/S-skus/@tbrpg/1-logic/l10-definitions</working-directory>
+		<pass-parent-env>true</pass-parent-env>
+		<ui>bdd</ui>
+		<extra-mocha-options>--bail</extra-mocha-options>
+		<test-kind>PATTERN</test-kind>
+		<test-pattern>./module/**/*.tests.ts</test-pattern>
+		<method v="2" />
+	</configuration>
+</component>

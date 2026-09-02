@@ -1,0 +1,6 @@
+p {
+	/* avoid "orphans"
+	 * cf. 2023 https://developer.chrome.com/blog/css-text-wrap-pretty/
+	 */
+	text-wrap: pretty;
+}

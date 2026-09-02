@@ -1,0 +1,13 @@
+{
+	"name": "my-spa",
+	"main": "src/worker.ts",
+	// Set this to today's date
+	"compatibility_date": "2026-02-22",
+	"compatibility_flags": ["nodejs_compat"],
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		"not_found_handling": "single-page-application",
+		"run_worker_first": ["/*", "!/assets/*"],
+	},
+}

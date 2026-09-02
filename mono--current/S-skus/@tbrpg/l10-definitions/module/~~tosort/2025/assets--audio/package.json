@@ -1,0 +1,34 @@
+{
+	"name": "@oh-my-rpg/assets--audio",
+	"description": "Audio assets for a RPG",
+	"version": "0.0.1",
+	"author": "Offirmo <offirmo.net@gmail.com> (https://www.offirmo.net/)",
+	"license": "Unlicense",
+	"private": true,
+	"sideEffects": true,
+	"type": "module",
+	"exports": {
+		"./SpellBook--TurnPage--01": "./src/licensed/audio_alchemist/spellbook_turnpage_01.ts"
+	},
+	"peerDependencies": {
+		"tslib": "^2"
+	},
+	"dependencies": {
+		"howler": "^2",
+		"tiny-invariant": "^1"
+	},
+	"scripts": {
+		"test--ts": "echo \"@oh-my-rpg/assets--audio\" && tsc --noEmit",
+		"test--ts--watch": "tsc --noEmit --watch",
+		"dev": "run-s test--ts--watch",
+		"_test": "run-s test--ts"
+	},
+	"devDependencies": {
+		"@monorepo-private/monorepo-scripts": "*",
+		"@offirmo/unit-test-toolbox": "^9",
+		"@types/howler": "^2",
+		"npm-run-all": "^4",
+		"tslib": "^2",
+		"typescript": "^6"
+	}
+}

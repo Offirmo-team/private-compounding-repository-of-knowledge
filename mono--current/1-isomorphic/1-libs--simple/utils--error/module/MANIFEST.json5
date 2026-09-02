@@ -1,0 +1,4 @@
+{
+	// used to be public @offirmo/*
+	description: "utilities around JavaScript Error creation and manipulation",
+}

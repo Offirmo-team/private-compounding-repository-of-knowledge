@@ -1,0 +1,62 @@
+/* This package is a "foundation",
+ * it allows some limited customization
+ * but advanced dynamic theming is better done either:
+ * - as a full override
+ * - in a dedicated package = offirmo/css-framework
+ */
+:root {
+	/* foreground color = "primary content" = text, icons etc.
+	 * we want black or quasi black
+	*/
+	/*--o⋄color⁚fg--main: hsl(0, 100%, 0%);
+
+	/* background color
+	 * we want white or quasi white
+	 */
+	/*--o⋄color⁚bg--main: hsl(0, 100%, 100%);
+
+	/* OPTIONAL A dedicated color for headers and <strong>.
+	 * As suggested by https://jgthms.com/web-design-in-4-minutes/#color-contrast "Color & contrast"
+	 * "nice to have", can be equal to the main color without any problem.
+	 */
+	/*--o⋄color⁚fg--strong: var(--o⋄color⁚fg--main);
+
+	/* An "accent color" is an easy way to add "that dash of visual flair to your UI"
+	 * cf. https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886 §6
+	 * It's also an easy way to style inputs.
+	 * Note: because browsers will do auto-contrast, we need to use a light accent on light mode and vice versa
+	 */
+	/*--o⋄color⁚accent: var(--o⋄color⁚accent--default);
+
+	/* Links
+	 * @see ../elements/elements--a.css
+	 */
+	/*--o⋄color⁚fg--link:          var(--o⋄color⁚fg--link--default);
+	--o⋄color⁚fg--link--visited: var(--o⋄color⁚fg--link--visited--default);
+
+	/* Outline color for outlining interactive elements being interacted with,
+	 * ex. buttons being pressed, links being pressed/hovered.
+	 * Also used as focus ring color (if enabled).
+	 * Ideally should be a color that contrasts well enough with the FOREground (ex. used as temp bgcolor on controls)
+	 * but should also be acceptable as a fg = clicked links
+	 */
+	/*--o⋄color⁚activity-outline: var(--o⋄color⁚activity-outline--default);
+
+	/* Variation of background color for code.
+	 * This is a very common pattern.
+	 * We want some gray
+	 */
+	/*--o⋄color⁚bg--code: hsl(0, 0%, 93%);
+
+	/* Alternative background colors when we want to highlight something on the normal bg
+	 * Should be very close to the normal one.
+	 * Used when we want a slight change of background, ex.
+	 * - striped table rows
+	 * - button colors
+	 * We need a second one to further highlight, ex. hovered button should be even further highlighted
+	 * (click will have "activity-outline")
+	 */
+	/*--o⋄color⁚bg--highlight--1: hsla(0, 100%, 0%, .1);
+	--o⋄color⁚bg--highlight--2: hsla(0, 100%, 0%, .3);
+	*/
+}

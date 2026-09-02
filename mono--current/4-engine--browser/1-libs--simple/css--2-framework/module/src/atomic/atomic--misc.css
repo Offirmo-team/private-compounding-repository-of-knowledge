@@ -1,0 +1,129 @@
+/** atomic in this file should ultimately move to a semantic dedicated file
+ */
+
+.o⋄text-alignꘌcenter {
+	text-align: center;
+}
+
+.o⋄marginꘌnone {
+	margin: 0;
+}
+
+.o⋄overflow-yꘌauto {
+	overflow-y: auto;
+}
+
+/* XXX NO there is likely an underlying problem!
+.o⋄no-overflow {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+*/
+
+/** Supposedly makes tap faster on iOs
+ * TODO review if still valid as of today?
+ * https://webkit.org/blog/5610/more-responsive-tapping-on-ios/
+ */
+.o⋄fast-tap {
+	touch-action: manipulation;
+}
+
+/* TODO tabular nums https://piccalil.li/quick-tip/control-changing-numbers-with-font-variant-numeric/
+ */
+
+/** remove most of the styles.
+ * ex. when using a semantic "button" with an image yet we don't want any button appearing
+ * credit: https://stackoverflow.com/a/64039751/587407
+ */
+.o⋄unstyled {
+	background: none;
+	color: inherit;
+	outline: inherit;
+
+	border: none;
+	padding: 0;
+	margin: 0;
+
+	font: inherit;
+	cursor: pointer;
+}
+
+/******* Typography *******/
+.o⋄text-readable-on-any-background {
+	/* not recommended but supported...
+	https://webkit.org/blog/85/introducing-text-stroke/
+	https://css-tricks.com/almanac/properties/t/text-stroke/
+	https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke
+	 */
+	/*-webkit-text-stroke: 1.5px #db3333; /* TODO relative + vars */
+	/*
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgba(0, 0, 0, 1);
+	*/
+
+	/* TODO dynamic color */
+	/*--color: var(--o⋄color⁚bg--main--backdrop);*/
+	--color: black;
+	text-shadow: var(--color) 0px 0px 10px;
+	/*
+	text-shadow:
+		1px  1px 0 var(--color),
+		1px -1px 0 var(--color),
+		-1px  1px 0 var(--color),
+		-1px -1px 0 var(--color),
+		1px  0px 0 var(--color),
+		0px  1px 0 var(--color),
+		-1px  0px 0 var(--color),
+		0px -1px 0 var(--color);*/
+}
+
+.o⋄img-visible-on-any-background {
+	filter: var(--o⋄filter⁚img-visible-on-any-background);
+}
+
+/* special "inline" button
+ * TODO auto detect? (maybe outside a form?)
+ */
+.o⋄button--inline {
+	--o⋄border--thickness__button: 0; /* override own CSS var for this typeof button */
+	padding: 0.1em 0.3em; /* TODO semantic */
+	border-radius: 0.35em;
+	/* TODO outline when pressed */
+}
+
+/* TODO clarify
+see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
+.o⋄backdrop {
+	background-color: var(--o⋄color⁚bg--main--backdrop);
+	backdrop-filter: blur(10px);
+}
+*/
+
+/* emoji improvement https://github.com/jdecked/twemoji?tab=readme-ov-file#inline-styles
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+ */
+
+/*
+.flip-vertical {
+	display: inline-block;
+	transform: scaleY(-1);
+}
+ */
+
+img.o⋄inline {
+	display: inline-block;
+	height: 1em;
+	vertical-align: middle;
+	background-color: unset;
+}
+
+/* https://courses.joshwcomeau.com/css-for-js/02-rendering-logic-2/08-reducing-z-index
+ */
+isolate {
+	isolation: isolate;
+}

@@ -1,0 +1,34 @@
+{
+	"name": "@oh-my-rpg/assets--cursors",
+	"description": "Graphical assets for an RPG UI: cursors",
+	"version": "0.0.1",
+	"author": "Offirmo <offirmo.net@gmail.com> (https://www.offirmo.net/)",
+	"license": "Unlicense",
+	"private": true,
+	"sideEffects": true,
+	"type": "module",
+	"exports": {
+		".": "./module/src/sword--standard/index.ts"
+	},
+	"source": "module/src/sword--standard/index.ts",
+	"peerDependencies": {
+		"tslib": "^2"
+	},
+	"dependencies": {
+		"@monorepo-private/credits": "*",
+		"tiny-invariant": "^1"
+	},
+	"scripts": {
+		"test--ts": "echo \"@oh-my-rpg/assets--cursors\" && tsc --noEmit",
+		"test--ts--watch": "tsc --noEmit --watch",
+		"dev": "run-s test--ts--watch",
+		"test": "run-s test--ts"
+	},
+	"devDependencies": {
+		"@monorepo-private/monorepo-scripts": "*",
+		"@offirmo/unit-test-toolbox": "^9",
+		"npm-run-all": "^4",
+		"tslib": "^2",
+		"typescript": "^6"
+	}
+}

@@ -1,0 +1,20 @@
+:root {
+	/* https://systemfontstack.com/
+	 * Notes:
+	 * 1) there is some debate about the exact list and various sites uses various combos. This should be plenty ok, though.
+	 * 2) this list has to be maintained over time (last update 2022/05)
+	 * 3) the "monospace, monospace" is intentional, cf. https://stackoverflow.com/questions/38781089/font-family-monospace-monospace
+	 * 5) ui-* extended system fonts (NOT available on all browsers) https://caniuse.com/extended-system-fonts
+	 * TODO review on major distros https://distrowatch.com/dwres.php?resource=major
+	 */
+	--o⋄font-family--system--sans:
+		ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue",
+		Helvetica, Cantarell, Ubuntu, Roboto, Noto, Arial, sans-serif;
+	--o⋄font-family--system--mono:
+		ui-monospace, Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace, monospace;
+	--o⋄font-family--system--serif:
+		ui-serif, "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times,
+		"Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	/* semantic aliases */
+	--o⋄font-family--fast_and_good_enough: var(--o⋄font-family--system--sans);
+}

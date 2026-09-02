@@ -1,0 +1,23 @@
+{
+	"name": "@monorepo-private/toolbox--parcel",
+	"version": "0.0.1",
+	"description": "An aggregation of npm modules related to the parcel bundler.",
+	"license": "Unlicense",
+	"author": "Offirmo <offirmo.net@gmail.com>",
+	"sideEffects": true,
+	"scripts": {
+		"test": "echo \"* @offirmo/toolbox--xyz: no need for unit tests for this kind of repo (meta)\""
+	},
+	"dependencies": {
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@parcel/service-worker": "^2",
+		"parcel": "^2",
+		"parcel-resolver-ignore": "^2",
+		"process": "^0",
+		"sharp": "^0.31"
+	},
+	"optionalDependencies": {},
+	"engines": {
+		"npm": ">=3"
+	}
+}

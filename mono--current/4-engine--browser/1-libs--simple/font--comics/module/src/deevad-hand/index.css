@@ -1,0 +1,53 @@
+/*********************/
+
+@font-face {
+	font-family: "DeevadHand--Raw";
+	src: url("regular.ttf");
+}
+@font-face {
+	font-family: "DeevadHand--Raw";
+	src: url("bold.ttf");
+	font-weight: bold;
+}
+@font-face {
+	font-family: "DeevadHand--Raw";
+	src: url("italic.ttf");
+	font-style: italic;
+}
+
+.omr⋄font⁚DeevadHand--raw {
+	font-family: "DeevadHand--Raw", sans-serif;
+}
+
+/*********************/
+
+@font-face {
+	font-family: "DeevadHand";
+	src: url("regular.ttf");
+	size-adjust: 92%;
+	ascent-override: 87%;
+	descent-override: 20%;
+	line-gap-override: 0%;
+} /*
+@font-face {
+	font-family: 'DeevadHand';
+	src: url('bold.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'DeevadHand';
+	src: url('italic.ttf');
+	font-style: italic;
+}*/
+
+.omr⋄font⁚DeevadHand {
+	--o⋄font-family--main: "DeevadHand", sans-serif;
+	font-family: var(--o⋄font-family--main);
+	line-height: 1; /* comic fonts are to be used in small ballons + don't have ascend/descend, hence look better lh1, cf. Blambot tip #7 */
+	/*font-stretch: 150%;*/
+	letter-spacing: 0.02em;
+	/*font-synthesis: style small-caps weight position;*/
+	/* font-variant-numeric */
+}
+
+/*********************/

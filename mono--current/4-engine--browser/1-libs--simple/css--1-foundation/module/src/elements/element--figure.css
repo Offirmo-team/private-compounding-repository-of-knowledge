@@ -1,0 +1,10 @@
+figure {
+	text-align: center; /* in case the user is not using <figcaption> */
+
+	img {
+		/* center the image inside the figure */
+		margin: auto;
+	}
+}
+
+/* TODO https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833 */

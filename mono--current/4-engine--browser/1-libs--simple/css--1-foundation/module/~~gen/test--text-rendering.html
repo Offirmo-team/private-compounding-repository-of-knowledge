@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>text-rendering</title>
+	<style>
+		/*
+		https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
+		https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+		 */
+
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+		:root {
+			/* reset */
+			xx-moz-osx-font-smoothing: grayscale;
+		}
+
+		.text_rendering.auto {
+			text-rendering: auto;
+		}
+		.text_rendering.optimizeSpeed {
+			text-rendering: optimizeSpeed;
+		}
+		.text_rendering.optimizeLegibility {
+			text-rendering: optimizeLegibility;
+		}
+		.text_rendering.geometricPrecision {
+			text-rendering: geometricPrecision;
+		}
+
+		.custom_font {
+			font-family: 'Noto Sans', sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+<p class="">
+	<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>[default]</code>
+</p>
+<p class="text_rendering auto">
+	<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>auto</code>
+</p>
+<p class="text_rendering optimizeSpeed">
+	<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>optimizeSpeed</code>
+</p>
+<p class="text_rendering optimizeLegibility">
+	<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>optimizeLegibility</code>
+</p>
+<p class="text_rendering geometricPrecision">
+	<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>geometricPrecision</code>
+</p>
+
+<hr>
+
+<div class="custom_font">
+	<p class="">
+		<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>[default]</code>
+	</p>
+	<p class="text_rendering auto">
+		<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>auto</code>
+	</p>
+	<p class="text_rendering optimizeSpeed">
+		<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>optimizeSpeed</code>
+	</p>
+	<p class="text_rendering optimizeLegibility">
+		<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>optimizeLegibility</code>
+	</p>
+	<p class="text_rendering geometricPrecision">
+		<strong>Hello, world!</strong> LYoWAT, - ff fi fl ffl <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <code>geometricPrecision</code>
+	</p>
+</div>
+
+
+<script type="module">
+
+</script>
+
+
+</body>
+</html>

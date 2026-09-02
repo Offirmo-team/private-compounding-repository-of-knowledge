@@ -1,0 +1,9 @@
+/* Opt-in to view transitions
+ * https://css-tricks.com/toe-dipping-into-view-transitions/
+ * https://developer.chrome.com/docs/web-platform/view-transitions/cross-document
+ */
+@media not (prefers-reduced-motion: reduce) {
+	@view-transition {
+		navigation: auto;
+	}
+}

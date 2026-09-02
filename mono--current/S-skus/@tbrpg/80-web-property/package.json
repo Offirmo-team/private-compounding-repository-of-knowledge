@@ -1,0 +1,8 @@
+{
+	"name": "@tbrpg/web-property",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

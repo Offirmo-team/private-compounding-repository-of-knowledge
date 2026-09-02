@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "PixAntiqua";
+	src: url("webfont--pixantiqua.woff") format("woff");
+}
+
+/*********************/
+
+:root {
+	--omr⋄font⁚rpg--pixel: "PixAntiqua", sans-serif;
+}
+
+/*********************/
+
+.omr⋄font⁚rpg--pixel {
+	font-family: var(--omr⋄font⁚rpg--pixel);
+	letter-spacing: 0.35px;
+	line-height: 1.65;
+}
+
+/*********************/

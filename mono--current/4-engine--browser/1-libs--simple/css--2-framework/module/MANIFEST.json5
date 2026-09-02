@@ -1,0 +1,12 @@
+{
+	name: "css--framework",
+	description: "Small reusable CSS classes",
+	hasꓽside_effects: true,
+	target: "browser",
+
+	_overrides: {
+		dependencies: {
+			"@monorepo-private/css--foundation": { type: "dev" },
+		},
+	},
+}

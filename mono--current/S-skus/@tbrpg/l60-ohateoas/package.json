@@ -1,0 +1,59 @@
+{
+	"name": "@tbrpg/l60-ohateoas",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/server.ts"
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
+		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
+		"check": "run-s test check:ts",
+		"check:ts": "echo \"@tbrpg/l60-ohateoas\" && tsc --noEmit",
+		"clean": "npm-run-all _clean--pkg",
+		"dev": "run-s clean watch:check:ts",
+		"stories": "npm-run-all clean --parallel _start:storypad--vite",
+		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
+		"test": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js -- --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/ohateoas": "workspace:*",
+		"@monorepo-private/rich-text-format": "workspace:*",
+		"@monorepo-private/timestamps": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*",
+		"@tbrpg/interfaces": "workspace:*",
+		"@tbrpg/state": "workspace:*",
+		"@tbrpg/ui--rich-text": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/ohateoas-browser--react": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/chai": "catalog:",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"react": "catalog:",
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

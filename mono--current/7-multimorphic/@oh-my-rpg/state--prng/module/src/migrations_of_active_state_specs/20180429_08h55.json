@@ -1,0 +1,12 @@
+{
+	"schema_version": 3,
+	"uuid": "uu1~example~state~PRNG~~",
+	"revision": 108,
+	"seed": -54321,
+	"use_count": 107,
+	"recently_encountered_by_id": {
+		"item": ["axe", "sword"],
+		"adventures": ["dragon", "king"],
+		"mystery": []
+	}
+}

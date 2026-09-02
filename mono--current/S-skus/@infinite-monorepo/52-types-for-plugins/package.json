@@ -1,0 +1,45 @@
+{
+	"name": "@infinite-monorepo/types-for-plugins",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@infinite-monorepo/types-for-plugins\" && tsc --noEmit",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@infinite-monorepo/graph": "workspace:*",
+		"@infinite-monorepo/package-details": "workspace:*",
+		"@infinite-monorepo/plugin": "workspace:*",
+		"@infinite-monorepo/primitives": "workspace:*",
+		"@infinite-monorepo/spec": "workspace:*",
+		"@infinite-monorepo/state": "workspace:*",
+		"@infinite-monorepo/structured-file-manifest": "workspace:*",
+		"@monorepo-private/assert": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

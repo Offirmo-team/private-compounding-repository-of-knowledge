@@ -1,0 +1,3 @@
+{
+	description: "Fetch the latest infos about a npm package: version, typings, etc.",
+}

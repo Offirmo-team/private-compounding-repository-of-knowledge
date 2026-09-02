@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" type="NodeJSConfigurationType"
+		name="@monorepo-private/print-error-to-terminal -- Demo"
+		working-dir="$USER_HOME$/work/src/x-external/off/offirmo/offirmo-monorepo/stack--current/3-engine--node/1-libs--simple/print-error--to-terminal"
+		path-to-js-file="module/src/##doc/demo.ts">
+		<node-interpreter>project</node-interpreter>
+		<node-options>--env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local</node-options>
+		<method v="2" />
+	</configuration>
+</component>

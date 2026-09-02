@@ -1,0 +1,16 @@
+/* modifiers, to be used as overlays */
+
+:root {
+	--o⋄color⁚darker--10: rgba(0, 0, 0, 0.1);
+	--o⋄color⁚darker--20: rgba(0, 0, 0, 0.2);
+	--o⋄color⁚darker--33: rgba(0, 0, 0, 0.333);
+	--o⋄color⁚darker--50: rgba(0, 0, 0, 0.5);
+	--o⋄color⁚darker--66: rgba(0, 0, 0, 0.666);
+	--o⋄color⁚darker--90: rgba(0, 0, 0, 0.9);
+
+	--o⋄color⁚lighter--10: rgba(100%, 100%, 100%, 0.1);
+	--o⋄color⁚lighter--20: rgba(100%, 100%, 100%, 0.2);
+	--o⋄color⁚lighter--33: rgba(100%, 100%, 100%, 0.333);
+	--o⋄color⁚lighter--66: rgba(100%, 100%, 100%, 0.666);
+	--o⋄color⁚lighter--90: rgba(100%, 100%, 100%, 0.9);
+}

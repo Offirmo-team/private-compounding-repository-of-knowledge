@@ -1,0 +1,6 @@
+/* cancel the default "max width + centering"
+ */
+body {
+	max-width: initial;
+	margin: initial;
+}

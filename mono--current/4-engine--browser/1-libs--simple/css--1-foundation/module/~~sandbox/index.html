@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<h1>@monorepo-private/css--foundation</h1>
+<nav>
+	<a>./color-scheme.html</a><br>
+	<a>./customization.html</a><br>
+	<a>./perfect-motherfucking-website--raw.html</a><br>
+	<a>./perfect-motherfucking-website--styled.html</a><br>
+	<a>./ut-elements.html</a><br>
+</nav>
+
+<script>
+	Array.prototype.forEach.call(document.querySelectorAll('a'), function(el) {
+		el.href || (el.href = el.text)
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {
+	/* max width + centering = #1 most important styling according to https://jgthms.com/web-design-in-4-minutes/#centering
+	 * (Of course full-viewport webapps will need to cancel those default styles)
+	 */
+	max-width: var(--o⋄content-recommended-width);
+	margin: 0 max(1ch, (100vw - var(--o⋄content-recommended-width)) /2); /* intelligent centering with a minimum margin for small screens */
+
+	/* no padding needed since space is provided by this various margins:
+	 * vertical: content blocks have their own margins, ex. headers, paragraphs...
+	 * horizontal: not needed thanks to to the intelligent centering above featuring a minimum margin
+	 * see also https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/
+	 */
+	padding: 0;
+}

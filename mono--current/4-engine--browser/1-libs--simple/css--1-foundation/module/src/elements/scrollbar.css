@@ -1,0 +1,17 @@
+/*
+ * https://webkit.org/blog/363/styling-scrollbars/
+ * https://developer.chrome.com/docs/css-ui/scrollbar-styling/
+ */
+
+:root {
+	/* Standard
+	 * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars
+	 */
+	scrollbar-width: thin;
+}
+*,
+*::before,
+*::after {
+	scrollbar-color: inherit;
+	scrollbar-width: inherit;
+}

@@ -1,0 +1,37 @@
+
+/*******/
+
+.omr⋄full-size-background-layer {
+	display: block;
+	/*position: fixed;*/
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.omr⋄full-size-fixed-layer {
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/*******/
+
+.omr⋄bg-image⁚parchment-xxl {
+	background-image: url('img--parchment-xxl.jpg');
+	background-size: cover;
+}
+
+.omr⋄bg-image⁚tiled-parchment {
+	background-image: url('img--parchment-tile.png');
+	background-repeat: repeat;
+}
+
+.omr⋄bg-image⁚tiled-marble_black {
+	background-image: url('img--black_marble-tile.png');
+	background-repeat: repeat;
+}

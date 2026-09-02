@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>font-smoothing</title>
+	<style>
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+		 */
+
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+		:root {
+			/* reset */
+			xtext-rendering: geometricPrecision;
+		}
+
+		.smoothing.none {
+			-webkit-font-smoothing: none;
+			-moz-osx-font-smoothing: auto;
+		}
+		.smoothing.auto {
+			-webkit-font-smoothing: auto;
+			-moz-osx-font-smoothing: auto;
+		}
+		.smoothing.antialiased {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		.smoothing.subpixel_antialiased {
+			-webkit-font-smoothing: subpixel-antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		.custom_font {
+			font-family: 'Noto Sans', sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+<p class="smoothing none">
+	<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>none/auto</code>
+</p>
+<p class="">
+	<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>[default]</code>
+</p>
+<p class="smoothing auto">
+	<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>auto</code>
+</p>
+<p class="smoothing antialiased">
+	<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>antialiased/grayscale</code>
+</p>
+<p class="smoothing subpixel_antialiased">
+	<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>subpixel-antialiased/grayscale</code>
+</p>
+
+<hr>
+
+<div class="custom_font">
+	<p class="smoothing none">
+		<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>none/auto</code>
+	</p>
+	<p class="">
+		<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>[default]</code>
+	</p>
+	<p class="smoothing auto">
+		<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>auto</code>
+	</p>
+	<p class="smoothing antialiased">
+		<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>antialiased/grayscale</code>
+	</p>
+	<p class="smoothing subpixel_antialiased">
+		<strong>Hello, world!</strong> Hello, world! <em>Hello, world!</em> <small>Hello, world! <sub>Hello, world!</sub></small> <button>Hello</button> <code>subpixel-antialiased/grayscale</code>
+	</p>
+
+</div>
+
+<script type="module">
+
+</script>
+
+
+</body>
+</html>

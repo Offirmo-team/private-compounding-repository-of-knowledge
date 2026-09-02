@@ -1,0 +1,53 @@
+{
+	"content": {
+		"title": "[title--page]The Boring RPG",
+		"html": [],
+		"js": ["import './app/index.js'"],
+		"jsⵧcritical": [],
+		"css": [],
+		"cssⵧtop__layers": [],
+		"cssⵧtop__namespaces": {},
+		"cssⵧcritical": [
+			"/* critical minimal design system */\n:root {\n\t/* FG+BG colors are the basics of identity */\n\t--o⋄color⁚bg--main: hsl(337, 16%, 28%);\n\t--o⋄color⁚fg--main: hsl(42, 100%, 87%);\n\t/* https://systemfontstack.com/ simplified */\n\t--o⋄font-family--system--sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Arial, sans-serif;\n\n\tmargin: 0;\n\tpadding: 0;\n\n\tcolor: var(--o⋄color⁚fg--main);\n\tbackground-color: var(--o⋄color⁚bg--main);\n\tfont-family: var(--o⋄font-family--system--sans);\n\n\t/* https://www.the-koi.com/projects/how-to-disable-pull-to-refresh/ */\n\toverscroll-behavior: none;\n"
+		]
+	},
+	"links": {
+		"icon": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>",
+		"manifest": "./index.webmanifest"
+	},
+	"metas": {
+		"charset": "utf-8",
+		"document": {
+			"viewport": {
+				"width": "device-width",
+				"initial-scale": 1,
+				"user-scalable": "no",
+				"minimum-scale": 1,
+				"maximum-scale": 1,
+				"viewport-fit": "cover"
+			},
+			"apple-mobile-web-app-capable": "yes",
+			"apple-mobile-web-app-status-bar-style": "black-translucent",
+			"format-detection": "telephone=no"
+		},
+		"pragmas": {
+			"content-security-policy": {},
+			"content-type": "text/html;charset=utf-8",
+			"content-language": "en",
+			"generator": "@offirmo/generator--website-entry-points",
+			"keywords": [],
+			"theme-color": "hsl(248,  9%, 17%)"
+		},
+		"properties": {},
+		"itemprops": {}
+	},
+	"features": [
+		"cssⳇbox-layout--natural",
+		"cssⳇviewport--full",
+		"normalize-url-trailing-slash",
+		"cssⳇframework--offirmo",
+		"htmlⳇreact-root",
+		"page-loader--offirmo",
+		"analytics--google"
+	]
+}

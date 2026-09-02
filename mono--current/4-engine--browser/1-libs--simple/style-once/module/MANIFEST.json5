@@ -1,0 +1,4 @@
+{
+	description: "Ensure some CSS is declared and only once, even if the module is imported multiple times",
+	target: "browser",
+}

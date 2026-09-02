@@ -1,0 +1,11 @@
+:root {
+	/** overall scale of the UI,
+	 * to allow programmatic scaling
+	 * for ex. when we don't want the user to "zoom"
+	 * yet want to offer a way to scale
+	 * NOT IMPLEMENTED
+	 * TODO calc(var(--o⋄scale) * XXX); everywhere (nice to have)
+	 * TODO use mnemonic to remember if a var uses this scale
+	--o⋄scale: 1.0;
+	*/
+}

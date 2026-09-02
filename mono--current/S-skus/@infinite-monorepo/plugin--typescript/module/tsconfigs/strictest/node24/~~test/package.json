@@ -1,0 +1,25 @@
+{
+	"name": "FOO",
+	"version": "0.0.1",
+	"private": true,
+	"source": "module/src/index.ts",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"check:ts": "echo \"@infinite-monorepo/X-test-package\" && tsc --noEmit",
+		"check:ts--watch": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"@types/node": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	}
+}

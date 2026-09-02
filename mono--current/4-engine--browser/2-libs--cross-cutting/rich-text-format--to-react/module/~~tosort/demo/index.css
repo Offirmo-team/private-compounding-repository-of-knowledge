@@ -1,0 +1,40 @@
+@import '../../../rich-text-format/src/l2-renderers/style.css';
+
+body {
+	xxwidth: 100% !important;
+	max-width: unset !important;
+	font-size: 12px !important;
+	padding: 0 7px !important;
+}
+
+pre {
+	font-size: x-small;
+	white-space: pre-wrap;
+}
+
+.multi-renderer {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 33.3%);
+}
+
+.multi-renderer > div {
+	overflow-x: hidden;
+}
+
+
+.place {
+	color: var(--o⋄color⁚quality--uncommon);
+}
+.place:after {
+	content: ' 🏜';
+}
+.person {
+	color: var(--o⋄color⁚quality--rare);
+}
+.item--weapon {
+	color: var(--o⋄color⁚quality--artifact);
+}
+.item--weapon:before {
+	content: '⚔ ';
+}

@@ -1,0 +1,12 @@
+
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false"
+		name="@monorepo-private/utils--error -- Demo"
+		type="NodeJSConfigurationType"
+		path-to-node="$USER_HOME$/.nvm/versions/node/v23.11.0/bin/node"
+		node-parameters="--experimental-strip-types"
+		path-to-js-file="module/~~sandbox/index.ts"
+		working-dir="$USER_HOME$/work/src/off/offirmo-monorepo/stack--current/0-meta/build-tools/utils--error">
+		<method v="2" />
+	</configuration>
+</component>

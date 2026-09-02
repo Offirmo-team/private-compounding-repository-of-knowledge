@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" type="NodeJSConfigurationType"
+		name="@web-property-outfitter/generator--website-entry-points -- Demo"
+		working-dir="$USER_HOME$/work/src/x-external/off/offirmo/offirmo-monorepo/stack--current/S-skus/@web-property-outfitter/generator--website-entry-points"
+		path-to-js-file="module/##demos/demo--pwa--tbrpg/index.ts">
+		<node-interpreter>project</node-interpreter>
+		<node-options>--env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local</node-options>
+		<method v="2" />
+	</configuration>
+</component>

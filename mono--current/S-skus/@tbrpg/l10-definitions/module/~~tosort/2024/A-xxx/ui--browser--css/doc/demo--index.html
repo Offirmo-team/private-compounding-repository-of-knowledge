@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- html5_007 : WTE micro template -->
+
+<html class="o⋄top-container">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>@oh-my-RPG/view-browser</title>
+
+		<link href="../src/style.css" rel="stylesheet">
+
+		<style type="text/css">
+			/* parameters we can't compute automatically */
+			:root {
+				--omr⋄ui__logo-content--width_: 163px;
+				/*--omr⋄ui__universe-anchor-content--width_: 230px*/
+			}
+
+			/* customizations */
+			.omr⋄logo {
+				padding-bottom: calc(4px * var(--scale));
+			}
+			.omr⋄logo img {
+				image-rendering: crisp-edges;
+				/*padding-bottom: calc(4px * var(--scale));*/
+			}
+
+			.status⁚avatar--icon {
+				align-self: center;
+				font-size: 26px;
+				margin-right: 4px;
+			}
+			.status⁚avatar--details {
+				line-height: 14px;
+			}
+		</style>
+
+	</head>
+
+	<body class="o⋄top-container o⋄body⁚full-viewport omr⋄font⁚pixantiqua" data-o-theme="dark--colorhunt212">
+
+		<div class="omr⋄full-size-fixed-layer omr⋄bg-image⁚tiled-marble_black">
+			<div id="bg" class="omr⋄full-size-fixed-layer o⋄bg⁚cover" style="background-image: url('fieldsofgold01_by_andreasrocha-d9zgly8.jpg'); background-position: 62%;"></div>
+		</div>
+
+		<div class="omr⋄hud⁚top-left">
+			<div class="omr⋄hamburger">
+				<span class="icomoon-menu"></span>
+			</div>
+
+			<div class="omr⋄logo">
+				<img src="tbrpg_logo_512x98.png" height="100%">
+			</div>
+
+			<div class="omr⋄universe-anchor">
+				<div class="o⋄flex--directionꘌrow">
+					<span class="icomoon-user status⁚avatar--icon"></span>
+					<div class="status⁚avatar--details o⋄flex--directionꘌcolumn">
+						<span>Pertenax</span>
+						<span>paladin L.28</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="omr⋄status⁚location">
+				<span class="icomoon-person_pin_circle"></span>
+			</div>
+		</div>
+
+		<!--
+		<div class="omr⋄plane⁚meta omr⋄full-size-background-layer omr⋄bg-color⁚bg-main--translucent"></div>
+		-->
+
+		<div class="omr⋄plane⁚immersion o⋄top-container o⋄centered-article">
+			<p>
+				<span class="omr⋄text⁚glowing--gold">golden glowing text</span>
+				<span class="omr⋄text⁚outlined">outlined text</span>
+			</p>
+			<p>
+				Normal text
+				<strong>emphasized text</strong>
+				<span class="o⋄colorꘌsecondary">secondary text</span>
+				<span class="o⋄colorꘌancillary">ancillary text</span>
+				What I’m saying is that it’s so, so simple to make sites easier to read. Websites are broken by default, they are functional, high-performing, and accessible, but they’re also fucking ugly. You and all the other web designers out there need to make them not total shit.
+				<button>Click me!</button>
+				<a>Click me!</a>
+			</p>
+			<blockquote class="o⋄fontꘌfast-and-good-enough">
+				<p>“😀 Blockquote featuring the "fast and good enough" font-family (.o⋄fontꘌfast-and-good-enough)”
+					— Some stranger 🥰</p>
+			</blockquote>
+			<blockquote class="o⋄fontꘌsystem">
+				<p>“😀 Blockquote featuring the "system" font-family (.o⋄fontꘌsystem)”
+					— Some stranger 🥰</p>
+			</blockquote>
+			<blockquote class="o⋄fontꘌroboto">
+				<p>“😀 Blockquote featuring the nice and precise "roboto" font-family (.o⋄fontꘌroboto)”
+					— Some stranger 🥰</p>
+			</blockquote>
+			<blockquote class="o⋄fontꘌroboto-condensed">
+				<p>“😀 Blockquote featuring the nice and precise "roboto condensed" font-family (.o⋄fontꘌroboto-condensed)”
+					— Some stranger 🥰</p>
+			</blockquote>
+			<blockquote class="omr⋄font⁚pixantiqua">
+				<p>“😀 Blockquote featuring the fun and gamy "Pix Antiqua" font-family (.omr⋄font⁚pixantiqua)”
+					— Some stranger 🥰</p>
+			</blockquote>
+			<blockquote class="omr⋄font⁚spectral">
+				<p>“😀 Blockquote featuring the nice and fantasy "Spectral" font-family (.omr⋄font⁚spectral)”
+					— Some stranger 🥰</p>
+			</blockquote>
+		</div>
+
+		<div class="omr⋄hud⁚bottom-right">
+			<div class="omr⋄bottom-menu">
+				<span class="omr⋄bottom-menu⁚icon icomoon-treasure-map"></span>
+				<span class="omr⋄bottom-menu⁚icon icomoon-battle-gear"></span>
+				<span class="omr⋄bottom-menu⁚icon icomoon-locked-chest"></span>
+				<span class="omr⋄bottom-menu⁚icon icomoon-conversation"></span>
+			</div>
+		</div>
+
+
+		<script>
+			document.querySelector('h1').textContent = document.title
+			Array.prototype.forEach.call(document.querySelectorAll('a'), function(el) {
+				el.href || (el.href = el.text)
+			})
+		</script>

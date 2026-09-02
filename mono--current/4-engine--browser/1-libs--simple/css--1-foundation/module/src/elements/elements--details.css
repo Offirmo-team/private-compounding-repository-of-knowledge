@@ -1,0 +1,40 @@
+/* TODO better align */
+
+/* nicer collapsibles
+ */
+details {
+	border: dashed var(--o⋄border--thickness);
+	padding-inline-start: 1.4em; /* for the content */
+}
+details summary {
+	/* https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/#aa-the-css-reset-fix */
+	cursor: pointer;
+
+	margin-inline-start: -1em;
+}
+details summary > * {
+	/* https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/#aa-the-css-reset-fix */
+	display: inline;
+}
+details[open] {
+	border-color: currentColor;
+}
+
+/* Visually improve end borders adjacence
+ */
+/* remove children's block-end border if there is an adjacent parent border */
+details details:last-child {
+	border-block-end: 0;
+}
+/* remove children's inline-end-borders always */
+details details {
+	border-inline-end: 0;
+}
+/* on top of each other */
+details ~ details {
+	border-block-start: 0;
+}
+
+/* TODO one day: cascading sticky summaries
+ * (not possible in CSS as of 2025)
+ */

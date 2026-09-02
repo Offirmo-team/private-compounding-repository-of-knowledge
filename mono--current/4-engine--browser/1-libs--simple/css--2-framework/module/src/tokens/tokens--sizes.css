@@ -1,0 +1,18 @@
+/* inherited from css--foundation */
+
+:root {
+	/** minimum size of a touch/click target
+	 * https://www.w3.org/WAI/WCAG21/Understanding/target-size.html recommends 44px
+	 * VISUALLY this is pretty big. HOWEVER do not confuse the touch TARGET SIZE with its VISUAL SIZE:
+	 * For ex. the underlying button can be secretly bigger that the visual element displayed to the user.
+	 * YET 44px is still pretty big.
+	 */
+	--o⋄min-target-size: 36px; /* not as good as 44px but more reasonable */
+
+	--o⋄icon-size--chrome: 24px;
+	--o⋄icon-size--tree: 20px;
+	--o⋄icon-size--functional: 16px;
+
+	--o⋄margin-from-screen-border--visual: 4px; /* recommended value? */
+	--o⋄margin-from-screen-border--touch: 8px; /* recommended value? */
+}

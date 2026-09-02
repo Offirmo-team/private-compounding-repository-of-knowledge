@@ -1,0 +1,6 @@
+{
+	// used to be public @offirmo/*
+	description: "An implementation of the universal debug API for browsers",
+	hasꓽside_effects: true,
+	target: "browser",
+}

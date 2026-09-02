@@ -1,0 +1,46 @@
+{
+	"name": "@monorepo-private/soft-execution-context--browser",
+	"version": "0.0.2",
+	"private": true,
+	"description": "browser-specific Software Execution Context",
+	"type": "module",
+	"sideEffects": true,
+	"exports": {
+		".": "./module/index.ts"
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/soft-execution-context--browser\" && tsc --noEmit",
+		"clean": "npm-run-all _clean--pkg",
+		"dev": "run-s clean watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
+		"bowser": "catalog:"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/soft-execution-context": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"@monorepo-private/soft-execution-context": "workspace:*",
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

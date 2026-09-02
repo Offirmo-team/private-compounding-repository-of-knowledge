@@ -1,0 +1,5 @@
+{
+	// used to be public @offirmo/*
+	description: "Browser implementation of Offirmo’s practical logger",
+	target: "browser",
+}

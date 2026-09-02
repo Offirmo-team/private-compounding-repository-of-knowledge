@@ -1,0 +1,11 @@
+.o⋄border⁚default {
+	border: solid var(--o⋄border--thickness) var(--o⋄color⁚fg--main);
+}
+
+.o⋄border-colorꘌancillary {
+	border-color: var(--o⋄color⁚fg--ancillary);
+}
+
+/* TODO one day "outline" borders for responsive
+ * https://piccalil.li/quick-tip/outline-border/
+ */

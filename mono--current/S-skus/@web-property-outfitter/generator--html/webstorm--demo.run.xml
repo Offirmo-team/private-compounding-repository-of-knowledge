@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" type="NodeJSConfigurationType"
+		name="@web-property-outfitter/generator--html -- Demo"
+		working-dir="$USER_HOME$/work/src/x-external/off/offirmo/offirmo-monorepo/stack--current/S-skus/@web-property-outfitter/generator--html"
+		path-to-js-file="module/##demo/demo--personal-blog/index.ts">
+		<node-interpreter>project</node-interpreter>
+		<node-options>--env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local</node-options>
+		<method v="2" />
+	</configuration>
+</component>

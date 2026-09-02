@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Parcel test -- glob</title>
+		<script type="module">
+			//const glob = import('./*.ts') // direct
+			const glob = import("./**/*.@(ts)") // group by extensions!
+			console.log({ glob })
+
+			function walk(obj) {
+				if (typeof obj === "function") {
+					obj = obj()
+				}
+
+				if (obj instanceof Promise) {
+					obj.then(walk)
+					return
+				}
+
+				if (Array.isArray(obj)) {
+					obj.forEach((v) => {
+						walk(v)
+					})
+					return
+				}
+
+				console.log(typeof obj, obj)
+
+				if (typeof obj === "string") {
+					return
+				}
+
+				/*console.log(`XXX `, obj, typeof obj, Object.keys(obj))
+			if (Object.keys(obj).length === 0) {
+				console.log(typeof obj, obj)
+				return
+			}*/
+
+				Object.values(obj).forEach((v) => {
+					walk(v)
+				})
+			}
+			walk(glob)
+		</script>
+	</head>
+	<body>
+		Completely trivial HTML page to test the parcel build system.
+	</body>
+</html>

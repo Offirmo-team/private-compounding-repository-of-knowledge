@@ -1,0 +1,11 @@
+{
+	description: "Unfortunately parcel JS is very unstable 😢 This basic project tries to use it in a very simple way, to pinpoint issues.",
+
+	_overrides: {
+		files: {
+			packageᐧjson: {
+				"scripts._start:parcel:main": "parcel serve module/*.html --port 1981 --lazy --no-autoinstall",
+			},
+		},
+	},
+}

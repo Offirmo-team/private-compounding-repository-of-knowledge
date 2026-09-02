@@ -1,0 +1,4 @@
+{
+	name: "state--wallet",
+	description: "Wallet: types, reducers, accessors and utilities",
+}

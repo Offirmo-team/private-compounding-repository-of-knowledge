@@ -1,0 +1,4 @@
+{
+	description: "Create the technical files to turn a pure module into a bolt/yarn package",
+	status: "experimental",
+}

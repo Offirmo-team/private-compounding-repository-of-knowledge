@@ -1,0 +1,23 @@
+Profiles:
+
+- Arch accounts (accounts we can login with, profile being inherited)
+  - https://gravatar.com/
+    - "link in bio" https://gravatar.com/link-in-bio
+  - Google Profile
+  - Apple Account
+  - GitHub
+- 3p
+  - Dev.to
+  - Medium
+  - 'artstation'
+  - 'facebook'
+  - 'github'
+  - 'instagram'
+  - 'itch.io' // https://itch.io/profile/xyz
+  - 'linkedin' https://www.linkedin.com/
+  - 'producthunt'
+  - 'reddit'
+  - 'twitch'
+  - 'ko-fi' // https://ko-fi.com/xyz
+  - 'twitter' // we keep "twitter" as an internal id, "X" is too generic
+  - google developer

@@ -1,0 +1,90 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+
+	"compileOnSave": false,
+	"compilerOptions": {
+
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"alwaysStrict": true,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"strict": true,
+		"strictBindCallApply": true,
+		"strictBuiltinIteratorReturn": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"useUnknownInCatchVariables": true,
+
+
+		"allowArbitraryExtensions": true,
+		"allowImportingTsExtensions": true,
+		"allowUmdGlobalAccess": false,
+		"module": "ES2022",
+		"moduleResolution": "bundler",
+		"noUncheckedSideEffectImports": true,
+		"resolveJsonModule": true,
+		"resolvePackageJsonExports": true,
+		"resolvePackageJsonImports": true,
+		"rewriteRelativeImportExtensions": true,
+
+
+		"declaration": true,
+		"declarationMap": true,
+		"downlevelIteration": false,
+		"importHelpers": true,
+		"newLine": "lf",
+		"noEmitHelpers": true,
+		"noEmitOnError": true,
+		"sourceMap": true,
+
+
+		"allowJs": false,
+
+
+		"allowSyntheticDefaultImports": false,
+		"erasableSyntaxOnly": true,
+		"esModuleInterop": false,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedDeclarations": false,
+		"isolatedModules": true,
+		"preserveSymlinks": false,
+		"verbatimModuleSyntax": true,
+
+
+		"emitDecoratorMetadata": false,
+		"experimentalDecorators": false,
+		"jsx": "preserve",
+		"lib": [ "ES2024" ],
+		"target": "ES2024",
+
+
+		"listEmittedFiles": false,
+		"listFiles": false,
+		"traceResolution": false,
+
+
+		"composite": false,
+
+
+		"noErrorTruncation": true,
+		"preserveWatchOutput": false,
+		"pretty": true,
+
+
+		"skipLibCheck": true
+	},
+	"include": [
+		"don't bother, this is NOT inherited!",
+		"ref: https://www.typescriptlang.org/tsconfig/#extends"
+	]
+}

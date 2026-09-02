@@ -1,0 +1,4 @@
+{
+	description: "feedback messages state and reducer",
+	status: "unstable", // major rewrite in progress
+}

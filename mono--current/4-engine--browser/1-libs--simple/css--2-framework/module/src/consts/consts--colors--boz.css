@@ -1,0 +1,13 @@
+/* from https://boz.com/
+ * Good selection, looks good on dark backgrounds
+ */
+
+:root {
+	--o⋄color⁚boz__gray: hsl(0, 0%, 60%);
+	--o⋄color⁚boz__yellow: hsl(53, 87%, 57%);
+	--o⋄color⁚boz__pink: hsl(318, 87%, 69%);
+	--o⋄color⁚boz__green: hsl(93, 73%, 61%);
+	--o⋄color⁚boz__cyan: hsl(180, 86%, 52%);
+	--o⋄color⁚boz__blue: hsl(199, 81%, 56%);
+	--o⋄color⁚boz__purple: hsl(269, 83%, 77%);
+}

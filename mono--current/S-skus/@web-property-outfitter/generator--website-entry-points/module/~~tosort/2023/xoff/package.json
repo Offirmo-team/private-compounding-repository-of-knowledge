@@ -1,0 +1,44 @@
+{
+	"name": "@offirmo-private/xoff",
+	"version": "0.0.1",
+	"description": "...",
+	"author": "Offirmo <offirmo.net@gmail.com>",
+	"license": "Unlicense",
+	"private": true,
+
+	"sideEffects": true,
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/src.es2022.esm/index.js",
+			"require": "./dist/src.es2022.cjs/index.js"
+		}
+	},
+	"module": "dist/src.es2022.esm/index.js",
+	"main": "dist/src.es2022.cjs/index.js",
+	"typings": "dist/src.es2022.esm/index.d.ts",
+	"source": "src/index.ts",
+
+	"peerDependencies": {
+	},
+	"dependencies": {
+		"@offirmo-private/poll-window-variable": "^0"
+	},
+
+	"scripts": {
+		"clean": "monorepo-script--clean-package …dist …cache .demo",
+
+		"start:parcel": "parcel --out-dir .parcel --no-autoinstall doc/demo/*.html",
+		"_build:dev:watch": "monorepo-script--build-typescript-package --watch",
+		"_build:prod": "monorepo-script--build-typescript-package",
+		"build:dev": "parcel build --out-dir .demo --no-autoinstall doc/demo/*.html --public-url ./",
+
+		"demo": "rm -rf cache .parcel && run-s start:parcel",
+		"dev": "run-s clean _build:dev:watch",
+		"build": "run-p _build:prod"
+	},
+	"devDependencies": {
+		"@offirmo-private/monorepo-scripts": "*",
+		"npm-run-all": "^4"
+	}
+}

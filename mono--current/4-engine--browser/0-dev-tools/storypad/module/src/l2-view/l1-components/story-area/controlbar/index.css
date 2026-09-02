@@ -1,0 +1,13 @@
+.storypad⋄controlbar {
+	display: flex;
+	gap: 1ch;
+	align-items: center;
+
+	.storypad⋄controlbar__filler {
+		flex-grow: 9999;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}

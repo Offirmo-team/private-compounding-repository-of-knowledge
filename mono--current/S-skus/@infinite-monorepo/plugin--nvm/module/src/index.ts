@@ -1,0 +1,84 @@
+import type { State, Plugin } from "@infinite-monorepo/state"
+import * as StateLib from "@infinite-monorepo/state"
+import type { FileOutputPresent } from "@infinite-monorepo/state"
+import {
+	PATHVARⵧROOTⵧNODE,
+	type StructuredFsⳇFileManifest,
+	type Node,
+	type NodePathⳇRelative,
+	PATHVARⵧROOTⵧMONOREPO,
+	type MonorepoPathⳇRelative,
+} from "@infinite-monorepo/types-for-plugins"
+import * as semver from "semver"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+/////////////////////////////////////////////////
+
+const ᐧnvmrc__path‿ar: MonorepoPathⳇRelative = `${PATHVARⵧROOTⵧMONOREPO}/.nvmrc`
+
+const manifestꓽᐧnvmrc: StructuredFsⳇFileManifest = {
+	path‿ar: ᐧnvmrc__path‿ar,
+	//format: 'single-value',
+	doc: [
+		/* Note: <version> refers to any version-like string nvm understands. This includes:
+			- full or partial version numbers, starting with an optional "v" (0.10, v0.1.2, v1)
+			- default (built-in) aliases: node, stable, unstable, iojs, system
+			- custom aliases you define with `nvm alias foo`
+		 */
+		"https://github.com/nvm-sh/nvm?tab=readme-ov-file#nvmrc",
+		"https://www.npmjs.com/package/nvmrc",
+		"https://www.nvmnode.com/extend/nvmrc.html",
+	],
+}
+
+/////////////////////////////////////////////////
+
+const PLUGIN: Plugin = {
+	onꓽload(state: Immutable<State>): Immutable<State> {
+		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧnvmrc)
+
+		return state
+	},
+
+	onꓽapply(state: Immutable<State>, node: Immutable<Node>) {
+		const runtimeⵧlocal = StateLib.getꓽruntimeⵧlocal(state, node)
+		if (runtimeⵧlocal.name !== "node") return state // nvm doesn't apply
+
+		const vmin = semver.minVersion(runtimeⵧlocal.versionsⵧacceptable)
+		assert(!!vmin, "semver issue")
+		const major = semver.major(vmin)
+		switch (node?.type) {
+			// TODO 1D any node where parent node != current node
+			case "monorepo": {
+				const output_spec: FileOutputPresent = {
+					parent_node: node,
+					manifest: manifestꓽᐧnvmrc,
+					intent: "present--exact",
+					content: {
+						value: major,
+					},
+				}
+				state = StateLib.requestꓽfile_output(state, output_spec)
+				break
+			}
+			default:
+				/* NO! what if graphs overlaps?
+				state = StateLib.requestꓽfile_output(state, {
+					parent_node: node,
+					path‿ar: ᐧnvmrc__path‿ar,
+					intent: 'not-present',
+				})
+				*/
+				break
+		}
+
+		return state
+	},
+}
+
+/////////////////////////////////////////////////
+
+export default PLUGIN
+export { manifestꓽᐧnvmrc }

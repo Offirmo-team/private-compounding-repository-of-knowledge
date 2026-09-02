@@ -1,0 +1,4 @@
+{
+	name: "state-utils",
+	description: "Base types + base utils for Offirmo style states",
+}

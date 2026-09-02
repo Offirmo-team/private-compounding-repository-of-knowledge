@@ -1,0 +1,115 @@
+/* credits: adapted from Noah Blon https://codepen.io/noahblon/pen/DpNRyR
+ */
+
+@keyframes o⋄hyperspace-move {
+	0% {
+		transform: translateZ(-500px) rotate(0deg);
+	}
+	100% {
+		transform: translateZ(500px) rotate(0deg); /* rotate is fun but make dizzy */
+	}
+}
+
+@keyframes o⋄hyperspace-fade {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.o⋄hyperspace-animation {
+	/*--o⋄hyperspace--imgurl: url(./PIA09959-1280x800.jpg); /* original, good with speed 12s */
+	--o⋄hyperspace--filter: "none";
+
+	&.container {
+		background: darkblue; /* must be ~dark. Seen at the beginning of the animation if delay + causes aberrations if too visible */
+		overflow: hidden;
+
+		display: grid;
+		height: 100%;
+		margin: 0;
+		place-items: center center;
+
+		--o⋄hyperspace--duration1: 12s; /* smaller = faster */
+		--o⋄hyperspace--duration2: calc(
+			var(--o⋄hyperspace--duration1) * 0.5
+		); /* must be <= than above or periods of black */
+
+		--immediate: 1; /* 0 = progressive start, anything else = immediate */
+	}
+
+	.scene {
+		display: inline-block;
+		vertical-align: middle;
+		perspective: 5px; /* TODO tweak together with speed */
+		perspective-origin: 50% 50%;
+		position: relative;
+	}
+
+	.wrap {
+		position: absolute;
+		width: 1000px;
+		height: 1000px;
+		left: -500px;
+		top: -500px;
+		transform-style: preserve-3d;
+		animation: o⋄hyperspace-move var(--o⋄hyperspace--duration1) infinite linear;
+		animation-fill-mode: forwards;
+		animation-delay: calc(var(--o⋄hyperspace--duration2) * (0 - var(--immediate)));
+	}
+
+	.wrap:nth-child(2) {
+		animation: o⋄hyperspace-move var(--o⋄hyperspace--duration1) infinite linear;
+		animation-delay: calc(var(--o⋄hyperspace--duration2) * (1 - var(--immediate)));
+	}
+
+	.wrap:nth-child(2) .wall {
+		animation-delay: calc(var(--o⋄hyperspace--duration2) * (1 - var(--immediate)));
+	}
+
+	.wall {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		opacity: 0;
+		animation: o⋄hyperspace-fade var(--o⋄hyperspace--duration1) infinite linear;
+		animation-delay: calc(var(--o⋄hyperspace--duration2) * (0 - var(--immediate)));
+
+		background-size: cover;
+		background-position: 50% 50%;
+		/* background images must ideally be ~1000px height and square
+		 * They should feature multiple big stars, ideally a close starfield
+		 */
+		background-image: var(--o⋄hyperspace--imgurl);
+		filter: var(--o⋄hyperspace--filter);
+	}
+
+	.wall-right {
+		transform: rotateY(90deg) translateZ(500px);
+	}
+
+	.wall-left {
+		transform: rotateY(-90deg) translateZ(500px);
+	}
+
+	.wall-top {
+		transform: rotateX(90deg) translateZ(500px);
+	}
+
+	.wall-bottom {
+		transform: rotateX(-90deg) translateZ(500px);
+	}
+
+	.wall-back {
+		opacity: 0.5; /* too visible */
+		transform: rotateX(180deg) translateZ(500px);
+	}
+}

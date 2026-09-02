@@ -1,0 +1,52 @@
+{
+	"name": "@infinite-monorepo/pkg-analyzer",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Walk/parse a pure module and extract infos from it in order to generate build-related files",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@infinite-monorepo/pkg-analyzer\" && tsc --noEmit",
+		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demo/index.ts",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@infinite-monorepo/heuristics": "workspace:*",
+		"@infinite-monorepo/package-details": "workspace:*",
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/file-entry": "workspace:*",
+		"@monorepo-private/utils--sort": "workspace:*",
+		"@nodelib/fs.walk": "catalog:",
+		"gitignore-fs": "catalog:",
+		"json5": "catalog:",
+		"parse-imports-ts": "catalog:",
+		"write-json-file": "catalog:"
+	},
+	"devDependencies": {
+		"@infinite-monorepo/primitives": "workspace:*",
+		"@infinite-monorepo/state": "workspace:*",
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

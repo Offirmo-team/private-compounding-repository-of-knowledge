@@ -1,0 +1,45 @@
+{
+	"name": "@oh-my-rpg/rsrc-audio",
+	"description": "RPG audio rsrcs with attribution",
+	"version": "0.0.1",
+	"author": "Offirmo <offirmo.net@gmail.com>",
+	"license": "Unlicense",
+	"private": true,
+
+	"sideEffects": false,
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/src.es2023.esm/index.js",
+			"require": "./dist/src.es2023.cjs/index.js"
+		}
+	},
+	"module": "dist/src.es2023.esm/index.js",
+	"main": "dist/src.es2023.cjs/index.js",
+	"typings": "dist/src.es2023.esm/index.d.ts",
+	"source": "src/index.ts",
+
+	"peerDependencies": {
+		"tslib": "^2"
+	},
+	"dependencies": {
+		"tiny-invariant": "^1",
+		"typescript-string-enums": "^1"
+	},
+
+	"scripts": {
+		"clean": "monorepo-script--clean-package …dist",
+
+		"dev": "run-s clean _build:dev:watch",
+
+		"_build:dev:watch": "monorepo-script--build-typescript-package --watch",
+		"_build:prod": "monorepo-script--build-typescript-package",
+
+		"build": "run-s  clean _build:prod"
+	},
+	"devDependencies": {
+		"@monorepo-private/monorepo-scripts": "*",
+		"npm-run-all": "^4",
+		"tslib": "^2"
+	}
+}

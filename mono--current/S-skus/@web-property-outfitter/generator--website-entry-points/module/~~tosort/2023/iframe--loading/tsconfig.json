@@ -1,0 +1,19 @@
+{
+	"extends": "../../0-meta/tsconfig.json",
+	"compilerOptions": {
+		"lib": [ "DOM" ],
+		"importHelpers": false,
+		"noEmitHelpers": false,
+
+		"exactOptionalPropertyTypes": false,
+		"noPropertyAccessFromIndexSignature": false,
+		"noUncheckedIndexedAccess": false,
+		"noUnusedLocals": false,
+		"strictNullChecks": false,
+		"strictPropertyInitialization": false
+	},
+	"include": [
+		"../../0-typings-custom/**/*.ts",
+		"src/**/*.ts"
+	]
+}

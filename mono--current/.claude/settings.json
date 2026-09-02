@@ -1,0 +1,39 @@
+{
+	"permissions": {
+		"defaultMode": "auto",
+		"allow": [
+			"Bash(* --version)",
+			"Bash(cat *)",
+			"Bash(find *)",
+			"Bash(find:*)",
+			"Bash(git diff:*)",
+			"Bash(git log:*)",
+			"Bash(git status:*)",
+			"Bash(grep:*)",
+			"Bash(head:*)",
+			"Bash(jq *)",
+			"Bash(just --version)",
+			"Bash(just setup:*)",
+			"Bash(ls *)",
+			"Bash(ls:*)",
+			"Bash(mise --version)",
+			"Bash(mise doctor:*)",
+			"Bash(mise install:*)",
+			"Bash(mise where:*)",
+			"Bash(node -v)",
+			"Bash(pnpm *)",
+			"Bash(pnpm --version)",
+			"Bash(pnpm -v)",
+			"Bash(pnpm generate:*)",
+			"Bash(pnpm install:*)",
+			"Bash(pnpm ls:*)",
+			"Bash(pnpm run:*)",
+			"Bash(pnpm why:*)",
+			"Bash(yq *)",
+			"Skill(claude-md-management:revise-claude-md)",
+			"WebFetch(domain:registry.npmjs.org)",
+			"WebSearch"
+		],
+		"deny": ["Read(./.env*)", "Read(./**/*.pem)", "Read(./**/*.key)"]
+	}
+}

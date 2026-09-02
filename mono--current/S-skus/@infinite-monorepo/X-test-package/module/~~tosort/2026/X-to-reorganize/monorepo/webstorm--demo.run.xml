@@ -1,0 +1,11 @@
+
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false"
+		name="@monorepo-private/monorepo -- Demo"
+		type="NodeJSConfigurationType"
+		node-parameters="--experimental-strip-types"
+		path-to-js-file="module/~~sandbox/index.ts"
+		working-dir="$USER_HOME$/work/src/off/offirmo-monorepo/stack--current/0-meta/build-tools/monorepo">
+		<method v="2" />
+	</configuration>
+</component>

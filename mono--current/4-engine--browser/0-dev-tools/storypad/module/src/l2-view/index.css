@@ -1,0 +1,5 @@
+/* common CSS for all views: manager, story, etc.
+ * (should contain nearly nothing)
+ */
+
+@namespace svg url(http://www.w3.org/2000/svg);

@@ -1,0 +1,9 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"pretty": true
+	},
+	"exclude": ["**/~~*/**/*"],
+	"extends": "@monorepo-private/config--typescript/module/node/tsconfig.json",
+	"include": ["../../0-dev-tools/config--typescript/module/_custom-typings/*.d.ts", "module/**/*.ts"]
+}

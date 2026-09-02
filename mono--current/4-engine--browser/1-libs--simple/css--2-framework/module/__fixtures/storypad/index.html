@@ -1,0 +1,35 @@
+<!doctype html>
+
+<script type="module">
+	const storiesⵧerrors = {} //import.meta.glob('@monorepo-private/css--utils--diagnostics/module/src/**/*.stories.(js|jsx|ts|tsx|mdx)')
+	const storiesⵧshared = {} //import.meta.glob('@monorepo-private/storypad/module/src/__shared/stories/html/*.stories.(js|jsx|ts|tsx|mdx)')
+	const stories_reset = {} //import.meta.glob('../../../../css--0-reset/module/**/*.stories.(js|jsx|ts|tsx|mdx)')
+	const stories_foundation = {} //import.meta.glob('@monorepo-private/css--foundation/module/src/**/*.stories.(js|jsx|ts|tsx|mdx)')
+	const stories_framework = import.meta.glob("../../src/**/*.stories.(js|jsx|ts|tsx|mdx)")
+
+	import nearest_pkg from "../../../package.json"
+
+	import start_storypad from "@monorepo-private/storypad"
+
+	const stories = {
+		".sharedⳇhtml": storiesⵧshared,
+		"0-reset": stories_reset,
+		"1-foundation": stories_foundation,
+		"2-framework": stories_framework,
+		"@monorepo-privateⳇcss--utils--diagnostics": storiesⵧerrors,
+	}
+	start_storypad(stories, {
+		root_title: nearest_pkg?.name,
+		decorators: [
+			(story) => {
+				//import('@monorepo-private/css--reset')
+				//import('@monorepo-private/css--foundation')
+				import("@monorepo-private/css--framework")
+				//import('../../src/themes/theme--dark--colorhunt212.css')
+
+				//import('@monorepo-private/css--utils--diagnostics')
+				return story
+			},
+		],
+	})
+</script>

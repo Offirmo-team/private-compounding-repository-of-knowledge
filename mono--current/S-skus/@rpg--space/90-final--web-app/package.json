@@ -1,0 +1,46 @@
+{
+	"name": "@rpg--space/final--web-app",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.html"
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"_start:main--parcel": "parcel serve module/src/index.html --port 1981 --lazy --no-autoinstall",
+		"_start:main--vite": "vite --port 1981 --strictPort --logLevel info --open module/src/index.html",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@rpg--space/final--web-app\" && tsc --noEmit",
+		"clean": "npm-run-all _clean--pkg",
+		"dev": "run-s clean watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@rpg--space/marketing": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"@web-property-outfitter/generator--website-entry-points": "workspace:*",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

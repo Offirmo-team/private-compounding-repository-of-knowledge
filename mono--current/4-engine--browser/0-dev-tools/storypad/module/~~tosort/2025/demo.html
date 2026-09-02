@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<script type="module">
+	import startꓽstorypad from '@monorepo-private/storypad'
+	import nearest_pkg from '~/package.json'
+
+	// important to load async so that the stories don't pollute the global scope too early (ex. before SXC)
+	//import stories from './**/*.stories.@(js|jsx|ts|tsx|mdx)'
+	const storiesⵧdemo = import('./src/l3-compat/@storybook/~~hello-world/**/*.stories.@(js|jsx|ts|tsx|mdx)')
+	const storiesⵧshared = import('./src/__shared/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)')
+	console.log('BOOTSTRAP stories', {
+		storiesⵧdemo,
+		storiesⵧshared,
+	})
+
+	startꓽstorypad(
+		{
+			demo: storiesⵧdemo,
+			shared: storiesⵧshared,
+		},
+		{
+			root_title: nearest_pkg?.name,
+			//decorators: []
+		}
+	)
+</script>

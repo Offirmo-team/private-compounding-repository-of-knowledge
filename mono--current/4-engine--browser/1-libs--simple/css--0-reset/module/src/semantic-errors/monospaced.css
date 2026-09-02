@@ -1,0 +1,9 @@
+/* FYI
+ * On all browsers, for "monospaced" elements (code, kbd, pre, samp),
+ * the default font-size=1em ends up smaller (ex. seen 13px for a root font-size of 16px)
+ * This is an old design choice.
+ * Last checked: Chrome102, Firefox91 and Safari15
+ * Some resets try to [cancel/fix this](https://stackoverflow.com/questions/38781089/font-family-monospace-monospace)
+ * however since all browsers agree on it, this is NOT needed in a reset.
+ * While improving the situation could be valid, this belongs to another layer.
+ */

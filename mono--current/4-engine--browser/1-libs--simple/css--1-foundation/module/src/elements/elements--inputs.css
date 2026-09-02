@@ -1,0 +1,8 @@
+/* inputs (aka. controls) are a beast to style
+ * We opt to not style them beyond small, very useful tweaks.
+ * Interactive websites with lots of inputs will use dedicated styling.
+ *
+ * However, <a> and <button> are technically inputs, very common, and we style them.
+ * @see elements--a.css
+ * @see elements--button.css
+ */

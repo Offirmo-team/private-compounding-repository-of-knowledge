@@ -1,0 +1,32 @@
+<!doctype html>
+
+<script type="module">
+	import startꓽstorypad from "@monorepo-private/storypad"
+	import decoratorⵧdiagnostics from "@monorepo-private/storypad/decorators/diagnostics"
+	import nearest_pkg from "../../../package.json"
+
+	const DEBUG = false
+
+	// important to load async so that the stories don't pollute the global scope too early (ex. before SXC)
+	const stories = import.meta.glob("../../src/**/*.stories.(js|jsx|ts|tsx|mdx)")
+	if (DEBUG)
+		console.log("BOOTSTRAP stories", {
+			stories,
+		})
+
+	startꓽstorypad(
+		{
+			own: stories,
+		},
+		{
+			root_title: nearest_pkg?.name,
+			decorators: [
+				(story) => {
+					import("@monorepo-private/css--framework")
+					return story
+				},
+				decoratorⵧdiagnostics,
+			],
+		},
+	)
+</script>

@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" type="NodeJSConfigurationType"
+		name="@monorepo-private/soft-execution-context -- Demo"
+		working-dir="$USER_HOME$/work/src/x-external/off/offirmo/offirmo-monorepo/stack--current/1-isomorphic/2-libs--cross-cutting/30-soft-execution-context"
+		path-to-js-file="module/##doc/demo.ts">
+		<node-interpreter>project</node-interpreter>
+		<node-options>--env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local</node-options>
+		<method v="2" />
+	</configuration>
+</component>

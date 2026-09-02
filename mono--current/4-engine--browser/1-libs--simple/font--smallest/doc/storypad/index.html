@@ -1,0 +1,26 @@
+<!doctype html>
+
+<script type="module">
+	import startꓽstorypad from "@monorepo-private/storypad"
+	import nearest_pkg from "../../../package.json"
+
+	const DEBUG = false
+
+	// important to load async so that
+	// - the stories don't pollute the global scope too early (ex. before SXC)
+	// - we can catch individual modules not loading
+	const stories = import.meta.glob("../../src/**/*.stories.(js|jsx|ts|tsx|mdx)")
+	// if this doesn't work, reminder to COPY THE PARCEL CONFIG
+
+	startꓽstorypad(stories, {
+		root_title: nearest_pkg?.name,
+		decorators: [
+			(story) => {
+				import("@monorepo-private/css--foundation")
+				import("@monorepo-private/css--foundation/src/xoptional/body--full-width.css")
+				return story
+			},
+			//decoratorⵧdiagnostics,
+		],
+	})
+</script>

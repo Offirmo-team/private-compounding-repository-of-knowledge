@@ -1,0 +1,9 @@
+# https://humanstxt.org/
+
+## Author
+Hi, I'm Offirmo, software engineer, open-source developer & creator.
+
+If you need to get in touch: mailto:offirmo.net@gmail.com.
+
+## Credits
+(TODO one day)

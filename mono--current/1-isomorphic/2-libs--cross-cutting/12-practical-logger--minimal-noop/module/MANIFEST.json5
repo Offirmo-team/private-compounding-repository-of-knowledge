@@ -1,0 +1,4 @@
+{
+	// used to be public @offirmo/*
+	description: "Implementation of Offirmo’s practical logger doing nothing at all",
+}

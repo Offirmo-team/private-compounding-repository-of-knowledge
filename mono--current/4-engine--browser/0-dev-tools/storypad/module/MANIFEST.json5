@@ -1,0 +1,26 @@
+{
+	description: "Storybook replacement",
+	isꓽapp: true,
+	status: "pragmatism",
+	_overrides: {
+		dependencies: {
+			// possibly unresurrected cross-cutting nice to have
+			//"@monorepo-private/react--error-boundary": "ignore",
+			//"@monorepo-private/rich-text-format--to-react": "ignore",
+			//"@monorepo-private/soft-execution-context--browser": "ignore",
+			//"@monorepo-private/universal-debug-api--browser": "ignore",
+		},
+		files: {
+			packageᐧjson: {
+				"|exports|./stories/html/html5-kitchen-sink": "./module/src/__shared/stories/html/html5-kitchen-sink_by_dbox.stories.ts",
+				"|exports|./stories/html/html-demos--offirmo": "./module/src/__shared/stories/html/html-demos-by-offirmo.stories.ts",
+				"|exports|./stories/html/html-demos--others": "./module/src/__shared/stories/html/html-demos-misc.stories.ts",
+				"|exports|./stories/html/motherfuckingwebsites": "./module/src/__shared/stories/html/motherfuckingwebsites.stories.ts",
+
+				"|exports|./stories/html/elements/*": "./module/src/__shared/stories/html/elements/*.stories.ts",
+
+				"|alias|@storybook/test": "./module/src/l3-compat/@storybook/test.ts",
+			},
+		},
+	},
+}

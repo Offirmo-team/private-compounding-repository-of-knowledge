@@ -1,0 +1,6 @@
+{
+	name: "css--reset",
+	description: "My CSS reset",
+	hasꓽside_effects: true,
+	target: "browser",
+}

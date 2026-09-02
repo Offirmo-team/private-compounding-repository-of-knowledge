@@ -1,0 +1,18 @@
+{
+	"name": "@monorepo-private/config--typescript",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		"./module/dom/tsconfig.json": "./module/dom/tsconfig.json",
+		"./module/isomorphic/tsconfig.json": "./module/isomorphic/tsconfig.json",
+		"./module/node/tsconfig.json": "./module/node/tsconfig.json"
+	},
+	"devDependencies": {
+		"@tsconfig/node-ts": "catalog:",
+		"@tsconfig/node24": "catalog:",
+		"@tsconfig/strictest": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

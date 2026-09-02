@@ -1,0 +1,4 @@
+{
+	name: "state--achievements",
+	description: "Achievements: types, reducers, accessors and utilities",
+}

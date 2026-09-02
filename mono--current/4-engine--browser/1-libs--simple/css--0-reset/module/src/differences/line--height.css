@@ -1,0 +1,6 @@
+/* it seems browsers have different line--height
+ * HOWEVER nearly all "foundation" layers will fix this to 1.5:
+    To comply with accessibility guidelines, our body text should have a minimum line-height of 1.5.
+    This is according to WCAG 1.4.12, Text Spacing guidelines. https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html
+ * so we don't really need it in a reset
+ */

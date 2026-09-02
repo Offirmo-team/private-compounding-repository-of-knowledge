@@ -1,0 +1,60 @@
+/* Warning: Technically a svg namespace is necessary to select only SVG elements, and not also HTML's.
+ * (Reminder that SVG can embed HTML, and that HTML can embed SVG... so it's not as trivial as nesting the CSS rules inside a svg selector)
+⬇This doesn't work!⬇ (crashes Parcel.js)
+@namespace svg url(http://www.w3.org/2000/svg);
+ * Because there are restrictions on namespace declarations = need to be absolutely at the ~top: https://github.com/parcel-bundler/parcel/issues/9534#issuecomment-1950227347
+ * Ex. strictly enforced by Parcel CSS bundler: issue https://github.com/parcel-bundler/parcel/issues/9534
+ * Solutions:
+ 1. manually declare the SVG namespace at the highest level of CSS declaration (Offirmo's html generator does it ✔)
+ 2. improve the CSS bundler to auto-hoist namespace declarations (unlikely to happen + can't be sure the final CSS will be in the right order)
+ 3. (hack) be careful and always target SVG elements via proper nesting and avoid conflicts = not ideal but may be enough ✔
+ * Since SVG styling is not critical, we go with #1 for safety (afraid of #3 being error-prone)
+ */
+
+svg|text {
+	/* ⬅ note the namespace! CSS won't parse if the namespace is not declared! */
+	/* make SVG text follow the document's main text color.
+	 * This is especially great for color-scheme support.
+	 * This has low specificity so won't affect explicitly styled text.
+	 */
+	fill: var(--o⋄color⁚fg--main, CanvasText); /* Even for text, SVG uses fill over color */
+}
+
+/* As SVG does not provide a default visual style for links,
+ * it's considered best practice to add some
+ * ref: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/a#example
+ *
+ * @see elements--a.css
+ */
+svg|a {
+	/* ⬅ note the namespace! CSS won't parse if the namespace is not declared! */
+
+	/* same color as the default stylesheet */
+	color: var(--o⋄color⁚fg--link, LinkText);
+
+	/* we assume PWA, https://webkit.org/blog/5610/more-responsive-tapping-on-ios/ */
+	touch-action: manipulation;
+
+	&:visited {
+		color: var(--o⋄color⁚fg--link--visited, VisitedText);
+	}
+
+	& text {
+		fill: currentColor; /* Even for text, SVG uses fill over color */
+		text-decoration: underline;
+		/* leave text-decoration-thickness to auto, found it better than explicit */
+	}
+
+	&:hover {
+		/* Hover indicator: none by default.
+		 * SVG text can't be applied a "background-color" like HTML text
+		 * let's use another visual indicator:
+		 */
+		/*outline: No, too big, visually unpleasant */
+		stroke: currentColor;
+		stroke-width: var(--o⋄border--thickness);
+	}
+	/* &:active : doesn't work in SVG? Or need to target text?
+	 * TODO one day find an alternative or a solution (not critical)
+	 */
+}

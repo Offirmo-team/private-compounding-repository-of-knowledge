@@ -1,0 +1,5 @@
+{
+	description: "Asset: font, smallest size possible for technical use, ex. discreetly displaying a version",
+	hasꓽside_effects: true,
+	target: "browser",
+}

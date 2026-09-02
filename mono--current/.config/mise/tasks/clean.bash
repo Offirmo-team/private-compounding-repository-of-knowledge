@@ -30,6 +30,13 @@ find . -type d \( \
     -prune \
     -exec rm -rf {} +
 
+find . -type f \( \
+           -name "*.log" \
+        -o -name .DS_Store \
+    \) \
+    -prune \
+    -exec rm -f {} +
+
 # More suggestions for cleaning one's local env:
 # rm -rf "$(pnpm store path)"
 # nvm cache clear

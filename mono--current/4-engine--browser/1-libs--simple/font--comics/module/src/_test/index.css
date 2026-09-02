@@ -1,0 +1,36 @@
+/*********************/
+/*
+@font-face {
+	font-family: 'TEST';
+	src: url('Ames-Regular.otf');
+	size-adjust: 75%;
+	xxascent-override: 105%;
+	xxdescent-override: 25%;
+	xxline-gap-override: 0%;
+}
+
+/*
+@font-face {
+	font-family: 'TEST';
+	src: url('animeace2_reg.otf');
+}
+@font-face {
+	font-family: 'TEST';
+	src: url('animeace2_bld.otf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'TEST';
+	src: url('animeace2_ital.otf');
+	font-style: italic;
+}
+*/
+
+/*********************/
+
+.omr⋄font⁚TEST {
+	font-family: "TEST", sans-serif;
+	line-height: 1;
+}
+
+/*********************/

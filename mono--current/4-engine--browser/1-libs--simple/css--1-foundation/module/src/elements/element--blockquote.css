@@ -1,0 +1,21 @@
+/** https://www.stefanjudis.com/today-i-learned/how-to-use-language-dependent-quotes-in-css/
+ * (improved)
+ */
+
+blockquote {
+	border-inline-start: solid var(--o⋄border--thickness) currentColor;
+	margin-inline: 0;
+	padding-inline: 4ch;
+}
+blockquote > p:first-of-type::before {
+	content: open-quote;
+}
+blockquote > p:last-of-type::after {
+	content: close-quote;
+}
+blockquote > p {
+	display: inline-block;
+}
+blockquote > footer {
+	font-style: italic;
+}

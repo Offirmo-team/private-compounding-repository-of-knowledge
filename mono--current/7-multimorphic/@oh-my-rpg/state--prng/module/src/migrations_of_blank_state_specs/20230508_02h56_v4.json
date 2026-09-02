@@ -1,0 +1,11 @@
+{
+	"schema_version": 4,
+	"uuid": "uu1~state~PRNG~mig~blank",
+	"revision": 0,
+	"prng_state": {
+		"algorithm_id": "ISAAC32",
+		"seed": 98765,
+		"call_count": 0
+	},
+	"recently_encountered_by_id": {}
+}

@@ -1,0 +1,111 @@
+/* Reminder: we inherit from all files in @offirmo foundation */
+@import "../consts/consts--colors--boz.css";
+@import "../consts/consts--colors--modifiers.css";
+
+/* Traditional, most efficient theme
+ */
+:root:not([data-o-theme]), /* this theme is the default when no specific theme is set */
+[data-o-theme^=light] {
+	color-scheme: light;
+
+	--o⋄color⁚fg--main: black;
+	/* Weaker color for secondary content,
+	 * ex. date an article was published
+	 * as suggested by https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886
+	 * Note that we use transparency to adapt to any background (cf. same link)
+	 */
+	--o⋄color⁚fg--secondary: oklch(from var(--o⋄color⁚fg--main) l c h / 66%);
+	/* a color for ancillary content,
+	 * ex. ex. copyright notice in a footer
+	 * as suggested by https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886
+	 * Note that we use transparency to adapt to any background (cf. same link)
+	 */
+	--o⋄color⁚fg--ancillary: oklch(from var(--o⋄color⁚fg--main) l c h / 33%);
+	/* OPTIONAL A dedicated color for headers and <strong>.
+	 * As suggested by https://jgthms.com/web-design-in-4-minutes/#color-contrast "Color & contrast"
+	 * "nice to have", can be equal to the main color without any problem.
+	 */
+	--o⋄color⁚fg--strong: var(--o⋄color⁚fg--main);
+
+	--o⋄color⁚bg--main: white;
+	--o⋄color⁚bg--code: hsl(0, 0%, 90%);
+	--o⋄color⁚bg--main--backdrop: var(
+		--o⋄color⁚darker--66
+	); /* a bg for popups and similar, should sufficiently hide the content below */
+	--o⋄color⁚bg--highlight--1: var(--o⋄color⁚darker--10); /* alternate bg color visible on normal bg, ex. for buttons */
+	--o⋄color⁚bg--highlight--2: var(--o⋄color⁚darker--33); /* alt, ex. for hovered/clicked buttons */
+
+	/* An "accent color" is an easy way to add "that dash of visual flair to your UI"
+	 * cf. https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886 §6
+	 * full details https://css-tricks.com/almanac/properties/a/accent-color/
+	 * It's also an easy way to style inputs.
+	 * Note: this is neither a fg nor bg color.
+	 * Note: browsers will do auto-contrast https://css-tricks.com/almanac/properties/a/accent-color/
+	 */
+	--o⋄color⁚accent: var(--o⋄color⁚accent--default);
+	/* Outline color for elements being interacted with,
+	 * ex. buttons being pressed, links being pressed/hovered.
+	 * Also used as focus ring color (if enabled).
+	 * Note: this is neither a fg nor bg color, let's aim for mid-way between dark and light
+	 it is supposed to be temporary so it's ok if the contrast is not great
+	 */
+	--o⋄color⁚activity-outline: var(--o⋄color⁚activity-outline--default);
+
+	/* Ideally leave links to their default colors
+	 * UNLESS if customizing the fg color,
+	 * If custom, it usually renders better to set fg--link = fg--main
+	 */
+	--o⋄color⁚fg--link: var(--o⋄color⁚fg--link--default);
+	--o⋄color⁚fg--link--visited: var(--o⋄color⁚fg--link--visited--default);
+
+	/* good contrast on white, taken from Apple terminal */
+	--o⋄color⁚fg--error: #e50000;
+	--o⋄color⁚fg--warning: #999900;
+	--o⋄color⁚fg--info: #00a6b2;
+	--o⋄color⁚fg--success: #00a600;
+
+	/* TODO re-find the article  computed with https://codepen.io/Offirmo/pen/jORpKox
+	--o⋄filter⁚img-visible-on-any-background*/
+}
+
+/* Traditional dark theme
+ * REMINDER dark themes are supposed to be less contrasted!
+ * TODO https://blog.superhuman.com/how-to-design-delightful-dark-themes-7b3da644ff1f
+ */
+[data-o-theme^="dark"],
+.o⋄error-report {
+	/*  data-o-theme="dark*" */
+	color-scheme: dark;
+
+	--o⋄color⁚fg--main: white;
+	--o⋄color⁚fg--secondary: oklch(from var(--o⋄color⁚fg--main) l c h / 66%);
+	--o⋄color⁚fg--ancillary: oklch(from var(--o⋄color⁚fg--main) l c h / 33%);
+	--o⋄color⁚fg--strong: var(--o⋄color⁚fg--main);
+
+	--o⋄color⁚bg--main: black;
+	--o⋄color⁚bg--code: hsl(0, 0%, 25%);
+	--o⋄color⁚bg--main--backdrop: var(--o⋄color⁚darker--66);
+	--o⋄color⁚bg--highlight--1: var(--o⋄color⁚lighter--20);
+	--o⋄color⁚bg--highlight--2: var(--o⋄color⁚lighter--33);
+
+	--o⋄color⁚accent: var(--o⋄color⁚accent--default);
+	--o⋄color⁚activity-outline: var(--o⋄color⁚activity-outline--default);
+
+	--o⋄color⁚fg--link: hsl(215, 100%, 67%);
+	--o⋄color⁚fg--link--visited: hsl(287, 100%, 67%); /* split complementary of link */
+
+	/* TODO improve */
+	--o⋄color⁚fg--error: #ff3333;
+	--o⋄color⁚fg--warning: var(--o⋄color⁚boz__yellow);
+	--o⋄color⁚fg--info: var(--o⋄color⁚boz__blue);
+	--o⋄color⁚fg--success: var(--o⋄color⁚boz__green);
+
+	/* TODO
+--o⋄filter⁚img-visible-on-any-background*/
+}
+
+[data-o-theme^="dark"] {
+	/* optical adjustment for dark themes TODO use a var multiplier?? */
+	font-weight: 500; /* Note that not all fonts may have a 500 weight, most will display same as 400=normal */
+	--o⋄border--thickness: 0.09rem; /* TODO test */
+}

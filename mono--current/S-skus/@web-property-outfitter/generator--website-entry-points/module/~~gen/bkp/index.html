@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- AUTOMATICALLY GENERATED, DO NOT EDIT MANUALLY! -->
+<html lang="en" xml:lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1,viewport-fit=cover">
+		<meta http-equiv="content-language" content="en">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta http-equiv="generator" content="@offirmo/generator--website-entry-points">
+		<meta http-equiv="theme-color" content="#E1AA74">
+		<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>3️⃣</text></svg>">
+		<link rel="manifest" href="index.webmanifest">
+
+		<title>[title--page]Viewport Test 03</title>
+
+		<style>
+			/* critical CSS */
+
+			:root {
+				--color--bg: #3876BF;
+				--color--fg: #F3F0CA;
+				--font: -apple-system, ui-sans-serif, sans-serif;
+
+				margin: 0;
+				padding: 0;
+
+				color: var(--color--fg);
+				background-color: var(--color--bg);
+				font-family: var(--font);
+
+				overscroll-behavior: none;
+
+				/* https://www.magicpattern.design/tools/css-backgrounds */
+				background-image:  linear-gradient(#7e7e7d 2px, transparent 2px), linear-gradient(90deg, #7e7e7d 2px, transparent 2px), linear-gradient(#7e7e7d 1px, transparent 1px), linear-gradient(90deg, #7e7e7d 1px, var(--color--bg) 1px);
+				background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+				background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+			}
+
+			/* apply a natural box layout model to all elements
+			 * https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+			 * https://github.com/mike-engel/a11y-css-reset/pull/12#issuecomment-516582884
+			 */
+			:root                  { box-sizing: border-box; }
+			*, *::before, *::after { box-sizing: inherit; }
+
+			:root {
+			/* transfer the env() to variables
+			 */
+			--safe-area-inset-top:    env(safe-area-inset-top,    0px);
+			--safe-area-inset-right:  env(safe-area-inset-right,  0px);
+			--safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+			--safe-area-inset-left:   env(safe-area-inset-left,   0px);
+		}
+
+		/* don't mess with those special containers */
+		html, body {
+			margin: 0;
+			padding: 0;
+			border: initial;
+		}
+
+		body {
+			position: fixed;
+			overflow: hidden;
+			width: 100lvw;
+			height: 100lvh;
+		}
+
+		.fullviewport {
+			isolation: isolate;
+			position: absolute;
+			margin: 0;
+			overflow: hidden;
+			width: 100vw;
+			height: 100vh;
+		}
+		.fullviewport.large {
+			width: 100lvw;
+			height: 100lvh;
+			border-style: double;
+			border-width: 2lvmin;
+			text-align: left;
+		}
+		.fullviewport.small {
+			text-align: right;
+			width: 100svw;
+			height: 100svh;
+			border-width: 2svmin;
+		}
+		.fullviewport.dynamic {
+			text-align: center;
+			width: 100dvw;
+			height: 100dvh;
+			border-style: dotted;
+			border-width: 2dvmin;
+		}
+
+		.with-clear-borders {
+			--color--border: rgba(255, 255, 255, 0.3);
+			border: dashed 2lvmin var(--color--border);
+			border-boundary: display; /* https://drafts.csswg.org/css-round-display/#border-boundary-property */
+			shape-inside: display; /* https://drafts.csswg.org/css-round-display/#shape-inside-property */
+		}
+
+		.safe-inset {
+			--color--border: rgba(255, 0, 0, 0.5);
+			border-top:    solid var(--safe-area-inset-top)    var(--color--border);
+			border-right:  solid var(--safe-area-inset-right)  var(--color--border);
+			border-bottom: solid var(--safe-area-inset-bottom) var(--color--border);
+			border-left:   solid var(--safe-area-inset-left)   var(--color--border);
+
+			color: var(--color--border);
+			text-align: right;
+		}
+
+		.controls {
+		}
+		</style>
+	</head>
+	<body class="">
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+
+		<div class="fullviewport large with-clear-borders">
+			LARGE viewport =
+		</div>
+
+		<div class="fullviewport dynamic with-clear-borders">
+			DYNAMIC viewport ●
+		</div>
+
+		<div class="fullviewport small with-clear-borders">
+			∎ SMALL viewport
+		</div>
+
+		<div class="fullviewport safe-inset">
+			[SAFE INSET]
+		</div>
+
+		<div class="fullviewport debug">
+
+		</div>
+
+		<div class="fullviewport controls">
+			<button onclick="location.reload()" style="position: absolute; bottom: 10lvmin; left: 10lvmin;">Reload</button>
+		</div>
+
+		<script type="module">
+
+			function on_viewport_change() {
+				console.group('on_viewport_change()')
+
+				console.log({ screen })
+				console.log({ visualViewport })
+				console.log({
+					'document.documentElement.clientWidth': document.documentElement.clientWidth,
+					'document.documentElement.clientHeight': document.documentElement.clientHeight,
+					//'viewportⵧsmall': [ fullviewport_elementⵧsmall.offsetWidth, fullviewport_elementⵧsmall.offsetHeight ],
+					//'viewportⵧnormal': [ fullviewport_elementⵧnormal.offsetWidth, fullviewport_elementⵧnormal.offsetHeight ],
+					//'viewportⵧlarge': [ fullviewport_elementⵧlarge.offsetWidth, fullviewport_elementⵧlarge.offsetHeight ],
+					//'viewportⵧdynamic': [ fullviewport_elementⵧdynamic.offsetWidth, fullviewport_elementⵧdynamic.offsetHeight ],
+				})
+
+				console.groupEnd()
+			}
+
+			;(new ResizeObserver((entries, observer) => {
+				for (const entry of entries) {
+					console.log("ResizeObserver: element size changed:", entry);
+					if (entry.target === document.documentElement) {
+						on_viewport_change()
+					}
+				}
+			})).observe(document.documentElement)
+		</script>
+	</body>
+</html>

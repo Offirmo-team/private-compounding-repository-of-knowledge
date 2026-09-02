@@ -1,0 +1,4 @@
+{
+	description: "Generator of all the known entry points for a website/webapp: index.html, webmanifest, favicons, 404, well-known, etc.",
+	status: "experimental",
+}

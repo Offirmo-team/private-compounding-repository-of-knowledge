@@ -1,0 +1,8 @@
+/*
+ * https://www.amitmerchant.com/textarea-auto-increase-height/
+ * https://chriscoyier.net/2023/09/29/css-solves-auto-expanding-textareas-probably-eventually/
+ */
+
+textarea {
+	form-sizing: normal;
+}

@@ -1,0 +1,32 @@
+/**
+ * only the minimal tokens needed for the foundation
+ * this "root" setup does not provide theming,
+ * but that's for the "framework" level anyway.
+ */
+
+:root {
+	/** Those colors are completely generic "modifiers"
+	 * they should work whatever the theme color, hence very good defaults.
+	 */
+	--o⋄color⁚bg--highlight: light-dark(hsla(0, 100%, 0%, 0.09), hsla(0, 100%, 100%, 0.07)); /* analog to ButtonFace */
+	--o⋄color⁚bg--highlight--alt: light-dark(
+		hsla(0, 100%, 0%, 0.18),
+		hsla(0, 100%, 100%, 0.14)
+	); /* analog to Highlight */
+
+	/*
+
+	--o⋄content-recommended-width
+	--o⋄border--thickness
+
+	--o⋄color⁚fg--main
+
+	--o⋄color⁚fg--link
+	--o⋄color⁚fg--link--active
+	--o⋄color⁚fg--link--visited
+
+	--o⋄color⁚activity-outline
+
+	--o⋄header__scale-ratio
+	 */
+}

@@ -1,0 +1,43 @@
+{
+	"name": "@monorepo-private/soft-execution-context--node",
+	"version": "0.0.2",
+	"private": true,
+	"description": "node-specific Software Execution Context",
+	"type": "module",
+	"sideEffects": true,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/soft-execution-context--node\" && tsc --noEmit",
+		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##doc/demo.ts",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/practical-logger--node": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/soft-execution-context": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"@monorepo-private/soft-execution-context": "workspace:*",
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

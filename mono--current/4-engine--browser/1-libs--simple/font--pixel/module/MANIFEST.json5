@@ -1,0 +1,6 @@
+{
+	description: "Graphical assets for an RPG UI: fonts, pixel style",
+	hasꓽside_effects: true, // CSS + asset registration
+	status: "experimental",
+	target: "browser",
+}

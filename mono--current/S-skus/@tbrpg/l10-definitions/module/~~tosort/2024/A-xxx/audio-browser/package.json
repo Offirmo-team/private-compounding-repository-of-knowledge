@@ -1,0 +1,41 @@
+{
+	"name": "@tbrpg/audio-browser",
+	"description": "Audio assets for a browser RPG UI",
+	"version": "0.0.1",
+	"author": "Offirmo <offirmo.net@gmail.com>",
+	"license": "Unlicense",
+	"private": true,
+
+	"esnext": "dist/src.es2023.esm/index.js",
+	"module": "dist/src.es2023.esm/index.js",
+	"main": "dist/src.es2023.cjs/index.js",
+	"typings": "dist/src.es2023.esm/index.d.ts",
+	"source": "src/index.ts",
+	"sideEffects": false,
+
+	"peerDependencies": {
+		"tslib": "^2"
+	},
+	"dependencies": {
+		"@oh-my-rpg/rsrc-audio": "^0",
+		"howler": "^2",
+		"memoize-one": "^6",
+		"tiny-invariant": "^1"
+	},
+
+	"scripts": {
+		"clean": "monorepo-script--clean-package …dist",
+		"_build:dev:watch": "monorepo-script--build-typescript-package --watch",
+		"_build:prod": "monorepo-script--build-typescript-package",
+		"start:parcel": "parcel --out-dir .parcel --no-autoinstall doc/demo/index.html",
+
+		"build": "run-s  clean _build:prod",
+		"dev": "run-s clean _build:dev:watch",
+		"demo": "run-s start:parcel"
+	},
+	"devDependencies": {
+		"@monorepo-private/monorepo-scripts": "*",
+		"npm-run-all": "^4",
+		"tslib": "^2"
+	}
+}

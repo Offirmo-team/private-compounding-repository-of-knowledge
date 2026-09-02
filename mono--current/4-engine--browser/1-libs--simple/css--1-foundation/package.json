@@ -1,0 +1,55 @@
+{
+	"name": "@monorepo-private/css--foundation",
+	"version": "0.0.1",
+	"private": true,
+	"description": "A thin layer of universal, semantically great, strongly recommended modern CSS",
+	"type": "module",
+	"sideEffects": true,
+	"exports": {
+		".": "./module/src/index.css"
+	},
+	"scripts": {
+		"_build:bundle": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./++gen/build--bundle/index.ts",
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"_start:demo--parcel": "parcel serve module/__fixtures/wc-kitchen-sink/demo.html --port 1981 --lazy --no-autoinstall",
+		"_start:demo--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/wc-kitchen-sink/demo.html",
+		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
+		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
+		"build": "run-s _build:bundle",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/css--foundation\" && tsc --noEmit",
+		"clean": "npm-run-all _clean--pkg",
+		"demo": "npm-run-all clean --parallel _start:demo--vite",
+		"demop": "npm-run-all clean --parallel _start:demo--parcel",
+		"dev": "run-s clean watch:check:ts",
+		"stories": "npm-run-all clean --parallel _start:storypad--vite",
+		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/css--reset": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"lightningcss": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

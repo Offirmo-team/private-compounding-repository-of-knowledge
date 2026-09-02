@@ -1,0 +1,4 @@
+{
+	name: "state--energy",
+	description: "Consumable & replenishing energy: types, reducers, accessors and utilities",
+}

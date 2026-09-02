@@ -1,0 +1,8 @@
+:root {
+	/* Opt the entire page into the user's color scheme preferences
+	 * https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme#declaring_color_scheme_preferences
+	 *
+	 * This is critical in order to enable light-dark() https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark
+	 */
+	color-scheme: light dark;
+}

@@ -1,0 +1,32 @@
+.o⋄colorꘌmain {
+	color: var(--o⋄color⁚fg--main);
+}
+.o⋄colorꘌsecondary {
+	color: var(--o⋄color⁚fg--secondary);
+}
+.o⋄colorꘌancillary {
+	color: var(--o⋄color⁚fg--ancillary);
+}
+
+.o⋄colorꘌerror {
+	color: var(--o⋄color⁚fg--error);
+}
+.o⋄colorꘌwarning {
+	color: var(--o⋄color⁚fg--warning);
+}
+.o⋄colorꘌinfo {
+	color: var(--o⋄color⁚fg--info);
+}
+.o⋄colorꘌsuccess {
+	color: var(--o⋄color⁚fg--success);
+}
+
+.o⋄bg-colorꘌmain {
+	background-color: var(--o⋄color⁚bg--main);
+}
+.o⋄bg-colorꘌbackdrop {
+	background-color: var(--o⋄color⁚bg--main--backdrop);
+}
+.o⋄bg-colorꘌtransparent {
+	background-color: transparent;
+}

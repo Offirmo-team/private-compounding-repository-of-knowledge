@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": [
+		"../isomorphic/node/tsconfig.json"
+	],
+
+	"compilerOptions": {
+
+		"moduleResolution": "bundler", // all web apps use bundlers
+
+		"lib": [
+			"ES2024", // see target
+			"DOM", // obviously
+		],
+
+		/* Intelligent default:
+		 * most packages are libs = always use preserve.
+		 * Apps should override this to their preferred transform
+		 * https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
+		 */
+		"jsx": "preserve"
+	},
+}

@@ -1,0 +1,11 @@
+/* This element has its own color (green)
+ * we tweak it to follow the theme.
+ */
+
+meter {
+	/* No styling: very seldom used, progress is more common
+	 * If needed, one day:
+	https://stackoverflow.com/questions/8094835/how-to-style-html5-meter-tag
+	https://css-tricks.com/html5-meter-element/
+	*/
+}

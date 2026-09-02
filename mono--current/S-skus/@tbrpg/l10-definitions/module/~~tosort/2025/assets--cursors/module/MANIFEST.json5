@@ -1,0 +1,4 @@
+{
+	"description": "Graphical assets for an RPG UI: cursors",
+	"hasꓽside_effects": true, // bc. CSS + asset usage registration
+}

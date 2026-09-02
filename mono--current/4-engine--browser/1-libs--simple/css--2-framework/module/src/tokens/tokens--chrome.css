@@ -1,0 +1,11 @@
+:root {
+	/* TOTALLY OPTIONAL
+	 * vars that can be dynamically set by the app "chrome"
+	 * to pass the area it uses to render the app "chrome"
+	 * the app content can then use those vars to restrict itself to an inner "free" area
+	 */
+	--chromeless-area-inset-top: 0px;
+	--chromeless-area-inset-right: 0px;
+	--chromeless-area-inset-bottom: 0px;
+	--chromeless-area-inset-left: 0px;
+}

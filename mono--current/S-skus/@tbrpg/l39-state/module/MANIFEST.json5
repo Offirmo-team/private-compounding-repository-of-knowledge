@@ -1,0 +1,5 @@
+{
+	name: "state",
+	description: "Overall TBRPG state: types, reducers, accessors and utilities",
+	version: "0.68.1",
+}

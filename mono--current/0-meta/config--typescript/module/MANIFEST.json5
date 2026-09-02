@@ -1,0 +1,17 @@
+{
+	_overrides: {
+		dependencies: {
+			// those are true dev deps not seen by current tooling (TODO 1D improve our tool to follow tsconfig deps)
+			"@tsconfig/strictest": { type: "dev" },
+			"@tsconfig/node24": { type: "dev" },
+			"@tsconfig/node-ts": { type: "dev" },
+		},
+		files: {
+			packageᐧjson: {
+				"|exports|./module/isomorphic/tsconfig.json": "./module/isomorphic/tsconfig.json",
+				"|exports|./module/node/tsconfig.json": "./module/node/tsconfig.json",
+				"|exports|./module/dom/tsconfig.json": "./module/dom/tsconfig.json",
+			},
+		},
+	},
+}

@@ -1,0 +1,5 @@
+{
+	description: "My own feature detection lib",
+	hasꓽside_effects: true,
+	target: "browser",
+}

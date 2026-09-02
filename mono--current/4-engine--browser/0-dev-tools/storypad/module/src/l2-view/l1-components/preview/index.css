@@ -1,0 +1,51 @@
+/* layouts */
+.storypad⋄story-container--centered {
+	/* https://css-tricks.com/centering-the-newest-coolest-way-vs-the-oldest-coolest-way/ */
+	display: grid;
+	height: 100vh;
+	margin: 0;
+	place-items: center center;
+}
+
+.storypad⋄story-container--fullscreen {
+	/* TODO review = is it too much? */
+
+	max-width: unset; /* first disable a common technique of limiting width to ~60ch that may have been applied by some other CSS */
+
+	--o⋄full-viewport__width: 100dvw;
+	--o⋄full-viewport__height: 100dvh;
+	width: var(--o⋄full-viewport__width);
+	height: var(--o⋄full-viewport__height);
+
+	/* In order to get a true fullscreen when pinned on iPhone
+	 * - position must NOT be "fixed", or it strangely crops to the small viewport! (2023/11 iOs 16.6.1 iPhone 14)
+	 *   - absolute is ok
+	 * - height MUST be 100lvh; (see height above)
+	 *
+	 * If :root has 0 padding, margin & border, no need to explicitly position, BUT:
+	 * - if the first child has a margin, it collapses with the parent!
+	 * Thus it's safer to position.
+	 */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* usually what we want when going full screen */
+	overflow: hidden;
+}
+
+*:has(.storypad⋄story-container--fullscreen),
+*:has(.storypad⋄story-container--centered) {
+	margin: 0;
+	padding: 0;
+	border: initial;
+}
+
+.storypad⋄story-container--padded {
+	padding: 1rem;
+}
+
+.storypad⋄story-container--bare {
+	/* should never appear because in "bare" mode we don't even have a container! */
+	background-color: red;
+}

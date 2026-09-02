@@ -1,0 +1,3 @@
+{
+	description: "Walk/parse a pure module and extract infos from it in order to generate build-related files",
+}

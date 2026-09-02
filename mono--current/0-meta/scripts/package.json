@@ -1,0 +1,22 @@
+{
+	"name": "@monorepo-private/scripts",
+	"version": "0.0.1",
+	"private": true,
+	"bin": {
+		"monorepo-script--clean-package": "./module/src/clean.mjs",
+		"monorepo-script--update-build-variables": "./module/src/update-build-variables.mjs"
+	},
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/clean.mjs"
+	},
+	"dependencies": {
+		"chalk": "catalog:",
+		"meow": "catalog:",
+		"semver": "catalog:",
+		"tiny-invariant": "catalog:",
+		"write-json-file": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

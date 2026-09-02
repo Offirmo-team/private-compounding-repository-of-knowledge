@@ -1,0 +1,81 @@
+{
+	"lang": "en",
+	"description": "(Browser game) The simplest RPG ever! (indie game, free to play, no account needed)",
+	"author": {
+		"name": "Offirmo",
+		"intro": "software engineer, open-source developer & creator",
+		"email": "offirmo.net@gmail.com",
+		"urlⵧcanonical": "https://www.offirmo.net/",
+		"urlsⵧsocial": [
+			{
+				"network": "artstation",
+				"handle": "Offirmo",
+				"url": "https://www.artstation.com/offirmo"
+			},
+			{
+				"network": "github",
+				"handle": "Offirmo",
+				"url": "https://github.com/Offirmo"
+			},
+			{
+				"network": "instagram",
+				"handle": "offirmo",
+				"url": "https://www.instagram.com/offirmo"
+			},
+			{
+				"network": "producthunt",
+				"handle": "@offirmo",
+				"url": "https://www.producthunt.com/@offirmo"
+			},
+			{
+				"network": "reddit",
+				"handle": "u/Offirmo",
+				"url": "https://www.reddit.com/user/Offirmo"
+			},
+			{
+				"network": "twitter",
+				"handle": "Offirmo",
+				"url": "https://twitter.com/Offirmo"
+			}
+		]
+	},
+	"since‿y": 2016,
+	"urlⵧcanonical": "https://www.online-adventur.es/apps/the-boring-rpg/",
+	"urlsⵧsocial": [
+		{
+			"network": "reddit",
+			"handle": "r/boringrpg",
+			"url": "https://www.reddit.com/r/boringrpg/"
+		}
+	],
+	"contact": "https://github.com/Offirmo/offirmo-monorepo/issues",
+	"title": "The Boring RPG",
+	"icon": {
+		"emoji": "⚔️",
+		"svg": "~/work/src/off/offirmo-monorepo/stack--current/5-incubator/active/generator--website-entry-points/src/__specs/__fixtures/icon--rpg.svg"
+	},
+	"keywords": ["game", "incremental", "fantasy", "rpg", "free", "indie"],
+	"content": {},
+	"features": [
+		"cssⳇbox-layout--natural",
+		"cssⳇviewport--full",
+		"normalize-url-trailing-slash",
+		"cssⳇframework--offirmo",
+		"htmlⳇreact-root",
+		"page-loader--offirmo",
+		"analytics--google"
+	],
+	"colorⵧbackground": "hsl(337, 16%, 28%)",
+	"colorⵧforeground": "hsl(42, 100%, 87%)",
+	"colorⵧtheme": "hsl(248,  9%, 17%)",
+	"preset": "app--immersive",
+	"wantsꓽinstall": "promotion-capable",
+	"hasꓽown_navigation": true,
+	"supportsꓽscreensⵧwith_shape": true,
+	"canꓽuse_window_controls_overlay": true,
+	"usesꓽpull_to_refresh": false,
+	"isꓽpublic": false,
+	"isꓽdebug": true,
+	"host": "netlify",
+	"generatesꓽjsⵧscaffold": "offirmo--react"
+}

@@ -1,0 +1,10 @@
+/////////////////////////////////////////////////
+
+const LIB = "@offirmo/generator--website-entry-points"
+
+const EOL = "\n"
+const TAB = "	"
+
+/////////////////////////////////////////////////
+
+export { LIB, EOL, TAB }

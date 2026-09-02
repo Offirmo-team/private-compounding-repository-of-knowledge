@@ -1,0 +1,26 @@
+
+@import '../src/style.css';
+
+
+@import '../node_modules/@monorepo-private/ui--browser--css/src/extras/beautiful-website.css';
+/*@import '../node_modules/@monorepo-private/ui--browser--css/src/extras/debug-snippet.css';*/
+@import '../node_modules/@monorepo-private/ui--browser--css/src/extras/diagnostics.css';
+
+
+body {
+
+}
+
+#docs-root {
+	padding: 0;
+}
+
+.emoji-as-icon {
+	vertical-align: text-top;
+}
+nav.toolbar {
+	border: 1px solid;
+	display: inline-block;
+	padding: .1em 2.1em;
+	border-radius: 1em;
+}

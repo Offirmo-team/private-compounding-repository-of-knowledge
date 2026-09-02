@@ -1,0 +1,10 @@
+{
+	_overrides: {
+		files: {
+			packageᐧjson: {
+				"|bin|monorepo-script--clean-package": "./module/src/clean.mjs",
+				"|bin|monorepo-script--update-build-variables": "./module/src/update-build-variables.mjs",
+			},
+		},
+	},
+}

@@ -1,0 +1,8 @@
+/* https://css-tricks.com/your-css-reset-needs-text-size-adjust-probably/
+ * I disagree with this, todo try it
+ */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}

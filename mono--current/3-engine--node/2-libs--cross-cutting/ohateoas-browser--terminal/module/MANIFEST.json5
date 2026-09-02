@@ -1,0 +1,4 @@
+{
+	name: "ohateoas-browser--terminal",
+	description: "Terminal implementation of a Offirmo’s Hypermedia Architecture browser",
+}

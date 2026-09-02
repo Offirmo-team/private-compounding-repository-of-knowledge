@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": [
+		"@monorepo-private/config--typescript/module/src/current/isomorphic/tsconfig.json"
+	],
+	"compilerOptions": {
+		"pretty": true
+	},
+	"include": [
+		"../../../0-meta/0-dev-tools/config--typescript/module/src/custom-typings/*.d.ts",
+		"module/**/*.ts"
+	],
+	"exclude": [
+		"**/~~*/**/*"
+	]
+}

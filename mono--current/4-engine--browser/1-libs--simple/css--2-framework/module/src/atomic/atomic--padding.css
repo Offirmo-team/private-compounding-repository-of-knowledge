@@ -1,0 +1,9 @@
+.o⋄paddingꘌnone {
+	padding: 0;
+}
+.o⋄paddingꘌsmall {
+	padding: 0.3rem; /* TODO scale and rem */
+}
+.o⋄paddingꘌmedium {
+	padding: 0.7rem;
+}

@@ -1,0 +1,12 @@
+{
+	name: "css--foundation",
+	description: "A thin layer of universal, semantically great, strongly recommended modern CSS",
+	hasꓽside_effects: true,
+	target: "browser",
+
+	_overrides: {
+		dependencies: {
+			"@monorepo-private/css--reset": { type: "dev" },
+		},
+	},
+}

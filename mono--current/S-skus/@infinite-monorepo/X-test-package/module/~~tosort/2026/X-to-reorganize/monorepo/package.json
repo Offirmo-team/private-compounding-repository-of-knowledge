@@ -1,0 +1,38 @@
+{
+	"name": "@monorepo-private/monorepo",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Source of truth about this monorepo",
+	"source": "module/src/index.ts",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"_check": "run-s check--ts",
+		"check--ts": "echo \"@monorepo-private/monorepo\" && tsc --noEmit",
+		"check--ts--watch": "tsc --noEmit --watch",
+		"dev": "run-s check--ts--watch",
+		"sandbox": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/__sandbox/index.ts"
+	},
+	"dependencies": {
+		"@monorepo-private/fs--ls": "workspace:*"
+	},
+	"devDependencies": {
+		"@infinite-monorepo/package-details": "workspace:*",
+		"@infinite-monorepo/pkg-analyzer": "workspace:*",
+		"@infinite-monorepo/pkg-infos-resolver": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/pure-module--presenter": "workspace:*",
+		"@monorepo-private/read-write-any-structured-file": "workspace:*",
+		"@types/node": "catalog:",
+		"npm-run-all": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

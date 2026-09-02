@@ -1,0 +1,21 @@
+{
+	"name": "@tbrpg/final--web-app",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.html"
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"_start:main--parcel": "parcel serve module/src/index.html --port 1981 --lazy --no-autoinstall",
+		"_start:main--vite": "vite --port 1981 --strictPort --logLevel info --open module/src/index.html",
+		"clean": "npm-run-all _clean--pkg"
+	},
+	"devDependencies": {
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

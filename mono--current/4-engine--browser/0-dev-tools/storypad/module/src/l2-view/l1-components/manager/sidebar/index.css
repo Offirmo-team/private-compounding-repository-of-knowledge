@@ -1,0 +1,97 @@
+/**
+ * Note: partially styled by the parent, @see ../index.css
+ */
+.storypad⋄sidebar {
+	--icon-width: 10px; /* actual fixed width from the SVG */
+	--line-width: 1px;
+	--indentation-width: 12px; /* should be ~icon width and ~font size for best effect */
+
+	font-stretch: ultra-condensed;
+
+	/************************************/
+	/* debug
+	details { background-color: rgba(255,0,0,.2); }
+	summary { background-color: rgba(0,255,0,.2); }
+	ol { background-color: rgba(0,255,255,.2); }
+	*/
+	/************************************/
+
+	a {
+		text-decoration: none;
+	}
+
+	* {
+		width: max-content;
+	}
+
+	details > ol {
+		/*list-style-type: none;*/
+		padding-inline-start: 0;
+	}
+
+	/************************************/
+	/* collapsibles as tree */
+
+	details > * {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	/* Open/close markers
+	 * REMINDER it doesn't work on Safari
+	 * credits to https://codepen.io/ninjabryan/pen/vRdgbO
+	 * also https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/
+	 */
+	details > summary {
+		list-style-image: url(./assets/icon--tree--expand.svg);
+	}
+	details[open] > summary {
+		list-style-image: url(./assets/icon--tree--collapse.svg);
+	}
+
+	details {
+		padding-left: var(--indentation-width);
+	}
+	details summary > * {
+		/* https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/ */
+		display: inline;
+	}
+	details summary {
+		/* https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/ */
+		cursor: pointer;
+
+		/* normally summaries are indented with the details content
+		 * we add a collapse/expand icon to it + shift it left so that the icon is aligned with the vertical line
+		 */
+		margin-left: calc(-1 * var(--indentation-width) - 0.5 * (var(--icon-width) + var(--line-width)));
+	}
+	details > ol {
+		/* finally we align the details content (after the summary) with the summary text
+		 */
+		/*--summary-offset: calc( 0.5 * (var(--icon-width) - var(--line-width)) + 0.5ch);*/
+		--summary-offset: 0;
+		margin-left: calc(-1 * var(--indentation-width) + var(--summary-offset));
+
+		/* remove unnecessary padding */
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+
+	details a:focus {
+		background-color: yellow;
+	}
+	/*
+	summary:hover,
+	summary:focus {
+		cursor: pointer;
+		background: deeppink;
+	}*/
+
+	/* tree-style
+	 */
+	details[open] {
+		border-left: dotted var(--line-width);
+		border-color: var(--o⋄color⁚fg--main);
+		margin-left: calc(-1 * var(--line-width)); /* to compensate */
+	}
+}

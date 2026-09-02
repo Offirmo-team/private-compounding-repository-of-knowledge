@@ -1,0 +1,20 @@
+{
+	"name": "@monorepo-private/toolbox--vite",
+	"version": "0.0.1",
+	"description": "An aggregation of npm modules related to the vite bundler.",
+	"license": "Unlicense",
+	"author": "Offirmo <offirmo.net@gmail.com>",
+	"sideEffects": true,
+	"scripts": {
+		"test": "echo \"* @offirmo/toolbox--xyz: no need for unit tests for this kind of repo (meta)\""
+	},
+	"dependencies": {
+		"@vitejs/devtools": "^0",
+		"@vitejs/plugin-react": "^6",
+		"vite": "^8"
+	},
+	"optionalDependencies": {},
+	"engines": {
+		"npm": ">=3"
+	}
+}

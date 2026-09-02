@@ -1,0 +1,101 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	// https://www.typescriptlang.org/tsconfig/
+
+	"extends": [
+		/* https://github.com/tsconfig/bases?tab=readme-ov-file#strictest-tsconfigjson */
+		"@tsconfig/strictest/tsconfig.json"
+	],
+
+	"compilerOptions": {
+		// ordered following the TS doc https://www.typescriptlang.org/tsconfig/#compiler-options
+		// NOTE: only
+
+		/*** Type Checking ***/
+		"alwaysStrict": true,
+		"noImplicitAny": true, // follow "strict" but doesn't hurt
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true, // follow "strict" but doesn't hurt
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strictBindCallApply": true, // follow "strict" but doesn't hurt
+		"strictBuiltinIteratorReturn": true, // follow "strict" but doesn't hurt
+		"strictFunctionTypes": true, // follow "strict" but doesn't hurt
+		"strictNullChecks": true, // follow "strict" but doesn't hurt
+		"strictPropertyInitialization": true, // follow "strict" but doesn't hurt
+		"useUnknownInCatchVariables": true, // follow "strict" but doesn't hurt
+
+
+		/*** Modules ***/
+		"allowArbitraryExtensions": false, // we make no assumptions about a bundler
+		"allowUmdGlobalAccess": false, // Umd deprecated
+		"allowImportingTsExtensions": true, // most future-oriented
+		"module": "ES2022", // note: small Safari bug
+		"moduleResolution": "nodenext", // we make no assumptions about a bundler
+		"noUncheckedSideEffectImports": true, // stricter
+		"resolveJsonModule": true,
+		"resolvePackageJsonExports": true, // stricter
+		"resolvePackageJsonImports": true, // stricter
+		"rewriteRelativeImportExtensions": true, // badly documented but goes with allowImportingTsExtensions
+
+
+		/*** Emit ***/
+		"declaration": true, // beneficial
+		"declarationMap": true, // beneficial
+		"downlevelIteration": true, // cleanest
+		"importHelpers": true, // most size efficient
+		"newLine": "lf",
+		"noEmitHelpers": true, // TODO unclear
+		"noEmitOnError": true, // avoid hiding errors
+		"sourceMap": true, // beneficial
+
+
+		/*** JavaScript Support ***/
+		"allowJs": false, // pure TS is the cleanest, we don't expect JS
+
+
+		/*** Editor Support ***/
+
+
+		/*** Interop Constraints ***/
+		"allowSyntheticDefaultImports": false, // backwards compatibility = no
+		"erasableSyntaxOnly": true, // enable type stripping = beneficial
+		"esModuleInterop": false, // backwards compatibility = no
+		"forceConsistentCasingInFileNames": true, // strict
+		"isolatedDeclarations": true, // best for tools
+		"verbatimModuleSyntax": true, // goes with isolatedDeclarations
+
+
+		/*** Backwards Compatibility ***/
+
+
+		/*** Language and Environment ***/
+		"emitDecoratorMetadata": false, // experimental, disputed
+		"experimentalDecorators": false, // experimental, disputed
+		"lib": [
+			// strict isomorphic
+			"ES2024" // see target
+		],
+
+		"target": "ES2024", // as og 2026/03 widely supported node LTS + FF ESR
+
+
+		/*** Compiler Diagnostics ***/
+		"listEmittedFiles": false,
+		"listFiles": false,
+		/*** Projects ***/
+		"composite": true, // enable advanced TS "Projects" feature
+
+
+		/*** Output Formatting ***/
+		"noErrorTruncation": true, // for deep debugging
+		"pretty": true // why not?
+
+
+		/* intentionally DON'T set "jsx" => use the DOM base instead!
+		 */
+	},
+}

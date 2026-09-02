@@ -1,0 +1,5 @@
+{
+	version: "0.0.2",
+	description: "node-specific Software Execution Context",
+	hasꓽside_effects: true,
+}

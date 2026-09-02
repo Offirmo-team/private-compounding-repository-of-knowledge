@@ -1,0 +1,97 @@
+/******* misc *******/
+
+/* Alter the ugly focus ring
+ * https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2
+ * TODO UPDATE https://css-tricks.com/platform-news-using-focus-visible-bbcs-new-typeface-declarative-shadow-doms-a11y-and-placeholders/#declarative-shadow-dom-could-help-popularize-style-encapsulation
+ */
+/* 1) no focus style for non-keyboard-inputs elements */
+*:focus {
+	outline: none;
+}
+/* 2) and for keyboard users, override everything with
+ *    a classic ring when focused on any element
+ TODO dynamic width
+ */
+body.user-is-tabbing *:focus {
+	outline: 5px auto var(--o⋄color⁚activity-outline);
+}
+
+/************ buttons ************
+ * https://css-tricks.com/overriding-default-button-styles/
+ * https://fvsch.com/code/styling-buttons/
+ * TODO https://dbushell.com/2024/03/10/css-button-styles-you-might-not-know/
+ * TODO https://fdossena.com/?p=html5cool/buttons/i.frag
+ * TODO move some back to foundation!
+ */
+button {
+	touch-action: manipulation; /* we assume PWA, https://webkit.org/blog/5610/more-responsive-tapping-on-ios/ */
+
+	border-style: solid; /* important, not the default */
+	border-color: var(--o⋄color⁚fg--main);
+	--border--thickness: var(
+		--o⋄border--thickness__button,
+		calc(var(--o⋄border--thickness) * 2)
+	); /* to allow overrides, ex. inline button */
+	border-width: var(--border--thickness);
+
+	/* HIGHLY recommended to round, seen some study saying 55% more clicks */
+	border-radius: 9999px; /* https://courses.joshwcomeau.com/css-for-js/09-little-big-details/02.02-circular-radius */
+
+	background-color: var(--o⋄color⁚bg--highlight--1);
+
+	/* TODO fit-content ? https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content */
+	display: inline-block;
+	padding: 0.3em 2.1em;
+	margin: 0.1em; /* TODO remove and move to a container? https://mxstbr.com/thoughts/margin */
+
+	color: inherit;
+	text-decoration: none;
+	text-align: center;
+}
+button:hover {
+	background-color: var(--o⋄color⁚bg--highlight--2);
+}
+button:active {
+	background-color: var(--o⋄color⁚activity-outline);
+	/* reminder: button may not have a border, cf. "inline button" */
+}
+
+/************ progress ************/
+
+/* Reset the default appearance
+ * https://css-tricks.com/html5-progress-element/
+ * https://snook.ca/archives/html_and_css/animating-progress
+ */
+progress {
+	--o⋄color⁚progress--bg: var(--o⋄color⁚bg--highlight--1);
+	--o⋄color⁚progress-border: var(--o⋄color⁚bg--highlight--1);
+	--o⋄color⁚progress-bar: var(--o⋄color⁚fg--main);
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	vertical-align: middle;
+	background-color: var(--o⋄color⁚progress--bg);
+	border: solid var(--o⋄border--thickness) var(--o⋄color⁚progress-border);
+	overflow: hidden;
+}
+/* necessary to style the progress bar background */
+progress::-webkit-progress-bar {
+	background-color: var(--o⋄color⁚progress--bg);
+}
+progress::-webkit-progress-value {
+	background-color: var(--o⋄color⁚progress-bar);
+}
+progress::-moz-progress-bar {
+	background-color: var(--o⋄color⁚progress-bar);
+}
+progress::-ms-fill {
+	background-color: var(--o⋄color⁚progress-bar);
+	border: 0;
+}
+
+/* TODO style more controls? http://filamentgroup.github.io/select-css/demo/ */
+
+/* https://www.bram.us/2022/06/28/styling-selects-youve-got-options/
+ */

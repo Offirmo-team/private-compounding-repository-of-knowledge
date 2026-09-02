@@ -1,0 +1,70 @@
+{
+	"name": "@infinite-monorepo/operation--apply",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@infinite-monorepo/operation--apply\" && tsc --noEmit",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@infinite-monorepo/package-details": "workspace:*",
+		"@infinite-monorepo/pkg-analyzer": "workspace:*",
+		"@infinite-monorepo/plugin--ai--agents--coding": "workspace:*",
+		"@infinite-monorepo/plugin--bolt": "workspace:*",
+		"@infinite-monorepo/plugin--changelog": "workspace:*",
+		"@infinite-monorepo/plugin--editorconfig": "workspace:*",
+		"@infinite-monorepo/plugin--git": "workspace:*",
+		"@infinite-monorepo/plugin--jetbrains": "workspace:*",
+		"@infinite-monorepo/plugin--license": "workspace:*",
+		"@infinite-monorepo/plugin--mise": "workspace:*",
+		"@infinite-monorepo/plugin--npm": "workspace:*",
+		"@infinite-monorepo/plugin--nvm": "workspace:*",
+		"@infinite-monorepo/plugin--offirmo": "workspace:*",
+		"@infinite-monorepo/plugin--oxc--oxfmt": "workspace:*",
+		"@infinite-monorepo/plugin--oxc--oxlint": "workspace:*",
+		"@infinite-monorepo/plugin--package-json": "workspace:*",
+		"@infinite-monorepo/plugin--parcel": "workspace:*",
+		"@infinite-monorepo/plugin--pnpm": "workspace:*",
+		"@infinite-monorepo/plugin--readme": "workspace:*",
+		"@infinite-monorepo/plugin--tosort": "workspace:*",
+		"@infinite-monorepo/plugin--turborepo": "workspace:*",
+		"@infinite-monorepo/plugin--typescript": "workspace:*",
+		"@infinite-monorepo/plugin--unit-tests": "workspace:*",
+		"@infinite-monorepo/plugin--vite": "workspace:*",
+		"@infinite-monorepo/plugin--yarn--v1": "workspace:*",
+		"@infinite-monorepo/spec--load": "workspace:*",
+		"@infinite-monorepo/state": "workspace:*",
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/json-stable-stringify": "workspace:*",
+		"@monorepo-private/read-write-any-structured-file": "workspace:*"
+	},
+	"devDependencies": {
+		"@infinite-monorepo/graph": "workspace:*",
+		"@infinite-monorepo/types-for-plugins": "workspace:*",
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

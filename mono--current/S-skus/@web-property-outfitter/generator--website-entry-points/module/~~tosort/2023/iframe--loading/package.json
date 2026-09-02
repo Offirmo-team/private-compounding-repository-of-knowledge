@@ -1,0 +1,37 @@
+{
+	"name": "@offirmo-private/iframe--loading",
+	"version": "0.0.1",
+	"description": "A top-level index.html loading an app as an underlying iframe",
+	"author": "Offirmo <offirmo.net@gmail.com>",
+	"license": "Unlicense",
+	"private": true,
+
+	"sideEffects": true,
+	"type": "module",
+	"source": "src/index.html",
+
+	"optionalDependencies": {
+/	},
+	"dependencies": {
+	},
+
+	"scripts": {
+		"clean": "monorepo-script--clean-package …dist …cache",
+
+		"start:parcel": "parcel --out-dir .parcel --no-autoinstall doc/demo/*.html",
+		"_build:dev:watch": "monorepo-script--build-typescript-package --watch",
+		"_build:prod": "monorepo-script--build-typescript-package",
+
+		"demo-p": "run-s clean start:parcel",
+		"dev": "run-s clean _build:dev:watch",
+		"build": "run-p _build:prod",
+
+		"demo": "offirmo-simple-upgradable-template-apply --template=./src/index.html --destination=./doc/demo/index.html"
+	},
+	"devDependencies": {
+		"@offirmo-private/monorepo-scripts": "*",
+		"@offirmo-private/simple-upgradable-template": "^0",
+		"@size-limit/preset-small-lib": "^8",
+		"npm-run-all": "^4"
+	}
+}

@@ -1,0 +1,12 @@
+// https://en.wikipedia.org/wiki/Pangram
+export const PANGRAM =
+	"The five boxing wizards jump quickly -> Sphinx of black quartz, judge my vow! Pack my box with five dozen liquor jugs…"
+
+export const ALPHABET = "abcdefghijklmnopqrstuvwxyz"
+
+export const CALIBRATION_SUBSET = "àBçfg67"
+
+// https://en.wikipedia.org/wiki/Hubert_Blaine_Wolfeschlegelsteinhausenbergerdorff_Sr.
+export const PERSONAL_NAMEⵧLONG = "Hubert Blaine Wolfeschlegelsteinhausenbergerdorff Sr."
+export const PERSONAL_NAMEⵧLONGEST =
+	"Adolph Blaine Charles David Earl Frederick Gerald Hubert Irvin John Kenneth Lloyd Martin Nero Oliver Paul Quincy Randolph Sherman Thomas Uncas Victor William Xerxes Yancy Zeus Wolfeschlegelsteinhausenbergerdorffwelchevoralternwarengewissenhaftschaferswessenschafewarenwohlgepflegeundsorgfaltigkeitbeschutzenvorangreifendurchihrraubgierigfeindewelchevoralternzwolfhunderttausendjahresvorandieerscheinenvonderersteerdemenschderraumschiffgenachtmittungsteinundsiebeniridiumelektrischmotorsgebrauchlichtalsseinursprungvonkraftgestartseinlangefahrthinzwischensternartigraumaufdersuchennachbarschaftdersternwelchegehabtbewohnbarplanetenkreisedrehensichundwohinderneuerassevonverstandigmenschlichkeitkonntefortpflanzenundsicherfreuenanlebenslanglichfreudeundruhemitnichteinfurchtvorangreifenvorandererintelligentgeschopfsvonhinzwischensternartigraum Sr."

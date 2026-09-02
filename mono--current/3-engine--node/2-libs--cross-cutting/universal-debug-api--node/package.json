@@ -1,0 +1,44 @@
+{
+	"name": "@monorepo-private/universal-debug-api--node",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Implementation of Offirmo’s Universal Debug Api for node",
+	"type": "module",
+	"sideEffects": true,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/universal-debug-api--node\" && tsc --noEmit",
+		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demo/demo.ts",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/practical-logger--core": "workspace:*",
+		"@monorepo-private/practical-logger--node": "workspace:*",
+		"@monorepo-private/type-detection": "workspace:*",
+		"@monorepo-private/universal-debug-api--types": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

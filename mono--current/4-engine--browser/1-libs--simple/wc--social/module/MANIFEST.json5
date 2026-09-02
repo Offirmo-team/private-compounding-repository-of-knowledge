@@ -1,0 +1,6 @@
+{
+	version: "0.3.0",
+	description: "A Web Component to display a social bar",
+	hasꓽside_effects: true,
+	target: "browser",
+}

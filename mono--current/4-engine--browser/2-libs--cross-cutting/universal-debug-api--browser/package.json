@@ -1,0 +1,46 @@
+{
+	"name": "@monorepo-private/universal-debug-api--browser",
+	"version": "0.0.1",
+	"private": true,
+	"description": "An implementation of the universal debug API for browsers",
+	"type": "module",
+	"sideEffects": true,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/universal-debug-api--browser\" && tsc --noEmit",
+		"clean": "npm-run-all _clean--pkg",
+		"dev": "run-s clean watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/practical-logger--browser": "workspace:*",
+		"@monorepo-private/practical-logger--core": "workspace:*",
+		"@monorepo-private/universal-debug-api--types": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

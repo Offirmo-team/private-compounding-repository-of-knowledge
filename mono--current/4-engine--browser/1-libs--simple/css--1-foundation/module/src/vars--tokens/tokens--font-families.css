@@ -1,0 +1,7 @@
+:root {
+	/**
+	 * only the minimal tokens needed for the foundation
+	 */
+	--o⋄font-family--main: var(--o⋄font-family--fast_and_good_enough, "sans-serif");
+	--o⋄font-family--code: var(--o⋄font-family--system--mono, "monospace");
+}

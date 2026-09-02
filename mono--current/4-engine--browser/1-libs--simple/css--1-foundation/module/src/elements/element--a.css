@@ -1,0 +1,32 @@
+/* Order is important
+ * https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
+ */
+
+/* Do NOT style svg|a here,
+ * or forgetting to declare the SVG namespace would break this rule!
+ */
+a {
+	text-decoration-thickness: var(--o⋄border--thickness);
+
+	/* we assume PWA, https://webkit.org/blog/5610/more-responsive-tapping-on-ios/ */
+	touch-action: manipulation;
+
+	&:hover {
+		/* There is no hover indicator on links.
+		 * Adding one is a no-brainer.
+		 */
+		background-color: var(--o⋄color⁚bg--highlight--alt, Highlight);
+	}
+
+	/* Add a visual indicator for external links
+    */
+	&[target="_blank"]:not(.own-indicator)::after {
+		content: "⇲";
+		display: inline-block;
+		transform: scaleY(-1);
+		margin-inline-start: 0.3ch;
+	}
+	&[download]:not(.own-indicator)::after {
+		content: "⬇";
+	}
+}

@@ -1,0 +1,9 @@
+{
+	description: "Intelligently pretty-print a JS object (and by extension, JSON), on node or browser",
+	_overrides: {
+		dependencies: {
+			chalk: { type: "optional" },
+			"terminal-size": { type: "optional" },
+		},
+	},
+}

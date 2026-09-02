@@ -1,0 +1,19 @@
+{
+	"lang": "en",
+	"name": "[wm.n]The Boring RPG",
+	"icons": [
+		{
+			"src": "./icons/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "./index.html?ref=webmanifest",
+	"display": "fullscreen",
+	"short_name": "[wm.s]The Boring RPG",
+	"theme_color": "hsl(248,  9%, 17%)",
+	"background_color": "hsl(337, 16%, 28%)",
+	"display_override": [
+		"window-controls-overlay"
+	]
+}

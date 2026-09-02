@@ -1,0 +1,41 @@
+## https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns
+
+
+### re-installable
+## managed dependencies
+node_modules
+
+
+### re-generable or auto-generated
+**/dist
+## intentionally unused
+package-lock.json
+
+
+### caches
+## parcel 1
+.parcel
+## parcel 2
+.parcel-cache
+
+
+### Temp files
+## LibreOffice
+.~lock.*
+## netlify
+.netlify
+
+
+### Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+### misc
+#...
+
+
+tsconfig.tsbuildinfo

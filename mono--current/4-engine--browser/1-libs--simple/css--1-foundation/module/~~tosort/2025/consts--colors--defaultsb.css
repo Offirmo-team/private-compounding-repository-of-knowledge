@@ -1,0 +1,26 @@
+/** colors from the default stylesheet.
+ * recommended as default.
+ *
+ * Needed to sometimes extend them to surrounding/associated elements
+ */
+
+:root {
+	/* Copied from the most official source available
+	 * XXX use stylesheet values instead!!!
+	 */
+	--o⋄color⁚fg--link--default--light: #0000EE; /* https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-3 */
+	--o⋄color⁚fg--link--default--dark:  hsl(240, 100%, 77%);
+	--o⋄color⁚fg--link--default: light-dark(--o⋄color⁚fg--link--default--light, --o⋄color⁚fg--link--default--dark);
+
+	--o⋄color⁚fg--link--visited--default--light: #551A8B; /* https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-3 */
+	--o⋄color⁚fg--link--visited--default--dark: hsl(271, 68%, 32%);
+	--o⋄color⁚fg--link--visited--default: light-dark(--o⋄color⁚fg--link--visited--default--light, --o⋄color⁚fg--link--visited--default--dark);
+
+	--o⋄color⁚fg--link--active--light: #FF0000; /* https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-3 */
+
+	--o⋄color⁚activity-outline: var(--o⋄color⁚fg--link--active--light); /* XXX TO TEST */
+	/*
+	--o⋄color⁚activity-outline--default--cs-light: hsl(217, 99%, 65%);
+	--o⋄color⁚accent--default--cs-light: hsl(212, 100%, 50%);
+	 */
+}

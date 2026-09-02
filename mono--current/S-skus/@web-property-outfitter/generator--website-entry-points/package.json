@@ -1,0 +1,54 @@
+{
+	"name": "@web-property-outfitter/generator--website-entry-points",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Generator of all the known entry points for a website/webapp: index.html, webmanifest, favicons, 404, well-known, etc.",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"_check": "run-s check:ts",
+		"check:ts": "echo \"@web-property-outfitter/generator--website-entry-points\" && tsc --noEmit",
+		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demos/demo--pwa--tbrpg/index.ts",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/fs--output-file": "workspace:*",
+		"@monorepo-private/json-stable-stringify": "workspace:*",
+		"@monorepo-private/normalize-string": "workspace:*",
+		"@monorepo-private/timestamps": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*",
+		"@resvg/resvg-js": "catalog:",
+		"@web-property-outfitter/generator--html": "workspace:*",
+		"@web-property-outfitter/generator--svg": "workspace:*",
+		"chroma-js": "catalog:",
+		"prettier": "catalog:",
+		"typescript-string-enums": "catalog:"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/marketing--creator": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
+		"@types/chroma-js": "catalog:",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

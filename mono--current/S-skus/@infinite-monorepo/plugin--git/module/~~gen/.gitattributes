@@ -1,0 +1,20 @@
+## contains auto-generated content from @infinite-monorepo/plugin--git
+## https://nesbitt.io/2026/02/05/git-magic-files.html
+
+
+## Line ending normalization
+* text=auto eol=lf
+
+## Treat as binary
+*.png binary
+
+## Custom diff driver
+*.json diff=json
+
+## Merge strategy
+#package-lock.json merge=ours
+
+## Language detection override for GitHub Linguist
+#vendor/* linguist-vendored
+#*.gen.go linguist-generated
+#docs/* linguist-documentation

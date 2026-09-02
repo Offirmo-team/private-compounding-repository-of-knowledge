@@ -1,0 +1,15 @@
+/** colors from the default stylesheet.
+ * recommended as default.
+ *
+ * Needed to sometimes extend them to unstyled elements
+ */
+
+:root {
+	/* https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/
+	 */
+	--o⋄color⁚fg--link--default--cs-light: hsl(240, 100%, 50%);
+	--o⋄color⁚fg--link--visited--default--cs-light: hsl(271, 68%, 32%);
+
+	--o⋄color⁚activity-outline--default--cs-light: hsl(217, 99%, 65%);
+	--o⋄color⁚accent--default--cs-light: hsl(212, 100%, 50%);
+}

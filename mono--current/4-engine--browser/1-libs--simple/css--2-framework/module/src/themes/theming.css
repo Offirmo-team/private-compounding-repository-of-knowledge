@@ -1,0 +1,98 @@
+
+/* NOTE about o⋄error-report
+ * This is special:
+ * - we want high readability so, so we force a default mode
+ * - we select *dark* mode to hint at dev (but could have selected light as well, no big deal)
+ */
+
+[data-o-theme], .o⋄error-report {
+	/* We need to re-set the var usages
+	 * To allow local overrides of the styles down in the DOM
+	 */
+
+	/* color = #4 most important styling according to https://jgthms.com/web-design-in-4-minutes/#color-contrast
+	 * IMPORTANT setting bgcolor on html has an impact: body bg color no longer bleeds on the whole viewport
+	 * WARNING setting on :root makes it use the var set at root, may need re-set down the DOM (see @offirmo framework theming)
+	 */
+	color: var(--o⋄color⁚fg--main);
+	background-color: var(--o⋄color⁚bg--main);
+
+	/* https://web.dev/accent-color/
+	 * https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/
+	 *
+	 * An "accent color" is an easy way to add "that dash of visual flair to your UI"
+	 * cf. https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886 §6
+	 * It's also an easy way to style inputs.
+	 * Note: because browsers will do auto-contrast, we need to use a light accent on light mode and vice versa
+	 */
+	accent-color: var(--o⋄color⁚accent);
+
+	/* Standard
+	 * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars
+	 * 2022/07 = FF only  https://caniuse.com/mdn-css_properties_scrollbar-color
+	 */
+	scrollbar-color: var(--o⋄color⁚bg--highlight--1) var(--o⋄color⁚bg--main); /* <scrollbar color> <scrollbar track color> */
+	/* non-standard Blink
+	 * https://stackoverflow.com/a/14150577/587407
+	 * https://css-tricks.com/almanac/properties/s/scrollbar/
+	 */
+	::-webkit-scrollbar-thumb {
+		background-color: var(--o⋄color⁚bg--highlight--2);
+	}
+
+	/*color:                var(--o⋄color⁚fg--main);
+	background-color:     var(--o⋄color⁚bg--main);
+	accent-color:         var(--o⋄color⁚accent);
+	scrollbar-color:      var(--o⋄color⁚bg--highlight--1) var(--o⋄color⁚bg--main); /* <scrollbar color> <scrollbar track color> */
+
+
+	/* Order is important
+	 * https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
+	 *
+	 * doing it right is important: https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/
+	  - Optimal text accessibility with the background color and surrounding text.
+		 Your design decisions shouldn’t be the reason a user can’t access content on a page.
+	  - Interactive states should always be styled in your stylesheets.
+		 Examples include: touch, visited, hover, active and focus. TODO
+	  - Links and buttons should be large enough to tap or click.
+		 You can’t be sure how people are interacting with your content on devices
+		 by using styluses, fingers, mice or trackpads.
+		 It’s your job to make sure your links are easy to navigate and have enough space around them.
+	  - Always make sure that a hyperlink stands out from the rest of the surrounding content.
+		 Sometimes that means you need an underline, or a background color,
+		 or maybe just maybe, you need the color blue.
+	 * Also
+	  - should be able to tell an already clicked link https://mashable.com/article/google-black-links
+	 */
+
+	a, svg|a { XXX namespace!!!
+		/* a color are being overwritten by the default style.
+		 * make it specific and inheritable
+		 */
+		color: var(--o⋄color⁚fg--link);
+
+
+		&:visited {
+			color: var(--o⋄color⁚fg--link--visited);
+		}
+
+		&:hover {
+			background-color: var(--o⋄color⁚bg--highlight--1);
+		}
+		&:active {
+			color: var(--o⋄color⁚activity-outline);
+		}
+	}
+
+	hr {
+		background-color: var(--o⋄color⁚fg--ancillary);
+	}
+
+	img {
+		background-color: var(--o⋄color⁚bg--highlight--1); /* in case the image doesn't load */
+	}
+
+	:is(h1, h2, h3, h4, h5, h6, strong) {
+		color: var(--o⋄color⁚fg--strong);
+	}
+}

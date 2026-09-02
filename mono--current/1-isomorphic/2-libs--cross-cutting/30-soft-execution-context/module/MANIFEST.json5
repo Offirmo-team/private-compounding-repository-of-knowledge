@@ -1,0 +1,5 @@
+{
+	version: "0.0.2",
+	description: "graph of execution context to do amazing things!",
+	hasꓽside_effects: true,
+}

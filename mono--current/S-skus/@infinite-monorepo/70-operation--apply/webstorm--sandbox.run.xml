@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" type="NodeJSConfigurationType"
+		name="@infinite-monorepo/operation--apply -- Sandbox"
+		working-dir="$USER_HOME$/work/src/x-external/off/offirmo/offirmo-monorepo/stack--current/S-skus/@infinite-monorepo/70-operation--apply"
+		path-to-js-file="module/~~sandbox/index.ts">
+		<node-interpreter>project</node-interpreter>
+		<node-options>--env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local</node-options>
+		<method v="2" />
+	</configuration>
+</component>

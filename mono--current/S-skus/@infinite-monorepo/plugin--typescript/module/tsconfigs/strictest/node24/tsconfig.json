@@ -1,0 +1,15 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": [
+		/* https://github.com/tsconfig/bases?tab=readme-ov-file#node-24-tsconfigjson (update marker) */
+		"@tsconfig/node24/tsconfig.json",
+		/* https://github.com/tsconfig/bases?tab=readme-ov-file#node-with-typescript-ts-58-only-tsconfigjson */
+		"@tsconfig/node-ts/tsconfig.json",
+		"../isomorphic/tsconfig.json"
+	],
+
+	"compilerOptions": {
+		"module": "nodenext",
+		"moduleResolution": "nodenext"
+	}
+}

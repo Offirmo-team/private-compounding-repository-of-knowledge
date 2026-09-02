@@ -1,0 +1,6 @@
+hr {
+	/* simple one */
+	width: 100%;
+	border: none;
+	border-top: var(--o⋄border--thickness) solid;
+}

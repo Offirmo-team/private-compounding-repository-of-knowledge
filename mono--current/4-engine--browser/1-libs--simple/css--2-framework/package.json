@@ -1,0 +1,52 @@
+{
+	"name": "@monorepo-private/css--framework",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Small reusable CSS classes",
+	"type": "module",
+	"sideEffects": true,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"_build:bundle": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./++gen/build--bundle/index.ts",
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
+		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
+		"build": "run-s _build:bundle",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/css--framework\" && tsc --noEmit",
+		"clean": "npm-run-all _clean--pkg",
+		"dev": "run-s clean watch:check:ts",
+		"stories": "npm-run-all clean --parallel _start:storypad--vite",
+		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/style-once": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/css--foundation": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"lightningcss": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

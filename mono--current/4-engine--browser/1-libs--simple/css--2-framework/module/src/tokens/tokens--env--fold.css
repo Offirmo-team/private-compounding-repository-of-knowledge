@@ -1,0 +1,13 @@
+:root {
+	/* transfer the env() to variables so that
+	 * - we can programmatically read them
+	 * - we can override them (carefully)
+	 * Of course only the var() version must be used in the framework.
+	 *
+	 * https://blogs.windows.com/msedgedev/2020/09/14/introducing-dual-screen-foldable-web-apis/
+	 */
+	--fold-top: env(fold-top, 0px);
+	--fold-right: env(fold-right, 0px);
+	--fold-bottom: env(fold-bottom, 0px);
+	--fold-left: env(fold-left, 0px);
+}

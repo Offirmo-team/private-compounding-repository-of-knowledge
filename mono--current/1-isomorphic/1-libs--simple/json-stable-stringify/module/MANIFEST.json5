@@ -1,0 +1,4 @@
+{
+	description: "A private fork of https://github.com/substack/json-stable-stringify",
+	license: "MIT", // this is a fork, credits due!
+}

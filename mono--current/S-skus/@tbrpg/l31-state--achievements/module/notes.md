@@ -1,0 +1,1 @@
+-- TODO different level: account / game / character thus make achievements "cascadable" (inheritance)

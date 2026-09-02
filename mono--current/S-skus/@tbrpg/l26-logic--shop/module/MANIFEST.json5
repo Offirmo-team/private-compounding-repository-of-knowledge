@@ -1,0 +1,4 @@
+{
+	name: "logic--shop",
+	description: "Shop buy/sell feature: types, logic and utilities",
+}

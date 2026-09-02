@@ -1,0 +1,16 @@
+@import "@monorepo-private/css--reset";
+
+@import "vars--const/index.css" layer(offirmo--foundation);
+@import "vars--tokens/index.css" layer(offirmo--foundation);
+
+@import "elements/index.css" layer(offirmo--foundation);
+
+@import "root/index.css" layer(offirmo--foundation);
+
+/* debug to check the correct layer stacking
+ */
+@layer offirmo--foundation {
+	.offirmo--layer--debug {
+		color: blue;
+	}
+}

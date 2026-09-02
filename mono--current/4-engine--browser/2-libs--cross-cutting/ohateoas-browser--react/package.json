@@ -1,0 +1,56 @@
+{
+	"name": "@monorepo-private/ohateoas-browser--react",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Web implementation of a Offirmo’s Hypermedia Architecture browser in React",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.tsx"
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
+		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/ohateoas-browser--react\" && tsc --noEmit",
+		"clean": "npm-run-all _clean--pkg",
+		"dev": "run-s clean watch:check:ts",
+		"stories": "npm-run-all clean --parallel _start:storypad--vite",
+		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/ohateoas": "workspace:*",
+		"@monorepo-private/rich-text-format": "workspace:*",
+		"@monorepo-private/rich-text-format--to-react": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/react": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"sinon": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"react": "catalog:",
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

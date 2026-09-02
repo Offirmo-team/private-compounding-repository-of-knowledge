@@ -1,0 +1,23 @@
+/* from https://clrs.cc/
+ * Good selection
+ */
+
+:root {
+	--o⋄color⁚clrscc__navy: #001f3f;
+	--o⋄color⁚clrscc__blue: #0074d9;
+	--o⋄color⁚clrscc__aqua: #7fdbff;
+	--o⋄color⁚clrscc__teal: #39cccc;
+	--o⋄color⁚clrscc__purple: #b10dc9;
+	--o⋄color⁚clrscc__fuchsia: #f012be;
+	--o⋄color⁚clrscc__maroon: #85144b;
+	--o⋄color⁚clrscc__red: #ff4136;
+	--o⋄color⁚clrscc__orange: #ff851b;
+	--o⋄color⁚clrscc__yellow: #ffdc00;
+	--o⋄color⁚clrscc__olive: #3d9970;
+	--o⋄color⁚clrscc__green: #2ecc40;
+	--o⋄color⁚clrscc__lime: #01ff70;
+	--o⋄color⁚clrscc__black: #111111;
+	--o⋄color⁚clrscc__gray: #aaaaaa;
+	--o⋄color⁚clrscc__silver: #dddddd;
+	--o⋄color⁚clrscc__white: #ffffff;
+}

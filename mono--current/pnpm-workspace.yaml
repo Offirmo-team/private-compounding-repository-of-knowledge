@@ -1,10 +1,86 @@
+allowBuilds:
+   core-js: false
+   fetch-mock: false
 autoInstallPeers: false
 catalog:
-   oxfmt: ^0.64
+   "@earendil-works/pi-tui": ^0.84
+   "@nodelib/fs.walk": ^3
+   "@parcel/plugin": ^2
+   "@pnpm/constants": ^1102
+   "@resvg/resvg-js": ^2
+   "@tsconfig/node-ts": ^23
+   "@tsconfig/node24": ^24
+   "@tsconfig/strictest": ^2
+   "@tsparticles/basic": ^4
+   "@tsparticles/engine": ^4
+   "@types/chai": ^5
+   "@types/chroma-js": ^3
+   "@types/core-js": ^2
+   "@types/cross-spawn": ^6
+   "@types/icepick": ^2
+   "@types/mocha": ^10
+   "@types/murmurhash3js-revisited": ^3
+   "@types/node": ^26
+   "@types/prettyjson": ^0.0.33
+   "@types/prop-types": ^15
+   "@types/react": ^19
+   "@types/react-dom": ^19
+   "@types/semver": ^7
+   "@types/sinon": ^22
+   "@vitejs/plugin-react": ^6
+   bowser: ^2
+   chai: ^6
+   chai-as-promised: ^8
+   chai-fetch-mock: ^3
+   chai-moment: ^0.1
+   chalk: ^6
+   chroma-js: ^3
+   classnames: ^2
+   core-js: ^3
+   cross-spawn: ^7
+   emittery: ^2
+   fraction.js: ^4
+   gitignore-fs: ^2
+   icepick: ^2
+   json5: ^2
+   jsondiffpatch: ^0.7
+   lightningcss: ^1
+   limit-once: ^0.16
+   load-json-file: ^7
+   memoize-one: ^6
+   meow: ^14
+   mocha: ^12
+   murmurhash3js-revisited: ^3
+   nanoid: ^6
+   npm-run-all: ^4
+   oxfmt: ^0.66
    oxlint: ^1
    oxlint-tsgolint: ^7
+   package-json: ^10
+   parse-imports-ts: ^1
+   prettier: ^3
+   prettyjson: ^1
+   prop-types: ^15
+   react: ^19
+   react-dom: ^19
+   semver: ^7
+   sinon: ^22
+   sinon-chai: ^4
+   smol-toml: ^1
+   split-lines: ^3
+   strip-bom: ^5
+   terminal-size: ^4
+   tiny-invariant: ^1
+   tinyglobby: ^0.2
+   tslib: ^2
    turbo: ^2
+   type-fest: ^5
    typescript: ^6
+   typescript-string-enums: ^1
+   vite: ^8
+   vitest: ^4
+   write-json-file: ^7
+   yaml: ^2
    zx: ^8
 catalogMode: prefer
 cleanupUnusedCatalogs: true
@@ -14,20 +90,32 @@ enablePrePostScripts: false
 engineStrict: true
 hoist: false
 ignoreScripts: true
-minimumReleaseAge: 10080
+minimumReleaseAge: 1440
 minimumReleaseAgeIgnoreMissingTime: true
-minimumReleaseAgeStrict: true
+minimumReleaseAgeStrict: false
 packages:
    - 0-meta/*
-   - 1-isomorphic/*
+   - 1-isomorphic/1-libs--simple/*
+   - 1-isomorphic/2-libs--cross-cutting/*
+   - 1-isomorphic/3-libs--advanced/*
+   - 1-isomorphic/X-incubator/active/*
    - 2-engine--winter/*
-   - 3-engine--node/*
-   - 4-engine--browser/*
-   - H-hello-world/
+   - 3-engine--node/0-dev-tools/*
+   - 3-engine--node/1-libs--simple/*
+   - 3-engine--node/2-libs--cross-cutting/*
+   - 3-engine--node/X-incubator/active/*
+   - 4-engine--browser/0-dev-tools/*
+   - 4-engine--browser/1-libs--simple/*
+   - 4-engine--browser/2-libs--cross-cutting/*
+   - 4-engine--browser/X-incubator/active/*
+   - 7-multimorphic/@oh-my-rpg/*
+   - B-backend/*
+   - S-skus/*/*
 publicHoistPattern:
-   - tslib
-   - "*oxlint*"
    - "*oxfmt*"
+   - "*oxlint*"
+   - "@monorepo-private/storypad"
+   - tslib
 savePrefix: ^
 strictPeerDependencies: true
 trustPolicy: no-downgrade

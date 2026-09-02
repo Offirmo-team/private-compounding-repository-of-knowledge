@@ -1,0 +1,75 @@
+
+.monster-emoji {
+	font-size: xx-large;
+}
+
+.tbrpg-element {
+}
+
+.item__name,
+.avatar__name,
+.avatar__class,
+.monster__name {
+	font-weight: bold;
+}
+
+
+.item--quality--common {
+	color: var(--o⋄color⁚quality--common);
+}
+.item--quality--uncommon {
+	color: var(--o⋄color⁚quality--uncommon);
+}
+.item--quality--rare {
+	color: var(--o⋄color⁚quality--rare);
+}
+.item--quality--epic {
+	color: var(--o⋄color⁚quality--epic);
+}
+.item--quality--legendary {
+	color: var(--o⋄color⁚quality--legendary);
+}
+.item--quality--artifact {
+	color: var(--o⋄color⁚quality--artifact);
+}
+.item--quality--admin {
+	color: #ff3c3a; /* TODO check if used */
+}
+
+.achievement__lore {
+	font-style: italic;
+}
+
+.monster--rank--common {
+}
+.monster--rank--elite {
+	color: var(--o⋄color⁚fg--warning)
+}
+.monster--rank--boss {
+	color: var(--o⋄color⁚fg--error);
+}
+
+
+.item--weapon:before {
+	content: '⚔ ';
+}
+.item--armor:before {
+	content: '🛡 ';
+}
+
+.currency--coin:before, .value--coin:before {
+	content: '💰';
+}
+.currency--token:before, .value--token:before {
+	content: '💠';
+}
+
+.comparison--better {
+	color: var(--o⋄color⁚fg--success);
+}
+.comparison--worse {
+	color: var(--o⋄color⁚fg--error);
+}
+.comparison--equal {
+	/* TODO not used */
+}

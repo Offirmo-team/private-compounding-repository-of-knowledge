@@ -1,0 +1,10 @@
+/////////////////////////////////////////////////
+
+const LIB = "@web-property-outfitter/generator--svg"
+
+const EOL = "\n"
+const TAB = "	"
+
+/////////////////////////////////////////////////
+
+export { LIB, EOL, TAB }

@@ -1,0 +1,20 @@
+{
+	"name": "@monorepo-private/font--pixel",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Graphical assets for an RPG UI: fonts, pixel style",
+	"type": "module",
+	"sideEffects": true,
+	"exports": {
+		".": "./module/index.css"
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"clean": "npm-run-all _clean--pkg"
+	},
+	"devDependencies": {
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

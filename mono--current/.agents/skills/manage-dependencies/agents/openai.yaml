@@ -1,0 +1,4 @@
+interface:
+   display_name: "Manage Dependencies"
+   short_description: "Manage monorepo dependency changes"
+   default_prompt: "Use $manage-dependencies to add, update, audit, or fix dependencies in this monorepo."

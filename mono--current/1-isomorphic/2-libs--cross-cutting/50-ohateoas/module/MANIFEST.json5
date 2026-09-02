@@ -1,0 +1,12 @@
+{
+	description: "A reinvention of hypertext to enable advanced HATEOAS web applications",
+	status: "tech-demo",
+
+	_overrides: {
+		files: {
+			packageᐧjson: {
+				"|exports|./examples/*": "./module/src/__fixtures/example--*/index.ts",
+			},
+		},
+	},
+}

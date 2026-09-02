@@ -1,0 +1,33 @@
+/*********************/
+
+@font-face {
+	font-family: "Ames--Free--Raw";
+	src: url("regular.otf");
+}
+
+.omr⋄font⁚Ames--Free--raw {
+	font-family: "Ames--Free--Raw", sans-serif;
+}
+
+/*********************/
+
+@font-face {
+	font-family: "Ames--Free";
+	src: url("regular.otf");
+	size-adjust: 75%;
+	ascent-override: 87%;
+	descent-override: 20%;
+	line-gap-override: 0%;
+}
+
+.omr⋄font⁚Ames--Free {
+	--o⋄font-family--main: "Ames--Free", sans-serif;
+	font-family: var(--o⋄font-family--main);
+	line-height: 1; /* comic fonts are to be used in small balloons + don't have ascend/descend, hence look better lh1, cf. Blambot tip #7 */
+	/*font-stretch: 150%;*/
+	/*letter-spacing: .02em;*/
+	/*font-synthesis: style small-caps weight position;*/
+	/* font-variant-numeric */
+}
+
+/*********************/

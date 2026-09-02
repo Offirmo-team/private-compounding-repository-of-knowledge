@@ -1,0 +1,155 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  // https://turborepo.com/docs/reference/configuration
+  // Reminder! turbo annotations here will only take effect if called through turbo!
+
+  "concurrency": "100%",
+  "globalDependencies": [
+    // https://turborepo.com/docs/reference/configuration#globaldependencies
+    // "By default, only the root package.json and lockfile are included in the global hash"
+    ".pnpmfile.cjs", // in theory, pnpm-lock should be enough, but as of 2025/09 Vercel deletes the lock before building
+    "pnpm-workspace.yaml" // in theory, pnpm-lock should be enough, but as of 2025/09 Vercel deletes the lock before building
+  ],
+  "globalPassThroughEnv": [
+    // reminder those are NOT part of the cache inputs https://turborepo.com/docs/reference/configuration#globalpassthroughenv
+    "ENV",
+    "COREPACK_HOME", // cf. Vercel build Warning: "Disabling corepack because it may break your project. To use corepack, either upgrade to `turbo@2.1.3+` or include `COREPACK_HOME` in `turbo.json#globalPassThroughEnv`."
+    "DO_NOT_TRACK",
+    "NEXT_TELEMETRY_DISABLED"
+  ],
+  "globalEnv": [
+    // reminder those ARE part of the cache inputs https://turborepo.com/docs/crafting-your-repository/caching#global-hash-inputs
+    "NODE_ENV",
+    // CI detection: unfortunately some scripts behave differently in CI
+    // see package `ci-info` https://github.com/watson/ci-info/blob/master/index.js#L37
+    "CI",
+    "VERCEL", // needed for some tasks which won't work in Vercel, such as `wrangler types`
+    // HACK
+    // it's hard to have turbo detect some cache-affecting inputs which are hard to link to individual packages
+    // for ex. "changes in the shared monorepo scripts"
+    // hence this cache-busting var as a last resort, to be modified manually when needed.
+    // Use as sparingly as possible. Search in the repo for usages.
+    "TURBO_CACHE_BUSTING"
+  ],
+  "tasks": {
+    // REMINDER: Any package "scripts" task:
+    // - referenced in this file (ex. as a dependency)
+    // - that we want to call through turbo (ex. `npx turbo clean`)
+    // must be listed in this file as well, even if no annotation.
+    // REMINDER: we need to follow some conventions for this to work, see sibling file turbo.jsonc.README.md
+
+    // NON turbo-annotated tasks, for visibility to turbo:
+    "check:format": {},
+    "check:db-generate": {},
+
+    // turbo-annotated tasks https://turborepo.com/docs/crafting-your-repository/configuring-tasks
+    // REMINDER: turbo microformat "^task" is DIFFERENT from pnpm's scripts regex "/^task*"
+    //           ^ = in dependencies https://turborepo.com/docs/crafting-your-repository/configuring-tasks#depending-on-tasks-in-dependencies-with-
+    // REMINDER: no regex possible here.
+    // REMINDER: all tasks are cached by default unless specified otherwise https://turborepo.com/docs/crafting-your-repository/caching
+    "clean": {
+      // cleans any low-value generated / built / temporary files
+      "cache": false
+    },
+    "secrets:link": {
+      "cache": false
+    },
+    "secrets:pull": {
+      "cache": false,
+      "env": ["ENV"]
+    },
+    "prepare:pkg": {
+      "dependsOn": ["^prepare:pkg"],
+      "outputs": [
+        // WARN if your task output doesn't match this, either declare here or do a package override https://turborepo.com/docs/reference/package-configurations
+        // WARN do not confuse with "build", see later in this file
+        "dist/**", // some pkgs are not source-imported and need a pre-build
+        ".generated-types/**",
+        ".prisma-client/**",
+        ".react-router/**" // react-router typegen
+      ]
+    },
+    "docker-compose:up": {
+      "cache": false
+    },
+    "docker-compose:down": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "dependsOn": ["prepare:pkg"],
+      "persistent": true
+    },
+    "check:lint": {
+      // need full source code
+      "dependsOn": ["prepare:pkg"],
+      "outputs": []
+    },
+    "fix:lint": {
+      // need full source code
+      "dependsOn": ["prepare:pkg"]
+    },
+    "check:types": {
+      // need at least Typescript source code
+      "dependsOn": ["prepare:pkg"],
+      "outputs": []
+    },
+    "check:types:native": {
+      // tsgo (native TypeScript compiler) for faster type-checking
+      "dependsOn": ["prepare:pkg"],
+      "outputs": []
+    },
+    "test": {
+      // need full source code, some tests may even be auto-generated
+      "dependsOn": ["prepare:pkg"],
+      "passThroughEnv": [
+        "TEST_SYMBOL",
+        "EOA_PRIVATE_KEY",
+        "ENABLE_ORDER_TESTS",
+        "DATABASE_URL",
+        "DATABASE_URL_TEST",
+        "ACCOUNTING_DB_URL_TEST"
+      ]
+    },
+    "test:unit": {
+      // need full source code, some tests may even be auto-generated
+      "dependsOn": ["prepare:pkg"],
+      "passThroughEnv": [
+        "TEST_SYMBOL",
+        "EOA_PRIVATE_KEY",
+        "ENABLE_ORDER_TESTS",
+        "DATABASE_URL",
+        "DATABASE_URL_TEST",
+        "ACCOUNTING_DB_URL_TEST"
+      ]
+    },
+    "check:misc": {
+      // as of 2025/10 some needs full source code
+      "dependsOn": ["prepare:pkg"],
+      // non-standard checks
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build", "prepare:pkg"],
+      "outputs": [
+        // WARN do not confuse with "prepare:pkg", see earlier in this file
+        "dist/",
+        // IMPORTANT: since CI shares the global cache, stuff that is usually only generated in CI MUST be listed here as well
+        ".vercel/**",
+        ".next/**",
+        "!.next/cache/**"
+      ]
+    },
+    "build:prod": {
+      "dependsOn": ["^build:prod", "prepare:pkg"],
+      "outputs": [
+        // WARN do not confuse with "prepare:pkg", see earlier in this file
+        "dist/",
+        // IMPORTANT: since CI shares the global cache, stuff that is usually only generated in CI MUST be listed here as well
+        ".vercel/**",
+        ".next/**",
+        "!.next/cache/**"
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+:root {
+	--o⋄full-viewport__width: 100dvw;
+	--o⋄full-viewport__height: 100dvh;
+}
+*:has(.o⋄full-viewport),
+*:has(.o⋄usable-viewport) {
+	margin: 0;
+	padding: 0;
+	border: initial;
+}
+.o⋄full-viewport,
+*:has(.o⋄usable-viewport) {
+	max-width: unset; /* first disable a common technique of limiting width to ~60ch that may have been applied by some other CSS */
+
+	width: var(--o⋄full-viewport__width);
+	height: var(--o⋄full-viewport__height);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	overflow: hidden;
+}
+
+.o⋄fill-parent {
+	/* this well known centering technique https://stackoverflow.com/a/22760896/587407
+	 * is the one that adds the fewer requirements on the consumer:
+	 * It only requires the parent to be "positioned" (for ex. position: relative)
+	 */
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}

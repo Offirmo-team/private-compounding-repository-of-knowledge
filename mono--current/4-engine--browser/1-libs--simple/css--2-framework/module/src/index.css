@@ -1,0 +1,17 @@
+/* While most of the files in this CSS framework are "cherry-pickable"
+ * we provide this index which should properly render a "motherfucking website" properly.
+ * Use of this file is optional.
+ */
+
+@import "@monorepo-private/css--foundation";
+
+@import "tokens/index.css" layer(offirmo--framework);
+@import "themes/index.css" layer(offirmo--framework);
+@import "advanced/index.css" layer(offirmo--framework);
+@import "atomic/index.css" layer(offirmo--framework);
+
+@layer offirmo--framework {
+	.offirmo--layer--debug {
+		color: lawngreen;
+	}
+}
