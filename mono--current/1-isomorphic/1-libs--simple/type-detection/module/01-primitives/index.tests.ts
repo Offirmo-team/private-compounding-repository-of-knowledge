@@ -1,6 +1,6 @@
 import { expect } from "chai"
 
-import { isꓽobjectⵧliteral, isꓽnegative_zero, isꓽexact_stringified_number } from "./index.ts"
+import { isꓽobjectⵧplain, isꓽnegative_zero, isꓽexact_stringified_number } from "./index.ts"
 
 describe("@monorepo-private/type-detection -- primitives", function () {
 	describe("isꓽnegative_zero()", function () {
@@ -27,24 +27,24 @@ describe("@monorepo-private/type-detection -- primitives", function () {
 		})
 	})
 
-	describe("isꓽobjectⵧliteral()", function () {
+	describe("isꓽobjectⵧplain()", function () {
 		it("should work", () => {
 			// completely unrelated types
-			expect(isꓽobjectⵧliteral(null)).to.be.false
-			expect(isꓽobjectⵧliteral(undefined)).to.be.false
-			expect(isꓽobjectⵧliteral(NaN)).to.be.false
-			expect(isꓽobjectⵧliteral(5)).to.be.false
-			expect(isꓽobjectⵧliteral("foo")).to.be.false
+			expect(isꓽobjectⵧplain(null)).to.be.false
+			expect(isꓽobjectⵧplain(undefined)).to.be.false
+			expect(isꓽobjectⵧplain(NaN)).to.be.false
+			expect(isꓽobjectⵧplain(5)).to.be.false
+			expect(isꓽobjectⵧplain("foo")).to.be.false
 
 			// closer types
-			expect(isꓽobjectⵧliteral(["foo"])).to.be.false
-			expect(isꓽobjectⵧliteral(new Boolean(1)), "primitive wrapper -- bool").to.be.false
-			expect(isꓽobjectⵧliteral(new String("foo")), "primitive wrapper -- string").to.be.false
-			expect(isꓽobjectⵧliteral(/regex/), "regex").to.be.false
+			expect(isꓽobjectⵧplain(["foo"])).to.be.false
+			expect(isꓽobjectⵧplain(new Boolean(1)), "primitive wrapper -- bool").to.be.false
+			expect(isꓽobjectⵧplain(new String("foo")), "primitive wrapper -- string").to.be.false
+			expect(isꓽobjectⵧplain(/regex/), "regex").to.be.false
 
 			// final
-			expect(isꓽobjectⵧliteral({})).to.be.true
-			expect(isꓽobjectⵧliteral({ foo: 42 })).to.be.true
+			expect(isꓽobjectⵧplain({})).to.be.true
+			expect(isꓽobjectⵧplain({ foo: 42 })).to.be.true
 		})
 	})
 

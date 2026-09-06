@@ -15,8 +15,8 @@ const local_url = new URL("original.jpg", import.meta.url).href
 /////////////////////////////////////////////////
 
 const THING: Thing = {
-	description: "Fantasy heroine illustration 001",
-	author: AUTHOR,
+	caption: "Fantasy heroine illustration 001",
+	creator: AUTHOR,
 	since‿y: 2024,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {

@@ -2,7 +2,7 @@
 
 const WEBSITE = "https://fontstruct.com/fontstructors/1441974/vyznev" as Url‿str
 
-const AUTHOR: Author = {
+const AUTHOR: Creator = {
 	name: "vyznev",
 
 	urlⵧcanonical: WEBSITE,
@@ -14,4 +14,4 @@ export default AUTHOR
 
 /////////////////////////////////////////////////
 
-import type { Author, Url‿str } from "@monorepo-private/ts--types--hypermedia"
+import type { Creator, Url‿str } from "@monorepo-private/ts--types--hypermedia"

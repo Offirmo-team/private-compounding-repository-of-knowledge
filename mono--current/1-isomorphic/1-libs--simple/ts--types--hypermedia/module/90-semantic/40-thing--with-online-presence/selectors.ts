@@ -16,10 +16,14 @@ export * from "../30-thing/selectors.ts"
 
 // should not be called "naked", this is a fallback for a semantic contact need
 function _getꓽcontact(thing: Immutable<ThingWithOnlinePresence>): Url‿str {
+	const ǃ = assert_from({ _getꓽcontact })
+
 	if (thing.contact) return normalizeꓽurl(thing.contact)
 
 	const url = thing.contact || ThingSelectors.getꓽauthor__contact(thing)
-	assert(url, "Thing: should have at last a point of contact!")
+	ǃ.require(url, "we need at least a point of contact")
+	assert(!!url)
+
 	return url
 }
 

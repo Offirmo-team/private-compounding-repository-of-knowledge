@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Author = {
+const AUTHOR: Creator = {
 	name: "Digital Moons",
 
 	email: "digitalmoonsstudio@gmail.com", // from https://digitalmoons.itch.io/parallax-forest-background
@@ -23,4 +23,4 @@ export default AUTHOR
 
 /////////////////////////////////////////////////
 
-import type { Author } from "@monorepo-private/ts--types--hypermedia"
+import type { Creator } from "@monorepo-private/ts--types--hypermedia"

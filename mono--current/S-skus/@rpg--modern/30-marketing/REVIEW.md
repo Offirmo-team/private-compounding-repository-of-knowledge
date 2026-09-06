@@ -4,9 +4,9 @@ Marketing/SEO metadata entry point (author + website property spec) for the "Men
 
 ## Findings
 
-- **G12C-P1-01** (Minor) — `module/src/index.ts` imports `Author` and `Url‿str` as types from
+- **G12C-P1-01** (Minor) — `module/src/index.ts` imports `Creator` and `Url‿str` as types from
   `@monorepo-private/ts--types--hypermedia` but never uses either as a type annotation anywhere in the file (only
-  `Author` appears again inside a comment block). `noUnusedLocals`/`noUnusedParameters` are disabled repo-wide in the
+  `Creator` appears again inside a comment block). `noUnusedLocals`/`noUnusedParameters` are disabled repo-wide in the
   shared tsconfig, so `tsc --noEmit` stays silent, but these are dead imports that should be removed.
 - **G12C-P1-02** (Nit) — The `/////// SOCIAL` section is followed only by a `// TODO` with no ticket/description, and
   `content: {}` is left empty with no comment on what (if anything) should live there. Low-value as a marketing stub,

@@ -23,9 +23,9 @@ export default {
 import { AUTHOR as AUTHORⳇCREATOR } from "@monorepo-private/marketing--creator"
 //import { AUTHOR as AUTHORⳇPRO } from "@monorepo-private/marketing--pro"
 //import { AUTHOR as AUTHORⳇWEB3 } from "@monorepo-private/marketing--web3"
-import type { Author } from "@monorepo-private/ts--types--hypermedia"
+import type { Creator } from "@monorepo-private/ts--types--hypermedia"
 
-function Component({ author }: { author: Author }) {
+function Component({ author }: { author: Creator }) {
 	return (
 		<nav is="offirmoⳆsocial-links" data-theme="subtle">
 			<ol>

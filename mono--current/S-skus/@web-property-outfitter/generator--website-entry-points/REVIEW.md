@@ -18,8 +18,8 @@ scope / already tracked in their own package reviews):
 - `module/src/__fixtures/specs--game--tbrpg/index.ts:96` — uses `PRESETꘌappⵧimmersive` but never imports it (`TS2304`),
   and line 13 imports from `"../.."` which resolves outside `module/` entirely (`TS2307`, should be
   `"../../../src/index.ts"` or similar).
-- `module/##demos/demo--pure-defaults/index.ts` — 3 errors (`TS2741`): assigns partially-populated literals to
-  fully-required types `Author`, `WithOnlinePresence`, `WebPage` instead of using `Partial<...>`, so this "pure
+- `module/##demos/demo--01-pure-defaults/index.ts` — 3 errors (`TS2741`): assigns partially-populated literals to
+  fully-required types `Creator`, `WithOnlinePresence`, `WebPage` instead of using `Partial<...>`, so this "pure
   defaults" demo does not actually compile.
 - `module/src/generate--html/snippets/js/snippet--github-pages--redirect-extensionless.ts` — uses browser globals
   (`location`) under this package's node-flavoured `tsconfig.json` (no DOM lib), 6 errors (`TS2304`) plus one
@@ -145,10 +145,10 @@ generated content under `page--404/~~gen/` (another screenshot) and AI-generatio
 `page--privacy-policy/~~gen/genai-20250514/` and `page--terms-and-conditions/~~gen/genai-20250514/`
 (`prompt.txt`/`result.md` — the ChatGPT-style prompts used to draft the privacy-policy/terms boilerplate text,
 interesting as provenance but arguably not meant to ship in the repo). Additionally,
-`module/##demos/demo--personal-blog/~~output/` and `module/##demos/demo--pwa--tbrpg/~~output/` are full checked-in
-generated build outputs (HTML pages, webmanifest, a scaffolded `app/` tree, icons, `_headers`/`_redirects`) — i.e. build
-artifacts from running the demo, committed to git rather than gitignored. Per review scope, contents not deep-reviewed;
-flagging only the checked-in-generated-output pattern and the oversized PNGs.
+`module/##demos/demo--02-personal-blog` and `module/##demos/demo--pwa--tbrpg/~~output/` are full checked-in generated
+build outputs (HTML pages, webmanifest, a scaffolded `app/` tree, icons, `_headers`/`_redirects`) — i.e. build artifacts
+from running the demo, committed to git rather than gitignored. Per review scope, contents not deep-reviewed; flagging
+only the checked-in-generated-output pattern and the oversized PNGs.
 
 ### G12E-P3-12 — Nit — `generate--html/index-html/temp.md` looks like an accidentally-dropped scratch/draft file
 

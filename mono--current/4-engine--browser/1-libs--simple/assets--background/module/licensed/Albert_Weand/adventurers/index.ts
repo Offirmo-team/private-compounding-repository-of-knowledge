@@ -14,8 +14,8 @@ export default BG
 /////////////////////////////////////////////////
 
 const THING: Thing = {
-	description: "Adventurers fantasy illustration",
-	author: AUTHOR,
+	caption: "Adventurers fantasy illustration",
+	creator: AUTHOR,
 	since‿y: 2021,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {

@@ -10,7 +10,7 @@ This set of command will build everything: (required as there are dependencies b
 ## First: update OS, brew, nvm, etc.
 ## Then:
 mise install
-pnpm install
+ni   # pnpm install
 ```
 
 ## Common issues

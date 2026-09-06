@@ -4,8 +4,8 @@
 
 /////////////////////////////////////////////////
 
-export { type Integer }
-export type PositiveInteger = NonNegativeInteger<number>
+export type Integer = number
+export type PositiveInteger = number
 export type PositiveIntegerInRange<min = PositiveInteger, max = PositiveInteger> = PositiveInteger
 export type LineNumber = PositiveIntegerInRange<1, 999999>
 
@@ -16,5 +16,3 @@ export type PositiveFloat = Float
 export type FloatInRange<min = Float, max = Float> = Float
 
 /////////////////////////////////////////////////
-
-import type { Integer, NonNegativeInteger } from "type-fest"

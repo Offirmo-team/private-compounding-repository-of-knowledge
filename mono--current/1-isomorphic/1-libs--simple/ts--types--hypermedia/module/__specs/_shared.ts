@@ -1,17 +1,3 @@
-import { strict as assert } from "node:assert"
-
-import { expect } from "chai"
-
-import { normalizeꓽemailⵧreasonable, normalize_unicode } from "@monorepo-private/normalize-string"
-import type {
-	Author,
-	Email‿str,
-	SocialNetworkId,
-	SocialNetworkLink,
-	Url‿str,
-	WithOnlinePresence,
-} from "@monorepo-private/ts--types--hypermedia"
-
 /////////////////////////////////////////////////
 
 export function expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str(url: Url‿str, msg: string): void {
@@ -41,19 +27,44 @@ export function expectㆍtoㆍbeㆍaㆍvalidㆍSocialNetworkLink(snl: SocialNetw
 export function expectㆍtoㆍbeㆍaㆍvalidㆍWithOnlinePresence(wop: WithOnlinePresence, msg: string): void {
 	expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str(
 		wop.urlⵧcanonical,
-		`${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍWithOnlinePresence -- .url should be a Url‿str!`,
+		`${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍWithOnlinePresence -- .urlⵧcanonical should be a Url‿str!`,
 	)
 	wop.urlsⵧsocial?.forEach((snl) =>
 		expectㆍtoㆍbeㆍaㆍvalidㆍSocialNetworkLink(snl, `${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍWithOnlinePresence`),
 	)
 }
 
-export function expectㆍtoㆍbeㆍaㆍvalidㆍAuthor(author: Author): void {
-	expectㆍtoㆍbeㆍaㆍvalidㆍWithOnlinePresence(author, "expectㆍtoㆍbeㆍaㆍvalidㆍAuthor")
-	if (author.email) {
+export function expectㆍtoㆍbeㆍaㆍvalidㆍCreator(creator: Creator): void {
+	if (creator.urlⵧcanonical) {
+		expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str(
+			creator.urlⵧcanonical,
+			`expectㆍtoㆍbeㆍaㆍvalidㆍCreator -- .urlⵧcanonical should be a Url‿str!`,
+		)
+	}
+
+	creator.urlsⵧsocial?.forEach((snl) =>
+		expectㆍtoㆍbeㆍaㆍvalidㆍSocialNetworkLink(snl, `expectㆍtoㆍbeㆍaㆍvalidㆍCreator`),
+	)
+
+	if (creator.email) {
 		expect(
-			normalizeꓽemailⵧreasonable(author.email),
-			`expectㆍtoㆍbeㆍaㆍvalidㆍAuthor -- normalizeꓽemailⵧreasonable`,
-		).to.equal(author.email)
+			normalizeꓽemailⵧreasonable(creator.email),
+			`expectㆍtoㆍbeㆍaㆍvalidㆍCreator -- normalizeꓽemailⵧreasonable`,
+		).to.equal(creator.email)
 	}
 }
+
+/////////////////////////////////////////////////
+import { strict as assert } from "node:assert"
+
+import { expect } from "chai"
+
+import { normalizeꓽemailⵧreasonable, normalize_unicode } from "@monorepo-private/normalize-string"
+import type {
+	Creator,
+	Email‿str,
+	SocialNetworkId,
+	SocialNetworkLink,
+	Url‿str,
+	WithOnlinePresence,
+} from "@monorepo-private/ts--types--hypermedia"

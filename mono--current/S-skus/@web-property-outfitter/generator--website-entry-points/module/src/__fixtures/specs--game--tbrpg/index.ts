@@ -14,19 +14,18 @@ import type { WebPage, WebPropertySpec } from "../.."
 
 /////////////////////////////////////////////////
 /*
-WebPropertySpec
-⇲ WebPage
-	⇲ ThingWithOnlinePresence
-		⇲ WithOnlinePresence
-		⇲ Thing
-			↳ Author
+ WebPropertySpec
+ ⇲ ThingWithOnlinePresence
+   ⇲ WithOnlinePresence
+ ⇲ WebPage
+   ⇲ Thing
+     ↳ Creator
 */
-/////////////////////////////////////////////////
 
 const THING: Thing = {
 	lang: "en",
-	description: "(Browser game) The simplest RPG ever! (indie game, free to play, no account needed)",
-	author: AUTHOR,
+	caption: "(Browser game) The simplest RPG ever! (indie game, free to play, no account needed)",
+	creator: AUTHOR,
 	since‿y: 2016,
 }
 

@@ -62,8 +62,8 @@ export function assertꓽshape<T extends object>(
 ): asserts under_test is T {
 	const ǃ = assert_from({ assertꓽshape })
 
-	ǃ.forⵧparam({ reference }).require(isꓽobjectⵧkv(reference), `should be a k/v object!`)
-	ǃ.forⵧparam({ under_test }).require(isꓽobjectⵧkv(under_test), `should be a k/v object!`)
+	ǃ.forⵧparam({ reference }).require(isꓽobjectⵧdefined_non_array(reference), `should be a k/v object!`)
+	ǃ.forⵧparam({ under_test }).require(isꓽobjectⵧdefined_non_array(under_test), `should be a k/v object!`)
 
 	const keysⵧref = new Set<string>(Object.keys(reference))
 	const keysⵧunder_test = new Set<string>(Object.keys(under_test))
@@ -129,5 +129,5 @@ export function hasꓽshape<T extends object>(
 
 import { assert_from } from "@monorepo-private/assert"
 
-import { isꓽobjectⵧkv } from "../01-primitives/index.ts"
+import { isꓽobjectⵧdefined_non_array } from "../01-primitives/index.ts"
 import { isꓽThenable } from "../03-thenable/index.ts"

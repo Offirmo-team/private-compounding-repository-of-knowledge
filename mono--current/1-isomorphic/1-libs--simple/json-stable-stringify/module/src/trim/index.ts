@@ -39,18 +39,21 @@ export function trim_before_stringify(
 		}
 
 		// we expect JSON
-		if (isꓽobjectⵧkv(node) && !isꓽobjectⵧliteral(node)) {
+		if (isꓽobjectⵧdefined_non_array(node) && !isꓽobjectⵧplain(node)) {
 			switch (options.onꓽnonᝍjson) {
 				case "convert": {
 					if (conversion_behavior === "DO-NOT-convert-non-json") {
 						break
-					} else if (node instanceof Set) {
+					}
+					if (node instanceof Set) {
 						node = Array.from(node.values()).sort()
 						break
-					} else if (node instanceof Map) {
+					}
+					if (node instanceof Map) {
 						node = Object.fromEntries(node.entries())
 						break
-					} else if (node instanceof Error) {
+					}
+					if (node instanceof Error) {
 						node = {
 							name: node.name,
 							message: node.message,
@@ -103,16 +106,25 @@ export function trim_before_stringify(
 		const new_encountered_nodes = new Set(encountered_nodes)
 		new_encountered_nodes.add(input)
 
+		// deep-process records and arrays.
+		// We ABUSE the fact that:
+		// - both arrays and objects are addressable by [] (with either indexes or keys)
+		// - both arrays and objects have a .entries() returning a similar index|key/value
 		let [output, entries] = Array.isArray(node)
 			? [
-					// NOTE: pre-size + forEach (which skips holes) to preserve sparse arrays;
-					Array.from({ length: node.length }) as JSONode[],
+					// array shape
+					Array.from({ length: node.length }) as JSONode[], // NOTE: pre-size + forEach (which skips holes) to preserve sparse arrays;
 					[...node.entries()],
 				]
-			: [{} as { [key: JSOKey]: JSONode }, Object.entries(node)]
+			: [
+					// record shape
+					{} as { [key: JSOKey]: JSONode },
+					Object.entries(node),
+				]
 
 		output = entries.reduce((acc, [k, v]) => {
-			acc[k] = _trim(node, k, v, new_encountered_nodes)
+			// downgrade TS, our hack is too much ;-)
+			;(acc as any)[k] = _trim(node, k, v, new_encountered_nodes)
 			return acc
 		}, output)
 
@@ -184,7 +196,7 @@ export function trim_before_stringify(
 
 import { assertⵧnever_reached } from "@monorepo-private/assert"
 import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
-import { isꓽobjectⵧkv, isꓽobjectⵧliteral } from "@monorepo-private/type-detection"
+import { isꓽobjectⵧdefined_non_array, isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
 import { CYCLES__REPLACEMENT_VALUE, CYCLES__ERROR_MESSAGE, NON_JSON__ERROR_MESSAGE } from "../consts.ts"
 import { type JSOKey, type JSONode, type BaseOptions, DEFAULT_BASE_OPTIONS } from "../types.ts"

@@ -1,7 +1,5 @@
 /////////////////////////////////////////////////
 
-export type Descriptionⳇtitle = string
-
 // https://github.com/w3c/manifest/wiki/Categories
 // https://developer.mozilla.org/en-US/docs/Web/Manifest/categories
 // MUST be lc
@@ -48,7 +46,9 @@ export interface IconSet {
 // AGNOSTIC of how/where it will be hosted
 // hence not featuring the URL nor whether the page catches all routes
 export interface WebPage extends Thing {
-	title?: Descriptionⳇtitle
+	// must be flat for easy defaulting
+	// optional '?:' = truly optional (can be easily derived)
+
 	icon?: IconSet
 	keywords?: string[]
 
@@ -68,8 +68,8 @@ export interface WebPage extends Thing {
 		| "partial" // not capable enough to be eligible for "prompt to install" so we may want to advertise it in JS
 		| "promotion-capable" // fully capable to the point the browser is expected to prompt https://web.dev/articles/install-criteria
 		| "redirect" // we want to redirect to an app store TODO clarify
-	titleⵧapp?: Descriptionⳇtitle
-	descriptionⵧapp?: string
+	titleⵧapp?: ContentⳇTitle
+	descriptionⵧapp?: ContentⳇCaption
 	hasꓽown_navigation?: boolean
 	supportsꓽscreensⵧwith_shape?: boolean // https://drafts.csswg.org/css-round-display/
 	canꓽuse_window_controls_overlay?: boolean
@@ -92,16 +92,10 @@ export interface WebPage extends Thing {
 
 // property = multiple pages + host-specific files if needed
 export interface WebPropertySpec extends WebPage, ThingWithOnlinePresence {
-	// must be flat for easy defaulting
-	// optional '?:' = truly optional (can be easily derived)
-	// TODO use zod? or tRPC?
-
 	/////// SPA
 	// XXX to review / is / should / wants ?
 	// https://developers.cloudflare.com/workers/static-assets/#routing-behavior
 	isꓽcatching_all_routes?: boolean // if true, we may NOT want a 404.html, ex. https://developers.cloudflare.com/pages/configuration/serving-pages/#single-page-application-spa-rendering
-
-	/////// JS SRC
 
 	/////// META
 	host?:
@@ -137,8 +131,10 @@ import type { SVG } from "@web-property-outfitter/generator--svg"
 import type { Basename, PathⳇAny, PathⳇRelative } from "@monorepo-private/ts--types"
 import type {
 	Emoji,
+	ContentⳇTitle,
 	Contentⳇweb,
 	CssⳇColor‿str,
 	ThingWithOnlinePresence,
 	Thing,
+	ContentⳇCaption,
 } from "@monorepo-private/ts--types--hypermedia"

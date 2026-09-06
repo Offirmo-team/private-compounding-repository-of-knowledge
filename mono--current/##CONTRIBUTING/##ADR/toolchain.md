@@ -1,6 +1,9 @@
 ## package manager
 
-**yarn**
+**pnpm**, killing features:
+
+- catalogs
+- plenty of others
 
 Why not npm?
 
@@ -9,19 +12,20 @@ Why not npm?
 - npm requires "run" `npm run dev`
 - overall npm doesn't seem as reliable as yarn
 
-TODO use yarn v4! https://yarnpkg.com/blog/bun TODO use corepack (2025 not compatible with bolt) TODO evaluate
-https://github.com/pnpm/pnpm
+Why not yarn? https://yarnpkg.com/blog/bun https://github.com/yarnpkg/berry
+
+- as of 2026 pnpm outpaced it in terms of features and is the de-facto standard
 
 ## monorepo
 
 **pnpm + turborepo**
 
-- complemented by https://github.com/Thinkmill/manypkg
+- maybe complemented by https://github.com/Thinkmill/manypkg
 
 Why not yarn workspaces?
 
-- they can't run commands in the dependency order (TODO reevaluate TODO review turborepo)
-- they can't run commands on a glob (TODO reevaluate TODO review turborepo)
+- they can't run commands in the dependency order (TODO reevaluate with turborepo)
+- they can't run commands on a glob (TODO reevaluate TODO reevaluate with turborepo)
 
 Why not rush? https://github.com/pnpm/pnpm
 
@@ -39,15 +43,15 @@ Why not X?
 
 ## isomorphic
 
-typescript
+TypeScript
 
-TODO evaluate https://blog.logrocket.com/boost-your-productivity-with-typescript-project-references/ TODO evaluate
-[self referencing in Typescript](https://www.typescriptlang.org/docs/handbook/esm-node.html) when
-[bug fix](https://github.com/microsoft/TypeScript/issues/46762)
+- TODO evaluate https://blog.logrocket.com/boost-your-productivity-with-typescript-project-references/
+- TODO evaluate [self referencing in Typescript](https://www.typescriptlang.org/docs/handbook/esm-node.html) when
+  [bug fix](https://github.com/microsoft/TypeScript/issues/46762)
 
 ## web bundler / compiler
 
-https://parceljs.org/
+Vite https://parceljs.org/
 
 Why Parcel?
 

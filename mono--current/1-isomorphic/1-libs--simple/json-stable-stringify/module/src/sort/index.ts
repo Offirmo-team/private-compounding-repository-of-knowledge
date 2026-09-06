@@ -101,7 +101,7 @@ export function sort_before_stringify(
 		}
 
 		// we expect JSON
-		if (!isꓽobjectⵧliteral(node)) {
+		if (!isꓽobjectⵧplain(node)) {
 			switch (options.onꓽnonᝍjson) {
 				case "convert": {
 					if (node instanceof Set) {
@@ -145,7 +145,7 @@ export function sort_before_stringify(
 
 import { assertⵧnever_reached } from "@monorepo-private/assert"
 import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
-import { isꓽobjectⵧliteral } from "@monorepo-private/type-detection"
+import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
 import { CYCLES__REPLACEMENT_VALUE, CYCLES__ERROR_MESSAGE, NON_JSON__ERROR_MESSAGE, default_cmp } from "../consts.ts"
 import { type JSOKey, type JSONode, type BaseOptions, DEFAULT_BASE_OPTIONS } from "../types.ts"

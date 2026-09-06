@@ -1,61 +1,65 @@
+import type { FeatureSnippets } from "@web-property-outfitter/generator--html"
 import {
 	type WebPage,
 	type WebPropertySpec,
 	//PRESETꘌblog,
 } from "@web-property-outfitter/generator--website-entry-points"
 
-import { AUTHOR } from "@monorepo-private/marketing--creator"
-import type { Thing, WithOnlinePresence, ThingWithOnlinePresence } from "@monorepo-private/ts--types--hypermedia"
+import { CREATOR, WEBSITE } from "@monorepo-private/marketing--creator"
+import type { Basename } from "@monorepo-private/ts--types"
+import type {
+	Thing,
+	WithOnlinePresence,
+	ThingWithOnlinePresence,
+	Contentⳇweb,
+	ContentⳇTitle,
+	ContentⳇCaption,
+	CssⳇColor‿str,
+} from "@monorepo-private/ts--types--hypermedia"
+
+import type { IconSet, WebAppCategory } from "../../types.ts"
 
 /////////////////////////////////////////////////
 /*
-WebPropertySpec
-⇲ WebPage
-	⇲ ThingWithOnlinePresence
-		⇲ WithOnlinePresence
-		⇲ Thing
-			↳ Author
+ WebPropertySpec
+ ⇲ ThingWithOnlinePresence
+   ⇲ WithOnlinePresence
+ ⇲ WebPage
+   ⇲ Thing
+     ↳ Creator
 */
 /////////////////////////////////////////////////
 
-const THING: Thing = {
-	lang: "en",
-	description: "Offirmo’s personal blog about tech, software and gamedev…",
-	author: AUTHOR,
-	since‿y: 2016,
-}
-
-const ONLINE_PRESENCE: WithOnlinePresence = {
-	urlⵧcanonical: AUTHOR.urlⵧcanonical,
-	...(AUTHOR.urlsⵧsocial && { urlsⵧsocial: AUTHOR.urlsⵧsocial }),
-}
-
-/////////////////////////////////////////////////
-// May NOT be a website!!
-// could be a store on amazon, a post on social media...
+// Ok the thing IS a website
 const THINGⵧONLINE: ThingWithOnlinePresence = {
-	...THING,
-	...ONLINE_PRESENCE,
+	title: "Offirmo - Creator",
+	caption: "Offirmo’s personal blog about tech, software and gamedev…",
+	creator: CREATOR,
+	since‿y: 2016,
 
+	// personal website = using same urls as crator
+	urlⵧcanonical: WEBSITE,
+	...(CREATOR.urlsⵧsocial && { urlsⵧsocial: CREATOR.urlsⵧsocial }),
+
+	// more specific than creator's one
 	contact: "https://github.com/Offirmo/offirmo.github.io/issues",
 }
-
-/////////////////////////////////////////////////
-// Ok now we're having a website
 
 const WEBPAGE: WebPage = {
 	...THINGⵧONLINE,
 
-	title: "Offirmo - Fullstack Developer",
 	icon: { emoji: "👨‍💻" },
-	keywords: ["engineer", "software", "fullstack", "developer", "open-source", "indie"],
+	keywords: ["creator", "engineer", "software", "fullstack", "developer", "open-source", "indie"],
 	content: {
 		// TODO
 	},
 	features: ["cssⳇbox-layout--natural", "normalize-url-trailing-slash", "cssⳇframework--offirmo"],
 
 	/////// SOCIAL
-	// TODO
+	// TODO full open graph type
+	// TODO move to dedicated type
+	//titleⵧsocial?: string;
+	//descriptionⵧsocial?: string;
 
 	/////// PWA
 	// (not a PWA)
@@ -66,18 +70,40 @@ const WEBPAGE: WebPage = {
 	colorⵧtheme: "hsl(248,  9%, 17%)",
 }
 
-/////////////////////////////////////////////////
-const SPEC: WebPropertySpec = {
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// specific to hosting
+
+const SPECⵧprod: WebPropertySpec = {
 	...WEBPAGE,
 
-	/////// SRC
-	// TODO refine
+	host: "github-pages",
+	env: "production",
 
 	/////// META
-	isꓽpublic: false, // XXX
+}
+
+const SPECⵧpreprod: WebPropertySpec = {
+	...SPECⵧprod,
+
+	host: "github-pages",
+	env: "production",
+
+	/////// META
+	isꓽpublic: false,
+	isꓽdebug: false,
+}
+
+const SPECⵧnightly: WebPropertySpec = {
+	...SPECⵧprod,
+
+	host: "github-pages",
+	env: "development",
+
+	/////// META
+	isꓽpublic: false,
 	isꓽdebug: true,
 }
 
 /////////////////////////////////////////////////
 
-export { SPEC }
+export { SPECⵧprod, SPECⵧpreprod, SPECⵧnightly }

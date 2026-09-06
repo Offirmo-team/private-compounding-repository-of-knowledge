@@ -17,7 +17,7 @@ noted):
 ### G3-P10-01 — Severity: Critical — Missing type import causes a compile error
 
 `module/src/l3-authors/MapleLeaf68/index.ts` uses `Url‿str` as a type cast
-(`const WEBSITE = "http://www.rw-designer.com/user/50229" as Url‿str`) but only imports `Author` at the bottom of the
+(`const WEBSITE = "http://www.rw-designer.com/user/50229" as Url‿str`) but only imports `Creator` at the bottom of the
 file:
 
 ```ts
@@ -26,7 +26,7 @@ import type { Author } from "@monorepo-private/ts--types--hypermedia"
 
 `Url‿str` is a regular exported type from `@monorepo-private/ts--types--hypermedia` (not global/ambient — confirmed by
 checking that package's source), so this is a genuine "Cannot find name 'Url‿str'" error under `tsc --noEmit`. Every
-other author file (e.g. `vyznev/index.ts`) correctly imports both `Author` and `Url‿str`. This will break the package's
+other author file (e.g. `vyznev/index.ts`) correctly imports both `Creator` and `Url‿str`. This will break the package's
 own `check:ts` script.
 
 ### G3-P10-02 — Severity: Major — Zero test coverage despite full test tooling being present

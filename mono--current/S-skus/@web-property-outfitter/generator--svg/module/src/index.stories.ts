@@ -1,7 +1,8 @@
 import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad/types"
 import type { Immutable } from "@monorepo-private/ts--types"
 
-import { getꓽcontentꘌcat } from "./__fixtures/examples"
+import { getꓽcontentꘌcat } from "../__fixtures/examples"
+
 import * as Reducers from "./reducers.ts"
 import { getꓽsvg‿str } from "./selectors.ts"
 import type { SVG, Svg‿str } from "./types.ts"

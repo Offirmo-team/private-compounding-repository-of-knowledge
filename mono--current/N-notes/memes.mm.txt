@@ -934,6 +934,7 @@ life -- diseases -- heart disfunction = New York Heart Association Functional Cl
 life -- fallacies -- "you are a tool. It sucks not being on top" = not true, "being of service to something or someone, which gives purpose"
 life -- high economic connectedness = https://julienreszka.com/blog/your-key-to-success-isn-t-more-luck-or-hard-work/
 life -- lines of life = most common to rarest: criticize > gossip > get involved > encourage > help
+life -- NPC = "watching life pass you by while doomscrolling on your phone" https://signalundefied.bearblog.dev/i-wanna-live-an-npc-life/
 life -- stages -- 20+ boomerang https://en.wikipedia.org/wiki/Boomerang_Generation
 life -- stages -- 40+ sandwich https://en.wikipedia.org/wiki/Sandwich_generation
 life -- super successful = navy SEAL, doctor, pilot, astronaut... https://en.wikipedia.org/wiki/Jonny_Kim

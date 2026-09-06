@@ -275,8 +275,8 @@ Updated state:
 Updated state:
 
 1. Node runtime version
-   - oldest active LTS node = [18](https://nodejs.org/en/about/previous-releases)
-   - 🆕most recent node supported by AWS lambda = [18](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html)
+  - oldest active LTS node = [18](https://nodejs.org/en/about/previous-releases)
+  - 🆕most recent node supported by AWS lambda = [18](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html)
 
 ⭆ latest supported node = 18
 

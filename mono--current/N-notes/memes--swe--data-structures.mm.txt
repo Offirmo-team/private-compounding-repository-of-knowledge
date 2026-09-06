@@ -29,8 +29,8 @@ bloom filter = space-efficient probabilistic data structure used to test whether
 Conflict-Free Replicated Data type (CRDT)
 cuckoo filter = space-efficient probabilistic data structure used to test whether an element is a member of a set. False positive matches are possible, but false negatives are not. Sometimes better than Bloom depending on the application. https://en.wikipedia.org/wiki/Cuckoo_filter
 data structures -- active/passive -- active  = data structure with an associated thread or process that performs internal operations https://en.wikipedia.org/wiki/Active_data_structure
-data structures -- active/passive -- passive = plain old data structure or plain old data (POD) = a record
-data structures -- plain old (POD)
+data structures -- active/passive -- passive = plain old data structure or plain old data (POD) = a record https://en.wikipedia.org/wiki/Passive_data_structure
+data structures -- POD "Plain Old Data Structure" = see [[data structures -- active/passive -- passive]]
 data structures -- probabilistic = insertion uses randomness, ex. skip list https://en.wikipedia.org/wiki/Category:Probabilistic_data_structures
 data structures -- recursive (structural recursion) = ex. linked list https://en.wikipedia.org/wiki/Recursion_(computer_science)#Recursive_data_structures_(structural_recursion)
 deterministic acyclic finite state automaton (DAFSA)

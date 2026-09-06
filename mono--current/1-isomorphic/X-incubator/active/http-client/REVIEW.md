@@ -60,8 +60,8 @@ validation, and a structured error hierarchy.
   implement, remove, or track as a backlog item instead of leaving it commented in source.
 
 - **G1-P5-10 (Nit)** — `module/MANIFEST.json5` is an empty `{}`. The sibling incubator package
-  (`.../active/data-structures/module/MANIFEST.json5`) fills in `description` and `status` — worth doing the same here
-  for consistency/discoverability.
+  (`.../active/data-structures/module/MANIFEST.json5`) fills in `caption` and `status` — worth doing the same here for
+  consistency/discoverability.
 
 - **G1-P5-11 (Nit)** — No `README.md` exists for this package (the sibling `data-structures` package has one), so there
   is no usage documentation to verify accuracy against the code/exports.

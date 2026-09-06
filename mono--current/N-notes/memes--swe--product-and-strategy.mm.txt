@@ -27,6 +27,7 @@ B2C -- DTC (direct-to-consumer)
 B2C -- DTC -- companies = often do well at the beginning, then a bunch of copycats come out and it's a race to the bottom funded by VC dollars https://www.youtube.com/watch?v=WcNbIm0fRxk
 B2C -- DTC -- companies = sell products directly to consumers, bypassing traditional retail channels, allowing them to control the entire customer experience and build strong brand relationships
 B2G (Business to Government)
+bad revenue = that comes at the expense of building the long term viability of the business https://www.itamarnovick.com/startup-anti-pattern-5-bad-revenue/
 barriers -- to entry -- doing a good job = ex. of epic store not displacing Steam because no competitive advantage
 barriers -- to entry -- low = low entry barrier to enable global adoption
 barriers -- to entry = moat against competitors

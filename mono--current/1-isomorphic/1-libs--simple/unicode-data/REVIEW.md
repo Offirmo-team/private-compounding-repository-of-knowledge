@@ -14,7 +14,7 @@ taxonomy/tags/description metadata (e.g. "is this emoji a monster/animal"), keye
   devDependencies!), a test setup was clearly intended/scaffolded but never wired up or was removed along with the
   `test` script without cleaning up the now-unused devDependencies.
 
-- **[Minor] G2-P12-02** — `README.md` is a genuinely empty file (0 bytes/lines), despite `package.json`'s `description`
+- **[Minor] G2-P12-02** — `README.md` is a genuinely empty file (0 bytes/lines), despite `package.json`'s `caption`
   field being a full sentence ("Unicode static data featuring tags, ex. monster"). Every sibling package reviewed in
   this batch has at least a one-line README with an import example; this is the only one with no content at all.
 

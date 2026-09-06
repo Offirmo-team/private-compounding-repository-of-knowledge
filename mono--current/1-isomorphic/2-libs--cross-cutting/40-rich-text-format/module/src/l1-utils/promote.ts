@@ -1,7 +1,7 @@
 import { assert_from, assert } from "@monorepo-private/assert"
 import { assertꓽstringⵧnormalized } from "@monorepo-private/normalize-string"
 import type { Immutable } from "@monorepo-private/ts--types"
-import { isꓽobjectⵧliteral } from "@monorepo-private/type-detection"
+import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
 import { LIB } from "../consts.ts"
 import { NodeType, type NodeLike, type Node, assertꓽNode } from "../l1-types/index.ts"
@@ -22,7 +22,7 @@ function promoteꓽto_node($raw: Immutable<NodeLike>): Immutable<Node> {
 		default:
 			// we could be passed anything, (ex false, undef...)
 			// better check it looks like a Node
-			assert(isꓽobjectⵧliteral($raw), `promoteꓽto_node(): passed object should be an object literal!`)
+			assert(isꓽobjectⵧplain($raw), `promoteꓽto_node(): passed object should be an object literal!`)
 			assertꓽNode($raw)
 			return $raw
 	}

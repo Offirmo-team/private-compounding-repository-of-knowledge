@@ -1,7 +1,7 @@
 import * as path from "node:path"
 
 import type { JSONObject, FilePathⳇAny, Immutable, JSON } from "@monorepo-private/ts--types"
-import { isꓽobjectⵧliteral } from "@monorepo-private/type-detection"
+import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
 import type { StructuredFileFormat } from "../types.ts"
 
@@ -108,7 +108,7 @@ function _getꓽjson__type(a: Immutable<JSON>): "object" | "array" | "primitive"
 	if (a === null) return "primitive"
 	if (["string", "number", "boolean"].includes(typeof a)) return "primitive"
 
-	if (isꓽobjectⵧliteral(a as any)) {
+	if (isꓽobjectⵧplain(a as any)) {
 		return "object"
 	}
 

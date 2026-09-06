@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Author = {
+const AUTHOR: Creator = {
 	name: "LisadiKaprio",
 
 	email: "lisadikaprio@gmail.com", // from https://lisadikaprio.itch.io/
@@ -31,4 +31,4 @@ export default AUTHOR
 
 /////////////////////////////////////////////////
 
-import type { Author } from "@monorepo-private/ts--types--hypermedia"
+import type { Creator } from "@monorepo-private/ts--types--hypermedia"

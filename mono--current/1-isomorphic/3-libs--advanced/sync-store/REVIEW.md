@@ -47,7 +47,7 @@ Small library of generic reducer types/functions meant to back a store compatibl
   Should be removed.
 
 - **G3-P14-06** [Nit] `module/MANIFEST.json5` is an empty object (`{}`), whereas the sibling `offirmo-state` package
-  populates `name`/`description`. Minor metadata inconsistency across the same directory level.
+  populates `name`/`caption`. Minor metadata inconsistency across the same directory level.
 
 No unnecessary OOP/class usage found — the package is a small set of plain interfaces and pure reducer functions,
 consistent with the project's functional style. No security concerns (no I/O). Dependencies (`@monorepo-private/assert`,

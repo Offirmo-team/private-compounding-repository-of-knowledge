@@ -4,19 +4,19 @@ export * from "../10-with-online-presence/selectors.ts"
 
 /////////////////////////////////////////////////
 
-export function getꓽname(author: Immutable<Author>): string {
+export function getꓽname(author: Immutable<Creator>): string {
 	return normalize_unicode(author.name).trim()
 }
 
-export function getꓽintro(author: Immutable<Author>): string | undefined {
+export function getꓽintro(author: Immutable<Creator>): string | undefined {
 	return author.intro ? normalize_unicode(author.intro).trim() : `${getꓽname(author)}, author.`
 }
 
-export function getꓽemail(author: Immutable<Author>): Url‿str | undefined {
+export function getꓽemail(author: Immutable<Creator>): Url‿str | undefined {
 	return author.email ? normalizeꓽemailⵧsafe(author.email) : undefined
 }
 
-export function getꓽcontact(author: Immutable<Author>): Url‿str | undefined {
+export function getꓽcontact(author: Immutable<Creator>): Url‿str | undefined {
 	if (author.contact) return normalizeꓽurl(author.contact)
 
 	const email = getꓽemail(author)
@@ -32,4 +32,4 @@ import type { Immutable } from "@monorepo-private/ts--types"
 
 import type { Url‿str } from "../../01-links/types.ts"
 
-import type { Author } from "./types.ts"
+import type { Creator } from "./types.ts"

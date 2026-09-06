@@ -52,8 +52,8 @@ the source format.
 
 ### G6-P2-06 — Minor
 
-`module/MANIFEST.json5` is empty (`{}`) — no `description`/`status`/`target`, unlike `font--pixel`/`font--smallest` in
-this batch.
+`module/MANIFEST.json5` is empty (`{}`) — no `caption`/`status`/`target`, unlike `font--pixel`/`font--smallest` in this
+batch.
 
 ## Notes
 

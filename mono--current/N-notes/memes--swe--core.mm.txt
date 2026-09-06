@@ -504,6 +504,7 @@ flushing
 flux architecture
 format -- container format https://en.wikipedia.org/wiki/Resource_Interchange_File_Format
 forward deployed engineer https://engineering.ramp.com/post/forward-deployed-engineering
+FPGA "Field Programmable Gate Array" = ~programmable chip https://www.kickstarter.com/projects/ryanmjacobs/webfpga-rapid-fpga-development-system
 framework -- "a new framework a day"
 framework -- motivations -- avoiding duplication = BUT premature abstraction
 framework -- motivations -- don't like the language = e.g. Java style on Javascript
@@ -864,6 +865,7 @@ pipeline express: success / error / next / send
 plain old -- java object / component object (POJO/POCO) = plain data container objects that don’t depend on external libraries
 platform engineering -- backstage, pulumi
 platform engineering = approach where one or more teams (often referred to as the platform engineering team or the platform team) build a comprehensive set of shared tools and services (aka “the platform”) to help development teams develop, deploy, and operate cloud infrastructure on a self-service basis. This includes cloud infrastructure, container orchestration platforms, databases, networking, monitoring, code repositories, and deployment pipelines. https://www.pulumi.com/what-is/what-is-platform-engineering/
+POD "Plain Old Data Structure" = passive collections of field values (instance variables), without using object-oriented features https://en.wikipedia.org/wiki/Passive_data_structure
 pointer
 polyfill
 polyfill -- shim vs polyfill vs ponyfill

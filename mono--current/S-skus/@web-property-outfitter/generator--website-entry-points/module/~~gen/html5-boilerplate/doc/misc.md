@@ -179,7 +179,7 @@ if you're interested. The fields we provide are as follows:
   and be unique.
 * `version` - indicates the version of your site application using semantic
   versioning ([semver](https://docs.npmjs.com/misc/semver))
-* `description` - describes your site.
+* `caption` - describes your site.
 * `scripts` - is a JavaScript object containing commands that can be run in a
   node environment. There are many [built-in keys](https://docs.npmjs.com/misc/scripts)
   related to the package lifecycle that node understands automatically. You can

@@ -220,6 +220,7 @@ CAP Theorem -> see also PACELC theorem
 capacity planning
 cascading failures
 cascading failures -- exponential backoff + jitter
+case studies -- design a crawler = https://alexmorleyfinch.github.io/marlin/history/v1/article/the_birth.html
 case studies -- distributed KV store = +++ designing a distributed high scale, high perf, sequentially consistent KV https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-1/
 case studies -- scaling Polymarket = 2026/04/24 https://threadreaderapp.com/thread/2047756905209094613.html
 cell-based architecture = isolated feature (titanic))

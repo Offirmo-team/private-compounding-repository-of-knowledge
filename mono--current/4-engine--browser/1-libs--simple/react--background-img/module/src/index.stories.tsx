@@ -8,7 +8,7 @@ import { type Props, BackgroundImg } from "./index.tsx"
 
 function Component(props: Props) {
 	const props_for_debug = structuredClone(props)
-	props_for_debug.bg.asset.author = "<deleted>"
+	props_for_debug.bg.asset.creator = "<deleted>"
 	return (
 		<div className="o⋄full-viewport isolate" style={{ position: "relative" }}>
 			<BackgroundImg {...props} />

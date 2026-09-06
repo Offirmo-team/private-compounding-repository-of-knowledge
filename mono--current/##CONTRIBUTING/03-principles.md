@@ -2,7 +2,7 @@
 
 Unless it's more convenient for some reason, this repo strives to adhere to those principles:
 
-- readability is the top desirable code property
+- readability/reasonability is the top desirable code property
   - ["Code for the human, not the computer"](https://read.engineerscodex.com/p/7-simple-habits-of-the-top-1-of-engineers)
   - TypeScript https://www.typescriptlang.org/
 - fight complexity or at least encapsulate it (lol I'm not really following this)
@@ -20,7 +20,7 @@ Unless it's more convenient for some reason, this repo strives to adhere to thos
   - open source whenever possible
 - use boring technologies. Examples:
   - (if possible) node LTS over latest
-  - (if possible) npm over yarn
+  - (if possible) npm over others
   - as few tools as possible
   - Postgres
 - dev should be possible locally

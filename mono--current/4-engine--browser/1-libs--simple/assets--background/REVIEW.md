@@ -52,7 +52,7 @@ all (unlike the other four licensed assets).
 
 `module/notes.md` and `module/MANIFEST.json5` are effectively empty/unused: `notes.md` is a single stray Parcel-docs
 link, and `MANIFEST.json5` is just `{}`. Compare `font--pixel`/`font--smallest` in this same review batch, whose
-`MANIFEST.json5` documents `description`/`status`/`target`.
+`MANIFEST.json5` documents `caption`/`status`/`target`.
 
 ### G6-P1-06 — Nit
 

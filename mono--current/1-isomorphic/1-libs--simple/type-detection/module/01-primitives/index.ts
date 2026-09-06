@@ -67,29 +67,47 @@ export function hasꓽemoji(s: string): boolean {
 // Is it a "key/value" object (not null, not an array)
 // naming: difficult!!!
 // use case: for type guards
-export function isꓽobjectⵧkv(o: any): o is Record<string, unknown> {
+// type assertion:
+// -- object = "values which have Object in their prototype chain" https://github.com/microsoft/TypeScript/wiki/FAQ#primitives-are---and---doesnt-mean-object
+// - need not too strict to allow "0 instanceof X" refinements
+export function isꓽobjectⵧdefined_non_array(o: any): o is object {
 	if (typeof o !== "object") return false
-
 	if (!o) return false
-
 	if (Array.isArray(o)) return false
+
+	// technically we may want to filter out null prototype, but that's pedantic
 
 	return true
 }
 
+export function isꓽobjectⵧactive(o: any): o is object {
+	if (!isꓽobjectⵧdefined_non_array(o)) return false
+
+	// "normal" objects have "Object" as constructor
+	const proto = Object.getPrototypeOf(o)
+	if (!proto) return false
+
+	return proto.constructor !== Object
+}
+
 // is it a "key/value" object (not null, not an array) ALSO not a complex/class one
-// naming: difficult!!!
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals
+// naming:
+// - "plain" as in "POD Plain Old Data Structure" https://en.wikipedia.org/wiki/Passive_data_structure
+// - objectⵧpassive
+// - objectⵧliteral https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals
 // use case: for type guards
 // also JSON "object is an unordered set of name/value pairs"
-export function isꓽobjectⵧliteral(o: any): o is Record<string, unknown> {
-	if (!isꓽobjectⵧkv(o)) return false
+export function isꓽobjectⵧplain(o: any): o is Record<string, unknown> {
+	if (!isꓽobjectⵧdefined_non_array(o)) return false
 
 	// "normal" objects have Object as constructor
-	// technically we could also accept null proto https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#null-prototype_objects
-	// but they're unlikely to be "normal"
 	const proto = Object.getPrototypeOf(o)
-	return proto && proto.constructor === Object
+	// technically we could also accept null proto https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#null-prototype_objects
+	// but it's unusual thus unlikely to be "plain/normal"
+	if (!proto) return false
+
+	return proto.constructor === Object
 }
+export const isꓽobjectⵧpassive = isꓽobjectⵧplain
 
 /////////////////////////////////////////////////

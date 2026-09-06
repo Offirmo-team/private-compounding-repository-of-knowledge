@@ -5,8 +5,8 @@ const local_url = new URL("original.png?as=webp", import.meta.url).href
 /////////////////////////////////////////////////
 
 const THING: Thing = {
-	description: "Sunny Sky",
-	author: LisadiKaprio,
+	caption: "Sunny Sky",
+	creator: LisadiKaprio,
 	since‿y: 2020,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {
@@ -43,7 +43,7 @@ export default BG
 
 /////////////////////////////////////////////////
 
-import { type Author, registerꓽasset_usageⵧload, type Url‿str } from "@monorepo-private/credits"
+import { type Creator, registerꓽasset_usageⵧload, type Url‿str } from "@monorepo-private/credits"
 import type { Thing, WithOnlinePresence, ThingWithOnlinePresence, Asset } from "@monorepo-private/credits"
 import LisadiKaprio from "@monorepo-private/credits/authors/LisadiKaprio"
 

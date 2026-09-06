@@ -5,8 +5,8 @@ const local_url = new URL("original.png?as=webp", import.meta.url).href
 /////////////////////////////////////////////////
 
 const THING: Thing = {
-	description: "Two Travelers",
-	author: Offirmo,
+	caption: "Two Travelers",
+	creator: Offirmo,
 	since‿y: 2026,
 }
 const ASSET: Asset = {

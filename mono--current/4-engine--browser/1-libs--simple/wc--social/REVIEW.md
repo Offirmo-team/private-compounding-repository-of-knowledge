@@ -58,11 +58,11 @@ references) scratch folders — not reviewed here per instructions.
 - **G6-P18-06** (Major) — Same unescaped-interpolation pattern exists in `renderꓽAuthor()` (lines 606-644):
   `author.urlⵧcanonical`, `author.email`, `url_social.network`, and `url_social.url` are all concatenated directly into
   `href="${...}"` and text-node positions of a raw HTML string (typed as `Html‿str`, presumably later inserted via
-  `dangerouslySetInnerHTML` or `innerHTML` by a consumer). If any `Author` data ever originates from user input or an
+  `dangerouslySetInnerHTML` or `innerHTML` by a consumer). If any `Creator` data ever originates from user input or an
   untrusted CMS field (plausible given `network`/`url`/`email` are free-form author-profile fields), this is a
   straightforward HTML/attribute-injection vector. Since this function's entire purpose is to _produce_ HTML for later
   unsafe insertion, it should escape each interpolated value (e.g. `encodeURIComponent`-style guard for URLs,
-  HTML-entity escaping for text) rather than assume all `Author` records are always developer-authored trusted data.
+  HTML-entity escaping for text) rather than assume all `Creator` records are always developer-authored trusted data.
 - **G6-P18-07** (Minor) — Plain-object property lookups keyed by untrusted attribute strings without an own-property
   guard: `SOCIAL_NETWORKS_INFO[network_id]` (`_get_network_info`, line 668) and `SOCIAL_NETWORKS_INFO[candidate]`
   (line 421) use bracket access on a plain object literal, which inherits from `Object.prototype`. A

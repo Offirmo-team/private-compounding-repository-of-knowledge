@@ -5,8 +5,8 @@ const local_url = new URL("642502781_18071243444564673_4924519196731415003_n.jpg
 /////////////////////////////////////////////////
 
 const THING: Thing = {
-	description: "Where Silence Orbits the Infinite",
-	author: neon_dimensionss,
+	caption: "Where Silence Orbits the Infinite",
+	creator: neon_dimensionss,
 	since‿y: 2026,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {
@@ -46,7 +46,7 @@ export default BG
 
 /////////////////////////////////////////////////
 
-import { type Author, registerꓽasset_usageⵧload, type Url‿str } from "@monorepo-private/credits"
+import { type Creator, registerꓽasset_usageⵧload, type Url‿str } from "@monorepo-private/credits"
 import type { Thing, WithOnlinePresence, ThingWithOnlinePresence, Asset } from "@monorepo-private/credits"
 import neon_dimensionss from "@monorepo-private/credits/authors/neon.dimensionss"
 

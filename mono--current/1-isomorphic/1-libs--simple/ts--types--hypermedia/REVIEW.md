@@ -51,7 +51,7 @@
   The `thing.contact ||` on the second line is dead — the function already returned early when `thing.contact` was
   truthy. Harmless but confusing; simplify to `const url = ThingSelectors.getꓽauthor__contact(thing)`.
 
-- **[Nit] G2-P21-07** — `module/90-semantic/20-author/index.tests.ts` only covers the "empty" Author case (no
+- **[Nit] G2-P21-07** — `module/90-semantic/20-creator/index.tests.ts` only covers the "empty" Author case (no
   `intro`/`email`/`contact`). The override paths of `getꓽintro`, `getꓽemail`, `getꓽcontact` when those fields are
   actually provided are untested.
 

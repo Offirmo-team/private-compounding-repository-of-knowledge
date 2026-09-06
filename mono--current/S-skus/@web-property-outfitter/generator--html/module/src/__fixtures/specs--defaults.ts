@@ -1,6 +1,6 @@
 import type { Contentⳇweb } from "@monorepo-private/ts--types--hypermedia"
 
-import { type HtmlFileSpec } from "../.."
+import { type HtmlFileSpec } from "../types.ts"
 
 /////////////////////////////////////////////////
 /*

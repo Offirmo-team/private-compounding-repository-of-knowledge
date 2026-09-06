@@ -145,7 +145,7 @@ export function Div() {
 import type { Meta‿v3, Story‿v3, StoryContext } from "@monorepo-private/storypad"
 ```
 
-## Core unicode
+## Core Unicode
 
 Arrows and supplemental https://jrgraphix.net/r/Unicode/2190-21FF https://jrgraphix.net/r/Unicode/2900-297F
 https://jrgraphix.net/r/Unicode/2B00-2BFF

@@ -14,11 +14,16 @@ import type { Immutable } from "@monorepo-private/ts--types"
 /////////////////////////////////////////////////
 
 const oxfmtᐧconfigᐧts__path‿ar: NodePathⳇRelative = `${PATHVARⵧROOTⵧNODE}/oxfmt.config.ts`
-
 const manifestꓽoxfmtᐧconfigᐧts: StructuredFsⳇFileManifest = {
 	path‿ar: oxfmtᐧconfigᐧts__path‿ar,
 	format: "text", // for now TODO improve 1D
 	doc: ["https://oxc.rs/docs/guide/usage/formatter/config-file-reference.html"],
+}
+
+const manifestꓽᐧideaⳇOxfmtSettingsᐧxml: StructuredFsⳇFileManifest = {
+	path‿ar: ".idea/OxfmtSettings.xml",
+	format: "text", // for now TODO improve 1D
+	doc: ["https://viteplus.dev/guide/ide-integration#jetbrains-intellij-webstorm-etc"],
 }
 
 /////////////////////////////////////////////////
@@ -26,6 +31,8 @@ const manifestꓽoxfmtᐧconfigᐧts: StructuredFsⳇFileManifest = {
 const PLUGIN: Plugin = {
 	onꓽload(state: Immutable<StateLib.State>): Immutable<StateLib.State> {
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽoxfmtᐧconfigᐧts)
+		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧideaⳇOxfmtSettingsᐧxml)
+
 		state.pkg_infos_resolver.preload("oxfmt")
 
 		return state
@@ -59,7 +66,7 @@ const PLUGIN: Plugin = {
 		switch (node?.type) {
 			case "monorepo": {
 				// important to help IDE when opened on the monorepo subdir = won't inherit the git level one
-				const output_spec: FileOutputPresent = {
+				const output_specꓽoxfmtᐧconfig: FileOutputPresent = {
 					parent_node: node,
 					manifest: manifestꓽoxfmtᐧconfigᐧts,
 					intent: "present--exact",
@@ -117,7 +124,25 @@ export default defineConfig({
 						`,
 					},
 				}
-				state = StateLib.requestꓽfile_output(state, output_spec)
+				state = StateLib.requestꓽfile_output(state, output_specꓽoxfmtᐧconfig)
+
+				// important to format "on the go", highly desirable
+				const output_specꓽᐧideaⳇOxfmtSettings: FileOutputPresent = {
+					parent_node: node,
+					manifest: manifestꓽᐧideaⳇOxfmtSettingsᐧxml,
+					intent: "present--exact",
+					content: {
+						text: `
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+	<component name="OxfmtSettings">
+		<option name="fixAllOnSave" value="true" />
+	</component>
+</project>
+						`,
+					},
+				}
+				state = StateLib.requestꓽfile_output(state, output_specꓽᐧideaⳇOxfmtSettings)
 				break
 			}
 

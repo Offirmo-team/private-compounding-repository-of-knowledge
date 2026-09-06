@@ -14,7 +14,7 @@ used by the pkg-analyzer to classify files found while scanning a pure module.
   `chai`, `sinon`, `vitest`, `@types/mocha`, `@types/sinon` are all declared as devDependencies, yet `package.json` has
   no `"test"` script and there isn't a single `*.tests.ts` file in the package.
 
-- **G9-P60H-03** (Nit) — `module/MANIFEST.json5` is empty (`{}`), with no `description`, unlike sibling packages such as
+- **G9-P60H-03** (Nit) — `module/MANIFEST.json5` is empty (`{}`), with no `caption`, unlike sibling packages such as
   `60-pkg-analyzer` which document their purpose there.
 
 - **G9-P60H-04** (Nit) — No `README.md` for the package.

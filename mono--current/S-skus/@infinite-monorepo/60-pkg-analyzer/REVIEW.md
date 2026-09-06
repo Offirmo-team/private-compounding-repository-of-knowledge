@@ -57,4 +57,4 @@ build-related files.
 ## Notes
 
 - The package is pure-functional in style (no classes), consistent with monorepo conventions.
-- `README.md` is absent; the package's purpose is only documented via the one-line `description` in `package.json`.
+- `README.md` is absent; the package's purpose is only documented via the one-line `caption` in `package.json`.

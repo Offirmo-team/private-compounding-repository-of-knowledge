@@ -1,10 +1,8 @@
-import type { Author, SocialNetworkLink, Url‿str } from "@monorepo-private/ts--types--hypermedia"
-
 /////////////////////////////////////////////////
 
-const EMAIL = "offirmo.net@gmail.com"
+export const EMAIL: Email‿str = "offirmo.net@gmail.com"
 
-const WEBSITE: Url‿str = "https://www.offirmo.net/"
+export const WEBSITE: Url‿str = "https://www.offirmo.net/"
 
 // prettier-ignore
 const SOCIAL_LINKⵧARTSTATION: SocialNetworkLink  = { network: 'artstation',  handle: 'Offirmo',   url: 'https://www.artstation.com/offirmo'   } satisfies SocialNetworkLink
@@ -34,7 +32,7 @@ const SOCIAL_LINKⵧTWITTER: SocialNetworkLink = {
 	url: "https://twitter.com/Offirmo",
 } satisfies SocialNetworkLink
 
-const AUTHOR: Author = {
+export const CREATOR: Creator = {
 	name: "Offirmo",
 	intro: "software engineer, open-source developer & creator",
 	email: EMAIL,
@@ -54,14 +52,4 @@ const AUTHOR: Author = {
 
 /////////////////////////////////////////////////
 
-export {
-	EMAIL,
-	WEBSITE,
-	SOCIAL_LINKⵧARTSTATION,
-	SOCIAL_LINKⵧGITHUB,
-	SOCIAL_LINKⵧINSTAGRAM,
-	SOCIAL_LINKⵧPRODUCTHUNT,
-	SOCIAL_LINKⵧREDDIT,
-	SOCIAL_LINKⵧTWITTER,
-	AUTHOR,
-}
+import type { Creator, Email‿str, SocialNetworkLink, Url‿str } from "@monorepo-private/ts--types--hypermedia"

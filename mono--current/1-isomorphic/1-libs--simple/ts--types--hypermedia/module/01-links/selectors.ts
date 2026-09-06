@@ -1,14 +1,14 @@
 import { assert_from, assert } from "@monorepo-private/assert"
 import { FAKE_ORIGIN, normalizeꓽurl } from "@monorepo-private/normalize-string"
 import type { Immutable } from "@monorepo-private/ts--types"
-import { isꓽobjectⵧliteral } from "@monorepo-private/type-detection"
+import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
 import type { Uri‿x, SchemeSpecificURIPart, Hyperlink, Hyperlink‿x, Uri‿str, LinkRelation } from "./types.ts"
 
 /////////////////////////////////////////////////
 
 function isꓽHyperlink(x: Immutable<any>): x is Hyperlink {
-	if (!isꓽobjectⵧliteral(x)) return false
+	if (!isꓽobjectⵧplain(x)) return false
 
 	return Object.hasOwn(x, "href")
 }

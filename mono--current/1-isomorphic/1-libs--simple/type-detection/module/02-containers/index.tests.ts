@@ -2,7 +2,7 @@ import { expect } from "chai"
 
 import type { Immutable } from "@monorepo-private/ts--types"
 
-import { isꓽarrayⵧempty, isꓽobjectⵧliteralⵧempty, isꓽcontainerⵧempty, hasꓽcontent } from "./index.ts"
+import { isꓽarrayⵧempty, isꓽobjectⵧplainⵧempty, isꓽcontainerⵧempty, hasꓽcontent } from "./index.ts"
 
 /////////////////////////////////////////////////
 
@@ -36,23 +36,23 @@ describe("@monorepo-private/type-detection -- containers", function () {
 		it("should work", () => {
 			// completely unrelated types
 			// @ts-expect-error
-			expect(isꓽobjectⵧliteralⵧempty(null), "null").to.be.false
+			expect(isꓽobjectⵧplainⵧempty(null), "null").to.be.false
 			// @ts-expect-error
-			expect(isꓽobjectⵧliteralⵧempty(undefined), "undefined").to.be.false
+			expect(isꓽobjectⵧplainⵧempty(undefined), "undefined").to.be.false
 			// @ts-expect-error
-			expect(isꓽobjectⵧliteralⵧempty(NaN), "NaN").to.be.false
+			expect(isꓽobjectⵧplainⵧempty(NaN), "NaN").to.be.false
 			// @ts-expect-error
-			expect(isꓽobjectⵧliteralⵧempty(5), "number").to.be.false
+			expect(isꓽobjectⵧplainⵧempty(5), "number").to.be.false
 			// @ts-expect-error
-			expect(isꓽobjectⵧliteralⵧempty(""), "empty str").to.be.false
+			expect(isꓽobjectⵧplainⵧempty(""), "empty str").to.be.false
 
 			// closer types
-			expect(isꓽobjectⵧliteralⵧempty([]), "empty arr").to.be.false
+			expect(isꓽobjectⵧplainⵧempty([]), "empty arr").to.be.false
 
 			// final
-			expect(isꓽobjectⵧliteralⵧempty({}), "empty obj").to.be.true
-			expect(isꓽobjectⵧliteralⵧempty({ foo: 42 }), "NOT empty obj").to.be.false
-			expect(isꓽobjectⵧliteralⵧempty(new Boolean(1)), "NOT object literal").to.be.false
+			expect(isꓽobjectⵧplainⵧempty({}), "empty obj").to.be.true
+			expect(isꓽobjectⵧplainⵧempty({ foo: 42 }), "NOT empty obj").to.be.false
+			expect(isꓽobjectⵧplainⵧempty(new Boolean(1)), "NOT object literal").to.be.false
 		})
 	})
 

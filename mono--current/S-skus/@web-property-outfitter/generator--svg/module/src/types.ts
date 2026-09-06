@@ -69,7 +69,7 @@ export interface SVG extends SvgⳇContainerElement {
 	// https://www.sarasoueidan.com/blog/svg-coordinate-systems/
 	// = canvas where the SVG is drawn
 	// = user coordinate system
-	viewBox: SVGViewBox
+	viewBox: SvgⳇViewBox
 
 	// +++ https://alistapart.com/article/practical-svg/#section2
 	// +++ https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html
@@ -140,11 +140,13 @@ export interface SVG extends SvgⳇContainerElement {
 	// can be used for a "sprite-like" svg
 	// see also https://caniuse.com/svg-fragment
 	views: {
-		[id: SvgⳇId]: SVGViewBox
+		[id: SvgⳇId]: SvgⳇViewBox
 	}
 }
+
+export type { Svg‿str, SvgⳇViewBox }
 
 /////////////////////////////////////////////////
 
 import type { IETFLanguageType } from "@monorepo-private/ts--types"
-import type { SvgⳇViewBox, Url‿str, CssⳇColor‿str } from "@monorepo-private/ts--types--hypermedia"
+import type { Svg‿str, SvgⳇViewBox, Url‿str, CssⳇColor‿str } from "@monorepo-private/ts--types--hypermedia"

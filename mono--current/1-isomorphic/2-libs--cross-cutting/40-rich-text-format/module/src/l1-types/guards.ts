@@ -2,7 +2,7 @@ import { Enum } from "typescript-string-enums"
 
 import { assert_from } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"
-import { assertꓽshape, isꓽobjectⵧkv } from "@monorepo-private/type-detection"
+import { assertꓽshape, isꓽobjectⵧdefined_non_array } from "@monorepo-private/type-detection"
 
 import { NodeType } from "./types.ts"
 import type { Node, StrictNode, NodeLike } from "./types.ts"
@@ -75,7 +75,7 @@ function _adaptꓽNodeLikeꓽref(candidate_value: unknown, candidate?: Immutable
 	if (typeof candidate_value === "string") return "demo"
 	if (candidate && getꓽdisplay_type(candidate) === "block") return ["Hello, ⎨⎨target⎬⎬!"] // mandatory array
 
-	if (isꓽobjectⵧkv(candidate_value)) return { $content: "Hello, ⎨⎨target⎬⎬!" } // allowed
+	if (isꓽobjectⵧdefined_non_array(candidate_value)) return { $content: "Hello, ⎨⎨target⎬⎬!" } // allowed
 
 	//if (Array.isArray(candidate_value)) return [] as Array<NodeLike>
 
@@ -167,7 +167,7 @@ function isꓽNode(node: Immutable<any>): node is Immutable<Node> {
 		// common case of checking the $content
 		return false
 	}
-	if (!node || !isꓽobjectⵧkv(node)) {
+	if (!node || !isꓽobjectⵧdefined_non_array(node)) {
 		return false
 	}
 

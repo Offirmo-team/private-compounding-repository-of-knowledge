@@ -1,16 +1,8 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-import type { CssⳇColor‿str, Dimensions2DSpec, Emoji } from "@monorepo-private/ts--types--hypermedia"
-import { getꓽdimensions2D } from "@monorepo-private/ts--types--hypermedia"
-
-import { getꓽviewbox__dimensions, getꓽlayer } from "./selectors.ts"
-import type { SVG, SvgⳇGroupElement, SvgⳇElement, SvgⳇId, SVGViewBox, Svg‿str, WithId, WithLayerId } from "./types.ts"
-
 /////////////////////////////////////////////////
 
 /////////////////////////////////////////////////
 
-function createꓽgroup(
+export function createꓽgroup(
 	options: Partial<WithId & Pick<SvgⳇGroupElement, "attributes">> = {},
 ): Immutable<SvgⳇGroupElement> {
 	return {
@@ -20,7 +12,7 @@ function createꓽgroup(
 	}
 }
 
-function addꓽcontentⵧto_group(
+export function addꓽcontentⵧto_group(
 	svg_group: Immutable<SvgⳇGroupElement>,
 	content: Immutable<SvgⳇGroupElement["content"][0]>,
 ): Immutable<SvgⳇGroupElement> {
@@ -32,7 +24,7 @@ function addꓽcontentⵧto_group(
 
 /////////////////////////////////////////////////
 
-function createꓽempty(): Immutable<SVG> {
+export function createꓽempty(): Immutable<SVG> {
 	return {
 		/////////////////////////////////////////////////
 		// Overall properties
@@ -58,14 +50,17 @@ function createꓽempty(): Immutable<SVG> {
 	}
 }
 
-function setꓽviewBox(svg: Immutable<SVG>, viewBox: Immutable<SVGViewBox>): Immutable<SVG> {
+export function setꓽviewBox(svg: Immutable<SVG>, viewBox: Immutable<SvgⳇViewBox>): Immutable<SVG> {
 	return {
 		...svg,
 		viewBox: [...viewBox],
 	}
 }
 
-function setꓽbackground_color(svg: Immutable<SVG>, background_color: CssⳇColor‿str | "auto-theme"): Immutable<SVG> {
+export function setꓽbackground_color(
+	svg: Immutable<SVG>,
+	background_color: CssⳇColor‿str | "auto-theme",
+): Immutable<SVG> {
 	if (background_color === "auto-theme") {
 		throw new Error(`Not implemented!`)
 	}
@@ -76,7 +71,7 @@ function setꓽbackground_color(svg: Immutable<SVG>, background_color: CssⳇCol
 	}
 }
 
-function addꓽlayer(svg: Immutable<SVG>, layer: Immutable<SvgⳇGroupElement>): Immutable<SVG> {
+export function addꓽlayer(svg: Immutable<SVG>, layer: Immutable<SvgⳇGroupElement>): Immutable<SVG> {
 	assert(layer.id, `Layer to add must have an id!`)
 
 	return {
@@ -85,7 +80,7 @@ function addꓽlayer(svg: Immutable<SVG>, layer: Immutable<SvgⳇGroupElement>):
 	}
 }
 
-function updateꓽlayer(svg: Immutable<SVG>, updated_layer: Immutable<SvgⳇGroupElement>): Immutable<SVG> {
+export function updateꓽlayer(svg: Immutable<SVG>, updated_layer: Immutable<SvgⳇGroupElement>): Immutable<SVG> {
 	let found = false
 	let has_change = false
 	const layers = svg.layers.map((layer) => {
@@ -108,7 +103,7 @@ function updateꓽlayer(svg: Immutable<SVG>, updated_layer: Immutable<SvgⳇGrou
 	}
 }
 
-function addꓽcontent(
+export function addꓽcontent(
 	svg: Immutable<SVG>,
 	content: Immutable<SvgⳇGroupElement["content"][0]>,
 	options: Partial<WithLayerId> = {},
@@ -131,7 +126,7 @@ function addꓽcontent(
 	return updateꓽlayer(svg, layer)
 }
 
-function addꓽcontentꘌcontour(svg: Immutable<SVG>, border_width?: number): Immutable<SVG> {
+export function addꓽcontentꘌcontour(svg: Immutable<SVG>, border_width?: number): Immutable<SVG> {
 	const { width, height } = getꓽviewbox__dimensions(svg)
 	border_width = border_width || Math.min(width, height) / 100
 
@@ -146,7 +141,7 @@ function addꓽcontentꘌcontour(svg: Immutable<SVG>, border_width?: number): Im
 	)
 }
 
-function addꓽcontentꘌmire(svg: Immutable<SVG>, border_width?: number): Immutable<SVG> {
+export function addꓽcontentꘌmire(svg: Immutable<SVG>, border_width?: number): Immutable<SVG> {
 	const [xmin, ymin, width, height] = svg.viewBox
 	const stroke_width = border_width || Math.min(width, height) / 100
 
@@ -175,7 +170,7 @@ function addꓽcontentꘌmire(svg: Immutable<SVG>, border_width?: number): Immut
 <!-- gradations -->
 	`
 
-	function addHorzGrad(spacing: number): SvgⳇGroupElement {
+	function addHorzGrad(spacing: number) {
 		let stroke_width = spacing / 10
 		let group = createꓽgroup({
 			attributes: {
@@ -211,7 +206,7 @@ function addꓽcontentꘌmire(svg: Immutable<SVG>, border_width?: number): Immut
 
 /////////////////////////////////////////////////
 
-function decorate_for_editors(svg: Immutable<SVG>): Immutable<SVG> {
+export function decorate_for_editors(svg: Immutable<SVG>): Immutable<SVG> {
 	const layers = svg.layers.map((layer) => {
 		layer = {
 			...layer,
@@ -258,7 +253,10 @@ inkscape:deskcolor="#d1d1d1"
 
 // Do NOT use
 // you most likely want to set those on RENDER! @see getꓽsvg‿str()
-function setꓽdimensions_ǃnot_recommended(svg: Immutable<SVG>, dimensions: Immutable<Dimensions2DSpec>): Immutable<SVG> {
+export function setꓽdimensions_ǃnot_recommended(
+	svg: Immutable<SVG>,
+	dimensions: Immutable<Dimensions2DSpec>,
+): Immutable<SVG> {
 	const { width, height } = getꓽdimensions2D(dimensions)
 
 	return {
@@ -276,7 +274,7 @@ function setꓽdimensions_ǃnot_recommended(svg: Immutable<SVG>, dimensions: Imm
 // <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
 // <text y='.9em' font-size='90'>🦄</text>
 // </svg>
-function createꓽfrom_emoji(emoji: Emoji): Immutable<SVG> {
+export function createꓽfrom_emoji(emoji: Emoji): Immutable<SVG> {
 	let svg = createꓽempty()
 	svg = setꓽviewBox(svg, [0, 0, 100, 100])
 	// no background color, looks better!
@@ -285,26 +283,16 @@ function createꓽfrom_emoji(emoji: Emoji): Immutable<SVG> {
 	return svg
 }
 
-function createꓽfrom_file(raw: Svg‿str): Immutable<SVG> {
+export function createꓽfrom_file(raw: Svg‿str): Immutable<SVG> {
 	throw new Error("NIMP!")
 }
 
 /////////////////////////////////////////////////
 
-export {
-	createꓽempty,
-	createꓽfrom_emoji,
-	setꓽviewBox,
-	setꓽbackground_color,
-	addꓽlayer,
-	updateꓽlayer,
-	addꓽcontentꘌcontour,
-	addꓽcontentꘌmire,
-	decorate_for_editors,
-	setꓽdimensions_ǃnot_recommended,
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+import type { CssⳇColor‿str, Dimensions2DSpec, Emoji } from "@monorepo-private/ts--types--hypermedia"
+import { getꓽdimensions2D } from "@monorepo-private/ts--types--hypermedia"
 
-	////////////
-
-	createꓽgroup,
-	addꓽcontentⵧto_group,
-}
+import { getꓽviewbox__dimensions, getꓽlayer } from "./selectors.ts"
+import type { SVG, SvgⳇGroupElement, SvgⳇElement, SvgⳇId, SvgⳇViewBox, Svg‿str, WithId, WithLayerId } from "./types.ts"

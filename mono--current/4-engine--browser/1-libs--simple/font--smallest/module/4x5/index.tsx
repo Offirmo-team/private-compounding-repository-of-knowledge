@@ -21,8 +21,8 @@ const CSS_CLASS = "omr⋄font⁚CG-pixel--4x5"
 const local_url: Url‿str = new URL("regular.ttf", import.meta.url).href
 
 const THING: Thing = {
-	description: "CG pixel 4x5 font",
-	author: AUTHOR,
+	caption: "CG pixel 4x5 font",
+	creator: AUTHOR,
 	since‿y: 2017,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {

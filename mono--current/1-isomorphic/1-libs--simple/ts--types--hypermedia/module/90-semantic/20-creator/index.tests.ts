@@ -1,13 +1,13 @@
 import { expect } from "chai"
 
-import { type Author, getꓽname, getꓽintro, getꓽemail, getꓽcontact } from "./index.ts"
+import { type Creator, getꓽname, getꓽintro, getꓽemail, getꓽcontact } from "./index.ts"
 
 /////////////////////////////////////////////////
 
 describe(`Web types -- author`, function () {
 	describe("selectors", function () {
 		it("should work -- empty", () => {
-			const out: Author = {
+			const out: Creator = {
 				urlⵧcanonical: "https://offirmo.net",
 				//urlsⵧsocial?: SocialNetworkLink[]
 				name: "Offirmo",

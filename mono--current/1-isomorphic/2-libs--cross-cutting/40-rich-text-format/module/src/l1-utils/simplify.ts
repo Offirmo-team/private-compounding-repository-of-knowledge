@@ -1,6 +1,6 @@
 import { assert_from, assert } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"
-import { isꓽobjectⵧliteral } from "@monorepo-private/type-detection"
+import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
 import { SCHEMA_VERSION } from "../consts.ts"
 import { NodeType, type StrictNode, type Node, type NodeLike } from "../l1-types/types.ts"
@@ -13,7 +13,7 @@ function simplifyꓽnode($any_node: NodeLike): NodeLike
 function simplifyꓽnode($any_node: Immutable<NodeLike>): Immutable<NodeLike> {
 	assert($any_node != null, `simplifyꓽnode(): param should be defined!`)
 
-	if (!isꓽobjectⵧliteral($any_node)) {
+	if (!isꓽobjectⵧplain($any_node)) {
 		return $any_node // already simplest
 	}
 

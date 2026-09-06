@@ -14,8 +14,8 @@ export { AUTHOR } from "@monorepo-private/marketing--creator"
 
 const THING: Thing = {
 	lang: "en",
-	description: "Some Space RPG",
-	author: AUTHOR,
+	caption: "Some Space RPG",
+	creator: AUTHOR,
 	since‿y: 2026,
 }
 /*

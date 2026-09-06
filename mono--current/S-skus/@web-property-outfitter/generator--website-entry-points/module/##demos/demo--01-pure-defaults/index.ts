@@ -6,34 +6,38 @@ import { generateꓽwebᝍproperty } from "@web-property-outfitter/generator--we
 import type { WebPage, WebPropertySpec } from "@web-property-outfitter/generator--website-entry-points"
 
 import type {
-	Author,
+	Creator,
 	Thing,
 	WithOnlinePresence,
 	ThingWithOnlinePresence,
 } from "@monorepo-private/ts--types--hypermedia"
 
-/////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
 /*
  WebPropertySpec
  ⇲ ThingWithOnlinePresence
    ⇲ WithOnlinePresence
  ⇲ WebPage
    ⇲ Thing
-     ↳ Author
+     ↳ Creator
 */
 
-const AUTHOR: Author = {
-	name: "anonymous",
-	//urlⵧcanonical: "https://anonymous.invalid",
-}
+// reminder, we're going minimal in this example
 
-const THING: Thing = {
-	author: AUTHOR,
-	description: "demo",
+const AUTHOR: Creator = {
+	name: "anonymous",
+
+	email: "anonymous@anonymous.invalid", // because at least 1 point of contact is required (we could have used other fields)
+	//urlⵧcanonical: "https://anonymous.invalid", // not required
 }
 
 /////////////////////////////////////////////////
 // Ok now we're having a website
+
+const THING: Thing = {
+	creator: AUTHOR,
+	caption: "A demo Web Property",
+}
 
 const WEBPAGE: WebPage = {
 	...THING,
@@ -46,20 +50,19 @@ const WEBPAGE: WebPage = {
 	/////// POLISH
 }
 
-/////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// specific to hosting
 
 const ONLINE_PRESENCE: WithOnlinePresence = {
 	urlⵧcanonical: "https://todo.invalid",
 }
 
 /////////////////////////////////////////////////
-// May NOT be a website!!
-// could be a store on amazon, a post on social media...
 const THINGⵧONLINE: ThingWithOnlinePresence = {
 	...THING,
 	...ONLINE_PRESENCE,
 
-	contact: "admin@anonymous.invalid",
+	//contact: "admin@anonymous.invalid",
 }
 const SPEC: WebPropertySpec = {
 	...WEBPAGE,

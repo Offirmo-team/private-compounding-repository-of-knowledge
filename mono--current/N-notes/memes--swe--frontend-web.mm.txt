@@ -112,6 +112,7 @@ case study -- 2024/09 Josh Comeau's blog https://www.joshwcomeau.com/blog/how-i-
 CDN
 CDN -- quality = hot/cold potato routing https://vercel.com/blog/latency-numbers-every-web-developer-should-know
 challenges -- accessibility
+challenges -- browser engine diversity and competition = https://www.newsonaut.com/articles/hang-on-to-your-firefox
 challenges -- browser support
 challenges -- layout shift
 challenges -- load time
@@ -389,6 +390,7 @@ layout -- &composer https://github.com/namecheap/ilc
 layout -- &trashing https://web.dev/articles/avoid-large-complex-layouts-and-layout-thrashing
 layout = determining the size and position of boxes https://www.yogalayout.dev/docs/about-yoga
 lazy loading -- preloading https://www.differentshelf.com/lazy-loading-isnt-just-lazy-its-late-the-web-deserves-faster/
+link rot = sites going down https://0.mk/blog/link-rot
 loading code from a random person's GitHub Pages https://blog.thereallo.dev/blog/decompiling-the-white-house-app
 MDN
 MDN curriculum https://developer.mozilla.org/en-US/curriculum/

@@ -14,8 +14,8 @@ export default BG
 /////////////////////////////////////////////////
 
 const THING: Thing = {
-	description: "Forest Background (Seamless Parallax)",
-	author: AUTHOR,
+	caption: "Forest Background (Seamless Parallax)",
+	creator: AUTHOR,
 	since‿y: 2020,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {

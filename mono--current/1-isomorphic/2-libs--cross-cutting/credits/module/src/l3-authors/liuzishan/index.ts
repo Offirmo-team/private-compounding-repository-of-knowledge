@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Author = {
+const AUTHOR: Creator = {
 	name: "zishan Liu",
 
 	urlⵧcanonical: "https://makie.artstation.com/resume",
@@ -17,4 +17,4 @@ export default AUTHOR
 
 /////////////////////////////////////////////////
 
-import type { Author } from "@monorepo-private/ts--types--hypermedia"
+import type { Creator } from "@monorepo-private/ts--types--hypermedia"

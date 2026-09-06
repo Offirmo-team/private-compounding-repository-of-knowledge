@@ -14,7 +14,7 @@ should be removed or the intended usage added.
 ### G9-P43-02 (Minor) — Empty `MANIFEST.json5` / no description
 
 `module/MANIFEST.json5` is `{}`. Compare to `03-pkg-infos-resolver` and `60-pkg-analyzer` in the same monorepo, which
-set a `description`. This package's purpose (loading the raw spec chain) isn't documented anywhere (no README either).
+set a `caption`. This package's purpose (loading the raw spec chain) isn't documented anywhere (no README either).
 
 ### G9-P43-03 (Nit) — Single-function module, thin package boundary
 

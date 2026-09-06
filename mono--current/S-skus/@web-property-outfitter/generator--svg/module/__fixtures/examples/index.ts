@@ -1,4 +1,4 @@
-import type { Svg‿str } from "../../types.ts"
+import type { Svg‿str } from "../../src/types.ts"
 
 /////////////////////////////////////////////////
 

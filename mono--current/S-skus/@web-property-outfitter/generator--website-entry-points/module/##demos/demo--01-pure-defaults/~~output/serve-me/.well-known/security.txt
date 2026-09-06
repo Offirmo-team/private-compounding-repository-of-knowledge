@@ -1,0 +1,6 @@
+# https://securitytxt.org/
+
+Please report any security issue or danger to the community to:
+- mailto:anonymous@anonymous.invalid
+
+Thanks for your contribution!

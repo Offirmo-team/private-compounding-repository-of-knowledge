@@ -1,7 +1,7 @@
 # Review: @monorepo-private/marketing--creator
 
 Static marketing/identity data for Offirmo's "creator" persona: an `AUTHOR` object (name, email, canonical URL, social
-links) built from `@monorepo-private/ts--types--hypermedia` types, with one test asserting it's a valid `Author`.
+links) built from `@monorepo-private/ts--types--hypermedia` types, with one test asserting it's a valid `Creator`.
 
 ## Findings
 

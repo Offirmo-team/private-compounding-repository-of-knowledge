@@ -2,7 +2,7 @@
 
 import { getꓽhtml‿str } from "@web-property-outfitter/generator--html"
 
-import { SPEC } from "../../src/__specs/__fixtures/specs--blog--personal.js"
+import { SPEC } from "../../src/__fixtures/specs--blog--personal.js"
 
 /////////////////////////////////////////////////
 

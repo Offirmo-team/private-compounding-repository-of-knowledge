@@ -601,9 +601,9 @@ if (globalThis.customElements)
 
 ////////////////////////////////////
 
-import type { Author, Html‿str } from "@monorepo-private/ts--types--hypermedia"
+import type { Creator, Html‿str } from "@monorepo-private/ts--types--hypermedia"
 
-function renderꓽAuthor(author: Author, { theme = THEMES.default }: { theme?: Theme } = {}): Html‿str {
+function renderꓽAuthor(author: Creator, { theme = THEMES.default }: { theme?: Theme } = {}): Html‿str {
 	let result: Html‿str = `
 <nav is="offirmoⳆsocial-links" data-theme="${theme}">
 	<ol>`

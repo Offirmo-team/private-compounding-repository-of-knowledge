@@ -49,6 +49,7 @@ documentation -- divio system -- 03 Technical references = information-oriented,
 documentation -- divio system -- 04 Explanations (or discussions) = understanding-oriented, theoretical knowledge
 documentation -- divio system = https://documentation.divio.com/  https://nick.groenen.me/posts/the-4-types-of-technical-documentation/
 Edwards Deming 14 principles for management https://deming.org/explore/fourteen-points/
+engineering pod = a small, autonomous, cross-functional team dedicated to owning and delivering a specific product feature or project from start to finish
 Every piece of business finance I could come up with after 10 years as a CFO https://twitter.com/KurtisHanni/status/1560986912613072899
 exec summary https://lethain.com/present-to-executives/
 fix broken windows https://frontendatscale.com/issues/22/

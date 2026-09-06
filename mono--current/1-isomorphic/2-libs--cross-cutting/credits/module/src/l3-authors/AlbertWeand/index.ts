@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Author = {
+const AUTHOR: Creator = {
 	name: "Albert Weand",
 
 	urlⵧcanonical: "https://www.artstation.com/aweand",
@@ -29,4 +29,4 @@ export default AUTHOR
 
 /////////////////////////////////////////////////
 
-import type { Author } from "@monorepo-private/ts--types--hypermedia"
+import type { Creator } from "@monorepo-private/ts--types--hypermedia"

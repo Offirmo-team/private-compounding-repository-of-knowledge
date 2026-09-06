@@ -6,9 +6,9 @@ Now that all modules are built (required), you can move into an **individual** m
 
 ```bash
 ## this will trigger watch build of the compatible cjs version, which works in all envs
-yarn dev
+nr dev
 
-yarn test
+nr test
 ```
 
 Note than modifying a module's source most likely requires a build for it to take effect. Be aware of the dependencies.
@@ -100,19 +100,22 @@ bolt clean
 ## updates dependencies (minor + patch)
 
 ```bash
-nvm i
+mise i
+nlx update-browserslist-db@latest # cf. https://github.com/browserslist/browserslist#browsers-data-updating
+ni
+./autoops.bash
+
+
 onn
 bolt clean && rm -rf node_modules yarn.lock package-lock.json && bolt && yarn outdated
-##yarn eslint:packages --fix
-npx update-browserslist-db@latest # cf. https://github.com/browserslist/browserslist#browsers-data-updating
-npx yarn-deduplicate --list
+
 ```
 
 ## serve for dev
 
 ```bash
 ngrok http -subdomain=offirmo 1981
-yarn serve
+nr serve
 ```
 
 ## publish a package

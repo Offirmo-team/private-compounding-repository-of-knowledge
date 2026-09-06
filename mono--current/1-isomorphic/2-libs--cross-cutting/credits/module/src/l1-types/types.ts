@@ -3,7 +3,7 @@
  */
 
 import type { SemVer } from "@monorepo-private/ts--types"
-import type { Url‿str, Thing, Author } from "@monorepo-private/ts--types--hypermedia"
+import type { Url‿str, Thing, Creator } from "@monorepo-private/ts--types--hypermedia"
 
 /////////////////////////////////////////////////
 /* Reminder:
@@ -77,7 +77,7 @@ interface Asset extends Thing {
 
 	alt: string // a textual description for clients who can't display
 
-	co_authors?: Array<Author>
+	co_authors?: Array<Creator>
 
 	ai_involvement:
 		| "none"

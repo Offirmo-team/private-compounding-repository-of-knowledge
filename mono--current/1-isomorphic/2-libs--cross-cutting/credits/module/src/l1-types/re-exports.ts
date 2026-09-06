@@ -3,7 +3,7 @@
 import type { PathⳇAny } from "@monorepo-private/ts--types"
 import type {
 	Url‿str,
-	Author,
+	Creator,
 	Thing,
 	WithOnlinePresence,
 	ThingWithOnlinePresence,
@@ -11,4 +11,4 @@ import type {
 
 /////////////////////////////////////////////////
 
-export { type PathⳇAny, type Url‿str, type Author, type Thing, type WithOnlinePresence, type ThingWithOnlinePresence }
+export { type PathⳇAny, type Url‿str, type Creator, type Thing, type WithOnlinePresence, type ThingWithOnlinePresence }

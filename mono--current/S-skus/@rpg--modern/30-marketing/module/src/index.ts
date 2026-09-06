@@ -2,7 +2,7 @@ import type { WebPage } from "@web-property-outfitter/generator--website-entry-p
 
 import { AUTHOR } from "@monorepo-private/marketing--creator"
 import type {
-	Author,
+	Creator,
 	SocialNetworkLink,
 	Url‿str,
 	Thing,
@@ -24,8 +24,8 @@ WebPropertySpec
 
 const THING: Thing = {
 	lang: "en",
-	description: "Senior Dev Mental Models",
-	author: AUTHOR,
+	caption: "Senior Dev Mental Models",
+	creator: AUTHOR,
 	since‿y: 2026,
 }
 

@@ -29,7 +29,7 @@ function registerꓽasset_usageⵧload(asset: Immutable<Asset>): void {
 	// TODO unique id?
 	// TODO need duplicate detection?
 	if (STORE.assetsⵧall.has(asset)) {
-		console.warn(`🖼️ "${asset.type}" asset: ${asset.description} multiple load??`)
+		console.warn(`🖼️ "${asset.type}" asset: ${asset.caption} multiple load??`)
 	}
 
 	STORE.assetsⵧall.add(asset)
@@ -42,7 +42,7 @@ function registerꓽasset_usageⵧstart(asset: Immutable<Asset>): void {
 	if (STORE.assetsⵧrecents.includes(asset)) return
 
 	console.log(
-		`🖼️ about to feature a ${asset.type} asset from "${asset.author?.name || "unknown"}": "${asset.description}"`,
+		`🖼️ about to feature a ${asset.type} asset from "${asset.creator?.name || "unknown"}": "${asset.caption}"`,
 	)
 
 	STORE.assetsⵧall.add(asset)

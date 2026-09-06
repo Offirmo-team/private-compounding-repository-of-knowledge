@@ -41,7 +41,7 @@ in Internet Explorer
 
 ### Meta Description
 
-The `description` meta tag provides a short description of the page. In some
+The `caption` meta tag provides a short description of the page. In some
 situations this description is used as a part of the snippet shown in the search
 results.
 
