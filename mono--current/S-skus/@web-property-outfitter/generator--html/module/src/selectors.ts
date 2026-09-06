@@ -1,3 +1,8 @@
+import snippetꓽcssⳇboxᝍlayoutⵧnatural from "@web-property-outfitter/generator--html--snippets/css/box-layout--natural.ts"
+/////////////////////////////////////////////////
+import snippetꓽcssⳇviewportⵧfull from "@web-property-outfitter/generator--html--snippets/css/viewport--full.ts"
+import snippetꓽhtmlⳇreact_root from "@web-property-outfitter/generator--html--snippets/html/react-root.ts"
+import snippetꓽjsⳇnormalizeᝍtrailingᝍslash from "@web-property-outfitter/generator--html--snippets/js/snippet--normalize-url.ts"
 import { Enum } from "typescript-string-enums"
 
 import { assert_from, assert } from "@monorepo-private/assert"
@@ -7,11 +12,6 @@ import type { Url‿str, Css‿str, Html‿str, JS‿str, Contentⳇweb } from "
 import * as Selectors from "@monorepo-private/ts--types--hypermedia"
 import { hasꓽcontent } from "@monorepo-private/type-detection"
 
-import snippetꓽcssⳇboxᝍlayoutⵧnatural from "./snippets/css/box-layout--natural.ts"
-/////////////////////////////////////////////////
-import snippetꓽcssⳇviewportⵧfull from "./snippets/css/viewport--full.ts"
-import snippetꓽhtmlⳇreact_root from "./snippets/html/react-root.ts"
-import snippetꓽjsⳇnormalizeᝍtrailingᝍslash from "./snippets/js/snippet--normalize-url.ts"
 import { FeatureSnippets, type HtmlFileSpec, type HtmlMetas, type Links } from "./types.ts"
 
 /////////////////////////////////////////////////

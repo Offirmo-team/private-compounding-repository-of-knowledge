@@ -3,7 +3,7 @@ allowBuilds:
    fetch-mock: false
 autoInstallPeers: false
 catalog:
-   "@earendil-works/pi-tui": ^0.84
+   "@earendil-works/pi-tui": ^0.85
    "@nodelib/fs.walk": ^3
    "@parcel/plugin": ^2
    "@pnpm/constants": ^1102
@@ -78,7 +78,7 @@ catalog:
    typescript: ^6
    typescript-string-enums: ^1
    vite: ^8
-   vitest: ^4
+   vitest: ^5
    write-json-file: ^7
    yaml: ^2
    zx: ^8

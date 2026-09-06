@@ -21,7 +21,7 @@ const manifestꓽoxfmtᐧconfigᐧts: StructuredFsⳇFileManifest = {
 }
 
 const manifestꓽᐧideaⳇOxfmtSettingsᐧxml: StructuredFsⳇFileManifest = {
-	path‿ar: ".idea/OxfmtSettings.xml",
+	path‿ar: `${PATHVARⵧROOTⵧNODE}/.idea/OxfmtSettings.xml`,
 	format: "text", // for now TODO improve 1D
 	doc: ["https://viteplus.dev/guide/ide-integration#jetbrains-intellij-webstorm-etc"],
 }

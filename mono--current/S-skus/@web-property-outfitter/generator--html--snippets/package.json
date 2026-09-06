@@ -1,40 +1,34 @@
 {
-	"name": "@web-property-outfitter/generator--html",
+	"name": "@web-property-outfitter/generator--html--snippets",
 	"version": "0.0.1",
 	"private": true,
-	"description": "Generator of html documents from a typed spec",
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
-		".": "./module/src/index.ts"
+		".": "./module/src/html/react-root.ts",
+		"./*": "./module/src/*"
 	},
 	"scripts": {
-		"_check": "run-s check:ts",
-		"check:ts": "echo \"@web-property-outfitter/generator--html\" && tsc --noEmit",
-		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demo/demo--personal-blog/index.ts",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@web-property-outfitter/generator--html--snippets\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
-		"@monorepo-private/assert": "workspace:*",
-		"@monorepo-private/normalize-string": "workspace:*",
-		"@monorepo-private/ts--types--hypermedia": "workspace:*",
-		"@monorepo-private/type-detection": "workspace:*",
-		"@web-property-outfitter/generator--html--snippets": "workspace:*",
-		"typescript-string-enums": "catalog:"
+		"@monorepo-private/assert": "workspace:*"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
 		"@types/sinon": "catalog:",
 		"chai": "catalog:",
 		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
-		"prettier": "catalog:",
 		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

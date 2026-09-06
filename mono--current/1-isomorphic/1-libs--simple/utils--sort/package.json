@@ -8,9 +8,10 @@
 		".": "./module/index.ts"
 	},
 	"scripts": {
-		"check": "run-s check:ts",
+		"check": "run-s test check:ts",
 		"check:ts": "echo \"@monorepo-private/utils--sort\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
+		"test": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js -- --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -20,6 +21,8 @@
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
+		"@types/chai": "catalog:",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
 		"@types/sinon": "catalog:",

@@ -166,6 +166,7 @@ alias  mono.@tracer-bullet--web-app.isomorphic-state='cd "$MONOREPO_ROOT__CURREN
 alias  mono.@tracer-bullet--web-app.web-core='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@tracer-bullet--web-app/70-web-core/'
 alias  mono.@tracer-bullet--web-app.web-property='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@tracer-bullet--web-app/80-web-property/'
 alias  mono.@tracer-bullet--web-app.final--web-app='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@tracer-bullet--web-app/90-final--web-app/'
+alias  mono.@web-property-outfitter.generator--html--snippets='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/generator--html--snippets/'
 alias  mono.@web-property-outfitter.generator--html='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/generator--html/'
 alias  mono.@web-property-outfitter.generator--svg='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/generator--svg/'
 alias  mono.@web-property-outfitter.generator--website-entry-points='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/generator--website-entry-points/'
