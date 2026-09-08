@@ -22,11 +22,6 @@ Commands to transfer contributions when no access:
 
 ## exporting staged uncommited changes
 git diff --staged --patch --binary > ~/work/tmp/otpcrk.patch
-## git apply is intentionally strict: it expects the patch to match the target files closely.
-## --3way lets it fall back to a merge if the target tree has drifted slightly.
-git apply --3way ~/work/tmp/otpcrk.patch
-git apply --3way ./otpcrk.patch
-
 
 ## exporting last commits
 ## am = archive mail, designed for the "mail patches around" 
@@ -34,6 +29,13 @@ git apply --3way ./otpcrk.patch
 git format-patch -3 --stdout --binary > otpcrk.patch
 ## --3way lets it fall back to a merge if the target tree has drifted slightly. This recreates all three commits with original messages, authors, and author dates
 git am --3way < last3.patch
+
+
+
+## git apply is intentionally strict: it expects the patch to match the target files closely.
+## --3way lets it fall back to a merge if the target tree has drifted slightly.
+git apply --3way ~/work/tmp/otpcrk.patch
+
 
 
 ## then after the exported change has been pushed from another clone:

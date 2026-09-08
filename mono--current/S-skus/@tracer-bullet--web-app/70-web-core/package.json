@@ -5,7 +5,7 @@
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
-		".": "./module/src/index.ts"
+		".": "./module/src/index.tsx"
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
@@ -32,12 +32,15 @@
 		"chai": "catalog:",
 		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:",
 		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"
 	},
 	"peerDependencies": {
+		"react": "catalog:",
 		"tslib": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"

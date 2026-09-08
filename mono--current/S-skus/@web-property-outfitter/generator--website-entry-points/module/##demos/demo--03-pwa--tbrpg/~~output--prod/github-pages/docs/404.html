@@ -17,7 +17,7 @@
 			href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g id='layer-auto'><text y='.9em' font-size='90'>👨‍💻</text></g></svg>"
 		/>
 
-		<title>[title--page]Offirmo - Creator - Support</title>
+		<title>404 Not Found</title>
 
 		<style>
 			/******* critical CSS https://www.smashingmagazine.com/2015/08/understanding-critical-css/ */
@@ -57,56 +57,48 @@
 
 		<script>
 			/////// critical JS ///////
-			;(function normalize_trailing_slash() {
-				/* IF the current path doesn't end with a trailing slash, this may be an issue
-				 * ex if we're located by our parent folder (implicit file, a lot of servers automatically do that)
-				 *    foo/bar/index.html   served as  /foo/bar (no trailing slash)
-				 * It messes with relative paths!
-				 * ex. (continued) link rel=site.webmanifest = /foo/site.webmanifest
-				 * https://searchfacts.com/url-trailing-slash/
-				 * https://ahrefs.com/blog/trailing-slash/
-				 *
-				 * Could we use <base> instead? Pb. is when the content is served on different domains: dev, staging, prod...
-				 *
-				 * SO we decide to ensure folders have a trailing slash
-				 * ex. /foo/bar/index.html => ✔ no change
-				 * ex. /foo/bar/           => ✔ no change
-				 * ex. /foo/bar            => ✖ REDIRECT foo/bar/
-				 */
-				const trailing_segment = location.pathname.split('/').at(-1) || ''
-				if (!trailing_segment) {
-					// ✔ located by a folder, location ends with a trailing slash
-					// NOTE Some browsers (Chrome) may VISUALLY HIDE the trailing slash on the root of the domain, but it's there ✔
+			;(function redirect_extensionless_known_pathes() {
+				if (location.redirect_pending) return
+
+				const pathname_without_leading_and_trailing_slash = location.pathname
+					.split('/')
+					.filter(s => !!s)
+					.join('/')
+
+				const trailing_path_segment = pathname_without_leading_and_trailing_slash.split('/').at(-1) || ''
+				if (!trailing_path_segment) {
+					// ✔ we're at the root of the domain
 					return
 				}
 
-				const is_trailing_segment_a_html_file =
-					trailing_segment.endsWith('.html') || trailing_segment.endsWith('.htm')
-				if (is_trailing_segment_a_html_file) {
-					// ✔ located by a file, no trailing slash
+				const has_trailing_segment_an_extension = trailing_path_segment.split('.').length > 1
+				if (has_trailing_segment_an_extension) {
+					// ✔ the trailing segment has an extension
 					return
 				}
 
-				// ✖ we are located by a folder without a trailing slash.
-				// Redirect to the version with slash
-				const locationᐧpathnameⵧfixed = location.pathname + '/'
+				// ✖ we are located by an extension-less path
+				// Our server doesn't support extensionless URLs
+				// attempt to redirect to the version with an extension (this may still 404)
+				const locationᐧpathnameⵧfixed = '/' + pathname_without_leading_and_trailing_slash + '.html'
 
-				// Do NOT use location.replace() or it can trigger infinite loops with servers doing auto redirects with/without slashes ex. https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
-				history.replaceState(null, '', location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
+				console.log('redirect_extensionless_known_pathes() REDIRECTING…')
+				location.redirect_pending = true // to communicate to possible other redirects that one is already in progress
+				location.replace(location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
 			})()
 		</script>
 	</head>
 
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
-		<h1>Support</h1>
-		<p>Should you need support, please visit:</p>
-		<ul>
-			<li>Security issues: <code>https://github.com/Offirmo/offirmo.github.io/issues</code></li>
-			<li>Tech support: <code>https://github.com/Offirmo/offirmo.github.io/issues</code></li>
-			<li>Anything else: <code>https://github.com/Offirmo/ama/issues</code></li>
-		</ul>
-		<a href="/">⬅ Back to home</a>
+		<h1>404 Not Found</h1>
+		<p>Sorry, the page you were looking for doesn't exist.</p>
+		<nav>
+			<ul>
+				<li><a href="/">Go home</a></li>
+				<li><button onclick="history.back()">Navigate back</button></li>
+			</ul>
+		</nav>
 
 		<script type="module">
 			/* NON-critical JS */

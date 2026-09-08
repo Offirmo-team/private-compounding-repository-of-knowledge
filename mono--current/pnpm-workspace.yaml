@@ -53,7 +53,7 @@ catalog:
    murmurhash3js-revisited: ^3
    nanoid: ^6
    npm-run-all: ^4
-   oxfmt: ^0.66
+   oxfmt: ^0.67
    oxlint: ^1
    oxlint-tsgolint: ^7
    package-json: ^10

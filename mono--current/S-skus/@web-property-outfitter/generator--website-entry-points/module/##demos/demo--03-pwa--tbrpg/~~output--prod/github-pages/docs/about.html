@@ -17,7 +17,7 @@
 			href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g id='layer-auto'><text y='.9em' font-size='90'>👨‍💻</text></g></svg>"
 		/>
 
-		<title>[title--page]Offirmo - Creator</title>
+		<title>Offirmo - Creator - About</title>
 
 		<style>
 			/******* critical CSS https://www.smashingmagazine.com/2015/08/understanding-critical-css/ */
@@ -94,55 +94,13 @@
 				// Do NOT use location.replace() or it can trigger infinite loops with servers doing auto redirects with/without slashes ex. https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
 				history.replaceState(null, '', location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
 			})()
-			// for parcel serve which defaults every non-matching path to /index.html
-			if (location.hostname === 'localhost') {
-				;(function redirect_extensionless_known_pathes() {
-					if (location.redirect_pending) return
-
-					const pathname_without_leading_and_trailing_slash = location.pathname
-						.split('/')
-						.filter(s => !!s)
-						.join('/')
-
-					const trailing_path_segment = pathname_without_leading_and_trailing_slash.split('/').at(-1) || ''
-					if (!trailing_path_segment) {
-						// ✔ we're at the root of the domain
-						return
-					}
-
-					const has_trailing_segment_an_extension = trailing_path_segment.split('.').length > 1
-					if (has_trailing_segment_an_extension) {
-						// ✔ the trailing segment has an extension
-						return
-					}
-
-					// ✖ we are located by an extension-less path
-					// Our server doesn't support extensionless URLs
-					// attempt to redirect to the version with an extension (this may still 404)
-					const locationᐧpathnameⵧfixed = '/' + pathname_without_leading_and_trailing_slash + '.html'
-
-					console.log('redirect_extensionless_known_pathes() REDIRECTING…')
-					location.redirect_pending = true // to communicate to possible other redirects that one is already in progress
-					location.replace(location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
-				})()
-			}
 		</script>
 	</head>
 
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
-		<header>
-			<ul>
-				<li><a href="/">Home</a></li>
-			</ul>
-		</header>
-		<main id="root">
-			<h1>[title--page]Offirmo - Creator</h1>
-			<article>
-				<p>Lorem ipsum dolor amet…</p>
-			</article>
-		</main>
-		<footer>TODO footer</footer>
+		<h1>About Offirmo - Creator</h1>
+		<p>TODO...</p>
 
 		<script type="module">
 			/* NON-critical JS */

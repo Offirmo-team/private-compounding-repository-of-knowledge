@@ -24,7 +24,6 @@
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
