@@ -14,14 +14,15 @@ const DEFAULT_OPTIONS: Options = {
 	full_path: true, // because it's what we usually want
 }
 
+// 1-level only
 // hat tip to https://stackoverflow.com/a/24594123/587407
 function lsDirsSync(srcpath: string, options: Partial<Options> = {}): Array<string> {
-	options = {
+	const opts: Options = {
 		...DEFAULT_OPTIONS,
 		...options,
 	}
 
-	let result = fs
+	return fs
 		.readdirSync(srcpath, { withFileTypes: true })
 		.map((dirent) => {
 			if (!dirent.parentPath) {
@@ -30,18 +31,18 @@ function lsDirsSync(srcpath: string, options: Partial<Options> = {}): Array<stri
 			return dirent
 		})
 		.filter((dirent) => dirent.isDirectory())
-		.map((dirent) => (options.full_path ? path.join(dirent.parentPath, dirent.name) : dirent.name))
-
-	return result.sort()
+		.map((dirent) => (opts.full_path ? path.join(dirent.parentPath, dirent.name) : dirent.name))
+		.sort()
 }
 
+// 1-level only
 function lsFilesSync(srcpath: string, options: Partial<Options> = {}): Array<string> {
-	options = {
+	const opts: Options = {
 		...DEFAULT_OPTIONS,
 		...options,
 	}
 
-	let result = fs
+	return fs
 		.readdirSync(srcpath, { withFileTypes: true })
 		.map((dirent) => {
 			if (!dirent.parentPath) {
@@ -50,24 +51,25 @@ function lsFilesSync(srcpath: string, options: Partial<Options> = {}): Array<str
 			return dirent
 		})
 		.filter((dirent) => dirent.isFile())
-		.map((dirent) => (options.full_path ? path.join(dirent.parentPath, dirent.name) : dirent.name))
-
-	return result.sort()
+		.map((dirent) => (opts.full_path ? path.join(dirent.parentPath, dirent.name) : dirent.name))
+		.sort()
 }
 
+// deep
 function lsFilesRecursiveSync(srcpath: string, options: Partial<Options> = {}): Array<string> {
-	options = {
+	const opts: Options = {
 		...DEFAULT_OPTIONS,
 		...options,
 	}
 
-	let result = lsFilesSync(srcpath, options)
-	let dirs = lsDirsSync(srcpath, options)
-	dirs.forEach((full_dir) => {
-		result = [...result, ...lsFilesRecursiveSync(full_dir)]
-	})
-
-	return result.sort()
+	return fs
+		.readdirSync(srcpath, { recursive: true, withFileTypes: true })
+		.filter((dirent) => dirent.isFile())
+		.map((dirent) => {
+			const full_path = path.join(dirent.parentPath, dirent.name)
+			return opts.full_path ? full_path : path.relative(srcpath, full_path)
+		})
+		.sort()
 }
 
 /////////////////////////////////////////////////

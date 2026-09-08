@@ -1,10 +1,12 @@
 "a short war would settle everything" WW1
 "the lights of Europe still trace the paths of ancient Roman roads" https://x.com/ccatalini/status/1983588222921023552
+#metoo
 1751-06-24 start of globalization with the founding of Manilla https://mail.blockworks.com/p/hard-money-is-bad-money
 1856 LLC "limited liability corporation" = is the greatest single discovery of modern times “Even steam and electricity are far less important than the limited liability corporation” https://blockworks.co/news/uniswap-duna-decentralization
 1969 Apollo on the Moon https://www.flickr.com/photos/projectapolloarchive/
 2007 - 2009 https://en.wikipedia.org/wiki/Great_Recession
 2014 Ukrainian economic and political crisis https://en.wikipedia.org/wiki/2014_pro-Russian_unrest_in_Ukraine
+2022 ChatGPT
 2024-12-04 https://en.wikipedia.org/wiki/Killing_of_Brian_Thompson
 6 innovations that made the modern world = Glass, Cold, Sound, Clean, Time, Light https://www.theguardian.com/books/2014/oct/03/how-we-got-to-now-by-steven-johnson-six-innovations-made-modern-world
 6 stages big cycle https://x.com/RayDalio/status/2022788750388998543
@@ -17,6 +19,8 @@ aristocracy = a form of government that places power in the hands of a small, pr
 backwardness https://en.wikipedia.org/wiki/The_Moral_Basis_of_a_Backward_Society
 bateau https://en.wikipedia.org/wiki/File:Uluburun1.jpg
 bateau https://en.wikipedia.org/wiki/List_of_surviving_ancient_ships
+big companies / balance of power / democracy
+biodiversity damage = https://www.oxfordmartin.ox.ac.uk/news/beef-and-dairy-drive-41-of-biodiversity-damage-linked-to-global-farmland
 bourgeoisie
 bourgeoisie -- sous &&
 brain drain https://en.wikipedia.org/wiki/Brain_drain
@@ -29,14 +33,27 @@ capitalism
 capitalism -- issues -- inability to collectively improve, ex. global warming
 capitalism -- late stage
 capitalism -- not the only force at play = religion, media etc.
+capitalism -- surveillance && -- 1. A new economic order that claims human experience as free raw material for hidden commercial practices of extraction, prediction, and sales
+capitalism -- surveillance && -- 2. A parasitic economic logic in which the production of goods and services is subordinated to a new global architecture of behavioral modification
+capitalism -- surveillance && -- 3. A rogue mutation of capitalism marked by concentrations of wealth, knowledge, and power unprecedented in human history
+capitalism -- surveillance && -- 4. The foundational framework of a surveillance economy
+capitalism -- surveillance && -- 5. As significant a threat to human nature in the twenty-first century as industrial capitalism was to the natural world in the nineteenth and twentieth
+capitalism -- surveillance && -- 6. The origin of a new instrumentarian power that asserts dominance over society and presents startling challenges to market democracy
+capitalism -- surveillance && -- 7. A movement that aims to impose a new collective order based on total certainty
+capitalism -- surveillance && -- 8. An expropriation of critical human rights that is best understood as a coup from above: an overthrow of the people’s sovereignty .
+capitalism -- surveillance && = https://matduggan.com/you-know-gdpr-is-good-based-on-who-hates-it/
 capitalism -- W. H. Mallock -- "is justified because it permits the most talented members of society to use the less talented for the sake of maximizing efficiency. Labor, for him, was an inert mass that was useless unless those with managerial and entrepreneurial talent set them to work. Hence, wealth is created, not by labor, but by the knowledge and ability of those who control labor. Maximization of corporate profits means in this case that the most entrepreneurial, innovative and inventive segment of society has used labor and resources to create wealth. In Mallock's view labor, by itself, creates nothing; it's not the wrench that puts the machine together, but the genius who invented it."
 case studies -- Taylor Farms = how one company's reach became a national risk https://farmaction.us/taylorfarmsreport/
+China / multi-power
 citizenship -- acquisition
 citizenship -- revocation = https://thewalrus.ca/canada-gave-them-citizenship-then-changed-its-mind/
 class -- high -- new money
 class -- high -- old money
 class -- low
 class -- middle
+climate change = failure to coordinate
+climate impact -- heat dome = https://www.severe-weather.eu/global-weather/excessive-heat-dome-heatwave-western-europe-mid-august-2026-mk/
+climate impact -- Underwater Oxygen Loss = https://scripps.ucsd.edu/news/underwater-oxygen-loss-threatens-earths-stability-researchers-warn
 communism
 containers https://x.com/ccatalini/status/1983588222921023552
 corn laws https://en.wikipedia.org/wiki/Corn_Laws
@@ -45,14 +62,17 @@ corruption = abuse of entrusted power for private gain.
 cosmos -- 1610 https://en.wikipedia.org/wiki/Copernican_Revolution
 cosmos -- 1920 galaxies https://en.wikipedia.org/wiki/Great_Debate_(astronomy)
 cosmos -- 1965 no life on Mars https://en.wikipedia.org/wiki/Martian_canals
+dark age of internet
 democracy -- education https://politics.stackexchange.com/questions/84583/is-democracy-possible-in-a-country-with-a-relatively-low-educated-population
 democracy -- guided https://en.wikipedia.org/wiki/Guided_democracy
 democracy -- representation = https://fortune.com/2026/07/27/shopify-ceo-voting-rights-stripping-americans-19th-century/
 democracy -- Socrates' challenge =  if you are on a large ship at sea, who should be trusted to steer it? the most qualified? Or the most popular?
 democracy -- types https://en.wikipedia.org/wiki/Guided_democracy
+democracy but powerless
 democratic backsliding https://en.wikipedia.org/wiki/Democratic_backsliding_in_the_United_States
 divine kingship
 domestication https://en.wikipedia.org/wiki/Anna_Karenina_principle#Failed_domestication
+doomscrolling https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death
 doomsday
 droits de l'homme = https://fr.wikisource.org/wiki/Charte_internationale_des_Droits_de_l%E2%80%99Homme_(1948)/D%C3%A9claration_universelle_des_Droits_de_l%E2%80%99Homme
 early life on Earth https://www.quantamagazine.org/a-treasure-trove-of-cambrian-fossils-rewrites-the-story-of-early-life-20260501/
@@ -65,12 +85,20 @@ empire = diverse forms
 empire = dominant form of large-scale human social organization since as far back as our sources let us see clearly
 energy superusers https://hardware.slashdot.org/story/25/10/31/1646235/the-worlds-secret-electricity-superusers-revealed
 every world power has its time in the sun, thanks to the uniqueness of their circumstances and the nature of their character and culture (e.g., they have the essential elements of a strong work ethic, smarts, discipline, education, etc.), but they all eventually decline. Some do so more gracefully than others, with less trauma, but they nevertheless decline https://x.com/RayDalio/status/2022788750388998543
+expand human potential
 facilitation payments = minor payments made to public officials through unofficial channels to expedite or secure the performance of routine government actions of a minor nature.
 family
 farming -- rice https://xd009642.github.io/2026/04/01/My-Experience-as-a-Rice-Farmer.html
 Five Eyes intelligence-sharing alliance = includes Australia, along with NATO, the US-led military alliance
+forever chemicals = https://www.propublica.org/podcast/forever-chemicals-pfas-pfos-3m-secret-kris-hansen
 free market -- example of dysfunctionment https://sschueller.github.io/posts/the-free-market-lie/
+frog in a well = vastness of the universe, where are we? what are we?
+frog in a well = we may need to improve our brain capabilities
 games -- chess https://chess.stackexchange.com/questions/47538/why-does-open-position-favor-black
+gender theory -- gender = Your psychological sense of self. Who you know yourself to be, based on how much you align (or don’t align) with what you understand to be the options for gender.
+gender theory -- lgbtq
+gender theory -- Sex: Sex (sometimes called biological or physical sex) is comprised of things like reproductive organs, chromosomes, hormones, and body hair.
+gender wars
 geopolitics -- client state -- associated state
 geopolitics -- client state -- condominium
 geopolitics -- client state -- dominion
@@ -93,6 +121,7 @@ geopolitics -- tribute -- tributary system https://en.wikipedia.org/wiki/Tributa
 geopolitics -- tribute https://en.wikipedia.org/wiki/Tribute
 golden rule
 governmental overreach
+great filter -- rsrc depletion https://en.wikipedia.org/wiki/Resource_depletion
 great filter https://blog.codinghorror.com/the-great-filter-comes-for-us-all/
 great filters -- AI
 great filters -- AI -- dominant species
@@ -100,6 +129,7 @@ great filters -- AI -- humans losing control over AI systems
 great filters -- AI -- skill loss
 great filters -- mirror life https://www.rand.org/pubs/research_reports/RRA4335-1.html
 great filters -- thermonuclear war
+great filters: ensure we're immune / not trapped https://blog.codinghorror.com/the-great-filter-comes-for-us-all/
 group polarization https://en.wikipedia.org/wiki/Group_polarization
 génération spontanée
 hammurabi
@@ -153,6 +183,7 @@ loi du talion
 mafia -- https://en.wikipedia.org/wiki/Five_Families
 mafia -- Racketeer Influenced and Corrupt Organizations (RICO) Act =  1970 U.S. federal law designed to combat organized crime by targeting the leaders of criminal enterprises rather than just subordinates. It allows prosecutors to charge individuals with a "pattern of racketeering" (at least two acts within 10 years) for crimes committed on behalf of an organization.
 making big things
+medias
 Melian dialogue
 military tactics https://civilization.fandom.com/wiki/Military_Tactics_(Civ6)
 military–industrial complex (MIC) = relationship between a country's military and the defense industry that supplies it, seen together as a vested interest which influences public policy. https://en.wikipedia.org/wiki/Military%E2%80%93industrial_complex
@@ -167,6 +198,7 @@ natural resource https://en.wikipedia.org/wiki/Natural_resource
 numeral system https://en.wikipedia.org/wiki/Positional_notation
 O-ring theory of economic development https://en.wikipedia.org/wiki/O-ring_theory_of_economic_development
 pollution -- 12xx https://en.wikipedia.org/wiki/Pea_soup_fog
+population renewal
 potholes = https://thewalrus.ca/montreal-potholes/
 problems -- & are the conduit of progress https://mail.blockworks.com/p/problems-are-the-conduit-of-progress
 problems -- Kevin Kelly "Most of the problems we have today are created by the solutions we had in the past." https://www.ted.com/talks/kevin_kelly_the_future_will_be_shaped_by_optimists
@@ -176,16 +208,22 @@ problems -- The problem of widespread hunger, for example, was solved by industr
 Psychological Operations (PSYOPs) = planned, non-kinetic operations designed to convey selected information to foreign audiences to influence their emotions, motives, objective reasoning, and ultimately behavior. Used by military and intelligence agencies, they aim to weaken enemy morale, enhance friendly operations, or influence target populations
 public holidays = https://www.not-ship.com/when-do-most-people-have-the-day-off/
 ransom
+rich/poor gini
 robber barons https://en.wikipedia.org/wiki/Robber_baron_(industrialist)
 robust, comprehensive and world-leading legislation https://www.linkedin.com/news/story/australia-faces-new-125-tariff-8938602/
+rsrc depletion -- peak https://en.wikipedia.org/wiki/Peak_minerals
+rsrc depletion https://en.wikipedia.org/wiki/Resource_depletion
 sanction = trade, freezing, restricting
 sanctions -- against = usually only impact the innocents
 sanctions -- evasion -- stripping = removing, disguising or altering customer or payment information to avoid Sanctions, or
 sanctions -- evasion -- structuring = re-submitting rejected payments or altering payment method to avoid screening.
 sanctions = measures not involving the use of armed force that are imposed in situations of international concern by governments. They can bring a situation of international concern to an end by influencing those responsible, limiting the adverse impacts of a situation, or penalising those responsible.
+science -- quantum mechanics and thermodynamics = Despite efforts to reconcile quantum mechanics and thermodynamics over the years, their compatibility is still an open fundamental problem. The full extent that quantum properties can alter classical thermodynamic bounds is unknown  https://en.wikipedia.org/wiki/Zero-point_energy#Single_heat_baths
 self-sufficiency -- food = https://www.nature.com/articles/s43016-025-01173-4
 slavery
 social domination = "natural order of things in society" established by the dominant ideology
+social medias / attention marketplace
+social networks
 societal -- & collapse = fall of a complex human society characterized by the loss of cultural identity and of social complexity as an adaptive system, the downfall of government, and the rise of violence https://en.wikipedia.org/wiki/Societal_collapse
 societal -- & longevity = https://en.wikipedia.org/wiki/Societal_collapse
 Societies are capable of telling themselves stories for years that have little basis in reality and lead to poor society-wide decision making. For example, fears over nuclear plant safety led to under-investment in nuclear power. Fears of the “population bomb” in the 1960s led countries to implement harsh policies to reduce their populations. And worries about dietary fat led governments to promote unhealthy high-sugar diets for decades.

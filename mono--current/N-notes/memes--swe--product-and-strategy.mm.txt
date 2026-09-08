@@ -422,6 +422,82 @@ social features -- complex "block" feature of other users https://dcurt.is/block
 solutions engineering -- post‑sales = implementations end‑to‑end: discovery → design → build → UAT → launch → hypercare; owning scope, acceptance criteria, timelines, risks, cutover, and stakeholder comms.
 solutions engineering -- pre‑sales = targeted discovery, demos/POCs, solution diagrams, and implementation estimates/SOW inputs.
 stalking horse = figure used to test a concept or mount a challenge on behalf of a third party. If the idea proves viable or popular, the third party can then declare its interest and advance the concept with little risk of failure. If the concept fails, the third party will not be tainted by association with the failed concept and can either drop the idea completely or bide its time and wait until a better moment to launch an attack https://en.wikipedia.org/wiki/Stalking_horse
+startup anti-patterns -- (Founder) Arrogance
+startup anti-patterns -- Analysis paralysis
+startup anti-patterns -- Attribution risk
+startup anti-patterns -- Bad revenue
+startup anti-patterns -- Bleeding on the edge
+startup anti-patterns -- Boiling the ocean
+startup anti-patterns -- Bridge to nowhere
+startup anti-patterns -- Changing strategy instead of execution
+startup anti-patterns -- Chasing Blue Oceans
+startup anti-patterns -- Chasing the competition
+startup anti-patterns -- Confirmation bias
+startup anti-patterns -- Confusing activity with results
+startup anti-patterns -- Consulting to product
+startup anti-patterns -- Death by pivot
+startup anti-patterns -- Deathmarch
+startup anti-patterns -- Delayed scaling
+startup anti-patterns -- Demand generation
+startup anti-patterns -- Design by committee
+startup anti-patterns -- Designing for investors
+startup anti-patterns -- Drag
+startup anti-patterns -- Elephant hunting
+startup anti-patterns -- Escalation of commitment
+startup anti-patterns -- Escape to the familiar
+startup anti-patterns -- Escapism
+startup anti-patterns -- Featuritis
+startup anti-patterns -- Forward thinking
+startup anti-patterns -- Founderitis
+startup anti-patterns -- Groupthink
+startup anti-patterns -- Hail Mary
+startup anti-patterns -- If you build it, they will come
+startup anti-patterns -- Ignorance
+startup anti-patterns -- Ivory tower
+startup anti-patterns -- Lack of focus
+startup anti-patterns -- Lagging indicators
+startup anti-patterns -- Learned helplessness
+startup anti-patterns -- Long feedback cycles
+startup anti-patterns -- Lying to investors
+startup anti-patterns -- Magic salesperson
+startup anti-patterns -- Mentor whiplash
+startup anti-patterns -- Missing your exit
+startup anti-patterns -- Myopic bootstrapping
+startup anti-patterns -- Next round only
+startup anti-patterns -- Not knowing your investors
+startup anti-patterns -- One-off customization
+startup anti-patterns -- Oooh, shiny!
+startup anti-patterns -- Outsourcing your architecture
+startup anti-patterns -- Overengineering
+startup anti-patterns -- Overselling
+startup anti-patterns -- Oversteering
+startup anti-patterns -- Platform risk
+startup anti-patterns -- Platform trap
+startup anti-patterns -- Premature optimization
+startup anti-patterns -- Premature scaling
+startup anti-patterns -- Promiscuity
+startup anti-patterns -- Proof by anecdote
+startup anti-patterns -- Pushing a rope
+startup anti-patterns -- Raising too little
+startup anti-patterns -- Random founders
+startup anti-patterns -- Scapegoat
+startup anti-patterns -- Second class citizens
+startup anti-patterns -- Secrecy
+startup anti-patterns -- Seed extensions
+startup anti-patterns -- Silver bullet
+startup anti-patterns -- Spreadsheet Bingo
+startup anti-patterns -- Stovepipes
+startup anti-patterns -- The one idea entrepreneur
+startup anti-patterns -- Top-down planning
+startup anti-patterns -- Uber pivot
+startup anti-patterns -- Underqualifying
+startup anti-patterns -- Unicorn hunting
+startup anti-patterns -- Unrealistic expectations
+startup anti-patterns -- Warm bodies
+startup anti-patterns -- Weak board
+startup anti-patterns -- Yes man
+startup anti-patterns -- Zombie
+startup anti-patterns = +++ https://www.itamarnovick.com/intro-to-startup-anti-pattern-series/
 startups should avoid being held hostage by the preferences of their early user base if it deviates from the broader market, ex. social feed or reels
 stay fast https://newsletter.posthog.com/p/how-to-design-your-company-for-speed
 Stock Keeping Unit (SKU) = a clearly identified product https://en.wikipedia.org/wiki/Stock_keeping_unit

@@ -1,24 +1,3 @@
-import type { FeatureSnippets } from "@web-property-outfitter/generator--html"
-import {
-	type WebPage,
-	type WebPropertySpec,
-	//PRESETꘌblog,
-} from "@web-property-outfitter/generator--website-entry-points"
-
-import { CREATOR, WEBSITE } from "@monorepo-private/marketing--creator"
-import type { Basename } from "@monorepo-private/ts--types"
-import type {
-	Thing,
-	WithOnlinePresence,
-	ThingWithOnlinePresence,
-	Contentⳇweb,
-	ContentⳇTitle,
-	ContentⳇCaption,
-	CssⳇColor‿str,
-} from "@monorepo-private/ts--types--hypermedia"
-
-import type { IconSet, WebAppCategory } from "../../types.ts"
-
 /////////////////////////////////////////////////
 /*
  WebPropertySpec
@@ -31,7 +10,8 @@ import type { IconSet, WebAppCategory } from "../../types.ts"
 /////////////////////////////////////////////////
 
 // Ok the thing IS a website
-const THINGⵧONLINE: ThingWithOnlinePresence = {
+
+export const THINGⵧONLINE: ThingWithOnlinePresence = {
 	title: "Offirmo - Creator",
 	caption: "Offirmo’s personal blog about tech, software and gamedev…",
 	creator: CREATOR,
@@ -45,7 +25,7 @@ const THINGⵧONLINE: ThingWithOnlinePresence = {
 	contact: "https://github.com/Offirmo/offirmo.github.io/issues",
 }
 
-const WEBPAGE: WebPage = {
+export const WEBPAGE: WebPage = {
 	...THINGⵧONLINE,
 
 	icon: { emoji: "👨‍💻" },
@@ -73,7 +53,7 @@ const WEBPAGE: WebPage = {
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // specific to hosting
 
-const SPECⵧprod: WebPropertySpec = {
+export const SPECⵧprod: WebPropertySpec = {
 	...WEBPAGE,
 
 	host: "github-pages",
@@ -82,7 +62,7 @@ const SPECⵧprod: WebPropertySpec = {
 	/////// META
 }
 
-const SPECⵧpreprod: WebPropertySpec = {
+export const SPECⵧpreprod: WebPropertySpec = {
 	...SPECⵧprod,
 
 	host: "github-pages",
@@ -93,7 +73,7 @@ const SPECⵧpreprod: WebPropertySpec = {
 	isꓽdebug: false,
 }
 
-const SPECⵧnightly: WebPropertySpec = {
+export const SPECⵧnightly: WebPropertySpec = {
 	...SPECⵧprod,
 
 	host: "github-pages",
@@ -105,5 +85,16 @@ const SPECⵧnightly: WebPropertySpec = {
 }
 
 /////////////////////////////////////////////////
+import type { FeatureSnippets } from "@web-property-outfitter/generator--html"
+import { type WebPage, type WebPropertySpec } from "@web-property-outfitter/generator--website-entry-points"
 
-export { SPECⵧprod, SPECⵧpreprod, SPECⵧnightly }
+import { CREATOR, WEBSITE } from "@monorepo-private/marketing--creator"
+import type {
+	ThingWithOnlinePresence,
+	Contentⳇweb,
+	ContentⳇTitle,
+	ContentⳇCaption,
+	CssⳇColor‿str,
+} from "@monorepo-private/ts--types--hypermedia"
+
+import type { IconSet, WebAppCategory } from "../../types.ts"

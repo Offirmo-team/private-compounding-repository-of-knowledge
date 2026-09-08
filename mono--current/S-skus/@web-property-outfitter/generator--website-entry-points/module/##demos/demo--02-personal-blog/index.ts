@@ -4,15 +4,37 @@ import { fileURLToPath } from "node:url"
 
 import { generateꓽwebᝍproperty } from "@web-property-outfitter/generator--website-entry-points"
 
-import { SPEC } from "../../src/__fixtures/specs--blog--personal/index.ts"
+import { TEST_TIMESTAMP_MS } from "@monorepo-private/timestamps"
+
+import { SPECⵧprod, SPECⵧpreprod, SPECⵧnightly } from "../../src/__fixtures/specs--blog--personal/index.ts"
 
 /////////////////////////////////////////////////
 
+const built_at‿tms = TEST_TIMESTAMP_MS
+
 await generateꓽwebᝍproperty(
 	{
-		...SPEC,
-		host: "github-pages",
+		...SPECⵧprod,
+		built_at‿tms,
 	},
-	path.resolve(path.dirname(fileURLToPath(import.meta.url)), "~~output"),
+	path.resolve(path.dirname(fileURLToPath(import.meta.url)), "~~output--prod"),
+	{ rm: true },
+)
+/*
+await generateꓽwebᝍproperty(
+	{
+		...SPECⵧpreprod,
+		built_at‿tms,
+	},
+	path.resolve(path.dirname(fileURLToPath(import.meta.url)), "~~output--preprod"),
+	{ rm: true },
+)
+*/
+await generateꓽwebᝍproperty(
+	{
+		...SPECⵧnightly,
+		built_at‿tms,
+	},
+	path.resolve(path.dirname(fileURLToPath(import.meta.url)), "~~output--nightly"),
 	{ rm: true },
 )

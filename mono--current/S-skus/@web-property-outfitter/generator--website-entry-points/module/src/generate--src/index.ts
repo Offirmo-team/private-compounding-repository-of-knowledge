@@ -340,7 +340,7 @@ export default init
 `.trim()
 
 function generate(spec: Immutable<WebPropertySpec>): FilesMap {
-	return {
+	const contents: Record<string, string> = {
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/consts.ts`]: `export const LIB = '${getꓽtitleⵧlib(spec)}'`,
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/index.ts`]: `
 import { asap_but_out_of_immediate_execution, forArray } from '@monorepo-private/utils--async'
@@ -381,7 +381,7 @@ asap_but_out_of_immediate_execution(async () => {
 		// service layer
 		// ~syncing view with external data sources
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/services/auth.ts`]: CODE_TEMPLATEⵧGENERIC,
-		[`${getꓽdirⵧfiles_to_serve(spec)}//app/services/channel.ts`]: genꓽCODE_TEMPLATEⵧSERVICESⳇCHANNEL(spec),
+		[`${getꓽdirⵧfiles_to_serve(spec)}/app/services/channel.ts`]: genꓽCODE_TEMPLATEⵧSERVICESⳇCHANNEL(spec),
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/services/loader.ts`]: CODE_TEMPLATEⵧGENERIC,
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/services/logger.ts`]: CODE_TEMPLATEⵧSERVICESⳇLOGGER,
 
@@ -404,6 +404,11 @@ asap_but_out_of_immediate_execution(async () => {
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/init/20-auth.ts`]: CODE_TEMPLATEⳇINITⳇGENERIC("auth"),
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/init/30-analytics.ts`]: CODE_TEMPLATEⳇINITⳇGENERIC("analytics"),
 	}
+
+	return Object.entries(contents).reduce((acc, [relpath, content]) => {
+		acc[relpath] = { content }
+		return acc
+	}, {} as FilesMap)
 }
 
 /////////////////////////////////////////////////

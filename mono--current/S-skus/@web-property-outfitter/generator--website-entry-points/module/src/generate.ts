@@ -13,14 +13,13 @@ export function getꓽwebᝍpropertyᝍbundle(spec: Immutable<WebPropertySpec>):
 		...generateꓽicons(spec),
 		...generateꓽwell_known(spec),
 		...generateꓽmisc_root_files(spec),
+		...generateꓽbuild_badges(spec),
 
 		// PWA
 		...(needsꓽwebmanifest(spec) && {
-			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧwebmanifest(spec)}`]: JSON.stringify(
-				generateꓽwebmanifest(spec),
-				undefined,
-				"	",
-			),
+			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧwebmanifest(spec)}`]: {
+				content: JSON.stringify(generateꓽwebmanifest(spec), undefined, "	"),
+			},
 		}),
 
 		// JS SRC
@@ -58,25 +57,44 @@ export async function writeꓽwebᝍpropertyᝍfiles(
 ): Promise<Immutable<WebPropertyBundle>> {
 	const ǃ = assert_from({ writeꓽwebᝍpropertyᝍfiles })
 
-	targetDir = path.normalize(targetDir)
+	targetDir = NodePath.normalize(targetDir)
 	console.log(`📁 ${targetDir}`)
-	ǃ.forⵧparam({ targetDir }).require(path.isAbsolute(targetDir), `dir must be absolute, got "${targetDir}"`)
+	ǃ.forⵧparam({ targetDir }).require(NodePath.isAbsolute(targetDir), `dir must be absolute, got "${targetDir}"`)
+
+	const toserve_inventory = Object.entries(bundle.files).reduce(
+		(acc, [path, _]) => {
+			if (path.startsWith(bundle.meta.serve_me‿relpath)) {
+				const served_path = NodePath.relative(bundle.meta.serve_me‿relpath, path)
+				acc[served_path] = {
+					// TODO 1D props as needed
+				}
+			}
+
+			return acc
+		},
+		{} as Record<PathⳇRelative, {}>,
+	)
 
 	const files: FilesMap = {
 		...bundle.files,
-		...(options.includesꓽlogs && { "~~logs/spec.json": JSON.stringify(bundle.meta.spec, undefined, "	") }),
+		...(options.includesꓽlogs && {
+			"~~logs/spec.json": { content: JSON.stringify(bundle.meta.spec, undefined, "	") },
+		}),
+		[NodePath.join(bundle.meta.serve_me‿relpath, "_served_inventory.json")]: {
+			content: JSON.stringify(toserve_inventory),
+		},
 	}
 
 	return Promise.all(
 		Object.keys(files)
 			.sort()
 			.map(async (relpath) => {
-				const file__path = path.join(targetDir, relpath)
-				let file__content = files[relpath]!
+				const file__path = NodePath.join(targetDir, relpath)
+				let file__content = files[relpath]!.content
 				console.log(`↳ 📄 ${relpath}`)
 
 				try {
-					switch (path.extname(file__path)) {
+					switch (NodePath.extname(file__path)) {
 						case ".html":
 							assert(typeof file__content === "string", `file ${file__path} should be a string!`)
 							file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "html" })
@@ -93,10 +111,7 @@ export async function writeꓽwebᝍpropertyᝍfiles(
 						case ".ts":
 							assert(typeof file__content === "string", `file ${file__path} should be a string!`)
 							file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "typescript" })
-							break
-						case ".ts":
-							assert(typeof file__content === "string", `file ${file__path} should be a string!`)
-							file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "acorn" })
+							//file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "acorn" })
 							break
 						default:
 							break
@@ -140,15 +155,40 @@ export async function generateꓽwebᝍproperty(
 }
 
 /////////////////////////////////////////////////
+
+// content is always a Buffer: lossless for any file type (js, png, webp…) and round-trips
+// byte-for-byte through writeꓽwebᝍpropertyᝍfiles, which writes non-string content raw.
+export async function loadꓽfiles(serveDir: PathⳇAbsolute): Promise<FilesMap> {
+	const ǃ = assert_from({ loadꓽfiles })
+
+	serveDir = NodePath.normalize(serveDir)
+	ǃ.forⵧparam({ serveDir }).require(NodePath.isAbsolute(serveDir), `dir must be absolute, got "${serveDir}"`)
+
+	const relpaths = lsFilesRecursiveSync(serveDir, { full_path: false })
+
+	const entries = await Promise.all(
+		relpaths.map(async (relpath: PathⳇRelative) => {
+			const content = await fs.readFile(NodePath.join(serveDir, relpath))
+
+			return [relpath, { content }] as const
+		}),
+	)
+
+	return Object.fromEntries(entries)
+}
+
+/////////////////////////////////////////////////
 import * as fs from "node:fs/promises"
-import * as path from "node:path"
+import * as NodePath from "node:path"
 
 import * as Prettier from "prettier"
 
 import { assert_from, assert } from "@monorepo-private/assert"
+import { lsFilesRecursiveSync } from "@monorepo-private/fs--ls"
 import { ೱoutputꓽfile } from "@monorepo-private/fs--output-file"
-import type { Immutable, PathⳇAbsolute } from "@monorepo-private/ts--types"
+import type { Immutable, PathⳇAbsolute, PathⳇRelative } from "@monorepo-private/ts--types"
 
+import generateꓽbuild_badges from "./generate--build-badges/index.ts"
 import generateꓽhtml from "./generate--html/index.ts"
 import generateꓽicons from "./generate--icons/index.ts"
 import generateꓽmisc_root_files from "./generate--misc-root-files/index.ts"

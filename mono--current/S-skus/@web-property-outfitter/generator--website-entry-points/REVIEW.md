@@ -145,10 +145,10 @@ generated content under `page--404/~~gen/` (another screenshot) and AI-generatio
 `page--privacy-policy/~~gen/genai-20250514/` and `page--terms-and-conditions/~~gen/genai-20250514/`
 (`prompt.txt`/`result.md` — the ChatGPT-style prompts used to draft the privacy-policy/terms boilerplate text,
 interesting as provenance but arguably not meant to ship in the repo). Additionally,
-`module/##demos/demo--02-personal-blog` and `module/##demos/demo--pwa--tbrpg/~~output/` are full checked-in generated
-build outputs (HTML pages, webmanifest, a scaffolded `app/` tree, icons, `_headers`/`_redirects`) — i.e. build artifacts
-from running the demo, committed to git rather than gitignored. Per review scope, contents not deep-reviewed; flagging
-only the checked-in-generated-output pattern and the oversized PNGs.
+`module/##demos/demo--02-personal-blog` and `module/##demos/demo--03-pwa--tbrpg` are full checked-in generated build
+outputs (HTML pages, webmanifest, a scaffolded `app/` tree, icons, `_headers`/`_redirects`) — i.e. build artifacts from
+running the demo, committed to git rather than gitignored. Per review scope, contents not deep-reviewed; flagging only
+the checked-in-generated-output pattern and the oversized PNGs.
 
 ### G12E-P3-12 — Nit — `generate--html/index-html/temp.md` looks like an accidentally-dropped scratch/draft file
 

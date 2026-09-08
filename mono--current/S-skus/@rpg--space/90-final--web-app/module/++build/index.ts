@@ -26,7 +26,7 @@ const SPEC: WebPropertySpec = {
 	app_categories: ["games"],
 	wantsꓽinstall: "promotion-capable",
 	//titleⵧapp?: Descriptionⳇtitle
-	//descriptionⵧapp?: string
+	//captionⵧapp?: string
 	//supportsꓽscreensⵧwith_shape?: boolean // https://drafts.csswg.org/css-round-display/
 	//canꓽuse_window_controls_overlay?: boolean
 	//usesꓽpull_to_refresh?: boolean

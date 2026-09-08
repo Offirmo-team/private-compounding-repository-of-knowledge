@@ -222,6 +222,7 @@ brilliance -- Identify your own brilliance, don't be like somebody https://x.com
 broken window theory
 bullying = Lack of consideration and empathy for those without power, Disrespectful behavior that is overt or subtle (in public or behind closed doors), Verbal aggression, sarcasm, or psychological manipulation. Unreasonable or constantly changing directives and deadlines. Singling out individuals. “Mobbing,” in which a group of people gang up on an individual
 bullying = repeated pattern of offensive, intimidating, or hostile behavior(s) or language, often by a strong or other person of authority. Bullying creates a toxic atmosphere for everyone, but may be accepted by many as “part of the workplace culture”
+Burning Man https://sfstandard.com/2026/08/29/burning-man-lost-its-soul-founder/
 busy work https://en.wikipedia.org/wiki/Busy_work
 buy nice or buy twice
 Byron Katie's "The Work" -- the 4 questions -- 1. Is it true? (Yes or no. If no, move to question 3.)
@@ -675,6 +676,7 @@ harassment -- sexual = when based on a person’s sex or gender, or involves unw
 harassment = any form of behaviour that could reasonably offend, humiliate or intimidate
 harassment = includes words and/or behavior(s) usually focused on someone’s personal characteristics—such as their race, religion, national origin, sex, age, or disability
 harassment = repeated pattern, or a particularly egregious instance, of offensive, intimidating, or hostile conduct
+hate -- as an evidence/metric = "if you're doing something hard and nobody hates it, you probably aren't doing it" https://matduggan.com/you-know-gdpr-is-good-based-on-who-hates-it/
 haters -- haters gonna hate
 haters -- ignore the f’ing haters = including the ones "in the arena" https://aseemk.substack.com/p/ignore-the-f-ing-haters-json5
 hawks and doves https://seldo.com/posts/the_case_for_frameworks
@@ -727,6 +729,7 @@ identity -- "I’d tied my identity and reputation to hard work"
 idées (no natural upper bound) ne s'usent que si l'on ne s'en sert pas (contre intuitif) https://en.wikipedia.org/wiki/Lindy_effect#History
 If I can't have it, neither can you = (crab mentality / panier de crabes) mindset of people who try to prevent others from gaining a favorable position, even if attaining such position would not directly impact those trying to stop them. It is usually summarized with the phrase: "If I can't have it, neither can you" https://en.wikipedia.org/wiki/Crab_mentality
 if you grow as a frog, you become a shinier, jump higher frog. But you need a kiss from the princess to become you. a core deep in oneself able to do things beyond ordinary
+Ig Nobel = https://arstechnica.com/science/2026/09/meet-the-2026-ig-nobel-prize-winners/
 IKEA effect = labor leads to love https://www.hbs.edu/ris/Publication%20Files/11-091.pdf
 ikigai = a reason for being what you love ∩ what you're good at ∩ what the world needs ∩ what you can be paid for
 impostor syndrome
@@ -938,6 +941,18 @@ life -- NPC = "watching life pass you by while doomscrolling on your phone" http
 life -- stages -- 20+ boomerang https://en.wikipedia.org/wiki/Boomerang_Generation
 life -- stages -- 40+ sandwich https://en.wikipedia.org/wiki/Sandwich_generation
 life -- super successful = navy SEAL, doctor, pilot, astronaut... https://en.wikipedia.org/wiki/Jonny_Kim
+life -- the real luxuries in life -- 01 Time
+life -- the real luxuries in life -- 02 Health
+life -- the real luxuries in life -- 03 A quiet mind
+life -- the real luxuries in life -- 04 Slow mornings
+life -- the real luxuries in life -- 05 Ability to travel
+life -- the real luxuries in life -- 06 Rest without guilt
+life -- the real luxuries in life -- 07 A good night’s sleep
+life -- the real luxuries in life -- 08 Calm and “boring” days
+life -- the real luxuries in life -- 09 Meaningful conversations
+life -- the real luxuries in life -- 10 Home-cooked meals
+life -- the real luxuries in life -- 11 People you love
+life -- the real luxuries in life -- 12 People who love you back
 life -- winning at life
 life -- you once dreamed of what you have now
 life -- youth -- milestones https://phideltatheta.org/get-involved/rising-phi/
@@ -1299,6 +1314,7 @@ problem solving -- structured https://strategyu.co/mckinsey-structured-problem-s
 problems -- more problems because new solutions create many more problems https://mail.blockworks.com/p/problems-are-the-conduit-of-progress
 processes and outcomes https://surfingcomplexity.blog/2025/05/10/on-work-processes-and-outcomes/
 procrastination
+procrastination -- artificial deadlines = may be fraud https://datacolada.org/138
 productivity
 productivity -- GSD Capture Everything, Clarify, Organize, Review, Engage https://todoist.com/productivity-methods/getting-things-done
 productivity is 90% mood management. humans are atmospheric creatures. we need a playlist, a candle, a ritual, not systems. / The biggest learning from quitting my job to write a novel was not how to write a novel, but how to get myself in the mood to write a novel. https://substack.com/@sariazout/note/c-146189406
@@ -1420,6 +1436,7 @@ science -- failure = https://freakonomics.com/podcast/why-has-there-been-so-litt
 science -- flat Earth -- https://en.wikipedia.org/wiki/Bedford_Level_experiment
 science -- null result = didn't see the expected effect/prevision https://en.wikipedia.org/wiki/Null_result
 science -- pseudoscience
+science -- replication crisis
 science -- research -- line of
 science -- scientific method https://en.wikipedia.org/wiki/Scientific_method
 science -- Sokal affair = hoax leftist https://en.wikipedia.org/wiki/Sokal_affair
@@ -1635,6 +1652,8 @@ T-Shape https://jchyip.medium.com/why-t-shaped-people-e8706198e437
 table selection = This idea comes from poker, where you’re advised to choose your opponents carefully. That means you shouldn’t compete against the best people. You don’t need to get good at doing difficult things if you get good at avoiding difficult things. If you want to win, pick an easy table and nail your execution.
 talent vs. Genius = Society is good at training talent but terrible at cultivating genius. Talented people are good at hitting targets others can’t hit, but geniuses find targets others can’t see. They are opposite modes of excellence. Talent is predictable, genius is unpredictable.
 tall poppy syndrome = people with notable public success or achievements being ostracised by others as a form of egalitarianism https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Tall_poppy_syndrome
+tariffs -- missing parts = https://xkcd.com/3290/
+tariffs -- should block the sun
 tax -- lazy https://www.insurancewatch.com.au/lazy-tax-insurance.html
 taxation -- Bernie Senders https://imgur.com/gallery/im-member-of-1-im-voting-bernie-sanders-heres-why-v5hWg
 teacher https://paulgraham.com/raq.html
@@ -1718,6 +1737,9 @@ universe -- cosmological model -- cyclic (various)
 universe -- cosmological model https://en.wikipedia.org/wiki/Physical_cosmology
 universe -- end big chill, big freeze, big crunch
 unlearn
+unsolved problems -- paradoxes https://en.wikipedia.org/wiki/List_of_paradoxes#Cosmology
+unsolved problems -- physics https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
+unsolved problems https://en.wikipedia.org/wiki/Lists_of_unsolved_problems
 unsure -- Could it directly or indirectly endanger someone or cause them injury?
 unsure -- Does it ‘feel’ wrong?
 unsure -- Does my conscience reject it? Does it conflict with my personal values?

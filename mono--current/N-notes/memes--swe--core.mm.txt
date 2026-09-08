@@ -147,6 +147,7 @@ bugs -- 3 questions -- 3. How can I change my ways to make this bug impossible?
 bugs -- 3 questions https://mental-reverb.com/blog.php?id=42
 bugs -- mail in 500 miles radius https://www.ibiblio.org/harris/500milemail.html
 bugs -- significant https://en.wikipedia.org/wiki/List_of_software_bugs
+bugs -- TOCTOU "Time-of-check to time-of-use" = a software bug and security vulnerability caused by a race condition between checking a system resource's state and using that result. https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use
 build & delivery part of a product
 build vs buy
 building blocks that just work = create building blocks that handle the undifferentiated heavy lifting, which freed developers to focus on higher-level work https://aws.amazon.com/blogs/aws/twenty-years-of-amazon-s3-and-building-whats-next/

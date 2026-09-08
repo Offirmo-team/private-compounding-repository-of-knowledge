@@ -80,7 +80,7 @@ function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 	return {
 		// size-less version (SVG) if possible
 		...(getꓽiconⵧsvg(spec) && {
-			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽicon__path(spec, null)}`]: generateꓽfile(spec, null),
+			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽicon__path(spec, null)}`]: { content: generateꓽfile(spec, null) },
 		}),
 
 		...generateꓽfixed_sizes(spec),

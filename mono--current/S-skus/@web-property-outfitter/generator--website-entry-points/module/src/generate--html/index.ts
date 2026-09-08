@@ -36,9 +36,9 @@ function generateꓽerror_handling(spec: Immutable<WebPropertySpec>): FilesMap {
 
 	return {
 		...(needsꓽerrorᐧhtml && {
-			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧerrorᐧhtml(spec)}`]: generateꓽerrorᐧhtml(spec),
+			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧerrorᐧhtml(spec)}`]: { content: generateꓽerrorᐧhtml(spec) },
 		}),
-		...(needsꓽ404ᐧhtml && { [`${getꓽdirⵧfiles_to_serve(spec)}/404.html`]: generateꓽ404ᐧhtml(spec) }),
+		...(needsꓽ404ᐧhtml && { [`${getꓽdirⵧfiles_to_serve(spec)}/404.html`]: { content: generateꓽ404ᐧhtml(spec) } }),
 	}
 }
 
@@ -57,18 +57,21 @@ function generateꓽcomplimentary(spec: Immutable<WebPropertySpec>): FilesMap {
 		// TODO changelog
 
 		/////// Org/Company details
-		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧaboutᐧhtml(spec)}`]: generateꓽaboutᐧhtml(spec),
+		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧaboutᐧhtml(spec)}`]: { content: generateꓽaboutᐧhtml(spec) },
 		// TODO careers
 		// TODO blog
-		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧsupportᐧhtml(spec)}`]: generateꓽsupportᐧhtml(spec),
-		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧcontactᐧhtml(spec)}`]: generateꓽcontactᐧhtml(spec),
+		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧsupportᐧhtml(spec)}`]: { content: generateꓽsupportᐧhtml(spec) },
+		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧcontactᐧhtml(spec)}`]: { content: generateꓽcontactᐧhtml(spec) },
 		// TODO brand assets
 
 		/////// Legal
-		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧterms_and_conditionsᐧhtml(spec)}`]:
-			generateꓽterms_and_conditionsᐧhtml(spec),
+		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧterms_and_conditionsᐧhtml(spec)}`]: {
+			content: generateꓽterms_and_conditionsᐧhtml(spec),
+		},
 		// TODO Terms of engagement = support <=> users
-		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧprivacy_policyᐧhtml(spec)}`]: generateꓽprivacy_policyᐧhtml(spec),
+		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧprivacy_policyᐧhtml(spec)}`]: {
+			content: generateꓽprivacy_policyᐧhtml(spec),
+		},
 		// TODO Data Processing Addendum
 		// TODO cookie management
 	}
@@ -76,9 +79,9 @@ function generateꓽcomplimentary(spec: Immutable<WebPropertySpec>): FilesMap {
 
 function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 	return {
-		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧindexᐧhtml(spec)}`]: generateꓽindexᐧhtml(spec),
+		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧindexᐧhtml(spec)}`]: { content: generateꓽindexᐧhtml(spec) },
 
-		"~~logs/spec.html.json": JSON.stringify(getꓽhtml_doc_spec(spec), undefined, "	"),
+		"~~logs/spec.html.json": { content: JSON.stringify(getꓽhtml_doc_spec(spec), undefined, "	") },
 
 		...generateꓽcomplimentary(spec),
 	}

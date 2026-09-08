@@ -193,7 +193,10 @@ function getꓽspecⵧwith_features_expanded(spec: Immutable<HtmlFileSpec>): Imm
 					break
 				}
 				case "htmlⳇreact-root":
-					content_expanded.html = [snippetꓽhtmlⳇreact_root(spec), ...Selectors.getꓽhtml(content_expanded)]
+					content_expanded.html = [
+						snippetꓽhtmlⳇreact_root({ titleⵧpage: getꓽtitleⵧpage(spec) }),
+						...Selectors.getꓽhtml(content_expanded),
+					]
 
 					break
 

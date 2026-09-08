@@ -248,7 +248,10 @@ DOM -- Nodes -- 10 Document Type = <!DOCTYPE html>
 DOM -- Nodes -- 11 Fragment
 DOM -- Nodes -- types =  ELEMENT, ATTRIBUTE, TEXT, CDATA, PROCESSING_INSTRUCTION, COMMENT, DOCUMENT, DOCUMENT_TYPE https://devdocs.io/dom/node/nodetype
 DOM tree = Nodes = text, elements, attributes, comments... includes elements such as <body> and <table>, among many others.
+domain -- 3rd level = e.g. *.co.uk (.co is columbia) 3rd-level domains have gotten a dubious reputation bc if the operator disappear, so does the 3rd level. Can also be destroyed e.g. https://neil.fraser.name/news/2026/09/03/
 domain -- longest = http://theofficialabsolutelongestdomainnameregisteredontheworldwideweb.international/
+domain -- top
+domain -- top -- reserved https://en.wikipedia.org/wiki/Top-level_domain#Reserved_domains
 e18e Ecosystem Performance = initiative to improve the performance of JS packages: Cleanup, Speedup, Levelup. One Package at a time. https://e18e.dev/
 ECMAScript - European Computer Manufacturers Association Script (ES)
 effects -- https://dev.to/madsstoumann/the-golden-ratio-in-css-53d0

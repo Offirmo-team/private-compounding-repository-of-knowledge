@@ -1,1 +1,9 @@
-{}
+{
+	_overrides: {
+		files: {
+			packageᐧjson: {
+				"|exports|./*/*": "./module/licensed/*/*/index.ts",
+			},
+		},
+	},
+}

@@ -11,12 +11,13 @@
 	"scripts": {
 		"_check": "run-s check:ts",
 		"check:ts": "echo \"@web-property-outfitter/generator--website-entry-points\" && tsc --noEmit",
-		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demos/demo--pwa--tbrpg/index.ts",
+		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local module/##demos/demo--03-pwa--tbrpg/index.ts",
 		"dev": "run-s  watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/fs--ls": "workspace:*",
 		"@monorepo-private/fs--output-file": "workspace:*",
 		"@monorepo-private/json-stable-stringify": "workspace:*",
 		"@monorepo-private/normalize-string": "workspace:*",

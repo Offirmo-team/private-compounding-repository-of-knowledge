@@ -99,4 +99,4 @@ export function getꓽISO8601ⵧsimplified‿days(now: Readonly<Date> = new Date
 
 /////////////////////////////////////////////////
 
-export const TEST_TIMESTAMP_MS = 1234567890 // useful for unit tests
+export const TEST_TIMESTAMP_MS: TimestampUTCMs = 1234567890 // useful for unit tests

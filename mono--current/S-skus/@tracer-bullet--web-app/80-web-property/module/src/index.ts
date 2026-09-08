@@ -1,20 +1,9 @@
-import * as path from "node:path"
-import { fileURLToPath } from "node:url"
-const __dirname = path.dirname(fileURLToPath(import.meta.url)) // TODO favicon?
-
-import { WEBSITE } from "@tracer-bullet--web-app/marketing"
-import {
-	type Contentⳇweb,
-	PRESETꘌblog,
-	type WebPropertySpec,
-} from "@web-property-outfitter/generator--website-entry-points"
-
 /////////////////////////////////////////////////
-const SPEC: WebPropertySpec = {
-	...WEBSITE,
-	//...PRESETꘌblog,
+// technical
 
-	/////// content
+const ROOT_PAGE: WebPage = {
+	...LANDING_PAGE,
+
 	content: {
 		html: ["Loading..."], // opt out of default content
 		js: [
@@ -24,21 +13,63 @@ start()
 `,
 		],
 	},
-
-	/////// SPA
-	isꓽcatching_all_routes: true,
+	features: [
+		// appearance
+		"cssⳇbox-layout--natural",
+		"cssⳇviewport--full",
+		"cssⳇframework--offirmo",
+		// technical
+		"normalize-url-trailing-slash",
+	],
 
 	/////// PWA
+	wantsꓽinstall: "promotion-capable",
+	hasꓽown_navigation: true,
+	supportsꓽscreensⵧwith_shape: true,
+	canꓽuse_window_controls_overlay: true,
+	usesꓽpull_to_refresh: false, // TODO 1D because it's cool
+}
 
-	/////// SRC
-	host: "cloudflare--workers",
+/////////////////////////////////////////////////
+// specific to hosting
+
+export const SPECⵧprod: WebPropertySpec = {
+	...THINGⵧONLINE,
+	...ROOT_PAGE,
+
+	host: "github-pages",
+	env: "production",
 
 	/////// META
-	env: "prod",
-	isꓽpublic: true,
+}
+
+export const SPECⵧpreprod: WebPropertySpec = {
+	...SPECⵧprod,
+
+	host: "github-pages",
+	env: "production",
+
+	/////// META
+	isꓽpublic: false,
 	isꓽdebug: false,
+}
+
+export const SPECⵧnightly: WebPropertySpec = {
+	...SPECⵧprod,
+
+	host: "github-pages",
+	env: "development",
+
+	/////// META
+	isꓽpublic: false,
+	isꓽdebug: true,
 }
 
 /////////////////////////////////////////////////
 
-export { SPEC }
+import * as path from "node:path"
+import { fileURLToPath } from "node:url"
+const __dirname = path.dirname(fileURLToPath(import.meta.url)) // TODO favicon?
+
+import { LANDING_PAGE, THINGⵧONLINE } from "@tracer-bullet--web-app/marketing"
+import { type WebPage, type WebPropertySpec } from "@web-property-outfitter/generator--website-entry-points"

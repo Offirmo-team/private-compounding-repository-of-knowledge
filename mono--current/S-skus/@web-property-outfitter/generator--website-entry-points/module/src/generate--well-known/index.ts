@@ -14,7 +14,7 @@ import generateꓽsecurityᐧtxt from "./security-txt/index.ts"
 // Well-known https://en.wikipedia.org/wiki/Well-known_URI
 function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 	return {
-		[`${getꓽdirⵧfiles_to_serve(spec)}/.well-known/security.txt`]: generateꓽsecurityᐧtxt(spec),
+		[`${getꓽdirⵧfiles_to_serve(spec)}/.well-known/security.txt`]: { content: generateꓽsecurityᐧtxt(spec) },
 	}
 }
 

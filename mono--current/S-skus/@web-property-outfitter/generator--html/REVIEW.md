@@ -3,16 +3,6 @@
 Generates a full HTML document (`<!DOCTYPE html>` ... `</html>`) as a string from a small typed spec (content blocks,
 metas, links, "feature" snippets), used to script/DRY-up static-site HTML page generation.
 
-## Findings
-
-### G12E-P1-01 — Major — No unit tests at all despite `vitest`/`mocha`/`chai` devDependencies wired up
-
-`package.json` depends on `vitest`, `mocha`, `chai`, `@types/mocha`, `sinon`, `@monorepo-private/config--mocha`, but
-there is no `*.test.ts`/`*.tests.ts`/`*.spec.ts` file anywhere in the package, and no `"test"` script in `package.json`
-(only `_check`, `check:ts`, `demo`, `dev`, `watch:check:ts`). The core logic in `module/src/selectors.ts`
-(`getꓽhtml‿str`, `getꓽspecⵧwith_features_expanded`, meta/link stringification, feature expansion switch) is non-trivial
-and entirely untested. Given the project's push toward vitest, new tests here should use vitest directly.
-
 ### G12E-P1-02 — Major — No escaping of untrusted content when generating HTML (self-acknowledged, but still a live risk)
 
 `_getꓽhtml__head__meta‿str` in `module/src/selectors.ts` (lines ~306-376) builds
@@ -27,29 +17,12 @@ content from breaking out of an attribute and injecting extra attributes/markup.
 for developer content, not user input), this is low actual risk in practice, but worth calling Major since it's
 explicitly flagged as unfinished in the code itself and no test protects against regressions.
 
-### G12E-P1-03 — Minor — Dead import `assert_from` in `selectors.ts`
-
-`module/src/selectors.ts` line 3: `import { assert_from, assert } from "@monorepo-private/assert"` — `assert_from` is
-never used anywhere in the file (only `assert` is used, 5 times). Dead import should be removed.
-
 ### G12E-P1-04 — Minor — `module/src/data/index.ts` (`HTML_ELEMENTS`, `HTML_ELEMENTSⵧDEPRECATED`, `HTML_ELEMENTSⵧEXPERIMENTAL`) is exported from the file but never imported/used anywhere else in the package, and not re-exported from `module/src/index.ts`
 
 `module/src/index.ts` only does `export * from "./types.ts"` and `export * from "./selectors.ts"` — it never re-exports
 `./data/index.ts`. So these three exported constants are effectively dead code / unreachable from the package's public
 API, unless intentionally kept as an internal reference table for future use. If that's the intent, a short comment
 saying so would help; otherwise it's unused code that should be wired in or removed.
-
-### G12E-P1-05 — Minor — Broken/stale import path in demo — `##demo/demo--personal-blog/index.ts` imports a fixture path that does not exist
-
-`module/##demo/demo--personal-blog/index.ts` line 5:
-
-```ts
-import { SPEC } from "../../src/__specs/__fixtures/specs--blog--personal.js"
-```
-
-There is no `module/src/__specs/` folder; the actual fixture lives at `module/src/__fixtures/specs--blog--personal.ts`
-(note also `.js` vs `.ts` extension, and no `__specs` segment). This demo entry point is broken and would fail to
-run/resolve as-is.
 
 ### G12E-P1-06 — Nit — `module/src/__fixtures/specs--defaults.ts` is a byte-for-byte duplicate of `specs--blog--personal.ts` and is unused
 

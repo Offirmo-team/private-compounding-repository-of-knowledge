@@ -17,6 +17,7 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/assets--background": "workspace:*",
 		"@monorepo-private/react--background-img": "workspace:*"
 	},
 	"devDependencies": {

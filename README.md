@@ -34,4 +34,8 @@ git apply --3way ./otpcrk.patch
 git format-patch -3 --stdout --binary > otpcrk.patch
 ## --3way lets it fall back to a merge if the target tree has drifted slightly. This recreates all three commits with original messages, authors, and author dates
 git am --3way < last3.patch
+
+
+## then after the exported change has been pushed from another clone:
+git fetch && git pull --recurse-submodules --rebase --autostash
 ```

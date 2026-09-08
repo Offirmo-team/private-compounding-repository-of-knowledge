@@ -150,3 +150,5 @@ https://www.cloudflare.com/learning/bots/what-is-robots-txt/
 .well-known/webauthn
 
 domain names https://instantdomainsearch.com/
+
+https://codeberg.org/robida/human.json

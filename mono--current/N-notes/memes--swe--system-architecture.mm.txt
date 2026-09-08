@@ -472,6 +472,7 @@ observability = a measure of how well internal states of a system can be inferre
 observability https://opentelemetry.io/docs/concepts/observability-primer/
 on-call
 on-call -- "confidently"
+on-call readiness -- Incident simulation https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems
 on-prem requirements
 one guy with a laptop = weak SaaS
 operational maturity = How robust and performant do we have to be? How often is failure acceptable? How quickly do we need to restore a service when it fails? How quick and easy is it to deploy a new version of our services? Does it take days or require manual effort?

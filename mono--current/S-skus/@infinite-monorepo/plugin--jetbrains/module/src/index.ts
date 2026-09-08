@@ -6,11 +6,18 @@ export const manifestꓽᐧideaⳇᐧgitignore: StructuredFsⳇFileManifest = {
 	doc: ["https://git-scm.com/docs/gitignore"],
 }
 
+const ᐧideaⳇrequired_plugins__path‿ar: NodePathⳇRelative = `${PATHVARⵧROOTⵧNODE}/.idea/required_plugins.xml`
+export const manifestꓽᐧideaⳇrequired_plugins: StructuredFsⳇFileManifest = {
+	path‿ar: ᐧideaⳇrequired_plugins__path‿ar,
+	doc: ["https://www.jetbrains.com/help/idea/managing-plugins.html#required-plugins"],
+}
+
 /////////////////////////////////////////////////
 
 export const PLUGIN: Plugin = {
 	onꓽload(state: Immutable<State>): Immutable<State> {
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧideaⳇᐧgitignore)
+		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧideaⳇrequired_plugins)
 
 		return state
 	},

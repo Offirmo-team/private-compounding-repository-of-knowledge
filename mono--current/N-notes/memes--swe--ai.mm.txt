@@ -207,10 +207,11 @@ AI fluency -- diligence = why you must review = skill of deciding when verificat
 AI fluency -- discernment = how you review = skill of critically evaluating output against requirements, sources, and standards.
 AI fluency -- understand to participate = the human musc consciously seek to understand https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck
 AI fluency = https://www.linkedin.com/posts/wadefoster_how-do-we-measure-ai-fluency-at-zapier-activity-7336442774650556416-nKND/
+AI governance
 AI psychosis = when companies are run by PMs and vibecoders: dream it -> vibe it -> ship it. Lost touch with reality https://opensauce.it/cloudflare-ai-psychosis/
 AI refuser = https://www.smh.com.au/technology/this-ai-refuser-quit-her-dream-job-and-hopes-others-follow-20260818-p60pdu.html
-AI governance
 AI regulation https://en.wikipedia.org/wiki/Regulation_of_artificial_intelligence
+AI SREs = good but dangerous https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems
 AI systems -- layers = LLM <- agent <- claw
 AI systems = any solution involving AI https://openai.com/research/practices-for-governing-agentic-ai-systems
 AI Transformation -- Claude Code rollout https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start
@@ -674,6 +675,7 @@ ML -- zkML "zero-knowledge Mchine Learning" = the party that computes the infere
 MLOps
 MLOps -- LLMOps = specialized field of managing, deploying, and scaling LLMs across their lifecycle https://medium.com/@akankshasinha247/a-developers-guide-to-llmops-turning-llm-prototypes-into-production-powerhouses-ce9ea612fb07
 model = sort of snapshot of a trained neural network / brain = NN (structure + parameters) https://huggingface.co/docs/hub/models
+Model Hardware Standard = some interface for AI to control lab equipment https://www.anthropic.com/news/model-hardware-standard-research-preview
 model parity = Who topped the latest benchmark? Who had the most parameters?
 models -- abliteration = identify and surgically remove some internal representations (e.g. responsible for content refusal) without retraining or fine-tuning, preserving the core language capabilities https://github.com/elder-plinius/OBLITERATUS
 models -- beliefs = judgments a model appears to be forming about a user during a conversation: age, wealth, education level, gender... https://slashdot.org/story/25/05/24/1946203/people-should-know-about-the-beliefs-llms-form-about-them-while-conversing
@@ -925,6 +927,7 @@ Tempo blockchain https://www.msuiche.com/posts/when-machines-pay-machines-the-ec
 temptation to over-automate = need balance vs overwork https://uxdesign.cc/the-effort-paradox-in-ai-design-996a0bc2f7f6
 tensor ??
 text generation models -> see GPT https://platform.openai.com/docs/introduction/text-generation-models
+The Ironies of Automation = automation reduces operators’ opportunities to practice routine work while leaving them responsible for new and abnormal situations. Therefore, operators need to be more skilled and receive even more training than before automation. https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems
 the most expensive model = the human! AI should free attention for core tasks
 thinking -- architectures -- "plan at a higher level and execute at a lower level" with some way to synchronize system 1 and system 2 thinking to get a long-running agent with persistent state https://randomlabs.ai/blog/slate#section-10
 thinking -- architectures -- Claude Code / Codex = top agent delegating to a subagent (1 level only), with models trained to be good at delegating and being subagent

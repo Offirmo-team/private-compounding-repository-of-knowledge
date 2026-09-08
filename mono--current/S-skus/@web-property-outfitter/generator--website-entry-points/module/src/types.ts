@@ -69,7 +69,7 @@ export interface WebPage extends Thing {
 		| "promotion-capable" // fully capable to the point the browser is expected to prompt https://web.dev/articles/install-criteria
 		| "redirect" // we want to redirect to an app store TODO clarify
 	titleⵧapp?: ContentⳇTitle
-	descriptionⵧapp?: ContentⳇCaption
+	captionⵧapp?: ContentⳇCaption
 	hasꓽown_navigation?: boolean
 	supportsꓽscreensⵧwith_shape?: boolean // https://drafts.csswg.org/css-round-display/
 	canꓽuse_window_controls_overlay?: boolean
@@ -92,6 +92,8 @@ export interface WebPage extends Thing {
 
 // property = multiple pages + host-specific files if needed
 export interface WebPropertySpec extends WebPage, ThingWithOnlinePresence {
+	urlⵧcanonical: Url‿str // [needed for extends resolution]
+
 	/////// SPA
 	// XXX to review / is / should / wants ?
 	// https://developers.cloudflare.com/workers/static-assets/#routing-behavior
@@ -106,13 +108,17 @@ export interface WebPropertySpec extends WebPage, ThingWithOnlinePresence {
 		| "aws--cloudfront"
 		| "other"
 	basename?: Basename // without extension. default to "index"
+	built_at‿tms?: TimestampUTCMs // epoch ms of the build, useful to reduce entropy if several generations
 	env?: "prod" | "production" | string // default to env.NODE_ENV ?? dev
 	isꓽpublic?: boolean // true = this website is public and robots are welcome to index it. Automatically disabled for non-prod builds = no need to index a staging site
 	isꓽdebug?: boolean // true = want to debug those entry points, will add extra content to pinpoint which entry point is used
 }
 
 export interface FilesMap {
-	[relpath: PathⳇRelative]: string | Buffer
+	[relpath: PathⳇRelative]: {
+		content: string | Buffer
+		// room for per-file metadata later
+	}
 }
 
 export interface WebPropertyBundle {
@@ -128,6 +134,7 @@ export interface WebPropertyBundle {
 import type { FeatureSnippets } from "@web-property-outfitter/generator--html"
 import type { SVG } from "@web-property-outfitter/generator--svg"
 
+import type { TimestampUTCMs } from "@monorepo-private/timestamps"
 import type { Basename, PathⳇAny, PathⳇRelative } from "@monorepo-private/ts--types"
 import type {
 	Emoji,
@@ -137,4 +144,5 @@ import type {
 	ThingWithOnlinePresence,
 	Thing,
 	ContentⳇCaption,
+	Url‿str,
 } from "@monorepo-private/ts--types--hypermedia"

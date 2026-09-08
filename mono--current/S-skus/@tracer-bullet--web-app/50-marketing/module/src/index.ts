@@ -1,87 +1,67 @@
-import type { WebPage } from "@web-property-outfitter/generator--website-entry-points"
-
-import { AUTHOR } from "@monorepo-private/marketing--creator"
-import type {
-	Creator,
-	SocialNetworkLink,
-	Url‿str,
-	Thing,
-	WithOnlinePresence,
-	ThingWithOnlinePresence,
-} from "@monorepo-private/ts--types--hypermedia"
-
 /////////////////////////////////////////////////
 /*
-WebPropertySpec
-⇲ WebPage
-	⇲ ThingWithOnlinePresence
-		⇲ WithOnlinePresence
-		⇲ Thing
-			↳ Author
+ WebPropertySpec
+ ⇲ ThingWithOnlinePresence
+   ⇲ WithOnlinePresence
+ ⇲ WebPage
+   ⇲ Thing
+     ↳ Creator
 */
-
 /////////////////////////////////////////////////
 
-const THING: Thing = {
-	lang: "en",
-	caption: "Senior Dev Mental Models",
-	creator: AUTHOR,
+export const THINGⵧONLINE: ThingWithOnlinePresence = {
+	urlⵧcanonical: "https://todo.example/", // TODO
+	title: "My Cool PWA",
+	caption: "(PWA demo)",
+	creator: CREATOR,
 	since‿y: 2026,
+
+	urlsⵧsocial: [
+		// TODO 1D
+	],
+
+	// more specific than creator's one
+	contact: "https://github.com/Offirmo-team/private-compounding-repository-of-knowledge/issues",
 }
 
-const SOCIAL_LINKⵧGITHUB: SocialNetworkLink = {
-	network: "github",
-	url: "https://github.com/Yvem/minisite--dev-mental-models",
-}
-
-const ONLINE_PRESENCE: WithOnlinePresence = {
-	urlⵧcanonical: "https://yvem.github.io/minisite--dev-mental-models/",
-	urlsⵧsocial: [SOCIAL_LINKⵧGITHUB],
-}
-
-/////////////////////////////////////////////////
-// May NOT be a website!!
-// could be a store on amazon, a post on social media...
-const THINGⵧONLINE: ThingWithOnlinePresence = {
-	...THING,
-	...ONLINE_PRESENCE,
-
-	contact: "https://github.com/Yvem/minisite--dev-mental-models/issues",
-}
-
-/////////////////////////////////////////////////
-// Ok now we're having a website
-
-const WEBSITE: WebPage = {
+export const LANDING_PAGE: WebPage = {
 	...THINGⵧONLINE,
 
-	title: "Mental Models Dev",
 	icon: {
-		emoji: "💡",
-		//svg: path.join(__dirname, './icon--rpg.svg'),
+		emoji: "🛠️",
 	},
-	keywords: ["documentation"],
-	content: {},
+	keywords: ["demo"],
+	content: {
+		// not the place
+	},
 	features: [
+		// appearance
 		"cssⳇbox-layout--natural",
-		//'cssⳇviewport--full',
+		"cssⳇviewport--full",
+		"cssⳇframework--offirmo",
+		// technical
 		"normalize-url-trailing-slash",
-		//'cssⳇframework--offirmo',
-		"htmlⳇreact-root",
-		//'page-loader--offirmo',
-		//'analytics--google',
-		//'site-verification--google',
 	],
 
 	/////// SOCIAL
-	// TODO
+
+	/////// PWA
+	app_categories: ["entertainment", "utilities"],
+	wantsꓽinstall: "promotion-capable",
+	titleⵧapp: "My Cool App",
+	captionⵧapp: "(Pinnable App Demo)",
+	hasꓽown_navigation: true,
+	supportsꓽscreensⵧwith_shape: true,
+	canꓽuse_window_controls_overlay: true,
+	usesꓽpull_to_refresh: false, // TODO 1D because it's cool
 
 	/////// POLISH
-	colorⵧbackground: "white",
-	colorⵧforeground: "black",
-	colorⵧtheme: "#e5d8bd",
+	colorⵧbackground: "hsl(337, 16%, 28%)",
+	colorⵧforeground: "hsl(42, 100%, 87%)",
+	colorⵧtheme: "hsl(248,  9%, 17%)",
 }
 
 /////////////////////////////////////////////////
+import type { WebPage, ThingWithOnlinePresence } from "@web-property-outfitter/generator--website-entry-points"
 
-export { AUTHOR, WEBSITE }
+import { CREATOR } from "@monorepo-private/marketing--creator"

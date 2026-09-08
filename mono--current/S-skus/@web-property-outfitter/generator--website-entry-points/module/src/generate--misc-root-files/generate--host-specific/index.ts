@@ -30,24 +30,26 @@ export default generate
 
 function generateꓽcloudflareⵧworkers(spec: Immutable<WebPropertySpec>): FilesMap {
 	return {
-		"wrangler.jsonc": stringifyⵧstable({
-			compatibility_date: getꓽISO8601ⵧsimplified‿days(), // https://developers.cloudflare.com/workers/best-practices/workers-best-practices/#keep-your-compatibility-date-current
-			compatibility_flags: [
-				"nodejs_compat", // https://developers.cloudflare.com/workers/best-practices/workers-best-practices/#enable-nodejs_compat
-			],
-			observability: {
-				// https://developers.cloudflare.com/workers/observability/traces/
-				enabled: true,
-			},
-			assets: {
-				// https://developers.cloudflare.com/workers/wrangler/configuration/#assets
-				// https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
-				directory: `./${getꓽdirⵧfiles_to_serve(spec)}`,
-				run_worker_first: false,
-				html_handling: "auto-trailing-slash", // https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
-				not_found_handling: spec.isꓽcatching_all_routes ? "single-page-application" : "404-page",
-			},
-		}),
+		"wrangler.jsonc": {
+			content: stringifyⵧstable({
+				compatibility_date: getꓽISO8601ⵧsimplified‿days(), // https://developers.cloudflare.com/workers/best-practices/workers-best-practices/#keep-your-compatibility-date-current
+				compatibility_flags: [
+					"nodejs_compat", // https://developers.cloudflare.com/workers/best-practices/workers-best-practices/#enable-nodejs_compat
+				],
+				observability: {
+					// https://developers.cloudflare.com/workers/observability/traces/
+					enabled: true,
+				},
+				assets: {
+					// https://developers.cloudflare.com/workers/wrangler/configuration/#assets
+					// https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
+					directory: `./${getꓽdirⵧfiles_to_serve(spec)}`,
+					run_worker_first: false,
+					html_handling: "auto-trailing-slash", // https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
+					not_found_handling: spec.isꓽcatching_all_routes ? "single-page-application" : "404-page",
+				},
+			}),
+		},
 	}
 }
 
@@ -66,13 +68,15 @@ function generateꓽ_redirectsⵧcloudflareⵧpages(spec: Immutable<WebPropertyS
 }
 function generateꓽcloudflareⵧpages(spec: Immutable<WebPropertySpec>): FilesMap {
 	return {
-		_headers: generateꓽ_headersⵧcloudflareⵧpages(spec),
-		_redirects: generateꓽ_redirectsⵧcloudflareⵧpages(spec),
-		"functions/hello-world.ts": `// https://developers.cloudflare.com/pages/functions/get-started/#create-a-function
+		_headers: { content: generateꓽ_headersⵧcloudflareⵧpages(spec) },
+		_redirects: { content: generateꓽ_redirectsⵧcloudflareⵧpages(spec) },
+		"functions/hello-world.ts": {
+			content: `// https://developers.cloudflare.com/pages/functions/get-started/#create-a-function
 export function onRequest(context) {
 return new Response("Hello, world!")
 }
 `,
+		},
 	}
 }
 
@@ -91,8 +95,8 @@ function generateꓽ_redirectsⵧnetlify(spec: Immutable<WebPropertySpec>): stri
 }
 function generateꓽnetlify(spec: Immutable<WebPropertySpec>): FilesMap {
 	return {
-		_headers: generateꓽ_headersⵧnetlify(spec),
-		_redirects: generateꓽ_redirectsⵧnetlify(spec),
+		_headers: { content: generateꓽ_headersⵧnetlify(spec) },
+		_redirects: { content: generateꓽ_redirectsⵧnetlify(spec) },
 	}
 }
 
@@ -101,7 +105,8 @@ function generateꓽnetlify(spec: Immutable<WebPropertySpec>): FilesMap {
 
 function generateꓽgithub_pages(spec: Immutable<WebPropertySpec>): FilesMap {
 	const entrypoints: FilesMap = {
-		[`${getꓽdirⵧoutput_root(spec)}/.nojekyll`]: `From GitHub Staff, 2016/11/04
+		[`${getꓽdirⵧoutput_root(spec)}/.nojekyll`]: {
+			content: `From GitHub Staff, 2016/11/04
 
 If you're not using Jekyll, you can add a .nojekyll file to the root of your repository to disable Jekyll from building your site. Once you do that, your site should build correctly.
 
@@ -109,11 +114,12 @@ If you're not using Jekyll, you can add a .nojekyll file to the root of your rep
 Reason: GitHub build auto-converts the markdown files and don't serve them.
 Ref: https://github.com/blog/572-bypassing-jekyll-on-github-pages
 `,
+		},
 	}
 
 	if (spec.urlⵧcanonical) {
 		// TODO only if custom domain?
-		entrypoints[`${getꓽdirⵧoutput_root(spec)}/CNAME`] = new URL(spec.urlⵧcanonical).hostname
+		entrypoints[`${getꓽdirⵧoutput_root(spec)}/CNAME`] = { content: new URL(spec.urlⵧcanonical).hostname }
 	}
 
 	return entrypoints

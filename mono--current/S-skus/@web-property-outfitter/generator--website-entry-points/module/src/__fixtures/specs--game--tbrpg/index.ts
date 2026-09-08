@@ -1,17 +1,3 @@
-import * as path from "node:path"
-import { fileURLToPath } from "node:url"
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-
-import { AUTHOR } from "@monorepo-private/marketing--creator"
-import type {
-	Thing,
-	SocialNetworkLink,
-	WithOnlinePresence,
-	ThingWithOnlinePresence,
-} from "@monorepo-private/ts--types--hypermedia"
-
-import type { WebPage, WebPropertySpec } from "../.."
-
 /////////////////////////////////////////////////
 /*
  WebPropertySpec
@@ -21,13 +7,8 @@ import type { WebPage, WebPropertySpec } from "../.."
    ⇲ Thing
      ↳ Creator
 */
-
-const THING: Thing = {
-	lang: "en",
-	caption: "(Browser game) The simplest RPG ever! (indie game, free to play, no account needed)",
-	creator: AUTHOR,
-	since‿y: 2016,
-}
+/////////////////////////////////////////////////
+// Ok the thing IS a website
 
 const SOCIAL_LINKⵧREDDIT: SocialNetworkLink = {
 	network: "reddit",
@@ -35,43 +16,40 @@ const SOCIAL_LINKⵧREDDIT: SocialNetworkLink = {
 	url: "https://www.reddit.com/r/boringrpg/",
 } satisfies SocialNetworkLink
 
-const ONLINE_PRESENCE: WithOnlinePresence = {
+export const THINGⵧONLINE: ThingWithOnlinePresence = {
 	urlⵧcanonical: "https://www.online-adventur.es/apps/the-boring-rpg/",
+	title: "The Boring RPG",
+	caption: "(Browser game) The simplest RPG ever! (indie game, free to play, no account needed)",
+	creator: CREATOR,
+	since‿y: 2016,
+
 	urlsⵧsocial: [SOCIAL_LINKⵧREDDIT],
+
+	// more specific than creator's one
+	contact: "https://github.com/Offirmo/offirmo-monorepo/issues",
 }
-/*
+
+/* TODO
 license: 'UNLICENSED', // the source is open but the game itself is not
 version: '0.69.1',
 changelog: 'https://github.com/Offirmo/offirmo-monorepo/blob/main/stack--current/C-apps--clients/the-boring-rpg/client--browser/CHANGELOG.md',
 source: 'https://github.com/Offirmo/offirmo-monorepo/tree/main/stack--current/C-apps--clients/the-boring-rpg/client--browser',
  */
 
-/////////////////////////////////////////////////
-// May NOT be a website!!
-// could be a store on amazon, a post on social media...
-const THINGⵧONLINE: ThingWithOnlinePresence = {
-	...THING,
-	...ONLINE_PRESENCE,
-
-	contact: "https://github.com/Offirmo/offirmo-monorepo/issues",
-}
-
-/////////////////////////////////////////////////
-// Ok now we're having a website
-
-const WEBSITE: WebPage = {
+export const WEBPAGE: WebPage = {
 	...THINGⵧONLINE,
 
-	title: "The Boring RPG",
 	icon: {
 		emoji: "⚔️",
-		svg: path.join(__dirname, "./icon--rpg.svg"),
+		svg: NodePath.join(__dirname, "./icon.svg"),
 	},
 	keywords: ["game", "incremental", "fantasy", "rpg", "free", "indie"],
-	content: {},
+	content: {
+		// TODO
+	},
 	features: [
 		"cssⳇbox-layout--natural",
-		"cssⳇviewport--full",
+		"cssⳇviewport--full", // this
 		"normalize-url-trailing-slash",
 		"cssⳇframework--offirmo",
 		"htmlⳇreact-root",
@@ -81,7 +59,20 @@ const WEBSITE: WebPage = {
 	],
 
 	/////// SOCIAL
-	// TODO
+	// TODO full open graph type
+	// TODO move to dedicated type
+	//titleⵧsocial?: string;
+	//descriptionⵧsocial?: string;
+
+	/////// PWA
+	app_categories: ["games"],
+	wantsꓽinstall: "promotion-capable",
+	titleⵧapp: "Boring RPG", // slightly smaller
+	captionⵧapp: "The simplest RPG ever!",
+	hasꓽown_navigation: true,
+	supportsꓽscreensⵧwith_shape: true,
+	canꓽuse_window_controls_overlay: true,
+	usesꓽpull_to_refresh: false,
 
 	/////// POLISH
 	colorⵧbackground: "hsl(337, 16%, 28%)",
@@ -89,26 +80,58 @@ const WEBSITE: WebPage = {
 	colorⵧtheme: "hsl(248,  9%, 17%)",
 }
 
-/////////////////////////////////////////////////
-const SPEC: WebPropertySpec = {
-	...WEBSITE,
-	...PRESETꘌappⵧimmersive,
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// specific to hosting
 
-	/////// PWA
-	wantsꓽinstall: "promotion-capable",
-	hasꓽown_navigation: true,
-	supportsꓽscreensⵧwith_shape: true,
-	canꓽuse_window_controls_overlay: true,
-	usesꓽpull_to_refresh: false,
+export const SPECⵧprod: WebPropertySpec = {
+	...THINGⵧONLINE, // for types
+	...WEBPAGE,
 
-	/////// SRC
-	// TODO refine
+	host: "github-pages",
+	env: "production",
 
 	/////// META
-	isꓽpublic: false, // TODO
+}
+
+export const SPECⵧpreprod: WebPropertySpec = {
+	...SPECⵧprod,
+
+	host: "github-pages",
+	env: "production",
+
+	/////// META
+	isꓽpublic: false,
+	isꓽdebug: false,
+}
+
+export const SPECⵧnightly: WebPropertySpec = {
+	...SPECⵧprod,
+
+	host: "github-pages",
+	env: "development",
+
+	/////// META
+	isꓽpublic: false,
 	isꓽdebug: true,
 }
 
-/////////////////////////////////////////////////
+import * as NodePath from "node:path"
 
-export { SPEC }
+/////////////////////////////////////////////////
+import type { FeatureSnippets } from "@web-property-outfitter/generator--html"
+import type {
+	WebPage,
+	WebPropertySpec,
+	SocialNetworkLink,
+} from "@web-property-outfitter/generator--website-entry-points"
+
+import { CREATOR } from "@monorepo-private/marketing--creator"
+import type {
+	ThingWithOnlinePresence,
+	Contentⳇweb,
+	ContentⳇTitle,
+	ContentⳇCaption,
+	CssⳇColor‿str,
+} from "@monorepo-private/ts--types--hypermedia"
+
+import type { IconSet, WebAppCategory } from "../../types.ts"
