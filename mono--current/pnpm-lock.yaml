@@ -9622,9 +9622,21 @@ importers:
       '@monorepo-private/assets--background':
         specifier: workspace:*
         version: link:../../../4-engine--browser/1-libs--simple/assets--background
+      '@monorepo-private/page-loaded':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/1-libs--simple/page-loaded
       '@monorepo-private/react--background-img':
         specifier: workspace:*
         version: link:../../../4-engine--browser/1-libs--simple/react--background-img
+      '@monorepo-private/react--error-boundary':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/2-libs--cross-cutting/react--error-boundary
+      '@monorepo-private/utils--async':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/utils--async
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.2.8(react@19.2.8)
     devDependencies:
       '@monorepo-private/config--mocha':
         specifier: workspace:*
@@ -9638,6 +9650,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/soft-execution-context':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/2-libs--cross-cutting/30-soft-execution-context
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -9647,6 +9662,12 @@ importers:
       '@types/node':
         specifier: 'catalog:'
         version: 26.4.0
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.2.18
+      '@types/react-dom':
+        specifier: 'catalog:'
+        version: 19.2.5(@types/react@19.2.18)
       '@types/sinon':
         specifier: 'catalog:'
         version: 22.0.0
@@ -9662,9 +9683,6 @@ importers:
       react:
         specifier: 'catalog:'
         version: 19.2.8
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.2.8(react@19.2.8)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0

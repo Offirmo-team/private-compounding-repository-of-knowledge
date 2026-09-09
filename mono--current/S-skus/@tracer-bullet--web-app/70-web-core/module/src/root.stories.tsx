@@ -1,12 +1,12 @@
 /////////////////////////////////////////////////
 
-import { App } from "./index.tsx"
+import { Root } from "./root.tsx"
 
 export default {
 	parameters: {
 		layout: "fullscreen", // "centered" "padded" "bare",
 	},
-	component: App,
+	component: Root,
 	args: {
 		_debug: true,
 	},

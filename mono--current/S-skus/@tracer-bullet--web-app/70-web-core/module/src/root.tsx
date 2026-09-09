@@ -4,7 +4,7 @@ export interface Props {
 	_debug?: boolean
 }
 
-export function App(props: Props) {
+export function Root(props: Props) {
 	return (
 		<div className="o⋄full-viewport isolate" style={{ position: "relative" }}>
 			<BackgroundImg bg={BG} _debug={!!props._debug} />
