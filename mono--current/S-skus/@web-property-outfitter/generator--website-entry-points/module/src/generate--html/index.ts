@@ -1,31 +1,6 @@
 // Reminder: code will be prettified, no need to indent or format it.
 // put the comments in the code, it's up to the consumer to optimize or not
 
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import {
-	getꓽbasenameⵧindexᐧhtml,
-	getꓽbasenameⵧaboutᐧhtml,
-	getꓽbasenameⵧcontactᐧhtml,
-	getꓽbasenameⵧerrorᐧhtml,
-	getꓽbasenameⵧprivacy_policyᐧhtml,
-	getꓽbasenameⵧsupportᐧhtml,
-	getꓽbasenameⵧterms_and_conditionsᐧhtml,
-	getꓽdirⵧfiles_to_serve,
-} from "../selectors/index.ts"
-import type { WebPropertySpec, FilesMap } from "../types.ts"
-
-import generateꓽaboutᐧhtml from "./about/index.ts"
-import generateꓽcontactᐧhtml from "./contact/index.ts"
-import generateꓽindexᐧhtml from "./index-html/index.ts"
-import generateꓽ404ᐧhtml from "./page--404/index.ts"
-import generateꓽerrorᐧhtml from "./page--error/index.ts"
-import generateꓽprivacy_policyᐧhtml from "./page--privacy-policy/index.ts"
-import generateꓽsupportᐧhtml from "./page--support/index.ts"
-import generateꓽterms_and_conditionsᐧhtml from "./page--terms-and-conditions/index.ts"
-import { getꓽhtml_doc_spec } from "./pages--common/selectors.ts"
-
 /////////////////////////////////////////////////
 
 function generateꓽerror_handling(spec: Immutable<WebPropertySpec>): FilesMap {
@@ -77,7 +52,7 @@ function generateꓽcomplimentary(spec: Immutable<WebPropertySpec>): FilesMap {
 	}
 }
 
-function generate(spec: Immutable<WebPropertySpec>): FilesMap {
+export function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 	return {
 		[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧindexᐧhtml(spec)}`]: { content: generateꓽindexᐧhtml(spec) },
 
@@ -86,7 +61,32 @@ function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 		...generateꓽcomplimentary(spec),
 	}
 }
+export default generate
 
 /////////////////////////////////////////////////
 
-export default generate
+import {
+	getꓽbasenameⵧindexᐧhtml,
+	getꓽbasenameⵧaboutᐧhtml,
+	getꓽbasenameⵧcontactᐧhtml,
+	getꓽbasenameⵧerrorᐧhtml,
+	getꓽbasenameⵧprivacy_policyᐧhtml,
+	getꓽbasenameⵧsupportᐧhtml,
+	getꓽbasenameⵧterms_and_conditionsᐧhtml,
+	getꓽdirⵧfiles_to_serve,
+} from "@web-property-outfitter/spec"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import type { WebPropertySpec, FilesMap } from "../types.ts"
+
+import generateꓽaboutᐧhtml from "./about/index.ts"
+import generateꓽcontactᐧhtml from "./contact/index.ts"
+import generateꓽindexᐧhtml from "./index-html/index.ts"
+import generateꓽ404ᐧhtml from "./page--404/index.ts"
+import generateꓽerrorᐧhtml from "./page--error/index.ts"
+import generateꓽprivacy_policyᐧhtml from "./page--privacy-policy/index.ts"
+import generateꓽsupportᐧhtml from "./page--support/index.ts"
+import generateꓽterms_and_conditionsᐧhtml from "./page--terms-and-conditions/index.ts"
+import { getꓽhtml_doc_spec } from "./pages--common/selectors.ts"

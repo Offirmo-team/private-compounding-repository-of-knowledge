@@ -1,17 +1,6 @@
-import { type HtmlFileSpec } from "@web-property-outfitter/generator--html"
-
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable, IETFLanguageType } from "@monorepo-private/ts--types"
-
-import { LIB } from "../../consts.ts"
-import { getꓽauthor__name, getꓽauthor__contact } from "../../selectors/index.ts"
-import type { WebPropertySpec } from "../../types.ts"
-import { ifꓽdebug } from "../../utils/debug.ts"
-import { getꓽhtml_doc_spec as _getꓽhtml_doc_spec } from "../pages--common/selectors.ts"
-
 /////////////////////////////////////////////////
 
-function getꓽhtml_doc_spec(spec: Immutable<WebPropertySpec>): HtmlFileSpec {
+export function getꓽhtml_doc_spec(spec: Immutable<WebPropertySpec>): HtmlFileSpec {
 	const base = _getꓽhtml_doc_spec(spec)
 	const result: HtmlFileSpec = {
 		...base,
@@ -174,4 +163,13 @@ No waiver of any term of these Terms shall be deemed a further or continuing wai
 
 /////////////////////////////////////////////////
 
-export { getꓽhtml_doc_spec }
+import { type HtmlFileSpec } from "@web-property-outfitter/generator--html"
+import { getꓽauthor__name, getꓽauthor__contact } from "@web-property-outfitter/spec"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable, IETFLanguageType } from "@monorepo-private/ts--types"
+
+import { LIB } from "../../consts.ts"
+import type { WebPropertySpec } from "../../types.ts"
+import { ifꓽdebug } from "../../utils/debug.ts"
+import { getꓽhtml_doc_spec as _getꓽhtml_doc_spec } from "../pages--common/selectors.ts"

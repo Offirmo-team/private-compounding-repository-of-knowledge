@@ -290,7 +290,7 @@ export async function updateⵧfrom_files(
 			throw new Error(`Unknown language(s) "${Array.from(unprocessed_langs).join(", ")}" for "${entry.basename}"!`)
 		}
 
-		if (entry.extⵧsub === ".tests") {
+		if ([".spec", ".test", ".tests"].includes(entry.extⵧsub)) {
 			details.hasꓽtestsⵧunit = true
 		}
 		if (entry.extⵧsub === ".evals") {
@@ -405,7 +405,7 @@ export async function updateⵧfrom_files(
 function getꓽProgLangs(entry: FileEntry): ProgrammingLanguage[] {
 	const { ext } = entry
 	switch (true) {
-		case [".js", ".mjs"].includes(ext): // mjs cjs intentionally not supported (legacy) TODO remove mjs when mocha chai done
+		case [".js", ".mjs"].includes(ext): // mjs cjs intentionally not supported (legacy) TODO remove mjs when mocha chai init files no longer require it
 			return ["js"]
 
 		case [".jsx"].includes(ext):

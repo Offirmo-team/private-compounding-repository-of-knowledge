@@ -1,32 +1,14 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-const chroma = ((await import("chroma-js")) as any).default as chroma.ChromaStatic // has ESM issues 2024/08
+/////////////////////////////////////////////////
 
-import type { HtmlMetas, HtmlMetaContentⳇViewport, HtmlFileSpec } from "@web-property-outfitter/generator--html"
-
-import type { Immutable } from "@monorepo-private/ts--types"
-import type { Contentⳇweb, Css‿str, Html‿str, JS‿str } from "@monorepo-private/ts--types--hypermedia"
-import * as ContentⳇwebᐧSelectors from "@monorepo-private/ts--types--hypermedia"
-
-import { LIB } from "../../consts.ts"
-import { generateꓽinline as generateꓽfavicon__iconⵧinline } from "../../generate--icons/index.ts"
-import {
-	getꓽtitleⵧpage,
-	getꓽfeatures,
-	getꓽlang,
-	getꓽcolorⵧtheme,
-	getꓽcharset,
-	isꓽuser_scalable,
-	supportsꓽscreensⵧwith_shape,
-	wantsꓽinstall,
-	usesꓽpull_to_refresh,
-	getꓽcolorⵧbackground,
-	getꓽcolorⵧforeground,
-	needsꓽwebmanifest,
-	getꓽbasenameⵧwebmanifest,
-	shouldꓽgenerateꓽjscode,
-} from "../../selectors/index.ts"
-import type { WebPropertySpec } from "../../types.ts"
-import { ifꓽdebug } from "../../utils/debug.ts"
+export function getꓽhtml_doc_spec(spec: Immutable<WebPropertySpec>): HtmlFileSpec {
+	const result: HtmlFileSpec = {
+		content: getꓽcontentⵧweb(spec),
+		links: getꓽlinks(spec),
+		metas: getꓽmetas(spec),
+		features: getꓽfeatures(spec),
+	}
+	return result
+}
 
 /////////////////////////////////////////////////
 
@@ -235,16 +217,32 @@ function getꓽcontentⵧweb(spec: Immutable<WebPropertySpec>): Contentⳇweb {
 
 /////////////////////////////////////////////////
 
-function getꓽhtml_doc_spec(spec: Immutable<WebPropertySpec>): HtmlFileSpec {
-	const result: HtmlFileSpec = {
-		content: getꓽcontentⵧweb(spec),
-		links: getꓽlinks(spec),
-		metas: getꓽmetas(spec),
-		features: getꓽfeatures(spec),
-	}
-	return result
-}
+import { assert_from, assert } from "@monorepo-private/assert"
+const chroma = ((await import("chroma-js")) as any).default as chroma.ChromaStatic // has ESM issues 2024/08
 
-/////////////////////////////////////////////////
+import type { HtmlMetas, HtmlMetaContentⳇViewport, HtmlFileSpec } from "@web-property-outfitter/generator--html"
+import {
+	getꓽtitleⵧpage,
+	getꓽfeatures,
+	getꓽlang,
+	getꓽcolorⵧtheme,
+	getꓽcharset,
+	isꓽuser_scalable,
+	supportsꓽscreensⵧwith_shape,
+	wantsꓽinstall,
+	usesꓽpull_to_refresh,
+	getꓽcolorⵧbackground,
+	getꓽcolorⵧforeground,
+	needsꓽwebmanifest,
+	getꓽbasenameⵧwebmanifest,
+	shouldꓽgenerateꓽjscode,
+} from "@web-property-outfitter/spec"
 
-export { getꓽhtml_doc_spec }
+import type { Immutable } from "@monorepo-private/ts--types"
+import type { Contentⳇweb, Css‿str, Html‿str, JS‿str } from "@monorepo-private/ts--types--hypermedia"
+import * as ContentⳇwebᐧSelectors from "@monorepo-private/ts--types--hypermedia"
+
+import { LIB } from "../../consts.ts"
+import { generateꓽinline as generateꓽfavicon__iconⵧinline } from "../../generate--icons/index.ts"
+import type { WebPropertySpec } from "../../types.ts"
+import { ifꓽdebug } from "../../utils/debug.ts"

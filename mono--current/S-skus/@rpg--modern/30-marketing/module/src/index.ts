@@ -1,4 +1,4 @@
-import type { WebPage } from "@web-property-outfitter/generator--website-entry-points"
+import type { WebPage } from "@web-property-outfitter/spec"
 
 import { AUTHOR } from "@monorepo-private/marketing--creator"
 import type {

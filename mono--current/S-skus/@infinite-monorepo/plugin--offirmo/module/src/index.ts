@@ -12,6 +12,7 @@ export const PLUGIN: Plugin = {
 		state.pkg_infos_resolver.preload("sinon")
 		state.pkg_infos_resolver.preload("@types/sinon")
 		state.pkg_infos_resolver.preload("mocha")
+		state.pkg_infos_resolver.preload("@types/mocha")
 		state.pkg_infos_resolver.preload("@types/node")
 
 		// overrides
@@ -117,12 +118,21 @@ export const PLUGIN: Plugin = {
 						})
 
 						// unit tests
-						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@monorepo-private/config--mocha", {
-							type: "dev",
-						})
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "vitest", {
 							type: "dev",
 						})
+						/* 2026/09 mocha considered legacy, we no longer force it if unused.
+						  if used, it will naturally appear.
+						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "mocha", {
+							type: "dev",
+						})
+						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@types/mocha", {
+							type: "dev",
+						})
+						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@monorepo-private/config--mocha", {
+							type: "dev",
+						})
+						*/
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "chai", {
 							type: "dev",
 						})
@@ -130,12 +140,6 @@ export const PLUGIN: Plugin = {
 							type: "dev",
 						})
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@types/sinon", {
-							type: "dev",
-						})
-						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "mocha", {
-							type: "dev",
-						})
-						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@types/mocha", {
 							type: "dev",
 						})
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@types/node", {

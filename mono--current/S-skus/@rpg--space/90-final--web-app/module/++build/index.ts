@@ -50,4 +50,4 @@ import {
 	generateꓽwebᝍproperty,
 	PRESETꘌappⵧimmersive,
 	type WebPropertySpec,
-} from "@web-property-outfitter/generator--website-entry-points"
+} from "@web-property-outfitter/spec"

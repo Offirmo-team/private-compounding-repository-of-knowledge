@@ -112,7 +112,9 @@ export function inferꓽdeptype_from_caller(entry: FileEntry): DependencyType {
 		// generators
 		return "dev"
 
+	if (extⵧsub === ".test") return "dev" // vitest convention
 	if (extⵧsub === ".tests") return "dev"
+	if (extⵧsub === ".spec") return "dev"
 	if (extⵧsub === ".evals") return "dev"
 	if (extⵧsub === ".stories") return "dev"
 	if (extⵧsub === ".typecheck") return "dev"

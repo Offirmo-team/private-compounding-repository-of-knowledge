@@ -62,6 +62,6 @@ export const LANDING_PAGE: WebPage = {
 }
 
 /////////////////////////////////////////////////
-import type { WebPage, ThingWithOnlinePresence } from "@web-property-outfitter/generator--website-entry-points"
+import type { WebPage, ThingWithOnlinePresence } from "@web-property-outfitter/spec"
 
 import { CREATOR } from "@monorepo-private/marketing--creator"

@@ -179,19 +179,17 @@ export const PLUGIN: Plugin = {
 
 				/////// Dev
 				if (pkg_details.hasꓽtestsⵧunit) {
-					scripts["test"] =
-						// TODO one day discriminate between test types? --unit
-						// todo refine to module/src if any or skip ~~
-						//`${NODE_INVOCATION} ./node_modules/.bin/mocha -- --bail --config ./node_modules/@monorepo-private/toolbox--unit-tests/module/mocharc.json ./node_modules/@monorepo-private/toolbox--unit-tests/module/mocha-chai-init-node.mjs './${PURE_MODULE_CONTENT_RELPATH}/**/*.tests.ts'`
-						[
-							//`${NODE_INVOCATION} ./node_modules/.bin/mocha --`, <-- NO pnpm wraps bin in some shell script so we can't invoke it with node
-							`${NODE_INVOCATION} ./node_modules/mocha/bin/mocha.js --`, // WARN internal, may break
-							"--bail",
-							"--config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json",
-							"./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs",
-							`'./${PURE_MODULE_CONTENT_RELPATH}/**/*.tests.ts'`,
-							`--ignore '**/~~*/**'`,
-						].join(" ")
+					// TODO one day discriminate between test types? --unit
+					// todo refine to module/src if any or skip ~~
+					scripts["test--mocha"] = [
+						`${NODE_INVOCATION} ./node_modules/mocha/bin/mocha.js --`, // WARN internal, may break
+						"--bail",
+						"--config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json",
+						"./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs",
+						`'./${PURE_MODULE_CONTENT_RELPATH}/**/*.tests.ts'`,
+						`--ignore '**/~~*/**'`,
+					].join(" ")
+					scripts["test--vitest"] = [`vitest run`].join(" ")
 				}
 
 				// TODO better naming convention

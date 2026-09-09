@@ -1,17 +1,22 @@
-import { Resvg } from "@resvg/resvg-js"
-import { getꓽsvg‿str, createꓽfrom_emoji, type Svg‿str } from "@web-property-outfitter/generator--svg"
+/////////////////////////////////////////////////
 
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
+export function generate(spec: Immutable<WebPropertySpec>): FilesMap {
+	return {
+		// size-less version (SVG) if possible
+		...(getꓽiconⵧsvg(spec) && {
+			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽicon__path(spec, null)}`]: { content: generateꓽfile(spec, null) },
+		}),
 
-import {
-	getꓽicon__sizes,
-	getꓽiconⵧemoji,
-	getꓽiconⵧsvg,
-	getꓽicon__path,
-	getꓽdirⵧfiles_to_serve,
-} from "../selectors/index.ts"
-import type { WebPropertySpec, FilesMap } from "../types.ts"
+		...generateꓽfixed_sizes(spec),
+	}
+}
+export default generate
+
+function generateꓽinline(spec: Immutable<WebPropertySpec>): string {
+	return getꓽsvg‿str(createꓽfrom_emoji(getꓽiconⵧemoji(spec)), {
+		wantsꓽcompact: true,
+	})
+}
 
 /////////////////////////////////////////////////
 
@@ -58,12 +63,6 @@ function generateꓽfile(spec: Immutable<WebPropertySpec>, size: number | null):
 	return renderedImage.asPng()*/
 }
 
-function generateꓽinline(spec: Immutable<WebPropertySpec>): string {
-	return getꓽsvg‿str(createꓽfrom_emoji(getꓽiconⵧemoji(spec)), {
-		wantsꓽcompact: true,
-	})
-}
-
 /////////////////////////////////////////////////
 
 function generateꓽfixed_sizes(spec: Immutable<WebPropertySpec>): FilesMap {
@@ -76,18 +75,19 @@ function generateꓽfixed_sizes(spec: Immutable<WebPropertySpec>): FilesMap {
 		}, {} as EntryPointFiles)*/
 }
 
-function generate(spec: Immutable<WebPropertySpec>): FilesMap {
-	return {
-		// size-less version (SVG) if possible
-		...(getꓽiconⵧsvg(spec) && {
-			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽicon__path(spec, null)}`]: { content: generateꓽfile(spec, null) },
-		}),
-
-		...generateꓽfixed_sizes(spec),
-	}
-}
-
 /////////////////////////////////////////////////
 
-export default generate
-export { generateꓽinline }
+import { getꓽsvg‿str, createꓽfrom_emoji, type Svg‿str } from "@web-property-outfitter/generator--svg"
+import {
+	type WebPropertySpec,
+	getꓽicon__sizes,
+	getꓽiconⵧemoji,
+	getꓽiconⵧsvg,
+	getꓽicon__path,
+	getꓽdirⵧfiles_to_serve,
+} from "@web-property-outfitter/spec"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import type { FilesMap } from "../types.ts"

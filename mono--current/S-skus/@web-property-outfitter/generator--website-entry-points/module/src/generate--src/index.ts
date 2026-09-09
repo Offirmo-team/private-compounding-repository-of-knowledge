@@ -1,17 +1,3 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import {
-	getꓽtitleⵧapp,
-	getꓽtitleⵧappⵧshort,
-	getꓽtitleⵧlib,
-	getꓽcolorⵧbackground,
-	getꓽcolorⵧforeground,
-	getꓽdirⵧfiles_to_serve,
-} from "../selectors/index.ts"
-import type { FilesMap, WebPropertySpec } from "../types.ts"
-import { ifꓽdebug } from "../utils/debug.ts"
-
 /////////////////////////////////////////////////
 
 const CODE_TEMPLATEⵧGENERIC = `
@@ -339,7 +325,7 @@ async function init(): Promise<void> {
 export default init
 `.trim()
 
-function generate(spec: Immutable<WebPropertySpec>): FilesMap {
+export function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 	const contents: Record<string, string> = {
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/consts.ts`]: `export const LIB = '${getꓽtitleⵧlib(spec)}'`,
 		[`${getꓽdirⵧfiles_to_serve(spec)}/app/index.ts`]: `
@@ -410,7 +396,21 @@ asap_but_out_of_immediate_execution(async () => {
 		return acc
 	}, {} as FilesMap)
 }
+export default generate
 
 /////////////////////////////////////////////////
 
-export default generate
+import {
+	getꓽtitleⵧapp,
+	getꓽtitleⵧappⵧshort,
+	getꓽtitleⵧlib,
+	getꓽcolorⵧbackground,
+	getꓽcolorⵧforeground,
+	getꓽdirⵧfiles_to_serve,
+} from "@web-property-outfitter/spec"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import type { FilesMap, WebPropertySpec } from "../types.ts"
+import { ifꓽdebug } from "../utils/debug.ts"

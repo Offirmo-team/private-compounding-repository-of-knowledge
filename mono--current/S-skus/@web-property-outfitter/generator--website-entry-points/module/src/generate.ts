@@ -1,5 +1,24 @@
 /////////////////////////////////////////////////
 
+export async function generateꓽwebᝍproperty(
+	spec: Immutable<WebPropertySpec>,
+	targetDir: PathⳇAbsolute,
+	options: {
+		rm?: boolean
+		include?: "all" | "served"
+	} = {},
+): Promise<Immutable<WebPropertyBundle>> {
+	const entries = getꓽwebᝍpropertyᝍbundle(spec)
+
+	if (options.rm) {
+		await fs.rm(targetDir, { recursive: true, force: true })
+	}
+
+	return writeꓽwebᝍpropertyᝍfiles(entries, targetDir)
+}
+
+/////////////////////////////////////////////////
+
 export function getꓽwebᝍpropertyᝍbundle(spec: Immutable<WebPropertySpec>): WebPropertyBundle {
 	const ǃ = assert_from({ getꓽwebᝍpropertyᝍbundle })
 
@@ -138,27 +157,9 @@ export async function writeꓽwebᝍpropertyᝍfiles(
 
 /////////////////////////////////////////////////
 
-export async function generateꓽwebᝍproperty(
-	spec: Immutable<WebPropertySpec>,
-	targetDir: PathⳇAbsolute,
-	options: {
-		rm?: boolean
-	} = {},
-): Promise<Immutable<WebPropertyBundle>> {
-	const entries = getꓽwebᝍpropertyᝍbundle(spec)
-
-	if (options.rm) {
-		await fs.rm(targetDir, { recursive: true, force: true })
-	}
-
-	return writeꓽwebᝍpropertyᝍfiles(entries, targetDir)
-}
-
-/////////////////////////////////////////////////
-
 // content is always a Buffer: lossless for any file type (js, png, webp…) and round-trips
 // byte-for-byte through writeꓽwebᝍpropertyᝍfiles, which writes non-string content raw.
-export async function loadꓽfiles(serveDir: PathⳇAbsolute): Promise<FilesMap> {
+export async function loadꓽfiles(serveDir: PathⳇAbsolute, segment?: string | undefined): Promise<FilesMap> {
 	const ǃ = assert_from({ loadꓽfiles })
 
 	serveDir = NodePath.normalize(serveDir)
@@ -170,7 +171,8 @@ export async function loadꓽfiles(serveDir: PathⳇAbsolute): Promise<FilesMap>
 		relpaths.map(async (relpath: PathⳇRelative) => {
 			const content = await fs.readFile(NodePath.join(serveDir, relpath))
 
-			return [relpath, { content }] as const
+			const path = segment ? NodePath.join(segment, relpath) : relpath
+			return [path, { content }] as const
 		}),
 	)
 
@@ -181,6 +183,12 @@ export async function loadꓽfiles(serveDir: PathⳇAbsolute): Promise<FilesMap>
 import * as fs from "node:fs/promises"
 import * as NodePath from "node:path"
 
+import {
+	needsꓽwebmanifest,
+	getꓽbasenameⵧwebmanifest,
+	shouldꓽgenerateꓽjscode,
+	getꓽdirⵧfiles_to_serve,
+} from "@web-property-outfitter/spec"
 import * as Prettier from "prettier"
 
 import { assert_from, assert } from "@monorepo-private/assert"
@@ -195,10 +203,4 @@ import generateꓽmisc_root_files from "./generate--misc-root-files/index.ts"
 import generateꓽsource_code from "./generate--src/index.ts"
 import generateꓽwebmanifest from "./generate--webmanifest/index.ts"
 import generateꓽwell_known from "./generate--well-known/index.ts"
-import {
-	needsꓽwebmanifest,
-	getꓽbasenameⵧwebmanifest,
-	shouldꓽgenerateꓽjscode,
-	getꓽdirⵧfiles_to_serve,
-} from "./selectors/index.ts"
 import type { FilesMap, WebPropertyBundle, WebPropertySpec } from "./types.ts"

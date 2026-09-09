@@ -4,7 +4,7 @@
 /////////////////////////////////////////////////
 
 // Well-known https://en.wikipedia.org/wiki/Well-known_URI
-function generate(spec: Immutable<WebPropertySpec>): FilesMap {
+export function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 	switch (spec.host ?? "other") {
 		case "other":
 			// no host-specific files
@@ -127,9 +127,10 @@ Ref: https://github.com/blog/572-bypassing-jekyll-on-github-pages
 
 /////////////////////////////////////////////////
 
+import { getꓽdirⵧfiles_to_serve, getꓽdirⵧoutput_root } from "@web-property-outfitter/spec"
+
 import { stringifyⵧstable } from "@monorepo-private/json-stable-stringify"
 import { getꓽISO8601ⵧsimplified‿days } from "@monorepo-private/timestamps"
 import type { Immutable } from "@monorepo-private/ts--types"
 
-import { getꓽdirⵧfiles_to_serve, getꓽdirⵧoutput_root } from "../../selectors/index.ts"
 import type { WebPropertySpec, FilesMap } from "../../types.ts"

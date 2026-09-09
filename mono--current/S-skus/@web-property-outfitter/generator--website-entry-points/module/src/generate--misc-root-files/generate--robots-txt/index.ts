@@ -1,12 +1,6 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import { isꓽpublic } from "../../selectors/index.ts"
-import type { WebPropertySpec } from "../../types.ts"
-
 /////////////////////////////////////////////////
 
-function generate(spec: Immutable<WebPropertySpec>): string {
+export function generate(spec: Immutable<WebPropertySpec>): string {
 	// TODO only allowed from the top!!
 	// TODO Sitemap: http://www.example.com/sitemap.xml
 
@@ -18,8 +12,13 @@ User-agent: *
 ${isꓽpublic(spec) ? "Allow" : "Disallow"}: /
 `.trimStart()
 }
+export default generate
 
 /////////////////////////////////////////////////
 
-export default generate
-export { generate }
+import { isꓽpublic } from "@web-property-outfitter/spec"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import type { WebPropertySpec } from "../../types.ts"

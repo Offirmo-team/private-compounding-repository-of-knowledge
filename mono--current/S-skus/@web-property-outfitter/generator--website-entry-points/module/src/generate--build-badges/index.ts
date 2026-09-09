@@ -1,20 +1,9 @@
-import { assert_from } from "@monorepo-private/assert"
-import {
-	getꓽUTC_timestamp‿ms,
-	getꓽUTC_timestampⵧhuman_readable‿minutes,
-	type HumanReadableTimestampUTCMinutes,
-} from "@monorepo-private/timestamps"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import { getꓽdirⵧfiles_to_serve } from "../selectors/index.ts"
-import type { WebPropertySpec, FilesMap } from "../types.ts"
-
 /////////////////////////////////////////////////
 
 // shields.io "endpoint" badges, served at the property root so a README/dashboard can point at them
 // https://shields.io/badges/endpoint-badge
 // ex. https://github.com/online-adventures/online-adventures.github.io/tree/master/apps/the-boring-rpg
-function generate(spec: Immutable<WebPropertySpec>): FilesMap {
+export function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 	const dir = getꓽdirⵧfiles_to_serve(spec)
 
 	// TODO wire a real version once available
@@ -42,8 +31,18 @@ function getꓽbuild_dateⵧutc(spec: Immutable<WebPropertySpec>): HumanReadable
 function generateꓽendpoint_badge(label: string, message: string): string {
 	return JSON.stringify({ schemaVersion: 1, label, message })
 }
+export default generate
 
 /////////////////////////////////////////////////
 
-export default generate
-export { generate }
+import { getꓽdirⵧfiles_to_serve } from "@web-property-outfitter/spec"
+
+import { assert_from } from "@monorepo-private/assert"
+import {
+	getꓽUTC_timestamp‿ms,
+	getꓽUTC_timestampⵧhuman_readable‿minutes,
+	type HumanReadableTimestampUTCMinutes,
+} from "@monorepo-private/timestamps"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import type { WebPropertySpec, FilesMap } from "../types.ts"

@@ -72,4 +72,4 @@ import { fileURLToPath } from "node:url"
 const __dirname = path.dirname(fileURLToPath(import.meta.url)) // TODO favicon?
 
 import { LANDING_PAGE, THINGⵧONLINE } from "@tracer-bullet--web-app/marketing"
-import { type WebPage, type WebPropertySpec } from "@web-property-outfitter/generator--website-entry-points"
+import type { WebPage, WebPropertySpec } from "@web-property-outfitter/spec"

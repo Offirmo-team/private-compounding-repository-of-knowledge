@@ -1,25 +1,36 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import {
-	canꓽuse_window_controls_overlay,
-	hasꓽown_navigation,
-	getꓽbasenameⵧindexᐧhtml,
-	getꓽlang,
-	getꓽtitleⵧapp,
-	getꓽtitleⵧappⵧshort,
-	getꓽcolorⵧbackground,
-	getꓽcolorⵧtheme,
-	supportsꓽscreensⵧwith_shape,
-	getꓽicon__sizes,
-	getꓽicon__path,
-} from "../selectors/index.ts"
-import type { WebAppCategory, WebPropertySpec } from "../types.ts"
-import { ifꓽdebug } from "../utils/debug.ts"
-
-import type { Icon, WebManifest } from "./types.ts"
-
 /////////////////////////////////////////////////
+
+export function generate(spec: Immutable<WebPropertySpec>): WebManifest {
+	const result: WebManifest = {
+		lang: getꓽlang(spec),
+
+		// critical to be installable
+		name: ifꓽdebug(spec).prefixꓽwith(`[wm.n]`, getꓽtitleⵧapp(spec)),
+		icons: _generateꓽicons(spec),
+		start_url: `./${getꓽbasenameⵧindexᐧhtml(spec)}?ref=webmanifest`,
+
+		// enhancements
+		display: hasꓽown_navigation(spec)
+			? supportsꓽscreensⵧwith_shape(spec)
+				? "fullscreen"
+				: "standalone"
+			: "minimal-ui",
+
+		// critical for good experience
+		short_name: ifꓽdebug(spec).prefixꓽwith(`[wm.s]`, getꓽtitleⵧappⵧshort(spec)),
+
+		theme_color: getꓽcolorⵧtheme(spec),
+		background_color: getꓽcolorⵧbackground(spec),
+
+		...(canꓽuse_window_controls_overlay(spec) && { display_override: ["window-controls-overlay"] }),
+
+		//description: ...
+		//categories: ...
+	}
+
+	return result
+}
+export default generate
 
 function _generateꓽicons(spec: Immutable<WebPropertySpec>): WebManifest["icons"] {
 	// TODO should we add a size-less SVG? Is there any platform that would use it?
@@ -54,37 +65,26 @@ function _generateꓽicons(spec: Immutable<WebPropertySpec>): WebManifest["icons
 	)
 }
 
-function generate(spec: Immutable<WebPropertySpec>): WebManifest {
-	const result: WebManifest = {
-		lang: getꓽlang(spec),
-
-		// critical to be installable
-		name: ifꓽdebug(spec).prefixꓽwith(`[wm.n]`, getꓽtitleⵧapp(spec)),
-		icons: _generateꓽicons(spec),
-		start_url: `./${getꓽbasenameⵧindexᐧhtml(spec)}?ref=webmanifest`,
-
-		// enhancements
-		display: hasꓽown_navigation(spec)
-			? supportsꓽscreensⵧwith_shape(spec)
-				? "fullscreen"
-				: "standalone"
-			: "minimal-ui",
-
-		// critical for good experience
-		short_name: ifꓽdebug(spec).prefixꓽwith(`[wm.s]`, getꓽtitleⵧappⵧshort(spec)),
-
-		theme_color: getꓽcolorⵧtheme(spec),
-		background_color: getꓽcolorⵧbackground(spec),
-
-		...(canꓽuse_window_controls_overlay(spec) && { display_override: ["window-controls-overlay"] }),
-
-		//description: ...
-		//categories: ...
-	}
-
-	return result
-}
-
 /////////////////////////////////////////////////
 
-export default generate
+import {
+	type WebPropertySpec,
+	canꓽuse_window_controls_overlay,
+	hasꓽown_navigation,
+	getꓽbasenameⵧindexᐧhtml,
+	getꓽlang,
+	getꓽtitleⵧapp,
+	getꓽtitleⵧappⵧshort,
+	getꓽcolorⵧbackground,
+	getꓽcolorⵧtheme,
+	supportsꓽscreensⵧwith_shape,
+	getꓽicon__sizes,
+	getꓽicon__path,
+} from "@web-property-outfitter/spec"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import { ifꓽdebug } from "../utils/debug.ts"
+
+import type { Icon, WebManifest } from "./types.ts"

@@ -10,3 +10,11 @@ non-AI way to improve productivity
 - screens
 - mergiraf https://mergiraf.org/usage.html#registration-as-a-git-merge-driver
 - 
+
+
+- verbose
+- writing verbose comments
+- writing session-related stuff in comments
+- then believing comments
+- believing sibling files
+- rut of auto-fixes
