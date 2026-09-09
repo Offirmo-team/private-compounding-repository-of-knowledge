@@ -23,12 +23,12 @@
 		"@monorepo-private/normalize-string": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/ts--types--hypermedia": "workspace:*",
-		"@resvg/resvg-js": "catalog:",
 		"@web-property-outfitter/generator--html": "workspace:*",
 		"@web-property-outfitter/generator--svg": "workspace:*",
+		"@web-property-outfitter/output": "workspace:*",
+		"@web-property-outfitter/spec": "workspace:*",
 		"chroma-js": "catalog:",
-		"prettier": "catalog:",
-		"typescript-string-enums": "catalog:"
+		"prettier": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",

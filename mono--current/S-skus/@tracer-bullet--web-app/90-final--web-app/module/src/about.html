@@ -23,34 +23,14 @@
 		/>
 		<link rel="manifest" href="./index.webmanifest" />
 
-		<title>My Cool PWA</title>
+		<title>My Cool PWA - About</title>
 
 		<style>
 			/******* critical CSS https://www.smashingmagazine.com/2015/08/understanding-critical-css/ */
 			/* define namespaces for usage in following CSS, needs to be at the top https://github.com/parcel-bundler/parcel/issues/9534 */
 			@namespace svg url(http://www.w3.org/2000/svg);
 			/* define layers order, needs to be at the top to properly enforce the intended order */
-			@layer temp-while-loading, offirmo--reset, offirmo--foundation, offirmo--framework;
-			/* make this app use exactly the full viewport.
- * This is VERY TRICKY CSS,
- * see full explanation: https://github.com/Offirmo/offirmo-monorepo/blob/main/stack--current/3-advanced--browser/css--framework/src/atomic/atomic--dimension.css
- */
-			@layer temp-while-loading {
-				*:has(.o⋄full-viewport) {
-					margin: 0;
-					padding: 0;
-					border: initial;
-				}
-				o⋄full-viewport {
-					position: absolute;
-					top: 0;
-					left: 0;
-					overflow: hidden;
-					width: 100lvw;
-					height: 100lvh;
-					max-width: initial;
-				}
-			}
+			@layer offirmo--reset, offirmo--foundation, offirmo--framework;
 			/* apply a natural box layout model to all elements
  * https://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://github.com/mike-engel/a11y-css-reset/pull/12#issuecomment-516582884
@@ -123,49 +103,16 @@
 				// Do NOT use location.replace() or it can trigger infinite loops with servers doing auto redirects with/without slashes ex. https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
 				history.replaceState(null, "", location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
 			})()
-			// for parcel serve which defaults every non-matching path to /index.html
-			if (location.hostname === "localhost") {
-				;(function redirect_extensionless_known_pathes() {
-					if (location.redirect_pending) return
-
-					const pathname_without_leading_and_trailing_slash = location.pathname
-						.split("/")
-						.filter((s) => !!s)
-						.join("/")
-
-					const trailing_path_segment = pathname_without_leading_and_trailing_slash.split("/").at(-1) || ""
-					if (!trailing_path_segment) {
-						// ✔ we're at the root of the domain
-						return
-					}
-
-					const has_trailing_segment_an_extension = trailing_path_segment.split(".").length > 1
-					if (has_trailing_segment_an_extension) {
-						// ✔ the trailing segment has an extension
-						return
-					}
-
-					// ✖ we are located by an extension-less path
-					// Our server doesn't support extensionless URLs
-					// attempt to redirect to the version with an extension (this may still 404)
-					const locationᐧpathnameⵧfixed = "/" + pathname_without_leading_and_trailing_slash + ".html"
-
-					console.log("redirect_extensionless_known_pathes() REDIRECTING…")
-					location.redirect_pending = true // to communicate to possible other redirects that one is already in progress
-					location.replace(location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
-				})()
-			}
 		</script>
 	</head>
 
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
-		Loading...
+		<h1>About My Cool PWA</h1>
+		<p>TODO...</p>
 
 		<script type="module">
 			/* NON-critical JS */
-			import { start } from "@tracer-bullet--web-app/web-core"
-			start()
 			import "@monorepo-private/css--framework"
 		</script>
 	</body>

@@ -121,8 +121,9 @@ export const PLUGIN: Plugin = {
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "vitest", {
 							type: "dev",
 						})
-						/* 2026/09 mocha considered legacy, we no longer force it if unused.
-						  if used, it will naturally appear.
+						/* 2026/09 mocha considered legacy, TODO no longer force it if unused.
+						 * if used, it will naturally appear.
+						 */
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "mocha", {
 							type: "dev",
 						})
@@ -132,7 +133,6 @@ export const PLUGIN: Plugin = {
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@monorepo-private/config--mocha", {
 							type: "dev",
 						})
-						*/
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "chai", {
 							type: "dev",
 						})
@@ -283,7 +283,8 @@ pnpm i ...
 #@IgnoreInspection BashAddShebang
 [[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!"
 
-export MONOREPO_ROOT__CURRENT=\${MONOREPO_ROOT__CURRENT:-"$HOME/work/src/x-external/off/offirmo/offirmo-monorepo/stack--current/"};
+## default = where "gitc" is supposed to clone it
+export MONOREPO_ROOT__CURRENT=\${MONOREPO_ROOT__CURRENT:-"$HOME/work/src/x-external/off/${node.path‿ar}/"};
 
 ` +
 								package_nodes

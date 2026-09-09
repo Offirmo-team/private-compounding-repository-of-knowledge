@@ -12,7 +12,7 @@ export function generate(spec: Immutable<WebPropertySpec>): FilesMap {
 }
 export default generate
 
-function generateꓽinline(spec: Immutable<WebPropertySpec>): string {
+export function generateꓽinline(spec: Immutable<WebPropertySpec>): string {
 	return getꓽsvg‿str(createꓽfrom_emoji(getꓽiconⵧemoji(spec)), {
 		wantsꓽcompact: true,
 	})

@@ -7,7 +7,6 @@ catalog:
    "@nodelib/fs.walk": ^3
    "@parcel/plugin": ^2
    "@pnpm/constants": ^1102
-   "@resvg/resvg-js": ^2
    "@tsconfig/node-ts": ^23
    "@tsconfig/node24": ^24
    "@tsconfig/strictest": ^2

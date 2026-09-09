@@ -25,7 +25,7 @@
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
 		"@types/sinon": "catalog:",
-		"@web-property-outfitter/generator--website-entry-points": "workspace:*",
+		"@web-property-outfitter/spec": "workspace:*",
 		"chai": "catalog:",
 		"mocha": "catalog:",
 		"npm-run-all": "catalog:",

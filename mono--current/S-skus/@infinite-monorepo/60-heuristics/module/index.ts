@@ -54,7 +54,7 @@ export function isꓽignored_file(entry: FileEntry): boolean {
 		return true
 	}
 
-	if (entry.ext === ".json" || entry.ext === ".jsonc" || entry.ext === ".json5") {
+	if (entry.ext === ".json" || entry.ext === ".jsonc" || entry.ext === ".json5" || entry.ext === ".webmanifest") {
 		// technically some JSON files can reference resources
 		// ex. website manifest
 		// TODO 1D improve

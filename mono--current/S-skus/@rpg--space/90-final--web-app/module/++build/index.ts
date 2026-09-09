@@ -46,8 +46,4 @@ import * as path from "node:path"
 import { fileURLToPath } from "node:url"
 
 import { WEBSITE } from "@rpg--space/marketing"
-import {
-	generateꓽwebᝍproperty,
-	PRESETꘌappⵧimmersive,
-	type WebPropertySpec,
-} from "@web-property-outfitter/spec"
+import { generateꓽwebᝍproperty, PRESETꘌappⵧimmersive, type WebPropertySpec } from "@web-property-outfitter/spec"

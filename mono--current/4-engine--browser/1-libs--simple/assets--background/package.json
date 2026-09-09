@@ -6,7 +6,7 @@
 	"sideEffects": false,
 	"exports": {
 		".": "./module/index.ts",
-		"./*/*": "./module/licensed/*/*/index.ts"
+		"./*": "./module/licensed/*/index.ts"
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",

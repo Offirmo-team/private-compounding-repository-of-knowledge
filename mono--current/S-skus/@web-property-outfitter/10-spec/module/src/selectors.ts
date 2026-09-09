@@ -332,7 +332,7 @@ export function getꓽicon__path(spec: Immutable<WebPropertySpec>, size: number 
 
 /////////////////////////////////////////////////
 
-import * as NodePath from "node:NodePath"
+import * as NodePath from "node:path"
 
 import { Enum } from "typescript-string-enums"
 
