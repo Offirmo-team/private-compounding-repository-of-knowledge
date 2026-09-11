@@ -19,7 +19,7 @@ catalog:
    "@types/icepick": ^2
    "@types/mocha": ^10
    "@types/murmurhash3js-revisited": ^3
-   "@types/node": ^26
+   "@types/node": ^24
    "@types/prettyjson": ^0.0.33
    "@types/prop-types": ^15
    "@types/react": ^19

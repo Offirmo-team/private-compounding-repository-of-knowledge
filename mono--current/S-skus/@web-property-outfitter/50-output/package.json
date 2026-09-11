@@ -14,7 +14,8 @@
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
-		"@monorepo-private/assert": "workspace:*"
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/fs--ls": "workspace:*"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",

@@ -15,13 +15,13 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
-		"@monorepo-private/ts--types": "workspace:*",
 		"prettier": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
 		"@types/sinon": "catalog:",

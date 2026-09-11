@@ -5,7 +5,7 @@
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
-		".": "./module/src/root.tsx"
+		".": "./module/src/index.ts"
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",

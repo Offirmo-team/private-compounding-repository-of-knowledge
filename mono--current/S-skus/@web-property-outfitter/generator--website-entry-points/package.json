@@ -17,8 +17,7 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
-		"@monorepo-private/fs--ls": "workspace:*",
-		"@monorepo-private/fs--output-file": "workspace:*",
+		"@monorepo-private/fs--better-write-file": "workspace:*",
 		"@monorepo-private/json-stable-stringify": "workspace:*",
 		"@monorepo-private/normalize-string": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
@@ -27,8 +26,7 @@
 		"@web-property-outfitter/generator--svg": "workspace:*",
 		"@web-property-outfitter/output": "workspace:*",
 		"@web-property-outfitter/spec": "workspace:*",
-		"chroma-js": "catalog:",
-		"prettier": "catalog:"
+		"chroma-js": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
