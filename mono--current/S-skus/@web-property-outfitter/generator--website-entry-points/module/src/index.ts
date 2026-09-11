@@ -1,7 +1,5 @@
-export * from "./types.ts"
-export * from "./presets.ts"
 export * from "./generate.ts"
 
-import { generateꓽwebᝍproperty } from "./generate.ts"
-
-export default generateꓽwebᝍproperty
+export * from "@web-property-outfitter/spec"
+export * from "@web-property-outfitter/output"
+export { ೱwriteꓽfile_map } from "@monorepo-private/fs--better-write-file"

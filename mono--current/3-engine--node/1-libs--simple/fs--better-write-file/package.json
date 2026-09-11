@@ -1,5 +1,5 @@
 {
-	"name": "@monorepo-private/fs--output-file",
+	"name": "@monorepo-private/fs--better-write-file",
 	"version": "0.0.1",
 	"private": true,
 	"type": "module",
@@ -9,13 +9,14 @@
 	},
 	"scripts": {
 		"check": "run-s check:ts",
-		"check:ts": "echo \"@monorepo-private/fs--output-file\" && tsc --noEmit",
+		"check:ts": "echo \"@monorepo-private/fs--better-write-file\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
-		"@monorepo-private/promise-try": "workspace:*"
+		"@monorepo-private/ts--types": "workspace:*",
+		"prettier": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",

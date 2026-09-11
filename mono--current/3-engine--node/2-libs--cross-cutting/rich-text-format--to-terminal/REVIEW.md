@@ -32,8 +32,8 @@ not reviewed here.
   prose) — reads as scratch notes rather than finished documentation; doesn't explain the
   `renderⵧto_terminal(doc, callback_overrides?)` signature or the `callbacksⵧto_terminal` export.
 - **RT-04 (Nit)** — `@monorepo-private/assert` is declared as a `dependency` (`package.json:19`) but never imported in
-  `module/index.ts` — same stale-dependency pattern flagged repeatedly elsewhere in this batch (e.g. `fs--output-file`
-  FO-02, `spawn-correctly` SC-02, `practical-logger--node` PL-03).
+  `module/index.ts` — same stale-dependency pattern flagged repeatedly elsewhere in this batch (e.g.
+  `fs--better-write-file` FO-02, `spawn-correctly` SC-02, `practical-logger--node` PL-03).
 - **RT-05 (Nit)** — `on_classⵧafter` (lines 57-65) is an explicit no-op stub with `// not implemented!` /
   `// TODO one day...` comments and commented-out debug code — self-documented as intentionally incomplete, consistent
   with the package's overall "TODO support images/links" scope-in-progress state; not flagged as a hidden bug, just

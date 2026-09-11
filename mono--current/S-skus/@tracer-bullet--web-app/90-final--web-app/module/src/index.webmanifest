@@ -1,6 +1,6 @@
 {
 	"lang": "en",
-	"name": "My Cool App",
+	"name": "[wm.n]My Cool App",
 	"icons": [
 		{
 			"src": "./icons/icon-512.png",
@@ -10,7 +10,7 @@
 	],
 	"start_url": "./index.html?ref=webmanifest",
 	"display": "fullscreen",
-	"short_name": "My Cool App",
+	"short_name": "[wm.s]My Cool App",
 	"theme_color": "#28272f",
 	"background_color": "#533c45",
 	"display_override": ["window-controls-overlay"]

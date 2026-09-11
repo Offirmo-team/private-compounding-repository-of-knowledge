@@ -101,6 +101,7 @@ export interface WebPropertySpec extends WebPage, ThingWithOnlinePresence {
 
 	/////// META
 	host?:
+		// TODO split between page/docs and pages/root?
 		| "github-pages" // https://pages.github.com/  https://docs.github.com/en/pages
 		| "cloudflare--workers" // https://developers.cloudflare.com/workers/
 		| "cloudflare--pages" // still active but not recommended

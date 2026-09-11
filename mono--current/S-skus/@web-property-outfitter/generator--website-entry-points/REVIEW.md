@@ -171,12 +171,12 @@ onboarding doc for this, the most complex of the three packages.
 Beyond the items above, the package is internally consistent with the monorepo's conventions: no classes, `Immutable<T>`
 parameters used throughout, reducers/selectors are pure functions, and the elaborate `WebPropertySpec` type in
 `types.ts` is well-documented with links to relevant specs. `package.json` dependencies (`@monorepo-private/assert`,
-`@monorepo-private/fs--output-file`, `@monorepo-private/json-stable-stringify`, `@monorepo-private/normalize-string`,
-`@monorepo-private/timestamps`, `@monorepo-private/ts--types--hypermedia`, `@resvg/resvg-js`,
-`@web-property-outfitter/generator--html`, `@web-property-outfitter/generator--svg`, `chroma-js`, `prettier`,
-`typescript-string-enums`) are all genuinely imported and used somewhere in the code (`@resvg/resvg-js` only inside the
-currently-dead `generateꓽfile` implementation, see G12E-P3-02). The individual page generators (`about`, `contact`,
-`page--support`, `page--404`, `page--error`, `page--privacy-policy`, `page--terms-and-conditions`) are thin, consistent
-wrappers around a shared `pages--common/selectors.ts::getꓽhtml_doc_spec`, which is a clean composition pattern. No
-outdated-dependency issues could be conclusively identified since versions are pinned via `catalog:`/`workspace:*`
-(managed centrally, out of scope for a per-package review).
+`@monorepo-private/fs--better-write-file`, `@monorepo-private/json-stable-stringify`,
+`@monorepo-private/normalize-string`, `@monorepo-private/timestamps`, `@monorepo-private/ts--types--hypermedia`,
+`@resvg/resvg-js`, `@web-property-outfitter/generator--html`, `@web-property-outfitter/generator--svg`, `chroma-js`,
+`prettier`, `typescript-string-enums`) are all genuinely imported and used somewhere in the code (`@resvg/resvg-js` only
+inside the currently-dead `generateꓽfile` implementation, see G12E-P3-02). The individual page generators (`about`,
+`contact`, `page--support`, `page--404`, `page--error`, `page--privacy-policy`, `page--terms-and-conditions`) are thin,
+consistent wrappers around a shared `pages--common/selectors.ts::getꓽhtml_doc_spec`, which is a clean composition
+pattern. No outdated-dependency issues could be conclusively identified since versions are pinned via
+`catalog:`/`workspace:*` (managed centrally, out of scope for a per-package review).

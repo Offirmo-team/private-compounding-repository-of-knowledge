@@ -41,7 +41,7 @@ export const WEBPAGE: WebPage = {
 
 	icon: {
 		emoji: "⚔️",
-		svg: NodePath.join(__dirname, "./icon.svg"),
+		svg: nodeꓽpath.join(__dirname, "./icon.svg"),
 	},
 	keywords: ["game", "incremental", "fantasy", "rpg", "free", "indie"],
 	content: {
@@ -115,7 +115,7 @@ export const SPECⵧnightly: WebPropertySpec = {
 	isꓽdebug: true,
 }
 
-import * as NodePath from "node:path"
+import * as nodeꓽpath from "node:path"
 
 /////////////////////////////////////////////////
 import type { FeatureSnippets } from "@web-property-outfitter/generator--html"

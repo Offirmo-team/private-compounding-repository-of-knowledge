@@ -21,7 +21,7 @@ with the trimmed stdout.
 - **SC-02 (Minor)** — `package.json` declares `@monorepo-private/assert` as a runtime `dependency` (line 19), but it's
   never imported anywhere in `module/index.ts` — the code uses Node's built-in `node:assert`
   (`import { strict as assert } from "node:assert"`, line 1) instead. Same stale/unused-dependency pattern flagged in
-  `fs--output-file` (FO-02).
+  `fs--better-write-file` (FO-02).
 - **SC-03 (Nit)** — `fail()`'s best-effort error-message extraction (lines 89-110) scans the first `MAX_USEFUL_LINES` of
   stderr/stdout for the substrings `"error"`, `"exception"`, `"not found"` (case-insensitive) to synthesize a
   human-readable message. This is a reasonable heuristic for a wrapper library, but it means the derived `err.message`

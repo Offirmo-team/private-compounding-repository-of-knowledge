@@ -7,14 +7,23 @@ Why did the React component refuse to leave the harbor? It kept getting stuck in
 
 non-AI way to improve productivity
 
+
 - screens
+  - multiple
+  - big (IDE)
 - mergiraf https://mergiraf.org/usage.html#registration-as-a-git-merge-driver
-- 
+- interactive rebases
 
 
+
+
+
+Claude Code issues
 - verbose
 - writing verbose comments
 - writing session-related stuff in comments
 - then believing comments
 - believing sibling files
 - rut of auto-fixes
+- reviewing own code find issues
+- bad at jokes

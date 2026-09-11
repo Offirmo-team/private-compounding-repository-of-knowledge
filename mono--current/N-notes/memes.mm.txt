@@ -31,7 +31,7 @@
 3-strike pivot strategy -- Strike 2 = Reassess and Seek Support to resolve the problem
 3-strike pivot strategy -- Strike 3 = Make the Pivot
 3-strike pivot strategy = give 3 chances https://blog.gouravkhanijoe.com/p/3-strike-pivot-strategy-to-become
-4-Hour Workweek
+4-hour workweek
 5 Harsh Truths for Success from Linus Torvalds -- Being Nice is Not Nice
 5 Harsh Truths for Success from Linus Torvalds -- Distractions Are Potential Killers
 5 Harsh Truths for Success from Linus Torvalds -- Goals, Ideas… are all Lies
@@ -62,7 +62,6 @@
 [ ] https://cobeats.com/folder/ryfTgPr9H
 [ ] https://dontdie.bryanjohnson.com/
 [ ] https://effectiviology.com/
-[ ] https://en.wikipedia.org/wiki/Great_Recession
 [ ] https://en.wikipedia.org/wiki/National_Book_Award_for_Nonfiction
 [ ] https://en.wikipedia.org/wiki/Power_(social_and_political)
 [ ] https://fs.blog/mental-models/
@@ -202,6 +201,7 @@ Blue Monday = worse of the year https://en.wikipedia.org/wiki/Blue_Monday_(date)
 blue-chip = (publicly traded company) known for its stability, consistent earnings, sound financials, and long-standing reputation = "most wanted in the industry (investment)"
 bonnes et mauvaises cartes
 books -- Le Monde’s 100 Books of the Century https://standardebooks.org/collections/le-mondes-100-books-of-the-century
+books -- should have been a blog post
 bouba-kiki effect = languages spontaneously associate the nonwords “kiki” and “bouba” with spiky and round shapes, respectively https://www.science.org/doi/10.1126/science.adq7188
 boy level opinions = simple, mainstream, light and low-effort
 brain -- fast & slow
@@ -648,6 +648,7 @@ good taste https://paulgraham.com/goodtaste.html
 good to great
 Goodhart's law = When a measure becomes a target, it ceases to be a good measure https://en.wikipedia.org/wiki/Goodhart%27s_law
 Goodhart’s Law -- example: One hospital took too long to admit patients so a penalty was given for 4+ hour wait times. In response, ambulance drivers were asked to slow down so they could shorten wait times.
+goodness vs niceness = helping people grow, not be a yes-sayer
 Gospel of Wealth -- Help those who will help themselves, to provide part of the means by which those who desire to improve may do so
 Gospel of Wealth = responsibility of philanthropy by the new upper class of self-made rich https://en.wikipedia.org/wiki/The_Gospel_of_Wealth
 grapevine
@@ -936,6 +937,7 @@ life -- care
 life -- diseases -- heart disfunction = New York Heart Association Functional Classification https://en.wikipedia.org/wiki/New_York_Heart_Association_Functional_Classification
 life -- fallacies -- "you are a tool. It sucks not being on top" = not true, "being of service to something or someone, which gives purpose"
 life -- high economic connectedness = https://julienreszka.com/blog/your-key-to-success-isn-t-more-luck-or-hard-work/
+life -- le petit pecheur
 life -- lines of life = most common to rarest: criticize > gossip > get involved > encourage > help
 life -- NPC = "watching life pass you by while doomscrolling on your phone" https://signalundefied.bearblog.dev/i-wanna-live-an-npc-life/
 life -- stages -- 20+ boomerang https://en.wikipedia.org/wiki/Boomerang_Generation
@@ -1130,6 +1132,7 @@ network effect
 neuro-divergent
 neurodivergent -- neurotypical = https://erikengdahl.se/autism/isnt/
 neurodivergent = now the majority?
+never eat alone
 Never interrupt someone doing what you said couldn't be done.
 Never job backwards. What-might-have-been was a waste of time. Follow your fate, and be satisfied with it, and be glad not to be a second-hand motor salesman, or a yellow-press journalist, pickled in gin and nicotine, or a cripple—or dead (Fleming / James Bond)
 never meet your heroes

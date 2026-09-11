@@ -1,0 +1,90 @@
+{
+	"title": "Offirmo - Creator",
+	"caption": "Offirmo’s personal blog about tech, software and gamedev…",
+	"creator": {
+		"name": "Offirmo",
+		"intro": "software engineer, open-source developer & creator",
+		"email": "offirmo.net@gmail.com",
+		"contact": "https://github.com/Offirmo/ama/issues",
+		"urlⵧcanonical": "https://www.offirmo.net/",
+		"urlsⵧsocial": [
+			{
+				"network": "artstation",
+				"handle": "Offirmo",
+				"url": "https://www.artstation.com/offirmo"
+			},
+			{
+				"network": "github",
+				"handle": "Offirmo",
+				"url": "https://github.com/Offirmo"
+			},
+			{
+				"network": "instagram",
+				"handle": "offirmo",
+				"url": "https://www.instagram.com/offirmo"
+			},
+			{
+				"network": "producthunt",
+				"handle": "@offirmo",
+				"url": "https://www.producthunt.com/@offirmo"
+			},
+			{
+				"network": "reddit",
+				"handle": "u/Offirmo",
+				"url": "https://www.reddit.com/user/Offirmo"
+			},
+			{
+				"network": "twitter",
+				"handle": "Offirmo",
+				"url": "https://twitter.com/Offirmo"
+			}
+		]
+	},
+	"since‿y": 2016,
+	"urlⵧcanonical": "https://www.offirmo.net/",
+	"urlsⵧsocial": [
+		{
+			"network": "artstation",
+			"handle": "Offirmo",
+			"url": "https://www.artstation.com/offirmo"
+		},
+		{
+			"network": "github",
+			"handle": "Offirmo",
+			"url": "https://github.com/Offirmo"
+		},
+		{
+			"network": "instagram",
+			"handle": "offirmo",
+			"url": "https://www.instagram.com/offirmo"
+		},
+		{
+			"network": "producthunt",
+			"handle": "@offirmo",
+			"url": "https://www.producthunt.com/@offirmo"
+		},
+		{
+			"network": "reddit",
+			"handle": "u/Offirmo",
+			"url": "https://www.reddit.com/user/Offirmo"
+		},
+		{
+			"network": "twitter",
+			"handle": "Offirmo",
+			"url": "https://twitter.com/Offirmo"
+		}
+	],
+	"contact": "https://github.com/Offirmo/offirmo.github.io/issues",
+	"icon": {
+		"emoji": "👨‍💻"
+	},
+	"keywords": ["creator", "engineer", "software", "fullstack", "developer", "open-source", "indie"],
+	"content": {},
+	"features": ["cssⳇbox-layout--natural", "normalize-url-trailing-slash", "cssⳇframework--offirmo"],
+	"colorⵧbackground": "hsl(337, 16%, 28%)",
+	"colorⵧforeground": "hsl(42, 100%, 87%)",
+	"colorⵧtheme": "hsl(248,  9%, 17%)",
+	"host": "github-pages",
+	"env": "production",
+	"built_at‿tms": 1234567890
+}

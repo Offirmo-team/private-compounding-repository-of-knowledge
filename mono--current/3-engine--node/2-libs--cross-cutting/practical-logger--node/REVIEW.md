@@ -21,7 +21,7 @@ the console and pretty-printing error causes/details.
   review tosort" rule, but is unreviewed either way here since it's a binary asset.)
 - **PL-03 (Minor)** — `@monorepo-private/assert` is declared as a `dependency` in `package.json` (line 20) but is never
   imported anywhere under `module/src/` — same stale/unused-dependency pattern seen in other packages in this batch
-  (`fs--output-file` FO-02, `spawn-correctly` SC-02).
+  (`fs--better-write-file` FO-02, `spawn-correctly` SC-02).
 - **PL-04 (Nit)** — `README.md` ends with two literal `TODO` lines (lines 54, 56) — one bare ("TODO explanation") and
   one pointing to an external article about `util.debuglog`. Harmless but these read as leftover authoring notes rather
   than finished documentation.

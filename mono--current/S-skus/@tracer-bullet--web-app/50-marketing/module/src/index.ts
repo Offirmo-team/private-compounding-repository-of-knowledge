@@ -32,28 +32,20 @@ export const LANDING_PAGE: WebPage = {
 	},
 	keywords: ["demo"],
 	content: {
-		// not the place
+		// see @/web-property
 	},
 	features: [
-		// appearance
-		"cssⳇbox-layout--natural",
-		"cssⳇviewport--full",
-		"cssⳇframework--offirmo",
-		// technical
-		"normalize-url-trailing-slash",
+		// see @/web-property
 	],
 
 	/////// SOCIAL
+	// TODO
 
 	/////// PWA
 	app_categories: ["entertainment", "utilities"],
-	wantsꓽinstall: "promotion-capable",
 	titleⵧapp: "My Cool App",
 	captionⵧapp: "(Pinnable App Demo)",
-	hasꓽown_navigation: true,
-	supportsꓽscreensⵧwith_shape: true,
-	canꓽuse_window_controls_overlay: true,
-	usesꓽpull_to_refresh: false, // TODO 1D because it's cool
+	// see @/web-property for technical options
 
 	/////// POLISH
 	colorⵧbackground: "hsl(337, 16%, 28%)",
@@ -62,6 +54,7 @@ export const LANDING_PAGE: WebPage = {
 }
 
 /////////////////////////////////////////////////
+
 import type { WebPage, ThingWithOnlinePresence } from "@web-property-outfitter/spec"
 
 import { CREATOR } from "@monorepo-private/marketing--creator"

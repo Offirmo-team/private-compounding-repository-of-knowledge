@@ -1,24 +1,5 @@
 /////////////////////////////////////////////////
 
-export async function generateꓽwebᝍproperty(
-	spec: Immutable<WebPropertySpec>,
-	targetDir: PathⳇAbsolute,
-	options: {
-		rm?: boolean
-		include?: "all" | "served"
-	} = {},
-): Promise<Immutable<WebPropertyBundle>> {
-	const entries = getꓽwebᝍpropertyᝍbundle(spec)
-
-	if (options.rm) {
-		await fs.rm(targetDir, { recursive: true, force: true })
-	}
-
-	return writeꓽwebᝍpropertyᝍfiles(entries, targetDir)
-}
-
-/////////////////////////////////////////////////
-
 export function getꓽwebᝍpropertyᝍbundle(spec: Immutable<WebPropertySpec>): WebPropertyBundle {
 	const ǃ = assert_from({ getꓽwebᝍpropertyᝍbundle })
 
@@ -26,6 +7,8 @@ export function getꓽwebᝍpropertyᝍbundle(spec: Immutable<WebPropertySpec>):
 		!(spec.isꓽcatching_all_routes && spec.host === "github-pages"),
 		`GitHub Pages does not support SPA routing — isꓽcatching_all_routes cannot be true with host='github-pages'`,
 	)
+
+	const serve_me‿relpath = SpecLib.getꓽdirⵧfiles_to_serve(spec)
 
 	const files: FilesMap = {
 		...generateꓽhtml(spec),
@@ -35,165 +18,114 @@ export function getꓽwebᝍpropertyᝍbundle(spec: Immutable<WebPropertySpec>):
 		...generateꓽbuild_badges(spec),
 
 		// PWA
-		...(needsꓽwebmanifest(spec) && {
-			[`${getꓽdirⵧfiles_to_serve(spec)}/${getꓽbasenameⵧwebmanifest(spec)}`]: {
+		...(SpecLib.needsꓽwebmanifest(spec) && {
+			[`${serve_me‿relpath}/${SpecLib.getꓽbasenameⵧwebmanifest(spec)}`]: {
 				content: JSON.stringify(generateꓽwebmanifest(spec), undefined, "	"),
 			},
 		}),
 
 		// JS SRC
-		...(shouldꓽgenerateꓽjscode(spec) && generateꓽsource_code(spec)),
+		...(SpecLib.shouldꓽgenerateꓽjscode(spec) && generateꓽsource_code(spec)),
+
+		// meta
+		"~~logs/spec.json": { content: JSON.stringify(spec, undefined, "	") },
+		"~~logs/selectors.json": {
+			content: JSON.stringify({
+				getꓽlang: SpecLib.getꓽlang(spec),
+				getꓽauthor__name: SpecLib.getꓽauthor__name(spec),
+				getꓽauthor__contact: SpecLib.getꓽauthor__contact(spec),
+				getꓽauthor__intro: SpecLib.getꓽauthor__intro(spec),
+				getꓽcontactⵧhuman: SpecLib.getꓽcontactⵧhuman(spec),
+				getꓽcontactⵧsecurity: SpecLib.getꓽcontactⵧsecurity(spec),
+				getꓽcontactⵧsupport: SpecLib.getꓽcontactⵧsupport(spec),
+				isꓽdebug: SpecLib.isꓽdebug(spec),
+				getꓽENV: SpecLib.getꓽENV(spec),
+				isꓽprod: SpecLib.isꓽprod(spec),
+				isꓽpublic: SpecLib.isꓽpublic(spec),
+				shouldꓽgenerateꓽjscode: SpecLib.shouldꓽgenerateꓽjscode(spec),
+				getꓽdirⵧoutput_root: SpecLib.getꓽdirⵧoutput_root(spec),
+				getꓽdirⵧfiles_to_serve: SpecLib.getꓽdirⵧfiles_to_serve(spec),
+				wantsꓽinstall: SpecLib.wantsꓽinstall(spec),
+				hasꓽown_navigation: SpecLib.hasꓽown_navigation(spec),
+				isꓽuser_scalable: SpecLib.isꓽuser_scalable(spec),
+				needsꓽwebmanifest: SpecLib.needsꓽwebmanifest(spec),
+				supportsꓽscreensⵧwith_shape: SpecLib.supportsꓽscreensⵧwith_shape(spec),
+				canꓽuse_window_controls_overlay: SpecLib.canꓽuse_window_controls_overlay(spec),
+				usesꓽpull_to_refresh: SpecLib.usesꓽpull_to_refresh(spec),
+				prefersꓽorientation: SpecLib.prefersꓽorientation(spec),
+				getꓽfeatures: SpecLib.getꓽfeatures(spec),
+				getꓽtitleⵧpage: SpecLib.getꓽtitleⵧpage(spec),
+				getꓽtitleⵧsocial: SpecLib.getꓽtitleⵧsocial(spec),
+				getꓽtitleⵧapp: SpecLib.getꓽtitleⵧapp(spec),
+				getꓽtitleⵧappⵧshort: SpecLib.getꓽtitleⵧappⵧshort(spec),
+				getꓽtitleⵧlib: SpecLib.getꓽtitleⵧlib(spec),
+				getꓽdescriptionⵧpage: SpecLib.getꓽdescriptionⵧpage(spec),
+				getꓽcolorⵧforeground: SpecLib.getꓽcolorⵧforeground(spec),
+				getꓽcolorⵧbackground: SpecLib.getꓽcolorⵧbackground(spec),
+				getꓽcolorⵧtheme: SpecLib.getꓽcolorⵧtheme(spec),
+				getꓽbasenameⵧindexᐧhtml: SpecLib.getꓽbasenameⵧindexᐧhtml(spec),
+				getꓽbasenameⵧcontactᐧhtml: SpecLib.getꓽbasenameⵧcontactᐧhtml(spec),
+				getꓽbasenameⵧerrorᐧhtml: SpecLib.getꓽbasenameⵧerrorᐧhtml(spec),
+				getꓽbasenameⵧaboutᐧhtml: SpecLib.getꓽbasenameⵧaboutᐧhtml(spec),
+				getꓽbasenameⵧterms_and_conditionsᐧhtml: SpecLib.getꓽbasenameⵧterms_and_conditionsᐧhtml(spec),
+				getꓽbasenameⵧprivacy_policyᐧhtml: SpecLib.getꓽbasenameⵧprivacy_policyᐧhtml(spec),
+				getꓽbasenameⵧsupportᐧhtml: SpecLib.getꓽbasenameⵧsupportᐧhtml(spec),
+				getꓽbasenameⵧwebmanifest: SpecLib.getꓽbasenameⵧwebmanifest(spec),
+				getꓽiconⵧemoji: SpecLib.getꓽiconⵧemoji(spec),
+				getꓽicon__sizes: SpecLib.getꓽicon__sizes(spec),
+			}),
+		},
+	}
+
+	// final aggreg
+	files[nodeꓽpath.join(serve_me‿relpath, "_served_inventory.json")] = {
+		content: JSON.stringify(
+			(() => {
+				return Object.entries(files).reduce(
+					(acc, [path, _]) => {
+						if (path.startsWith(serve_me‿relpath)) {
+							const served_path = nodeꓽpath.relative(serve_me‿relpath, path)
+							acc[served_path] = {
+								// TODO 1D extra props as needed
+								// e.g. caching, debug...
+							}
+						}
+
+						return acc
+					},
+					{} as Record<PathⳇRelative, {}>,
+				)
+			})(),
+		),
 	}
 
 	return {
 		files,
 		meta: {
-			serve_me‿relpath: getꓽdirⵧfiles_to_serve(spec),
+			serve_me‿relpath,
 			spec: spec as WebPropertySpec,
 		},
 	}
 }
 
 /////////////////////////////////////////////////
-const PRETTIER_OPTIONS = {
-	printWidth: 120,
-	tabWidth: 3,
-	useTabs: true,
-	semi: false,
-	singleQuote: true,
-	jsxSingleQuote: true,
-	quoteProps: "consistent",
-	arrowParens: "avoid",
-} satisfies Partial<Prettier.RequiredOptions>
 
-// dir must be absolute bc. from where would we resolve it?
+// convenience only.
+// real consumers will want to subset on boundary/serve_me
 export async function writeꓽwebᝍpropertyᝍfiles(
 	bundle: Immutable<WebPropertyBundle>,
 	targetDir: PathⳇAbsolute,
-	options: {
-		includesꓽlogs?: boolean
-	} = {},
-): Promise<Immutable<WebPropertyBundle>> {
-	const ǃ = assert_from({ writeꓽwebᝍpropertyᝍfiles })
-
-	targetDir = NodePath.normalize(targetDir)
-	console.log(`📁 ${targetDir}`)
-	ǃ.forⵧparam({ targetDir }).require(NodePath.isAbsolute(targetDir), `dir must be absolute, got "${targetDir}"`)
-
-	const toserve_inventory = Object.entries(bundle.files).reduce(
-		(acc, [path, _]) => {
-			if (path.startsWith(bundle.meta.serve_me‿relpath)) {
-				const served_path = NodePath.relative(bundle.meta.serve_me‿relpath, path)
-				acc[served_path] = {
-					// TODO 1D props as needed
-				}
-			}
-
-			return acc
-		},
-		{} as Record<PathⳇRelative, {}>,
-	)
-
-	const files: FilesMap = {
-		...bundle.files,
-		...(options.includesꓽlogs && {
-			"~~logs/spec.json": { content: JSON.stringify(bundle.meta.spec, undefined, "	") },
-		}),
-		[NodePath.join(bundle.meta.serve_me‿relpath, "_served_inventory.json")]: {
-			content: JSON.stringify(toserve_inventory),
-		},
-	}
-
-	return Promise.all(
-		Object.keys(files)
-			.sort()
-			.map(async (relpath) => {
-				const file__path = NodePath.join(targetDir, relpath)
-				let file__content = files[relpath]!.content
-				console.log(`↳ 📄 ${relpath}`)
-
-				try {
-					switch (NodePath.extname(file__path)) {
-						case ".html":
-							assert(typeof file__content === "string", `file ${file__path} should be a string!`)
-							file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "html" })
-							break
-						case ".css":
-							assert(typeof file__content === "string", `file ${file__path} should be a string!`)
-							file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "css" })
-							break
-						case ".json":
-						case ".jsonc":
-							assert(typeof file__content === "string", `file ${file__path} should be a string!`)
-							file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "json" })
-							break
-						case ".ts":
-							assert(typeof file__content === "string", `file ${file__path} should be a string!`)
-							file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "typescript" })
-							//file__content = await Prettier.format(file__content, { ...PRETTIER_OPTIONS, parser: "acorn" })
-							break
-						default:
-							break
-					}
-				} catch (prettier_err) {
-					console.warn(`Error while formatting ${file__path}`, prettier_err)
-					console.error("------\ncontent:\n", file__content, "\n------")
-					// swallow the error, write the un-minified content for resilience
-				}
-
-				// privacy + avoid undeterministic entropy sources
-				if (typeof file__content === "string")
-					file__content = file__content.replaceAll(process.env["HOME"] ?? "$HOME", "~")
-
-				return await ೱoutputꓽfile(file__path, file__content, {
-					...(typeof file__content === "string" && { encoding: "utf8" }),
-				}).catch((err: any) => {
-					console.error(`Error while writing ${file__path}`, err)
-					throw err
-				})
-			}),
-	).then(() => bundle)
+): Promise<void> {
+	await ೱwriteꓽfile_map(bundle.files, targetDir, { rm: true })
 }
 
 /////////////////////////////////////////////////
+import * as nodeꓽpath from "node:path"
 
-// content is always a Buffer: lossless for any file type (js, png, webp…) and round-trips
-// byte-for-byte through writeꓽwebᝍpropertyᝍfiles, which writes non-string content raw.
-export async function loadꓽfiles(serveDir: PathⳇAbsolute, segment?: string | undefined): Promise<FilesMap> {
-	const ǃ = assert_from({ loadꓽfiles })
-
-	serveDir = NodePath.normalize(serveDir)
-	ǃ.forⵧparam({ serveDir }).require(NodePath.isAbsolute(serveDir), `dir must be absolute, got "${serveDir}"`)
-
-	const relpaths = lsFilesRecursiveSync(serveDir, { full_path: false })
-
-	const entries = await Promise.all(
-		relpaths.map(async (relpath: PathⳇRelative) => {
-			const content = await fs.readFile(NodePath.join(serveDir, relpath))
-
-			const path = segment ? NodePath.join(segment, relpath) : relpath
-			return [path, { content }] as const
-		}),
-	)
-
-	return Object.fromEntries(entries)
-}
-
-/////////////////////////////////////////////////
-import * as fs from "node:fs/promises"
-import * as NodePath from "node:path"
-
-import {
-	needsꓽwebmanifest,
-	getꓽbasenameⵧwebmanifest,
-	shouldꓽgenerateꓽjscode,
-	getꓽdirⵧfiles_to_serve,
-} from "@web-property-outfitter/spec"
-import * as Prettier from "prettier"
+import * as SpecLib from "@web-property-outfitter/spec"
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import { lsFilesRecursiveSync } from "@monorepo-private/fs--ls"
-import { ೱoutputꓽfile } from "@monorepo-private/fs--output-file"
+import { ೱwriteꓽfile_map } from "@monorepo-private/fs--better-write-file" // for convenience
 import type { Immutable, PathⳇAbsolute, PathⳇRelative } from "@monorepo-private/ts--types"
 
 import generateꓽbuild_badges from "./generate--build-badges/index.ts"

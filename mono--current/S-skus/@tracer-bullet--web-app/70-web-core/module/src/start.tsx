@@ -13,7 +13,7 @@ import { Root } from "./root.tsx"
 
 /////////////////////////////////////////////////
 
-async function init(): Promise<void> {
+async function start(): Promise<void> {
 	getRootSXC().xTry("view", async ({ logger, SXC, CHANNEL }) => {
 		// reminder: we assume there is a beautiful loader which started synchronously, so no rush
 		console.log("🔄 scheduling React start later…")
@@ -51,4 +51,4 @@ async function init(): Promise<void> {
 
 /////////////////////////////////////////////////
 
-export { init }
+export { start }

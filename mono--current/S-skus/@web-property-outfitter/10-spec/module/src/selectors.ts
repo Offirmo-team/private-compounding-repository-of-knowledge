@@ -183,7 +183,7 @@ export function getꓽcolorⵧtheme(spec: Immutable<WebPropertySpec>): CssⳇCol
 function _getꓽbasenameⵧwithout_extension(spec: Immutable<WebPropertySpec>): Basename {
 	if (!spec.basename) return "index"
 
-	assert(NodePath.extname(spec.basename) === "")
+	assert(nodeꓽpath.extname(spec.basename) === "")
 	const safe_version = coerce_toꓽsafe_basenameⵧstrictest(spec.basename)
 	assert(spec.basename === safe_version, `basename "${spec.basename}" is unsafe, it should be "${safe_version}"!`)
 	return safe_version
@@ -228,8 +228,8 @@ export function getꓽiconⵧsvg(spec: Immutable<WebPropertySpec>): Immutable<SV
 	if (!svg_value) return undefined
 
 	if (typeof svg_value === "string") {
-		// it's a NodePath, we need to load
-		console.warn("TODO load SVG from NodePath", svg_value)
+		// it's a nodeꓽpath, we need to load
+		console.warn("TODO load SVG from nodeꓽpath", svg_value)
 		return undefined
 	}
 
@@ -332,7 +332,7 @@ export function getꓽicon__path(spec: Immutable<WebPropertySpec>, size: number 
 
 /////////////////////////////////////////////////
 
-import * as NodePath from "node:path"
+import * as nodeꓽpath from "node:path"
 
 import { Enum } from "typescript-string-enums"
 
