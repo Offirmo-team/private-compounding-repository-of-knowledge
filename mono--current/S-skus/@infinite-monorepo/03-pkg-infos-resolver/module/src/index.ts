@@ -54,54 +54,6 @@ export class PkgInfosResolver {
 		})
 	}
 
-	/*
-
-		ǃgetꓽpackageᐧjson(pkg_name: string): PackageJson {
-			return StateLib.ǃgetꓽlatest_known_packageᐧjson(this.#state, pkg_name)
-		}
-
-		ǃgetꓽversionⵧlatest(pkg_name: string) {
-			this.assert_allowed_package(pkg_name)
-
-			const packageᐧjson = this.ǃgetꓽpackageᐧjson(pkg_name)
-
-			assert(packageᐧjson.version)
-			const result = semver.clean(packageᐧjson.version)
-			assert(result)
-			return result
-		}
-
-		ǃgetꓽversion(pkg_name: string) {
-			this.assert_allowed_package(pkg_name)
-
-			if (this.is_monorepo_package(pkg_name)) {
-				throw new Error("Unexpected monorepo pkg version check!")
-			}
-
-			const latest_pkg_version = this.ǃgetꓽversionⵧlatest(pkg_name)
-
-			const major = semver.major(latest_pkg_version)
-			//console.log(`latest_pkg_version for ${pkg_name}`, { latest_pkg_version, major })
-			if (major !== 0) return `^${major}`
-			const minor = semver.minor(latest_pkg_version)
-			if (minor !== 0) return `^0.${minor}`
-
-			return `^0.0.${semver.patch(latest_pkg_version)}`
-		}
-
-		/*
-		ǃgetꓽversionⵧfor_dep(pkg_name: string) {
-			this.assert_allowed_package(pkg_name)
-
-			const pkm = "pnpm"
-			if (pkm === "pnpm") {
-				if (this.is_monorepo_package(pkg_name)) return "workspace:*"
-				return "catalog:" // TODO named catalogs
-			}
-
-			throw new Error("NIMP")
-		}*/
-
 	/////////////////////////////////////////////////
 
 	inject(packageᐧjson: PackageJson, { force = false } = {}): void {

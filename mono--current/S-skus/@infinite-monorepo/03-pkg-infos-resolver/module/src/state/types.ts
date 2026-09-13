@@ -26,9 +26,9 @@ export type PendingAsync<T> = InspectablePromise<
 >
 
 export interface State {
-	latest_known_packageᐧjson_by_fqname: Record<string, PackageJson>
+	latest_known_packageᐧjson_by_fqname: Record<PkgFQName, PackageJson>
 
-	ↆpackageᐧjson_fetches: Record<string, PendingAsync<PackageJson>>
+	ↆpackageᐧjson_fetches_by_fqname: Record<PkgFQName, PendingAsync<PackageJson>>
 
 	packages_blocklist: Set<PkgFQName>
 

@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////
 
 export function getꓽall_pending_async(state: Immutable<State>) {
-	return Object.values(state.ↆpackageᐧjson_fetches)
+	return Object.values(state.ↆpackageᐧjson_fetches_by_fqname)
 }
 
 export function isꓽallowed_package(state: Immutable<State>, pkg_name: PkgFQName): boolean {
@@ -36,7 +36,7 @@ export function ǃgetꓽlatest_known_packageᐧjson(state: Immutable<State>, pkg
 
 	if (state.latest_known_packageᐧjson_by_fqname[pkg_name]) return state.latest_known_packageᐧjson_by_fqname[pkg_name]
 
-	if (state.ↆpackageᐧjson_fetches[pkg_name]) {
+	if (state.ↆpackageᐧjson_fetches_by_fqname[pkg_name]) {
 		throw new Error(`Package "${pkg_name}" is still loading, please await!`)
 	}
 

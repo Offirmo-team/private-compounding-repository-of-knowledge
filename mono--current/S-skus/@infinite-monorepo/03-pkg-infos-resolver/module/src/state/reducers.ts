@@ -3,7 +3,7 @@
 export function create(): Immutable<State> {
 	return {
 		latest_known_packageᐧjson_by_fqname: {},
-		ↆpackageᐧjson_fetches: {},
+		ↆpackageᐧjson_fetches_by_fqname: {},
 		packages_blocklist: new Set(),
 		monorepo_pkgs: new Set(),
 		monorepo_namespaces: new Set(),
@@ -13,12 +13,12 @@ export function create(): Immutable<State> {
 }
 
 export function processꓽresolved_pending_async(state: Immutable<State>): Immutable<State> {
-	const ↆpackageᐧjson_fetches = {
-		...state.ↆpackageᐧjson_fetches,
+	const ↆpackageᐧjson_fetches_by_fqname = {
+		...state.ↆpackageᐧjson_fetches_by_fqname,
 	}
 
 	let modified = false
-	state = Object.entries(ↆpackageᐧjson_fetches).reduce((state, [pkg_name, ip]) => {
+	state = Object.entries(ↆpackageᐧjson_fetches_by_fqname).reduce((state, [pkg_name, ip]) => {
 		switch (ip.state) {
 			case "pending":
 				return state
@@ -69,7 +69,7 @@ export function processꓽresolved_pending_async(state: Immutable<State>): Immut
 		}
 
 		modified = true
-		delete ↆpackageᐧjson_fetches[pkg_name]
+		delete ↆpackageᐧjson_fetches_by_fqname[pkg_name]
 
 		return state
 	}, state)
@@ -78,7 +78,7 @@ export function processꓽresolved_pending_async(state: Immutable<State>): Immut
 
 	return {
 		...state,
-		ↆpackageᐧjson_fetches,
+		ↆpackageᐧjson_fetches_by_fqname: ↆpackageᐧjson_fetches_by_fqname,
 	}
 }
 
@@ -98,6 +98,9 @@ export function declareꓽmonorepo_namespace(state: Immutable<State>, ns: PkgNam
 		monorepo_namespaces: new Set([...state.monorepo_namespaces, ns]),
 	}
 }
+
+// beware of race conditions
+// TODO fix race condition
 export function declareꓽversion_override(
 	state: Immutable<State>,
 	pkg_name: PkgFQName,
@@ -107,6 +110,10 @@ export function declareꓽversion_override(
 	if (existing) {
 		assert(existing === version, `Conflicting override for "${pkg_name}"`)
 		return state
+	}
+
+	if (state.latest_known_packageᐧjson_by_fqname[pkg_name]) {
+		debugger
 	}
 
 	return {
@@ -127,7 +134,7 @@ export function set(state: Immutable<State>, packageᐧjson: PackageJson, { forc
 	if (state.latest_known_packageᐧjson_by_fqname[packageᐧjson.name]) {
 		ǃ.for_value({ state }).ensure(force, `Package "${packageᐧjson.name}" should not be already loaded!`)
 	}
-	if (state.ↆpackageᐧjson_fetches[packageᐧjson.name]) {
+	if (state.ↆpackageᐧjson_fetches_by_fqname[packageᐧjson.name]) {
 		ǃ.for_value({ state }).ensure(force, `Package "${packageᐧjson.name}" should not be already loading!`)
 	}
 
@@ -140,7 +147,6 @@ export function set(state: Immutable<State>, packageᐧjson: PackageJson, { forc
 	}
 }
 
-//
 export function preload_if_npm(
 	state: Immutable<State>,
 	maybe_pkg_name: string,
@@ -158,15 +164,15 @@ export function preload_if_npm(
 		// for now
 		return state
 	}
-	if (state.ↆpackageᐧjson_fetches[maybe_pkg_name]) return state
+	if (state.ↆpackageᐧjson_fetches_by_fqname[maybe_pkg_name]) return state
 
 	const version = state.specifier_overrides_by_fqname[pkg_name]
 	console.log(`PkgVersionResolver now querying "${pkg_name}"…`)
 
 	state = {
 		...state,
-		ↆpackageᐧjson_fetches: {
-			...state.ↆpackageᐧjson_fetches,
+		ↆpackageᐧjson_fetches_by_fqname: {
+			...state.ↆpackageᐧjson_fetches_by_fqname,
 			[pkg_name]: ↆfetchꓽpackageᐧjson(pkg_name, version, _auto),
 		},
 	}
