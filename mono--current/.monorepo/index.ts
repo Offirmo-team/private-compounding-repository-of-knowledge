@@ -41,8 +41,7 @@ const SPEC: Partial<InfiniteMonorepoSpec> = {
 		"S-skus/@infinite-monorepo/*",
 		"S-skus/@tbrpg/1-logic/*",
 		"S-skus/@web-property-outfitter/*",
-		"S-skus/@yvem/*",
-		"S-skus/single-pkg/*",*/
+^		"S-skus/single-pkg/*",*/
 	],
 
 	/////// TOOLING ///////

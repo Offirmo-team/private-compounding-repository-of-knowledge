@@ -1,0 +1,9 @@
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})(),window.addEventListener(`keydown`,function e(t){t.keyCode===9&&(document.body.classList.add(`user-is-tabbing`),window.removeEventListener(`keydown`,e))});function e({id:e,css:t,href:n,document:r=window.document}){let i=r.getElementById(e);if(i)return i;let a=(()=>{if(t&&n)throw Error(`style_once(): conflicting css & href!`);if(t){let n=r.createElement(`style`);return n.setAttribute(`id`,e),n.innerHTML=t,n}if(n){let t=r.createElement(`link`);return t.setAttribute(`id`,e),t.rel=`stylesheet`,t.href=n,t}throw Error(`style_once(): you must provide css or href!`)})();return r.head.appendChild(a),a}function t(){new URLSearchParams(window.location.search).get(`ref`)===`webmanifest`&&(console.log(`Hello from @monorepo-private/css--framework / atomic--dimension.tsx: dynamically tweaking some CSS: o⋄full-viewport for iOs pinned app...`),e({id:`pinned-webapp-adjustments--viewport`,css:`
+:root {
+	/* see @monorepo-private/css--framework/src/atomic/atomic--dimension.css#L28
+	 * pinned apps on iOs: dv* are not full screen
+	 */
+	--o⋄full-viewport__width: 100lvw;
+	--o⋄full-viewport__height: 100lvh;
+}
+`}))}t();

@@ -23,9 +23,9 @@
 		/>
 		<link rel="manifest" href="/assets/index-B-RDtMtN.webmanifest" />
 
-		<title>[title--page]My Cool PWA</title>
+		<title>[title--page]My Cool PWA - About</title>
 
-		<style>@namespace svg "http://www.w3.org/2000/svg";@layer temp-while-loading{:has(.o⋄full-viewport){border:initial;margin:0;padding:0}o⋄full-viewport{width:100lvw;height:100lvh;max-width:initial;position:absolute;top:0;left:0;overflow:hidden}}@layer offirmo--reset,offirmo--foundation,offirmo--framework;:root{box-sizing:border-box}*,:before,:after{box-sizing:inherit}:root{--o⋄color⁚bg--main:#533c45;--o⋄color⁚fg--main:#ffebbd;--o⋄font-family--system--sans:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;color:var(--o⋄color⁚fg--main);background-color:var(--o⋄color⁚bg--main);font-family:var(--o⋄font-family--system--sans);overscroll-behavior:none;margin:0;padding:0}</style>
+		<style>@namespace svg "http://www.w3.org/2000/svg";@layer offirmo--reset,offirmo--foundation,offirmo--framework;:root{box-sizing:border-box}*,:before,:after{box-sizing:inherit}:root{--o⋄color⁚bg--main:#533c45;--o⋄color⁚fg--main:#ffebbd;--o⋄font-family--system--sans:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;color:var(--o⋄color⁚fg--main);background-color:var(--o⋄color⁚bg--main);font-family:var(--o⋄font-family--system--sans);overscroll-behavior:none;margin:0;padding:0}</style>
 
 		<script>
 			/////// critical JS ///////
@@ -66,47 +66,15 @@
 				// Do NOT use location.replace() or it can trigger infinite loops with servers doing auto redirects with/without slashes ex. https://developers.cloudflare.com/workers/static-assets/routing/advanced/html-handling/
 				history.replaceState(null, "", location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
 			})()
-			// for parcel serve which defaults every non-matching path to /index.html
-			if (location.hostname === "localhost") {
-				;(function redirect_extensionless_known_pathes() {
-					if (location.redirect_pending) return
-
-					const pathname_without_leading_and_trailing_slash = location.pathname
-						.split("/")
-						.filter((s) => !!s)
-						.join("/")
-
-					const trailing_path_segment = pathname_without_leading_and_trailing_slash.split("/").at(-1) || ""
-					if (!trailing_path_segment) {
-						// ✔ we're at the root of the domain
-						return
-					}
-
-					const has_trailing_segment_an_extension = trailing_path_segment.split(".").length > 1
-					if (has_trailing_segment_an_extension) {
-						// ✔ the trailing segment has an extension
-						return
-					}
-
-					// ✖ we are located by an extension-less path
-					// Our server doesn't support extensionless URLs
-					// attempt to redirect to the version with an extension (this may still 404)
-					const locationᐧpathnameⵧfixed = "/" + pathname_without_leading_and_trailing_slash + ".html"
-
-					console.log("redirect_extensionless_known_pathes() REDIRECTING…")
-					location.redirect_pending = true // to communicate to possible other redirects that one is already in progress
-					location.replace(location.origin + locationᐧpathnameⵧfixed + location.search + location.hash)
-				})()
-			}
 		</script>
-		<script type="module" crossorigin src="/assets/index-BTR3F5JX.js"></script>
-		<link rel="modulepreload" crossorigin href="/assets/src-D6LMlauR.js">
+		<script type="module" crossorigin src="/assets/src-D6LMlauR.js"></script>
 		<link rel="stylesheet" crossorigin href="/assets/src-9f5B1Z3S.css">
 	</head>
 
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
-		Loading...
+		<h1>About [title--page]My Cool PWA</h1>
+		<p>TODO...</p>
 
 	</body>
 </html>

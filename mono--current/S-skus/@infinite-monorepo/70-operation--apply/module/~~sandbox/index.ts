@@ -9,6 +9,5 @@ const OFFIRMO_MONOREPO_ROOT__CURRENT = process.env.OFFIRMO_MONOREPO_ROOT__CURREN
 
 //await apply(OFFIRMO_MONOREPO_ROOT__CURRENT)
 //await apply(path.resolve(OFFIRMO_MONOREPO_ROOT__CURRENT, '../stack--imtest'))
-//await apply(path.normalize('~/work/src/private/yvem/hello-world--remix--2026/monorepo'))
 
 await apply(path.normalize('~/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge/mono--current/'))

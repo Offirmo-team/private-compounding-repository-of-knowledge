@@ -21,7 +21,7 @@ const THING: Thing = {
 /*
 const SOCIAL_LINKⵧGITHUB: SocialNetworkLink = {
 	network: "github",
-	url: "https://github.com/Yvem/minisite--dev-mental-models",
+	url: "https://github.com/TODO",
 }
  */
 const ONLINE_PRESENCE: WithOnlinePresence = {

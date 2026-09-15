@@ -31,11 +31,11 @@ const THING: Thing = {
 
 const SOCIAL_LINKⵧGITHUB: SocialNetworkLink = {
 	network: "github",
-	url: "https://github.com/Yvem/minisite--dev-mental-models",
+	url: "https://github.com/TODO",
 }
 
 const ONLINE_PRESENCE: WithOnlinePresence = {
-	urlⵧcanonical: "https://yvem.github.io/minisite--dev-mental-models/",
+	urlⵧcanonical: "https://github.com/TODO",
 	urlsⵧsocial: [SOCIAL_LINKⵧGITHUB],
 }
 
@@ -46,7 +46,7 @@ const THINGⵧONLINE: ThingWithOnlinePresence = {
 	...THING,
 	...ONLINE_PRESENCE,
 
-	contact: "https://github.com/Yvem/minisite--dev-mental-models/issues",
+	contact: "https://github.com/TODO",
 }
 
 /////////////////////////////////////////////////
@@ -55,7 +55,7 @@ const THINGⵧONLINE: ThingWithOnlinePresence = {
 const WEBSITE: WebPage = {
 	...THINGⵧONLINE,
 
-	title: "Mental Models Dev",
+	title: "TODO,
 	icon: {
 		emoji: "💡",
 		//svg: path.join(__dirname, './icon--rpg.svg'),
