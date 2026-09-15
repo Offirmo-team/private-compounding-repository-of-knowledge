@@ -27,3 +27,8 @@ Claude Code issues
 - rut of auto-fixes
 - reviewing own code find issues
 - bad at jokes
+
+
+
+
+similar to https://www.joelotter.com/posts/2026/09/make-it-anyway/ about "creative outlet"

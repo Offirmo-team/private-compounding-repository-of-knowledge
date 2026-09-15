@@ -65,9 +65,9 @@
 2026-03-12 aave incident https://x.com/aave/status/2032959512244518962
 2026-03-14 "The Ethereum foundation mandate" https://x.com/ethereumfndn/status/2032460726728573298
 2026-03-22 $25M Resolv USR Minting Heist https://x.com/chainalysis/status/2035882965449019640 https://bfmtimes.com/hacker-mints-80-million-worth-of-fake-stablecoins-and-swaps-them-for-eth/ https://cryptopotato.com/how-the-25m-resolv-usr-minting-heist-happened/
-2026-03-31 new quantum breaktrhough Q-day now set to 2029 https://x.com/drakefjustin/status/2038847732152996108
+2026-03-31 new quantum breakthrough Q-day now set to 2029 https://x.com/drakefjustin/status/2038847732152996108
 2026-04-01 Drift hack https://x.com/DriftProtocol/status/2040611161121370409 https://www.cyfrin.io/blog/drift-hack-learnings
-2026-04-12 Jusin Sun "discovers" that WLF is not honest 🤣 https://x.com/justinsuntron/status/2043234272622883074
+2026-04-12 Justin Sun "discovers" that WLF is not honest 🤣 https://x.com/justinsuntron/status/2043234272622883074
 ? +++ https://support.ledger.com/topic?topic=Crypto_Concepts https://support.ledger.com/topic?topic=Ledger_Live
 ? abstracts on many chains https://www.circle.com/multi-chain-usdc
 ? alchemy https://www.alchemy.com/docs

@@ -9765,12 +9765,21 @@ importers:
 
   S-skus/@tracer-bullet--web-app/90-final--web-app:
     devDependencies:
+      '@monorepo-private/css--framework':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/1-libs--simple/css--2-framework
       '@monorepo-private/parcel-config':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/parcel--config--default
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
+      '@tracer-bullet--web-app/web-core':
+        specifier: workspace:*
+        version: link:../70-web-core
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.0(@types/node@24.13.4)(@vitejs/devtools@0.7.3)(yaml@2.9.1)
 
   S-skus/@web-property-outfitter/10-spec:
     dependencies:
