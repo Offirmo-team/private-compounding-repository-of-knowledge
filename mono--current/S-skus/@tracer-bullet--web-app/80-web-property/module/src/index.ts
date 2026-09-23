@@ -17,7 +17,8 @@ start()
 		// appearance
 		"cssⳇbox-layout--natural",
 		"cssⳇviewport--full",
-		"cssⳇframework--offirmo",
+		//"cssⳇframework--offirmo", no need, core will import it
+
 		// technical
 		"normalize-url-trailing-slash",
 	],
