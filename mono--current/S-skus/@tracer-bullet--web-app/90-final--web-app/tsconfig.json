@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"lib": ["ES2025", "DOM"],
+		"pretty": true
+	},
+	"exclude": ["**/~~*/**/*"],
+	"extends": "@monorepo-private/config--typescript/module/dom/tsconfig.json",
+	"include": [
+		"./node_modules/@monorepo-private/config--typescript/module/_custom-typings/*.d.ts",
+		"module/**/*.ts",
+		"module/**/*.tsx"
+	]
+}

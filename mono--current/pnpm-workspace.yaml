@@ -3,7 +3,7 @@ allowBuilds:
    fetch-mock: false
 autoInstallPeers: false
 catalog:
-   "@earendil-works/pi-tui": ^0.85
+   "@earendil-works/pi-tui": ^0.87
    "@nodelib/fs.walk": ^3
    "@parcel/plugin": ^2
    "@pnpm/constants": ^1102
@@ -19,7 +19,7 @@ catalog:
    "@types/icepick": ^2
    "@types/mocha": ^10
    "@types/murmurhash3js-revisited": ^3
-   "@types/node": ^24
+   "@types/node": ^26
    "@types/prettyjson": ^0.0.33
    "@types/prop-types": ^15
    "@types/react": ^19
@@ -52,7 +52,7 @@ catalog:
    murmurhash3js-revisited: ^3
    nanoid: ^6
    npm-run-all: ^4
-   oxfmt: ^0.67
+   oxfmt: ^0.70
    oxlint: ^1
    oxlint-tsgolint: ^7
    package-json: ^10

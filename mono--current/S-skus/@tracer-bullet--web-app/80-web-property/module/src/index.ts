@@ -60,7 +60,8 @@ export const SPECⵧpreprod: WebPropertySpec = {
 
 export const SPECⵧnightly: WebPropertySpec = {
 	...SPECⵧprod,
-	urlⵧcanonical: "https://offirmo-team.github.io/private-compounding-repository-of-knowledge/@tracer-bullet--web-app/nightly/",
+	urlⵧcanonical:
+		"https://offirmo-team.github.io/private-compounding-repository-of-knowledge/@tracer-bullet--web-app/nightly/",
 
 	host: "github-pages",
 	env: "development",

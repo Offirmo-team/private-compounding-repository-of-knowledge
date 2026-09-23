@@ -16,14 +16,31 @@
 		"start": "npm-run-all clean --parallel _start:main--vite",
 		"startp": "npm-run-all clean --parallel _start:main--parcel"
 	},
-	"devDependencies": {
-		"@monorepo-private/css--framework": "workspace:*",
-		"@monorepo-private/parcel-config": "workspace:*",
-		"@monorepo-private/vite--config--default": "workspace:*",
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
 		"@tracer-bullet--web-app/web-core": "workspace:*",
 		"react": "catalog:",
 		"react-dom": "catalog:",
-		"vite": "catalog:"
+		"tslib": "catalog:"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--mocha": "workspace:*",
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/mocha": "catalog:",
+		"@types/node": "catalog:",
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:",
+		"@types/sinon": "catalog:",
+		"chai": "catalog:",
+		"mocha": "catalog:",
+		"npm-run-all": "catalog:",
+		"sinon": "catalog:",
+		"typescript": "catalog:",
+		"vite": "catalog:",
+		"vitest": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
 }
