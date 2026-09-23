@@ -26,6 +26,10 @@ export function extend_web_app_config(configⵧoverrides: UserConfig = {}): Retu
 	const dirⵧout = configⵧoverrides.build?.outDir ?? resolve(process.cwd(), "dist")
 
 	const configⵧweb_app: UserConfig = {
+		// Emit RELATIVE asset URLs (./assets/…) rather than absolute (/assets/…).
+		// These apps are served under an arbitrary sub-path (ex. /foo/app/nightly/), not the domain root,
+		// so absolute URLs would 404. Relative works both at root and under any path.
+		base: "./",
 		root: dirⵧroot,
 		build: {
 			outDir: dirⵧout,

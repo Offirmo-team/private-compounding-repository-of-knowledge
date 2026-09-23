@@ -1,28 +1,16 @@
-import { Component, type ErrorInfo } from "react"
-
-import { assert_from, assert } from "@monorepo-private/assert"
-import { getRootSXC, type SoftExecutionContext } from "@monorepo-private/soft-execution-context"
-import { asap_but_not_synchronous } from "@monorepo-private/utils--async"
-
-import { ErrorOverlay } from "../error-overlay/index.tsx"
-import { render_any_children } from "../render-anything/index.tsx"
-
 /////////////////////////////////////////////////
 
-interface Props {
+export interface Props extends React.PropsWithChildren, React.Attributes {
+	render?: () => React.ReactNode
+
 	name: string
 	SXC?: SoftExecutionContext
 }
 
-interface State {
-	error: unknown | undefined
-	errorInfo: ErrorInfo | undefined
-}
-
-class ErrorBoundary extends Component<Props, State> {
+export class ErrorBoundary extends Component<Props, State> {
 	mounted = true // need to track that in case an error happen during unmounting
 	SXC: SoftExecutionContext
-	override state = {
+	override state: State = {
 		error: undefined,
 		errorInfo: undefined,
 	}
@@ -47,7 +35,7 @@ class ErrorBoundary extends Component<Props, State> {
 	}
 
 	// as a member var to be able to pass it around
-	override componentDidCatch = (error: unknown, errorInfo: ErrorInfo) => {
+	override componentDidCatch = (error: unknown, errorInfo: ErrorInfoⵧaugmented) => {
 		const { name } = this.props
 
 		this.SXC.xTryCatch(`handling error boundary "${name}"`, ({ SXC, logger }) => {
@@ -90,7 +78,7 @@ class ErrorBoundary extends Component<Props, State> {
 			return render_any_children(this.props)
 		} catch (err) {
 			asap_but_not_synchronous(() =>
-				this.componentDidCatch(err, { digest: `crash in ErrorBoundary.render("${name}")` }),
+				this.componentDidCatch(err, { origin: `crash in ErrorBoundary.render("${name}")` }),
 			)
 		}
 
@@ -98,7 +86,22 @@ class ErrorBoundary extends Component<Props, State> {
 	}
 }
 
+export default ErrorBoundary
+
 /////////////////////////////////////////////////
 
-export { ErrorBoundary }
-export default ErrorBoundary
+interface State {
+	error: unknown | undefined
+	errorInfo: ErrorInfoⵧaugmented | undefined
+}
+
+/////////////////////////////////////////////////
+
+import { Component, type ReactNode } from "react"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import { getRootSXC, type SoftExecutionContext } from "@monorepo-private/soft-execution-context"
+import { asap_but_not_synchronous } from "@monorepo-private/utils--async"
+
+import { type ErrorInfoⵧaugmented, ErrorOverlay } from "../error-overlay/index.tsx"
+import { render_any_children } from "../render-anything/index.tsx"

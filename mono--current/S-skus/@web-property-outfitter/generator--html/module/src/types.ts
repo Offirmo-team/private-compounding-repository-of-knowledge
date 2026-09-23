@@ -60,7 +60,8 @@ interface HtmlMetas {
 		viewport: HtmlMetaContentⳇViewport
 
 		// https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
-		"apple-mobile-web-app-capable"?: "yes"
+		// update 2026: in Chrome <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes">
+		"mobile-web-app-capable"?: "yes"
 		"apple-mobile-web-app-status-bar-style"?: // see also https://medium.com/appscope/changing-the-ios-status-bar-of-your-progressive-web-app-9fc8fbe8e6ab
 			| "default" // the status bar appears normal                      → the web content is displayed below the status bar
 			| "black" // the status bar has a black background                →  the web content is displayed below the status bar

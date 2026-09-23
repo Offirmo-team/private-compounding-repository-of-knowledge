@@ -21,6 +21,8 @@
 		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@tracer-bullet--web-app/web-core": "workspace:*",
+		"react": "catalog:",
+		"react-dom": "catalog:",
 		"vite": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"

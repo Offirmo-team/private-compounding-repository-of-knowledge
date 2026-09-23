@@ -7,8 +7,12 @@ function Component(props: React.PropsWithChildren) {
 		<table>
 			<thead>
 				<tr>
-					<th>normal</th>
-					<th>render_any</th>
+					<th>
+						<code>props.children</code>
+					</th>
+					<th>
+						<code>render_any_children(props)</code>
+					</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -46,7 +50,9 @@ export default {
 
 /////////////////////////////////////////////////
 
-export const NoChildren = {}
+export const NoChildren = {
+	// NOT correct
+}
 
 export const String = {
 	args: {
@@ -54,7 +60,7 @@ export const String = {
 	},
 }
 
-export const Strings = {
+export const StringArray = {
 	args: {
 		children: ["a string", "another string"],
 	},

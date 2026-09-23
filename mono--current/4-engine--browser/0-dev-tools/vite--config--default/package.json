@@ -18,7 +18,8 @@
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/merge": "workspace:*",
 		"@vitejs/plugin-react": "catalog:",
-		"vite": "catalog:"
+		"vite": "catalog:",
+		"vite-plugin-devtools-json": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",

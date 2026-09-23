@@ -1,6 +1,8 @@
 /////////////////////////////////////////////////
 // technical
 
+import * as Core from "@tracer-bullet--web-app/web-core" // fake, for deps
+
 const ROOT_PAGE: WebPage = {
 	...LANDING_PAGE,
 
@@ -46,6 +48,7 @@ export const SPECⵧprod: WebPropertySpec = {
 
 export const SPECⵧpreprod: WebPropertySpec = {
 	...SPECⵧprod,
+	urlⵧcanonical: "TODO",
 
 	host: "github-pages",
 	env: "production",
@@ -57,6 +60,7 @@ export const SPECⵧpreprod: WebPropertySpec = {
 
 export const SPECⵧnightly: WebPropertySpec = {
 	...SPECⵧprod,
+	urlⵧcanonical: "https://offirmo-team.github.io/private-compounding-repository-of-knowledge/@tracer-bullet--web-app/nightly/",
 
 	host: "github-pages",
 	env: "development",
@@ -70,7 +74,7 @@ export const SPECⵧnightly: WebPropertySpec = {
 
 import * as path from "node:path"
 import { fileURLToPath } from "node:url"
-const __dirname = path.dirname(fileURLToPath(import.meta.url)) // TODO favicon?
+const __dirname = path.dirname(fileURLToPath(import.meta.url)) // TODO favicon
 
 import { LANDING_PAGE, THINGⵧONLINE } from "@tracer-bullet--web-app/marketing"
 import type { WebPage, WebPropertySpec } from "@web-property-outfitter/spec"

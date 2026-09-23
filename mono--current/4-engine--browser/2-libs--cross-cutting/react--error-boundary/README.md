@@ -1,6 +1,6 @@
 Based on [render-props](https://github.com/donavon/render-props) to allow any type of usage:
 
-```jsx
+```tsx
 import ErrorBoundary from '@monorepo-private/react--error-boundary'
 
 <ErrorBoundary name={'omr:logo'}>
@@ -16,7 +16,7 @@ WARNING !!!!
 [React error boundaries](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)
 are NOT really behaving like a try/catch. You MAY have to use an intermediate component to really catch errors. Ex.
 
-```jsx
+```tsx
 import ErrorBoundary from '@monorepo-private/react--error-boundary'
 
 // Will NOT work!!!

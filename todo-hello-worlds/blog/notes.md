@@ -23,10 +23,14 @@ Claude Code issues
 - writing verbose comments
 - writing session-related stuff in comments
 - then believing comments
-- believing sibling files
-- rut of auto-fixes
+- believing sibling files = replicating legacy patterns
+- unaware of announcements
+  - rut of auto-fixes
 - reviewing own code find issues
 - bad at jokes
+- misalignment: ex "mocks leakage" forbidden = use "placeholders" terminology :/
+- duplication
+- context window too small
 
 
 

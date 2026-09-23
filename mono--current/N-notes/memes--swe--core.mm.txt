@@ -1,3 +1,4 @@
++++ https://horn.gg/blog/engineers-will-do-anything-to-avoid-learning-from-history/
 +++ https://roadmap.sh/
 // +++ https://explorer.globe.engineer/
 // +++ https://www.hackterms.com/about/all
@@ -612,6 +613,8 @@ Interface segregation principle = instead of a class interface with all possible
 internal developer platform (IDP) = central source of truth, golden paths, https://www.pulumi.com/docs/idp/get-started/
 internal developer platform -- private registry
 interpreters = make your own programming language https://craftinginterpreters.com/
+interview -- process -- "Remember That Time We All Fired Ourselves?" = flawed https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564
+interview -- process -- https://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html
 Inversion of control (IoC) = programming principle whereby flow is managed in the opposite way to traditional procedural programming. With inversion of control, custom-written portions of a program receive the flow of control from a generic framework, as opposed to the traditional procedural approach whereby custom code calls into reusable libraries to take care of generic tasks. With inversion of control, the framework calls into custom, or task-specific, code
 is it worth the time? https://will-keleher.com/posts/its-not-worth-the-time-yet/
 job -- as tool = "It is simply a fact that software engineers are tools in the political game being played at large companies" https://alexwennerberg.com/blog/2025-11-28-engineering.html

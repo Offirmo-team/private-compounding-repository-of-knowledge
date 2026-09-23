@@ -25,8 +25,7 @@
 		"@monorepo-private/page-loaded": "workspace:*",
 		"@monorepo-private/react--background-img": "workspace:*",
 		"@monorepo-private/react--error-boundary": "workspace:*",
-		"@monorepo-private/utils--async": "workspace:*",
-		"react-dom": "catalog:"
+		"@monorepo-private/utils--async": "workspace:*"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
@@ -44,6 +43,7 @@
 		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
 		"react": "catalog:",
+		"react-dom": "catalog:",
 		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
@@ -52,6 +52,7 @@
 	"peerDependencies": {
 		"@monorepo-private/soft-execution-context": "workspace:*",
 		"react": "catalog:",
+		"react-dom": "catalog:",
 		"tslib": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"

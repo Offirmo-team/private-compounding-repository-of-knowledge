@@ -98,6 +98,7 @@
 [ ] https://tenderly.co/
 [ ] https://vitalik.eth.limo/
 [ ] https://www.arringtoncapital.com/blog/
+[ ] https://www.bloomberg.com/features/2022-the-crypto-story/
 [ ] https://www.coingecko.com/en/categories
 [ ] https://www.forbes.com/digital-assets/news/
 [ ] https://www.kaleido.io/blog-categories/product-technology

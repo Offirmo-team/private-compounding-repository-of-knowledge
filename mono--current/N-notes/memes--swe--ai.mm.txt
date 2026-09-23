@@ -1009,7 +1009,7 @@ who's who -- Jeffrey Emanuel = https://jeffreyemanuel.com/
 who's who -- Mario Zechner = https://mariozechner.at/
 who's who -- Sam Altman = OpenAI https://en.wikipedia.org/wiki/Removal_of_Sam_Altman_from_OpenAI
 who's who -- Simon Willison = big thought leader https://simonwillison.net/
-who's who -- Steve Yegge = thought leader https://steve-yegge.medium.com/
+who's who -- Steve Yegge = thought leader (Gas Town) https://yegge.ai/atlas https://steve-yegge.medium.com/
 write as little business logic as possible = don't get in the way of the model "feel the model as raw as possible"
 yap -- yap score
 yap https://www.reddit.com/r/ChatGPT/comments/1djgyvb/is_it_just_me_or_gpt4_yaps_too_much/

@@ -10,7 +10,7 @@
 /////////////////////////////////////////////////
 
 export const THINGⵧONLINE: ThingWithOnlinePresence = {
-	urlⵧcanonical: "https://todo.example/", // TODO
+	urlⵧcanonical: "https://todo.example/", // TODO offirmo.net something
 	title: "My Cool PWA",
 	caption: "(PWA demo)",
 	creator: CREATOR,
