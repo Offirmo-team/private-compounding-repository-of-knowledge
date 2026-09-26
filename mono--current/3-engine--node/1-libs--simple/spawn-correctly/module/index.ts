@@ -1,14 +1,12 @@
-import { strict as assert } from "node:assert"
-import { spawn } from "node:child_process"
-import { EOL } from "node:os"
-
-import { spawn as cross_spawn } from "cross-spawn"
-
 /////////////////////////////////////////////////
 
 const DEBUG = false // for local debug
 
-interface SpawnError extends Error {
+/////////////////////////////////////////////////
+
+export default ೱspawnCorrectlyAndResolvesWithStdout // what we want most of the time
+
+export interface SpawnError extends Error {
 	cause?: Error | unknown // ES2022 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/cause
 	reason: string
 
@@ -23,9 +21,9 @@ interface SpawnError extends Error {
 	commandForLog: string
 }
 
-type ChildProcess = ReturnType<typeof spawn>
+export type ChildProcess = ReturnType<typeof spawn>
 
-interface Options {
+export interface Options {
 	verbose: boolean
 	logger: {
 		log: (msg: string, details?: any) => void
@@ -37,7 +35,7 @@ interface Options {
 
 // resolves with the result of the accumulator
 // or reject with whatever error reason
-async function spawnCorrectly<Result>({
+export async function ೱspawnCorrectly<Result>({
 	spawnCommand,
 	spawnArgs,
 	spawnOptions,
@@ -65,20 +63,22 @@ async function spawnCorrectly<Result>({
 		let hasAlreadyFailed = false // so far
 
 		function fail(reason: `${string}!`, err?: Error | any) {
-			shouldLog && logger.error(`✖ spawnCorrectly: Failure during invocation: ${reason}`)
-
-			code = code ?? err?.errno // may be exposed if node captured it first
-			if (code && signal === undefined) {
-				signal = null // mutually exclusive
-			}
-			if (signal && code === undefined) {
-				code = null // mutually exclusive
-			}
-			spawnArgs = spawnArgs ?? err?.spawnargs // bc node exposes it
-
 			if (hasAlreadyFailed) {
 				return
 			}
+			hasAlreadyFailed = true
+
+			shouldLog && logger.error(`✖ ೱspawnCorrectly: Failure during invocation: ${reason}`)
+
+			code = code ?? err?.errno // may be exposed if node captured it first
+			// code and signal are mutually exclusive, enforce it:
+			if (code && signal === undefined) {
+				signal = null
+			}
+			if (signal && code === undefined) {
+				code = null
+			}
+			spawnArgs = spawnArgs ?? err?.spawnargs // bc node exposes it
 
 			stdout = stdout.trim()
 			stderr = stderr.trim()
@@ -95,7 +95,8 @@ async function spawnCorrectly<Result>({
 						Math.max(
 							6, // node errors starts to be interesting at 5th line
 						)
-					const first_output_lines = output.split(EOL).slice(0, MAX_USEFUL_LINES)
+					// NOT os.EOL: line endings come from the child, not from the host OS
+					const first_output_lines = output.split(/\r?\n/).slice(0, MAX_USEFUL_LINES)
 					for (const line of first_output_lines) {
 						const line‿lc = line.toLowerCase()
 						if (line‿lc.includes("error") || line‿lc.includes("exception")) return line
@@ -122,13 +123,12 @@ async function spawnCorrectly<Result>({
 			decoratedErr.commandForLog = commandForLog
 
 			reject(decoratedErr)
-			hasAlreadyFailed = true
 
-			shouldLog && logger.error(`✖ spawnCorrectly: rejected with error:`, decoratedErr)
+			shouldLog && logger.error(`✖ ೱspawnCorrectly: rejected with error:`, decoratedErr)
 		}
 
 		try {
-			shouldLog && logger.log(`► spawnCorrectly(): About to spawn: ${commandForLog}`)
+			shouldLog && logger.log(`► ೱspawnCorrectly(): About to spawn: ${commandForLog}`)
 			const childProcess = cross_spawn(spawnCommand, spawnArgs ?? [], spawnOptions ?? {}) as ReturnType<typeof spawn>
 
 			// listen to events
@@ -165,17 +165,22 @@ async function spawnCorrectly<Result>({
 					fail(`got stdin event "error"!`, err)
 				})
 			}
-			assert(!!childProcess.stdout, `spawnCorrectly(): should have stdout!`)
+			assert(!!childProcess.stdout, `ೱspawnCorrectly(): should have stdout`)
+			// mandatory: without it, chunks are raw Buffers and a multi-byte character
+			// straddling a chunk boundary gets decoded as U+FFFD by each half.
+			childProcess.stdout.setEncoding("utf8")
 			result = onStdout(result, "") // init
 			childProcess.stdout.on("data", (data) => {
-				stdout += String(data)
-				result = onStdout(result, data)
+				const stdoutFragment = String(data)
+				stdout += stdoutFragment
+				result = onStdout(result, stdoutFragment)
 			})
 			childProcess.stdout.on("error", (err) => {
 				fail(`got stdout event "error"!`, err)
 			})
 
-			assert(!!childProcess.stderr, `spawnCorrectly(): should have stderr!`)
+			assert(!!childProcess.stderr, `ೱspawnCorrectly(): should have stderr`)
+			childProcess.stderr.setEncoding("utf8") // see stdout above
 			childProcess.stderr.on("data", (data) => {
 				stderr += String(data)
 			})
@@ -189,14 +194,14 @@ async function spawnCorrectly<Result>({
 			fail(`unexpected global catch!`, err)
 		}
 	}).then((result) => {
-		shouldLog && logger.log(`✔ spawnCorrectly(): executed successfully.`)
+		shouldLog && logger.log(`✔ ೱspawnCorrectly(): executed successfully.`)
 		return result
 	})
 }
 
 // resolves with the output of the command
 // or reject with whatever error reason
-async function spawnCorrectlyAndResolvesWithStdout({
+export async function ೱspawnCorrectlyAndResolvesWithStdout({
 	spawnCommand,
 	spawnArgs,
 	spawnOptions,
@@ -207,7 +212,7 @@ async function spawnCorrectlyAndResolvesWithStdout({
 	spawnOptions?: Parameters<typeof spawn>[2]
 	extraOptions?: Partial<Options>
 }): Promise<string> {
-	return spawnCorrectly<string>({
+	return ೱspawnCorrectly<string>({
 		spawnCommand,
 		...(spawnArgs && { spawnArgs }),
 		onStdout: (result, stdoutFragment) => {
@@ -222,10 +227,8 @@ async function spawnCorrectlyAndResolvesWithStdout({
 
 /////////////////////////////////////////////////
 
-export {
-	type SpawnError,
-	type ChildProcess, // for convenience
-	spawnCorrectly,
-	spawnCorrectlyAndResolvesWithStdout,
-}
-export default spawnCorrectlyAndResolvesWithStdout // what we want most of the time
+import { spawn } from "node:child_process"
+
+import { spawn as cross_spawn } from "cross-spawn"
+
+import { assert } from "@monorepo-private/assert"

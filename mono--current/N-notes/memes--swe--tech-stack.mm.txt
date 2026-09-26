@@ -128,6 +128,7 @@ ts -- tRPC https://trpc.io/docs/getting-started
 ts -- ts-pattern https://github.com/gvergnaud/ts-pattern
 ts -- zod, https://valibot.dev/guides/comparison/, typebox, ow https://valibot.dev/blog/why-migrate-to-valibot/
 ts-- scaling issues https://engineering.usemotion.com/moving-off-of-typescript-e7bb1f3ad091
+UI -- AI -- brainless = Claude Code, Codex, and Grok interfaces as shadcn components. https://brainless.swerdlow.dev/
 UI -- components -- https://mantine.dev/
 ui -- markdown -- editor https://overtype.dev/
 UX -- copy/paste -- ghost cut = https://ishmael.textualize.io/blog/ghost-cut/

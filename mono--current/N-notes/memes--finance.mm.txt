@@ -108,6 +108,7 @@ funding -- stock exchange
 gold clause = clause on contracts to be paid in gold in case currency changes https://en.wikipedia.org/wiki/Gold_clause
 government -- budget deficit
 government -- fiscal austerity
++++ The Hierarchy of Money https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/  https://news.ycombinator.com/item?id=49779253
 government -- high public spending
 government confiscation = forced to give precious metal
 hedge fund = risky, no longer hedge https://www.investor.gov/introduction-investing/investing-basics/investment-products/private-investment-funds/hedge-funds

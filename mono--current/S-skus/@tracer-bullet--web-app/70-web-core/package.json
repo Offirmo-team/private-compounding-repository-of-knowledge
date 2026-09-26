@@ -22,6 +22,7 @@
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/assets--background": "workspace:*",
+		"@monorepo-private/css--framework": "workspace:*",
 		"@monorepo-private/page-loaded": "workspace:*",
 		"@monorepo-private/react--background-img": "workspace:*",
 		"@monorepo-private/react--error-boundary": "workspace:*",

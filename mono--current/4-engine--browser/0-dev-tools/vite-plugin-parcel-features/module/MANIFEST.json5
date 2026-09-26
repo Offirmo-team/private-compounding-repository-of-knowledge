@@ -1,0 +1,4 @@
+{
+	description: "Vite plugin backfilling the Parcel features our sources rely on, ex. image transform directives",
+	target: "system",
+}

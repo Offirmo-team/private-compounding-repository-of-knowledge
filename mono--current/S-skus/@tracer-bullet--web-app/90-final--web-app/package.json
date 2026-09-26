@@ -18,6 +18,7 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/css--framework": "workspace:*",
 		"@tracer-bullet--web-app/web-core": "workspace:*",
 		"react": "catalog:",
 		"react-dom": "catalog:",

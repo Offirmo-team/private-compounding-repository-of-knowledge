@@ -1,8 +1,6 @@
 /////////////////////////////////////////////////
 // technical
 
-import * as Core from "@tracer-bullet--web-app/web-core" // fake, for deps
-
 const ROOT_PAGE: WebPage = {
 	...LANDING_PAGE,
 
@@ -19,7 +17,7 @@ start()
 		// appearance
 		"cssⳇbox-layout--natural",
 		"cssⳇviewport--full",
-		//"cssⳇframework--offirmo", no need, core will import it
+		"cssⳇframework--offirmo", // we use it, @web-property-outfitter set up many related things
 
 		// technical
 		"normalize-url-trailing-slash",

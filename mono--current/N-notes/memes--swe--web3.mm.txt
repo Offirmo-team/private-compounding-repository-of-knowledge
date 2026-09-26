@@ -206,6 +206,7 @@ bridging https://specs.optimism.io/interop/token-bridging.html
 builder codes = e.g. https://x.com/DeriveXYZ/status/2020993875482149111
 Cairo paper https://eprint.iacr.org/2021/1063.pdf
 cardano https://cardano.stackexchange.com/
+case studies -- briar = hard to find funding https://briarproject.org/news/2026-maintenance-mode/
 case study -- privacy https://newsletter.systemdesign.one/p/how-do-airtags-work
 CBDC "Central bank digital currencies" = cryptonite for crypto? (centralized) https://cointelegraph.com/magazine/cbdcs-kryptonite-for-crypto/
 CEX-like -- beware, ex. storing private keys in DB https://x.com/retardmode/status/1991067539539902942

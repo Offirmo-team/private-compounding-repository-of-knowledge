@@ -195,6 +195,7 @@ risks -- software -- supply chain -- famous examples zx https://www.akamai.com/b
 risks -- software -- supply chain -- solutions https://github.blog/changelog/2025-07-31-npm-trusted-publishing-with-oidc-is-generally-available/
 risks -- software -- supply chain -- solutions https://github.com/google/oss-rebuild
 risks -- software -- supply chain https://david-gilbertson.medium.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5 https://david-gilbertson.medium.com/part-2-how-to-stop-me-harvesting-credit-card-numbers-and-passwords-from-your-site-844f739659b9
+SAML "Security Assertion Markup Language" = https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/
 sandbox
 sandbox -- escape https://googleprojectzero.blogspot.com/2025/05/breaking-sound-barrier-part-i-fuzzing.html
 sanitization -- data as part of database query
@@ -244,6 +245,7 @@ Tor -- .onion
 Tor -- onion addresses
 Tor -- oniux = Kernel-level Tor isolation for any Linux app  https://blog.torproject.org/introducing-oniux-tor-isolation-using-linux-namespaces/
 Tor -- relay https://blog.torproject.org/happy-families/
+tracing cookie https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/
 tracking devices = aka. airTag, tag compared security https://blog.adafruit.com/2026/03/05/tiles-security-is-so-bad-its-a-feature-for-stalkers/
 Trusted Execution Environments (TEEs, sometimes referred to as “enclaves”) are processing environments that enable secure execution of code by isolating themselves from the host system’s operating system, kernel, and hypervisor. This isolation is often achieved through hardware separation, making it difficult (but not impossible) for external systems to tamper with or inspect enclave processes. https://a16zcrypto.com/posts/article/trusted-execution-environments-tees-primer/
 VPN = spy and sell private data https://ia.acs.org.au/article/2025/popular-free-vpn-caught-spying-on-users.html
@@ -253,10 +255,11 @@ weakness -- CWE "Common Weakness Enumeration" https://cwe.mitre.org/
 weakness =
 XML External Entity (XXE) = attack where an attacker is able to exploit applications processing XML inputs using improperly configured parser
 YubiKey = not necessarily safer if no pin = if stolen and no pin, cooked
-Zero Trust  = an IT security model that requires strict identity verification for every person and device trying to access resources on a private network, regardless of whether they are sitting within or outside of the network perimeter https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
-Zero Trust -- Architecture (ZTA) https://blog.cloudflare.com/nist-sp-1300-85/
+zero trust  = an IT security model that requires strict identity verification for every person and device trying to access resources on a private network, regardless of whether they are sitting within or outside of the network perimeter https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
+zero trust -- Architecture (ZTA) https://blog.cloudflare.com/nist-sp-1300-85/
 zero trust -- beyond zero = https://spawn-queue.acm.org/doi/10.1145/3819083
-Zero Trust -- Network Access (ZTNA) https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
+zero trust -- beyond zero = per-resource access decisions at machine speed (esp. for agents) https://queue.acm.org/doi/10.1145/3819083
+zero trust -- Network Access (ZTNA) https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
 zero-day = a vulnerability that attackers know about, and there is no patch available from the vendor
 ZK-SNARKs https://vitalik.eth.limo/general/2022/06/15/using_snarks.html
 zxcvbn = password strength estimation https://zxcvbn-ts.github.io/zxcvbn/

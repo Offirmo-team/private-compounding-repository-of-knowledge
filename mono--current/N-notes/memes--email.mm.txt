@@ -1,0 +1,6 @@
+standards -- DMARC https://ciphercue.com/blog/dmarc-enforcement-gap-rua-fragmentation-2026
+catch all https://www.reddit.com/r/homelab/comments/1jgpln1/protip_you_can_use_cloudflare_free_tier_to_create/
+unified inbox https://www.theverge.com/2023/8/9/23824562/slack-redesign-app-dms-activity-later
+standards -- RCS https://apple.slashdot.org/story/23/11/16/1812216/apple-to-add-rcs-support-to-iphone-next-year
+[ ] Email vs Capitalism, or, Why We Can't Have Nice Things - Dylan Beattie - NDC Oslo 2023 https://youtu.be/mrGfahzt-4Q?si=-RK4oJ-sR4zFjdmD
+https://www.youtube.com/watch?v=mrGfahzt-4Q

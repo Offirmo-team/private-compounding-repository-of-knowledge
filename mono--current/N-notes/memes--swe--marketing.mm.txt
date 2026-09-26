@@ -44,6 +44,7 @@ channels -- LinkedIn -- https://typegrow.com/tools/linkedin-text-formatter
 channels -- reddit = very important for LLMs.
 coding challenges = e.g. https://dev.to/challenges
 creator strategy
+cancel -- hey case study = https://chadnauseam.com/random/cancelling-my-hey
 cringe = https://www.cringebot3000.com/
 discoverability -- AEO "agentic-engine-optimization" = https://addyosmani.com/blog/agentic-engine-optimization/
 discoverability -- AEO -- use case = https://www.linkedin.com/feed/update/urn:li:activity:7472064080594350080/

@@ -5,9 +5,9 @@
 export const CONFIGⵧDEFAULT: UserConfig = {
 	//devtools: true,
 	plugins: [
+		pluginꓽparcel_features(),
 		react(),
 		//Inspect(),
-		//xPlugin(),
 	],
 }
 
@@ -43,7 +43,7 @@ export function extend_web_app_config(configⵧoverrides: UserConfig = {}): Retu
 			strictPort: true,
 			open: true,
 		},
-		plugins: [copy_non_html_assets(dirⵧroot, dirⵧout)],
+		plugins: [copy_non_html_assets(dirⵧroot, dirⵧout), serve_devtools_json()],
 	}
 
 	return extend_default_config(mergeⵧdeep(configⵧweb_app, configⵧoverrides))
@@ -71,6 +71,14 @@ function copy_non_html_assets(from: string, to: string): Plugin {
 	}
 }
 
+// Serves /.well-known/appspecific/com.chrome.devtools.json so Chrome DevTools auto-attaches
+// this app's sources as an editable workspace (needs chrome://flags/#devtools-project-settings).
+// Upstream only hooks `configureServer`, so it's already inert at build time — we pin `apply`
+// anyway to keep it out of the build's plugin list entirely.
+function serve_devtools_json(): Plugin {
+	return { ...devtoolsJson(), apply: "serve" }
+}
+
 /////////////////////////////////////////////////
 
 import { cpSync, readdirSync } from "node:fs"
@@ -79,7 +87,8 @@ import { resolve } from "node:path"
 import react from "@vitejs/plugin-react"
 import type { Plugin, UserConfig } from "vite"
 import { defineConfig } from "vite"
+import devtoolsJson from "vite-plugin-devtools-json"
 
 import { mergeⵧdeep } from "@monorepo-private/merge"
-//import xPlugin from '@monorepo-private/vite-plugin-parcel-features'
+import { pluginꓽparcel_features } from "@monorepo-private/vite-plugin-parcel-features"
 //import Inspect from 'vite-plugin-inspect'

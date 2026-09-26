@@ -102,9 +102,9 @@ export function prefersꓽorientation(spec: Immutable<WebPropertySpec>): boolean
 export function getꓽfeatures(spec: Immutable<WebPropertySpec>): FeatureSnippets[] {
 	const features = new Set<FeatureSnippets>(spec.features ?? [])
 
-	features.add("cssⳇbox-layout--natural")
-
-	if (!features.has("cssⳇfoundation--offirmo")) features.add("cssⳇframework--offirmo")
+	// TODO review. commenting as of 2026/09 features are opt-in. was bug?
+	//features.add("cssⳇbox-layout--natural")
+	//if (!features.has("cssⳇfoundation--offirmo")) features.add("cssⳇframework--offirmo")
 
 	return Array.from(features).filter((f) => {
 		assert(Enum.isType(FeatureSnippets, f), `Unknown feature "${f}"!`)

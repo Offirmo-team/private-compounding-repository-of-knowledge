@@ -1,25 +1,31 @@
 {
-	"name": "@monorepo-private/get-parent-package-name",
+	"name": "@monorepo-private/vite-plugin-parcel-features",
 	"version": "0.0.1",
 	"private": true,
+	"description": "Vite plugin backfilling the Parcel features our sources rely on, ex. image transform directives",
 	"type": "module",
 	"sideEffects": false,
+	"source": "module/src/index.ts",
 	"exports": {
 		".": "./module/src/index.ts"
 	},
 	"scripts": {
 		"check": "run-s check:ts",
-		"check:ts": "echo \"@monorepo-private/get-parent-package-name\" && tsc --noEmit",
+		"check:ts": "echo \"@monorepo-private/vite-plugin-parcel-features\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
+		"test": "vitest run",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
-		"@monorepo-private/assert": "workspace:*"
+		"@monorepo-private/assert": "workspace:*",
+		"magic-string": "catalog:",
+		"sharp": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
 		"@types/sinon": "catalog:",
@@ -29,10 +35,12 @@
 		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
+		"vite": "catalog:",
 		"vitest": "catalog:"
 	},
 	"peerDependencies": {
-		"tslib": "catalog:"
+		"tslib": "catalog:",
+		"vite": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
 }

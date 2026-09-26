@@ -1,12 +1,3 @@
-import type { Node, AnyRepoFilePathⳇRelative } from "@infinite-monorepo/graph"
-import type { PureModuleDetails } from "@infinite-monorepo/package-details"
-import { PkgInfosResolver } from "@infinite-monorepo/pkg-infos-resolver"
-import type { InfiniteMonorepoSpec } from "@infinite-monorepo/spec"
-import type { StructuredFsⳇFileManifest } from "@infinite-monorepo/structured-file-manifest"
-
-import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
-import { type XXError } from "@monorepo-private/utils--error"
-
 /////////////////////////////////////////////////
 
 export type FileOutputIntent =
@@ -93,3 +84,14 @@ export interface State {
 		[path: string]: FileOutputAbsent | FileOutputPresent
 	}
 }
+
+/////////////////////////////////////////////////
+
+import type { Node, AnyRepoFilePathⳇRelative } from "@infinite-monorepo/graph"
+import type { PureModuleDetails } from "@infinite-monorepo/package-details"
+import { PkgInfosResolver } from "@infinite-monorepo/pkg-infos-resolver"
+import type { InfiniteMonorepoSpec } from "@infinite-monorepo/spec"
+import type { StructuredFsⳇFileManifest } from "@infinite-monorepo/structured-file-manifest"
+
+import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
+import { type XXError } from "@monorepo-private/utils--error"

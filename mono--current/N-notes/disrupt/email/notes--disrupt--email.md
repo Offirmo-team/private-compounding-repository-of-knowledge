@@ -10,7 +10,6 @@ https://relay.firefox.com/
 https://html2canvas.hertzen.com/features/
 https://github.com/bubkoo/html-to-image
 
-unified inbox https://www.theverge.com/2023/8/9/23824562/slack-redesign-app-dms-activity-later
 
 
 components https://resend.com/blog/react-email-3
@@ -26,7 +25,7 @@ Fluent (dead)
 - https://techcrunch.com/2012/08/08/heres-what-happened-at-fluent/?guccounter=1
 - https://www.forbes.com/profile/cameron-adams/
 - https://www.youtube.com/watch?v=Z07MnBf9QNY
--
+
 
 https://www.nylas.com/products/email-api/
 https://www.theregister.com/2023/08/23/email_like_a_pro/
@@ -38,9 +37,6 @@ https://www.theverge.com/2023/11/8/23951935/google-european-telcos-apple-imessag
 
 https://tech.slashdot.org/story/23/11/27/2242201/meta-designed-platforms-to-get-children-addicted-court-documents-allege
 
-standards
-- RCS https://apple.slashdot.org/story/23/11/16/1812216/apple-to-add-rcs-support-to-iphone-next-year
-- keys
 
 https://tech.slashdot.org/story/23/11/16/141213/proton-mail-ceo-calls-new-address-verification-feature-blockchain-in-a-very-pure-form
 
@@ -64,9 +60,6 @@ https://en.m.wikipedia.org/wiki/.post
 
 experience https://productidentity.co/p/3-telegram-the-mysterious-messenger
 
-
-[ ] Email vs Capitalism, or, Why We Can't Have Nice Things - Dylan Beattie - NDC Oslo 2023 https://youtu.be/mrGfahzt-4Q?si=-RK4oJ-sR4zFjdmD
-https://www.youtube.com/watch?v=mrGfahzt-4Q
 
 gmail https://www.thenationalnews.com/future/technology/2024/04/01/gmails-20th-anniversary-technologys-best-april-fools-prank-yet/
 

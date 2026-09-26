@@ -6,8 +6,8 @@ const PRETTIER_OPTIONS = {
 	tabWidth: 3,
 	useTabs: true,
 	semi: false,
-	singleQuote: true,
-	jsxSingleQuote: true,
+	singleQuote: false,
+	jsxSingleQuote: false,
 	quoteProps: "consistent",
 	arrowParens: "avoid",
 } satisfies Partial<PrettierRequiredOptions>
@@ -120,7 +120,9 @@ export async function ೱwriteꓽfile_map(
 		`target dir must be absolute, got "${targetDir}"`,
 	)
 
+	console.group(`Writing a file map to "${targetDir}"…`)
 	if (options.rm) {
+		console.log(`- cleaning the target dir…`)
 		await fs.rm(targetDir, { recursive: true, force: true })
 	}
 
@@ -138,6 +140,8 @@ export async function ೱwriteꓽfile_map(
 				})
 			}),
 	)
+
+	console.groupEnd()
 }
 
 /////////////////////////////////////////////////

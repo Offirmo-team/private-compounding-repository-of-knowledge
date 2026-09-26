@@ -44,7 +44,8 @@ export async function loadꓽconfigⵧchain(
 				// order is important!
 				if (segments.length === 1) return "fs" // we're at the root of the fs
 				if (current_path‿abs === HOME_path‿abs) return "home"
-				if (child_dirs_pathes‿rel.includes(".git")) return "git"
+				// NOT always a dir: in a worktree or a submodule, ".git" is a file pointing at the real one
+				if (child_dirs_pathes‿rel.includes(".git") || child_files_pathes‿rel.includes(".git")) return "git"
 				if (segments.length === options.from!.split(path.sep).length) return "from"
 
 				if (!hasꓽencountered_a_boundary_already) {

@@ -8,6 +8,7 @@ import { ೱᐧpage_loaded } from "@monorepo-private/page-loaded"
 import ErrorBoundary from "@monorepo-private/react--error-boundary"
 import { getRootSXC } from "@monorepo-private/soft-execution-context"
 import { schedule_when_idle_but_within_human_perception } from "@monorepo-private/utils--async"
+import "@monorepo-private/css--framework" // TODO check if bundled 2 times?
 
 import { Root } from "./root.tsx"
 

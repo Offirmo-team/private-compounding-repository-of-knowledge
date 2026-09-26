@@ -538,6 +538,7 @@ The web will always win = over confidence? https://aifoc.us/a-link-is-all-you-ne
 There’s an app for that
 This is a web page. = https://justinjackson.ca/words.html
 Three Cs: 🤝 Concatenate, 🗜️ Compress, 🗳️ Cache https://csswizardry.com/2023/10/the-three-c-concatenate-compress-cache/
+tracing cookie https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/
 transclusion = the inclusion of part or all of an electronic document into one or more other documents by reference via hypertext. Transclusion is usually performed when the referencing document is displayed and is normally automatic and transparent to the end user. The result of transclusion is a single integrated document made of parts assembled dynamically from separate sources, possibly stored on different computers in disparate places. https://aifoc.us/a-link-is-all-you-need/ https://en.wikipedia.org/wiki/Transclusion
 TUI "Text User Interface" / "terminal user interfaces" https://ratatui.rs/
 TUI -- showcase -- Claude CLI https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built

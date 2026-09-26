@@ -72,6 +72,8 @@ export const PLUGIN: Plugin = {
 				}
 				state = StateLib.requestꓽfile_output(state, output_specꓽᐧagentsⳇskillsⳇ)
 
+				/* 2026/09 Claude finally supports AGENTS.md
+				 * https://github.com/anthropics/claude-code/tree/main/mods/agents-md
 				const output_specꓽCLAUDEᐧmd: FileOutputPresent = {
 					parent_node: node,
 					manifest: manifestꓽCLAUDEᐧmd,
@@ -79,6 +81,12 @@ export const PLUGIN: Plugin = {
 					content: {
 						text: "@../AGENTS.md", // cf. https://code.claude.com/docs/en/memory#agents-md
 					},
+				}
+				 */
+				const output_specꓽCLAUDEᐧmd: FileOutputAbsent = {
+					parent_node: node,
+					path‿ar: CLAUDEᐧmd__path‿ar,
+					intent: "not-present",
 				}
 				state = StateLib.requestꓽfile_output(state, output_specꓽCLAUDEᐧmd)
 
@@ -107,7 +115,7 @@ export default PLUGIN
 
 /////////////////////////////////////////////////
 
-import type { State, Plugin } from "@infinite-monorepo/state"
+import type { State, Plugin, FileOutputAbsent } from "@infinite-monorepo/state"
 import * as StateLib from "@infinite-monorepo/state"
 import type { FileOutputPresent } from "@infinite-monorepo/state"
 import {

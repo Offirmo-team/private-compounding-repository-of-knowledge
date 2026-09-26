@@ -107,6 +107,9 @@ export const PLUGIN: Plugin = {
 				}
 				state = StateLib.requestꓽfile_output(state, output_specꓽpackageᐧjson)
 
+				/* NO TODO review
+				 1. ours needs to be declared
+				 2. mergiraf could do it better
 				const output_spec: FileOutputPresent = {
 					parent_node: node,
 					manifest: manifestꓽᐧgitattributes,
@@ -119,6 +122,7 @@ export const PLUGIN: Plugin = {
 					},
 				}
 				state = StateLib.requestꓽfile_output(state, output_spec)
+				 */
 
 				break
 			}

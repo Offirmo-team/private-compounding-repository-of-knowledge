@@ -15,6 +15,19 @@ export const manifestꓽᐧgitattributes: StructuredFsⳇFileManifest = {
 	path‿ar: ᐧgitattributes__path‿ar,
 	doc: ["https://git-scm.com/docs/gitattributes", "https://stackoverflow.com/a/73095814/31353119"],
 }
+// Note: precedence of gitattributes
+// $GIT_DIR/info/attributes          ← HIGHEST, per-repo, never committed
+// .gitattributes (same dir as path)
+// .gitattributes (parents, up to worktree root)   ← further away = lower
+// core.attributesFile (~/.config/git/attributes)  ← per-user
+// $(prefix)/etc/gitattributes                     ← system, LOWEST
+
+// un-commited, per-repo local override
+const ᐧgitⳇinfoⳇattributes__path‿ar: RepoPathⳇRelative = `${PATHVARⵧROOTⵧREPO}/.git/info/attributes`
+export const manifestꓽᐧgitⳇinfoⳇattributes: StructuredFsⳇFileManifest = {
+	path‿ar: ᐧgitⳇinfoⳇattributes__path‿ar,
+	doc: ["https://git-scm.com/docs/gitattributes"],
+}
 
 // As of 2026/07 it seems to be a Claude-only feature
 const ᐧworktreeinclude__path‿ar: NodePathⳇRelative = `${PATHVARⵧROOTⵧNODE}/.worktreeinclude`
@@ -30,6 +43,7 @@ export const PLUGIN: Plugin = {
 	onꓽload(state: Immutable<State>): Immutable<State> {
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧgitignore)
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧgitattributes)
+		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧgitⳇinfoⳇattributes)
 
 		return state
 	},
@@ -44,14 +58,46 @@ export const PLUGIN: Plugin = {
 					content: {
 						entries: [
 							`## contains auto-generated content from @infinite-monorepo/plugin--git`,
-							`## https://nesbitt.io/2026/02/05/git-magic-files.html`,
-							`* text=auto eol=lf`, // ## Line ending normalization
-							`*.png binary`, // Treat as binary
-							`*.json diff=json`, // improved diff driver
+							`## https://git-scm.com/docs/gitattributes`,
+
+							// VERY IMPORTANT
+							// text=auto = enables auto-detection of binary (NUL byte anywhere, tested 2.54)
+							// eol=lf = less important, line ending normalization
+							`* text=auto eol=lf`,
+
+							// auto-detection is mostly enough
+							// but some binary formats have no NUL and could be mis-detected
+							// list from a Claude session 2026/09 where Claude did actual tests
+							//
+							// ASCII-container formats: no NUL byte, so text=auto would line-convert them
+							`*.eps binary`,
+							`*.ps  binary`,
+							`*.ai  binary`,
+							`*.rtf binary`,
+							// has NULs, but often past byte 8000 -> git would emit a garbage text diff
+							`*.pdf binary`,
+
+							// NO, doesn't seem a thing. json would need to be declared to something
+							// also difftastic / git-delta should be better anyway
+							//`*.json diff=json`, // improved diff driver
 						],
 					},
 				}
 				state = StateLib.requestꓽfile_output(state, output_specꓽᐧgitattributes)
+
+				const output_specꓽᐧgitⳇinfoⳇattributes: FileOutputPresent = {
+					parent_node: node,
+					manifest: manifestꓽᐧgitⳇinfoⳇattributes,
+					intent: "present--containing",
+					content: {
+						entries: [
+							`## contains auto-generated content from @infinite-monorepo/plugin--git`,
+							`## https://git-scm.com/docs/gitattributes`,
+						],
+					},
+				}
+				state = StateLib.requestꓽfile_output(state, output_specꓽᐧgitⳇinfoⳇattributes)
+
 				break
 			}
 			case "monorepo": {
@@ -114,7 +160,7 @@ export const PLUGIN: Plugin = {
 					content: {
 						entries: [
 							`## contains auto-generated content from @infinite-monorepo/plugin--git`,
-							`## https://nesbitt.io/2026/02/05/git-magic-files.html`,
+							`## https://git-scm.com/docs/gitattributes`,
 						],
 					},
 				}
@@ -162,18 +208,17 @@ export default PLUGIN
 
 /////////////////////////////////////////////////
 
-import type { State, Plugin } from "@infinite-monorepo/state"
+import type { State } from "@infinite-monorepo/state"
 import * as StateLib from "@infinite-monorepo/state"
 import type { FileOutputPresent } from "@infinite-monorepo/state"
 import {
 	PATHVARⵧROOTⵧNODE,
 	type StructuredFsⳇFileManifest,
 	type Node,
+	type Plugin,
 	type NodePathⳇRelative,
 	type RepoPathⳇRelative,
 	PATHVARⵧROOTⵧREPO,
-	type MonorepoPathⳇRelative,
-	PATHVARⵧROOTⵧMONOREPO,
 } from "@infinite-monorepo/types-for-plugins"
 
 import type { Immutable } from "@monorepo-private/ts--types"

@@ -212,7 +212,6 @@ function getꓽspecⵧwith_features_expanded(spec: Immutable<HtmlFileSpec>): Imm
 					break
 
 				case "cssⳇframework--offirmo":
-					//content_expanded.css = [...Selectors.getꓽcss(content_expanded), `@import '@monorepo-private/css--framework';`]
 					content_expanded.js = [
 						...Selectors.getꓽjs(content_expanded),
 						`import '@monorepo-private/css--framework';`,

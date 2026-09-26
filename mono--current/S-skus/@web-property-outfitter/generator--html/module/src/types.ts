@@ -149,6 +149,9 @@ interface HtmlMetas {
 export const FeatureSnippets = Enum(
 	"cssⳇbox-layout--natural",
 	"cssⳇviewport--full",
+
+	// NOTE: the 2 features below add more than an import
+	// they also prepare namespaces, layers, theme...
 	"cssⳇfoundation--offirmo",
 	"cssⳇframework--offirmo",
 

@@ -17,14 +17,17 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
 		"@tracer-bullet--web-app/marketing": "workspace:*",
 		"@tracer-bullet--web-app/web-core": "workspace:*"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/fs--parent": "workspace:*",
 		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/spawn-correctly": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/mocha": "catalog:",

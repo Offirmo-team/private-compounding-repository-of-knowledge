@@ -179,11 +179,9 @@ export const PLUGIN: Plugin = {
 
 				/////// Dev
 				if (pkg_details.hasꓽtestsⵧunit) {
-					// TODO one day discriminate between test types? --unit
-					// todo refine to module/src if any or skip ~~
 					if (pkg_details.depsⵧdev.has("mocha")) {
-						scripts["test"] = [
-							`${NODE_INVOCATION} ./node_modules/mocha/bin/mocha.js --`, // WARN internal, may break
+						scripts["test--mocha"] = [
+							`${NODE_INVOCATION} ./node_modules/mocha/bin/mocha.js`, // WARN internal path, may break
 							"--bail",
 							"--config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json",
 							"./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs",
@@ -191,9 +189,14 @@ export const PLUGIN: Plugin = {
 							`--ignore '**/~~*/**'`,
 						].join(" ")
 					}
-					if (false && pkg_details.depsⵧdev.has("vitest")) {
-						scripts["test--vitest"] = [`vitest run`].join(" ")
+					if (pkg_details.depsⵧdev.has("vitest")) {
+						scripts["test--vitest"] = [
+							`vitest run`,
+							`--dir ${PURE_MODULE_CONTENT_RELPATH}`, // recursive, so it covers a module/src/ layout too
+							`--exclude '**/~~*/**'`, // additive on the CLI, unlike the config file's "exclude"
+						].join(" ")
 					}
+					// TODO one day discriminate between test types? --unit
 				}
 
 				// TODO better naming convention

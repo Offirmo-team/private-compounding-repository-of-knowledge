@@ -1,8 +1,7 @@
 {
-	"name": "@monorepo-private/vite--config--default",
+	"name": "@monorepo-private/fs--parent",
 	"version": "0.0.1",
 	"private": true,
-	"description": "TODO description in MANIFEST.json5",
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
@@ -10,22 +9,19 @@
 	},
 	"scripts": {
 		"check": "run-s check:ts",
-		"check:ts": "echo \"@monorepo-private/vite--config--default\" && tsc --noEmit",
+		"check:ts": "echo \"@monorepo-private/fs--parent\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
+		"test": "vitest run",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
-		"@monorepo-private/assert": "workspace:*",
-		"@monorepo-private/merge": "workspace:*",
-		"@monorepo-private/vite-plugin-parcel-features": "workspace:*",
-		"@vitejs/plugin-react": "catalog:",
-		"vite": "catalog:",
-		"vite-plugin-devtools-json": "catalog:"
+		"@monorepo-private/assert": "workspace:*"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
 		"@types/sinon": "catalog:",

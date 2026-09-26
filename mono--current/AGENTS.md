@@ -10,7 +10,7 @@ DO NOT manage dependencies yourself in package.json or pnpm: there is a tool tha
 the packages you need and ask the user to run the tool to update package.json etc.
 
 DO NOT remove import of assert libs, even if unused. We preemptively leave it to encourage using assertions. Btw fee
-free to add some if relevant. Use the isomorphic "@monorepo-private/assert" if possible.
+free to add some if relevant. Use the isomorphic "@monorepo-private/assert" if possible. Same with unit testing libs.
 
 DO NOT call `brew`. The local installation is a bit specific. Ask the user to do it when you need to run `brew`.
 

@@ -118,6 +118,7 @@ anti-fragile
 anyone can cook -- motto from Ratatouille = craft is open to everyone
 applied = vs. theoretic. practical. Not always need to be an expert / scientist / priest. Applying (citizen, engineer, lay) is complementary and can be, at times, more useful/concrete than expertise ("perché")
 appreciating beauty = animal watching the view, is it for aesthetics? https://www.aol.com/articles/bears-actually-just-sit-down-155908392.html
+arbitration -- forced = a practice in which businesses can require their customers to resolve disputes through arbitration instead of a traditional court system https://consumerrights.wiki/w/Forced_arbitration
 are we the bad guys?
 are you actually trying? = are you stuck at a low point? what would you advise another person to do? https://open.substack.com/pub/usefulfictions/p/maybe-youre-not-actually-trying?r=85879
 arenas = diverse arenas such as politics, diplomacy, media, public service and business https://www.thomsonreuters.com/en/about-us/trust-principles
@@ -341,6 +342,7 @@ counterfactuals -- subtractive
 counterfactuals -- useful if stimulating, not if regret = may evoke deleterious rather than favorable consequences
 counterfactuals = contrary to the actual facts. can be a tool for learning, problem-solving, and managing emotions https://www.sciencedirect.com/science/article/abs/pii/S0065260117300187
 courses après le repas
+creatine https://dynomight.net/creatine/
 creative process
 creativity -- begins at the edge = Change starts away from the spotlight. Then, it moves towards the center. That’s why the most interesting ideas at a conference never come from the main stage. They come from the hallways and the bar after sunset
 creativity -- constraints as an enabler for creativity = help us collapse the search space, and figure out innovative solutions to problems https://jordanlord.co.uk/blog/3-constraints/
@@ -526,6 +528,7 @@ everything must be paid for twice https://www.raptitude.com/2022/01/everything-m
 evidence based
 evolution
 evolution -- adaptive radiation = not because the newly dominant group is "superior" to the old but usually because an extinction event eliminates the old, dominant group and makes way for the new one https://en.wikipedia.org/wiki/Adaptive_radiation
+evolution -- Algernon Argument = if it was this good, evolution would have selected. So it must have trade-offs. it https://gwern.net/drug-heuristic
 evolution -- Darwinism -- Universal && =  variety of approaches that extend the theory of Darwinism beyond its original domain of biological evolution on Earth. Universal Darwinism aims to formulate a generalized version of the mechanisms of variation, selection and heredity https://en.wikipedia.org/wiki/Universal_Darwinism
 evolution -- Darwinism = a theory of biological evolution developed by the English naturalist Charles Darwin (1809–1882) and his contemporaries. The theory states that all species of organisms arise and develop through the natural selection of small, inherited variations that increase the individual's ability to compete, survive, and reproduce https://en.wikipedia.org/wiki/Darwinism
 evolution -- evolution vs revolution
@@ -595,6 +598,7 @@ flow -- vs. junk flow =  superficial experience that may be flow at the beginnin
 flow = a sense that one’s skills are adequate to cope with the challenges at hand, in a goal-directed, rule-bound action system that provides clear clues as to how well one is performing.
 follow the money https://en.m.wikipedia.org/wiki/Follow_the_money
 follow your bliss -- "I've never done a thing I wanted to do in all my life" (but not hedonism) https://en.wikipedia.org/wiki/Joseph_Campbell#%22Follow_your_bliss%22
+Forer effect = tendency of people to rate sets of statements as highly accurate for them personally even though the statements could apply to many people (used for con) https://www.skepdic.com/forer.html
 formality -- levels -- 1 informal
 formality -- levels -- 2 casual
 formality -- levels -- 3 smart casual
@@ -922,6 +926,7 @@ Lev Landau classification of physicists https://books.google.com.au/books?id=nGc
 leçons de vie https://www.ecologiehumaine.eu/osez-laudace/
 libertarian -- reading list https://paulmillr.com/posts/libertarian-reading-list/
 life -- "it's only a short trip, enjoy it"
+life -- "never had to hide the newspaper in shame from my children"
 life -- "the journey" https://readalittlepoetry.com/2011/08/12/the-journey-by-mary-oliver/
 life -- 4 burners = Imagine your life as a stovetop. You’ve got 4 burners: 1. Family 2. Work 3. Health 4. Friends But in reality: To be successful…  You have to turn off one. To be *really* successful…  You must turn off two. https://x.com/thecurioustales/status/2023042152142700788
 life -- 40 raising 3 kids = +++ https://www.threads.com/@therealvivekiyer/post/DO0Qp7YgoQd?xmt=AQF0IlywfHNNKE-iWPR6W1cU80Flqd5hcZp73jH_kshGfQ&slof=1
@@ -942,6 +947,7 @@ life -- lines of life = most common to rarest: criticize > gossip > get involved
 life -- NPC = "watching life pass you by while doomscrolling on your phone" https://signalundefied.bearblog.dev/i-wanna-live-an-npc-life/
 life -- stages -- 20+ boomerang https://en.wikipedia.org/wiki/Boomerang_Generation
 life -- stages -- 40+ sandwich https://en.wikipedia.org/wiki/Sandwich_generation
+life -- stressors = depression, anxiety, burnout, suicidality, hopelessness, lethargy, anhedonia, feeling flat, worry, and the like are all different flavours of the same phenomena: the negative human response to internal or external stressors https://drericlevi.pages.dev/the-darker-side-of-being-a-doctor/
 life -- super successful = navy SEAL, doctor, pilot, astronaut... https://en.wikipedia.org/wiki/Jonny_Kim
 life -- the real luxuries in life -- 01 Time
 life -- the real luxuries in life -- 02 Health
@@ -1331,6 +1337,7 @@ project management -- iron triangle = scope, time and people
 project management = boils down to one of two questions: When will it be done? Will it be done in time?
 property -- shade https://shademap.app/
 précariat https://en.wikipedia.org/wiki/Precariat
+psychic’s Con https://softwarecrisis.dev/letters/llmentalist/
 public relations https://vannattapr.com/2020/12/03/dont-yell-at-clouds/
 Pulitzer prize -- biographies https://en.wikipedia.org/wiki/Pulitzer_Prize_for_Biography
 purchasing "messy middle" https://www.thinkwithgoogle.com/intl/en-emea/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/
@@ -1435,6 +1442,7 @@ SBI https://www.mindtools.com/pages/article/situation-behavior-impact-feedback.h
 schadenfreude = happy ppl misfortune
 science -- currently most accurate model
 science -- ethics -- "Your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should" https://www.reddit.com/r/videos/comments/1at69qj/your_scientists_were_so_preoccupied_with_whether/
+science -- example of science review of a claim https://dynomight.net/creatine/
 science -- failure = https://freakonomics.com/podcast/why-has-there-been-so-little-progress-on-alzheimers-disease/
 science -- flat Earth -- https://en.wikipedia.org/wiki/Bedford_Level_experiment
 science -- null result = didn't see the expected effect/prevision https://en.wikipedia.org/wiki/Null_result
@@ -1633,6 +1641,7 @@ success? power, influence, money, genius IQ, infinite resources
 sucker https://en.wikipedia.org/wiki/Social_loafing#%22Sucker%22_effect/Aversion
 sugar https://tohippo.com/sweet-lies-how-1970s-ads-marketed-sugar-as-a-diet-solution/
 suicide -- assisted https://aleteia.org/2024/12/07/is-the-united-kingdom-still-a-christian-nation
+suicide -- case studies -- a doctor = sleep deprivation, stress, depression https://drericlevi.pages.dev/the-darker-side-of-being-a-doctor/
 Sun Tsu’s three rules of warfare -- Only fight when there is a prize worth fighting for
 Sun Tsu’s three rules of warfare -- Only fight when there is no other way of achieving your goal
 Sun Tsu’s three rules of warfare -- Only fight when you know you will win: the best fight is an unfair fight
@@ -1673,6 +1682,7 @@ the world is NOT full of bad people, it's just the media/infotainment, do not ge
 theory of constraints = A system is only as strong as its weakest point. Focus on the bottleneck. Counterintuitively, if you break down the entire system and optimize each component individually, you’ll lower the effectiveness of the system. Optimize the entire system instead.
 theory of constraints https://www.tocinstitute.org/theory-of-constraints.html
 theory of everything https://en.wikipedia.org/wiki/Theory_of_everything
+there ain’t no such thing as a free lunch = To get one thing that we like, we usually have to give up another thing that we like. Making decisions requires trading off one goal against another https://en.wikipedia.org/wiki/No_such_thing_as_a_free_lunch
 Therian subculture = trans-species https://en.wikipedia.org/wiki/Therian_subculture
 things learned from Medicine / Dentistry https://zenfamily.dental/csLearnDental.php
 THINK hack = Is it True? Helpful? Inspiring? Necessary? Kind?
@@ -1755,6 +1765,7 @@ veridical = seems wrong at first glance but is, in fact, true https://en.wikiped
 verifiability https://en.wikipedia.org/wiki/Wikipedia:Verifiability
 verisimilitude
 via negativa = When we have a problem, our natural instinct is to add a new habit or purchase a fix. But sometimes, you can improve your life by taking things away. For example, the foods you avoid are more important than the foods you eat.
+vicarious liability = indirect liability for the actions of another https://consumerrights.wiki/w/Uber_arbitration_award_over_Emily_Normandin-Parker%27s_death
 victimisation/retaliation = subject to or threatened with some kind of disadvantage or unfair treatment (often referred to as detriment) because they made (or plan to make) a workplace complaint, or helped someone else to do so
 violence -- physical punishment https://fr.wikipedia.org/wiki/Affaire_B%C3%A9tharram
 vitality curve / stack ranking / forced ranking / rank and yank = performance management practice that calls for individuals to be ranked or rated against their coworkers https://en.wikipedia.org/wiki/Vitality_curve
@@ -1772,6 +1783,7 @@ wantrepreneurs
 war -- rout https://en.wikipedia.org/wiki/Rout
 war https://en.wikipedia.org/wiki/War
 We must remember that entire societies can and often do follow the wrong path for a very long time https://news.vanderbilt.edu/2011/04/13/michael-burry-transcript/
+well adjusted
 what vs. how = OPPOSITE of school +++ https://strategyu.co/consulting-mindset-shifting-from-the-what-to-the-how/
 what we are NOT = ex. https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not
 What would you do if you weren't afraid? - Spencer Johnson

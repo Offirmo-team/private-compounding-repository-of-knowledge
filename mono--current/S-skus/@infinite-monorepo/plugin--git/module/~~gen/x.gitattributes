@@ -1,0 +1,8 @@
+
+## Merge strategy
+#package-lock.json merge=ours
+
+## Language detection override for GitHub Linguist
+#vendor/* linguist-vendored
+#*.gen.go linguist-generated
+#docs/* linguist-documentation

@@ -701,6 +701,7 @@ NLP "Natural Language Processing" = proofreading, grammar check, sentiment analy
 NN "Neural Network" = computer architecture inspired by the human brain
 nodels -- semantic -- openrouter = notable: auto, free https://openrouter.ai/openrouter/
 NotebookLM
+on making = I gain a lot of fulfillment by making things. I don't consider things built by others at my request to be made by me, and are therefore much less fulfilling https://beej.us/blog/data/ai-making/
 OpenAI GPTs = custom versions of ChatGPT that you can create for a specific purpose with instructions, expanded knowledge, and custom capabilities
 pace layering = generic concept about stabilizing complex systems, can give insights to AI https://longnow.org/ideas/pace-layers/
 papers -- "attention is all you need" = https://arxiv.org/pdf/1706.03762.pdf
@@ -1000,7 +1001,7 @@ weak AI = only good for very specific tasks
 weak-to-strong generalization https://openai.com/research/weak-to-strong-generalization
 who's who -- Andrej Karpathy = huge expert founding member of OpenAI, director of AI at Tesla https://karpathy.ai/ https://www.youtube.com/@AndrejKarpathy
 who's who -- Armin Ronacher = thought leader https://lucumr.pocoo.org/
-who's who -- Boris Cherny = creator of [[Claude Code]] https://x.com/bcherny
+who's who -- Boris Cherny = creator of [[Claude Code]] https://x.com/bcherny https://borischerny.com/
 who's who -- Dario Amodei = Anthropic https://darioamodei.com/
 who's who -- Ed Zitron = famous AI doomer https://www.wheresyoured.at/author/edward/
 who's who -- Eliezer Yudkowsky = researcher in AI known for ideas related to friendly artificial intelligence https://en.wikipedia.org/wiki/Eliezer_Yudkowsky

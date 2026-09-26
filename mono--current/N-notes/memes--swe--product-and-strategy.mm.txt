@@ -1,4 +1,3 @@
-
 +++ https://www.sequoiacap.com/article/the-templeton-compression/
 1997 Amazon shareowners letter https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm
 [ ] +++ growth.design
@@ -58,6 +57,7 @@ bottom-up adoption = Individual users adopt it → teams follow → company pays
 build vs. buy = example https://www.svix.com/build-vs-buy/
 build-boost-discard cycle of internet applications = scourge https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_deploy-web-apps-anywhere-activity-7305513792275169281-C2-h
 business -- as a by-product = structure that ultimately has to exist around a group of people to make things and service customers over the long term, but not inherently interesting https://www.linkedin.com/posts/jason-fried_ive-always-thought-of-business-as-a-by-product-activity-7236805665627717632-_s96/
+case studies -- Sun = What Sun got wrong https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/
 churn -- involuntary = issues often beyond a customer’s control, such as a company no longer offering that product or service, technical or payment issues, and natural disasters. There can also be an unforeseen reason why a customer can no longer use a service. Examples include a company no longer paying for an individual to use a service or a change in occupation renders that product or service no longer valuable.
 churn -- subscription -- involuntary or delinquent churn = missed payments causing an automated cancellation
 churn -- subscription -- voluntary = subscriber actively cancelling their subscription
@@ -115,6 +115,10 @@ dogfooding "Eating our own Dogfood" = ranges wider than testing your end-product
 duty of care = actively shield users from harm “rather than the reactive system that exists now” https://ia.acs.org.au/article/2025/govt-ramps-up-big-tech--duty-of-care--reforms.html
 economies of scale = aren’t available to smaller players in a market, including increased visibility, increased buying power, and lower customer acquisition costs https://dealroom.net/blog/industry-consolidation
 ecosystem -- Application Development Kit (ADK) = encompasses the code that enables licensed distributors to port the application onto their own platforms and streamline the process straight to testing and QA with us. The ADK is available as a software package that contains all the tools a distributor could need to build on their diverse device platform. https://medium.com/disney-streaming/introducing-the-disney-application-development-kit-adk-ad85ca139073
+email -- drip
+email -- goodbye = https://www.reddit.com/r/sysadmin/comments/1wjdpgx/psa_grammarly_will_send_unhinged_messages_to_all/
+email -- resurrect
+email -- welcome
 Embrace, Extend, and Extinguish https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish
 enshittification -- hate = ex. Adobe https://petapixel.com/2025/04/10/adobe-deletes-bluesky-posts-after-furious-backlash/
 enshittification -- temu-fication = externalization and compression of cost making low-quality goods attractive and profitable https://マリウス.com/the-temu-fication-of-software-digital-goods-services/
