@@ -9,10 +9,11 @@
 		".": "./module/src/index.ts"
 	},
 	"scripts": {
-		"check": "run-s test check:ts",
+		"check": "run-s test--vitest test--mocha check:ts",
 		"check:ts": "echo \"@tbrpg/state--energy\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
-		"test": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js -- --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
+		"test--mocha": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
+		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {

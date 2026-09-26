@@ -130,7 +130,13 @@ export const PLUGIN: Plugin = {
 						manifest: manifestꓽvite_config,
 						intent: "present--containing",
 						content: {
-							text: `
+							text: pkg_details.isꓽapp
+								? `
+import { extend_web_app_config } from "@monorepo-private/vite--config--default"
+
+export default extend_web_app_config()
+`
+								: `
 import { extend_default_config } from "@monorepo-private/vite--config--default"
 
 export default extend_default_config({})
