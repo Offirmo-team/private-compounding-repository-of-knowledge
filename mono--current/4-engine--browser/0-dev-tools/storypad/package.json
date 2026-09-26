@@ -16,10 +16,12 @@
 		"./types": "./module/src/l0-types/_entrypoint.ts"
 	},
 	"scripts": {
+		"_build": "run-s build--vite",
 		"_check": "run-s test--vitest test--mocha check:ts",
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
 		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
 		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
+		"build--vite": "vite build",
 		"check:ts": "echo \"@monorepo-private/storypad\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
 		"dev": "run-s clean watch:check:ts",

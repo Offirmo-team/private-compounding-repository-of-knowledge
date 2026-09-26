@@ -15,6 +15,7 @@
 	},
 	"dependencies": {
 		"@infinite-monorepo/plugin--git": "workspace:*",
+		"@infinite-monorepo/plugin--mise": "workspace:*",
 		"@infinite-monorepo/state": "workspace:*",
 		"@monorepo-private/assert": "workspace:*"
 	},

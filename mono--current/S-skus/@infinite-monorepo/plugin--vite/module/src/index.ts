@@ -91,6 +91,7 @@ export const PLUGIN: Plugin = {
 					}
 					if (pkg_details.isꓽapp) {
 						state = StateLib.addꓽscript(state, node, "start", `npm-run-all clean --parallel _start:main--vite`)
+						state = StateLib.addꓽscript(state, node, "build--vite", `vite build`)
 					}
 				}
 
@@ -132,9 +133,14 @@ export const PLUGIN: Plugin = {
 						content: {
 							text: pkg_details.isꓽapp
 								? `
+import { defineConfig, type UserConfig } from "vite"
 import { extend_web_app_config } from "@monorepo-private/vite--config--default"
 
-export default extend_web_app_config()
+export default defineConfig(({ command }): UserConfig => {
+	const config = extend_web_app_config() as UserConfig
+	// extend here if needed
+	return config
+})
 `
 								: `
 import { extend_default_config } from "@monorepo-private/vite--config--default"
@@ -172,6 +178,6 @@ import type {
 	FileOutputAbsent,
 	FileOutputPresent,
 } from "@infinite-monorepo/types-for-plugins"
-import { type Node, PATHVARⵧROOTⵧPACKAGE, type State } from "@infinite-monorepo/types-for-plugins"
+import { PATHVARⵧROOTⵧPACKAGE } from "@infinite-monorepo/types-for-plugins"
 
 import type { Immutable } from "@monorepo-private/ts--types"

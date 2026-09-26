@@ -264,12 +264,25 @@ export const PLUGIN: Plugin = {
 					manifest: manifestꓽmiseᐧtoml,
 					intent: "present--containing",
 					content: {
+						settings: {
+							idiomatic_version_file_enable_tools: [
+								//## https://mise.jdx.dev/configuration.html#idiomatic-version-files
+								"pnpm",
+							],
+							// Package manager to use for installing npm packages
+							// https://mise.jdx.dev/configuration/settings.html#npm-package-manager
+							npm: {
+								package_manager: "pnpm",
+							},
+						},
+
+						/* NO, triggers too often as of 2026/09
 						deps: {
 							// https://mise.jdx.dev/dev-tools/deps.html
 							pnpm: {
 								auto: true, // Auto-run pnpm before mise execute/run if needed
 							},
-						},
+						},*/
 					},
 				}
 				state = StateLib.requestꓽfile_output(state, output_specꓽmiseᐧtoml)

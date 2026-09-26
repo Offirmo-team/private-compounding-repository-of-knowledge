@@ -42,9 +42,17 @@ const PLUGIN: Plugin = {
 					manifest: manifestꓽmiseᐧtoml,
 					intent: "present--containing",
 					content: {
-						min_version: "2026.4.18",
-						experimental_monorepo_root: true,
+						min_version: "2026.9.14",
 
+						// https://mise.jdx.dev/tasks/monorepo.html
+						monorepo_root: true,
+						monorepo: {
+							// explicitly states that we don't have sub-configs (there is still warning as of 2026/08, to revisit later)
+							config_roots: [],
+						},
+
+						// #################################################
+						// https://mise.jdx.dev/configuration/settings.html
 						settings: {
 							experimental: true,
 							idiomatic_version_file_enable_tools: [
@@ -53,8 +61,16 @@ const PLUGIN: Plugin = {
 							],
 						},
 
+						// #################################################
+						// https://mise.jdx.dev/dev-tools/
 						tools: {
-							"npm:corepack": { version: "latest", postinstall: "corepack enable" },
+							// no, no corepack if using mise? Or maybe corepack is simpler?
+							//"npm:corepack": { version: "latest", postinstall: "corepack enable" },
+
+							// https://github.com/antfu-collective/ni
+							"npm:@antfu/ni": "latest",
+
+							// turbo = "latest"
 						},
 
 						env: {

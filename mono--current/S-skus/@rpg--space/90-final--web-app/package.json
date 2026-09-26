@@ -3,15 +3,16 @@
 	"version": "0.0.1",
 	"private": true,
 	"type": "module",
-	"sideEffects": false,
+	"sideEffects": true,
 	"exports": {
 		".": "./module/src/index.html"
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
 		"_start:main--parcel": "parcel serve module/src/index.html --port 1981 --lazy --no-autoinstall",
-		"_start:main--vite": "vite",
-		"build": "vite build",
+		"_start:main--vite": "vite --port 1981 --strictPort --logLevel info --open module/src/index.html",
+		"build": "run-s build--vite",
+		"build--vite": "vite build",
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@rpg--space/final--web-app\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
@@ -21,7 +22,8 @@
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
-		"@monorepo-private/assert": "workspace:*"
+		"@monorepo-private/assert": "workspace:*",
+		"tslib": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
@@ -38,12 +40,8 @@
 		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
 		"sinon": "catalog:",
-		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"
-	},
-	"peerDependencies": {
-		"tslib": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
 }

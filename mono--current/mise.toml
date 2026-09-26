@@ -1,45 +1,17 @@
-## https://mise.jdx.dev/
 min_version = "2026.9.14"
-
-
-## https://mise.jdx.dev/tasks/monorepo.html
 monorepo_root = true
+
+[env]
+"_.file" = ".env"
+
 [monorepo]
-## explicitly states that we don't have sub-configs (there is still warning as of 2026/08, to revisit later)
-config_roots = []
-
-
-#################################################
-## https://mise.jdx.dev/configuration/settings.html
 [settings]
 experimental = true
 idiomatic_version_file_enable_tools = ["node", "pnpm"]
-## Package manager to use for installing npm packages
-## https://mise.jdx.dev/configuration/settings.html#npm-package-manager
-npm.package_manager = "pnpm"
 
+[settings.npm]
+package_manager = "pnpm"
 
-#################################################
-## https://mise.jdx.dev/dev-tools/
 [tools]
-turbo = "latest"
-## https://github.com/antfu-collective/ni
 "npm:@antfu/ni" = "latest"
-
-
-### TO REVIEW
-
-#[deps.pnpm]
-#auto = true
-
-
-#[env]
-#"_.file" = ".env"
-
-
-#[tools."npm:corepack"]
-#postinstall = "corepack enable"
-#ersion = "latest"
-
-#[tools]
-#node = "lts"
+turbo = "latest"
