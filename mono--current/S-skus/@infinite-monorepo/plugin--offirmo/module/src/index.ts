@@ -60,6 +60,7 @@ export const PLUGIN: Plugin = {
 				// when staying on LTS, @types should not pick latest non-LTS
 				const rl = StateLib.getꓽruntimeⵧlocal(state, node)
 				if (rl.name === "node") {
+					// TODO XXX race condition here if previously pre-loaded
 					state.pkg_infos_resolver.declareꓽversion_override("@types/node", rl.versionsⵧacceptable)
 				}
 				break

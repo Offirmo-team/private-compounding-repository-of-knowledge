@@ -5,7 +5,7 @@
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
-		".": "./module/index.ts"
+		".": "./module/src/index.ts"
 	},
 	"scripts": {
 		"check": "run-s check:ts",

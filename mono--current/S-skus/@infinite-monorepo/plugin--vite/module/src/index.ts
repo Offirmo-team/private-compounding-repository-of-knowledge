@@ -36,6 +36,7 @@ export const PLUGIN: Plugin = {
 
 				if (pkg_details.target === "browser") {
 					state = StateLib.addꓽdependency(state, node, "@monorepo-private/vite--config--default", { type: "dev" })
+					state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "vite", { type: "dev" }) // useful at least for the app config
 
 					const VITE__COMMON_OPTIONS = ["--port 1981", "--strictPort", "--logLevel info"].join(" ")
 
@@ -91,6 +92,7 @@ export const PLUGIN: Plugin = {
 					}
 					if (pkg_details.isꓽapp) {
 						state = StateLib.addꓽscript(state, node, "start", `npm-run-all clean --parallel _start:main--vite`)
+
 						state = StateLib.addꓽscript(state, node, "build--vite", `vite build`)
 					}
 				}
@@ -177,6 +179,7 @@ import type {
 	Plugin,
 	FileOutputAbsent,
 	FileOutputPresent,
+	NodeⳇPackage,
 } from "@infinite-monorepo/types-for-plugins"
 import { PATHVARⵧROOTⵧPACKAGE } from "@infinite-monorepo/types-for-plugins"
 

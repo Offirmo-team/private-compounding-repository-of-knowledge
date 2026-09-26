@@ -36,6 +36,7 @@
 		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
+		"vite": "catalog:",
 		"vitest": "catalog:"
 	},
 	"peerDependencies": {

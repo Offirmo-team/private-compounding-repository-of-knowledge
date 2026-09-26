@@ -2,7 +2,7 @@
 	"name": "@monorepo-private/vite-plugin-parcel-features",
 	"version": "0.0.1",
 	"private": true,
-	"description": "Vite plugin backfilling the Parcel features our sources rely on, ex. image transform directives",
+	"description": "Vite plugin backfilling some Parcel features our sources rely on, ex. image transform directives",
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
@@ -39,8 +39,7 @@
 		"vitest": "catalog:"
 	},
 	"peerDependencies": {
-		"tslib": "catalog:",
-		"vite": "catalog:"
+		"tslib": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
 }
