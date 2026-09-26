@@ -46,6 +46,7 @@ catalog:
    lightningcss: ^1
    limit-once: ^0.16
    load-json-file: ^7
+   magic-string: ^1
    memoize-one: ^6
    meow: ^14
    mocha: ^12
@@ -63,6 +64,7 @@ catalog:
    react: ^19
    react-dom: ^19
    semver: ^7
+   sharp: ^0.35
    sinon: ^22
    sinon-chai: ^4
    smol-toml: ^1

@@ -671,25 +671,28 @@ export function _resolveꓽarpath(
 		// we also want to ensure the parent node type matches the $PATHVAR$
 
 		switch (first_segment) {
-			case PATHVARⵧROOTⵧNODE:
-				// joker, matches any parent node
+			case PATHVARⵧROOTⵧREPO:
+				ǃ.forⵧparam({ parent_node }).require(parent_node.type === NODE_TYPEⵧREPO)
 				break
-			case PATHVARⵧROOTⵧPACKAGE: {
-				ǃ.forⵧparam({ parent_node }).require(
-					parent_node.type === "package" || parent_node.type === "monorepo", // special: the workspace root is also a package
-				)
-				break
-			}
 			case PATHVARⵧROOTⵧMONOREPO: {
-				ǃ.forⵧparam({ parent_node }).require(parent_node.type === "monorepo")
+				ǃ.forⵧparam({ parent_node }).require(parent_node.type === NODE_TYPEⵧMONOREPO)
 				break
 			}
 			case PATHVARⵧROOTⵧWORKSPACE__LINE: {
 				ǃ.forⵧparam({ parent_node }).require(parent_node.type === NODE_TYPEⵧWORKSPACES__LINE)
 				break
 			}
+			case PATHVARⵧROOTⵧPACKAGE: {
+				ǃ.forⵧparam({ parent_node }).require(
+					parent_node.type === NODE_TYPEⵧPACKAGE || parent_node.type === NODE_TYPEⵧMONOREPO, // special: the workspace root is also a package
+				)
+				break
+			}
+			case PATHVARⵧROOTⵧNODE:
+				// joker, matches any parent node
+				break
 			default:
-				throw new Error(`_resolveꓽarpath(): not implemented!`)
+				throw new Error(`_resolveꓽarpath(parent starts with "${first_segment}"): not implemented!`)
 		}
 
 		return path.resolve(parent_node.path‿abs, path‿ar.slice(first_segment.length + 1))

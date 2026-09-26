@@ -1,2 +1,8 @@
 ## contains auto-generated content from @infinite-monorepo/plugin--git
+## https://git-scm.com/docs/gitattributes
 * text=auto eol=lf
+*.ai  binary
+*.eps binary
+*.pdf binary
+*.ps  binary
+*.rtf binary

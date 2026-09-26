@@ -89,6 +89,9 @@ function inferꓽformat_from_path(file_path: FilePathⳇAny): StructuredFileForm
 		case basename‿lc.endsWith("ignore"):
 			// .gitignore .prettierignore etc.
 			return "list"
+		// repo-level git config
+		case file_path.endsWith(".git/info/attributes"):
+			return "list"
 		default:
 			break
 	}

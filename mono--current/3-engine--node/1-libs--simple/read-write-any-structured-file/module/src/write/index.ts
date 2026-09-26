@@ -9,7 +9,9 @@ export async function ೱwriteꓽfile(
 	format ||=
 		inferꓽformat_from_path(file_path) ||
 		(() => {
-			// infer from content
+			// TODO 1D infer from content
+			// but this should be seldom needed
+			console.error(`inferꓽformat_from_path() couldn't infer for "${file_path}"!`)
 			throw new Error(`ೱwriteꓽfile format detection`)
 		})()
 

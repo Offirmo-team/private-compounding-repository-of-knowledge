@@ -12,12 +12,12 @@ Parcel's query syntax, honoured at build time by sharp:
 const local_url = new URL("original.png?as=webp&width=1920", import.meta.url).href
 ```
 
-| directive          | meaning                                            |
-| ------------------ | -------------------------------------------------- |
+| directive          | meaning                                             |
+| ------------------ | --------------------------------------------------- |
 | `as=` \| `format=` | `avif` `gif` `jpeg`/`jpg` `png` `tiff`/`tif` `webp` |
-| `width=` \| `w=`   | max width, px                                      |
-| `height=` \| `h=`  | max height, px                                     |
-| `quality=` \| `q=` | encoder quality                                    |
+| `width=` \| `w=`   | max width, px                                       |
+| `height=` \| `h=`  | max height, px                                      |
+| `quality=` \| `q=` | encoder quality                                     |
 
 Aspect ratio is preserved, and images are **never upscaled** — asking for a width above the source's own leaves it
 untouched, so the dimensions declared next to an asset stay true.

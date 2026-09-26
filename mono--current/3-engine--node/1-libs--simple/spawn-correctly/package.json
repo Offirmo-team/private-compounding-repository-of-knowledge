@@ -23,7 +23,6 @@
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/chai": "catalog:",
 		"@types/cross-spawn": "catalog:",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
