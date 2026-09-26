@@ -47,7 +47,7 @@ function getꓽmetas(spec: Immutable<WebPropertySpec>): HtmlMetas {
 			viewport: _getꓽmetasⵧviewport(spec),
 
 			...(wantsꓽinstall(spec) && {
-				"apple-mobile-web-app-capable": "yes",
+				"mobile-web-app-capable": "yes",
 				"apple-mobile-web-app-status-bar-style": supportsꓽscreensⵧwith_shape(spec) ? "black-translucent" : "black",
 			}),
 
