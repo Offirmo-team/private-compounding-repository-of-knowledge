@@ -143,6 +143,7 @@ alias  mono.@rpg--space.marketing='cd "$MONOREPO_ROOT__CURRENT"; mise install; g
 alias  mono.@rpg--space.web-components='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@rpg--space/80-web-components/'
 alias  mono.@rpg--space.web-core='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@rpg--space/81-web-core/'
 alias  mono.@rpg--space.final--web-app='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@rpg--space/90-final--web-app/'
+alias  mono.@social-skills.cli--social='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@social-skills/cli--social/'
 alias  mono.@tbrpg.marketing='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@tbrpg/30-marketing/'
 alias  mono.@tbrpg.web-property='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@tbrpg/80-web-property/'
 alias  mono.@tbrpg.final--web-app='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@tbrpg/90-final--web-app/'
