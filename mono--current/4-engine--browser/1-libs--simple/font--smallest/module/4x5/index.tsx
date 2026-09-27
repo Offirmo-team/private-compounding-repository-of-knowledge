@@ -6,7 +6,7 @@ import {
 	Url‿str,
 	registerꓽasset_usageⵧload,
 } from "@monorepo-private/credits"
-import AUTHOR from "@monorepo-private/credits/src/authors/vyznev/index.ts"
+import CREATOR from "@monorepo-private/credits/src/authors/vyznev/index.ts"
 
 import "./index.css"
 
@@ -22,7 +22,7 @@ const local_url: Url‿str = new URL("regular.ttf", import.meta.url).href
 
 const THING: Thing = {
 	caption: "CG pixel 4x5 font",
-	creator: AUTHOR,
+	creator: CREATOR,
 	since‿y: 2017,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {

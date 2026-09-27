@@ -8,7 +8,7 @@ import {
 	_getꓽurl_tobind,
 	_getꓽpath_tobind,
 } from "@monorepo-private/credits"
-import AUTHOR from "@monorepo-private/credits/authors/neon.dimensionss"
+import CREATOR from "@monorepo-private/credits/authors/neon.dimensionss"
 
 /////////////////////////////////////////////////
 
@@ -22,7 +22,7 @@ const url: Url‿str = new URL(
 
 const THING: Thing = {
 	description: "An AI generated cityscape.",
-	author: AUTHOR,
+	creator: CREATOR,
 	since‿y: 2024,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {

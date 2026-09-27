@@ -2,7 +2,7 @@
 
 const WEBSITE = "https://fontstruct.com/fontstructors/1441974/vyznev" as Url‿str
 
-const AUTHOR: Creator = {
+const CREATOR: Creator = {
 	name: "vyznev",
 
 	urlⵧcanonical: WEBSITE,
@@ -10,7 +10,7 @@ const AUTHOR: Creator = {
 	urlsⵧsocial: [],
 }
 
-export default AUTHOR
+export default CREATOR
 
 /////////////////////////////////////////////////
 

@@ -22,7 +22,6 @@ const { format: formatForSize } = new Intl.NumberFormat("en", {
 })
 
 const DEBUG = true
-const rng_engine = getꓽengine.good_enough()
 const RESIZE_DEBOUNCE_MSⳇauto_view_sizing = 200
 
 /////////////////////////////////////////////////
@@ -31,7 +30,9 @@ export interface Props {
 	view__dimension?: Dimensions2DSpec
 
 	bg: Immutable<Background>
-	alt_alignment?: PositiveInteger | "random"
+
+	// we want variety but not entropy
+	pseudo_random_seed?: PositiveInteger | undefined
 
 	_debug?: boolean
 }
@@ -123,50 +124,32 @@ function BackgroundImgⵧloaded(props: Props) {
 			const viewport_width = bg.height * ratioⵧview
 			const max_x = bg.width - viewport_width
 			let focus: number | undefined = (() => {
-				const candidates = bg.focusesⵧhorizontal || []
+				const candidates = [...(bg.focusesⵧhorizontal || [])]
+				if (candidates.length === 0) candidates.push(((props.pseudo_random_seed ?? 50) % 100) / 100)
 
-				if (candidates.length <= 1) return candidates[0]
-
-				switch (props.alt_alignment) {
-					case undefined:
-					case "random":
-						return getꓽrandom.picker.of(candidates || [])(rng_engine)
-					default:
-						return candidates[Number(props.alt_alignment)]
-				}
+				return candidates[(props.pseudo_random_seed ?? 0) % candidates.length]
 			})()
-			if (!focus && (bg.focusesⵧhorizontal !== undefined || props.alt_alignment !== undefined)) {
+			if (!focus) {
 				console.error(`${NAME} failed to find a focus`, {
 					focusesⵧhorizontal: bg.focusesⵧhorizontal,
-					alt_alignment: props.alt_alignment,
 				})
 			}
-			focus ??= Math.random()
 			return [max_x * Math.min(100, Math.max(0, focus)), 0, viewport_width, bg.height]
 		}
 
 		const viewport_height = bg.width / ratioⵧview
 		const max_y = bg.height - viewport_height
 		let focus: number | undefined = (() => {
-			const candidates = bg.focusesⵧvertical || []
+			const candidates = [...(bg.focusesⵧvertical || [])]
+			if (candidates.length === 0) candidates.push(((props.pseudo_random_seed ?? 50) % 100) / 100)
 
-			if (candidates.length <= 1) return candidates[0]
-
-			switch (props.alt_alignment) {
-				case undefined:
-				case "random":
-					return getꓽrandom.picker.of(candidates)(rng_engine)
-				default:
-					return candidates[Number(props.alt_alignment)]
-			}
+			return candidates[(props.pseudo_random_seed ?? 0) % candidates.length]
 		})()
-		if (!focus && (bg.focusesⵧvertical !== undefined || props.alt_alignment !== undefined)) {
+		if (!focus) {
 			console.error(`${NAME} failed to find a focus`, {
 				focusesⵧvertical: bg.focusesⵧvertical,
-				alt_alignment: props.alt_alignment,
 			})
 		}
-		focus ??= Math.random()
 		return [0, max_y * Math.min(100, Math.max(0, focus)), bg.width, viewport_height]
 	})()
 	console.log({ viewBox‿arr })
@@ -233,7 +216,6 @@ import { Suspense, use, useEffect, useState } from "react"
 
 import { type Background } from "@monorepo-private/assets--background"
 import { ೱᐧpage_loaded } from "@monorepo-private/page-loaded"
-import { getꓽrandom, getꓽengine } from "@monorepo-private/random"
 import ErrorBoundary from "@monorepo-private/react--error-boundary"
 import "@monorepo-private/css--framework"
 import { type Immutable, type PositiveInteger } from "@monorepo-private/ts--types"

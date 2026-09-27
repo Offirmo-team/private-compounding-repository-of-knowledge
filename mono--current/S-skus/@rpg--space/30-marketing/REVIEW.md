@@ -17,7 +17,7 @@ Declares the `WEBSITE`/`Thing`/`WithOnlinePresence` marketing metadata (title, c
   populate this with a `caption`/`target` or use the `"description": "TODO description in MANIFEST.json5"` placeholder —
   here it's just empty, giving no hint of intent.
 - **G12D-P1-05** (Nit) — No tests for this package (not even a smoke test verifying `WEBSITE` conforms to the `WebPage`
-  shape), unlike the sibling `marketing--creator` package it depends on, which does test `AUTHOR` via
+  shape), unlike the sibling `marketing--creator` package it depends on, which does test `CREATOR` via
   `expectㆍtoㆍbeㆍaㆍvalidㆍCreator`. Given this is a declarative config module, risk is low, but a similar validity
   check would be cheap and consistent with the pattern already used in this codebase.
 

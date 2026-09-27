@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Creator = {
+const CREATOR: Creator = {
 	name: "Albert Weand",
 
 	urlⵧcanonical: "https://www.artstation.com/aweand",
@@ -25,7 +25,7 @@ const AUTHOR: Creator = {
 	],
 }
 
-export default AUTHOR
+export default CREATOR
 
 /////////////////////////////////////////////////
 

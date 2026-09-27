@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Creator = {
+const CREATOR: Creator = {
 	name: "Digital Moons",
 
 	email: "digitalmoonsstudio@gmail.com", // from https://digitalmoons.itch.io/parallax-forest-background
@@ -19,7 +19,7 @@ const AUTHOR: Creator = {
 	],
 }
 
-export default AUTHOR
+export default CREATOR
 
 /////////////////////////////////////////////////
 

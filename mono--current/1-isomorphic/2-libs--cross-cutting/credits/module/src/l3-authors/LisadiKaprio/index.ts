@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Creator = {
+const CREATOR: Creator = {
 	name: "LisadiKaprio",
 
 	email: "lisadikaprio@gmail.com", // from https://lisadikaprio.itch.io/
@@ -27,7 +27,7 @@ const AUTHOR: Creator = {
 	],
 }
 
-export default AUTHOR
+export default CREATOR
 
 /////////////////////////////////////////////////
 

@@ -1,6 +1,6 @@
 import type { WebPage } from "@web-property-outfitter/spec"
 
-import { AUTHOR } from "@monorepo-private/marketing--creator"
+import { CREATOR } from "@monorepo-private/marketing--creator"
 import type {
 	Creator,
 	SocialNetworkLink,
@@ -25,7 +25,7 @@ WebPropertySpec
 const THING: Thing = {
 	lang: "en",
 	caption: "Senior Dev Mental Models",
-	creator: AUTHOR,
+	creator: CREATOR,
 	since‿y: 2026,
 }
 
@@ -84,4 +84,4 @@ const WEBSITE: WebPage = {
 
 /////////////////////////////////////////////////
 
-export { AUTHOR, WEBSITE }
+export { CREATOR, WEBSITE }

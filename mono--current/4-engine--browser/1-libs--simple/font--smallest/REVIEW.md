@@ -39,7 +39,7 @@ This reads like a personal reminder about an unrelated font, left in the public-
 `module/4x5/index.tsx` imports its author from a subpath that doesn't exist:
 
 ```ts
-import AUTHOR from "@monorepo-private/credits/src/authors/vyznev/index.ts"
+import CREATOR from "@monorepo-private/credits/src/authors/vyznev/index.ts"
 ```
 
 Same wrong-subpath bug as in sibling package `assets--heroes` — `credits`' `package.json` only exposes

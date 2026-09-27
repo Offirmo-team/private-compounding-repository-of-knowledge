@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Creator = {
+const CREATOR: Creator = {
 	name: "zishan Liu",
 
 	urlⵧcanonical: "https://makie.artstation.com/resume",
@@ -13,7 +13,7 @@ const AUTHOR: Creator = {
 	],
 }
 
-export default AUTHOR
+export default CREATOR
 
 /////////////////////////////////////////////////
 

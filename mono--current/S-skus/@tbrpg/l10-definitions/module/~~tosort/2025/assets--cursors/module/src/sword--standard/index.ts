@@ -1,11 +1,11 @@
 import { Thing, WithOnlinePresence, ThingWithOnlinePresence, Asset, registerꓽasset_usageⵧload } from '@monorepo-private/credits'
-import AUTHOR from "@monorepo-private/credits/src/authors/MapleLeaf68/index.ts"
+import CREATOR from "@monorepo-private/credits/src/authors/MapleLeaf68/index.ts"
 
 import './style.css'
 
 const THING: Thing = {
 	description: 'Sword cursor',
-	author: AUTHOR,
+	creator: CREATOR,
 	since‿y: 2015,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {

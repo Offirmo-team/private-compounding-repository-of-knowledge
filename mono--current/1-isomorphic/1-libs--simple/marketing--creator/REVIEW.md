@@ -1,6 +1,6 @@
 # Review: @monorepo-private/marketing--creator
 
-Static marketing/identity data for Offirmo's "creator" persona: an `AUTHOR` object (name, email, canonical URL, social
+Static marketing/identity data for Offirmo's "creator" persona: an `CREATOR` object (name, email, canonical URL, social
 links) built from `@monorepo-private/ts--types--hypermedia` types, with one test asserting it's a valid `Creator`.
 
 ## Findings
@@ -15,7 +15,7 @@ in `ts--types--hypermedia/module/90-semantic/20-author/selectors.ts:30`, which d
 
 ### G2-P17-02 (Minor) — Single test only validates overall shape, not individual field content
 
-`index.tests.ts` only calls `expectㆍtoㆍbeㆍaㆍvalidㆍAuthor(AUTHOR)`. That's reasonable given the package is just
+`index.tests.ts` only calls `expectㆍtoㆍbeㆍaㆍvalidㆍAuthor(CREATOR)`. That's reasonable given the package is just
 static data, but it means typos in individual social handles/URLs (e.g. a wrong ArtStation/GitHub/Instagram handle)
 would not be caught unless the shared validator checks each URL is reachable/well-formed per network — it only checks
 shape/parseability, not correctness of content. Low priority for a private marketing-data package, but worth knowing the

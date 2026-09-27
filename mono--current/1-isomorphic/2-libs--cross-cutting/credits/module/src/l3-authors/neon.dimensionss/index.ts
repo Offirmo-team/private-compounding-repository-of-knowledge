@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////
 
-const AUTHOR: Creator = {
+const CREATOR: Creator = {
 	name: "neon.dimensionss",
 
 	urlⵧcanonical: "https://www.instagram.com/neon.dimensionss/",
@@ -13,7 +13,7 @@ const AUTHOR: Creator = {
 	],
 }
 
-export default AUTHOR
+export default CREATOR
 
 /////////////////////////////////////////////////
 

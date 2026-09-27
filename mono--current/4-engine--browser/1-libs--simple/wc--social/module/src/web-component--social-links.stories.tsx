@@ -20,9 +20,9 @@ export default {
 
 /////////////////////////////////////////////////
 
-import { AUTHOR as AUTHORⳇCREATOR } from "@monorepo-private/marketing--creator"
-//import { AUTHOR as AUTHORⳇPRO } from "@monorepo-private/marketing--pro"
-//import { AUTHOR as AUTHORⳇWEB3 } from "@monorepo-private/marketing--web3"
+import { CREATOR as AUTHORⳇCREATOR } from "@monorepo-private/marketing--creator"
+//import { CREATOR as AUTHORⳇPRO } from "@monorepo-private/marketing--pro"
+//import { CREATOR as AUTHORⳇWEB3 } from "@monorepo-private/marketing--web3"
 import type { Creator } from "@monorepo-private/ts--types--hypermedia"
 
 function Component({ author }: { author: Creator }) {

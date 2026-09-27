@@ -2,7 +2,7 @@
 
 const WEBSITE = "http://www.rw-designer.com/user/50229" as Url‿str
 
-const AUTHOR: Creator = {
+const CREATOR: Creator = {
 	name: "MapleLeaf68",
 
 	urlⵧcanonical: WEBSITE,
@@ -10,7 +10,7 @@ const AUTHOR: Creator = {
 	urlsⵧsocial: [],
 }
 
-export default AUTHOR
+export default CREATOR
 
 /////////////////////////////////////////////////
 

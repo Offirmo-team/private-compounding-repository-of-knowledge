@@ -5,7 +5,7 @@ import {
 	Asset,
 	registerꓽasset_usageⵧload,
 } from "@monorepo-private/credits"
-import AUTHOR from "@monorepo-private/credits/src/authors/Offirmo"
+import CREATOR from "@monorepo-private/credits/src/authors/Offirmo"
 
 /////////////////////////////////////////////////
 
@@ -16,7 +16,7 @@ const local_url = new URL("original.jpg", import.meta.url).href
 
 const THING: Thing = {
 	caption: "Fantasy heroine illustration 001",
-	creator: AUTHOR,
+	creator: CREATOR,
 	since‿y: 2024,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {

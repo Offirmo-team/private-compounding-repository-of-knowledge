@@ -7,12 +7,22 @@ import BGTwoTravellers from "../__fixtures/two-travelers/index.ts"
 import { type Props, BackgroundImg } from "./index.tsx"
 
 function Component(props: Props) {
+	const [pseudo_random_seed, setPseudoRandomSeed] = useState<number | undefined>(undefined)
 	const props_for_debug = structuredClone(props)
 	props_for_debug.bg.asset.creator = "<deleted>"
 	return (
 		<div className="o⋄full-viewport isolate" style={{ position: "relative" }}>
-			<BackgroundImg {...props} />
+			<BackgroundImg {...props} pseudo_random_seed={pseudo_random_seed} />
 			<div className="o⋄usable-viewport" style={{ position: "relative" }}>
+				<button
+					onClick={() =>
+						setPseudoRandomSeed((prev) => {
+							return (prev ?? 0) + 1
+						})
+					}
+				>
+					alt
+				</button>
 				<pre className="o⋄bg-colorꘌtransparent">{JSON.stringify(props_for_debug, null, 2)}</pre>
 			</div>
 		</div>
@@ -95,5 +105,7 @@ export const XErrorⳇStaleSize: Story‿v3 = {
 }
 
 /////////////////////////////////////////////////
+
+import { useState } from "react"
 
 import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"

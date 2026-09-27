@@ -1,5 +1,5 @@
-import { AUTHOR } from "@monorepo-private/marketing--creator"
+import { CREATOR } from "@monorepo-private/marketing--creator"
 
 /////////////////////////////////////////////////
 
-export default AUTHOR
+export default CREATOR

@@ -15,7 +15,7 @@ export default BG
 
 const THING: Thing = {
 	caption: "Forest Background (Seamless Parallax)",
-	creator: AUTHOR,
+	creator: CREATOR,
 	since‿y: 2020,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {
@@ -42,6 +42,6 @@ import {
 	type Asset,
 	registerꓽasset_usageⵧload,
 } from "@monorepo-private/credits"
-import AUTHOR from "@monorepo-private/credits/authors/DigitalMoons"
+import CREATOR from "@monorepo-private/credits/authors/DigitalMoons"
 
 import { type Background } from "../../../types.ts"

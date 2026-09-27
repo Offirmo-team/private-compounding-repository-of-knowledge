@@ -13,7 +13,7 @@ import { Category } from '../types'
 /////////////////////////////////////////////////
 
 const EXAMPLEⵧWEBAPPⵧTBRPG2023: Parameters<typeof generateꓽwebsiteᝍentryᝍpoints>[0] = (() => {
-	const AUTHOR: Author = {
+	const CREATOR: Author = {
 		name: 'Offirmo',
 		contact: 'offirmo.net@gmail.com',
 
@@ -32,7 +32,7 @@ const EXAMPLEⵧWEBAPPⵧTBRPG2023: Parameters<typeof generateꓽwebsiteᝍentry
 	const THING: Thing = {
 		lang: 'en',
 		description: '(Browser game) The simplest RPG ever! (indie game, free to play, no account needed)',
-		author: AUTHOR,
+		creator: CREATOR,
 		//license: 'UNLICENSED', // the source is open but the game itself is not
 	}
 

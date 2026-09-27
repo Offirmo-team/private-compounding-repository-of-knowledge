@@ -10,7 +10,7 @@ viewport info) for use in a game/RPG UI.
 `module/licensed/offirmo/female-001/asset.tsx` imports its author from a subpath that doesn't exist:
 
 ```
-import AUTHOR from "@monorepo-private/credits/src/authors/Offirmo"
+import CREATOR from "@monorepo-private/credits/src/authors/Offirmo"
 ```
 
 `credits`' `package.json` only exposes `"./authors/*": "./module/src/l3-authors/*/index.ts"`, i.e. the correct import is

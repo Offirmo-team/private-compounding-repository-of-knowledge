@@ -15,7 +15,7 @@ export default BG
 
 const THING: Thing = {
 	caption: "Adventurers fantasy illustration",
-	creator: AUTHOR,
+	creator: CREATOR,
 	since‿y: 2021,
 }
 const ONLINE_PRESENCE: WithOnlinePresence = {
@@ -42,6 +42,6 @@ import {
 	type Asset,
 	registerꓽasset_usageⵧload,
 } from "@monorepo-private/credits"
-import AUTHOR from "@monorepo-private/credits/authors/AlbertWeand"
+import CREATOR from "@monorepo-private/credits/authors/AlbertWeand"
 
 import { type Background } from "../../../types.ts"
