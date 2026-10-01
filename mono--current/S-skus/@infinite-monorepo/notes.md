@@ -84,3 +84,5 @@ TODO auto-load relevant skills ex. web, react...
 - very good doc https://turborepo.dev/docs/core-concepts/
 
 TODO vendoring with https://turborepo.dev/docs/crafting-your-repository/structuring-a-repository#imports-optional
+
+TODO maybe https://github.com/typescript-eslint/typescript-eslint

@@ -135,7 +135,7 @@ produced by this tool — worth cleaning up before this path is relied upon.
 
 ### G12E-P3-10 — Nit — Required disclosure: `module/~~tosort/` folders present (contents not reviewed, per review scope rules)
 
-`module/~~tosort/2023/` (`html--boilerplate`, `iframe--loading`, `xoff`) and `module/~~tosort/2024/`
+`module/~~tosort/2023/` (`offirmo__html--boilerplate`, `iframe--loading`, `xoff`) and `module/~~tosort/2024/`
 (`real-favicon-generator`) exist. Per review scope, their contents were not reviewed; noting presence only.
 
 ### G12E-P3-11 — Nit — Generated/checked-in artifacts under `~~gen/` and demo `~~output/` folders

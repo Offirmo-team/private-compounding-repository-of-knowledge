@@ -283,3 +283,7 @@ https://science.slashdot.org/story/25/06/19/236226/our-galaxys-monster-black-hol
 https://blog.maximeheckel.com/posts/on-rendering-the-sky-sunsets-and-planets/
 
 https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/
+
+Very Low Earth Orbit (VLEO) https://scitechdaily.com/new-satellite-engine-could-use-earths-atmosphere-as-fuel-to-stay-in-orbit-indefinitely/
+VLEO -- atomic oxygen https://scitechdaily.com/new-satellite-engine-could-use-earths-atmosphere-as-fuel-to-stay-in-orbit-indefinitely/
+galaxies https://scitechdaily.com/nasas-chandra-reveals-galaxies-being-torn-apart-blasted-by-black-holes-and-reborn-in-stars/ 

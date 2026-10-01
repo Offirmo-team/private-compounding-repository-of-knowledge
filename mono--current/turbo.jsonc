@@ -47,8 +47,8 @@
 		"clean": {
 			// cleans any low-value generated / built / temporary files
 			"cache": false
-		}
-		/*
+		},
+
 		"prepare:pkg": {
 			"dependsOn": ["^prepare:pkg"],
 			"outputs": [
@@ -60,7 +60,8 @@
 		"build": {
 			"dependsOn": ["^build", "prepare:pkg"],
 			"outputs": ["dist/**"]
-		},
+		}
+		/*
 		"dev": {
 			"dependsOn": ["^build"],
 			"persistent": true,

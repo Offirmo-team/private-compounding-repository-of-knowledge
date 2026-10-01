@@ -498,6 +498,7 @@ memecoins -- bucketing / distribution tiers -- 5 Crabs
 memecoins -- bucketing / distribution tiers -- 6 Shrimps, krill
 memecoins -- spirit "the entire point of a meme is that it doesn’t try to dress up as something it’s not. Many projects fail because they try to pretend to be more than what they are" https://beincrypto.com/white-whale-solana-meme-coin-analysis/
 memecoins -- status 2025 https://www.coingecko.com/research/publications/state-of-memecoins-2025
+messaging -- solutions -- Conversations = https://codeberg.org/iNPUTmice/Conversations
 MetaDAO = “a place for crypto-native enterprises to raise money that doesn’t suck.” https://docs.metadao.fi/benefits/founders
 metas -- revenue = have revenue, generate a token, buy back
 metrics -- active addresses count

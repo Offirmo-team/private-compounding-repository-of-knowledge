@@ -53,6 +53,7 @@
 [ ] +++ https://paulgraham.com/articles.html
 [ ] +++ https://thewokesalaryman.com/
 [ ] ? https://slatestarcodex.com/
+[ ] advice mallard
 [ ] Ash Lamb visuals https://www.linkedin.com/in/ashlamb/recent-activity/all/
 [ ] ex. of edited interview misleading https://paulgraham.com/wids.html
 [ ] Futures studies https://en.wikipedia.org/wiki/Futures_studies + many concepts
@@ -150,7 +151,8 @@ autocracy https://en.wikipedia.org/wiki/Autocracy
 Babbitt = person and especially a business or professional man who conforms unthinkingly to prevailing middle-class standards https://en.wikipedia.org/wiki/Babbitt_(novel)
 bad randomness -- color + single digit = blue & 7
 bad randomness -- tool + color = hammer red
-baker’s dozen: The key to good hospitality is to delight your guests with an unexpected gift. If you run a hotel, leave a chocolate on the bed. If you run a bakery, give your customers one extra bagel. If you write a tweetstorm, share an extra idea.
+baker’s dozen = due to law preventing sale theft
+baker’s dozen = The key to good hospitality is to delight your guests with an unexpected gift. If you run a hotel, leave a chocolate on the bed. If you run a bakery, give your customers one extra bagel. If you write a tweetstorm, share an extra idea.
 balayer devant sa porte
 Baptists and Bootleggers https://a16z.com/ai-will-save-the-world/
 barbarians at the gate https://en.wikipedia.org/wiki/Barbarians_at_the_Gate

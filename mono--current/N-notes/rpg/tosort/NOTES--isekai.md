@@ -27,8 +27,8 @@ https://www.britannica.com/topic/history-of-work-organization-648000/The-craft-g
 
 
 Head Hunter Yamato: Ranking is a way to separate monsters by their relative danger level, they go as following:
-G - Can be dealth with by able people
-F - Can be dealth with by male adults
+G - Can be dealt with by able people
+F - Can be dealt with by male adults
 E - Village Crisis
 D - Townside Crisis
 C - Citywide Crisis

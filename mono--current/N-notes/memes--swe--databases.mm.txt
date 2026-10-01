@@ -117,6 +117,7 @@ joins
 joins https://justinjaffray.com/joins-13-ways/
 latency / distance to
 locking -- should be avoided at all cost
+migrations -- is it safe? = https://safenotsafe.dev/
 modern data stack = single DB/warehouse instead of spread across products. a set of products that a) redesigned the analytics workflow to take advantage of the cloud and b) all interacted with one another via SQL. (could happen thanks to AI?) https://benn.substack.com/p/the-return-of-the-modern-data-stack https://web.archive.org/web/20241009135733/https://www.moderndatastack.xyz/
 multiversion concurrency control (MVCC) = a popular database mechanism for tracking changes in a non-blocking fashion, where for any key we can keep multiple versions of its values for different points in time https://en.wikipedia.org/wiki/Multiversion_concurrency_control
 MySQL -- gotchas -- varchar columns return data with the case stored but, by default, are case-insensitive for comparisons.

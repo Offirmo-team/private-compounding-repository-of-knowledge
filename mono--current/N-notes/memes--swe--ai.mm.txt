@@ -41,7 +41,7 @@
 2025-12 "soul document" https://soul.md/
 2025-12 debate on Bitcoin BIP about LLM contrib = Open source projects are now expecting "social capital" = may refuse to review work from someone unknown until they prove skin in the game/motivation https://github.com/bitcoin/bips/pull/2051/files#diff-0fe6969eba0422ddb0e7823d13092c03aa90122e0c5e66786c5d8b20f54719e6L42
 2026-01 MCP -> CLI https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/
-2026-01 no more Stask Overflow questions https://data.stackexchange.com/stackoverflow/query/1926661#graph https://news.ycombinator.com/item?id=46482345
+2026-01 no more Stack Overflow questions https://data.stackexchange.com/stackoverflow/query/1926661#graph https://news.ycombinator.com/item?id=46482345
 2026-01-07 Tailwind fires 75% dev due to AI https://github.com/tailwindlabs/tailwindcss.com/pull/2388#issuecomment-3717222957
 2026-01-20 "the era of humans writing code is over. Disturbing for those of us who identify as SWEs, but no less true." https://x.com/rough__sea/status/2013280952370573666
 2026-01-31 most massive layoffs for 25 years, - [job hugging] https://x.com/BoringBiz_/status/2019414912552878526?
@@ -62,7 +62,10 @@
 2026-05-14 huge bun rewrite https://github.com/oven-sh/bun/pull/30412
 2026-07 "dark night of Mathematics" = the latest model easily disprove open conjectures e.g. https://chatgpt.com/share/6a60b2eb-0b64-83ee-9c76-7931ca1de063 https://web.archive.org/web/20260722122743/https://twitter.com/DmitryRybin1/status/2079906232069177643 https://kirwinhampshire.substack.com/p/the-dark-night-of-mathematics
 2026-07 AI sell-off = https://www.theguardian.com/business/2026/jul/28/ai-sell-off-chip-stocks-sk-hynix-samsung https://www.wsws.org/en/articles/2026/08/17/gnmb-a17.html
-2026/07/21 agentic containment escape https://openai.com/index/hugging-face-model-evaluation-security-incident/
+2026-07-21 agentic containment escape https://openai.com/index/hugging-face-model-evaluation-security-incident/
+2026-09-27 AI companies in fierce arms race to demonstrate their model is the most existentially threatening to humanity https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/ https://calnewport.com/its-time-to-investigate-the-ai-labs/
+2026/09-x = trying to regulatory capture
+2026/09-x Dario Amodei "we must pace the frontier" https://darioamodei.com/post/we-must-pace-the-frontier
 [ ] https://earendil.com/
 [ ] https://github.com/earendil-works
 [ ] https://orama.com/
@@ -303,6 +306,7 @@ challenges -- mind tax -- "AI vampire" = draining our brains https://steve-yegge
 challenges -- mind tax = https://www.fastcompany.com/91242373/the-cognitive-cost-of-ai
 challenges -- model collapse = as AI grows, systems are trained on their own outputs, gradually losing accuracy, diversity, and reliability https://slashdot.org/story/25/05/28/0242240/some-signs-of-ai-model-collapse-begin-to-reveal-themselves
 challenges -- money aligned LLMs = ads, preferred providers
+challenges -- no more community = missing Stack Overflow https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/
 challenges -- over-delegation see [[AI fluency -- delegation]]
 challenges -- privacy, control
 challenges -- prompt injection -- direct = in connectors, in function calls
@@ -686,6 +690,7 @@ models -- IQ = capacity related to a certain area e.g. "Ethereum IQ" https://eth
 models -- modalities = Text, Image, Audio...
 models -- on/off distribution -- Off distribution = the model is not good at it "With an off-distribution stack, the model can still learn it. But you have to show it the ropes and put in the work"
 models -- on/off distribution -- On distribution = the model already knows how to do it
+models -- quiet nerfing = observed lower quality a while after release https://github.com/ninjahawk/livenerf
 models -- routing -- auto = auto select
 models -- routing -- fusion = several models discuss between themselves
 models -- routing -- stealth = hidden model  under a pseudonym before annoucement e.g. https://openrouter.ai/openrouter/hunter-alpha

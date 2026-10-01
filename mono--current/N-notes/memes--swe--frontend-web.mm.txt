@@ -57,6 +57,7 @@ application posture -- 2 transient = comes and goes, presenting a single, high-r
 application posture -- 3 daemonic = background processes that require no direct user interaction.
 application posture -- 4 parasitic/auxiliary = similar to transient applications in providing a limited, focused set of functionality and occupy a small space, but they are shown persistently and can be used for a long period of time.
 application posture = sovereign, transient, background, auxiliary https://en.wikipedia.org/wiki/Application_posture
+apps -- approval process = dangerous, can be rejected without reason https://lecaro.me/20260921-google-less.html
 architecture -- AJAX "Asynchronous JavaScript And XML" (outdated) = LEGACY interactive web apps: now fetch + json
 architecture -- flux/react(ive)
 architecture -- islands
@@ -547,6 +548,7 @@ typography -- quotes https://smartquotesforsmartpeople.com/
 typology -- dead simple site https://deadsimplesites.com/
 typology -- landing site
 typology -- naked site
+UI -- 3D -- fake = https://www.producthunt.com/products/dpth https://tympanus.net/codrops/2019/02/20/how-to-create-a-fake-3d-image-effect-with-webgl/
 UI -- best practices -- +++ https://interfaces.dev/
 UI -- bleed
 UI -- block -- color

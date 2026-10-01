@@ -5,6 +5,8 @@ GenAI solved one of the hard problems in computer science
 I told my compiler a joke about pointers... it just gave me a blank stare and said "I don't get the reference." 🤖
 Why did the React component refuse to leave the harbor? It kept getting stuck in an infinite re-render. 🌊
 
+Joke: why did the pirate's commit get rejected? Too many arrr-guments in the diff.
+
 non-AI way to improve productivity
 
 
@@ -32,6 +34,11 @@ Claude Code issues
 - duplication
 - context window too small
 
+
+
+Time To Make The Button Bigger
+Time To Make All Buttons Bigger
+Where is my commit / Time for commit to reach 100% users
 
 
 

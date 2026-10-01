@@ -120,6 +120,8 @@ email -- goodbye = https://www.reddit.com/r/sysadmin/comments/1wjdpgx/psa_gramma
 email -- resurrect
 email -- welcome
 Embrace, Extend, and Extinguish https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish
+enshitification -- -- macos https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/
+enshitification -- windows https://definitelynotwindows.com/
 enshittification -- hate = ex. Adobe https://petapixel.com/2025/04/10/adobe-deletes-bluesky-posts-after-furious-backlash/
 enshittification -- temu-fication = externalization and compression of cost making low-quality goods attractive and profitable https://マリウス.com/the-temu-fication-of-software-digital-goods-services/
 enshittification = first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die. https://doflo.com/blog/what-is-enshitification-and-can-we-stop-it https://en.wikipedia.org/wiki/Enshittification

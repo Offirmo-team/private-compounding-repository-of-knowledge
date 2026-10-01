@@ -12,7 +12,7 @@ echo "↳ cleaning..."
 find . -type f \( \
            -name .env \
         -o -name '.env.*' \
-        -o name .dev.vars \
+        -o -name .dev.vars \
         -o -name .test.vars \
         \) \
     -exec rm -f {} +

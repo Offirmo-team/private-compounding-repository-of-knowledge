@@ -28,11 +28,13 @@
 [ ] SEO -- advices https://www.kalzumeus.com/2010/01/24/startup-seo/ + follow up https://www.kalzumeus.com/2010/01/25/followup-questions-for-strategic-seo-for-startups/
 ads -- https://ads.openai.com/
 affiliation -- ambassador program = e.g. https://qwen.ai/ambassador
+astroturfing https://www.petervijeh.com/projects/reddit-astroturf
 best practices -- don't build castles in others people's kingdoms
 brand -- 6 what's? = what we stand for, what we believe in, what people we seek to engage, what distinguishes us, what we offer, what we say and show https://hbr.org/2014/06/start-ups-need-a-minimum-viable-brand
 brand -- PERSONAL -- dev blog https://adamcoster.com/
 brand -- rebrand = https://www.msrebrandregistry.com/index.html
 brand -- relationship = https://en.wikipedia.org/wiki/Brand_relationship
+cancel -- hey case study = https://chadnauseam.com/random/cancelling-my-hey
 CEMs "Commercial Electronic Messages" = emails, texts, instant messages, group messages and even app/website notifications when they are commercial
 CEMs -- consent -- express = Ticking a box on a form or website. Signing up to receive newsletters or offers. Verbally agreeing during a call or in person (if documented appropriately). Selecting preferences in a digital platform or app. Agreeing to terms and conditions which contain a provision regarding consent to receive CEMs.
 CEMs -- consent = express or inferred
@@ -44,7 +46,6 @@ channels -- LinkedIn -- https://typegrow.com/tools/linkedin-text-formatter
 channels -- reddit = very important for LLMs.
 coding challenges = e.g. https://dev.to/challenges
 creator strategy
-cancel -- hey case study = https://chadnauseam.com/random/cancelling-my-hey
 cringe = https://www.cringebot3000.com/
 discoverability -- AEO "agentic-engine-optimization" = https://addyosmani.com/blog/agentic-engine-optimization/
 discoverability -- AEO -- use case = https://www.linkedin.com/feed/update/urn:li:activity:7472064080594350080/

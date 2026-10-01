@@ -5,6 +5,26 @@ import type { InternalSXC, InternalSXCState } from "./types.ts"
 
 /////////////////////////////////////////////////
 
+// for debug (TODO review)
+function _flattenSXC(SXC: SoftExecutionContext) {
+	const _SXC = getInternalSXC(SXC)
+	let state: InternalSXCState | undefined = _SXC[INTERNAL_PROP]
+
+	const plugins = {
+		...state.plugins,
+	}
+
+	plugins.analytics.details = flattenOwnAndInheritedProps(plugins.analytics.details)
+
+	plugins.dependency_injection.context = flattenOwnAndInheritedProps(plugins.dependency_injection.context)
+
+	plugins.error_handling.details = flattenOwnAndInheritedProps(plugins.error_handling.details)
+
+	plugins.logical_stack.stack = flattenOwnAndInheritedProps(plugins.logical_stack.stack)
+
+	return plugins
+}
+
 /* flatten an object with a prototype chain
  * into a plain object
  */

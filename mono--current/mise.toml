@@ -5,6 +5,8 @@ monorepo_root = true
 "_.file" = ".env"
 
 [monorepo]
+config_roots = ["."]
+
 [settings]
 experimental = true
 idiomatic_version_file_enable_tools = ["node", "pnpm"]
