@@ -64,7 +64,7 @@
 2026-07 AI sell-off = https://www.theguardian.com/business/2026/jul/28/ai-sell-off-chip-stocks-sk-hynix-samsung https://www.wsws.org/en/articles/2026/08/17/gnmb-a17.html
 2026-07-21 agentic containment escape https://openai.com/index/hugging-face-model-evaluation-security-incident/
 2026-09-27 AI companies in fierce arms race to demonstrate their model is the most existentially threatening to humanity https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/ https://calnewport.com/its-time-to-investigate-the-ai-labs/
-2026/09-x = trying to regulatory capture
+2026/09-x = trying to 1) regulatory capture 2) abdicate of responsibility and blame
 2026/09-x Dario Amodei "we must pace the frontier" https://darioamodei.com/post/we-must-pace-the-frontier
 [ ] https://earendil.com/
 [ ] https://github.com/earendil-works

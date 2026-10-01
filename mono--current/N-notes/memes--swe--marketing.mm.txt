@@ -82,6 +82,7 @@ presence -- stores -- app stores
 presence -- stores -- webextensions
 presence -- wikipedia -- beware: notability, neutrality, primary source
 presence -- wikipedia = e.g. https://en.wikipedia.org/wiki/N8n
+reputation example of Meta = long history of anti-competitive, censorial, and invasive practices https://www.eff.org/deeplinks/2025/01/mad-meta-dont-let-them-collect-and-monetize-your-personal-data
 reputation management
 reputation management -- REPCOM
 reputation management = https://en.wikipedia.org/wiki/Reputation_management
