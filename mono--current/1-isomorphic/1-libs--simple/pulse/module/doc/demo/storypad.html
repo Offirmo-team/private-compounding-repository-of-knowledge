@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <script type="module">
-	import * as stories_reset from '../../../css--reset/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)'
-	import * as stories_foundation from '../../../css--foundation/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)'
-	import * as stories_framework from '../../../css--framework/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)'
+	import * as stories_reset from "../../../css--reset/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)"
+	import * as stories_foundation from "../../../css--foundation/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)"
+	import * as stories_framework from "../../../css--framework/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)"
 	//import * as stories from '../../../css--*/**/*.stories.js'
 
-	import nearest_pkg from '~/package.json'
+	import nearest_pkg from "~/package.json"
 
-	import start_storypad from '@monorepo-private/storypad'
+	import start_storypad from "@monorepo-private/storypad"
 
 	const stories = {
 		reset: stories_reset,
@@ -21,11 +21,11 @@
 			(story) => {
 				//import('@monorepo-private/css--reset')
 				//import('@monorepo-private/css--foundation')
-				import('@monorepo-private/css--framework')
+				import("@monorepo-private/css--framework")
 				//import('@monorepo-private/css--utils--diagnostics/src/debug/index.css')
 				//import('@monorepo-private/css--utils--diagnostics/src/diagnostics/index.css')
 				return story
-			}
-		]
+			},
+		],
 	})
 </script>

@@ -12,7 +12,7 @@
 		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
 		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
 		"check": "run-s check:ts",
-		"check:ts": "echo \"@monorepo-private/react--hyperspace\" && tsc --noEmit",
+		"check:ts": "echo \"@monorepo-private/react--fake-inset\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
 		"stories": "npm-run-all clean --parallel _start:storypad--vite",
@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
-		"@monorepo-private/ts--types--hypermedia": "workspace:*"
+		"@monorepo-private/page-loaded": "workspace:*"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",

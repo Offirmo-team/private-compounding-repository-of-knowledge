@@ -3,17 +3,16 @@ import {
 	demo_logger_api,
 	demo_devtools_fonts,
 	demo_error,
-} from '../../../2-foundation/practical-logger-core/doc/shared-demo'
-
+} from "../../../2-foundation/practical-logger-core/doc/shared-demo"
 
 export function demo_UDAPI({ exposeInternal, overrideHook, addDebugCommand }) {
-	addDebugCommand('demo_logger', demo_logger_api)
+	addDebugCommand("demo_logger", demo_logger_api)
 
-	exposeInternal('foo.bar.baz', 42)
+	exposeInternal("foo.bar.baz", 42)
 
-	console.log('some value =', overrideHook('some-value', 'some default'))
+	console.log("some value =", overrideHook("some-value", "some default"))
 
-	console.log('API =', { ...window._debug.v1 })
+	console.log("API =", { ...window._debug.v1 })
 }
 
 export function demo_full(api) {

@@ -9,10 +9,16 @@
 		".": "./module/src/index.ts"
 	},
 	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"_start:sandbox--parcel": "parcel serve module/##sandbox/demo-web/index.html --port 1981 --lazy --no-autoinstall",
+		"_start:sandbox--vite": "vite --port 1981 --strictPort --logLevel info --open module/##sandbox/demo-web/index.html",
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@monorepo-private/universal-debug-api--placeholder\" && tsc --noEmit",
-		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/src/##doc/demo.ts",
-		"dev": "run-s  watch:check:ts",
+		"clean": "npm-run-all _clean--pkg",
+		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##doc/demo.ts",
+		"dev": "run-s clean watch:check:ts",
+		"sandbox": "npm-run-all clean --parallel _start:sandbox--vite",
+		"sandboxp": "npm-run-all clean --parallel _start:sandbox--parcel",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -23,7 +29,10 @@
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/parcel-config": "workspace:*",
+		"@monorepo-private/practical-logger--core": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
 		"@types/sinon": "catalog:",
@@ -33,6 +42,7 @@
 		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
+		"vite": "catalog:",
 		"vitest": "catalog:"
 	},
 	"peerDependencies": {

@@ -1,14 +1,12 @@
-import path from 'node:path'
-import fs from 'node:fs'
+import fs from "node:fs"
+import path from "node:path"
 
-import globby from 'globby'
+import globby from "globby"
 
 /**
- * Discovers workspace package directories using the exact same algorithm
- * and library as bolt's `Project.getPackages()` — glob patterns from
- * `bolt.workspaces` are expanded via globby, filtered to directories
- * containing a `package.json`, and returned as sorted, deduplicated
- * relative paths.
+ * Discovers workspace package directories using the exact same algorithm and library as bolt's `Project.getPackages()`
+ * — glob patterns from `bolt.workspaces` are expanded via globby, filtered to directories containing a `package.json`,
+ * and returned as sorted, deduplicated relative paths.
  *
  * @see https://github.com/boltpkg/bolt/blob/master/src/Project.js — getPackages()
  * @see https://github.com/boltpkg/bolt/blob/master/src/utils/globs.js — findWorkspaces()
@@ -19,7 +17,7 @@ export async function findWorkspacePackages(workspaceRoot: string, patterns: str
 	})
 
 	const packageDirs = matchedPaths.filter((p) => {
-		const packageJsonPath = path.join(workspaceRoot, p, 'package.json')
+		const packageJsonPath = path.join(workspaceRoot, p, "package.json")
 		return fs.existsSync(packageJsonPath)
 	})
 

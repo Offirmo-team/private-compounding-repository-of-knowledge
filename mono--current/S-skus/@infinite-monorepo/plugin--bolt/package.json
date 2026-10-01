@@ -21,6 +21,7 @@
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/fs--ls": "workspace:*",
 		"@monorepo-private/utils--error": "workspace:*",
+		"globby": "catalog:",
 		"semver": "catalog:"
 	},
 	"devDependencies": {

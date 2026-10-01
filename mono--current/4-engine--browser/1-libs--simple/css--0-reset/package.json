@@ -10,12 +10,16 @@
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"_start:sandbox--parcel": "parcel serve module/##sandbox/ut-elements.html --port 1981 --lazy --no-autoinstall",
+		"_start:sandbox--vite": "vite --port 1981 --strictPort --logLevel info --open module/##sandbox/ut-elements.html",
 		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
 		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@monorepo-private/css--reset\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
+		"sandbox": "npm-run-all clean --parallel _start:sandbox--vite",
+		"sandboxp": "npm-run-all clean --parallel _start:sandbox--parcel",
 		"stories": "npm-run-all clean --parallel _start:storypad--vite",
 		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
 		"watch:check:ts": "tsc --noEmit --watch"

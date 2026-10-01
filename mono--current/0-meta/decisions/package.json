@@ -1,0 +1,11 @@
+{
+	"name": "@monorepo-private/decisions",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/reference-viewports.js"
+	},
+	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+}

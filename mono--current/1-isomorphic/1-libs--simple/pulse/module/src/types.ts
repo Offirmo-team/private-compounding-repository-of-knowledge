@@ -1,7 +1,8 @@
-import assert from 'tiny-invariant'
-import type { Immutable } from '@monorepo-private/ts--types'
+import assert from "tiny-invariant"
 
-import {  } from './types.js'
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import {} from "./types.js"
 
 /////////////////////////////////////////////////
 
@@ -9,7 +10,7 @@ type Callback = (tms: number, id?: string) => void
 
 interface PulseOptions {
 	visual: boolean // means that we don't need pulse if app is not visible
-	cloud: boolean  // means that we don't need pulse if app is no network
+	cloud: boolean // means that we don't need pulse if app is no network
 
 	ideal_period‿ms: number // BEST EFFORT since will be sampled from requestAnimationFrame anyway
 }
@@ -37,11 +38,6 @@ interface State {
 	last_activity_check‿tms: number
 }
 
-
 /////////////////////////////////////////////////
 
-export {
-	type Callback,
-	type PulseOptions,
-	type State,
-}
+export { type Callback, type PulseOptions, type State }
