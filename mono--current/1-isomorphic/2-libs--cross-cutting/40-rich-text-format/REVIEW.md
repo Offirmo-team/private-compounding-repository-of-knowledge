@@ -41,13 +41,12 @@ package and was reviewed in full.
   `isꓽNode({ $type: "banana", $content: "hello" })` is `false`. I verified by direct invocation that this rejection is
   actually triggered by `assertꓽNodeInvariants()`'s block/inline shape check (`guards.ts:119`) — because `"banana"` is
   not in the known "inline" type list, `getꓽdisplay_type()` defaults it to `"block"`, and a string `$content` then fails
-  the "block nodes
-  $content must have a block shape" precondition — which fires *before* `assertꓽNode()`'s actual `$type`-enum validation (`guards.ts:155-158`) is ever reached. With array-shaped content (`{
-  $type: "banana", $content: ["hello"]
-  }`), the enum check does fire and also correctly rejects — but that variant isn't the one under test. So the named "bug" (accepting an invalid `$type`)
-  is not actually exercised by this specific regression test; it happens to pass for an unrelated reason. Low severity
-  since the guard's real-world behavior is correct either way, but the test's documentation value is weaker than its
-  title suggests.
+  the "block nodes $content must have a block shape" precondition — which fires _before_ `assertꓽNode()`'s actual
+  `$type`-enum validation (`guards.ts:155-158`) is ever reached. With array-shaped content
+  (`{ $type: "banana", $content: ["hello"] }`), the enum check does fire and also correctly rejects — but that variant
+  isn't the one under test. So the named "bug" (accepting an invalid `$type`) is not actually exercised by this specific
+  regression test; it happens to pass for an unrelated reason. Low severity since the guard's real-world behavior is
+  correct either way, but the test's documentation value is weaker than its title suggests.
 
 - **G3-P7-05 (Nit — unused import)**: `module/src/l2-sugar/builder.ts` imports `hasꓽemoji` from
   `@monorepo-private/type-detection` (line 4) but it is only referenced inside a commented-out block

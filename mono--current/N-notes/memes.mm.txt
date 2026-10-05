@@ -1204,7 +1204,7 @@ parenting -- https://en.wikipedia.org/wiki/Social_stratification
 parenting overparenting https://en.wikipedia.org/wiki/Helicopter_parent
 Pareto
 Pareto efficiency
-Parkinson’s Law: Work expands to fill the time available. People don’t want to look like they’re lazy, so they find extra tasks to tackle, even if they’re trivial. If you have six months to complete a project, it will take six months to complete. Set deadlines accordingly.
+Parkinson’s Law = Work expands to fill the time available. People don’t want to look like they’re lazy, so they find extra tasks to tackle, even if they’re trivial. If you have six months to complete a project, it will take six months to complete. Set deadlines accordingly.
 passing your legos
 passive aggressive
 pattern / antipattern

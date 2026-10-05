@@ -18,8 +18,10 @@ planned set).
   help anyone writing a new renderer.
 
 - **G3-P8-02 (Minor — empty test file / no test for `common.ts`)**: `module/src/common.tests.ts` contains only
-  `describe(`${LIB} -- common`, () => {})` — an empty suite, no actual test cases. Meanwhile `common.ts` exports two real functions: `isꓽlink()` (untested) and `getꓽcontent‿nodes_list()` (untested directly, though exercised indirectly through `walk.tests.ts`/`to-text/index.tests.ts`). `isꓽlink()` in particular — a one-line `!!$node.$hints.href`
-  check — has no direct coverage.
+  `describe(`${LIB} -- common`, () => {})` — an empty suite, no actual test cases. Meanwhile `common.ts` exports two
+  real functions: `isꓽlink()` (untested) and `getꓽcontent‿nodes_list()` (untested directly, though exercised indirectly
+  through `walk.tests.ts`/`to-text/index.tests.ts`). `isꓽlink()` in particular — a one-line `!!$node.$hints.href` check
+  — has no direct coverage.
 
 - **G3-P8-03 (Minor — commented-out/unimplemented filter feature, silently dropped)**: `walk.ts`'s
   `_walkꓽStringWithRefs()` handles the `⎨⎨key|filter1|filter2⎬⎬` filter syntax by doing

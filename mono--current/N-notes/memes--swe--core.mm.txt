@@ -319,7 +319,12 @@ data -- hydration
 data -- insert
 data -- lake
 data -- lineage tracking = who created it, transformed it, enriched it...
-data -- parse-dont-validate = avoiding validation functions and encoding invariants in the type level instead (can be heavy on the type system + not always doable) https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/
+data -- parse, don't validate = avoiding validation functions and encoding invariants in the type level instead (can be heavy on the type system + not always doable) https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/
+data -- parser -- at boundary -- tradeoff = parsing everything up front sometimes requires values be parsed long before they are actually used
+data -- parser -- at boundary = discharging checks on input up-front, right on the boundary between a program and the outside world, and once those checks have been performed, they never need to be checked again  https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+data -- parser -- failure = some values in the domain do not correspond to any value in the range, so all parsers must have some notion of failure https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
+data -- parser -- shotgun parsing = a programming antipattern whereby parsing and input-validating code is mixed with and spread across processing code—throwing a cloud of checks at the input, and hoping, without any systematic justification, that one or another would catch all the “bad” cases
+data -- parser = a function that consumes less-structured input and produces more-structured output https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
 data -- privacy
 data -- re-extraction = of vx.y.z
 data -- semi-structured = markdown, html, microformats
