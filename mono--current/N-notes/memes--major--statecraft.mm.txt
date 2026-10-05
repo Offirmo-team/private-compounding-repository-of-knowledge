@@ -1,6 +1,7 @@
 "a short war would settle everything" WW1
 "the lights of Europe still trace the paths of ancient Roman roads" https://x.com/ccatalini/status/1983588222921023552
 #metoo
+/acc -- eu = https://eu-acc.com/
 1751-06-24 start of globalization with the founding of Manilla https://mail.blockworks.com/p/hard-money-is-bad-money
 1856 LLC "limited liability corporation" = is the greatest single discovery of modern times “Even steam and electricity are far less important than the limited liability corporation” https://blockworks.co/news/uniswap-duna-decentralization
 1969 Apollo on the Moon https://www.flickr.com/photos/projectapolloarchive/
@@ -22,6 +23,7 @@ bateau https://en.wikipedia.org/wiki/File:Uluburun1.jpg
 bateau https://en.wikipedia.org/wiki/List_of_surviving_ancient_ships
 big companies / balance of power / democracy
 biodiversity damage = https://www.oxfordmartin.ox.ac.uk/news/beef-and-dairy-drive-41-of-biodiversity-damage-linked-to-global-farmland
+bipolarity / unipolarity / multipolarity https://en.wikipedia.org/wiki/Hegemony
 bourgeoisie
 bourgeoisie -- sous &&
 brain drain https://en.wikipedia.org/wiki/Brain_drain
@@ -48,6 +50,7 @@ case studies -- Taylor Farms = how one company's reach became a national risk ht
 China / multi-power
 citizenship -- acquisition
 citizenship -- revocation = https://thewalrus.ca/canada-gave-them-citizenship-then-changed-its-mind/
+civic hygiene = don't build technologies that could someday be used to facilitate a police state https://shkspr.mobi/blog/2013/11/civic-hygiene/
 class -- high -- new money
 class -- high -- old money
 class -- low
@@ -114,9 +117,12 @@ geopolitics -- client state -- self-governing colony
 geopolitics -- client state -- tributary state https://en.wikipedia.org/wiki/Tributary_state
 geopolitics -- client state -- vassal state
 geopolitics -- client state = https://en.wikipedia.org/wiki/Client_state
-geopolitics -- hegemon -- anti-hegemonic resistance
-geopolitics -- hegemon -- cultural https://en.wikipedia.org/wiki/Cultural_hegemony
-geopolitics -- hegemon https://en.wikipedia.org/wiki/Hegemony
+geopolitics -- hegemony -- 3rd-way
+geopolitics -- hegemony -- anti-hegemonic resistance
+geopolitics -- hegemony -- cultural https://en.wikipedia.org/wiki/Cultural_hegemony
+geopolitics -- hegemony -- peaceful
+geopolitics -- hegemony -- violent
+geopolitics -- hegemony https://en.wikipedia.org/wiki/Hegemony
 geopolitics -- imperialism
 geopolitics -- imperialism -- cultural
 geopolitics -- tribute -- tributary system https://en.wikipedia.org/wiki/Tributary_system_of_China
@@ -199,6 +205,7 @@ natural resource -- depletion
 natural resource https://en.wikipedia.org/wiki/Natural_resource
 numeral system https://en.wikipedia.org/wiki/Positional_notation
 O-ring theory of economic development https://en.wikipedia.org/wiki/O-ring_theory_of_economic_development
+peaceful transition of power = from a leadership to another, e.g. election, independance... https://en.wikipedia.org/wiki/Peaceful_transition_of_power
 pollution -- 12xx https://en.wikipedia.org/wiki/Pea_soup_fog
 population renewal
 potholes = https://thewalrus.ca/montreal-potholes/
@@ -252,6 +259,7 @@ survival on six distinct time scales = individual -> family -> tribe/nation -> c
 suzerainty
 Systems of National Significance = Treasury, the Reserve Bank of Australia and the stewards of the country’s critical infrastructure assets...
 tax https://mail.blockworks.com/p/hard-money-is-bad-money
+The American Yawp = constructs a coherent and accessible narrative from all the best of recent historical scholarship https://www.americanyawp.com/reader.html
 The elements of Euclide https://c82.net/euclid/
 touchstone https://en.wikipedia.org/wiki/Touchstone_(assaying_tool)
 uplift

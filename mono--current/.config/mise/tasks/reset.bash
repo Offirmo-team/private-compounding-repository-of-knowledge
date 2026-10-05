@@ -10,17 +10,14 @@ echo "Executing task ${MISE_TASK_NAME:-$(basename "${BASH_SOURCE[0]}" .bash)}...
 ## env files
 echo "↳ cleaning..."
 find . -type f \( \
-           -name .env \
-        -o -name '.env.*' \
-        -o -name .dev.vars \
-        -o -name .test.vars \
-        \) \
-    -exec rm -f {} +
+		   -name .env \
+		-o -name '.env.*' \
+		-o -name .dev.vars \
+		-o -name .test.vars \
+		\) \
+	-exec rm -f {} +
 
 
-## local feature flags
-echo "↳ cleaning..."
-rm -f config/ldcli/state/dev_server.db
 
 
 echo ""

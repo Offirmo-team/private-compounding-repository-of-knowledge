@@ -6,7 +6,7 @@ const plugins: Record<string, Plugin> = {
 	pluginꓽtosort,
 
 	pluginꓽaiᝍᝍagentsᝍᝍcoding,
-	pluginꓽbolt,
+	//pluginꓽbolt,
 	pluginꓽchangelog,
 	pluginꓽeditorconfig,
 	pluginꓽgit,
@@ -463,7 +463,7 @@ import type { PureModuleDetails } from "@infinite-monorepo/package-details"
 import * as PkgDetailsLib from "@infinite-monorepo/package-details"
 import { updateⵧfrom_files } from "@infinite-monorepo/pkg-analyzer"
 import pluginꓽaiᝍᝍagentsᝍᝍcoding from "@infinite-monorepo/plugin--ai--agents--coding"
-import pluginꓽbolt from "@infinite-monorepo/plugin--bolt"
+//import pluginꓽbolt from "@infinite-monorepo/plugin--bolt"
 import pluginꓽchangelog from "@infinite-monorepo/plugin--changelog"
 import pluginꓽeditorconfig from "@infinite-monorepo/plugin--editorconfig"
 import pluginꓽgit from "@infinite-monorepo/plugin--git"

@@ -1,20 +1,19 @@
 /**
- * IF NOT PRESENT Add fake inset to the viewport to simulate a notch and/or a bottom bar useful for TESTING, should not
+ * IF NOT PRESENT Add fake inset to the viewport to simulate a notch and/or a bottom bar. Useful for TESTING, should not
  * happen in prod!
  */
 
 /////////////////////////////////////////////////
+const DEBUG = false
 
 const CORNER‿px = 40
 const CORNER = `${CORNER‿px}px`
 const NOTCH_HEIGHT = `${CORNER‿px * 0.9}px`
 const NOTCH_BORDER_RADIUS = `${CORNER‿px * 0.9 * 0.75}px`
-let globalⳇhasꓽinset: boolean | undefined = undefined
-let globalⳇhasꓽfold: boolean | undefined = undefined
-let globalⳇhasꓽtitlebar: boolean | undefined = undefined
-let globalⳇhasꓽscreen_geometry: boolean | undefined = undefined // geometry bc. can have insets OR fold OR titlebar
-const DEBUG = true
+const NAME = "<FakeInset>"
 
+// Important
+// should be inserted high in the chain since using o⋄full-viewport
 export function FakeInset() {
 	return (
 		<Suspense fallback={null}>
@@ -22,104 +21,46 @@ export function FakeInset() {
 		</Suspense>
 	)
 }
+export default FakeInset
+
+/////////////////////////////////////////////////
 
 function FakeInsetⵧloaded() {
-	const NAME = "<FakeInset>"
 	// viewport sizing is not always available before the page is loaded
 	use(ೱᐧpage_loaded)
+	DEBUG && console.log(`${NAME} render...`)
 
-	const [hasꓽscreen_geometry, setꓽhasꓽscreen_geometry] = useState<boolean | undefined>(globalⳇhasꓽscreen_geometry)
-	DEBUG &&
-		console.log(`${NAME} render...`, {
-			globalⳇhasꓽinset,
-			globalⳇhasꓽfold,
-			globalⳇhasꓽtitlebar,
-			globalⳇhasꓽscreen_geometry,
-			hasꓽscreen_geometry,
-		})
-
-	const computed_styles = getComputedStyle(document.documentElement)
-	const currentInsetTop = computed_styles.getPropertyValue("--safe-area-inset-top")
-	if (String(currentInsetTop) === "") {
-		// we need Offirmo CSS framework to be loaded
-		return null
-	}
-
-	if (globalⳇhasꓽscreen_geometry === undefined) {
-		// first execution of this!
-		const data = (() => {
-			const raw = {
-				safe_area_inset__top: computed_styles.getPropertyValue("--safe-area-inset-top"),
-				safe_area_inset__bottom: computed_styles.getPropertyValue("--safe-area-inset-bottom"),
-				safe_area_inset__left: computed_styles.getPropertyValue("--safe-area-inset-left"),
-				safe_area_inset__right: computed_styles.getPropertyValue("--safe-area-inset-right"),
-
-				fold__top: computed_styles.getPropertyValue("--fold-top"),
-				fold__bottom: computed_styles.getPropertyValue("--fold-bottom"),
-				fold__left: computed_styles.getPropertyValue("--fold-left"),
-				fold__right: computed_styles.getPropertyValue("--fold-right"),
-
-				titlebar_area__x: computed_styles.getPropertyValue("--titlebar-area-x"),
-				titlebar_area__y: computed_styles.getPropertyValue("--titlebar-area-y"),
-				titlebar_area__width: computed_styles.getPropertyValue("--titlebar-area-width"),
-				titlebar_area__height: computed_styles.getPropertyValue("--titlebar-area-height"),
-			}
-			return Object.fromEntries(
-				Object.entries(raw).map(([key, value]) => [key, normalizeꓽcss_value(value)]),
-			) as Record<keyof typeof raw, string>
-		})()
-		DEBUG && console.log(`${NAME} render... 1st exec! Detecting initial screen geometry...`, data)
-
-		// the variable is set, we can now check if we naturally have an inset
-		globalⳇhasꓽinset =
-			data.safe_area_inset__top !== "0px" ||
-			data.safe_area_inset__bottom !== "0px" ||
-			data.safe_area_inset__left !== "0px" ||
-			data.safe_area_inset__right !== "0px"
-
-		globalⳇhasꓽfold =
-			data.fold__top !== "0px" ||
-			data.fold__bottom !== "0px" ||
-			data.fold__left !== "0px" ||
-			data.fold__right !== "0px"
-
-		globalⳇhasꓽtitlebar =
-			data.titlebar_area__x !== "0px" ||
-			data.titlebar_area__y !== "0px" ||
-			data.titlebar_area__width !== "0px" ||
-			data.titlebar_area__height !== "0px"
-
-		globalⳇhasꓽscreen_geometry = globalⳇhasꓽinset || globalⳇhasꓽfold || globalⳇhasꓽtitlebar // means it's intentionally desktop with titlebar activated = we don't want to fake an inset
-
+	const hasꓽgeometry_css_vars = use(getꓽೱᐧhasꓽgeometry_css_vars())
+	if (!hasꓽgeometry_css_vars) {
 		DEBUG &&
-			console.log(`${NAME} detected:`, {
-				globalⳇhasꓽinset,
-				globalⳇhasꓽfold,
-				globalⳇhasꓽtitlebar,
-			})
-
-		if (globalⳇhasꓽscreen_geometry) {
-			console.log(`🖼️ ${NAME}: screen already has funny geometry, not faking inset.`)
-		} else {
-			console.log(`🖼️ ${NAME}: plain screen detected: faking an inset!`)
-
-			// TODO better fake one depending on the device orientation
-			document.documentElement.style.setProperty(
-				"--safe-area-inset-top",
-				"47px", // iphone 14
-			)
-			document.documentElement.style.setProperty(
-				"--safe-area-inset-bottom",
-				"34px", // iPhone 14
-			)
-		}
-		setꓽhasꓽscreen_geometry(globalⳇhasꓽscreen_geometry)
-	}
-
-	if (globalⳇhasꓽscreen_geometry) {
-		// nothing to do
+			console.log(`${NAME} bailing out: missing geometry CSS vars (usually provided by the Offirmo CSS framework)`)
 		return null
 	}
+
+	const { hasꓽinset, hasꓽfold, hasꓽtitlebar } = getꓽscreen_geometry()
+	// hasꓽtitlebar means it's intentionally desktop with titlebar activated = we don't want to fake an inset
+	if (hasꓽinset || hasꓽfold || hasꓽtitlebar) {
+		DEBUG && console.log(`🖼️ ${NAME} bailing out: screen already has funny geometry.`)
+		return null
+	}
+
+	return <FakeInsetⵧoverlay />
+}
+
+function FakeInsetⵧoverlay() {
+	useEffect(() => {
+		console.log(`🖼️ ${NAME}: plain rectangular viewport detected => faking an inset`)
+
+		// TODO 1 D better fake one depending on the device orientation
+		const { style } = document.documentElement
+		style.setProperty("--safe-area-inset-top", "47px") // iPhone 14
+		style.setProperty("--safe-area-inset-bottom", "34px") // iPhone 14
+
+		return () => {
+			style.removeProperty("--safe-area-inset-top")
+			style.removeProperty("--safe-area-inset-bottom")
+		}
+	}, [])
 
 	return (
 		<div debug-id={NAME} key={NAME} className={"o⋄full-viewport"} style={{ pointerEvents: "none" }}>
@@ -221,7 +162,89 @@ function FakeInsetⵧloaded() {
 		</div>
 	)
 }
-export default FakeInset
+
+/////////////////////////////////////////////////
+
+// geometry bc. can have insets AND/OR fold AND/OR titlebar
+interface ScreenGeometry {
+	hasꓽinset: boolean
+	hasꓽfold: boolean
+	hasꓽtitlebar: boolean
+}
+
+// cached at module level: use() needs a stable promise across renders
+// NOT async: an async function would wrap the cached promise into a new one on every call
+let globalⳇೱᐧhasꓽgeometry_css_vars: Promise<boolean> | undefined = undefined
+function getꓽೱᐧhasꓽgeometry_css_vars(): Promise<boolean> {
+	globalⳇೱᐧhasꓽgeometry_css_vars ??= poll(
+		() => getComputedStyle(document.documentElement).getPropertyValue("--safe-area-inset-top").trim() !== "",
+		{
+			periodMs: 500,
+			timeoutMs: 5_000,
+			debugId: "FakeInset waiting for geometry CSS vars",
+		},
+	).then(
+		() => true,
+		() => false,
+	)
+	return globalⳇೱᐧhasꓽgeometry_css_vars
+}
+
+// cached at module level: must be detected BEFORE we fake an inset, which would otherwise be detected as a natural one
+let globalⳇscreen_geometry: ScreenGeometry | undefined = undefined
+function getꓽscreen_geometry(): ScreenGeometry {
+	globalⳇscreen_geometry ??= detectꓽscreen_geometry(getComputedStyle(document.documentElement))
+	return globalⳇscreen_geometry
+}
+
+function detectꓽscreen_geometry(computed_styles: CSSStyleDeclaration): ScreenGeometry {
+	const data = (() => {
+		const raw = {
+			safe_area_inset__top: computed_styles.getPropertyValue("--safe-area-inset-top"),
+			safe_area_inset__bottom: computed_styles.getPropertyValue("--safe-area-inset-bottom"),
+			safe_area_inset__left: computed_styles.getPropertyValue("--safe-area-inset-left"),
+			safe_area_inset__right: computed_styles.getPropertyValue("--safe-area-inset-right"),
+
+			fold__top: computed_styles.getPropertyValue("--fold-top"),
+			fold__bottom: computed_styles.getPropertyValue("--fold-bottom"),
+			fold__left: computed_styles.getPropertyValue("--fold-left"),
+			fold__right: computed_styles.getPropertyValue("--fold-right"),
+
+			titlebar_area__x: computed_styles.getPropertyValue("--titlebar-area-x"),
+			titlebar_area__y: computed_styles.getPropertyValue("--titlebar-area-y"),
+			titlebar_area__width: computed_styles.getPropertyValue("--titlebar-area-width"),
+			titlebar_area__height: computed_styles.getPropertyValue("--titlebar-area-height"),
+		}
+		return Object.fromEntries(Object.entries(raw).map(([key, value]) => [key, normalizeꓽcss_value(value)])) as Record<
+			keyof typeof raw,
+			string
+		>
+	})()
+	DEBUG && console.log(`${NAME} detecting initial screen geometry...`, data)
+
+	const screen_geometry: ScreenGeometry = {
+		hasꓽinset:
+			data.safe_area_inset__top !== "0px" ||
+			data.safe_area_inset__bottom !== "0px" ||
+			data.safe_area_inset__left !== "0px" ||
+			data.safe_area_inset__right !== "0px",
+
+		hasꓽfold:
+			data.fold__top !== "0px" ||
+			data.fold__bottom !== "0px" ||
+			data.fold__left !== "0px" ||
+			data.fold__right !== "0px",
+
+		hasꓽtitlebar:
+			data.titlebar_area__x !== "0px" ||
+			data.titlebar_area__y !== "0px" ||
+			data.titlebar_area__width !== "0px" ||
+			data.titlebar_area__height !== "0px",
+	}
+	DEBUG && console.log(`${NAME} detected:`, screen_geometry)
+
+	return screen_geometry
+}
 
 function normalizeꓽcss_value(raw: string): string {
 	const value = raw.trim()
@@ -231,6 +254,7 @@ function normalizeꓽcss_value(raw: string): string {
 
 /////////////////////////////////////////////////
 
-import { Suspense, use, useState } from "react"
+import { Suspense, use, useEffect } from "react"
 
 import { ೱᐧpage_loaded } from "@monorepo-private/page-loaded"
+import { poll } from "@monorepo-private/poll"

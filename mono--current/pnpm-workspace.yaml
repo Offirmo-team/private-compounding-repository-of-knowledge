@@ -3,11 +3,10 @@ allowBuilds:
    fetch-mock: false
 autoInstallPeers: false
 catalog:
-   "@earendil-works/pi-tui": ^1
+   "@earendil-works/pi-tui": ^0.87
    "@nodelib/fs.walk": ^3
    "@parcel/plugin": ^2
    "@pnpm/constants": ^1102
-   "@storybook/react": ^10
    "@tsconfig/node-ts": ^23
    "@tsconfig/node24": ^24
    "@tsconfig/strictest": ^2
@@ -27,7 +26,6 @@ catalog:
    "@types/react-dom": ^19
    "@types/semver": ^7
    "@types/sinon": ^22
-   "@types/storybook__react": ^5
    "@vitejs/plugin-react": ^6
    bowser: ^2
    chai: ^6
@@ -42,7 +40,6 @@ catalog:
    emittery: ^2
    fraction.js: ^4
    gitignore-fs: ^2
-   globby: ^16
    icepick: ^2
    json5: ^2
    jsondiffpatch: ^0.7

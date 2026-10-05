@@ -185,6 +185,14 @@ html:not([lang]) body /* lang is important for some CSS features to work, ex. "h
 	outline: 5px dashed var(--o⋄color⁚diagnostics--broken) !important;
 }
 
+/* separate rule: an unsupported :has() would invalidate the whole selector list above
+ * utf-8 is the only valid value https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-charset
+ * NOTE: only checks the DOM, can't tell if the declaration is effective (must be in the 1st 1024 bytes of the HTML source)
+ */
+html:not(:has(meta[charset="utf-8" i], meta[http-equiv="content-type" i][content*="charset=utf-8" i])) body {
+	outline: 5px dashed var(--o⋄color⁚diagnostics--broken) !important;
+}
+
 /************ SECURITY ************/
 
 iframe:not([sandbox]),

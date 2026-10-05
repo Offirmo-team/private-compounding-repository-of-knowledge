@@ -5,6 +5,7 @@ import { type ProfilerOnRenderCallback } from "react"
 
 import type { Immutable } from "@monorepo-private/ts--types"
 
+import FakeInset from "../../../../../__vendor/@monorepo-private/react--fake-inset"
 import { LIB } from "../../../../../consts"
 import type { RenderParamsWithComponent, StoryContext } from "../../../../../l0-types/l1-csf"
 import type { Meta‿v3, Story‿v3 } from "../../../../../l0-types/l1-csf/v3"
@@ -67,7 +68,12 @@ async function render(
 	// TODO error boundary
 	root.render(
 		<StrictWrapper>
-			<Suspense fallback="suspense…">
+			{
+				render_params.parameters.layout === "fullscreen" && (
+					<FakeInset />
+				) /* reminder: needs geometry CSS vars = ~offirmo framework */
+			}
+			<Suspense fallback="<Suspense… />">
 				<Profiler id="storypad-story" onRender={onRender}>
 					<StoryAsReactComponent />
 				</Profiler>

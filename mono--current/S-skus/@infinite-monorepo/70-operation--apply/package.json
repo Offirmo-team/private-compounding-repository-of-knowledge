@@ -17,7 +17,6 @@
 		"@infinite-monorepo/package-details": "workspace:*",
 		"@infinite-monorepo/pkg-analyzer": "workspace:*",
 		"@infinite-monorepo/plugin--ai--agents--coding": "workspace:*",
-		"@infinite-monorepo/plugin--bolt": "workspace:*",
 		"@infinite-monorepo/plugin--changelog": "workspace:*",
 		"@infinite-monorepo/plugin--editorconfig": "workspace:*",
 		"@infinite-monorepo/plugin--git": "workspace:*",

@@ -1,5 +1,3 @@
-import { ErrorBoundary } from "./index.tsx"
-
 /////////////////////////////////////////////////
 
 export default {}
@@ -29,13 +27,13 @@ export const Strings = {
 export const Component = {
 	render: () => (
 		<ErrorBoundary name={"demo"}>
-			<SubComponent />
+			<ComponentThatThrows />
 		</ErrorBoundary>
 	),
 }
 
 /////////////////////////////////////////////////
 
-function SubComponent(props: React.PropsWithChildren) {
-	return <div>I may crash 😈</div>
-}
+import { ComponentThatThrows } from "../__fixtures/component-that-throws.tsx"
+
+import { ErrorBoundary } from "./index.tsx"

@@ -1,3 +1,15 @@
+# React Error Boundary
+
+A shared
+[React error boundary](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)
+with extra features.
+
+Important:
+
+- An error boundary is not trivial: please use this one instead of popping new inline implementations
+- Error boundaries do NOT catch all frontend errors: only a certain subset visible to React (see below)
+- Complementary read: https://legacy.reactjs.org/docs/error-boundaries.html
+
 Based on [render-props](https://github.com/donavon/render-props) to allow any type of usage:
 
 ```tsx
@@ -44,5 +56,5 @@ const View = ({x}) => (
 </ErrorBoundary>
 ```
 
-TODO read https://www.developerway.com/posts/how-to-handle-errors-in-react TODO review other
-https://github.com/bvaughn/react-error-boundary/blob/master/src/ErrorBoundary.ts
+- TODO read https://www.developerway.com/posts/how-to-handle-errors-in-react
+- TODO review other https://github.com/bvaughn/react-error-boundary/blob/master/src/ErrorBoundary.ts

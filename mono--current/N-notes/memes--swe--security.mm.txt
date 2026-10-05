@@ -263,3 +263,4 @@ zero trust -- Network Access (ZTNA) https://www.cloudflare.com/learning/security
 zero-day = a vulnerability that attackers know about, and there is no patch available from the vendor
 ZK-SNARKs https://vitalik.eth.limo/general/2022/06/15/using_snarks.html
 zxcvbn = password strength estimation https://zxcvbn-ts.github.io/zxcvbn/
+who's who -- Bruce Schneier https://www.schneier.com/essays/

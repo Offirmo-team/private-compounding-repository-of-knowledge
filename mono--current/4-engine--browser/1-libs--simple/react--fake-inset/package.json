@@ -21,7 +21,8 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
-		"@monorepo-private/page-loaded": "workspace:*"
+		"@monorepo-private/page-loaded": "workspace:*",
+		"@monorepo-private/poll": "workspace:*"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",

@@ -3,9 +3,12 @@ GenAI solved one of the hard problems in computer science
 
 
 I told my compiler a joke about pointers... it just gave me a blank stare and said "I don't get the reference." 🤖
+
 Why did the React component refuse to leave the harbor? It kept getting stuck in an infinite re-render. 🌊
 
-Joke: why did the pirate's commit get rejected? Too many arrr-guments in the diff.
+why did the pirate's commit get rejected? Too many arrr-guments in the diff.
+
+why did the rebase go to therapy? Too many unresolved conflicts from its past.
 
 non-AI way to improve productivity
 
@@ -49,3 +52,10 @@ similar to https://www.joelotter.com/posts/2026/09/make-it-anyway/ about "creati
 review my whole git config from this repo tho user to system
 Flag any issue
 Make suggestions for better productivity
+
+
+
+
+* rebase, fix conflicts
+* open PRs
+* 

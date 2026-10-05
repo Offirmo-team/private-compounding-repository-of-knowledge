@@ -15,16 +15,16 @@ rm -rf out/
 ## common prepare/build ones:
 echo "↳ cleaning..."
 find . -type d \( \
-           -name dist \
-        -o -name .generated-types \
-        -o -name .next \
-        -o -name .prisma-client \
-        -o -name .react-router \
-        -o -name .turbo \
-        -o -name .vercel \
-    \) \
-    -prune \
-    -exec rm -rf {} +
+		   -name dist \
+		-o -name .generated-types \
+		-o -name .next \
+		-o -name .prisma-client \
+		-o -name .react-router \
+		-o -name .turbo \
+		-o -name .vercel \
+	\) \
+	-prune \
+	-exec rm -rf {} +
 
 
 ## then calls the individual packages dedicated clean scripts via turbo
@@ -37,21 +37,21 @@ echo "↳ cleaning..."
 ## we can clean stuff needed by pnpm/turbo
 echo "↳ cleaning..."
 find . -type d \( \
-           -name node_modules \
-        -o -name .turbo \
-    \) \
-    -prune \
-    -exec rm -rf {} +
+		   -name node_modules \
+		-o -name .turbo \
+	\) \
+	-prune \
+	-exec rm -rf {} +
 
 
 ## final stuff
 echo "↳ cleaning..."
 find . -type f \( \
-           -name "*.log" \
-        -o -name .DS_Store \
-    \) \
-    -prune \
-    -exec rm -f {} +
+		   -name "*.log" \
+		-o -name .DS_Store \
+	\) \
+	-prune \
+	-exec rm -f {} +
 
 
 

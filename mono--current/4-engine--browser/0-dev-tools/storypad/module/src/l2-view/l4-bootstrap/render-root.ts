@@ -20,9 +20,6 @@ function renderꓽroot(state: ObservableState, container: HTMLElement = document
 
 	// to avoid triggering css--utils--diagnostics
 	document.documentElement.setAttribute("lang", "en")
-	const metaTag = document.createElement("meta")
-	metaTag.setAttribute("charset", "utf-8")
-	document.head.appendChild(metaTag)
 
 	if (render_mode === RenderMode.story) {
 		// we want to "pollute" the current window as few as possible

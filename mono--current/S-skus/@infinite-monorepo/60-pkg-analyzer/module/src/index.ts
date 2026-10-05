@@ -350,8 +350,8 @@ export async function updateⵧfrom_files(
 	if (details.target === "browser" && details.hasꓽstories && !details.entrypointⵧstorypad) {
 		// auto-create storypad in the right place
 		const storypad__path = path.resolve(root‿abspath, "__fixtures", "storypad")
-		const storypad__content = `
-<!DOCTYPE html>
+		const storypad__content = `<!doctype html>
+<meta charset="utf-8" />
 
 <script type="module">
 	import startꓽstorypad from '@monorepo-private/storypad'
