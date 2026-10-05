@@ -26,7 +26,10 @@
 		"@monorepo-private/page-loaded": "workspace:*",
 		"@monorepo-private/react--background-img": "workspace:*",
 		"@monorepo-private/react--error-boundary": "workspace:*",
+		"@monorepo-private/state-utils": "workspace:*",
+		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/utils--async": "workspace:*",
+		"@tbrpg/state--energy": "workspace:*",
 		"react-dom": "catalog:"
 	},
 	"devDependencies": {
