@@ -1,21 +1,18 @@
-import { Enum } from "typescript-string-enums"
-
-import { type TimestampUTCMs } from "@monorepo-private/timestamps"
-import type { Immutable } from "@monorepo-private/ts--types"
-import { type XXError } from "@monorepo-private/utils--error"
-
 /////////////////////////////////////////////////
 // building blocks
 
 // critical for migrations
 export interface WithSchemaVersion {
-	schema_version: number
+	// NOTE: 0 is a fallback value when error
+	// so recommended to not start with 0 once released
+	// (0 is ok while throwaway / sandbox)
+	schema_version: PositiveInteger
 }
 
 // count of user-initiated *changes*
 // (should not increment if an action triggers no change)
 export interface WithRevision {
-	revision: number
+	revision: PositiveInteger
 }
 
 // time of last *user-initiated* *investment* (not activity)
@@ -41,10 +38,18 @@ export interface StateInfos extends WithSchemaVersion, WithRevision, WithLastUse
 // most basic building block, implemented by most states
 export interface BaseState extends WithSchemaVersion, WithRevision {}
 
-// more advanced state: which ONLY changes with user actions
+/** More advanced state: which ONLY changes with user actions */
 export interface BaseUState extends BaseState {}
 
-// more advanced state: which changes with BOTH user actions and elapsed time
+/**
+ * More advanced state: which changes with BOTH user actions and elapsed time
+ *
+ * "update_to_now" can be used to update/refresh it and is not a semantical change, thus doesn't need to be persisted
+ * (can be re-updated from last persist)
+ *
+ * Example: TBRPG energy. In theory, we could re-create it from full click history, but it's much simpler to remember
+ * energy at time T.
+ */
 export interface BaseTState extends BaseState, WithTimestamp {}
 
 // tuple of U+T State
@@ -61,7 +66,7 @@ export interface BaseRootState<
 
 	// unique identifier of the app using this state.
 	// Useful for dedicated checks/ops in common code.
-	// Prefixed with unicode to be put at the bottom, helps readability on ordered stringified.
+	// Prefixed with Unicode to be put at the bottom, helps readability on ordered stringified.
 	ⵙapp_id: string
 
 	u_state: U
@@ -100,6 +105,7 @@ export const GenericActionType = Enum(
 	"stdꓽerror", // generic serious error
 	// for serious abnormal errors harming user experience, ex. data loss, security
 	// It's up to the reducer to handle it properly (message etc.)
+	// TODO review
 )
 export type GenericActionType = Enum<typeof GenericActionType> // eslint-disable-line no-redeclare
 
@@ -119,3 +125,9 @@ export interface ActionReducer<State, Action extends BaseAction> {
 }
 
 /////////////////////////////////////////////////
+
+import { Enum } from "typescript-string-enums"
+
+import { type TimestampUTCMs } from "@monorepo-private/timestamps"
+import type { Immutable, PositiveInteger } from "@monorepo-private/ts--types"
+import { type XXError } from "@monorepo-private/utils--error"

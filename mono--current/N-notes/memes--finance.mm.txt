@@ -1,3 +1,4 @@
++++ The Hierarchy of Money https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/  https://news.ycombinator.com/item?id=49779253
 1992 sterling crisis "Black Wednesday" https://en.wikipedia.org/wiki/Black_Wednesday
 1999–2002 sale of British gold reserves https://en.wikipedia.org/wiki/1999%E2%80%932002_sale_of_British_gold_reserves
 2008 financial crisis https://en.wikipedia.org/wiki/2008_financial_crisis
@@ -25,6 +26,7 @@ banking
 banking -- reserve -- fractional / full https://en.wikipedia.org/wiki/Fractional-reserve_banking
 banking -- reserve -- requirement (legal)
 banknote
+banknotes design = https://www.ecb.europa.eu/euro/banknotes/future_banknotes/html/all-design-proposals.en.html
 blue sky law = state law in the United States that regulates the offering and sale of securities to protect the public from fraud https://en.wikipedia.org/wiki/Blue_sky_law
 bond https://en.wikipedia.org/wiki/Bond_(finance)
 borrowing
@@ -62,10 +64,11 @@ currency -- sign $ €
 currency -- standard = sub standard / high standard = less (weak) / more value (strong)
 currency = a system of money in common use within a specific environment over time, especially for people in a nation state https://en.wikipedia.org/wiki/Currency
 DCA "Dollar Cost Average"
+debt -- the first 5000 years = imprecise, informal, community-building indebtedness of "human economies" is only replaced by mathematically precise, firmly enforced debts through the introduction of violence, usually state-sponsored violence in some form of military or police https://en.wikipedia.org/wiki/Debt:_The_First_5,000_Years
 due diligence
 economic hardship
 economic order
-economics -- ecological ex. https://en.wikipedia.org/wiki/Ithaca_Hours
+economics -- ecological e.g. https://en.wikipedia.org/wiki/Ithaca_Hours
 economics -- ecological https://en.wikipedia.org/wiki/Ecological_economics
 economics https://en.wikipedia.org/wiki/Economics
 equity
@@ -108,7 +111,6 @@ funding -- stock exchange
 gold clause = clause on contracts to be paid in gold in case currency changes https://en.wikipedia.org/wiki/Gold_clause
 government -- budget deficit
 government -- fiscal austerity
-+++ The Hierarchy of Money https://gregorygundersen.com/blog/2026/09/20/hierarchy-of-money/  https://news.ycombinator.com/item?id=49779253
 government -- high public spending
 government confiscation = forced to give precious metal
 hedge fund = risky, no longer hedge https://www.investor.gov/introduction-investing/investing-basics/investment-products/private-investment-funds/hedge-funds
@@ -181,6 +183,7 @@ stock market
 stock market -- crash = https://en.wikipedia.org/wiki/Stock_market_crash
 tax loss harvesting https://en.wikipedia.org/wiki/Tax_loss_harvesting
 terminal value
+The Big Short = https://www.techspot.com/news/114065-big-short-investor-rooting-crash-stop-openai-anthropic.html
 tips = complicated https://www.bbc.com/news/articles/c4g36yze692o
 value
 value -- created internally = ex. fiat money since no backing value

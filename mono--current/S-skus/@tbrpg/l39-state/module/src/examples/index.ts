@@ -1,7 +1,7 @@
 import { type Armor } from "@tbrpg/logic--armors"
 import { type Weapon } from "@tbrpg/logic--weapons"
 
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { cleanup } from "../migrations/index.ts"
 import { getꓽSXC } from "../services/sxc.ts"

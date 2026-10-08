@@ -598,6 +598,7 @@ UI -- tooltip -- should not exist https://tkdodo.eu/blog/tooltip-components-shou
 UI -- transitions
 UI -- views
 UI = https://en.wikipedia.org/wiki/User_interface
+use the platform = https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/
 user -- agency = give them some slack/choice/affordance, ex. "interestingly, they still chose to use it as a two-step process for some of the questions, presumably to reduce cognitive load for difficult to answer questions by breaking down the decision into two smaller ones" https://lea.verou.me/blog/2024/context-chips/#what-worked-well%3A-context-chips
 User Agent Interface (UA) https://www.bram.us/2021/07/08/the-large-small-and-dynamic-viewports/#large-viewport
 user effort
@@ -634,6 +635,7 @@ UX -- patterns -- Spatial Web Browsing = Adding spatial affordances to the exper
 UX -- principle of least astonishment (POLA) = general principle in the design of all kinds of interfaces. It is based on the idea that human beings can only pay full attention to one thing at one time, leading to the conclusion that novelty should be minimized.
 UX -- principles and cognitive bias relevant https://growth.design/psychology
 UX -- properties https://en.wikipedia.org/wiki/User_interface#Types
+UX -- soul = not lifeless, bland, square, clean, regular
 UX -- surveys -- neutral option = allow or not? https://en.wikipedia.org/wiki/Likert_scale
 UX -- surveys = hard to get right
 UX -- types -- Batch = non-interactive user interfaces, where the user specifies all the details of the batch job in advance to batch processing, and receives the output when all the processing is done. The computer does not prompt for further input after the processing has started.

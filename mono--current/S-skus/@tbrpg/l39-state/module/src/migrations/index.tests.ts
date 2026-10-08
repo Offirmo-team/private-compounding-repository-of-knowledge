@@ -9,8 +9,8 @@ import * as InventoryState from "@tbrpg/state--inventory"
 import * as WalletState from "@tbrpg/state--wallet"
 import { expect } from "chai"
 
+import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { itㆍshouldㆍmigrateㆍcorrectly } from "@monorepo-private/state-migration-tester"
-import { enforceꓽimmutable } from "@monorepo-private/state-utils"
 
 import { LIB, SCHEMA_VERSION } from "../consts.ts"
 import { DEMO_STATE } from "../examples/index.ts"

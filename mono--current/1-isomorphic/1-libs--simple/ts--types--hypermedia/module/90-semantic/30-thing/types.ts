@@ -8,11 +8,13 @@ export interface Thing extends WithLang, WithTitle {
 
 	creator: Creator | undefined // undef = unknown
 
-	since‿y?: number // for copyright notice
+	since‿y?: Year // for copyright notice
 	urlⵧcanonical?: Url‿str // if digital
 }
 
 /////////////////////////////////////////////////
+
+import type { Year } from "@monorepo-private/ts--types"
 
 import type { ContentⳇCaption, WithLang, WithTitle } from "../../00-base/types.ts"
 import type { Url‿str } from "../../01-links/types.ts"

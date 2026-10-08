@@ -1,5 +1,9 @@
 /////////////////////////////////////////////////
 
+export type DurationMs = PositiveInteger
+
+/////////////////////////////////////////////////
+
 export type Year = Integer
 
 export type YYYY = `${DigitCharacter}${DigitCharacter}${DigitCharacter}${DigitCharacter}`
@@ -28,4 +32,4 @@ export type YYYYᝍMMᝍDD = `${string}-${string}-${string}`
 
 import type { DigitCharacter } from "type-fest"
 
-import type { Integer } from "../l1-arithmetic/index.ts"
+import type { Integer, PositiveInteger } from "../l1-arithmetic/index.ts"

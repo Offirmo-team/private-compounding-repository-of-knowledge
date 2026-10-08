@@ -13,7 +13,7 @@ export function ComponentThatThrows() {
 					})
 				}}
 			>
-				💣 setState(new Error())
+				💣 throw new Error() during a setState()
 			</button>
 
 			<button
@@ -23,7 +23,7 @@ export function ComponentThatThrows() {
 					})
 				}}
 			>
-				💣 setState(string)
+				💣 throw string during a setState()
 			</button>
 
 			<button
@@ -31,7 +31,15 @@ export function ComponentThatThrows() {
 					throw new Error("Foo!")
 				}}
 			>
-				💣 direct (not caught by ErrorBoundary)
+				💣 throw directly (NOT caught by ErrorBoundary)
+			</button>
+
+			<button
+				onClick={() => {
+					throw new Error("Foo!")
+				}}
+			>
+				💣 TODO 1D throw through SXC
 			</button>
 		</>
 	)

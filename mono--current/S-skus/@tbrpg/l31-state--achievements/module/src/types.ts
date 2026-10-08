@@ -1,7 +1,7 @@
 import { type Element } from "@tbrpg/definitions"
 import { Enum } from "typescript-string-enums"
 
-import { type Immutable, type BaseUState } from "@monorepo-private/state-utils"
+import { type Immutable, type BaseUState } from "@monorepo-private/offirmo-state"
 import { type HumanReadableTimestampUTCDays } from "@monorepo-private/timestamps"
 
 /////////////////////

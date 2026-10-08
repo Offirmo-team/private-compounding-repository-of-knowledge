@@ -13,9 +13,9 @@
 12 steps
 1970 kid abductions = no "free range" kids anymore https://www.bbc.co.uk/news/articles/c1ed4g1q52no
 1984
-1st thought vs. 2nd thought = 2nd = what we truly are
-2026 = 1y pre-WW3 https://x.com/RayDalio/status/2041531182018367773
-2026-04-01 Artemis https://artemistimeline.com/
+1st thought vs. 2nd thought = 2nd is what we truly are
+2026 = 1y pre-WW3? https://x.com/RayDalio/status/2041531182018367773
+2026-04-01 Artemis = Artemis II, 1st crewed Moon flyby since Apollo (1972) https://artemistimeline.com/
 3 -- trichotomy https://en.wikipedia.org/wiki/Trichotomy_(philosophy)
 3 -- trilemma https://en.wikipedia.org/wiki/Trilemma
 3 hardest things to say = I was wrong, I need help, I love you -> also 10 https://kristyna.co/mindful-entrepreneurship/10-hardest-things-for-people-to-say
@@ -26,12 +26,10 @@
 3 sectors model -- 4? quarternary & 5? quinary = r&d and non-profit?
 3 sectors model https://en.wikipedia.org/wiki/Three-sector_model
 3 Strikes and You're Out = Californian law https://lao.ca.gov/analysis_1995/3strikes.html
-3 traditional rhetorical appeals = CLE "credibility, logic, emotion"
 3-strike pivot strategy -- Strike 1 = Identify and try to address the issue directly
 3-strike pivot strategy -- Strike 2 = Reassess and Seek Support to resolve the problem
 3-strike pivot strategy -- Strike 3 = Make the Pivot
 3-strike pivot strategy = give 3 chances https://blog.gouravkhanijoe.com/p/3-strike-pivot-strategy-to-become
-4-hour workweek
 5 Harsh Truths for Success from Linus Torvalds -- Being Nice is Not Nice
 5 Harsh Truths for Success from Linus Torvalds -- Distractions Are Potential Killers
 5 Harsh Truths for Success from Linus Torvalds -- Goals, Ideas… are all Lies
@@ -45,7 +43,6 @@
 5 mantras -- You are enough = I don’t tell myself this often enough. I’d dare to say that you don’t either. But it’s a mantra that I repeat to myself often.
 5 mantras = by Christopher Davis (burnout)
 80/20 rule "Pareto distribution" https://en.wikipedia.org/wiki/Pareto_distribution
-? https://www.kitklarenberg.com/
 [ ] ++ https://savoir-sans-frontieres.com/
 [ ] +++ https://flinkliv.com/
 [ ] +++ https://fs.blog/mental-models/
@@ -53,6 +50,7 @@
 [ ] +++ https://paulgraham.com/articles.html
 [ ] +++ https://thewokesalaryman.com/
 [ ] ? https://slatestarcodex.com/
+[ ] ? https://www.kitklarenberg.com/
 [ ] advice mallard
 [ ] Ash Lamb visuals https://www.linkedin.com/in/ashlamb/recent-activity/all/
 [ ] ex. of edited interview misleading https://paulgraham.com/wids.html
@@ -83,16 +81,10 @@ academic disciplines -- humanities = academic disciplines that study aspects of 
 academic disciplines -- trans / cross
 accent -- miscommunication https://paulgraham.com/accents.html
 acceptance
-accepting oneself
 accountability -- lines = 1) direct/yourself 2) manager/reviewer/approver 3) independent auditor
 action -- deep dive & low-hanging fruits
-activism -- Boycott, Divestment, and Sanctions (BDS) is a nonviolent[2][6] Palestinian-led[7] movement promoting boycotts, divestments, and economic sanctions against Israel https://en.wikipedia.org/wiki/Boycott,_Divestment_and_Sanctions
-addictions -- casino -- "je vais me refaire"
-addictions -- casino -- the house always win
-addictions -- gambling -- sport, casino, trading, crypto
-addictions -- gambling https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what
-addictions -- to revenge = James Kimmel Jr., author of "The Science of Revenge: Understanding the World's Deadliest Addiction--And How to Overcome It
-Adventure is any inconvenience taken in the right spirit - Flower Hill Center
+activism -- Boycott, Divestment, and Sanctions (BDS) = a nonviolent Palestinian-led movement promoting boycotts, divestments, and economic sanctions against Israel https://en.wikipedia.org/wiki/Boycott,_Divestment_and_Sanctions
+adventure -- is any inconvenience taken in the right spirit
 adverse selection -- may spiral into market collapse = destroy high quality producers, customers don't trade etc. https://en.wikipedia.org/wiki/Adverse_selection
 adverse selection = a market situation where asymmetric information results in a party taking advantage of undisclosed information to benefit more from a contract or trade. Ex. car with hidden defect https://en.wikipedia.org/wiki/Adverse_selection
 advices -- flaw -- Curse of Brilliance = when dissecting what makes them successful, people unwittingly tend to overemphasize the things they found very difficult and underplay (or altogether ignore) the importance of things at which they were naturally good/brilliant. Ex. a successful repeat founder will often say things like “speed is all that matters” = bc. they take the vision & strategy part for granted. https://x.com/shreyas/status/1442165965769240577
@@ -101,10 +93,9 @@ advices -- flaw -- Halo Effect
 advices -- flaw -- Survivorship Bias
 advocacy
 agency
-agile -- "what the client wanted"
-aging -- photoaging https://en.wikipedia.org/wiki/Photoaging
+agile -- "what the client wanted" = tree swing cartoon: how each role understood the requirements vs. what was actually needed
 alcohol https://podcastnotes.org/huberman-lab/episode-86-what-alcohol-does-to-your-body-brain-health-huberman-lab/  https://www.soberonadrunkplanet.com/
-alignment -- DnD 9 https://dungeonsdragons.fandom.com/wiki/Alignment
+alignment -- DnD 9 = 3×3 grid: lawful/neutral/chaotic × good/neutral/evil https://dungeonsdragons.fandom.com/wiki/Alignment
 ally -- barriers = Diffusion of Responsibility, Lack of Awareness or Skills, Fear of Retaliation, Fear of Causing Disruption or Embarrassment
 ally -- howto = Be Present, Provide Options, Know Your Role, follow/beware laws/policies
 ally = s/o who actively seeks to bridge differences, stand for fairness or harmony, and encourage equal opportunities for others in the workplace through thoughtful and respectful communication
@@ -114,24 +105,21 @@ amour -- vs attraction
 amour = vouloir le bien
 animals -- domestication https://en.wikipedia.org/wiki/Anna_Karenina_principle#Failed_domestication
 animals -- pigeons https://thewhshatchet.org/why-pigeons-might-be-the-best-pet-bird/
-Anna Karenina principle = "All happy families are alike; each unhappy family is unhappy in its own way." for success to occur in a complex endeavor, all key factors must be present and work correctly. The endeavor does not succeed when even one essential element is missing, meaning there are many different ways to fail https://en.wikipedia.org/wiki/Anna_Karenina_principle
-anti-fragile
-anyone can cook -- motto from Ratatouille = craft is open to everyone
+anti-fragile = gains from stress & volatility, beyond merely resisting them (Taleb)
+anyone can cook = motto from Ratatouille = craft is open to everyone
 applied = vs. theoretic. practical. Not always need to be an expert / scientist / priest. Applying (citizen, engineer, lay) is complementary and can be, at times, more useful/concrete than expertise ("perché")
 appreciating beauty = animal watching the view, is it for aesthetics? https://www.aol.com/articles/bears-actually-just-sit-down-155908392.html
-arbitration -- forced = a practice in which businesses can require their customers to resolve disputes through arbitration instead of a traditional court system https://consumerrights.wiki/w/Forced_arbitration
-are we the bad guys?
+arbitration -- forced && = a practice in which businesses can require their customers to resolve disputes through arbitration instead of a traditional court system https://consumerrights.wiki/w/Forced_arbitration
+are we the bad guys? = Mitchell & Webb sketch: SS officers noticing the skulls on their caps, realising one's own side is the villain
 are you actually trying? = are you stuck at a low point? what would you advise another person to do? https://open.substack.com/pub/usefulfictions/p/maybe-youre-not-actually-trying?r=85879
 arenas = diverse arenas such as politics, diplomacy, media, public service and business https://www.thomsonreuters.com/en/about-us/trust-principles
-arrogant prick
-artisanal and small scale mining (ASM) https://www.glencore.com/sustainability/esg-a-z/artisanal-and-small-scale-mining
-asshole = Insults, Violation of personal space, Unsolicited touching, Threats, Sarcasm, Flames, Humiliation, Shaming, Interruption, Backbiting, Glaring, Snubbing BUT not spineless! https://en.wikipedia.org/wiki/The_No_Asshole_Rule
+artisanal and small scale mining (ASM) = https://www.glencore.com/sustainability/esg-a-z/artisanal-and-small-scale-mining
 assume the microphone is on = https://www.bbc.com/news/world-50662928 https://www.theguardian.com/commentisfree/2006/jul/23/comment.politics
 assume what you write will be displayed on a screen in court with journalists present
 assumptions -- faulty
 assurance -- only for life-changing events
 at fault = you caused the accident or damage, or someone else did but you couldn't identify them and provide their details
-at the table or on the table?
+at the table or on the table? = if you're not at the table, you're on the menu
 Atlassian "the loop" -- C Curate, don’t automate = Information overload does not have to paralyze your project. Get and give just the right amount of data and details so your stakeholders stay in the loop and your work gets noticed.
 Atlassian "the loop" -- OPN WIP Open up your work in progress = Avoid after-the-fact advice by sharing your work-in-progress for feedback early and often. By operating openly, you’ll avoid “unknown unknowns” before they become insurmountable roadblocks.
 Atlassian "the loop" -- SHW ATTN Show that you’re paying attention = We spend too much time on status reports for them not to be read. What might it look like to spend less time writing, reading and responding to updates?
@@ -144,8 +132,6 @@ attention -- marketplace -- The Algorithm = instead of posting on what excites t
 attention -- marketplace -- The Algorithm = the way that major platforms currently organize their feeds about maximizing attention, watch time, and ad revenue
 attention -- marketplace = Netflix, Fortnite, Social media...
 attention -- TikTokification = of the internet
-aunt sally = an argument or idea that is easily refutable and set up to invite criticism https://en.wikipedia.org/wiki/Aunt_Sally
-authentic life despite the apparent absurdity or incomprehensibility of existence https://en.wikipedia.org/wiki/Existentialism
 autism spectrum
 autocracy https://en.wikipedia.org/wiki/Autocracy
 Babbitt = person and especially a business or professional man who conforms unthinkingly to prevailing middle-class standards https://en.wikipedia.org/wiki/Babbitt_(novel)
@@ -154,14 +140,12 @@ bad randomness -- tool + color = hammer red
 baker’s dozen = due to law preventing sale theft
 baker’s dozen = The key to good hospitality is to delight your guests with an unexpected gift. If you run a hotel, leave a chocolate on the bed. If you run a bakery, give your customers one extra bagel. If you write a tweetstorm, share an extra idea.
 balayer devant sa porte
-Baptists and Bootleggers https://a16z.com/ai-will-save-the-world/
-barbarians at the gate https://en.wikipedia.org/wiki/Barbarians_at_the_Gate
+barbarians at the gate = book on the 1988 RJR Nabisco leveraged buyout, emblem of corporate greed https://en.wikipedia.org/wiki/Barbarians_at_the_Gate
 base rate = the average outcome for an event over time. They’re like batting averages for life, and they work best with big sample sizes. For example, if you’re starting a business, avoid the restaurant business where margins are low and competition is high.
 be prepared
 be taken advantage of = (imaginary or not) "It’s not about the money – it just feels awful to be taken advantage of" https://ia.acs.org.au/article/2026/ceo-s-devious-chatgpt-scheme-falls-apart-in-court.html
-bee browsing
-being enough
-being in the details https://www.theengineeringmanager.com/managing-managers/being-in-the-details/
+bee browsing = like a bee, capacity to pick what is right and ignore what is wrong
+being in the details = https://www.theengineeringmanager.com/managing-managers/being-in-the-details/
 being like planes = they only make news when they crash, even though so many of them are in the air
 being right for the right reason
 being right for the wrong reason = ex. being carried along by momentum or catching a narrative
@@ -170,7 +154,7 @@ best time to plant a tree = was 20 years ago. The second best time is now
 bet you’re fun at parties
 better to have sth to hate than nothing at all
 biases -- attractiveness
-biases -- baby-face
+biases -- baby-face = baby-faced adults are perceived as more naive, honest, warm and less competent
 biases -- Benjamin Franklin effect = ppl like a person more after doing a favor to them
 biases -- bias blind spot = tendency to see oneself as less biased than others
 biases -- cognitive -- frequency illusion = a person notices a specific concept, word, or product more frequently after recently becoming aware of it. https://en.wikipedia.org/wiki/Frequency_illusion
@@ -185,11 +169,10 @@ biases -- survivorship bias https://en.wikipedia.org/wiki/Survivorship_bias
 biases -- well travelled road = perceived shorter time
 biases -- wet forecast = weather forecasters exaggerate the chance of rain
 big five = https://en.wikipedia.org/wiki/Big_Five_personality_traits
-bike shed effect = A group of people working on a project will fight over the most trivial ideas. They’ll ignore what’s complicated. They’ll focus too much on easy-to-understand ideas at the expense of important, but hard to talk about ideas. For example, instead of approving plans for a complicated spaceship, the team would argue over the color of the astronaut’s uniforms.
 biodiversity -- global https://en.wikipedia.org/wiki/Global_biodiversity
 biodiversity -- loss https://en.wikipedia.org/wiki/Biodiversity_loss
 biodiversity https://en.wikipedia.org/wiki/Biodiversity esp. https://en.wikipedia.org/wiki/Biodiversity#Role_and_benefits_of_biodiversity
-biographies -- Profiles in Courage https://en.wikipedia.org/wiki/Profiles_in_Courage
+biographies -- Profiles in Courage = JFK's 1956 book on senators who risked their careers for their principles https://en.wikipedia.org/wiki/Profiles_in_Courage
 biohacking https://www.medicalnewstoday.com/articles/biohacking
 birthday problem = counterintuitive https://en.wikipedia.org/wiki/Birthday_problem
 birthday/christmas/21 effect = increased death around certain dates / milestones https://en.wikipedia.org/wiki/Birthday_effect
@@ -210,38 +193,28 @@ boy level opinions = simple, mainstream, light and low-effort
 brain -- fast & slow
 brain -- fast & slow -- fast = training / education / culture = biased = knee-jerk = LLM
 brain -- fast & slow -- slow = real you
-brain -- left & right & hippocamp (debunked?)
+brain -- left & right & hippocamp = (debunked?)
 brain -- reptilian
-brain rot = the sort of stuff that keeps you watching, but doesn’t provide lasting value
-brain rot https://en.wikipedia.org/wiki/Brain_rot
+brain -- rot = the sort of stuff that keeps you watching, but doesn’t provide lasting value https://en.wikipedia.org/wiki/Brain_rot
 brainstorming -- technique -- decoy = suggest sth bad as a bottom baseline to trigger defense of better alternatives
 brainstorming -- technique -- reverse = come up with ideas to make things worse https://www.mural.co/blog/reverse-brainstorming
 brainstorming -- technique -- veto = "anyone who vetoes a suggestion has to pay for that veto with a suggestion of their own" https://www.reddit.com/r/LifeProTips/comments/1cyvsz/lpt_cant_decide_on_dinner_use_the_veto_rule/
 brainstorming -- technique -- wrong = try to come up with the worst ideas https://hbr.org/2017/08/to-come-up-with-a-good-idea-start-by-imagining-the-worst-idea-possible
-Brandolini's Law = The amount of energy needed to refute bullshit is an order of magnitude bigger than to produce it
 breaking through
-bribes https://bribes.fyi/before-you-go
 brilliance -- Identify your own brilliance, don't be like somebody https://x.com/shreyas/status/1442165986908524545
-broken window theory
-bullying = Lack of consideration and empathy for those without power, Disrespectful behavior that is overt or subtle (in public or behind closed doors), Verbal aggression, sarcasm, or psychological manipulation. Unreasonable or constantly changing directives and deadlines. Singling out individuals. “Mobbing,” in which a group of people gang up on an individual
-bullying = repeated pattern of offensive, intimidating, or hostile behavior(s) or language, often by a strong or other person of authority. Bullying creates a toxic atmosphere for everyone, but may be accepted by many as “part of the workplace culture”
+broken window theory = visible disorder (broken windows, graffiti) breeds more disorder and crime
 Burning Man https://sfstandard.com/2026/08/29/burning-man-lost-its-soul-founder/
-busy work https://en.wikipedia.org/wiki/Busy_work
 buy nice or buy twice
 Byron Katie's "The Work" -- the 4 questions -- 1. Is it true? (Yes or no. If no, move to question 3.)
 Byron Katie's "The Work" -- the 4 questions -- 2. Can you absolutely know that it’s true? (Yes or no.)
 Byron Katie's "The Work" -- the 4 questions -- 3. How do you react, what happens, when you believe that thought?
 Byron Katie's "The Work" -- the 4 questions -- 4. Who would you be without the thought?
 Byron Katie's "The Work" https://thework.com/
-cadre = should lead, can change the world (cf. "du role social de l'officier")
+cadre = should lead, can change the world (cf. "du rôle social de l'officier")
 Can the Subaltern Speak? = highlights the challenges faced by marginalised groups in having their voices heard within dominant power structure https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak#%22Can_the_Subaltern_Speak?%22
-can't satisfy others
 cancel culture -- ex. of Brendan Eich https://www.spacebar.news/stop-using-brave-browser/
 cancer = 1 in 8 cancer cases worldwide is caused by infections, study suggests https://www.cbc.ca/lite/story/9.7361622
 cannabis -- Huge study finds no evidence cannabis helps anxiety, depression, or PTSD https://www.sciencedaily.com/releases/2026/03/260319044656.htm
-capitalism -- antisocial profit-maximizing corporations
-capitalism -- state-corporate & = prioritize the accumulation of wealth over other interests
-care -- doesn't scale https://stevenscrawls.com/care-doesnt-scale/
 career -- career limiting (action/move)
 career https://en.wikipedia.org/wiki/List_of_obsolete_occupations
 cargo cult
@@ -270,13 +243,11 @@ chess -- concepts https://randomlabs.ai/blog/slate
 chicken-and-egg
 child of deaf adult (CODA) https://en.wikipedia.org/wiki/Child_of_deaf_adult
 CHLCA "chimpanzee–human last common ancestor" https://en.wikipedia.org/wiki/Chimpanzee%E2%80%93human_last_common_ancestor
-choice making -- 5-2-1 technique https://www.reddit.com/r/lifehacks/comments/ctdibo/521_technique/
 cigarettes https://tohippo.com/what-the-hell-was-going-on-with-cigarette-ads-in-the-70s/
-circle of competence: Define the limits of your knowledge. Hint: the limits are smaller than you think. That’s because being an expert in one area doesn’t make you an expert in anything else. Be clear about what you know and don’t know.
+circle of competence = Define the limits of your knowledge. Hint: the limits are smaller than you think. That’s because being an expert in one area doesn’t make you an expert in anything else. Be clear about what you know and don’t know.
 clearance -- "I was suspected of being a Japanese spy" https://milk.com/wall-o-shame/security_clearance.html
 climate -- carbon removal https://stripe.com/au/climate
 cloning -- horses https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses
-clubs https://en.wikipedia.org/wiki/Gentlemen%27s_club
 coach vs mentor vs sponsor = A coach talks to you, a mentor talks with you, and a sponsor talks about you https://www.linkedin.com/posts/addyosmani_softwareengineering-productivity-leadership-activity-6996942888802598912-hUgl
 cognitive benefits of interacting with nature https://en.wikipedia.org/wiki/Cabin_fever#cite_ref-5
 cognitive bias -- recency https://en.wikipedia.org/wiki/Recency_bias
@@ -297,13 +268,11 @@ communities -- faith based = Faith-based organizations and Houses of Worship htt
 communities -- high risk = activists, journalists, human rights defenders, academics, and other employees associated with civil society organizations that are at heightened risk of being targeted by cyber threat actors because of their identity or work https://www.cisa.gov/audiences/high-risk-communities
 communities -- individual and families
 communities -- State, Local, Tribal, and Territorial Government (SLTT) = https://www.cisa.gov/audiences/state-local-tribal-and-territorial-government
-comparison -- is the thief of joy
-comparison -- the only comparison worth making is you vs. you 1y ago
 competition -- healthy = critical source of progress and innovation
 competition -- is for losers = Avoid competition. Stop copying what everybody else is doing. If you work at a for-profit company, work on problems that would not otherwise be solved. If you’re at a non-profit, fix unpopular problems. Life is easier when you don’t compete. (Hint: don’t start another bottled water company).
 complex contagion = the phenomenon in social networks in which multiple sources of exposure to an innovation are required before an individual adopts the change of behavior https://en.wikipedia.org/wiki/Complex_contagion
-conditioning -- classical
-conditioning -- operant
+conditioning -- classical = Pavlov: a neutral stimulus becomes associated with a reflex response
+conditioning -- operant = Skinner: behavior shaped by its consequences (rewards/punishments)
 conflicts of interest -- actual, perceived, and potential
 conflicts of interest -- perceived = other may think
 conflicts of interest -- potential = could develop into
@@ -322,26 +291,25 @@ content -- creators
 content -- independence https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/
 content -- moderation
 content -- rating -- "Common Sense" Media (private org) https://www.commonsensemedia.org/about-us/our-mission/about-our-ratings
-content -- rating -- Hays code https://en.wikipedia.org/wiki/Hays_Code
+content -- rating -- Hays code = Hollywood self-censorship rules, 1934–1968 https://en.wikipedia.org/wiki/Hays_Code
 continuity of government (COG) = establishing defined procedures that allow a government to continue its essential operations in case of a catastrophic event such as nuclear war https://en.wikipedia.org/wiki/Continuity_of_government
 convex output = look for opportunities with big upsides and low downsides. In addition to increased optionality, your errors will benefit you more than they harm you. Convex payoffs let you tinker your way to success and innovation.
 convex output = the smartest people can be an order of magnitude more productive than others who are only somewhat less smart https://www.8vc.com/resources/lessons-from-peter-thiel
 convex output curve = better than linear = more effort/rsrc -> much more results
-copernican principle = humans are not privileged observers of the universe "The more we learn about astronomy, the less it seems that earth is special. It’s a small part of the universe, and each human is a small part of the earth. We are all spinning through the solar system — nowhere near the beginning or end of time." https://en.wikipedia.org/wiki/Copernican_principle
-corporate slave (but also never achieving anything?)
-correlation is not causation https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+Copernican principle = humans are not privileged observers of the universe "The more we learn about astronomy, the less it seems that earth is special. It’s a small part of the universe, and each human is a small part of the earth. We are all spinning through the solar system — nowhere near the beginning or end of time." https://en.wikipedia.org/wiki/Copernican_principle
+correlation is not causation = +++ https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
 corruption -- 2025 Qatar gifting AirForce 1 https://www.theguardian.com/us-news/2025/may/11/trump-accept-luxury-plane-gift-qatar
 corruption -- political -- revolving door = situation where legislators, regulators, or personnel in the public sector moves to a similar position in the private sector, where many work in fields related to lobbying https://en.wikipedia.org/wiki/Revolving_door_(politics)
 corruption -- political https://en.wikipedia.org/wiki/Political_corruption
 cosmological models
-cosmological models -- alternative -- Janus https://januscosmologicalmodel.com/
-cosmological models -- alternative -- Quantised Inertia https://physicsfromtheedge.blogspot.com/2024/11/a-potted-history-of-qi.html
+cosmological models -- alternative -- Janus = Jean-Pierre Petit's bimetric model with negative masses, fringe https://januscosmologicalmodel.com/
+cosmological models -- alternative -- Quantised Inertia = Mike McCulloch's theory deriving inertia from Unruh radiation, to replace dark matter, fringe https://physicsfromtheedge.blogspot.com/2024/11/a-potted-history-of-qi.html
 cosmos https://en.wikipedia.org/wiki/Physical_cosmology
 cost of a thing = the amount of life which is required to be exchanged for it, immediately or in the long run
 counterfactual thinking = the human tendency to consider what might have been, or how things could have been different in the past. It involves imagining alternative outcomes to past events, often expressing themselves as "what if?" or "if only..." questions. These thoughts explore possibilities contrary to the actual facts and can be a tool for learning, problem-solving, and managing emotions
-counterfactuals -- additive
+counterfactuals -- additive = imagining adding sth that didn't happen: "if only I had..."
 counterfactuals -- post-mortem = how to improve the system
-counterfactuals -- subtractive
+counterfactuals -- subtractive = imagining removing sth that happened: "if only I hadn't..."
 counterfactuals -- useful if stimulating, not if regret = may evoke deleterious rather than favorable consequences
 counterfactuals = contrary to the actual facts. can be a tool for learning, problem-solving, and managing emotions https://www.sciencedirect.com/science/article/abs/pii/S0065260117300187
 courses après le repas
@@ -361,6 +329,7 @@ cronyism = specific form of in-group favoritism = spoils system practice of part
 crucial conversations
 cruelty = intentional infliction of suffering or the inaction towards another's suffering when a clear remedy is readily available https://en.wikipedia.org/wiki/Cruelty
 crème solaire vs brossage de dents
+Cultural Marxism = conspiracy theory that misrepresents Western Marxism (especially the Frankfurt School) as being responsible for modern progressive movements, identity politics, and political correctness https://en.wikipedia.org/wiki/Cultural_Marxism_conspiracy_theory
 culture -- boat names = https://www.beautifulpublicdata.com/boat-names/
 culture -- chopsticks https://www.nippon.com/en/japan-data/h01362/
 culture -- cultural hegemony https://en.wikipedia.org/wiki/Cultural_hegemony https://en.wikipedia.org/wiki/Power_(social_and_political)#Cultural_hegemony
@@ -370,28 +339,35 @@ culture -- itadakimasu = https://thetokyohermit.substack.com/p/itadakimasu-a-wor
 culture -- taijin kyofusho = specific type of social anxiety, occurring primarily in Japanese culture, is called taijin kyofusho. Taijin kyofusho is characterized by an intense fear that one's body parts or functions displease, embarrass or are offensive to others. https://pubmed.ncbi.nlm.nih.gov/21911434/
 Current Population Survey (USA) https://www.bls.gov/opub/mlr/2018/article/the-current-population-survey-tracking-unemployment.htm
 curses -- curse of knowledge = person having a specialized knowledge assumse that other share in that k https://en.wikipedia.org/wiki/Curse_of_knowledge
-curses -- resource curse -- Dutch disease https://en.wikipedia.org/wiki/Dutch_disease
+curses -- resource curse -- Dutch disease = a resource export boom strengthens the currency, hurting other export sectors (manufacturing) https://en.wikipedia.org/wiki/Dutch_disease
 curses -- resource curse = the paradox of plenty: Countries with an abundance of natural resources such as diamonds and fossil fuels tend to have less economic growth and worse development than countries with fewer natural resources https://en.wikipedia.org/wiki/Resource_curse
-Cynefin https://en.wikipedia.org/wiki/Cynefin_framework
+Cynefin = sense-making framework: clear / complicated / complex / chaotic (+ confusion) domains, each needing a different approach https://en.wikipedia.org/wiki/Cynefin_framework
 danger of danger dogma and ideology = They provide us with the answers, and put boundaries around our thinking. Ignoring the dogma invites ridicule, or even punishment. More ideological societies are less innovative. If we aren't free to wander outside the realms of conventional thinking, then we won't happen upon the opportunities that others have missed. https://paulbuchheit.blogspot.com/2014/07/the-technology.html
 danger of experience = We already know better, we already know that an idea or business won't work. This is one reason that naive, young founders are often the ones who start the most successful companies -- they just don't know any better, and they're often too arrogant to listen to those who do.  https://paulbuchheit.blogspot.com/2014/07/the-technology.html
 dark forest = an environment in which detection means certain death at the hands of advanced predators https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest
 dark forest https://en.wikipedia.org/wiki/Dark_forest_hypothesis
 data driven
-dead horse theory https://www.linkedin.com/posts/kais-mejri-tunisie_deadabrhorseabrtheory-activity-7286736656194310146-MrM7
+dead horse theory = when the horse is dead, dismount. Satire of orgs "fixing" a failed project (new saddle, committees...) instead of quitting https://www.linkedin.com/posts/kais-mejri-tunisie_deadabrhorseabrtheory-activity-7286736656194310146-MrM7
 death -- https://en.wikipedia.org/wiki/Awareness_of_Dying
 death -- memento mori = Latin for "remember (that you have) to die" https://en.wikipedia.org/wiki/Memento_mori
 death -- mortality salience -- terror management theory = asserts that almost all human activity is driven by the fear of death https://en.wikipedia.org/wiki/Terror_management_theory
 death -- mortality salience = awareness that one's death is inevitable and that all attempts to defer it indefinitely are ultimately futile https://en.wikipedia.org/wiki/Mortality_salience
-death by committee
 debanking = close/refuse account https://www.austrac.gov.au/news-and-media/media-release/austrac-statement-2021-de-banking
-debate -- https://en.wikipedia.org/wiki/Principle_of_charity
+debate -- principle of charity = interpret others' arguments in their strongest, most reasonable form https://en.wikipedia.org/wiki/Principle_of_charity
+debating -- 3 traditional rhetorical appeals = CLE "credibility, logic, emotion"
+debating -- aunt sally = an argument or idea that is easily refutable and set up to invite criticism https://en.wikipedia.org/wiki/Aunt_Sally
+debating -- Brandolini's Law = The amount of energy needed to refute bullshit is an order of magnitude bigger than to produce it
+debating -- Do I contradict myself? Very well then I contradict myself, I am large, I contain multitudes
+deciding -- 5-2-1 technique = A proposes 5 options, B keeps 2, A picks 1 https://www.reddit.com/r/lifehacks/comments/ctdibo/521_technique/
 deciding -- are we asking the right question? = importance of framing https://coda.io/@shishir/eigenquestions-the-art-of-framing-problems
+deciding -- bike shed effect = A group of people working on a project will fight over the most trivial ideas. They’ll ignore what’s complicated. They’ll focus too much on easy-to-understand ideas at the expense of important, but hard to talk about ideas. For example, instead of approving plans for a complicated spaceship, the team would argue over the color of the astronaut’s uniforms.
 deciding -- books -- Decisive: How to Make Better Choices in Life and Work = https://www.amazon.com/Decisive-Make-Better-Choices-Life/dp/0307956393
+deciding -- death by committee
+deciding -- do I want my name on this? = tool to decide if sth is good https://lynnandtonic.com/thoughts/entries/put-your-name-on-it/
 deciding -- eigenquestions = the question where, if answered, it likely answers the subsequent questions as well https://coda.io/@shishir/eigenquestions-the-art-of-framing-problems/eigenquestions-3
 deciding -- framing as a team, not alone = https://coda.io/@shishir/eigenquestions-the-art-of-framing-problems/your-team-4
 deciding -- framing diagram = https://coda.io/@shishir/eigenquestions-the-art-of-framing-problems/great-diagrams-2
-decoy effect https://en.wikipedia.org/wiki/Decoy_effect
+decoy effect = adding a clearly inferior option makes the similar target option look more attractive https://en.wikipedia.org/wiki/Decoy_effect
 degree mills = https://www.dice.com/career-advice/coding-bootcamp-popularity-growth-2019
 DEI
 Delayed Onset of Adulthood = The % of Xyos hitting major life milestones has been in fairly steep decline since at least the 80s https://www.a16z.news/p/charts-of-the-week-dexit-real-or
@@ -426,7 +402,6 @@ diagrams -- UML -- behavioral -- state
 diagrams -- UML -- structural -- class
 diagrams -- UML https://creately.com/blog/diagrams/uml-diagram-types-examples/
 diagrams -- Venn ex. Ikigai
-did all the right things and no-one is happy
 differences -- introvert/extrovert
 digital hygiene https://x.com/karpathy/status/1902046003567718810
 disability
@@ -440,9 +415,9 @@ discernment -- coin flipping = don't look, which one did you fear?
 discernment -- doors -- 1 way = If you walk through and don’t like what you see on the other side, you can’t get back to where you were before
 discernment -- doors -- 2 ways doors = If you’ve made a suboptimal Type 2 decision, you don’t have to live with the consequences for that long. You can reopen the door and go back through. https://growthmethod.com/two-way-doors/
 discernment -- example avec plusieurs questions https://archive.md/zpgip
+discernment -- Must We, Can We, Should We = ‘Must We?’ (to meet our legal or regulatory obligations) no✖ yes-> ‘Can We?’ (consistent with legal and regulatory obligations?) no✖ yes-> ‘Should We?’ (consistent with values/policies?)
 discernment -- recoverable vs. irrecoverable
 discernment -- regret minimization https://theprokit.com/posts/a-jeff-bezos-classic-the-regret-minimization-framework/
-discernment -- ‘Must We?’ (to meet our legal or regulatory obligations) no✖ yes-> ‘Can We?’ (consistent with legal and regulatory obligations?) no✖ yes-> ‘Should We?’ (consistent with values/policies?)
 discrimination
 discrimination -- direct = when a person is treated less favourably or unfairly than another person or group because of certain protected characteristics* or attributes
 discrimination -- indirect = when a neutral rule, policy, practice or criterion applies to everyone but disproportionately disadvantages a particular group with a protected characteristic, without objective justification
@@ -454,22 +429,19 @@ disposable diapers https://www.worksinprogress.news/p/how-disposable-diapers-con
 disrespect = lack of consideration or regard for others’ privacy, physical or emotional space, viewpoints, or belongings. Intimidation, aggressive behavior, “the silent treatment”. Thoughtless or arrogant behavior, like using profanity when someone objects to it.
 distance sociale = ne pas être accessible pour être plus désirable (ex. mannequins) https://www.linkedin.com/posts/maud-alaves_je-suis-consultante-en-r%C3%A9putation-et-je-souris-activity-7305283449576148992-5BvV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABCMjsBlsnsypQrujQIErVuOdIdbCIH5O0
 diversité des esprits humains
-divorce -- litigation = https://www.dailyjournal.com/article/391828-7-deadly-sins-a-framework-for-family-law
 do fewer things well
-Do I contradict myself? Very well then I contradict myself, I am large, I contain multitudes
-do I want my name on this? = tool to decide if sth is good https://lynnandtonic.com/thoughts/entries/put-your-name-on-it/
 dog energy vs. cat energy
 don't blame the audience
-don't expect perfection -> trigger self-consciousness = counter-productive
+don't expect perfection = trigger self-consciousness = counter-productive
 don't feed the trolls
-don't judge me / You do you. I’ll do me / I’m just living my truth. You live yours. https://aleteia.org/2022/12/18/why-saying-dont-judge-me-isnt-quite-right
+don't judge me / You do you. I’ll do me / I’m just living my truth. You live yours. = https://aleteia.org/2022/12/18/why-saying-dont-judge-me-isnt-quite-right
 don't really care about us = https://cs.uwaterloo.ca/~dtompkin/music/track/HOTTRACK_020/HOTTRACK_020-14.html
 don't shoot the messenger
 doomsday -- clock = a symbol that represents the estimated likelihood of a human-made global catastrophe https://en.wikipedia.org/wiki/Doomsday_Clock
 doomsday -- device = a hypothetical construction – usually a weapon or weapons system – which could destroy all life on a planet, particularly Earth, or destroy the planet itself https://en.wikipedia.org/wiki/Doomsday_device
 doomsday = human extinction https://en.wikipedia.org/wiki/Human_extinction
 doublespeak = people often say the opposite of what they mean, especially in political language. It allows people to lie while looking like they’re telling the truth. As George Orwell famously wrote in 1984, “War is peace. Freedom is slavery. Ignorance is strength.”
-doxxing -- e.g. embarrasing reveal https://www.astralcodexten.com/p/statement-on-new-york-times-article
+doxxing -- e.g. embarrassing reveal https://www.astralcodexten.com/p/statement-on-new-york-times-article
 dreams -- unattainable = People sometimes have unattainable dreams and set unrealistic aspirations for themselves, guaranteeing continued discrepancies between who they perceive themselves to be and who they ideally want to become. Even when they meet their more realistic aspirations, they often develop new ones that are harder to meet
 dreams and aspirations -- be a player
 dreams and aspirations -- interpersonal = as a team, couple, or family. an ally in this process is invaluable, particularly when the ally is a gifted sculptor.
@@ -480,11 +452,11 @@ dress code don't make leaders but they sure announce them
 drinking https://medium.com/@k.kozmana/common-side-effects-of-not-drinking-dd44714e619a
 drive by
 due diligence
-dumbing down (see links) https://en.wikipedia.org/wiki/Dumbing_down
-duty to retreat
+dumbing down = (see links) https://en.wikipedia.org/wiki/Dumbing_down
+duty to retreat = must retreat if safely possible before using deadly force in self-defense (vs. "stand your ground")
 DYOR "do your own research"
-dysgenics (not confirmed empirically) https://en.wikipedia.org/wiki/Dysgenics
-dysthymia https://en.wikipedia.org/wiki/Dysthymia
+dysgenics = (not confirmed empirically) https://en.wikipedia.org/wiki/Dysgenics
+dysthymia = chronic mild depression lasting 2+ years https://en.wikipedia.org/wiki/Dysthymia
 ecosystem -- engineers https://fr.wikipedia.org/wiki/Esp%C3%A8ce_ing%C3%A9nieure
 education -- checklist +++ https://www.artofmanliness.com/people/relationships/avoid-falling-in-love-with-the-wrong-person/
 effective altruism
@@ -513,22 +485,25 @@ Energy distortion field = If you meet with them when you’re tired and defeated
 English
 entrepreneurship -- billing -- free day https://blog.jpl-consulting.com/2011/05/the-free-day/
 entrepreneurship -- billing -- hourly rate vs fixed price
-envy -- "I wish people could see how ugly it is to be envious, and how obvious it is to those around you when that's what's happening" (from narcissist dishonest) https://www.sandofsky.com/lambda-school/
-envy -- "There's not much uglier than trying to tear someone down because they achieved what you wish you had" (from narcissist dishonest) https://www.sandofsky.com/lambda-school/
+envy -- "I wish people could see how ugly it is to be envious, and how obvious it is to those around you when that's what's happening" = (from narcissist dishonest) https://www.sandofsky.com/lambda-school/
+envy -- "There's not much uglier than trying to tear someone down because they achieved what you wish you had" = (from narcissist dishonest) https://www.sandofsky.com/lambda-school/
 Epstein -- Ghislaine Maxwell sadly passes away tomorrow https://x.com/NormalIslandNws/status/2020202329274831110
-Epstein case, no arrests
-equality -- gender -- Scully effect
+Epstein case = no arrests
+equality -- gender -- Scully effect = Dana Scully (The X-Files) inspired women to enter STEM
 equality -- race
 equality vs equity https://medium.com/@CRA1G/the-evolution-of-an-accidental-meme-ddc4e139e0e4
 equity
-eternal september https://en.wikipedia.org/wiki/Eternal_September
+eternal september = endless influx of newcomers overwhelming a community's norms (Usenet after AOL, 1993) https://en.wikipedia.org/wiki/Eternal_September
 ethics = what ought one to do?
 euthanasia https://aleteia.org/2024/09/02/new-australian-study-challenges-the-rise-of-euthanasia
-every occupation has its pro/cons
 every rule is born from blood
-every time you step in, you rob your team of the lessons they need to grow https://www.linkedin.com/posts/tahahussain_at-microsoft-a-junior-engineer-spent-3-days-activity-7291493025334149120-MjEo
 everything must be paid for twice https://www.raptitude.com/2022/01/everything-must-be-paid-for-twice/
 evidence based
+evil -- arrogant prick
+evil -- asshole = Insults, Violation of personal space, Unsolicited touching, Threats, Sarcasm, Flames, Humiliation, Shaming, Interruption, Backbiting, Glaring, Snubbing BUT not spineless! https://en.wikipedia.org/wiki/The_No_Asshole_Rule
+evil -- bullying = Lack of consideration and empathy for those without power, Disrespectful behavior that is overt or subtle (in public or behind closed doors), Verbal aggression, sarcasm, or psychological manipulation. Unreasonable or constantly changing directives and deadlines. Singling out individuals. “Mobbing,” in which a group of people gang up on an individual
+evil -- bullying = repeated pattern of offensive, intimidating, or hostile behavior(s) or language, often by a strong or other person of authority. Bullying creates a toxic atmosphere for everyone, but may be accepted by many as “part of the workplace culture”
+evil -- https://en.wikipedia.org/wiki/Marcel_Petiot
 evolution
 evolution -- adaptive radiation = not because the newly dominant group is "superior" to the old but usually because an extinction event eliminates the old, dominant group and makes way for the new one https://en.wikipedia.org/wiki/Adaptive_radiation
 evolution -- Algernon Argument = if it was this good, evolution would have selected. So it must have trade-offs. it https://gwern.net/drug-heuristic
@@ -538,8 +513,8 @@ evolution -- evolution vs revolution
 evolution -- evolutionary theory of mate selection
 evolution -- gene-centered -- selfish gene https://en.wikipedia.org/wiki/The_Selfish_Gene
 evolution -- gene-centered = https://en.wikipedia.org/wiki/Gene-centered_view_of_evolution
-evolution -- greater male variability hypothesis (heretic) https://en.wikipedia.org/wiki/Variability_hypothesis
-evolution -- LUCA https://en.wikipedia.org/wiki/Last_universal_common_ancestor
+evolution -- greater male variability hypothesis (heretic) = more variance among males: overrepresented at both extremes of traits (ex. IQ) https://en.wikipedia.org/wiki/Variability_hypothesis
+evolution -- LUCA = Last Universal Common Ancestor of all current life https://en.wikipedia.org/wiki/Last_universal_common_ancestor
 evolution -- not just species = "The struggle for existence holds as much in the intellectual as in the physical world. A theory is a species of thinking, and its right to exist is coextensive with its power of resisting extinction by its rivals" https://en.wikipedia.org/wiki/Meme#Early_formulations
 evolution -- pinnacle of evolution
 evolution -- quirks of human anatomy https://www.sdbonline.org/sites/fly/lewheldquirk/figlegq6.htm
@@ -567,17 +542,17 @@ fairness
 fake it till you make it
 fake it till you make it -- Of course, it’s not really “fake it till you make it.” It’s just “fake it.”
 fallacies -- map
-fallacies -- motte and bailey https://en.wikipedia.org/wiki/Motte-and-bailey_fallacy
+fallacies -- motte and bailey = retreat to a modest, defensible claim (motte) when challenged, then go back to the bold one (bailey) https://en.wikipedia.org/wiki/Motte-and-bailey_fallacy
 falling behind
 false flag https://en.wikipedia.org/wiki/False_flag
 false good idea
 fan fiction -- my immortal = worst https://en.wikipedia.org/wiki/My_Immortal_(fan_fiction)
-farm rice theory https://www.nature.com/articles/s41467-024-44770-w
+farm rice theory = rice farming (cooperative irrigation) fosters more interdependent cultures than wheat farming (Talhelm) https://www.nature.com/articles/s41467-024-44770-w
 fate
 Faustian Bargain = A man once sold his soul to a demon in exchange for knowledge. At first, it seemed like a smart trade. But the man lost in the long-run. Tragically, what the man lost was more valuable than what he earned. In short, he won the battle but lost the war.
 Fear of looking dumb (FOLD) = the one asking a question looks like a fool for 5 min, the one never asking questions stays a fool forever
 fear of missing out (FOMO)
-fear, uncertainty, death (FUD)
+fear, uncertainty, doubt (FUD) = spreading vague negative info to discourage adopting a competitor/idea
 feedback -- feedworward "in the future..." "next time..."
 femme/homme enfant https://www.wengood.com/fr/developpement-personnel/se-connaitre/art-femme-enfant
 Fermi paradox  -- see [great filters]
@@ -611,8 +586,8 @@ formality -- levels -- 6 creative black tie
 formality -- levels -- 7 black tie
 formality -- levels -- 8 white tie
 founder mode https://paulgraham.com/foundermode.html
-frame challenge https://worldbuilding.meta.stackexchange.com/questions/7097/a-proposal-for-helping-users-understand-frame-challenges
-frat boy immature behavior https://www.smh.com.au/technology/snapchat-ceo-evan-spiegel-mortified-and-embarrassed-by-sexist-derogatory-emails-20140529-zrrgy.html
+frame challenge = answering by challenging the question's premise rather than within it https://worldbuilding.meta.stackexchange.com/questions/7097/a-proposal-for-helping-users-understand-frame-challenges
+frat boy immature behavior = https://www.smh.com.au/technology/snapchat-ceo-evan-spiegel-mortified-and-embarrassed-by-sexist-derogatory-emails-20140529-zrrgy.html
 fraud = deceitful or dishonest act or omission (including the making of a false statement, either verbally or in writing), with the objective of obtaining an unjust personal gain or advantage for the person or for another person or entity, or causing a disadvantage to another person or entity. Transaction wise, fraud is defined as an unauthorised transaction.  In simple terms, fraud is obtaining, or attempting to obtain, a benefit by deception.
 free will https://en.wikipedia.org/wiki/Free_will
 friends / party friends = "you lose friends, because you realise that without alcohol, they don’t have much in common with you." https://medium.com/@k.kozmana/common-side-effects-of-not-drinking-dd44714e619a
@@ -620,7 +595,7 @@ fulfillment https://longform.asmartbear.com/fulfillment/
 fundamental attribution error https://en.wikipedia.org/wiki/Fundamental_attribution_error
 fungi https://e360.yale.edu/digest/atoll-islands-sea-level-rise-fungi
 future of Earth https://en.wikipedia.org/wiki/Future_of_Earth https://en.wikipedia.org/wiki/Timeline_of_the_far_future
-Gall’s Law: A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
+Gall’s Law = A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
 gambling -- Loss Disguised as a Win (LDW) = the goal of slot machines
 gambling https://www.gamblinghelponline.org.au/
 game theory
@@ -637,6 +612,8 @@ genes -- kenya https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-shatter
 genetics -- linkage https://en.wikipedia.org/wiki/Genetic_linkage
 genius -- Edison -- Anthropic = "But we see perspiration becoming increasingly automated"
 genius -- Edison = "genius is 1% inspiration and 99% perspiration"
+gifted -- twice-exceptional (2e) — gifted + also has a disability, learning difference, or neurodevelopmental condition. For example, a child might be intellectually gifted and also have ADHD, dyslexia, or autism.
+gifted = generally refers to children who show unusually high ability or potential in one or more areas, such as intellectual reasoning, mathematics, language, creativity, music, or other domains. Giftedness doesn’t necessarily mean high achievement; a gifted child can underachieve or struggle at school.
 giftedness and talent https://campbellms.typepad.com/files/gagne-a-differentiated-model-of-giftedness-and-talent-dmgt.pdf https://www.gigers.com/matthias/gifted/gagne_dmgt.html
 go go before you go
 go slow to go fast
@@ -647,10 +624,10 @@ goals -- S.M.A.R.T. -- 03 A (Aspirational yet Achievable) Write Individual Goals
 goals -- S.M.A.R.T. -- 04 R (Relevant) Align the goal with your team’s mission, values, department/team OKRs, and strategic and business objectives. Clearly articulate the reason(s) for pursuing the goal and how this contributes to our short- and long-term objectives.
 goals -- S.M.A.R.T. -- 05 T (Time-bound) Create a specific end date for the goal. This instills a sense of urgency and helps you develop a work plan that prioritizes tasks leading up to the delivery date (e.g., one month, one quarter, or longer).
 goldilock zone / problem
-Goldwater rule https://en.wikipedia.org/wiki/Goldwater_rule
+Goldwater rule = psychiatrists shouldn't diagnose public figures they haven't examined https://en.wikipedia.org/wiki/Goldwater_rule
 good > correct? = "bien trouvé"
 good life questions https://radreads.co/10k-questions/
-good neighbor https://en.wikipedia.org/wiki/Good_Neighbor_policy
+good neighbor = FDR's 1933 policy of non-intervention in Latin America https://en.wikipedia.org/wiki/Good_Neighbor_policy
 good taste https://paulgraham.com/goodtaste.html
 good to great
 Goodhart's law = When a measure becomes a target, it ceases to be a good measure https://en.wikipedia.org/wiki/Goodhart%27s_law
@@ -668,10 +645,19 @@ hacking (tech)
 haikus
 Haiti https://aleteia.org/2025/02/01/kids-without-school-because-of-gangs-are-recruited-by-gangs
 hand-me-down
-hangry = before lunch (vs. after)
 Hanlon’s razor = Never attribute to malice that which can be adequately explained by stupidity
+happiness -- accepting oneself
+happiness -- Anna Karenina principle = "All happy families are alike; each unhappy family is unhappy in its own way" = for success to occur in a complex endeavor, all key factors must be present and work correctly. The endeavor does not succeed when even one essential element is missing, meaning there are many different ways to fail https://en.wikipedia.org/wiki/Anna_Karenina_principle
+happiness -- being enough
+happiness -- can't satisfy others
+happiness -- comparison -- is the thief of joy
+happiness -- comparison -- the only comparison worth making is you vs. you 1y ago
 happiness -- comparison is the thief of joy
+happiness -- did all the right things and no-one is happy
+happiness -- hangry = before lunch (vs. after)
+happiness -- herbe toujours plus verte
 happiness -- is a skill
+happiness -- jamais assez / 1st times
 happiness -- pour vivre heureux vivons cachés
 happiness -- score https://www.ted.com/talks/dominic_price_what_s_your_happiness_score
 happiness -- être heureux n'est pas nécessairement confortable
@@ -690,12 +676,11 @@ haters -- ignore the f’ing haters = including the ones "in the arena" https://
 hawks and doves https://seldo.com/posts/the_case_for_frameworks
 heckler = a person who harasses and tries to disconcert others with questions, challenges, or gibes.[1] Hecklers are often known to shout discouraging comments at a performance or event, or to interrupt set-piece speeches, with the intent of disturbing performers or participants. https://en.wikipedia.org/wiki/Heckler
 helicopter parent
-herbe toujours plus verte
 herd immunity
 heresy = opinions you're punished for expressing https://paulgraham.com/heresy.html
-Hickam’s Dictum: The opposite of Occam’s Razor. In a complex system, problems usually have more than one cause. For example, in medicine, people can have many diseases at the same time.
+Hickam’s Dictum = The opposite of Occam’s Razor = In a complex system, problems usually have more than one cause. For example, in medicine, people can have many diseases at the same time.
 high agency
-high five too slow https://www.inverse.com/input/culture/wikipedia-high-five-too-slow-photos-mystery-couple-solved
+high five too slow = https://www.inverse.com/input/culture/wikipedia-high-five-too-slow-photos-mystery-couple-solved
 high performance
 high performance -- high performing teams
 high performance -- ripple effect -- high performers attract other high performers
@@ -706,25 +691,25 @@ high/low functioning human
 higher mountain after the previous one, have to go down before going higher
 historic recurrence https://en.wikipedia.org/wiki/Historic_recurrence
 HIV epidemic https://www.datawrapper.de/blog/hiv-aids-epidemic-history
-Hock Principle: Simple, clear purpose and principles give rise to complex and intelligent behavior. Complex rules and regulations give rise to simple and stupid behavior.
-Hofstede's cultural dimensions theory https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory
+Hock Principle = Simple, clear purpose and principles give rise to complex and intelligent behavior. Complex rules and regulations give rise to simple and stupid behavior.
+Hofstede's cultural dimensions theory = effects of a society's culture on the values of its members, and how these values relate to behavior https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory
 holier-than-thou
-Holodomor https://en.wikipedia.org/wiki/Holodomor
+Holodomor = Soviet man-made famine in Ukraine, 1932–33, millions dead https://en.wikipedia.org/wiki/Holodomor
 hope -- trust in others = “On this day, I would like all of us to hope anew,” Pope Francis had written. “To revive our trust in others … for all of us are children of God.”
 hope = is it worth fighting? drowning rats experiment https://worldofwork.io/2019/07/drowning-rats-psychology-experiments/
 hopium
 hormesis = A low dose of something can have the opposite effect of a high dose. A little bit of stress wakes you up, but a lot of stress is bad for you. Lifting weights for 30 minutes per day is good for you, but lifting weights for 6 hours per day will destroy your muscles. Stress yourself, but not too much.
-horoscopes -- Michel Gauquelin researcher https://www.threads.com/@oddthisday/post/DXL3caNip4m
+horoscopes -- Michel Gauquelin researcher = examples of complete mistakes https://www.threads.com/@oddthisday/post/DXL3caNip4m
 Horseshoe Theory = Extreme opposites tend to look the same. For example, a far-right movement and a far-left movement can be equally violent or desire a similar outcome. People on both sides are more similar to each other than they are to people in the center.
 hostile architecture https://en.wikipedia.org/wiki/Hostile_architecture
 how to -- speak = +++ https://gist.github.com/StevenMaude/280eadc60938ce4b6960dc60e830662d
 how to ask questions http://www.catb.org/esr/faqs/smart-questions.html
 how to fail well = https://www.linkedin.com/posts/davidkline_7-lessons-on-how-to-fail-well-activity-7330569803084034049-U4Hx/
-htt[ ] ps://www.teamblind.com/post/Made-it-to-FAANG-director-without-a-promotion-ever-HVX5th8f
 https://en.wikipedia.org/wiki/Chicago_school_of_economics
 https://en.wikipedia.org/wiki/Michael_Moore
+https://www.teamblind.com/post/Made-it-to-FAANG-director-without-a-promotion-ever-HVX5th8f
 https://www.youtube.com/watch?v=dQw4w9WgXcQ
-https://x.com/Inevitablewest = an Indian guy farming for money
+https://x.com/Inevitablewest = in reality an Indian guy farming for money
 humanities and social sciences = includes some of the biggest and easiest undergrad majors
 humble bragging https://www.linkedin.com/posts/staceychampagne_womenincybersecurity-cybersecurity-certifications-activity-7284636641648889857-B_y_/
 hustle porn = unless you are suffering, unless you are grinding, unless you are working every hour of every day and posting about it on Instagram, you are not working hard enough https://www.urbandictionary.com/define.php?term=hustle+porn
@@ -733,9 +718,9 @@ I know it when I see it = unclear thresholds, ex. obscenity https://en.wikipedia
 I might be reading too much into it but...
 I will [action] for [duration] = pact instead of goal setting https://www.instagram.com/p/DHEUc39MVnT/
 ideas -- idea driven vs. data driven = fake opposition of ideology vs. reality https://vitalik.eth.limo/general/2025/08/12/ideas.html
-ideas -- structuring -- "Pyramid Principle" https://strategyu.co/structure-your-ideas-pyramid-principle-part-1/ https://strategyu.co/pyramid-principle-part-2-communicate-top-down/
+ideas -- structuring -- "Pyramid Principle" = lead with the answer, then grouped supporting arguments (Barbara Minto) https://strategyu.co/structure-your-ideas-pyramid-principle-part-1/ https://strategyu.co/pyramid-principle-part-2-communicate-top-down/
 identity -- "I’d tied my identity and reputation to hard work"
-idées (no natural upper bound) ne s'usent que si l'on ne s'en sert pas (contre intuitif) https://en.wikipedia.org/wiki/Lindy_effect#History
+idées = (no natural upper bound) ne s'usent que si l'on ne s'en sert pas (contre intuitif) https://en.wikipedia.org/wiki/Lindy_effect#History
 If I can't have it, neither can you = (crab mentality / panier de crabes) mindset of people who try to prevent others from gaining a favorable position, even if attaining such position would not directly impact those trying to stop them. It is usually summarized with the phrase: "If I can't have it, neither can you" https://en.wikipedia.org/wiki/Crab_mentality
 if you grow as a frog, you become a shinier, jump higher frog. But you need a kiss from the princess to become you. a core deep in oneself able to do things beyond ordinary
 Ig Nobel = https://arstechnica.com/science/2026/09/meet-the-2026-ig-nobel-prize-winners/
@@ -744,9 +729,8 @@ ikigai = a reason for being what you love ∩ what you're good at ∩ what the w
 impostor syndrome
 impostor syndrome -- cure = is to stop judging others. The same brain circuitry that assesses others, does the self assessment against you. Don't self-reject. Don't boost others in your head based on the little that's visible to you. Understand that everyone is doing trade-offs all the time and you probably don't want to be in their shoes all things considered https://www.linkedin.com/posts/alexewerlof_no-one-is-talking-about-staff-engineer-mental-activity-7297125140159471617-_J1-
 impulsivity = related to problem gambling, problem video gaming, gambling-related cognitions, risky loot boxes engagement https://www.sciencedirect.com/science/article/pii/S0306460322000934
-in which it slumbers
 incentive
-incentive -- perverse -- cobra effect
+incentive -- perverse -- cobra effect = a bounty on cobras led to cobra farming, hence more cobras
 incentive -- perverse https://en.wikipedia.org/wiki/Perverse_incentive
 inclusiveness = extend the opportunity for everyone to contribute
 income poor but asset rich
@@ -780,6 +764,7 @@ intellectual honesty -- FLOATER -- If someone claims they saw a unicorn, ask you
 intellectual honesty -- “It’s not possible” vs “I wasn’t able to do it” vs “I don’t want to do it.”
 intellectual honesty = willingness to see and admit the truth, even if it goes against your argument, supports the argument of “the other side,” or proves you wrong. Even if it bruises your ego. https://newsletter.weskao.com/p/intellectual-honesty
 intelligence -- encephalization quotient = advanced body to brain, humans ranking highest https://en.wikipedia.org/wiki/Encephalization_quotient
+intelligence -- working memory = https://substack.davidepiffer.com/p/ai-isnt-outthinking-mathematicians
 internalising feelings of inferiority and alienation (colonialism, race...)
 International law = more what you'd call "guidelines" than actual rules. Violating it really only matters if the countries that actually care to object are collectively powerful enough to stop you https://politics.stackexchange.com/a/91479
 intrinsic/extrinsic motivation https://www.swyx.io/js-tooling
@@ -790,7 +775,7 @@ investing -- fund vs index = index always better
 investing -- Nancy Pelosi Stock Tracker ♟ https://x.com/PelosiTracker_/status/1874859312616759754
 invisible hand: Markets aggregate knowledge. Rising prices signal falling supply or increased demand, which incentivizes an increase in production. The opposite is true for falling prices. Prices are a signal wrapped in an incentive.
 IQ -- it exists, it's measurable
-irredentism https://www.reddit.com/r/history/comments/sji919/is_there_a_term_for_this_phenomenon/
+irredentism = movement whose members claim (usually on behalf of their nation), and seek to occupy, territory which they consider "lost" (or "unredeemed"), based on history or legend https://www.reddit.com/r/history/comments/sji919/is_there_a_term_for_this_phenomenon/
 irrelevance = the true fall, ex. Roman Empire didn't "fall", it just became irrelevant
 it's impossible to agree on what's allowed -- no vehicles in the park https://novehiclesinthepark.com/ https://novehiclesinthepark.com/results.php
 it's impossible to agree on what's allowed https://danluu.com/impossible-agree/
@@ -803,13 +788,12 @@ Jack Welch A/B/C players -- B = not visionary or the most driven, but "vital" be
 Jack Welch A/B/C players -- C = nonproducers, likely to "enervate" rather than "energize". Procrastination, failure to deliver on promises
 Jack Welch A/B/C players https://en.wikipedia.org/wiki/Vitality_curve#Ratings
 jaded by the status quo = outsiders = Sometimes you need folks who have a “beginner’s mind” when looking at a problem and haven’t been jaded by the status quo https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
-jamais assez / 1st times
 job -- "only 4 jobs" = DPS, tank, healer, rogue https://x.com/chintanzalani/status/2038026663867330850
 job -- anticipate the layoff = https://www.linkedin.com/posts/ken-schonberg-5270053_prepare-before-you-need-to-a-layoff-may-activity-7467379188560408576-YhrW
 job -- as creation = startup spirit, agency, disagreements
 job -- as extraction = (from the company) just trying to extract value from a company, it’s really important that people don’t dislike you https://blog.staysaasy.com/p/high-amplitude-disagreeableness
 job -- being glue https://read.zerosevzero.com/p/the-glue-held
-job -- hugging https://ia.acs.org.au/article/2026/unhappy-workers-stay-put-in--job-hugging--trend.html
+job -- hugging = staying in a job one is unhappy with, out of fear of a bad job market https://ia.acs.org.au/article/2026/unhappy-workers-stay-put-in--job-hugging--trend.html
 job -- keep interviewing, even if employed = keep an ear to the ground. Keep that resume updated. Keep applying for those positions. When you bomb an interview while you're gainfully employed, the only thing lost is a little bit of time and effort. You might also learn something from the experience. https://www.reddit.com/r/ExperiencedDevs/comments/1sqtvxz/you_should_really_consider_interviewing_even/
 job -- O-ring vs. foolproof -- foolproof jobs = jobs characterized by diminishing returns to labor
 job -- O-ring vs. foolproof -- O-ring jobs = jobs featuring high strategic complementarities in terms of skill
@@ -820,7 +804,7 @@ job -- readiness
 job -- you want to work for people who believe in you = critical for career success: you need someone who is unfailingly supportive of you, whether that's a friend, mentor, or manager
 jobs -- 1930 prediction of 15h/w ? = underestimated the elasticity of human wants https://www.citadelsecurities.com/news-and-insights/2026-global-intelligence-crisis/
 jobs -- woman = case study https://www.linkedin.com/in/anita-brand/
-Johari window https://en.wikipedia.org/wiki/Johari_window
+Johari window = 2×2 of self-knowledge: known/unknown to self × known/unknown to others (open, blind, hidden, unknown) https://en.wikipedia.org/wiki/Johari_window
 joie de l’effort = "Satisfaction lies in the effort, not in the attainment" Gandhi
 joie du don
 journalism -- objective and investigative reporting
@@ -847,7 +831,7 @@ language -- the cube rule https://cuberule.com/
 law -- crimes -- arson
 law -- crimes -- assault -- aggravated
 law -- crimes -- assault -- simple
-law -- crimes -- battery
+law -- crimes -- battery = actual harmful or offensive physical contact (vs. assault = threat or attempt)
 law -- crimes -- classifications -- France -- contravention = lowest, 5 classes https://en.wikipedia.org/wiki/Contravention_in_French_criminal_law
 law -- crimes -- classifications -- France = contravention -> délit -> crime
 law -- crimes -- classifications -- new = summary offenses -> indictable offenses
@@ -916,9 +900,9 @@ learning -- no speed limit = all the way through High School at the same measure
 learning -- self education = ex. spend all spare moments reading any books they could get their hands on https://www.artofmanliness.com/career-wealth/wealth/andrew-carnegie-financial-lessons/
 learning machines "I constantly see people rise in life who are not the smartest, sometimes not even the most diligent, but they are learning machines" (Munger https://jamesclear.com/great-speeches/2007-usc-law-school-commencement-address-by-charlie-munger)
 legibility = we are blind to what we cannot measure. Not everything that counts can be measured, and not everything that can be measured counts. But people manage what they can measure, so society repeats the same mistakes.
-lend-lease https://en.wikipedia.org/wiki/Lend-Lease
+lend-lease = US WWII program supplying allies (UK, USSR...) with materiel https://en.wikipedia.org/wiki/Lend-Lease
 less is more
-Let's roll -- Todd Beamer
+Let's roll -- Todd Beamer = last words heard from a 9/11 Flight 93 passenger before the revolt against the hijackers
 Lev Landau classification of physicists -- league 0 = super league
 Lev Landau classification of physicists -- league 1 = △ extremely original, brilliant and independent + great deal of energy and care = most productive and influential
 Lev Landau classification of physicists -- league 2 = ೱ full of energy but not very original, dislike intellectual challenges, devotion to the field is somehow greater than their ability
@@ -941,6 +925,8 @@ life -- 5 phases of brain's life -- 4 Early ageing = from 66 to 83
 life -- 5 phases of brain's life -- 5 Late ageing = from 83 onwards
 life -- 5 phases of brain's life https://www.bbc.com/news/articles/cgl6klez226o
 life -- 65yo -- barely any major work https://statmodeling.stat.columbia.edu/2026/03/25/what-major-works-of-literature-were-written-after-age-of-85-75-65/
+life -- aging -- photoaging https://en.wikipedia.org/wiki/Photoaging
+life -- authentic life despite the apparent absurdity or incomprehensibility of existence https://en.wikipedia.org/wiki/Existentialism
 life -- balance between living the moment and preparing the long-term = ex. of ppl dying at 50 before planned retirement / travelling (Also Gospel's parable)
 life -- care
 life -- diseases -- heart disfunction = New York Heart Association Functional Classification https://en.wikipedia.org/wiki/New_York_Heart_Association_Functional_Classification
@@ -952,8 +938,9 @@ life -- lines of life = most common to rarest: criticize > gossip > get involved
 life -- my steak is too juicy and my lobster is too buttery
 life -- NPC = "watching life pass you by while doomscrolling on your phone" https://signalundefied.bearblog.dev/i-wanna-live-an-npc-life/
 life -- old people smell = https://www.theguardian.com/wellness/2026/sep/03/old-person-smell
-life -- stages -- 20+ boomerang https://en.wikipedia.org/wiki/Boomerang_Generation
-life -- stages -- 40+ sandwich https://en.wikipedia.org/wiki/Sandwich_generation
+life -- reach one's full potential = "The will to win, the desire to succeed, the urge to reach your full potential … these are the keys that will unlock the door to personal excellence."
+life -- stages -- 20+ boomerang = young adults moving back in with their parents https://en.wikipedia.org/wiki/Boomerang_Generation
+life -- stages -- 40+ sandwich = caring for both one's children and aging parents https://en.wikipedia.org/wiki/Sandwich_generation
 life -- stressors = depression, anxiety, burnout, suicidality, hopelessness, lethargy, anhedonia, feeling flat, worry, and the like are all different flavours of the same phenomena: the negative human response to internal or external stressors https://drericlevi.pages.dev/the-darker-side-of-being-a-doctor/
 life -- super successful = navy SEAL, doctor, pilot, astronaut... https://en.wikipedia.org/wiki/Jonny_Kim
 life -- the real luxuries in life -- 01 Time
@@ -970,6 +957,7 @@ life -- the real luxuries in life -- 11 People you love
 life -- the real luxuries in life -- 12 People who love you back
 life -- winning at life
 life -- you once dreamed of what you have now
+life -- young adulthood = ages 18 to 39
 life -- youth -- milestones https://phideltatheta.org/get-involved/rising-phi/
 life classification https://en.wikipedia.org/wiki/Order_(biology)
 life expectancy -- healthy "HALE" = average number of years that a person can expect to live in "full health" excluding the years lived in less than full health due to disease and/or injury
@@ -986,13 +974,13 @@ lifestyle inflation
 lightning = https://www.quantamagazine.org/what-causes-lightning-the-answer-keeps-getting-more-interesting-20260506/
 Limited Life Experience + Overgeneralization = ADVICE https://blog.daryn.net/post/32264049/paul-buchheit-limited-life-experience
 Lindy effect = a theorized phenomenon by which the future life expectancy of some non-perishable things, like a technology or an idea, is proportional to their current age https://en.wikipedia.org/wiki/Lindy_effect
-linguistic -- Sapir–Whorf hypothesis https://en.wikipedia.org/wiki/Linguistic_relativity
+linguistic -- Sapir–Whorf hypothesis = the language one speaks shapes how one thinks https://en.wikipedia.org/wiki/Linguistic_relativity
 little decisions = We often sweat life's big decisions, but it's the little decisions that matter the most -- the ones we make thousands of times a day, often without even realizing it. The big decisions are the inevitable result of those small decisions. They steered the ship into port, created the conditions that gave rise to the situation. https://paulbuchheit.blogspot.com/2014/07/the-technology.html
 living history = activity that incorporates historical tools, activities and dress into an interactive presentation that seeks to give observers and participants a sense of stepping back in time https://en.wikipedia.org/wiki/Living_history
 living the good life
 local ego maximum = Many times, someone reaches a local ego maximum: standing on top of a mountain built on false assumptions, a lack of self-awareness, and poor judgment about their surroundings. The higher that mountain gets (especially when reinforced by confirmation bias and inertia), the more people hesitate to tell you the hard truth. Depending on how well you take feedback without backfiring, they might never say it: that you’ve completely misunderstood the situation, and that mountain you're standing on doesn't even exist. https://amitaycohen.substack.com/p/backstabbed-by-truth
 locally special and globally average
-Logical Problem of Evil https://christianity.stackexchange.com/questions/100110/what-are-christian-responses-to-the-logical-problem-of-evil
+Logical Problem of Evil = an apparent paradox between evil and an all-powerful, all-knowing, all-good God https://christianity.stackexchange.com/questions/100110/what-are-christian-responses-to-the-logical-problem-of-evil
 lois de grain
 lois somptuaires https://en.wikipedia.org/wiki/Tyrian_purple
 longtermism https://en.wikipedia.org/wiki/Longtermism
@@ -1005,7 +993,7 @@ love and acceptance -- conditional/unconditional
 low culture https://en.wikipedia.org/wiki/Low_culture
 luxury items -- watches https://paulgraham.com/brandage.html
 légende blanche -- colonisation
-légende blanche -- Lost Cause of the Confederacy https://en.wikipedia.org/wiki/Lost_Cause_of_the_Confederacy
+légende blanche -- Lost Cause of the Confederacy = myth that the Confederacy fought for states' rights and honor, not slavery https://en.wikipedia.org/wiki/Lost_Cause_of_the_Confederacy
 légende dorée
 légende noire -- inquisition
 Machiavel -- The Prince
@@ -1014,6 +1002,7 @@ making -- difference between 99% and 100% = can be huge, example of a lunar ecli
 making one's luck
 malingering = intentional fabrication, feigning, or exaggeration of physical or psychological symptoms to obtain an external benefit, such as personal gain, relief from duty or work, avoidance of arrest, acquisition of medication, or mitigation of criminal sentencing https://en.wikipedia.org/wiki/Malingering
 man in the arena = from a speech https://en.wikipedia.org/wiki/Citizenship_in_a_Republic
+management -- every time you step in, you rob your team of the lessons they need to grow https://www.linkedin.com/posts/tahahussain_at-microsoft-a-junior-engineer-spent-3-days-activity-7291493025334149120-MjEo
 many of the best things are rooted in some of the worst events = I would not have one without the other. Every day is full of setbacks and disappointments, but I do my best to say, "Yes, and thank you" https://paulbuchheit.blogspot.com/2014/07/the-technology.html
 marketing -- content amplification https://miromind.com/blog/content-amplification-strategies
 marketing -- KOL "key opinion leader" = marketing term to describe an individual who is highly respected and influential within a specific industry or niche. KOLs possess expertise, knowledge, and a strong reputation, which makes their opinions and recommendations carry significant weight with their audience.
@@ -1022,12 +1011,13 @@ Maslow's pyramid
 mass surveillance -- Snowden 2013 https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded#section/1
 maturity = judgement of persons
 maturity = say sorry, not just act nice afterwards
-McNamara fallacy https://en.wikipedia.org/wiki/McNamara_fallacy
+McNamara fallacy = deciding only on what's measurable, ignoring what isn't https://en.wikipedia.org/wiki/McNamara_fallacy
 me, myself & I
 measurable = at the end you can look, and without any arguments: Did I do that or did I not do it? Yes? No? Simple. No judgments in it.
 measurable = some things are not easily measurable
 measurable = wrong hyper-optimization
 media -- bad coverage = e.g. https://www.kalzumeus.com/2011/03/13/some-perspective-on-the-japan-earthquake/
+media circus = a news event for which the level of media coverage is perceived to be excessive https://en.wikipedia.org/wiki/Media_circus
 media manipulation = https://en.wikipedia.org/wiki/Trust_Me,_I%27m_Lying
 medication -- ibuprofen and paracetamol = more risk than expected https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet
 mediocrity -- accepting (vs. special, high potential) https://www.reddit.com/r/LifeProTips/comments/10znhn2/lpt_request_how_do_i_just_accept_that_i_am/
@@ -1097,20 +1087,26 @@ Mitzvah -- "One Mitzvah for Bondi" https://www.pmc.gov.au/news/national-day-mour
 Mitzvah = In Jewish tradition, a Mitzvah is an act of kindness, compassion, and a moral responsibility. It is about taking practical action to help others, through simple, everyday acts of kindness that together create a powerful wave of goodwill. When these acts are carried out collectively, they strengthen the community and bring light in moments of darkness. This can be as simple as checking in on a neighbour, volunteering time, offering support to a local business, or donating to those in need.
 mnemonic / mnemotechnique = memory-aid = trick to remember something (usually hard to remember / confusing)
 mom and pop -- the worst https://www.reddit.com/r/yimby/comments/1biq3gg/lets_not_romanticize_smalltime_landlords_as_we/?sort=top
-mondegreen https://thehabit.co/knowledge-is-power-france-is-bacon/
+mondegreen = misheard phrase or lyric, ex. "France is bacon" https://thehabit.co/knowledge-is-power-france-is-bacon/
 money = by its very nature, is an emotional topic. We all have grown up with different relationships with money—earning it, asking for it, making it, and even spending it
 Monkey's Paw = wishes come with an enormous price for interfering with fate https://en.wikipedia.org/wiki/The_Monkey%27s_Paw
 Monty Hall problem https://en.wikipedia.org/wiki/Monty_Hall_problem
 moral hazard = Increases in the exposure to risk when insured, or when another bears the cost
 moral imperative https://en.wikipedia.org/wiki/Moral_imperative
 moral system
-Morita therapy
+Morita therapy = Japanese therapy: accept feelings as they are, focus on purposeful action
 most angry people/customers just want to be heard https://www.reddit.com/r/AskReddit/comments/18ng177/comment/keb6402/
+mot juste = “Any word you have to hunt for in a thesaurus is the wrong word. There are no exceptions to this rule.” https://www.goodreads.com/quotes/14337-any-word-you-have-to-hunt-for-in-a-thesaurus
 motivation
 motivation -- addiction
+motivation -- addiction -- casino -- "je vais me refaire"
+motivation -- addiction -- casino -- the house always win
 motivation -- addiction -- chemical
 motivation -- addiction -- comportmental
 motivation -- addiction -- compulsion
+motivation -- addiction -- gambling -- sport, casino, trading, crypto
+motivation -- addiction -- gambling https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what
+motivation -- addiction -- to revenge = James Kimmel Jr., author of "The Science of Revenge: Understanding the World's Deadliest Addiction--And How to Overcome It
 motivation -- social environment = +++ "motivational origins of social loafing to be the lack of an understanding of individual contributions, unchallenging tasks given to the individual, low personal satisfaction from the task, and lack of a united group. Theories investigating why social loafing occurs range from group members' feeling that their contributions will not be noticed to group members' realizing their efforts are not necessary." (+ rest) https://en.wikipedia.org/wiki/Social_loafing
 must be nice = jealousy
 mutual assured destruction https://en.wikipedia.org/wiki/Mutual_assured_destruction
@@ -1167,7 +1163,7 @@ nobility
 nobility -- noblesse oblige https://en.wikipedia.org/wiki/Noblesse_oblige
 nobility -- true
 non-violence
-normalisation de la déviance https://macbidouille.com/news/2024/07/13/samedi-securite-la-normalisation-de-la-deviance-suite
+normalisation de la déviance = gradual acceptance of rule deviations as normal, until disaster (ex. Challenger) https://macbidouille.com/news/2024/07/13/samedi-securite-la-normalisation-de-la-deviance-suite
 not even wrong = more than wrong
 not for profit -- The dirty dozen myths https://www.linkedin.com/pulse/dirty-dozen-myths-profit-sector-jo-owen
 not gonna make it "ngmi" = can't adapt https://ghuntley.com/ngmi/
@@ -1186,7 +1182,7 @@ one's church = a total explanation for a broken world and a movement that promis
 one-size-fits-all
 opportunity cost
 opportunity Cost: By reading this tweet, you are choosing not to read something else. Everything we do is like this. Doing one thing requires giving up another. Whenever you explicitly choose to do one thing, you implicitly choose not to do another thing.
-opportunity solution trees https://learn.producttalk.org/opportunity-mapping
+opportunity solution trees = map desired outcome → opportunities → solutions → experiments (Teresa Torres) https://learn.producttalk.org/opportunity-mapping
 optimism = "keep only the one who say it’s possible" https://posthog.com/founders/first-ops-hire
 other people’s problems / pick your battles
 oui, peut-être que personne n’y a encore pensé
@@ -1201,14 +1197,14 @@ paradox of Abundance = The average quality of information is getting worse and w
 paradox of Consensus = Under ancient Jewish law, if a suspect was found guilty by every judge, they were deemed innocent. Too much agreement implied a systemic error in the judicial process. Unanimous agreement sometimes leads to bad decisions.
 paradox of Specificity = Focus isn’t as constraining as it seems. In the age of the Internet, when everybody has Google search and personalized social media feeds, differentiation is free marketing. The more specific your goal, the more opportunities you’ll create for yourself. Narrowing your aperture can expand your horizons.
 pardon pas oubli
-parenting -- concerted cultivation https://en.wikipedia.org/wiki/Concerted_cultivation
+parenting -- concerted cultivation = middle-class parenting with structured activities to develop the child's talents (Lareau) https://en.wikipedia.org/wiki/Concerted_cultivation
 parenting -- https://en.wikipedia.org/wiki/Slow_parenting
 parenting -- https://en.wikipedia.org/wiki/Social_stratification
 parenting overparenting https://en.wikipedia.org/wiki/Helicopter_parent
 Pareto
-Pareto efficiency
+Pareto efficiency = no one can be made better off without making someone else worse off
 Parkinson’s Law = Work expands to fill the time available. People don’t want to look like they’re lazy, so they find extra tasks to tackle, even if they’re trivial. If you have six months to complete a project, it will take six months to complete. Set deadlines accordingly.
-passing your legos
+passing your legos = giving your responsibilities away as the org grows, to take on new ones (Molly Graham)
 passive aggressive
 pattern / antipattern
 paved path = "The paved path" refers to a methodology where the next step to take is evident
@@ -1221,11 +1217,12 @@ perception = is my blue your blue? https://ismy.blue/
 perfection -- embodying perfection
 perfection -- is the enemy of progress/done/good https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good
 perfection -- unbearable expectations (heroes)
+personal excellence
 personal finance
 personal finance -- building equity
 personal finance -- financially ahead
-personal finance -- FIRE
-personal finance -- HENRY
+personal finance -- FIRE = Financial Independence, Retire Early
+personal finance -- HENRY = High Earner, Not Rich Yet
 personal finance -- lending to family and friends = lost
 personal finance -- retirement -- SORR "Sequence of Returns Risk" = the danger that poor market returns happen early in your retirement when you are actively withdrawing money, causing your portfolio to run out much faster than expected
 personal finance -- The Woke Salaryman = bunch of advices https://thewokesalaryman.substack.com/p/10-finance-revelations
@@ -1305,17 +1302,17 @@ praise-to-critic ratio https://hbr.org/2013/03/the-ideal-praise-to-criticism
 pre-mortem = imagine the worst possible outcome of a decision and work backwards to prevent it
 preach the water but drink wine / faites ce que je dis mais pas ce que je fais
 preference falsification = People lie about their true opinions and conform to socially acceptable preferences instead. In private they’ll say one thing. In public, they’ll say another.
-preferential attachment / effet Matthieu
+preferential attachment / effet Matthieu = the rich get richer: those who have more get more
 presentations -- "so what?" after every slide
 pretty privilege -> karen
 prig = self-righteously moralistic person who behaves as if superior to others
-primals https://myprimals.com https://templetonreligiontrust.org/explore/discovering-peoples-primal-world-beliefs/
+primals = primal world beliefs = basic beliefs about the world's character, ex. safe, enticing, alive https://myprimals.com https://templetonreligiontrust.org/explore/discovering-peoples-primal-world-beliefs/
 primate dominance hierarchy = At the end of the day we’re all just mammals trying to map every organization we’re a part of onto a primate dominance hierarchy https://blog.staysaasy.com/p/a-practical-guide-to-executive-presence-1de
 prime au vice = need to change the game rules / laws https://www.ruedelechiquier.net/essais/568-la-prime-au-vice.html
 priming
 Principal Place of Residence (PPOR), or main residence, is the primary home where an individual lives, acts as their registered address, and usually, where their belongings are kept
 principal-agent problem https://en.wikipedia.org/wiki/Principal–agent_problem
-Principle of Least Power
+Principle of Least Power = choose the least powerful language suitable for the purpose (Tim Berners-Lee)
 priorities -- 0 life extinction = global catastrophic risk / existential threat https://en.wikipedia.org/wiki/Global_catastrophic_risk https://en.wikipedia.org/wiki/Global_catastrophe_scenarios
 priorities -- 1 human extinction (incl. omnicide) https://en.wikipedia.org/wiki/Human_extinction
 priorities -- 2 global issues https://en.wikipedia.org/wiki/List_of_global_issues
@@ -1344,16 +1341,16 @@ project management -- iron triangle = scope, time and people
 project management = boils down to one of two questions: When will it be done? Will it be done in time?
 property -- shade https://shademap.app/
 précariat https://en.wikipedia.org/wiki/Precariat
-psychic’s Con https://softwarecrisis.dev/letters/llmentalist/
+psychic’s con = on a mark, cold reading + probing + subjective validation. (The psychic may not even be aware of it itself) https://softwarecrisis.dev/letters/llmentalist/
 public relations https://vannattapr.com/2020/12/03/dont-yell-at-clouds/
 Pulitzer prize -- biographies https://en.wikipedia.org/wiki/Pulitzer_Prize_for_Biography
-purchasing "messy middle" https://www.thinkwithgoogle.com/intl/en-emea/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/
+purchasing "messy middle" = the exploration/evaluation loop between trigger and purchase (Google) https://www.thinkwithgoogle.com/intl/en-emea/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/
 put into words
 Pygmalion phenomenon -- Research reveals that the Pygmalion phenomenon is negatively associated with diverse indices of personal and couple well-being = "know better what's good for you"
 Pygmalion phenomenon = ppl perceives and behaves toward the target in ways that are consistent with an ideal self perceived from s/o else
-querelle des femmes https://fr.wikipedia.org/wiki/Querelle_des_femmes
+querelle des femmes = long literary debate (15th–18th c.) on the nature and status of women https://fr.wikipedia.org/wiki/Querelle_des_femmes
 question authority
-race -- activism -- Double V campaign https://en.wikipedia.org/wiki/Double_V_campaign
+race -- activism -- Double V campaign = WWII Black American campaign: victory over fascism abroad and over racism at home https://en.wikipedia.org/wiki/Double_V_campaign
 race -- eugenism
 race -- Nigeria
 race -- slavery
@@ -1361,7 +1358,7 @@ race -- white supremacy -- hidden intent behind laws ex. https://en.wikipedia.or
 race to the bottom
 Racketeering is a type of organized crime in which the perpetrators set up a coercive, fraudulent, extortionary, or otherwise illegal coordinated scheme or operation (a "racket") to repeatedly or consistently collect a profit https://en.wikipedia.org/wiki/Racketeering
 radical candor
-rainbow code https://en.m.wikipedia.org/wiki/Rainbow_Code
+rainbow code = UK Cold War military project codenames (color + noun, ex. Blue Streak) https://en.m.wikipedia.org/wiki/Rainbow_Code
 random acts of kindness -- bingo
 rank and file
 rare events = ex. COVID-19 https://en.wikipedia.org/wiki/Rare_events
@@ -1369,7 +1366,7 @@ rational arguments https://psychology.stackexchange.com/a/5957
 rationalization https://en.wikipedia.org/wiki/Rationalization_(psychology)
 rationalize
 re-thinking established patterns
-Reach Impact Confidence Estimate (RICE)
+Reach Impact Confidence Effort (RICE) = prioritization score R × I × C / E
 reading -- Campbell: "I would get nine hours of sheer reading done a day. And this went on for five years straight"
 reading -- science fiction
 real -- vs. entertaining = infotainment
@@ -1378,7 +1375,7 @@ real -- vs. lovable = ex. of iPhone camera's over-processing of photos
 real / istic (replica of the real world) -- vs. expected / trained = movie sound effects, ex. car door closing
 real / plausible -- vs. theatrical = ex. extra lighting effects in movies
 reality distortion field https://en.wikipedia.org/wiki/Reality_distortion_field
-rebound effect https://blog.jim-nielsen.com/2024/notes-on-making-software-by-peter-van-hardenberg/
+rebound effect = efficiency gains increase usage, offsetting the savings (Jevons paradox) https://blog.jim-nielsen.com/2024/notes-on-making-software-by-peter-van-hardenberg/
 recruiting others to support you in addressing issue
 red herring
 redbaiting = reduction to communism
@@ -1406,21 +1403,23 @@ regrets -- People report regretting such things as -- marrying the wrong person
 regrets -- People report regretting such things as -- opting for a secure job near home over an adventurous position overseas
 regrets -- romantic = males, who are thought to be more promotion-oriented in relation to romance and sexual activity, tend to regret their failures to seize romantic opportunities, females are more likely to regret their past actions in this domain
 regrets https://walkerd.people.charleston.edu/317/Regrets2018.pdf
-regulation by prosecution
+regulation by prosecution = regulator sets rules through enforcement actions instead of clear upfront rules
 regulatory -- capture -- avoidance https://www.ipart.nsw.gov.au/Home/About-IPART/regulatory-capture
 regulatory -- capture = a form of government failure where regulatory agencies, tasked with protecting the public interest, are dominated or influenced by the industries they are meant to regulate
 regulatory -- crackdown
 regulatory -- focus
+rejection sensitivity https://teachyourkids.substack.com/p/rejection-sensitivity-in-gifted-and
+relationship -- divorce -- litigation = https://www.dailyjournal.com/article/391828-7-deadly-sins-a-framework-for-family-law
 relationships -- 4 questions to test the strength https://www.today.com/health/behavior/4-questions-test-relationship-strength-rcna202125
 relationships -- how to Avoid Falling in Love with a Jerk: The Foolproof Way to Follow Your Heart Without Losing Your Mind
 relationships -- love at first sight = a “fantasy” that can clash with the reality of day-to-day life
 relationships -- regrets -- Madame Bovary
-rent seeking https://en.wikipedia.org/wiki/Rent-seeking
+rent seeking = gaining wealth by capturing existing value (lobbying, privileges) rather than creating it https://en.wikipedia.org/wiki/Rent-seeking
 reporting -- Suspicious Matter Report (SMR)
-reporting -- tipping off
+reporting -- tipping off = illegally warning someone that a suspicious matter report was filed about them
 reporting -- Unusual Matter Report (UMR)
 reputation = "a social game where every introduction and transaction matters"
-resentment = Resentment, born of weakness, harms no one more than the weak person himself (Nietzsche
+resentment = Resentment, born of weakness, harms no one more than the weak person himself (Nietzsche, Ecce Homo)
 respect
 rest and vest https://news.ycombinator.com/item?id=14943146
 restraining order or protective order = an order used by a court to protect a person in a situation often involving alleged domestic violence, child abuse and neglect, assault, harassment, stalking, or sexual assault https://en.wikipedia.org/wiki/Restraining_order
@@ -1432,10 +1431,11 @@ rights -- of initiative -- ex. of LMPT rejected referendum d'initiative national
 rights -- of initiative https://en.wikipedia.org/wiki/Popular_initiative
 ring theory -- 01 The person in the center ring can say anything she wants to anyone, anywhere. She can kvetch and complain and whine and moan and curse the heavens and say, "Life is unfair," and, "Why me?" That's the one payoff for being in the center ring. Everyone else can say those things too, but only to people in larger rings.
 ring theory -- 02 When you are talking to a person in a ring smaller than yours, someone closer to the center of the crisis, the goal is to help. Listening is often more helpful than talking. But if you're going to open your mouth, first ask yourself if what you are about to say is likely to provide comfort and support. If it isn't, don't say it. Don't, for example, give advice. People who are suffering from trauma don't need advice. They need comfort and support. So say, "I'm sorry," or, "This must really be hard for you," or, "Can I bring you a pot roast?" Don't say, "You should hear what happened to me," or, "Here's what I would do if I were you." And don't say, "This is really bringing me down."
-ring theory https://en.wikipedia.org/wiki/Ring_theory_(psychology)
+ring theory = "comfort in, dump out": support those closer to the crisis, vent only to those further out https://en.wikipedia.org/wiki/Ring_theory_(psychology)
 risk -- accountability
 risk -- appetite
 risk -- management
+road rage = https://www.bbc.com/news/articles/cwgkvygg5nzvo
 robustness principle = be conservative in what you do, be liberal in what you accept from others. It’s a design guideline for software and a good rule for life: Hold yourself to a higher standard than you hold others to.
 rock the boat -- permission to (speak freely)
 root cause misattribution https://www.zeptonaut.com/posts/rocket-league-and-root-cause-misattribution/
@@ -1444,11 +1444,12 @@ safety -- psychological = critical
 safety -- Swiss cheese model
 sandbagging = strategic intentional underperformance, feigned lack of ability, or deliberate lowering of expectations to gain a future advantage. It is a form of deception used in various contexts, including sports, business, and artificial intelligence, to avoid scrutiny or to surprise opponents/employers later.
 satisfied with his lot, adjusted to his environment, happy in his work, and representative of all that is best in the American tradition https://en.wikipedia.org/wiki/Ed_Ricketts#Philosophy
-SBI https://medium.com/pm101/the-situation-behavior-impact-feedback-framework-e20ce52c9357
+SBI = Situation, Behavior, Impact feedback model https://medium.com/pm101/the-situation-behavior-impact-feedback-framework-e20ce52c9357
 SBI https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/
 SBI https://www.mindtools.com/pages/article/situation-behavior-impact-feedback.htm
 schadenfreude = happy ppl misfortune
 science -- currently most accurate model
+science -- epicycles = “fixed” miscalculations of a model by making it more complex, while the model itself could be simplified https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/#footnote-1
 science -- ethics -- "Your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should" https://www.reddit.com/r/videos/comments/1at69qj/your_scientists_were_so_preoccupied_with_whether/
 science -- example of science review of a claim https://dynomight.net/creatine/
 science -- failure = https://freakonomics.com/podcast/why-has-there-been-so-little-progress-on-alzheimers-disease/
@@ -1463,18 +1464,18 @@ science -- space https://en.wikipedia.org/wiki/Outline_of_space_science
 science -- We see something that works, and then we understand it = https://lemire.me/blog/2025/12/04/we-see-something-that-works-and-then-we-understand-it/
 science accepts ideas only when they fit into the then-current state of the science https://en.wikipedia.org/wiki/Stigler%27s_law_of_eponymy#Similar_concepts
 scientific method = an empirical method for acquiring knowledge through careful observation, rigorous skepticism, hypothesis testing, and experimental validation https://en.wikipedia.org/wiki/Scientific_method
-scientism
-scope–severity grid https://en.wikipedia.org/wiki/Global_catastrophic_risk#Defining_existential_risks
+scientism = belief that science is the only valid source of knowledge
+scope–severity grid = risk classification by scope (personal → global) × severity (imperceptible → terminal) (Bostrom) https://en.wikipedia.org/wiki/Global_catastrophic_risk#Defining_existential_risks
 scouting -- decline = https://www.untendedfire.org/2026/05/09/scoutings-real-crisis-is-not-marketing-it-is-decades-of-neglect/
 scrum
 scrum -- myths https://www.youtube.com/watch?v=mgMk3KBsxnQ
 scrum -- scrumbut = Scrum, but...
-sculpting = process whereby the artist releases an ideal figure from the block of stone
+sculpting = process whereby the artist releases an ideal figure from the block of stone in which it slumbers
 seasteading = creation of permanent dwellings in international waters, so-called seasteads, that are independent of established governments. No structure on the high seas has yet been created and recognized as a sovereign state. https://en.wikipedia.org/wiki/Seasteading
 second Law of Thermodynamics: The world tends towards disorder. That’s why your room becomes messier and messier over time. It’s also why an engine converts only ~35% of its energy into useful work. Time moves towards increasing one direction: increasing entropy.
 secrets are Hidden in Plain Sight:  Most people think of secrets as Easter eggs. They assume that if a secret is important, it’s necessarily going to be hard to find. The best ideas can come from things that are so well-known that they aren’t well-seen.
 seizing the means of production
-selectorate theory https://en.wikipedia.org/wiki/Selectorate_theory
+selectorate theory = leaders survive by rewarding their winning coalition: small coalition → private goods, large → public goods https://en.wikipedia.org/wiki/Selectorate_theory
 self -- 3 selves = ideal, actual/real, ought = A grasp of these three elements and the discrepancies between them provides a roadmap to understanding the individual’s sense of self and her characteristic emotions and patterns of behavior.
 self -- actual/real = representation of the attributes she (or others) believes she possesses
 self -- discrepancy -- ideal = causes dejection-related emotions such as sadness and disappointment
@@ -1533,8 +1534,8 @@ sinecure = position with a ~salary that requires or involves little or no respon
 Situation Complication Question Answer (SCQA) = A Framework For Defining Problems & Hypotheses https://strategyu.co/scqa-a-framework-for-defining-problems-hypotheses/
 skin in the game
 skin in the game -- absorbing barrier = anything that prevents people with skin in the game from emerging from it, and to which the system will invariably tend. Let us call these situations ruin, as the entity cannot emerge from the condition https://en.wikipedia.org/wiki/Ergodic_hypothesis#Ergodic_hypothesis_in_finance
-skin tones -- Fitzpatrick https://www.ncbi.nlm.nih.gov/books/NBK481857/table/chapter6.t1/
-skin tones -- Monk https://skintone.google/the-scale
+skin tones -- Fitzpatrick = 6 skin types by reaction to UV (burn vs. tan) https://www.ncbi.nlm.nih.gov/books/NBK481857/table/chapter6.t1/
+skin tones -- Monk = Google's 10-shade skin tone scale (Ellis Monk) https://skintone.google/the-scale
 skin tones -- tanning https://en.wikipedia.org/wiki/Sun_tanning#Tanning_behavior_of_different_skin_colors
 slavery -- Atlantic trade https://en.wikipedia.org/wiki/Atlantic_slave_trade
 slavery -- France https://en.wikipedia.org/wiki/Slavery_in_France
@@ -1546,16 +1547,17 @@ sleep on it
 smart -- book smart / street smart
 SMART goal-setting framework
 smile
-smile -- Duchenne https://en.wikipedia.org/wiki/Smile
+smile -- Duchenne = genuine smile, engaging the eyes https://en.wikipedia.org/wiki/Smile
 so bad you don't even realize you are bad = https://workplace.stackexchange.com/a/25756
 sober thoughts are drunk words
-social -- friendship paradox https://en.wikipedia.org/wiki/Friendship_paradox
-social -- rout party https://en.wikipedia.org/wiki/Rout
+social -- friendship paradox = on average, your friends have more friends than you https://en.wikipedia.org/wiki/Friendship_paradox
+social -- rout party = large fashionable evening party/reception (18th–19th c.) https://en.wikipedia.org/wiki/Rout
 social capital
 social capital (white male)
 social capital = networks of relationships which are productive towards advancing the goals of individuals and groups https://en.wikipedia.org/wiki/Social_capital
 social circles -- ring theory = "support in, complaints/vent/dump out" https://en.wikipedia.org/wiki/Ring_theory_(psychology) https://speakinggrief.org/get-better-at-grief/supporting-grief/ring-theory
 social circles = me -> closest -> close family -> work/neighbor -> onlooker
+social clubs https://en.wikipedia.org/wiki/Gentlemen%27s_club
 social debt = friends, family, and strangers who feel entitled to ask, beg, and steal https://collabfund.com/blog/rich-and-anonymous/
 social loafing = less effort when in a group (could be accountability?) https://en.wikipedia.org/wiki/Social_loafing
 social norm of reciprocity https://en.wikipedia.org/wiki/Norm_of_reciprocity
@@ -1606,10 +1608,10 @@ spinster = an unmarried woman who is older than what is perceived as the prime a
 spite -- house / fence https://en.wikipedia.org/wiki/Spite_house
 spite = a narrower definition could be: to intentionally annoy, hurt, or upset even when there might be no (apparent) gain, and even when those actions might cause the person spiting harm as well https://en.wikipedia.org/wiki/Spite_(sentiment)
 sponcon "sponsored content" = a form of influencer marketing popular on social media
-sport -- no effort https://en.wikipedia.org/wiki/Disgrace_of_Gij%C3%B3n
+sport -- no effort = ex. 1982 World Cup "Disgrace of Gijón": West Germany & Austria played for a 1–0 that qualified both https://en.wikipedia.org/wiki/Disgrace_of_Gij%C3%B3n
 stages of life / seasons of life
-staggered contour trenches
-stairstep approach to building https://robwalling.com/essays/2015/03/26/the-stair-step-method-of-bootstrapping https://howtomarketagame.com/2019/10/21/the-stairstep-approach-to-indie-game-marketing/
+staggered contour trenches = trenches dug along contour lines in staggered rows to harvest rainwater and limit erosion
+stairstep approach to building = bootstrap with small, simple products first, then step up to bigger ones (Rob Walling) https://robwalling.com/essays/2015/03/26/the-stair-step-method-of-bootstrapping https://howtomarketagame.com/2019/10/21/the-stairstep-approach-to-indie-game-marketing/
 stakeholder
 stand the test of public scrutiny
 standards -- having some
@@ -1632,7 +1634,7 @@ stereotypes -- karen -- https://en.wikipedia.org/wiki/Central_Park_birdwatching_
 stereotypes -- karen -- Miss Ann / Becky / Barbecue Becky / Cornerstore Caroline / Permit Patty
 stereotypes -- karen = difficult / unreasonable white women, "speak to the manager" a middle class woman who is perceived as entitled or excessively demanding, racist https://en.wikipedia.org/wiki/Karen_(slang)
 stereotypes -- soccer mom https://en.wikipedia.org/wiki/Soccer_mom
-sterilizations -- spiral case https://en.wikipedia.org/wiki/Spiral_case
+sterilizations -- spiral case = Danish doctors fitted IUDs on thousands of Greenlandic Inuit women and girls without consent, 1960s–70s https://en.wikipedia.org/wiki/Spiral_case
 Steve Jobs Roll Your Own = to satisfy never happy boss https://folklore.org/Calculator_Construction_Set.htmlcastle law https://x.com/LibertariansNSW/status/1960523186790924667
 Stigler's law of eponymy = inventor = the one who bring to attention, not the discoverer https://en.wikipedia.org/wiki/Stigler%27s_law_of_eponymy
 stochastic mindset = abandon determinism = understand what maybe can / can't do
@@ -1646,7 +1648,7 @@ success -- "I wouldn’t wish this level of success on my worst enemy" https://x
 success -- "more than anything, you want to be understood and accepted" https://x.com/TheWhiteWhaleV2/status/1998799262583333211
 success -- redefine success = If your venture has only one definition of success, then you're setting yourself up for failure. I can guarantee success by simply redefining success to include learning something interesting. In this way, I've always succeeded, and also learned a lot :) https://paulbuchheit.blogspot.com/2014/07/the-technology.html
 success? power, influence, money, genius IQ, infinite resources
-sucker https://en.wikipedia.org/wiki/Social_loafing#%22Sucker%22_effect/Aversion
+sucker = "sucker effect": reducing one's effort to avoid being exploited by free riders https://en.wikipedia.org/wiki/Social_loafing#%22Sucker%22_effect/Aversion
 sugar https://tohippo.com/sweet-lies-how-1970s-ads-marketed-sugar-as-a-diet-solution/
 suicide -- assisted https://aleteia.org/2024/12/07/is-the-united-kingdom-still-a-christian-nation
 suicide -- case studies -- a doctor = sleep deprivation, stress, depression https://drericlevi.pages.dev/the-darker-side-of-being-a-doctor/
@@ -1675,7 +1677,7 @@ talent vs. Genius = Society is good at training talent but terrible at cultivati
 tall poppy syndrome = people with notable public success or achievements being ostracised by others as a form of egalitarianism https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Tall_poppy_syndrome
 tariffs -- missing parts = https://xkcd.com/3290/
 tariffs -- should block the sun
-tax -- lazy https://www.insurancewatch.com.au/lazy-tax-insurance.html
+tax -- lazy = paying more for not shopping around / staying loyal, ex. insurance renewals https://www.insurancewatch.com.au/lazy-tax-insurance.html
 taxation -- Bernie Senders https://imgur.com/gallery/im-member-of-1-im-voting-bernie-sanders-heres-why-v5hWg
 teacher https://paulgraham.com/raq.html
 the best defense is a good offense
@@ -1683,7 +1685,7 @@ the bony, blue-fingered hand of Puritanism, eager to push people into bed earlie
 The Boy Who Cried Wolf https://en.wikipedia.org/wiki/The_Boy_Who_Cried_Wolf
 The Map Is Not the Territory = Reality will never match the elegance of theory. All models have inconsistencies, but some are still useful. Some maps are useful because they’re inaccurate. If you want to find an edge, look for what the map leaves out.
 The Medium Is the Message = We pay too much attention to what is being said. But the medium of communication is more impactful. For example, the Internet’s impact on humanity has a bigger influence than anything that’s said on the Internet.
-The Net of a Million Lies
+The Net of a Million Lies = Vernor Vinge's galactic network drowning in misinformation (A Fire Upon the Deep)
 The noisy door gets the oil https://9gag.com/gag/aGEgp07
 The product is crap, so sell yourself
 the Wisdom of Paradox = Logic is the key to scientific truths, but paradoxes are the key to psychological ones. When it comes to the human condition, the deepest truths are often counter-intuitive. When you find two opposites that are both true, start exploring.
@@ -1719,8 +1721,8 @@ toxic -- example https://www.news.com.au/national/victoria/crime/scutter-the-nut
 tradeoffs / can't have everything
 tragedy of the commons = Self-interests causing depletion of a shared resource https://en.wikipedia.org/wiki/Tragedy_of_the_commons
 transferable skills
-travel restriction https://en.wikipedia.org/wiki/Hukou
-Tree Decision Rights Model http://www.cio.com/article/2386119/careers-staffing/how-it-leaders-can-empower-teams-to-become-decision-makers.html
+travel restriction = ex. China's hukou household registration, restricting internal migration https://en.wikipedia.org/wiki/Hukou
+Tree Decision Rights Model = delegation levels: leaf (decide & act), branch (decide, then report), trunk (decide after consulting), root (manager decides) http://www.cio.com/article/2386119/careers-staffing/how-it-leaders-can-empower-teams-to-become-decision-makers.html
 tribal knowledge
 trolley problem https://neal.fun/absurd-trolley-problems/
 trust -- is earned
@@ -1738,11 +1740,11 @@ trust -- trust, but verify
 trust -- trustworthy -- Linus Torvald = a lot about not surprising people "the fact that people know my opinions and where I stand on things. While they may not necessarily like or agree with them all, at least they can trust me to be reliable" https://www.cio.com/article/276384/open-source-tools-five-things-linus-torvalds-has-learned-about-managing-software-projects.html
 trust = https://en.wikipedia.org/wiki/Trust_(law)
 truth -- book titles = "Many critics, especially vociferous ones learned in philosophy as I have discovered, prefer to read a book by title only" https://en.wikipedia.org/wiki/The_Selfish_Gene#Title
-truth -- circular reporting https://en.wikipedia.org/wiki/Circular_reporting
+truth -- circular reporting = a "confirmation" that actually traces back to the original source, faking independent corroboration https://en.wikipedia.org/wiki/Circular_reporting
 truth -- false documents -- hoaxes https://en.wikipedia.org/wiki/False_document#Hoaxes
 truth -- fiction is often the best fact -- gonzo https://en.wikipedia.org/wiki/Gonzo_journalism
 truth -- fully convinced vs probably https://christianity.stackexchange.com/questions/92352/believing-that-christianity-is-probably-true-vs-being-fully-convinced-that-ch
-truth -- verificationism https://christianity.stackexchange.com/a/89891
+truth -- verificationism = a statement is meaningful only if empirically verifiable (logical positivism) https://christianity.stackexchange.com/a/89891
 tsundoku = phenomenon of acquiring reading materials but letting them pile up in a home without reading them https://en.wikipedia.org/wiki/Tsundoku
 Turning Feedback into Action
 tycoon = highly successful businessman (oil and rail being in the typical industries)
@@ -1769,10 +1771,10 @@ unsure -- Is it illegal or unlawful or out of line with policies and procedures?
 unsure -- Would I feel uncomfortable if the story appeared in the media? Would it shame my organization, spouse, partner, parent or child?
 values -- companies ex. Atlassian, Canva, Dashlane…
 vanilla
-Veblen good https://en.wikipedia.org/wiki/Veblen_good
+Veblen good = demand rises with price, as a status signal https://en.wikipedia.org/wiki/Veblen_good
 veridical = seems wrong at first glance but is, in fact, true https://en.wikipedia.org/wiki/Birthday_problem
 verifiability https://en.wikipedia.org/wiki/Wikipedia:Verifiability
-verisimilitude
+verisimilitude = appearance of being true or real
 via negativa = When we have a problem, our natural instinct is to add a new habit or purchase a fix. But sometimes, you can improve your life by taking things away. For example, the foods you avoid are more important than the foods you eat.
 vicarious liability = indirect liability for the actions of another https://consumerrights.wiki/w/Uber_arbitration_award_over_Emily_Normandin-Parker%27s_death
 victimisation/retaliation = subject to or threatened with some kind of disadvantage or unfair treatment (often referred to as detriment) because they made (or plan to make) a workplace complaint, or helped someone else to do so
@@ -1785,13 +1787,14 @@ viz -- ridgeline plot https://en.wikipedia.org/wiki/Ridgeline_plot
 voleur volé
 volume hiring
 vrai vs. bien trouvé (meme)
-wabi-sabi https://en.wikipedia.org/wiki/Wabi-sabi
+wabi-sabi = Japanese aesthetic of imperfection, impermanence and simplicity https://en.wikipedia.org/wiki/Wabi-sabi
 wall of shame
 wanderlust = strong desire to travel the world https://en.wikipedia.org/wiki/Wanderlust
 wantrepreneurs
 war -- rout https://en.wikipedia.org/wiki/Rout
 war https://en.wikipedia.org/wiki/War
 We must remember that entire societies can and often do follow the wrong path for a very long time https://news.vanderbilt.edu/2011/04/13/michael-burry-transcript/
+weaponized incompetence
 well adjusted
 what vs. how = OPPOSITE of school +++ https://strategyu.co/consulting-mindset-shifting-from-the-what-to-the-how/
 what we are NOT = ex. https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not
@@ -1821,16 +1824,20 @@ wisdom -- a wisdom for left may not be valid for right
 wisdom of the rooms = AA steps
 wokeness = An aggressively performative focus on social justice https://paulgraham.com/woke.html
 word frequency -- English https://frequencylist.com/
+work -- 4-hour workweek
 work -- anger = don't https://www.seangoedecke.com/you-should-never-be-angry-at-work/
+work -- busy work https://en.wikipedia.org/wiki/Busy_work
+work -- corporate slave (but also never achieving anything?)
 work -- ghostworking = https://www.linkedin.com/news/story/the-ghostworking-trend-explained-7359850/
 work -- quiet quitting
+work = every occupation has its pro/cons
 workaholic
 works of mercy -- corporal
 works of mercy -- spiritual
 works of mercy = https://en.wikipedia.org/wiki/Works_of_mercy
 world-class = aspiration to be world-class at something? https://x.com/shreyas/status/1442165985490833415
 worldview defense = a psychological mechanism that strengthens people's connection with their in-group as a defense mechanism against threats https://en.wikipedia.org/wiki/Mortality_salience#Potential_to_cause_worldview_defense
-xenia https://greekmythcomix.com/comic/how-to-do-xenia/
+xenia = ancient Greek sacred duty of hospitality between host and guest https://greekmythcomix.com/comic/how-to-do-xenia/
 XY problem = "what are you trying to achieve?" https://xyproblem.info/
 you are the company you keep
 you can bring a horse to water...
@@ -1848,5 +1855,4 @@ you feel like shit -- 2. Emotional -- 4. Are you feeling dissociated, depersonal
 you feel like shit -- 2. Emotional -- 5. Are you feeling depressed, sad, or upset?
 you feel like shit -- 2. Emotional -- 6. Are you feeling lonely or in need of attention?
 you feel like shit = a self care ~"game" https://youfeellikeshit.com/
-young adulthood = ages 18 to 39
 yuppy = Young Urban Professionals

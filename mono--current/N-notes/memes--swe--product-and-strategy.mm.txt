@@ -14,7 +14,7 @@ absolute advantage = a situation in which a company can produce the same product
 adaptability = turn the challenges into opportunities
 adoption -- technology adoption -- usually non-linear = due to so-called complementary network effects
 agency arbitrage = buy an agency, extract into a SaaS https://x.com/toddsaunders/status/2011108996728701399"
-alignment -- challenges -- risk of social layer capture: means "having the right friends"
+alignment -- challenges -- social layer capture = means "having the right friends"
 alignment -- of incentives = https://vitalik.eth.limo/general/2024/09/28/alignment.html
 alignment -- of tech
 alignment -- of values
@@ -53,6 +53,7 @@ books -- zero-to-one = Peter Thiel’s advice on startups, a summary https://pau
 boring -- culture
 boring -- plans https://skamille.medium.com/make-boring-plans-9438ce5cb053
 boring -- technology https://mcfunley.com/choose-boring-technology
+boring start-up with uncompelling products = failed when they allowed the Silicon Valley Circus to define “success” https://dbushell.com/2026/10/03/deno-to-node/
 bottom-up adoption = Individual users adopt it → teams follow → company pays
 build vs. buy = example https://www.svix.com/build-vs-buy/
 build-boost-discard cycle of internet applications = scourge https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_deploy-web-apps-anywhere-activity-7305513792275169281-C2-h
@@ -115,18 +116,14 @@ dogfooding "Eating our own Dogfood" = ranges wider than testing your end-product
 duty of care = actively shield users from harm “rather than the reactive system that exists now” https://ia.acs.org.au/article/2025/govt-ramps-up-big-tech--duty-of-care--reforms.html
 economies of scale = aren’t available to smaller players in a market, including increased visibility, increased buying power, and lower customer acquisition costs https://dealroom.net/blog/industry-consolidation
 ecosystem -- Application Development Kit (ADK) = encompasses the code that enables licensed distributors to port the application onto their own platforms and streamline the process straight to testing and QA with us. The ADK is available as a software package that contains all the tools a distributor could need to build on their diverse device platform. https://medium.com/disney-streaming/introducing-the-disney-application-development-kit-adk-ad85ca139073
-email -- drip
-email -- goodbye = https://www.reddit.com/r/sysadmin/comments/1wjdpgx/psa_grammarly_will_send_unhinged_messages_to_all/
-email -- resurrect
-email -- welcome
-Embrace, Extend, and Extinguish https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish
-enshitification -- -- macos https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/
+Embrace, Extend, and Extinguish = https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish
+enshitification -- macos https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/
 enshitification -- windows https://definitelynotwindows.com/
+enshittification -- extract value vs. claw back all the value
 enshittification -- hate = ex. Adobe https://petapixel.com/2025/04/10/adobe-deletes-bluesky-posts-after-furious-backlash/
 enshittification -- temu-fication = externalization and compression of cost making low-quality goods attractive and profitable https://マリウス.com/the-temu-fication-of-software-digital-goods-services/
 enshittification = first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die. https://doflo.com/blog/what-is-enshitification-and-can-we-stop-it https://en.wikipedia.org/wiki/Enshittification
 exit -- shutting down = https://cdixon.org/2010/01/09/shutting-down
-extract value vs. claw back all the value (enshittification)
 failures -- inVision -- https://www.linkedin.com/pulse/one-reason-why-invision-failed-greg-nudelman/
 failures -- kodak -- "kodak moment"
 failures -- MullCa 510 = too strong, company went bankrupt https://elsiegreen.com/blogs/musings/the-history-of-the-mullca-510-school-chair
@@ -203,7 +200,7 @@ funnel -- RARRA -- 4 Referral = Build products your users will love, and let the
 funnel -- RARRA -- 5 Acquisition = All of your above efforts should lead to you acquiring more customers. Sure, it may happen at a slower rate, but at a much longer lifespan. Hence, an increase in customer lifetime value.
 gamification = usually bad
 get big fast / get large or get lost
-globalization -- Institutional trust and cultural permission are now inseparable from the product itself  https://open.substack.com/pub/a16z/p/the-sovereign-wall-why-ais-next-billion
+globalization -- Institutional trust and cultural permission are now inseparable from the product itself https://open.substack.com/pub/a16z/p/the-sovereign-wall-why-ais-next-billion
 globalization = is not a product feature; it is a geopolitical negotiation ex. Thailand lèse-majesté, Germany GEMA (no fair use)... https://open.substack.com/pub/a16z/p/the-sovereign-wall-why-ais-next-billion
 go-to-market (GTM) = +++ plan of an organization, utilizing their outside resources (e.g., sales force and distributors), to deliver their unique value proposition to customers and to achieve a competitive advantage https://en.wikipedia.org/wiki/Go-to-market_strategy
 gold rush tools = during a gold rush, the one selling tools is the one making money
@@ -261,12 +258,12 @@ M&A -- Apple = predatory, see [[killer zone]]
 M&A -- fb / insta = https://www.linkedin.com/posts/olivermolander_technology-facebook-instagram-activity-7241726426826059776-IOE4
 M&A -- killer zone = https://www.trendingtopics.eu/tech-talent-the-intricate-mechanisms-behind-apples-startup-killer-zone/
 make it work, make it good, make it fast, make it work again
-management maturity -- Level 0: Bliss
-management maturity -- Level 1: Fire Fighting
-management maturity -- Level 2: Global Baselines & Metrics
-management maturity -- Level 3: P75+, Site-specific Baselines & Metrics
-management maturity -- Level 4: Variance Control & Regression Prevention
-management maturity -- Level 5: Strategic Performance
+management maturity -- Level 0 = Bliss
+management maturity -- Level 1 = Fire Fighting
+management maturity -- Level 2 = Global Baselines & Metrics
+management maturity -- Level 3 = P75+, Site-specific Baselines & Metrics
+management maturity -- Level 4 = Variance Control & Regression Prevention
+management maturity -- Level 5 = Strategic Performance
 management maturity = high-management-maturity organisations https://infrequently.org/2022/05/performance-management-maturity/
 market fit -- founder-market = proving you're the exact right people to pursue the idea, whether from your experience or because you've somehow gone super deep into “the idea maze” https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
 market fit -- product-market -- Arc archetype -- Future Vision = enable a new reality through visionary innovation
@@ -339,6 +336,7 @@ only the paranoid survive -- 1 assume disaster is coming
 only the paranoid survive -- 2 spot threats before they explode = if you wait until a crisis is obvious, it's already too late
 only the paranoid survive -- 3 reinvent before you're forced to = industries shit, adapt or die
 organic = is this user organic? ex. insider (test account, QA account, employee account /adjacent), bot, abuser...
+other people's castle = https://xlii.space/eng/malicious-software-on-google-ads/
 outsiders = Sometimes you need folks who have a “beginner’s mind” when looking at a problem and haven’t been jaded by the status quo https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
 overfitting = the solution accomplishes one goal — but as soon as it needs to do something else, it’s almost back to square one https://medium.com/design-bootcamp/overfitting-and-the-problem-with-use-cases-337d9f4bf4d7
 path to commercial viability = e.g. X moonshots "proved much longer and riskier than hoped"
@@ -381,10 +379,10 @@ principles -- canva https://www.canva.dev/docs/apps/design-guidelines/principles
 principles -- end-to-end principle = fundamental principle of the Internet in which the role of a network is to reliably deliver data from willing senders to willing receivers
 principles -- right of exit = users of a platform can easily go elsewhere if they are dissatisfied with it. This requires interoperability, countering the network effects
 procurement
-product life cycle -- stage 1 = Market Development is where you engage in experiments and innovation
-product life cycle -- stage 2 = Growth is where you iterate on differentiation features
-product life cycle -- stage 3 = Maturity is where you shift to “good enough” and start optimizing for cost of operation
-product life cycle -- stage 4 = Decline is where you look at how to efficiently exit.
+product lifecycle -- stage 1 = Market Development is where you engage in experiments and innovation
+product lifecycle -- stage 2 = Growth is where you iterate on differentiation features
+product lifecycle -- stage 3 = Maturity is where you shift to “good enough” and start optimizing for cost of operation
+product lifecycle -- stage 4 = Decline is where you look at how to efficiently exit.
 product mode -- come for the tool, stay for the network "best X I've ever used"
 product mode -- multiplayer = no utility for a single user or until a critical mass of users is reached
 product mode -- single = has immediate value for a single user
@@ -393,9 +391,6 @@ proposition -- selling = What makes your product or service unique? What sets yo
 proposition -- value
 quality vs. speed = sacrificing code quality for speed leads to compounding issues later. balance speed with long-term sustainability
 real-world context https://contextsdk.com/insights#product
-realistic scheduling = overly optimistic deadlines lead to burnout and missed milestones. Always add a (secret?) buffer.
-reputation management
-reputation management -- REPCOM
 revenue -- evergreen = able to survive to bear markets
 revenue -- hyper-revenue = catch on
 revenue -- multiple diversified revenue streams
@@ -420,6 +415,7 @@ scaling -- managers who get promoted quickly into upper manager and leader posit
 second product -- syndrome https://www.hubspot.com/startups/resources/second-product-tips-for-success
 second product -- When and How https://caseyaccidental.com/second-products/
 shared vision = maintaining a shared vision across the board to help stay on course
+Shorlock'ed = platform copy the product
 side -- dark side = selling the users https://www.androidpolice.com/mozilla-firefox-new-privacy-terms-raise-red-flags/
 side projects -- outside of job https://www.reddit.com/r/SideProject/comments/1br62xb/building_side_projects_outside_fulltime_job/
 simplicity "no ads, no gimmicks, no games"

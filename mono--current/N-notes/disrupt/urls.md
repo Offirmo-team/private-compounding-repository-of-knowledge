@@ -48,3 +48,6 @@ nice CTAs https://contextual.ai/the-unified-context-layer
 https://medium.com/@shredlife/instagrams-url-blackhole-c1733e081664
 
 utm https://en.wikipedia.org/wiki/UTM_parameters
+
+Google Safe Browsing https://transparencyreport.google.com/safe-browsing/search https://developers.google.com/safe-browsing/reference
+Google Search Console

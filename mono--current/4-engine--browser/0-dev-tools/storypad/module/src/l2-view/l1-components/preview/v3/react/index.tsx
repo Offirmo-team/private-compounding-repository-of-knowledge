@@ -2,6 +2,7 @@
  */
 import * as React from "react"
 import { type ProfilerOnRenderCallback } from "react"
+import type { RootOptions } from "react-dom/client"
 
 import type { Immutable } from "@monorepo-private/ts--types"
 
@@ -35,10 +36,13 @@ async function render(
 	container.innerHTML = "" // reset any loading message
 	container.appendChild(root_elt)
 
-	const root = createRoot(root_elt)
+	const root = createRoot(root_elt, {
+		onCaughtError,
+		onUncaughtError,
+	})
 
 	const { Fragment, StrictMode, Suspense, Profiler } = libⳇreact
-	const use_strict = false
+	const use_strict = true // TODO 1D add a switch?
 	const StrictWrapper = use_strict ? StrictMode : Fragment
 
 	const props = render_params.args
@@ -68,11 +72,10 @@ async function render(
 	// TODO error boundary
 	root.render(
 		<StrictWrapper>
-			{
-				render_params.parameters.layout === "fullscreen" && (
-					<FakeInset />
-				) /* reminder: needs geometry CSS vars = ~offirmo framework */
-			}
+			{render_params.parameters.layout === "fullscreen" && (
+				/* reminder: FakeInset needs geometry CSS vars = ~offirmo framework, will display nothing if absent */
+				<FakeInset />
+			)}
 			<Suspense fallback="<Suspense… />">
 				<Profiler id="storypad-story" onRender={onRender}>
 					<StoryAsReactComponent />
@@ -87,6 +90,36 @@ async function render(
 const onRender: ProfilerOnRenderCallback = (...args) => {
 	// Aggregate or log render timings...
 	console.log(`React <Profiler> onRender():`, args)
+}
+
+const onCaughtError: NonNullable<RootOptions["onCaughtError"]> = (error, { componentStack, errorBoundary }) => {
+	logꓽreact_error(`Error caught by ${getꓽboundary_name(errorBoundary)}`, error, componentStack)
+}
+
+const onUncaughtError: NonNullable<RootOptions["onUncaughtError"]> = (error, { componentStack }) => {
+	logꓽreact_error(`Uncaught error (not caught by any error boundary)`, error, componentStack)
+	reportError(error) // preserve React's default = dispatch a global "error" event, listened to by SXC
+}
+
+function logꓽreact_error(title: string, error: unknown, componentStack: string | undefined) {
+	// Owner Stacks are only correct HERE (root error handlers): React sets the throwing component as "current" around them.
+	// Elsewhere (ex. in an error boundary) captureOwnerStack() returns the stack of whatever React is processing at that time.
+	// https://react.dev/reference/react/captureOwnerStack
+	const owner_stack = React.captureOwnerStack?.() // dev only
+
+	console.group(`[${LIB}] React: ${title}`)
+	console.error(error)
+	console.log("componentStack:", componentStack)
+	console.log("ownerStack:", owner_stack)
+	console.groupEnd()
+}
+
+function getꓽboundary_name(boundary: React.Component<unknown> | undefined): string {
+	if (!boundary) return "<unknown boundary>"
+
+	const component_name = boundary.constructor.name
+	const { name } = (boundary.props ?? {}) as { name?: unknown }
+	return typeof name === "string" ? `<${component_name} name="${name}" />` : `<${component_name} />`
 }
 
 /////////////////////////////////////////////////

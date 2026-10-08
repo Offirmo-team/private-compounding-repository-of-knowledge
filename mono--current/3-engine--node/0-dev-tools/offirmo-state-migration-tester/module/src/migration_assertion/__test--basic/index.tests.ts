@@ -1,6 +1,6 @@
 import { expect } from "chai"
 
-import type { WithSchemaVersion } from "@monorepo-private/state-utils"
+import type { WithSchemaVersion } from "@monorepo-private/offirmo-state"
 
 import { LIB } from "../../consts.ts"
 import { itㆍshouldㆍmigrateㆍcorrectly } from "../index.ts"

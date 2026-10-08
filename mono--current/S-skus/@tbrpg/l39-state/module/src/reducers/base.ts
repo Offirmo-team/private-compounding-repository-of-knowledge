@@ -7,7 +7,7 @@ import * as MetaState from "@oh-my-rpg/state--meta"
 import { CharacterClass, rename, switch_class as _switch_class } from "@tbrpg/state--character"
 import * as InventoryState from "@tbrpg/state--inventory"
 
-import { complete_or_cancel_eager_mutation_propagating_possible_child_mutation } from "@monorepo-private/state-utils"
+import { complete_or_cancel_eager_mutation_propagating_possible_child_mutation } from "@monorepo-private/offirmo-state"
 import { type TimestampUTCMs, getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
 import { type Immutable } from "@monorepo-private/ts--types"
 import { type UUID } from "@monorepo-private/uuid"

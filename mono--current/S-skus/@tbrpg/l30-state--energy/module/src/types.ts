@@ -1,6 +1,6 @@
 import { type NumeratorDenominator } from "fraction.js"
 
-import { type BaseUState, type BaseTState } from "@monorepo-private/state-utils"
+import { type BaseUState, type BaseTState } from "@monorepo-private/offirmo-state"
 
 /////////////////////
 

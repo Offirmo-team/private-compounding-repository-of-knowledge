@@ -34,7 +34,7 @@ brand -- 6 what's? = what we stand for, what we believe in, what people we seek 
 brand -- PERSONAL -- dev blog https://adamcoster.com/
 brand -- rebrand = https://www.msrebrandregistry.com/index.html
 brand -- relationship = https://en.wikipedia.org/wiki/Brand_relationship
-cancel -- hey case study = https://chadnauseam.com/random/cancelling-my-hey
+cancel -- hey case study = https://chadnauseam.com/random/cancelling-my-hey https://world.hey.com/dhh/as-i-remember-london-e7d38e64
 CEMs "Commercial Electronic Messages" = emails, texts, instant messages, group messages and even app/website notifications when they are commercial
 CEMs -- consent -- express = Ticking a box on a form or website. Signing up to receive newsletters or offers. Verbally agreeing during a call or in person (if documented appropriately). Selecting preferences in a digital platform or app. Agreeing to terms and conditions which contain a provision regarding consent to receive CEMs.
 CEMs -- consent = express or inferred
@@ -56,14 +56,21 @@ discoverability -- SERP "Search Engine Results Page" = the page you see after ty
 discoverability -- SERP -- sections = Organic results; Paid ads (PPC); Featured snippets; Knowledge panels; Local pack; Image/video results; People Also Ask
 discoverability -- stores
 email -- ALWAYS re-pitch the product = we don't remember what it was
+email -- drip
 email -- drip = regular email for existing users
+email -- goodbye = https://www.reddit.com/r/sysadmin/comments/1wjdpgx/psa_grammarly_will_send_unhinged_messages_to_all/
 email -- newsletter
 email -- refresher = "Since you first signed up for X, the product’s changed a lot..."
 email -- resurrect
+email -- resurrect
 email -- updates
+email -- welcome
+Google Safe Browsing https://transparencyreport.google.com/safe-browsing/search
+Google Search Console
 growth & activation
 house ads = surfacing first-party content / features to user
 how to plan 1 month of content = https://www.instagram.com/p/DFvFOJyNBY9/
+i18n = international marketing https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory#International_marketing https://en.wikipedia.org/wiki/International_marketing
 local scene = 1) need a scene to perform (feedback, emulation) 2) if not known on local scene, where?
 logo
 logo -- looking like a a*hole = AI companies
@@ -72,6 +79,7 @@ material -- https://www.getmimic.lol/
 material -- screenshots?
 material -- video https://www.capcut.com/newsroom/dreamina-seedance-2
 mind share = When people think of examples of a product type or category, they usually think of a limited number of brand names https://en.wikipedia.org/wiki/Mind_share
+other people's castle
 presence -- AI skills = e.g. https://clerk.com/docs/guides/ai/skills
 presence -- GitHub = e.g. https://github.com/langchain-ai
 presence -- marketplaces
@@ -84,9 +92,12 @@ presence -- wikipedia -- beware: notability, neutrality, primary source
 presence -- wikipedia = e.g. https://en.wikipedia.org/wiki/N8n
 reputation example of Meta = long history of anti-competitive, censorial, and invasive practices https://www.eff.org/deeplinks/2025/01/mad-meta-dont-let-them-collect-and-monetize-your-personal-data
 reputation management
+reputation management
+reputation management -- REPCOM
 reputation management -- REPCOM
 reputation management = https://en.wikipedia.org/wiki/Reputation_management
 SEO -- agentic -- insights = https://knownagents.com/insights
+social media -- handle -- confiscation = https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/
 talks -- how to speak = +++ https://gist.github.com/StevenMaude/280eadc60938ce4b6960dc60e830662d
 transfer of enthusiasm https://x.com/jasonfried/status/1961157371235111304
 trust building

@@ -17,7 +17,7 @@ import { type LastMigrationStep, type MigrationStep, migrate_toꓽlatestⵧgener
 
 describe(`${LIB} - migration`, function () {
 	const TEST_SXC = getRootSXC()
-	const LIB = "@monorepo-private/state-utils--UNIT-TEST"
+	const LIB = "@monorepo-private/offirmo-state--UNIT-TEST"
 	TEST_SXC.setLogicalStack({ module: LIB })
 
 	describe("migrate_toꓽlatestⵧgeneric()", function () {

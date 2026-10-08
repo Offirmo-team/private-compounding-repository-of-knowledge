@@ -1,7 +1,7 @@
 import { xxx_internal_reset_prng_cache } from "@oh-my-rpg/state--prng"
 import { expect } from "chai"
 
-import { enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { LIB } from "../consts.ts"
 import { DEMO_STATE } from "../examples/index.ts"

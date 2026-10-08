@@ -1,7 +1,7 @@
 /////////////////////
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { getꓽUTC_timestampⵧhuman_readable‿days } from "@monorepo-private/timestamps"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"

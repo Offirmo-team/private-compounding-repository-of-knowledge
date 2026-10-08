@@ -881,6 +881,7 @@ polyfill -- shim vs polyfill vs ponyfill
 polymorphism https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
 practices -- best vs. standard
 preprocessor macros
+preventable problem paradox = if an incident occurs and you swoop in to fix it, you’re a hero. If you prevent the problem from ever occurring in the first place, then nobody knows you did anything. https://medium.com/@shreyashere/why-our-leaders-fail-us-and-then-save-us-the-preventable-problem-paradox-872614ec3293
 principle of least surprise / principle of least astonishment https://en.wikipedia.org/wiki/Principle_of_least_astonishment
 principles -- KISS
 principles -- SOLID

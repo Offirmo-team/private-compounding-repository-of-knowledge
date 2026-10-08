@@ -1,11 +1,4 @@
-# Review: @monorepo-private/state-utils (offirmo-state)
-
-Base types, type-guards, selectors, comparators and generic migration helpers for "Offirmo style" application states
-(U-state / T-state / bundles / root state), used as a foundation by many consumer packages (e.g. `@oh-my-rpg/state--*`,
-`@tbrpg/l3*-state--*`).
-
-Note: this package contains a `module/~~tosort/2024/` folder (`comparators--unclear.ts`, `comparators--unclear_spec.ts`)
-holding unsorted/legacy code slated for removal — not reviewed here, per instructions.
+# Review: @monorepo-private/offirmo-state (offirmo-state)
 
 ## Findings
 

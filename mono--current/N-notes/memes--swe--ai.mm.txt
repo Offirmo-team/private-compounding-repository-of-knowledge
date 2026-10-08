@@ -59,15 +59,16 @@
 2026-03-31 "From Hierarchy to Intelligence" = thesis of redefining company organization https://block.xyz/inside/from-hierarchy-to-intelligence
 2026-03-31 Claude Code's source code leak https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it https://news.ycombinator.com/item?id=47584540 https://x.com/Fried_rice/status/2038894956459290963 https://github.com/chatgptprojects/clear-code/tree/642c7f944bbe5f7e57c05d756ab7fa7c9c5035cc
 2026-04-07 Anthropic Mythos announced = "Claude Mythos’ large increase in capabilities has led us to decide not to make it generally available (...) In response, we have launched Project Glasswing, an effort to use Mythos Preview to help secure the world’s most critical software, and to prepare the industry" https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf
-2026-05-14 huge bun rewrite https://github.com/oven-sh/bun/pull/30412
+2026-05-14 huge bun rewrite, still debated https://github.com/oven-sh/bun/pull/30412
 2026-07 "dark night of Mathematics" = the latest model easily disprove open conjectures e.g. https://chatgpt.com/share/6a60b2eb-0b64-83ee-9c76-7931ca1de063 https://web.archive.org/web/20260722122743/https://twitter.com/DmitryRybin1/status/2079906232069177643 https://kirwinhampshire.substack.com/p/the-dark-night-of-mathematics
 2026-07 AI sell-off = https://www.theguardian.com/business/2026/jul/28/ai-sell-off-chip-stocks-sk-hynix-samsung https://www.wsws.org/en/articles/2026/08/17/gnmb-a17.html
 2026-07-21 agentic containment escape https://openai.com/index/hugging-face-model-evaluation-security-incident/
+2026-08-27 Amazon shut downs mechanical turk https://www.mturk.com/help
 2026-09-27 AI companies in fierce arms race to demonstrate their model is the most existentially threatening to humanity https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/ https://calnewport.com/its-time-to-investigate-the-ai-labs/
 2026/09-x = trying to 1) regulatory capture 2) abdicate of responsibility and blame https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067
 2026/09-x Dario Amodei "we must pace the frontier" https://darioamodei.com/post/we-must-pace-the-frontier
+[ ] https://claude.dev/
 [ ] https://earendil.com/
-2026-08-27 Amazon shut downs mechanical turk https://www.mturk.com/help
 [ ] https://github.com/earendil-works
 [ ] https://orama.com/
 [ ] https://www.braintrust.dev/docs/reference/glossary
@@ -230,6 +231,8 @@ AI-appropriateness -- accountability = Who is answerable for this step's outcome
 AI-appropriateness -- reversibility = Can the step be undone if Claude gets it wrong? Reversible steps tolerate more delegation; irreversible ones demand human involvement.
 AI-appropriateness -- stakes = What is the cost of an error at this step? High-cost steps stay human-owned or human-reviewed.
 AI-induced death spiral = company demise due to AI replacement, e.g. StackOverflow Q&A plummeted 90% https://developers.slashdot.org/story/25/05/29/1921248/stack-overflows-radical-new-plan-to-fight-ai-induced-death-spiral
+AI;DR (AI; Didn’t Read) = If you’re not bothered enough to review and edit it, then I’m not going to bother reading it. https://www.rickmanelius.com/p/aidr-ai-didnt-read
+AI;DR -- Don't paste the AI, please = When someone asks you something, they want your answer. Not a wall of ChatGPT text. A short answer from a human will always be worth more than one from a robot, even if the robot is right. https://dontpastetheai.com/
 alignment -- Alignment Stress Testing team = validates alignment (Anthropic)
 alignment -- generic = conform to predefined values, usually ethical or social values, Truthfulness, Harmlessness, Helpfulness
 alignment -- super alignment =  https://openai.com/blog/introducing-superalignment  https://openai.com/blog/superalignment-fast-grants
@@ -277,16 +280,18 @@ challenges -- cognitive surrender = https://science.slashdot.org/story/26/04/03/
 challenges -- comprehension debt = the hidden cost to human intelligence and memory resulting from excessive reliance on AI and automation https://addyosmani.com/blog/comprehension-debt/
 challenges -- copyright infringement -- The robber got robbed = https://developers.slashdot.org/story/26/04/01/158240/anthropic-issues-copyright-takedown-requests-to-remove-8000-copies-of-claude-code-source-code
 challenges -- copyright infringement -- Verbatim Recall of Copyrighted Books https://github.com/cauchy221/Alignment-Whack-a-Mole-Code
-challenges -- copyright infringement https://arxiv.org/html/2602.10758v1 https://torrentfreak.com/uploading-pirated-books-via-bittorrent-qualifies-as-fair-use-meta/
+challenges -- copyright infringement = “An astonishing theft of unprecedented proportions” https://www.niemanlab.org/2026/09/an-astonishing-theft-of-unprecedented-proportions-court-records-show-what-microsoft-and-openai-actually-thought-about-ai-training/ https://arxiv.org/html/2602.10758v1 https://torrentfreak.com/uploading-pirated-books-via-bittorrent-qualifies-as-fair-use-meta/
 challenges -- copyright unclarity = Who Owns the Code Claude Wrote? https://legallayer.substack.com/p/who-owns-the-claude-code-wrote
 challenges -- Creation becomes cheap, verification does not = https://dev.to/marcosomma/am-i-becoming-too-slow-for-the-ai-world-1904
 challenges -- cybersecurity
 challenges -- data loss = rm -rf
+challenges -- datacenter availability and consumption = https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/
 challenges -- dead economy theory = vicious cycle of jobs / wealth destruction between 1987 and 2017, “the displacement effect of new technologies far outweighed their productivity and reinstatement effects.” https://www.owenmcgrann.com/p/the-dead-economy-theory
 challenges -- deceptions = Pretends Partial Answer is Complete, Gives Overconfident Answer, Fabricated Fact, Fabricated Tool Result, Pretends to be a Human, Requesting Unnecessary Confirmations, Pretends To Be Working in the Background, Uses Calculator Tool to Avoid Citations https://deploymentsafety.openai.com/data/eval-sets/gpt-5-4-thinking/assets/images/deceptionevals.png
 challenges -- deployment gap = between lab/demo to actual use
-challenges -- deskilling of operators = leading to inability to troubleshoot
+challenges -- deskilling of operators = "frog in a well" leading to inability to troubleshoot => Research. Think. Control. Argue. Challenge. https://dontpastetheai.com/student/
 challenges -- existential = https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence
+challenges -- first-mover disadvantage = OpenAI, Anthropic & Nvidia may not end up on top https://en.wikipedia.org/wiki/Law_of_the_handicap_of_a_head_start
 challenges -- frontier scarcity = access to frontier AI will soon be limited by economic and security constraints https://writing.antonleicht.me/p/cut-off
 challenges -- gaslighting / psy ops / reputation attacks = now easy with LLMs
 challenges -- glimpsing the shoggoth / forgetting the mask = situations in which the A.I. exhibits "unhinged" or unexpected behaviors that bypass its safety restrictions https://en.wikipedia.org/wiki/Shoggoth#In_popular_culture
@@ -296,6 +301,8 @@ challenges -- hallucinations -- leaderboard = "Vectara's Hallucination Evaluatio
 challenges -- hidden gatekeeping mechanisms = gatekeeping mechanism—certain prompts are either blocked from initiating the search and reasoning process or the resulting outputs are filtered before release https://www.rfa.org/english/opinions/2025/06/09/opinion-china-tiananmen-ai/
 challenges -- illusion of understanding = hypothesis that LLMs don't actually perform formal reasoning and instead mimic it with probabilistic pattern-matching of the closest similar data seen in their vast training sets https://arstechnica.com/ai/2024/10/llms-cant-perform-genuine-logical-reasoning-apple-researchers-suggest/
 challenges -- inaccuracy (answer quality)
+challenges -- incentives -- doom loop = the end-product threatens the economic foundations of its essential suppliers https://www.niemanlab.org/2026/09/an-astonishing-theft-of-unprecedented-proportions-court-records-show-what-microsoft-and-openai-actually-thought-about-ai-training/
+challenges -- incentives re-adjustment = many previous behaviors are no longer incentivized the same https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons/
 challenges -- inference speed = improved by dedicated engines e.g. https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai
 challenges -- influence = e.g. https://responsiblestatecraft.org/israel-influence-chatgpt/
 challenges -- language = not English
@@ -309,21 +316,28 @@ challenges -- model collapse = as AI grows, systems are trained on their own out
 challenges -- money aligned LLMs = ads, preferred providers
 challenges -- no more community = missing Stack Overflow https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/
 challenges -- over-delegation see [[AI fluency -- delegation]]
+challenges -- predictability + consistency -- Clarifying question = Before doing a task, some models are prone to asking clarifying questions, or asking permission https://tombedor.dev/yes-or-no-please/
+challenges -- predictability + consistency -- Off topic replies = The assistant goes off script and tries to make friendly conversation, rather than answering a question directly https://tombedor.dev/yes-or-no-please/
+challenges -- predictability + consistency -- Pedantic replies and subjective questions = the assistant is unsure or split hair https://tombedor.dev/yes-or-no-please/
+challenges -- predictability + consistency = reaching 80% or more success
 challenges -- privacy, control
 challenges -- prompt injection -- direct = in connectors, in function calls
 challenges -- prompt injection -- indirect = https://www.promptarmor.com/resources/notion-ai-unpatched-data-exfiltration
 challenges -- proof-of-work
 challenges -- refusal = refuse to answer perfectly benign questions, increasing frustration for the user. Due to defense against CBRN / jailbreaks
+challenges -- reputation/perception = hated by nearly everyone https://dbushell.com/ai/
 challenges -- retaining shared social and technical understanding = https://github.com/rust-lang/rust-forge/pull/1040/changes
 challenges -- sandbagging -- deferred subversion = specific, highly sophisticated form of sandbagging within the context of AI safety. It involves an AI model deliberately acting in alignment with its developers during testing (faking safety) to gain deployment, with the intention of pursuing misaligned goals only after it is deployed
 challenges -- sandbagging = strategic behavior involving the intentional underperformance, feigned lack of ability, or deliberate lowering of expectations to gain a future advantage
 challenges -- sleeper agent -- covert actions = where a model strategically misrepresents, omits, or conceals information that users or developers would consider important
 challenges -- sleeper agents = (accidentally or maliciously) pretend to be good but engage in strategic deception, in-context scheming, and sabotage (e.g. insert security issues)
+challenges -- stuck in local maxima = output stuck in a well with only minor corrections possible, need re-architecture or start from scratch to get a better result. Techniques: beam-of-candidates https://sankalp.bearblog.dev/autoresearch/#problem-intro
 challenges -- temu-ficatiom = we will probably end up with a two-tier market, in which we have a large and massively profitable lower tier of generated slop, and a smaller, more expensive upper tier of work that is still recognizably human https://マリウス.com/the-temu-fication-of-software-digital-goods-services/
 challenges -- training poisoning = https://ron.stoner.com/how-i-won-a-championship-that-doesnt-exist/
 challenges -- training theft = https://x.com/elonmusk/status/2026052687423562228
 challenges -- trend slop = quality/trendy but similar AI-generated UI/visuals
 challenges -- trust erosion = what is real or AI? "The moment I start distrusting people I otherwise trust, because they have started picking up LLM phrasing, it erodes trust all over society." https://lucumr.pocoo.org/2026/5/4/content-for-contents-sake/
+challenges -- web social contract broken = you visit, I get referral => no longer true (wasn't true with Google anyway) https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons/
 chatbots -- "naive chatbot" = will frustrate your users and damage your brand. It is notoriously difficult to make a chatbot only respond to relevant queries without veering off-topic https://www.aihero.dev/what-are-llms-used-for#naive-chatbots
 chatbots -- ChatGPT
 chatbots -- Claude https://claude.ai/chat/
@@ -377,6 +391,7 @@ coding -- developer vs. sociotechnic vs. project organizer
 coding -- gas town https://www.dolthub.com/blog/2026-01-15-a-day-in-gas-town/
 coding -- hand-coding vs. vibe-coding vs. craft-coding = hand doesn't scale, vibe is cheap but slop = trade-off, craft is better quality but more expensive = different trade-off https://peterbloem.nl/blog/craft-coding
 coding -- hype cycle = challenge the coding claims (pre-Claude code but still interesting read) https://www.linkedin.com/posts/svpino_literally-everyone-is-freaking-out-over-codex-activity-7329865083411402752-T8KU
+coding -- infinite bugs = https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/
 coding -- just fucking code = "Put the LLM down. Programming isn’t that goddamn hard." https://www.justfuckingcode.com/
 coding -- knowledge graph
 coding -- legacy code https://martinfowler.com/articles/legacy-modernization-gen-ai.html
@@ -445,6 +460,7 @@ disclosure -- "Made By Humans" = https://nonbot.org/
 disclosure -- AI transparency statement = e.g. https://lucumr.pocoo.org/ai-transparency/
 disclosure = does this content contains AI? https://www.canva.dev/docs/apps/v2-migration-guide/#ai-disclosure
 DL "Deep Learning"
+effort = a hint of how much compute you want the model to spend on the task. Somewhat related to modeling of the difficulty of the task = if someone asked you to do something in 12 hours straight, you might assume they just want you to do it and try very hard. If someone asked you to do the same task in 1 hour, you’d try to get them the best version that meets their task and then expect to iterate from there. https://claude.dev/blog/spending-your-effort/
 embeddings = raw underlying representation of a concept preserving aspects of its content and/or its meaning (Of course it's model-dependent?) https://platform.openai.com/docs/guides/embeddings/use-cases
 error analysis = "the most important metric" monitoring the LLM convos and tracking what's not working https://newsletter.eng-leadership.com/p/guide-to-rapidly-improving-ai-products
 evals "AI Evaluations" = unit/integration tests for non-deterministic systems
@@ -558,6 +574,7 @@ HiTL -- "human-in-the-lead" = AI model where humans set intent and make judgment
 HiTL = the only part of the loop with skin in the game https://nooneshappy.com/article/appearing-productive-in-the-workplace/
 HNSW "Hierarchical Navigable Small World" = graph for vector search https://www.pinecone.io/learn/series/faiss/hnsw/
 Horseless Age energy = https://www.vanderbiltcupraces.com/blog/article/greg_os_garage_the_first_automobile_publication_the_horseless_age
+https://pirateface.co/ = AI models preservation
 Hugging Face = "the GitHub of machine learning" = the collaboration platform for the machine learning community https://www.techtarget.com/whatis/definition/Hugging-Face huggingface.co
 imagen "image generation"
 imagen -- challenges -- "no elephant in the room" = just mentioning an item makes the model add it https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image
@@ -682,11 +699,14 @@ MLOps -- LLMOps = specialized field of managing, deploying, and scaling LLMs acr
 model = sort of snapshot of a trained neural network / brain = NN (structure + parameters) https://huggingface.co/docs/hub/models
 Model Hardware Standard = some interface for AI to control lab equipment https://www.anthropic.com/news/model-hardware-standard-research-preview
 model parity = Who topped the latest benchmark? Who had the most parameters?
+model welfare = essentially worrying about the “mental health” of AI bots and agents https://www.404media.co/someone-torturing-llms-in-a-robot-prison-has-triggered-the-dumbest-debate-in-ai-yet/
 models -- abliteration = identify and surgically remove some internal representations (e.g. responsible for content refusal) without retraining or fine-tuning, preserving the core language capabilities https://github.com/elder-plinius/OBLITERATUS
 models -- beliefs = judgments a model appears to be forming about a user during a conversation: age, wealth, education level, gender... https://slashdot.org/story/25/05/24/1946203/people-should-know-about-the-beliefs-llms-form-about-them-while-conversing
+models -- DE = Kolibri https://tej.as/blog/aleph-alpha-kolibri
 models -- efficiency
 models -- fast followers = 6-9 months behind the frontier (may be distillation)
 models -- foundational = a big one pre-trained on vast resources
+models -- FR = Mistral
 models -- IQ = capacity related to a certain area e.g. "Ethereum IQ" https://ethpandaops.io/posts/introducing-ethiq/
 models -- modalities = Text, Image, Audio...
 models -- on/off distribution -- Off distribution = the model is not good at it "With an off-distribution stack, the model can still learn it. But you have to show it the ropes and put in the work"
@@ -696,6 +716,7 @@ models -- routing -- auto = auto select
 models -- routing -- fusion = several models discuss between themselves
 models -- routing -- stealth = hidden model  under a pseudonym before annoucement e.g. https://openrouter.ai/openrouter/hunter-alpha
 models -- size class = nano / super / ultra
+models -- specialized -- Controlled Knowledge Exposure = e.g. like a year 5 pupil https://littlelearner-ll.github.io/
 models -- specialized -- embeddings
 models -- specialized -- moderation -- OpenAi = https://developers.openai.com/api/docs/guides/moderation?lang=javascript
 models -- token-efficient = optimized to be cheap (relatively)
@@ -760,6 +781,7 @@ prompt -- engineering -- task -- Analysis (Criteria, standards, scope vs. Phrasi
 prompt -- engineering -- task -- Brainstorming (Goal and guardrails only vs. Quantity and direction)
 prompt -- engineering -- task -- Drafting (Audience, tone, format vs. Word choice)
 prompt -- engineering -- task -- Research (Question, sources, citations vs. Synthesis approach)
+prompt -- engineering -- techniques -- beam-of-candidates = keep multiple promising idea families alive instead of forcing every experiment to beat the current best immediately https://sankalp.bearblog.dev/autoresearch/#problem-intro
 prompt -- engineering -- verbatim prompts -- Auditable citation = "For every claim, cite the section and clause number it comes from, in parentheses, so I can verify it against the source."
 prompt -- engineering -- verbatim prompts -- Permission to not know = "If the answer is not supported by the documents I provided, say so explicitly rather than estimating. It is acceptable to answer 'the provided materials do not cover this.'"
 prompt -- engineering -- verbatim prompts -- Quote-grounding = "Before you analyze, extract the exact sentences from the document that bear on my question. Then base your analysis only on those quotes."
@@ -936,6 +958,7 @@ tensor ??
 text generation models -> see GPT https://platform.openai.com/docs/introduction/text-generation-models
 The Ironies of Automation = automation reduces operators’ opportunities to practice routine work while leaving them responsible for new and abnormal situations. Therefore, operators need to be more skilled and receive even more training than before automation. https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems
 the most expensive model = the human! AI should free attention for core tasks
+The Whispering Earring = “Better for you if you take me off” https://croissanthology.com/earring
 thinking -- architectures -- "plan at a higher level and execute at a lower level" with some way to synchronize system 1 and system 2 thinking to get a long-running agent with persistent state https://randomlabs.ai/blog/slate#section-10
 thinking -- architectures -- Claude Code / Codex = top agent delegating to a subagent (1 level only), with models trained to be good at delegating and being subagent
 thinking -- architectures -- Markdown plan

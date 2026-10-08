@@ -7,8 +7,8 @@ import * as sinon from "sinon"
 import { writeJsonFileSync } from "write-json-file"
 
 import { lsFilesSync } from "@monorepo-private/fs--ls"
+import { getꓽschema_version, getꓽschema_versionⵧloose } from "@monorepo-private/offirmo-state"
 import { prettifyꓽjson } from "@monorepo-private/prettify-any"
-import { getꓽschema_version, getꓽschema_versionⵧloose } from "@monorepo-private/state-utils"
 import { TEST_TIMESTAMP_MS, getꓽUTC_timestampⵧhuman_readable‿minutes } from "@monorepo-private/timestamps"
 
 import { get_advanced_diff as base_get_json_diff } from "../advanced-json-diff/index.ts"

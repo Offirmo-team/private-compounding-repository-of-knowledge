@@ -2,7 +2,7 @@
 
 import { InventorySlot } from "@tbrpg/definitions"
 
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { type UUID } from "@monorepo-private/uuid"
 
 import { compareꓽitemsⵧby_slot_then_strength } from "./compare.ts"

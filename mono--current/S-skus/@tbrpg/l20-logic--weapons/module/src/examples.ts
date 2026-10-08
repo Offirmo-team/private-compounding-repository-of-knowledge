@@ -2,8 +2,8 @@
 
 import { ItemQuality, InventorySlot, ElementType } from "@tbrpg/definitions"
 
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { getꓽengine, getꓽrandom, type RNGEngine } from "@monorepo-private/random"
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
 
 import { MIN_ENHANCEMENT_LEVEL, MAX_ENHANCEMENT_LEVEL } from "./consts.ts"
 import { WEAPON_BASES, WEAPON_QUALIFIERS1, WEAPON_QUALIFIERS2 } from "./data/index.ts"

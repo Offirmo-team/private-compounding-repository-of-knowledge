@@ -1,7 +1,7 @@
 import { expect } from "chai"
 
+import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { itㆍshouldㆍmigrateㆍcorrectly } from "@monorepo-private/state-migration-tester"
-import { enforceꓽimmutable } from "@monorepo-private/state-utils"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"
 import { DEMO_U_STATE, DEMO_T_STATE } from "./examples.ts"

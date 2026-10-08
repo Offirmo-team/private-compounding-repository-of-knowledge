@@ -19,8 +19,8 @@
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/fs--ls": "workspace:*",
+		"@monorepo-private/offirmo-state": "workspace:*",
 		"@monorepo-private/prettify-any": "workspace:*",
-		"@monorepo-private/state-utils": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
 		"jsondiffpatch": "catalog:",
 		"load-json-file": "catalog:",

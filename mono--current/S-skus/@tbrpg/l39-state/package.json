@@ -18,9 +18,9 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/offirmo-state": "workspace:*",
 		"@monorepo-private/random": "workspace:*",
 		"@monorepo-private/rich-text-format": "workspace:*",
-		"@monorepo-private/state-utils": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
 		"@oh-my-rpg/state--codes": "workspace:*",
 		"@oh-my-rpg/state--engagement": "workspace:*",

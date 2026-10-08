@@ -1,13 +1,13 @@
 //////////////////////////////////////////////////////////////////////
 
-import { type PRNGState } from "@monorepo-private/random"
 import {
 	type Immutable,
 	enforceꓽimmutable,
 	type LastMigrationStep,
 	type MigrationStep,
 	migrate_toꓽlatestⵧgeneric,
-} from "@monorepo-private/state-utils"
+} from "@monorepo-private/offirmo-state"
+import { type PRNGState } from "@monorepo-private/random"
 import { generate_uuid } from "@monorepo-private/uuid"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"

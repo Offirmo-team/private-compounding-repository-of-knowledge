@@ -1,28 +1,16 @@
-import * as icepick from "icepick"
-
-import { assert_from, assert } from "@monorepo-private/assert"
-import { type TimestampUTCMs, getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
-import type { Immutable, Mutable, ImmutabilityEnforcer } from "@monorepo-private/ts--types"
-
-import { getꓽrevision, getꓽrevisionⵧloose } from "./selectors.ts"
-import { isꓽRootState, isꓽTState, isꓽUState, isꓽUTBundle, isꓽWithRevision } from "./type-guards.ts"
-import type { AnyBaseState, AnyRootState } from "./types--internal.ts"
-import type { BaseUState, BaseTState, BaseRootState, UTBundle, BaseAction, ActionⳇReconcile } from "./types.ts"
-import { GenericActionType } from "./types.ts"
-
 /////////////////////////////////////////////////
 
 // TODO dynamic switch, ex. for dev/prod
 // TODO evaluate https://github.com/unadlib/mutative
-const enforceꓽimmutable: ImmutabilityEnforcer = <T>(state: T | Immutable<T>): Immutable<T> =>
+export const enforceꓽimmutable: ImmutabilityEnforcer = <T>(state: T | Immutable<T>): Immutable<T> =>
 	icepick.freeze<T>(state as T) as Immutable<T>
 //const enforceꓽimmutable: ImmutabilityEnforcer = (state: T): Immutable<T> => state
 //const enforceꓽimmutable: ImmutabilityEnforcer = <T>(state: T): Immutable<T> => deep_freeze<T>(state)
 
-function getꓽmutable_copy<T>(state: T): Mutable<T> {
+export function getꓽmutable_copy<T>(state: T): Mutable<T> {
 	return icepick.thaw<Mutable<T>>(state as any)
 }
-function cast_toꓽimmutable<T>(state: T): Immutable<T> {
+export function cast_toꓽimmutable<T>(state: T): Immutable<T> {
 	return state as Immutable<T>
 }
 
@@ -32,7 +20,7 @@ function cast_toꓽimmutable<T>(state: T): Immutable<T> {
 // - it's possible that an "update to now" was invoked, it's ok to ignore that if that's the only change
 // - this fn will intentionally NOT go deeper than 1st level, each state is responsible for its children!
 // - this fn will intentionally NOT handle time changes, this should be done separately at the end! (separate update_to_now call)
-function complete_or_cancel_eager_mutation_propagating_possible_child_mutation<
+export function complete_or_cancel_eager_mutation_propagating_possible_child_mutation<
 	BU extends BaseUState,
 	BT extends BaseTState,
 	BR extends BaseRootState<BU, BT>,
@@ -170,7 +158,7 @@ function complete_or_cancel_eager_mutation_propagating_possible_child_mutation<
 
 // check if the state is still in the revision we expect
 // ex. for an action, check it's still valid, ex. object already sold?
-function are_ustate_revision_requirements_met<S extends BaseRootState>(
+export function are_ustate_revision_requirements_met<S extends BaseRootState>(
 	state: Immutable<S>,
 	requirements: { [k: string]: number } = {},
 ): boolean {
@@ -221,7 +209,7 @@ export function finalize_action_if_needed<State, Action extends BaseAction>(acti
 }
 */
 
-function createꓽBaseAction(type: string, time: TimestampUTCMs = getꓽUTC_timestamp‿ms()): BaseAction {
+export function createꓽBaseAction(type: string, time: TimestampUTCMs = getꓽUTC_timestamp‿ms()): BaseAction {
 	return {
 		type,
 		time,
@@ -229,7 +217,7 @@ function createꓽBaseAction(type: string, time: TimestampUTCMs = getꓽUTC_time
 	}
 }
 
-function createꓽaction<SomeAction extends BaseAction>(
+export function createꓽaction<SomeAction extends BaseAction>(
 	{
 		type,
 		...attributes
@@ -242,7 +230,7 @@ function createꓽaction<SomeAction extends BaseAction>(
 	} as SomeAction
 }
 
-function createꓽActionⳇReconcile<State>(
+export function createꓽActionⳇReconcile<State>(
 	state: Immutable<State>,
 	time: TimestampUTCMs = getꓽUTC_timestamp‿ms(),
 ): ActionⳇReconcile<State> {
@@ -257,16 +245,18 @@ function createꓽActionⳇReconcile<State>(
 
 /////////////////////////////////////////////////
 
-export {
-	enforceꓽimmutable,
-	getꓽmutable_copy,
-	cast_toꓽimmutable,
-	complete_or_cancel_eager_mutation_propagating_possible_child_mutation,
-	are_ustate_revision_requirements_met,
-	createꓽBaseAction,
-	createꓽaction,
-	createꓽActionⳇReconcile,
-}
-
 // for convenience
 export { type Immutable, type ImmutabilityEnforcer } from "@monorepo-private/ts--types"
+
+/////////////////////////////////////////////////
+import * as icepick from "icepick"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import { type TimestampUTCMs, getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
+import type { Immutable, Mutable, ImmutabilityEnforcer } from "@monorepo-private/ts--types"
+
+import { getꓽrevision, getꓽrevisionⵧloose } from "./selectors.ts"
+import { isꓽRootState, isꓽTState, isꓽUState, isꓽUTBundle, isꓽWithRevision } from "./type-guards.ts"
+import type { AnyBaseState, AnyRootState } from "./types--internal.ts"
+import type { BaseUState, BaseTState, BaseRootState, UTBundle, BaseAction, ActionⳇReconcile } from "./types.ts"
+import { GenericActionType } from "./types.ts"

@@ -1,4 +1,4 @@
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { getꓽUTC_timestampⵧhuman_readable‿minutes } from "@monorepo-private/timestamps"
 
 import { SCHEMA_VERSION } from "./consts.ts"

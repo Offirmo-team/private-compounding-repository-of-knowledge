@@ -1,6 +1,6 @@
 import { assert_from, assert } from "@monorepo-private/assert"
+import { type Immutable } from "@monorepo-private/offirmo-state"
 import { getꓽengine, type PRNGEngine } from "@monorepo-private/random"
-import { type Immutable } from "@monorepo-private/state-utils"
 
 import { LIB } from "./consts.ts"
 import { getꓽlogger } from "./sec.ts"

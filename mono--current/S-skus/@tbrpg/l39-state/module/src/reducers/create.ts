@@ -15,7 +15,7 @@ import * as InventoryState from "@tbrpg/state--inventory"
 import * as WalletState from "@tbrpg/state--wallet"
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { type TimestampUTCMs, getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
 /////////////////////
 

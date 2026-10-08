@@ -17,7 +17,11 @@ const manifestꓽᐧaiignore: StructuredFsⳇFileManifest = {
 const CLAUDEᐧmd__path‿ar: NodePathⳇRelative = `${PATHVARⵧROOTⵧNODE}/.claude/CLAUDE.md`
 const manifestꓽCLAUDEᐧmd: StructuredFsⳇFileManifest = {
 	path‿ar: CLAUDEᐧmd__path‿ar,
-	doc: ["https://claude.md/", "https://code.claude.com/docs/en/memory"],
+	doc: [
+		"https://claude.md/",
+		"https://code.claude.com/docs/en/memory",
+		"https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+	],
 }
 
 /////////////////////////////////////////////////
@@ -42,6 +46,7 @@ export const PLUGIN: Plugin = {
 					intent: "present",
 					content: {
 						// TODO review
+						// reminder: https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/
 						text: `
 # AGENTS.md
 

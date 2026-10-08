@@ -1,5 +1,5 @@
 export * from "./l1-arithmetic/index.ts"
-export * from "./l1-dates/index.ts"
+export * from "./l1-time-and-dates/index.ts"
 export * from "./l1-file-system/index.ts"
 export * from "./l1-i18n/index.ts"
 export * from "./l1-immutable/index.ts"

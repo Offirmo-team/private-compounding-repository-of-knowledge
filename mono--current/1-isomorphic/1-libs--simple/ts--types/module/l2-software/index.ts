@@ -63,4 +63,4 @@ export type UNSAFE_Environment =
 
 /////////////////////////////////////////////////
 
-import type { YYYYᝍMMᝍDD } from "../l1-dates/index.ts"
+import type { YYYYᝍMMᝍDD } from "../l1-time-and-dates/index.ts"

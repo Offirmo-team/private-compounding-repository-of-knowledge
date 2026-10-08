@@ -9,8 +9,8 @@ import { create as create_weapon } from "@tbrpg/logic--weapons"
 import * as AchievementsState from "@tbrpg/state--achievements"
 import * as EnergyState from "@tbrpg/state--energy"
 
+import { complete_or_cancel_eager_mutation_propagating_possible_child_mutation } from "@monorepo-private/offirmo-state"
 import * as RichText from "@monorepo-private/rich-text-format"
-import { complete_or_cancel_eager_mutation_propagating_possible_child_mutation } from "@monorepo-private/state-utils"
 import { type TimestampUTCMs, getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
 import { type Immutable } from "@monorepo-private/ts--types"
 

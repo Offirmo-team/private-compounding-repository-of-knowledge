@@ -105,6 +105,7 @@ progressive deployment strategy -- 06 old stack retention time = Retain the old 
 progressive deployment strategy for controlled rollouts
 quality = need QC + s/o with authority to shut a project down if it was not meeting spec. "We need that guy!" the manager said, and I came back, "If you had that guy you'd fire him the first time he told you something you didn't want to hear" https://science.slashdot.org/comments.pl?sid=23723043&cid=65462461
 RACI matrix = project role and responsibility assignment chart that maps out every task, milestone, or key decision to: Responsible, Accountable, Consulted or Informed
+realistic scheduling = overly optimistic deadlines lead to burnout and missed milestones. Always add a (secret?) buffer.
 recruitment -- work trials https://linear.app/blog/why-and-how-we-do-work-trials-at-linear
 recurring meeting = serves as a powerful forcing function for long-running projects. creates pressure on everyone to make progress https://www.mooreds.com/wordpress/archives/3734
 revenue -- vibe revenue = are you really creating change?

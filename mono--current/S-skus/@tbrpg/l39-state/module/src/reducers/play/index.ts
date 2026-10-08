@@ -7,7 +7,7 @@ import { type AdventureHumanReadableID } from "@tbrpg/logic--adventures"
 import * as AchievementsState from "@tbrpg/state--achievements"
 import * as EnergyState from "@tbrpg/state--energy"
 
-import { complete_or_cancel_eager_mutation_propagating_possible_child_mutation } from "@monorepo-private/state-utils"
+import { complete_or_cancel_eager_mutation_propagating_possible_child_mutation } from "@monorepo-private/offirmo-state"
 import { type TimestampUTCMs, getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
 import { type Immutable } from "@monorepo-private/ts--types"
 /////////////////////

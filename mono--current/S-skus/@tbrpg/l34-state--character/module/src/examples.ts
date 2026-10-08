@@ -1,4 +1,4 @@
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { CharacterClass, type State } from "./types.ts"
 

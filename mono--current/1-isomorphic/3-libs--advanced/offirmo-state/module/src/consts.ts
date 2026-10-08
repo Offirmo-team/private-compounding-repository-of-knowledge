@@ -1,1 +1,1 @@
-export const LIB = "@monorepo-private/state-utils"
+export const LIB = "@monorepo-private/offirmo-state"

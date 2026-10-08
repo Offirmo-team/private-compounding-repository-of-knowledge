@@ -5,11 +5,11 @@ import * as CharacterState from "@tbrpg/state--character"
 import { CharacterClass } from "@tbrpg/state--character"
 import * as EnergyState from "@tbrpg/state--energy"
 
-import { getꓽrandom, getꓽengine } from "@monorepo-private/random"
 import {
 	getꓽrevision,
 	complete_or_cancel_eager_mutation_propagating_possible_child_mutation,
-} from "@monorepo-private/state-utils"
+} from "@monorepo-private/offirmo-state"
+import { getꓽrandom, getꓽengine } from "@monorepo-private/random"
 import { getꓽUTC_timestampⵧhuman_readable‿days } from "@monorepo-private/timestamps"
 import { type Immutable } from "@monorepo-private/ts--types"
 /////////////////////

@@ -1,8 +1,8 @@
 /////////////////////
 
 import { assert_from, assert } from "@monorepo-private/assert"
+import { type Immutable } from "@monorepo-private/offirmo-state"
 import { type Seed, getꓽengine, type PRNGEngine, type PRNGState } from "@monorepo-private/random"
-import { type Immutable } from "@monorepo-private/state-utils"
 import { generate_uuid } from "@monorepo-private/uuid"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"

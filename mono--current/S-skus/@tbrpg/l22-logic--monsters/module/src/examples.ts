@@ -1,7 +1,7 @@
 /////////////////////
 
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { getꓽengine } from "@monorepo-private/random"
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
 
 import { create } from "./state.ts"
 import { type Monster, MonsterRank } from "./types.ts"

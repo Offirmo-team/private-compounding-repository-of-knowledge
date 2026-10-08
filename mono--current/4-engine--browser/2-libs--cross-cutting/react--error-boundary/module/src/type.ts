@@ -1,7 +1,7 @@
 import { type ErrorInfo } from "react"
 
 export interface ErrorBoundaryContext {
-	name: string
+	name: string | undefined // undef because of static getDerivedStateFromError() where we don't know the name
 
 	//[key: string]: unknown
 }

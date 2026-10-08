@@ -2,7 +2,7 @@ import { InventorySlot } from "@tbrpg/definitions"
 import { DEMO_ARMOR_1, DEMO_ARMOR_2 } from "@tbrpg/logic--armors"
 import { DEMO_WEAPON_1, DEMO_WEAPON_2 } from "@tbrpg/logic--weapons"
 
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { type State } from "./types.ts"
 

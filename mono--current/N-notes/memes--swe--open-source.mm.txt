@@ -1,8 +1,11 @@
 [ ] https://vitalik.eth.limo/general/2024/09/28/alignment.html
+AI https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/
 as a financial weapon = to deny the opportunity for a private code to sell e.g. vs. Oracle
 bags.fun
-commercial vs non-commercial OSS https://leerob.substack.com/p/reflections-on-the-react-community
+commercial vs. non-commercial OSS https://leerob.substack.com/p/reflections-on-the-react-community
 contribution ladder https://modelcontextprotocol.io/community/contributor-ladder
+copyleft
+Creative Commons
 definition -- FSF free software definition
 definition -- OSI open source definition
 fair code = generally free to use and distribute, source code openly available, can be extended by anybody in public and private communities BUT is commercially restricted by its authors https://faircode.io/

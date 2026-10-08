@@ -10,7 +10,7 @@ import { type UState as EnergyUState, type TState as EnergyTState } from "@tbrpg
 import { type State as InventoryState } from "@tbrpg/state--inventory"
 import { type State as WalletState } from "@tbrpg/state--wallet"
 
-import { type BaseUState, type BaseTState, type BaseRootState } from "@monorepo-private/state-utils"
+import { type BaseUState, type BaseTState, type BaseRootState } from "@monorepo-private/offirmo-state"
 
 /////////////////////////////////////////////////
 

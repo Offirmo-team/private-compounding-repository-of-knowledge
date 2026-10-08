@@ -1,5 +1,5 @@
 import { assert_from, assert } from "@monorepo-private/assert"
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { SCHEMA_VERSION } from "../consts.ts"
 import { type Engagement, type TrackedEngagement, type PendingEngagementUId, type State } from "../types.ts"

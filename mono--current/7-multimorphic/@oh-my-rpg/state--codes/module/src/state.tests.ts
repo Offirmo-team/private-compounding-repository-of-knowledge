@@ -1,6 +1,6 @@
 import { expect } from "chai"
 
-import { enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { type CodesConditions, CODESPECS_BY_KEY } from "./__fixtures/index.ts"
 import { LIB, SCHEMA_VERSION } from "./consts.ts"

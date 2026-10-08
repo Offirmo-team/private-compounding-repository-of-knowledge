@@ -69,7 +69,7 @@ const x=()=>{return      2;}
 
 /////////////////////////////////////////////////
 
-import { assert_from } from "@monorepo-private/assert"
+import { assert_from, assert } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"
 
 import type {} from "./types.ts"

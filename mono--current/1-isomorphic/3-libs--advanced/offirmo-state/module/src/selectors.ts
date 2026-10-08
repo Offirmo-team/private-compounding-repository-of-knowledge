@@ -1,35 +1,6 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
+/////////////////////////////////////////////////
 
-import {
-	isꓽWithSchemaVersion,
-	isꓽWithRevision,
-	isꓽWithTimestamp,
-	isꓽWithLastUserInvestmentTimestamp,
-	hasꓽversioned_schema,
-	is_revisioned,
-	is_time_stamped,
-	isꓽRootState,
-	isꓽUTBundle,
-} from "./type-guards.ts"
-import type {
-	WithSchemaVersion,
-	WithRevision,
-	WithTimestamp,
-	WithLastUserInvestmentTimestamp,
-	BaseState,
-	BaseTState,
-	BaseUState,
-	UTBundle,
-	BaseRootState,
-	StateInfos,
-	AnyOffirmoState,
-} from "./types.ts"
-
-// "loose" = useful for comparisons with legacy/wrong states (wrong structure)
-// will not throw and will fall back to 0 if not a corresponding state (ex. undefined or unrecognized)
-// BUT we don't type them as accepting (null | undefined | any) to better catch errors
-
+// strict
 export function getꓽschema_version<
 	V extends WithSchemaVersion,
 	B extends BaseState,
@@ -62,6 +33,9 @@ export function getꓽschema_version<
 	throw new Error("getꓽschema_version() should have a recognized versioned structure!")
 }
 
+// "loose" = useful for comparisons with legacy/wrong states (wrong structure)
+// will not throw and will fall back to 0 if not a corresponding state (ex. undefined or unrecognized)
+// BUT we don't type them as accepting (null | undefined | any) to better catch errors
 export function getꓽschema_versionⵧloose<
 	V extends WithSchemaVersion,
 	B extends BaseState,
@@ -231,3 +205,33 @@ export function getꓽbaseⵧloose<
 		timestamp_ms: getꓽtimestampⵧloose(s as any),
 	}
 }
+
+/////////////////////////////////////////////////
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import {
+	isꓽWithSchemaVersion,
+	isꓽWithRevision,
+	isꓽWithTimestamp,
+	isꓽWithLastUserInvestmentTimestamp,
+	hasꓽversioned_schema,
+	is_revisioned,
+	is_time_stamped,
+	isꓽRootState,
+	isꓽUTBundle,
+} from "./type-guards.ts"
+import type {
+	WithSchemaVersion,
+	WithRevision,
+	WithTimestamp,
+	WithLastUserInvestmentTimestamp,
+	BaseState,
+	BaseTState,
+	BaseUState,
+	UTBundle,
+	BaseRootState,
+	StateInfos,
+	AnyOffirmoState,
+} from "./types.ts"

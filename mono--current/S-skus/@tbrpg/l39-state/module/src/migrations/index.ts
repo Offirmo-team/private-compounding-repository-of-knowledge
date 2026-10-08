@@ -9,7 +9,6 @@ import * as InventoryState from "@tbrpg/state--inventory"
 import * as WalletState from "@tbrpg/state--wallet"
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import { getꓽengine } from "@monorepo-private/random"
 import {
 	type Immutable,
 	type LastMigrationStep,
@@ -17,7 +16,8 @@ import {
 	type SubStatesMigrationFns,
 	type CleanupStep,
 	migrate_toꓽlatestⵧgeneric,
-} from "@monorepo-private/state-utils"
+} from "@monorepo-private/offirmo-state"
+import { getꓽengine } from "@monorepo-private/random"
 import { getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
 
 import { LIB, SCHEMA_VERSION } from "../consts.ts"

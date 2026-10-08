@@ -1,5 +1,5 @@
 {
-	"name": "@monorepo-private/state-utils",
+	"name": "@monorepo-private/offirmo-state",
 	"version": "0.0.1",
 	"private": true,
 	"description": "Base types + base utils for Offirmo style states",
@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"check": "run-s test--vitest test--mocha check:ts",
-		"check:ts": "echo \"@monorepo-private/state-utils\" && tsc --noEmit",
+		"check:ts": "echo \"@monorepo-private/offirmo-state\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
 		"test--mocha": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",

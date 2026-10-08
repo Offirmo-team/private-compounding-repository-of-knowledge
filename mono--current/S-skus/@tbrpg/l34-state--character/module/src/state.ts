@@ -2,7 +2,7 @@
 
 import { Enum } from "typescript-string-enums"
 
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"
 import { type TBRSoftExecutionContext, getꓽSXC } from "./sxc.ts"

@@ -3,7 +3,7 @@ import {
 	type LastMigrationStep,
 	type MigrationStep,
 	migrate_toꓽlatestⵧgeneric,
-} from "@monorepo-private/state-utils"
+} from "@monorepo-private/offirmo-state"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"
 import { type TBRSoftExecutionContext } from "./sxc.ts"

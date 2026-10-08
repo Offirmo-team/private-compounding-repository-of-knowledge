@@ -3,8 +3,8 @@ import { xxx_internal_reset_prng_cache } from "@oh-my-rpg/state--prng"
 import { CharacterClass } from "@tbrpg/state--character"
 import { Enum } from "typescript-string-enums"
 
+import { getꓽschema_versionⵧloose } from "@monorepo-private/offirmo-state"
 import * as RichText from "@monorepo-private/rich-text-format"
-import { getꓽschema_versionⵧloose } from "@monorepo-private/state-utils"
 import type { Immutable, JSONObject, JSON } from "@monorepo-private/ts--types"
 
 import { LIB } from "../consts.ts"

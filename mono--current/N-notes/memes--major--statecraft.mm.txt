@@ -1,5 +1,3 @@
-"a short war would settle everything" WW1
-"the lights of Europe still trace the paths of ancient Roman roads" https://x.com/ccatalini/status/1983588222921023552
 #metoo
 /acc -- eu = https://eu-acc.com/
 1751-06-24 start of globalization with the founding of Manilla https://mail.blockworks.com/p/hard-money-is-bad-money
@@ -8,19 +6,23 @@
 2007 - 2009 https://en.wikipedia.org/wiki/Great_Recession
 2014 Ukrainian economic and political crisis https://en.wikipedia.org/wiki/2014_pro-Russian_unrest_in_Ukraine
 2022 ChatGPT
-2024-12-04 https://en.wikipedia.org/wiki/Killing_of_Brian_Thompson
+2024-12-04 The CEO of the American health insurance company UnitedHealthcare, is shot and killed by 26-year-old Luigi Mangione https://en.wikipedia.org/wiki/Killing_of_Brian_Thompson
 6 innovations that made the modern world = Glass, Cold, Sound, Clean, Time, Light https://www.theguardian.com/books/2014/oct/03/how-we-got-to-now-by-steven-johnson-six-innovations-made-modern-world
 6 stages big cycle https://x.com/RayDalio/status/2022788750388998543
 [ ] list of books to learn history https://paulgraham.com/raq.html
 a country is a farm
 a prohibition is only as strong as its enforcement
+A sheng of rice earns gratitude, a dou of rice earns enmity = Give someone a small measure of rice (sheng, about one liter) in a crisis, and they feel deep thankfulness. Give them a huge measure (dou, about ten liters), and they begin to expect it, grow greedy, and eventually resent you when it stops or when they feel overly indebted. Core lesson: Excessive, unconditional, or long-term financial and material handouts can foster dependency, breed entitlement, and turn a benefactor into an enemy. Kindness works best with boundaries and moderation.
 Abenomics = the economic strategy implemented by Shinzo Abe of Japan and is comprised of three arrows: monetary policy, fiscal stimulus and structural reforms https://coinmarketcap.com/academy/glossary/abenomics
 amity-enmity complex https://en.m.wikipedia.org/wiki/Amity-enmity_complex
 And then the men with guns tell you to do it anyway = https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/
 aristocracy = a form of government that places power in the hands of a small, privileged ruling class, the aristocrats https://en.wikipedia.org/wiki/Aristocracy
 backwardness https://en.wikipedia.org/wiki/The_Moral_Basis_of_a_Backward_Society
+banned words -- USA = https://pen.org/banned-words-list/
+Baptists and Bootleggers = unlikely coalition backing a regulation: moralists for virtue, profiteers for gain (ex. Prohibition) https://a16z.com/ai-will-save-the-world/
 bateau https://en.wikipedia.org/wiki/File:Uluburun1.jpg
 bateau https://en.wikipedia.org/wiki/List_of_surviving_ancient_ships
+beggar-thy-neighbour policy = economic policy through which one country attempts to remedy its economic problems by means that tend to worsen the economic problems of other countries https://en.wikipedia.org/wiki/Beggar_thy_neighbour
 big companies / balance of power / democracy
 biodiversity damage = https://www.oxfordmartin.ox.ac.uk/news/beef-and-dairy-drive-41-of-biodiversity-damage-linked-to-global-farmland
 bipolarity / unipolarity / multipolarity https://en.wikipedia.org/wiki/Hegemony
@@ -33,9 +35,14 @@ Bronze Age -- late & collapse = https://en.wikipedia.org/wiki/Late_Bronze_Age_co
 browning = https://www.bbc.com/news/articles/c4gxy0wqqd9o
 capital cities > regional hubs
 capitalism
-capitalism -- issues -- inability to collectively improve, ex. global warming
-capitalism -- late stage
+capitalism -- antisocial profit-maximizing corporations
+capitalism -- challenges -- inability to collectively improve, ex. global warming
+capitalism -- challenges -- incentives = quiet quitting etc.
+capitalism -- challenges -- inefficient allocation = e.g. golden handcuff, private insurance handcuff
+capitalism -- challenges -- not true = nurses/teachers always underpaid
+capitalism -- late stage &&
 capitalism -- not the only force at play = religion, media etc.
+capitalism -- state-corporate & = prioritize the accumulation of wealth over other interests
 capitalism -- surveillance && -- 1. A new economic order that claims human experience as free raw material for hidden commercial practices of extraction, prediction, and sales
 capitalism -- surveillance && -- 2. A parasitic economic logic in which the production of goods and services is subordinated to a new global architecture of behavioral modification
 capitalism -- surveillance && -- 3. A rogue mutation of capitalism marked by concentrations of wealth, knowledge, and power unprecedented in human history
@@ -46,6 +53,7 @@ capitalism -- surveillance && -- 7. A movement that aims to impose a new collect
 capitalism -- surveillance && -- 8. An expropriation of critical human rights that is best understood as a coup from above: an overthrow of the people’s sovereignty .
 capitalism -- surveillance && = https://matduggan.com/you-know-gdpr-is-good-based-on-who-hates-it/
 capitalism -- W. H. Mallock -- "is justified because it permits the most talented members of society to use the less talented for the sake of maximizing efficiency. Labor, for him, was an inert mass that was useless unless those with managerial and entrepreneurial talent set them to work. Hence, wealth is created, not by labor, but by the knowledge and ability of those who control labor. Maximization of corporate profits means in this case that the most entrepreneurial, innovative and inventive segment of society has used labor and resources to create wealth. In Mallock's view labor, by itself, creates nothing; it's not the wrench that puts the machine together, but the genius who invented it."
+care -- doesn't scale https://stevenscrawls.com/care-doesnt-scale/
 case studies -- Taylor Farms = how one company's reach became a national risk https://farmaction.us/taylorfarmsreport/
 China / multi-power
 citizenship -- acquisition
@@ -62,6 +70,8 @@ communism
 containers https://x.com/ccatalini/status/1983588222921023552
 corn laws https://en.wikipedia.org/wiki/Corn_Laws
 corruption -- Abscam = FBI sting operation where member of Congress were approached with a large sum of money in exchange for... "I've got larceny in my blood. I'd take it in a goddamn minute." "I do not consider myself a hero... what have we come to if turning down a bribe is 'heroic'?" https://en.wikipedia.org/wiki/Abscam
+corruption -- bribes https://bribes.fyi/before-you-go
+corruption -- facilitation payments = minor payments made to public officials through unofficial channels to expedite or secure the performance of routine government actions of a minor nature
 corruption = abuse of entrusted power for private gain.
 cosmos -- 1610 https://en.wikipedia.org/wiki/Copernican_Revolution
 cosmos -- 1920 galaxies https://en.wikipedia.org/wiki/Great_Debate_(astronomy)
@@ -70,10 +80,17 @@ dark age of internet
 democracy -- education https://politics.stackexchange.com/questions/84583/is-democracy-possible-in-a-country-with-a-relatively-low-educated-population
 democracy -- guided https://en.wikipedia.org/wiki/Guided_democracy
 democracy -- representation = https://fortune.com/2026/07/27/shopify-ceo-voting-rights-stripping-americans-19th-century/
-democracy -- Socrates' challenge =  if you are on a large ship at sea, who should be trusted to steer it? the most qualified? Or the most popular?
-democracy -- types https://en.wikipedia.org/wiki/Guided_democracy
+democracy -- Socrates' challenge = if you are on a large ship at sea, who should be trusted to steer it? the most qualified? Or the most popular?
+democracy -- types = https://en.wikipedia.org/wiki/Guided_democracy
 democracy but powerless
 democratic backsliding https://en.wikipedia.org/wiki/Democratic_backsliding_in_the_United_States
+dimensions of national cultures -- Individualism vs. collectivism (IDV) = the degree to which people in a society are integrated into groups. Individualistic societies have loose ties that often only relate an individual to his/her immediate family. They emphasize the "I" versus the "we". Its counterpart, collectivism, describes a society in which tightly integrated relationships tie extended families and others into in-groups. These in-groups are laced with undoubted loyalty and support each other when a conflict arises with another in-group.
+dimensions of national cultures -- Indulgence vs. restraint (IVR) = the degree of freedom that societal norms give to citizens in fulfilling their human desires. Indulgence is defined as "a society that allows relatively free gratification of basic and natural human desires related to enjoying life and having fun". Its counterpart is defined as "a society that controls gratification of needs and regulates it by means of strict social norms".
+dimensions of national cultures -- Long-term orientation vs. short-term orientation (LTO) = associates the connection of the past with the current and future actions/challenges. A lower degree of this index (short-term) indicates that traditions are honored and kept, while steadfastness is valued. Societies with a high degree in this index (long-term) view adaptation and circumstantial, pragmatic problem-solving as a necessity. A poor country that is short-term oriented usually has little to no economic development, while long-term oriented countries continue to develop to a level of prosperity.
+dimensions of national cultures -- Motivation towards Achievement and Success = (formerly masculinity vs. femininity "MAS") = a preference in society for achievement, heroism, assertiveness, and material rewards for success. Its counterpart represents "a preference for cooperation, modesty, caring for the weak, and quality of life. Women in the respective societies tend to display different values. In feminine societies, they share modest and caring views equally with men. In more masculine societies, women are somewhat assertive and competitive, but notably less than men. In other words, they still recognize a gap between male and female values. This dimension is frequently viewed as taboo in highly masculine societies. The name of this dimension was changed by Hofstede Insights around late 2023 or early 2024 as "not timely anymore"
+dimensions of national cultures -- Power distance index (PDI) = the extent to which the less powerful members of organizations and institutions (like the family) accept and expect that power is distributed unequally. A higher degree of the Index indicates that hierarchy is clearly established and executed in society, without doubt or reason. A lower degree of the Index signifies that people question authority and attempt to distribute power.
+dimensions of national cultures -- Uncertainty avoidance (UAI) = a society's tolerance for ambiguity, in which people embrace or avert an event of something unexpected, unknown, or away from the status quo. Societies that score a high degree in this index opt for stiff codes of behavior, guidelines, laws, and generally rely on absolute truth, or the belief that one lone truth dictates everything and that people know what it is. A lower degree in this index shows more acceptance of differing thoughts or ideas. Society tends to impose fewer regulations, ambiguity is more accustomed to, and the environment is more free-flowing.
+dimensions of national cultures https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory#Dimensions_of_national_cultures
 divine kingship
 domestication https://en.wikipedia.org/wiki/Anna_Karenina_principle#Failed_domestication
 doomscrolling https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death
@@ -91,7 +108,6 @@ empire = dominant form of large-scale human social organization since as far bac
 energy superusers https://hardware.slashdot.org/story/25/10/31/1646235/the-worlds-secret-electricity-superusers-revealed
 every world power has its time in the sun, thanks to the uniqueness of their circumstances and the nature of their character and culture (e.g., they have the essential elements of a strong work ethic, smarts, discipline, education, etc.), but they all eventually decline. Some do so more gracefully than others, with less trauma, but they nevertheless decline https://x.com/RayDalio/status/2022788750388998543
 expand human potential
-facilitation payments = minor payments made to public officials through unofficial channels to expedite or secure the performance of routine government actions of a minor nature.
 family
 farming -- rice https://xd009642.github.io/2026/04/01/My-Experience-as-a-Rice-Farmer.html
 Five Eyes intelligence-sharing alliance = includes Australia, along with NATO, the US-led military alliance
@@ -102,7 +118,7 @@ frog in a well = we may need to improve our brain capabilities
 games -- chess https://chess.stackexchange.com/questions/47538/why-does-open-position-favor-black
 gender theory -- gender = Your psychological sense of self. Who you know yourself to be, based on how much you align (or don’t align) with what you understand to be the options for gender.
 gender theory -- lgbtq
-gender theory -- Sex: Sex (sometimes called biological or physical sex) is comprised of things like reproductive organs, chromosomes, hormones, and body hair.
+gender theory -- sex = (sometimes called biological or physical sex) is comprised of things like reproductive organs, chromosomes, hormones, and body hair.
 gender wars
 geopolitics -- client state -- associated state
 geopolitics -- client state -- condominium
@@ -127,6 +143,7 @@ geopolitics -- imperialism
 geopolitics -- imperialism -- cultural
 geopolitics -- tribute -- tributary system https://en.wikipedia.org/wiki/Tributary_system_of_China
 geopolitics -- tribute https://en.wikipedia.org/wiki/Tribute
+Gini coefficient = rich/poor disparity
 golden rule
 governmental overreach
 great filter -- rsrc depletion https://en.wikipedia.org/wiki/Resource_depletion
@@ -141,6 +158,7 @@ great filters: ensure we're immune / not trapped https://blog.codinghorror.com/t
 group polarization https://en.wikipedia.org/wiki/Group_polarization
 génération spontanée
 hammurabi
+health care https://en.wikipedia.org/wiki/Healthcare_in_the_United_States
 history https://en.wikipedia.org/wiki/History_of_the_Peloponnesian_War
 https://en.prolewiki.org/
 https://en.prolewiki.org/wiki/Library:Simple_Sabotage_Field_Manual
@@ -165,6 +183,7 @@ https://politiquemagazine.fr/civilisation/redecouvrir-les-origines-de-la-france/
 https://worldoffinewine.com/news-features/did-charles-darwin-save-wine
 https://www.construction-physics.com/p/how-an-oil-refinery-works
 https://www.famillechretienne.fr/40361/article/remi-brague-nous-voyons-lislam-avec-des-lunettes-chretiennes
+infrastructure -- "the lights of Europe still trace the paths of ancient Roman roads" https://x.com/ccatalini/status/1983588222921023552
 infrastructure = roads, canals, telephone networks...
 International Criminal Court (ICC) = https://www.bbc.com/news/articles/cnvnl0elz47o
 international economic disparity https://en.wikipedia.org/wiki/International_inequality
@@ -205,10 +224,12 @@ natural resource -- depletion
 natural resource https://en.wikipedia.org/wiki/Natural_resource
 numeral system https://en.wikipedia.org/wiki/Positional_notation
 O-ring theory of economic development https://en.wikipedia.org/wiki/O-ring_theory_of_economic_development
+open lawlessness
 peaceful transition of power = from a leadership to another, e.g. election, independance... https://en.wikipedia.org/wiki/Peaceful_transition_of_power
 pollution -- 12xx https://en.wikipedia.org/wiki/Pea_soup_fog
 population renewal
 potholes = https://thewalrus.ca/montreal-potholes/
+private healthcare makes industries less innovative = because trapped by jobs providing healthcare https://werd.io/private-healthcare-makes-industries-less-innovative-its-time-for-change/
 problems -- & are the conduit of progress https://mail.blockworks.com/p/problems-are-the-conduit-of-progress
 problems -- Kevin Kelly "Most of the problems we have today are created by the solutions we had in the past." https://www.ted.com/talks/kevin_kelly_the_future_will_be_shaped_by_optimists
 problems -- The problem of near-universal poverty was solved by fossil fuels, but now we have the problem of climate change.
@@ -216,8 +237,8 @@ problems -- The problem of routine infections becoming deadly was solved by anti
 problems -- The problem of widespread hunger, for example, was solved by industrialized farming — but now food is so cheap and industrialized we have an epidemic of obesity.
 Psychological Operations (PSYOPs) = planned, non-kinetic operations designed to convey selected information to foreign audiences to influence their emotions, motives, objective reasoning, and ultimately behavior. Used by military and intelligence agencies, they aim to weaken enemy morale, enhance friendly operations, or influence target populations
 public holidays = https://www.not-ship.com/when-do-most-people-have-the-day-off/
+public religious expression
 ransom
-rich/poor gini
 robber barons https://en.wikipedia.org/wiki/Robber_baron_(industrialist)
 robust, comprehensive and world-leading legislation https://www.linkedin.com/news/story/australia-faces-new-125-tariff-8938602/
 rsrc depletion -- peak https://en.wikipedia.org/wiki/Peak_minerals
@@ -235,11 +256,12 @@ social medias / attention marketplace
 social networks
 societal -- & collapse = fall of a complex human society characterized by the loss of cultural identity and of social complexity as an adaptive system, the downfall of government, and the rise of violence https://en.wikipedia.org/wiki/Societal_collapse
 societal -- & longevity = https://en.wikipedia.org/wiki/Societal_collapse
-Societies are capable of telling themselves stories for years that have little basis in reality and lead to poor society-wide decision making. For example, fears over nuclear plant safety led to under-investment in nuclear power. Fears of the “population bomb” in the 1960s led countries to implement harsh policies to reduce their populations. And worries about dietary fat led governments to promote unhealthy high-sugar diets for decades.
+societal self-deception = societies are capable of telling themselves stories for years that have little basis in reality and lead to poor society-wide decision making. For example, fears over nuclear plant safety led to under-investment in nuclear power. Fears of the “population bomb” in the 1960s led countries to implement harsh policies to reduce their populations. And worries about dietary fat led governments to promote unhealthy high-sugar diets for decades.
 sovereignty
 sovereignty -- digital = e.g. https://www.xda-developers.com/japan-tried-build-operating-system-entire-world-us-government-intervened/
 sovereignty -- payment system https://www.elciudadano.com/en/brazils-pix-payment-system-faces-pressure-from-visa-and-mastercard/04/04/
-Sphere of influence
+sphere of influence
+state atheism = https://en.wikipedia.org/wiki/State_atheism
 state independence -- Banana republic
 state independence -- Buffer state
 state independence -- Client state
@@ -268,6 +290,7 @@ vexillology = flags https://en.wikipedia.org/wiki/Vexillology
 video games https://en.wikipedia.org/wiki/List_of_best-selling_video_games
 violence
 vs. elements https://en.wikipedia.org/wiki/Megathrust_earthquake
+war -- "a short war would settle everything" WW1
 war -- Allied Plans to Occupy France, 1942-1944 https://web.archive.org/web/20060507015256/http://www.rall.com/longarticle_011.htm
 war -- https://en.wikipedia.org/wiki/Irredentism
 war -- https://en.wikipedia.org/wiki/July_Crisis

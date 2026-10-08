@@ -2,7 +2,7 @@ import { type Item, InventorySlot } from "@tbrpg/definitions"
 import { type Armor } from "@tbrpg/logic--armors"
 import { type Weapon } from "@tbrpg/logic--weapons"
 
-import { type BaseUState } from "@monorepo-private/state-utils"
+import { type BaseUState } from "@monorepo-private/offirmo-state"
 
 /////////////////////
 

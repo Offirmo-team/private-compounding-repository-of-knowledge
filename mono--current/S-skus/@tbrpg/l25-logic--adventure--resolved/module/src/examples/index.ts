@@ -1,7 +1,7 @@
 import { DEMO_MONSTER_01 } from "@tbrpg/logic--monsters"
 import { DEMO_WEAPON_1 } from "@tbrpg/logic--weapons"
 
-import { type Immutable, enforceꓽimmutable } from "@monorepo-private/state-utils"
+import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { type ResolvedAdventure } from "../types.ts"
 

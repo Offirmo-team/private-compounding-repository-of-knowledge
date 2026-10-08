@@ -1,4 +1,4 @@
-import type { BaseUState } from "@monorepo-private/state-utils"
+import type { BaseUState } from "@monorepo-private/offirmo-state"
 import type { HumanReadableTimestampUTCMinutes } from "@monorepo-private/timestamps"
 import type { Immutable } from "@monorepo-private/ts--types"
 

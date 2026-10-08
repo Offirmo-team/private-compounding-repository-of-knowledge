@@ -244,6 +244,7 @@ setting -- legendarium
 setting -- mythopoeia https://en.wikipedia.org/wiki/Mythopoeia
 setting -- worldbuilding https://en.wikipedia.org/wiki/Worldbuilding
 softlock
+soul problem = https://www.radical-elements.com/minor-epiphanies/city-building-games-have-a-soul-problem-pt2
 story -- narrative system -- design elements -- narrative events
 story -- narrative system -- design elements -- narrative tags
 story -- narrative system -- design elements -- storylets

@@ -104,6 +104,7 @@
 [ ] https://www.kaleido.io/blog-categories/product-technology
 [ ] list https://en.wikipedia.org/wiki/List_of_cryptocurrencies
 [ ] list of chains
+[ ] mesh networks https://www.jonaharagon.com/posts/im-getting-into-mesh-networks-meshtastic-meshcore-and-reticulum/
 [ ] news https://www.binance.com/en/square/trending
 [ ] news https://x.com/beincrypto
 [ ] Sydney guy https://zorz.substack.com/
@@ -651,6 +652,7 @@ risks -- private key loss -- ex. https://bitcoinhistorynl.beehiiv.com/p/17-000-b
 role blind and clear signing = ???
 rotation = swapping crypto around cycles, ex. BTC-to-ETH
 RPC = interface to interact with a blockchain through a node
+RSA = I’ve factored the RSA keys of a Certificate Authority from the 90s. https://mcpherrin.ca/2026/09/07/rsa.html
 RWAfi = real-world asset finance
 sanctionned by US https://en.wikipedia.org/wiki/Nicolas_Guillou
 Satochi
@@ -887,6 +889,7 @@ wallet -- MPC& = ???
 wallet -- multisig& = ??
 wallet -- password
 wallet -- phishing = ex. https://www.ledger.com/phishing-campaigns-status
+wallet -- provider = A user agent that manages keys and facilitates transactions with Ethereum https://eips.ethereum.org/EIPS/eip-6963
 wallet -- recovery = ex. https://rewallet.de/en/
 wallet -- recovery phrase = 24 words to recover/transfer a wallet
 wallet -- refill& = intermediate between hot and cold, buffer used to refill hot wallets when needed + target of sweeps. If too full, go cold wallet
@@ -909,7 +912,6 @@ wallet -- solution -- uphold = https://wallet.uphold.com/
 wallet -- supported networks
 wallet -- sweeping = transfer all assets (esp. from hot) to another "deposit" wallet
 wallet -- withdrawal & =
-Wallet Provider = A user agent that manages keys and facilitates transactions with Ethereum https://eips.ethereum.org/EIPS/eip-6963
 wallets -- external providers -- solutions = Turnkey, Zerodev, Dynamic, Privy, or similar services
 Web Ontology Language (OWL) = language for defining ontologies, or formal representations of knowledge and relationships between concepts. You can use it to specify classes, properties, and instances, as well as facilitate reasoning and inferencing.
 Web1 = read-only
