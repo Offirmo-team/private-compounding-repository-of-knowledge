@@ -21,9 +21,9 @@ https://storybook.js.org/docs/react/writing-stories/naming-components-and-hierar
 ```ts
 import type { Meta, Story } from "@monorepo-private/storypad/types"
 
-import Component from "./index.tsx"
-
 import { EXAMPLE } from "../__fixtures/index.ts"
+
+import Component from "./index.tsx"
 
 /////////////////////////////////////////////////
 

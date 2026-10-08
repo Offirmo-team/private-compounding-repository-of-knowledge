@@ -50,5 +50,6 @@ export interface InfiniteMonorepoSpec {
 	PATH_SEP: PathSeparator // useful?
 
 	/////// META ///////
+	key: string | undefined // a key for naming variables such as ENV vars
 	_config_fileⵧroot: FilePathⳇAbsolute | null | undefined
 }

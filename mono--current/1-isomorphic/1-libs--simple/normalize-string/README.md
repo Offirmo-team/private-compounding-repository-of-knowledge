@@ -42,12 +42,10 @@ import {
   // arrays
   normalizeꓽarrayⵧof_strings,
 } from "@monorepo-private/normalize-string"
-
 import {
   assertꓽstringⵧnormalized,
   assertꓽstringⵧnormalized_and_trimmed,
   hasꓽemail_structure,
 } from "@monorepo-private/normalize-string"
-
 import { combineꓽnormalizers, normalize, default_to, normalizeꓽarray } from "@monorepo-private/normalize-string"
 ```

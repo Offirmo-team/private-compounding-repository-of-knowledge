@@ -47,8 +47,8 @@ const PLUGIN: Plugin = {
 						// https://mise.jdx.dev/tasks/monorepo.html
 						monorepo_root: true,
 						monorepo: {
-							// explicitly states that we don't have sub-configs (there is still warning as of 2026/08, to revisit later)
-							config_roots: [],
+							// explicitly states our sub-configs = only the main one
+							config_roots: ["."],
 						},
 
 						// #################################################

@@ -62,6 +62,7 @@ const SPEC: Partial<InfiniteMonorepoSpec> = {
 
 	/////// META ///////
 	// (defaults)
+	key: "PCRK",
 }
 
 export default SPEC

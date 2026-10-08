@@ -2,7 +2,7 @@
 [[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!"
 
 ## default = where "gitc" is supposed to clone it
-export MONOREPO_ROOT__CURRENT=${PCRK_PATH:-"$HOME/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge"}/mono--current;
+export MONOREPO_ROOT__CURRENT=${PCRK_ROOT:-"$HOME/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge"};
 
 alias  mono.@monorepo-private.config--mocha='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 0-meta/config--mocha/'
 alias  mono.@monorepo-private.config--typescript='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 0-meta/config--typescript/'

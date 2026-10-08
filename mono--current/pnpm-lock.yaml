@@ -1757,18 +1757,12 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
-      '@monorepo-private/parcel-config':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/parcel--config--default
       '@monorepo-private/practical-logger--core':
         specifier: workspace:*
         version: link:../11-practical-logger--core
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
       '@types/mocha':
         specifier: 'catalog:'
         version: 10.0.10
@@ -1796,9 +1790,6 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.1(@types/node@26.6.3)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
         version: 5.0.3(@types/node@26.6.3)(vite@8.3.1)

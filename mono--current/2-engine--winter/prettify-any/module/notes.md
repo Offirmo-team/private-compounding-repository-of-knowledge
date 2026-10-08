@@ -3,6 +3,7 @@ Why chalk should be injected???
 ```ts
 // "@monorepo-private/prettify-any": "*",
 import chalk from "chalk"
+
 import { injectꓽlibꓽchalk, prettifyꓽany, prettifyꓽjson } from "@monorepo-private/prettify-any"
 
 injectꓽlibꓽchalk(chalk)

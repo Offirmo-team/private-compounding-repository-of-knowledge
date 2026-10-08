@@ -280,12 +280,13 @@ pnpm i ...
 						},
 						content: {
 							text:
+								// TODO 1) proper key with default 2) computation of where gitc would clone
 								`
 #@IgnoreInspection BashAddShebang
 [[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!"
 
 ## default = where "gitc" is supposed to clone it
-export MONOREPO_ROOT__CURRENT=\${MONOREPO_ROOT__CURRENT:-"$HOME/work/src/x-external/off/${node.path‿ar}/"};
+export MONOREPO_ROOT__CURRENT=\${${state.specⵧroot.key || "MONOREPO"}_ROOT:-"$HOME/work/src/x-external/off/${node.path‿ar}/"};
 
 ` +
 								package_nodes

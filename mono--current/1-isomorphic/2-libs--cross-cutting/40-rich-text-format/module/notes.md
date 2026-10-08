@@ -149,14 +149,13 @@ console.log(RichText.renderⵧto_actions($doc))
 ```
 
 ```ts
-import type { Immutable } from "@monorepo-private/ts--types"
-
 import {
   type BaseRenderingOptions,
   DEFAULT_RENDERING_OPTIONSⵧWalk,
   type WalkerCallbacks,
   walk,
 } from "@monorepo-private/rich-text-format"
+import type { Immutable } from "@monorepo-private/ts--types"
 ```
 
 pipe traits params
