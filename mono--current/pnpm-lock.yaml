@@ -2117,6 +2117,52 @@ importers:
         specifier: 'catalog:'
         version: 5.0.3(@types/node@26.6.3)(vite@8.3.1)
 
+  1-isomorphic/3-libs--advanced/flux:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/assert
+    devDependencies:
+      '@monorepo-private/config--mocha':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--mocha
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--typescript
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../0-meta/scripts
+      '@types/mocha':
+        specifier: 'catalog:'
+        version: 10.0.10
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.3
+      '@types/sinon':
+        specifier: 'catalog:'
+        version: 22.0.0
+      chai:
+        specifier: 'catalog:'
+        version: 6.3.0
+      mocha:
+        specifier: 'catalog:'
+        version: 12.0.2
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      sinon:
+        specifier: 'catalog:'
+        version: 22.1.0
+      tslib:
+        specifier: 'catalog:'
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vitest:
+        specifier: 'catalog:'
+        version: 5.0.3(@types/node@26.6.3)(vite@8.3.1)
+
   1-isomorphic/3-libs--advanced/offirmo-state:
     dependencies:
       '@monorepo-private/assert':
@@ -2162,6 +2208,76 @@ importers:
       '@types/icepick':
         specifier: 'catalog:'
         version: 2.3.3
+      '@types/mocha':
+        specifier: 'catalog:'
+        version: 10.0.10
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.3
+      '@types/sinon':
+        specifier: 'catalog:'
+        version: 22.0.0
+      chai:
+        specifier: 'catalog:'
+        version: 6.3.0
+      mocha:
+        specifier: 'catalog:'
+        version: 12.0.2
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      sinon:
+        specifier: 'catalog:'
+        version: 22.1.0
+      tslib:
+        specifier: 'catalog:'
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vitest:
+        specifier: 'catalog:'
+        version: 5.0.3(@types/node@26.6.3)(vite@8.3.1)
+
+  1-isomorphic/3-libs--advanced/offirmo-state--to-rich-text:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/assert
+      '@monorepo-private/normalize-string':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/normalize-string
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../offirmo-state
+      '@monorepo-private/prettify-any':
+        specifier: workspace:*
+        version: link:../../../2-engine--winter/prettify-any
+      '@monorepo-private/rich-text-format':
+        specifier: workspace:*
+        version: link:../../2-libs--cross-cutting/40-rich-text-format
+      '@monorepo-private/timestamps':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/timestamps
+      '@monorepo-private/ts--utils':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/ts--utils
+      tiny-invariant:
+        specifier: 'catalog:'
+        version: 1.3.3
+    devDependencies:
+      '@monorepo-private/config--mocha':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--mocha
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--typescript
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../0-meta/scripts
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/ts--types
       '@types/mocha':
         specifier: 'catalog:'
         version: 10.0.10
@@ -2424,12 +2540,12 @@ importers:
       '@monorepo-private/fs--ls':
         specifier: workspace:*
         version: link:../../1-libs--simple/fs--ls
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/prettify-any':
         specifier: workspace:*
         version: link:../../../2-engine--winter/prettify-any
-      '@monorepo-private/state-utils':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/timestamps':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/timestamps
@@ -5112,6 +5228,9 @@ importers:
       '@monorepo-private/utils--async':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/utils--async
+      '@monorepo-private/utils--error':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/utils--error
       memoize-one:
         specifier: 'catalog:'
         version: 6.0.0
@@ -5398,7 +5517,7 @@ importers:
       '@monorepo-private/normalize-string':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/normalize-string
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/timestamps':
@@ -5462,7 +5581,7 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       typescript-string-enums:
@@ -5526,7 +5645,7 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
     devDependencies:
@@ -5584,12 +5703,12 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/random':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/random
-      '@monorepo-private/state-utils':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/uuid':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/uuid
@@ -8602,12 +8721,12 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/random':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/random
-      '@monorepo-private/state-utils':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@tbrpg/definitions':
         specifier: workspace:*
         version: link:../l10-definitions
@@ -8666,12 +8785,12 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/random':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/random
-      '@monorepo-private/state-utils':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@tbrpg/definitions':
         specifier: workspace:*
         version: link:../l10-definitions
@@ -8730,12 +8849,12 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/random':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/random
-      '@monorepo-private/state-utils':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/unicode-data':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/unicode-data
@@ -8855,12 +8974,12 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/random':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/random
-      '@monorepo-private/state-utils':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/uuid':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/uuid
@@ -9001,7 +9120,7 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/timestamps':
@@ -9074,7 +9193,7 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/timestamps':
@@ -9144,7 +9263,7 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@tbrpg/definitions':
@@ -9208,7 +9327,7 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@tbrpg/definitions':
@@ -9281,7 +9400,7 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@tbrpg/definitions':
@@ -9345,15 +9464,15 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/random':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/rich-text-format':
         specifier: workspace:*
         version: link:../../../1-isomorphic/2-libs--cross-cutting/40-rich-text-format
-      '@monorepo-private/state-utils':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/timestamps':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/timestamps
@@ -9939,7 +10058,7 @@ importers:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/state-utils':
+      '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
     devDependencies:
@@ -10006,6 +10125,9 @@ importers:
       '@monorepo-private/css--framework':
         specifier: workspace:*
         version: link:../../../4-engine--browser/1-libs--simple/css--2-framework
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/page-loaded':
         specifier: workspace:*
         version: link:../../../4-engine--browser/1-libs--simple/page-loaded
@@ -10015,18 +10137,15 @@ importers:
       '@monorepo-private/react--error-boundary':
         specifier: workspace:*
         version: link:../../../4-engine--browser/2-libs--cross-cutting/react--error-boundary
-      '@monorepo-private/state-utils':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/timestamps':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/timestamps
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/ts--types
       '@monorepo-private/utils--async':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/utils--async
-      '@tbrpg/state--energy':
-        specifier: workspace:*
-        version: link:../../@tbrpg/l30-state--energy
       react-dom:
         specifier: 'catalog:'
         version: 19.3.0(react@19.3.0)
@@ -10046,6 +10165,9 @@ importers:
       '@monorepo-private/soft-execution-context':
         specifier: workspace:*
         version: link:../../../1-isomorphic/2-libs--cross-cutting/30-soft-execution-context
+      '@monorepo-private/ts--types--hypermedia':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default

@@ -15,6 +15,7 @@
 		"check:ts": "echo \"@tracer-bullet--web-app/web-core\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
+		"sandbox": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/src/@fantasy-workout/state/##sandbox/index.ts",
 		"stories": "npm-run-all clean --parallel _start:storypad--vite",
 		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
 		"watch:check:ts": "tsc --noEmit --watch"
@@ -29,9 +30,7 @@
 		"@monorepo-private/react--error-boundary": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
-		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@monorepo-private/utils--async": "workspace:*",
-		"@tbrpg/state--energy": "workspace:*",
 		"react-dom": "catalog:"
 	},
 	"devDependencies": {
@@ -40,6 +39,7 @@
 		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/soft-execution-context": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",

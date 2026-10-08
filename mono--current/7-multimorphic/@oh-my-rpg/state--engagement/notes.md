@@ -11,8 +11,8 @@ terminal-based app would likely display everything as flow anyway
   - complex app
 - level: log / notice / warning / critical
 - CONTENT flow vs float
-  - flow = in the same flow as one's actions, usually immediate BUT not necessarily important, ex. "level up"
-    animation = in-flow but could be ignored
+  - flow = in the same flow as one's actions, usually immediate BUT not necessarily important, ex. "level up" animation
+    = in-flow but could be ignored
     - NOTE that action's feedback (ack, result) doesn't have to be in flow, ex. confirmation toast
     - acknowledgement of request
     - form / input (incl. confirmation requests)

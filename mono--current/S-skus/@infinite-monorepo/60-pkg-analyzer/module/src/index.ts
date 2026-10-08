@@ -402,6 +402,7 @@ export async function updateⵧfrom_files(
 
 /////////////////////////////////////////////////
 
+// @see isꓽignored_file()
 function getꓽProgLangs(entry: FileEntry): ProgrammingLanguage[] {
 	const { ext } = entry
 	switch (true) {

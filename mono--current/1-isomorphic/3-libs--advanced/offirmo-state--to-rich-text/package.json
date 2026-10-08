@@ -1,28 +1,33 @@
 {
-	"name": "@monorepo-private/ts--types",
+	"name": "@monorepo-private/offirmo-state--to-rich-text",
 	"version": "0.0.1",
 	"private": true,
-	"description": "TypeScript base types definitions",
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
-		".": "./module/index.ts"
+		".": "./module/src/generic--to-text.ts"
 	},
 	"scripts": {
-		"check": "run-s test--vitest test--mocha check:ts",
-		"check:ts": "echo \"@monorepo-private/ts--types\" && tsc --noEmit",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/offirmo-state--to-rich-text\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
-		"test--mocha": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
-		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
-		"@monorepo-private/assert": "workspace:*"
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/normalize-string": "workspace:*",
+		"@monorepo-private/offirmo-state": "workspace:*",
+		"@monorepo-private/prettify-any": "workspace:*",
+		"@monorepo-private/rich-text-format": "workspace:*",
+		"@monorepo-private/timestamps": "workspace:*",
+		"@monorepo-private/ts--utils": "workspace:*",
+		"tiny-invariant": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
 		"@types/sinon": "catalog:",
@@ -31,7 +36,6 @@
 		"npm-run-all": "catalog:",
 		"sinon": "catalog:",
 		"tslib": "catalog:",
-		"type-fest": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"
 	},

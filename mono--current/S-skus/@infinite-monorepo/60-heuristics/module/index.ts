@@ -23,12 +23,13 @@ export function isꓽignored_file(entry: FileEntry): boolean {
 
 	if (
 		[
-			// BINARY assets = leaf nodes (no deps)
+			// BINARY assets = leaf nodes (no deps) or docs
 			".gif",
 			".heic",
 			".jpg",
 			".mp3",
 			".otf",
+			".pdf",
 			".png",
 			".ttf",
 			".webp",

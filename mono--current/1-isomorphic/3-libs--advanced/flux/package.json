@@ -1,19 +1,16 @@
 {
-	"name": "@monorepo-private/ts--types",
+	"name": "@monorepo-private/flux",
 	"version": "0.0.1",
 	"private": true,
-	"description": "TypeScript base types definitions",
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
-		".": "./module/index.ts"
+		".": "./module/src/index.ts"
 	},
 	"scripts": {
-		"check": "run-s test--vitest test--mocha check:ts",
-		"check:ts": "echo \"@monorepo-private/ts--types\" && tsc --noEmit",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/flux\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
-		"test--mocha": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
-		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -31,7 +28,6 @@
 		"npm-run-all": "catalog:",
 		"sinon": "catalog:",
 		"tslib": "catalog:",
-		"type-fest": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"
 	},
