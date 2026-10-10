@@ -14,7 +14,7 @@ pushd ./S-skus/@infinite-monorepo/70-operation--apply > /dev/null
 node module/~~sandbox/index.ts 2>&1 | tee "$AUTOOPS_LOG"
 popd > /dev/null
 
-{ npx oxfmt || true; }
+{ pnpx oxfmt@catalog: || true; }
 
 { pnpm i || true; } 2>/dev/null
 pnpm i

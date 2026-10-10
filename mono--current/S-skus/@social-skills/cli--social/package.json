@@ -17,8 +17,7 @@
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/normalize-string": "workspace:*",
 		"@monorepo-private/type-detection": "workspace:*",
-		"temporal-polyfill": "catalog:",
-		"tiny-invariant": "catalog:"
+		"temporal-polyfill": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--mocha": "workspace:*",

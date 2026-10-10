@@ -9,7 +9,7 @@ catalogs:
   default:
     '@earendil-works/pi-tui':
       specifier: ^1
-      version: 1.0.2
+      version: 1.1.0
     '@nodelib/fs.walk':
       specifier: ^3
       version: 3.0.1
@@ -18,7 +18,7 @@ catalogs:
       version: 2.16.4
     '@pnpm/constants':
       specifier: ^1102
-      version: 1102.0.0
+      version: 1102.0.1
     '@tsconfig/node-ts':
       specifier: ^23
       version: 23.6.4
@@ -78,7 +78,7 @@ catalogs:
       version: 22.0.0
     '@vitejs/plugin-react':
       specifier: ^6
-      version: 6.1.1
+      version: 6.1.2
     bowser:
       specifier: ^2
       version: 2.14.1
@@ -138,7 +138,7 @@ catalogs:
       version: 7.0.1
     magic-string:
       specifier: ^1
-      version: 1.4.2
+      version: 1.4.3
     memoize-one:
       specifier: ^6
       version: 6.0.0
@@ -153,16 +153,16 @@ catalogs:
       version: 3.0.0
     nanoid:
       specifier: ^6
-      version: 6.0.1
+      version: 6.0.2
     npm-run-all:
       specifier: ^4
       version: 4.1.5
     oxfmt:
-      specifier: ^0.71
-      version: 0.71.0
+      specifier: ^0.72
+      version: 0.72.0
     oxlint:
       specifier: ^1
-      version: 1.86.0
+      version: 1.87.0
     oxlint-tsgolint:
       specifier: ^7
       version: 7.0.2003
@@ -237,10 +237,10 @@ catalogs:
       version: 1.0.0
     vite:
       specifier: ^8
-      version: 8.3.2
+      version: 8.3.4
     vite-plugin-devtools-json:
       specifier: ^1
-      version: 1.1.0
+      version: 1.1.1
     vitest:
       specifier: ^5
       version: 5.0.3
@@ -260,10 +260,10 @@ importers:
     devDependencies:
       oxfmt:
         specifier: 'catalog:'
-        version: 0.71.0
+        version: 0.72.0
       oxlint:
         specifier: 'catalog:'
-        version: 1.86.0(oxlint-tsgolint@7.0.2003)
+        version: 1.87.0(oxlint-tsgolint@7.0.2003)
       oxlint-tsgolint:
         specifier: 'catalog:'
         version: 7.0.2003
@@ -376,7 +376,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/gravatar:
     dependencies:
@@ -425,7 +425,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/json-stable-stringify:
     dependencies:
@@ -480,7 +480,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/marketing--creator:
     dependencies:
@@ -529,7 +529,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/merge:
     dependencies:
@@ -587,7 +587,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/murmurhash:
     dependencies:
@@ -645,7 +645,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/normalize-string:
     dependencies:
@@ -694,7 +694,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/poll:
     dependencies:
@@ -743,7 +743,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/promise-try:
     dependencies:
@@ -792,7 +792,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/pulse:
     dependencies:
@@ -853,7 +853,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/random:
     dependencies:
@@ -902,7 +902,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/set-deep-property:
     dependencies:
@@ -957,7 +957,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/timestamps:
     dependencies:
@@ -1006,7 +1006,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/ts--types:
     dependencies:
@@ -1055,7 +1055,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/ts--types--hypermedia:
     dependencies:
@@ -1116,7 +1116,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/ts--utils:
     dependencies:
@@ -1171,7 +1171,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/type-detection:
     dependencies:
@@ -1223,7 +1223,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/unicode-data:
     dependencies:
@@ -1272,7 +1272,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/url:
     dependencies:
@@ -1321,7 +1321,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/utils--async:
     dependencies:
@@ -1370,7 +1370,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/utils--error:
     dependencies:
@@ -1425,7 +1425,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/utils--sort:
     dependencies:
@@ -1477,7 +1477,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/uuid:
     dependencies:
@@ -1489,7 +1489,7 @@ importers:
         version: link:../random
       nanoid:
         specifier: 'catalog:'
-        version: 6.0.1
+        version: 6.0.2
     devDependencies:
       '@monorepo-private/config--mocha':
         specifier: workspace:*
@@ -1532,7 +1532,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/10-practical-logger--types:
     dependencies:
@@ -1581,7 +1581,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/11-practical-logger--core:
     dependencies:
@@ -1636,7 +1636,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/12-practical-logger--minimal-noop:
     dependencies:
@@ -1688,7 +1688,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/20-universal-debug-api--types:
     dependencies:
@@ -1737,7 +1737,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/21-universal-debug-api--placeholder:
     dependencies:
@@ -1757,18 +1757,12 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
-      '@monorepo-private/parcel-config':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/parcel--config--default
       '@monorepo-private/practical-logger--core':
         specifier: workspace:*
         version: link:../11-practical-logger--core
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
       '@types/mocha':
         specifier: 'catalog:'
         version: 10.0.10
@@ -1796,12 +1790,9 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/30-soft-execution-context:
     dependencies:
@@ -1865,7 +1856,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/40-rich-text-format:
     dependencies:
@@ -1932,7 +1923,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/41-rich-text-format--to-textual:
     dependencies:
@@ -1993,7 +1984,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/50-ohateoas:
     dependencies:
@@ -2069,7 +2060,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/credits:
     dependencies:
@@ -2124,7 +2115,53 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
+
+  1-isomorphic/3-libs--advanced/flux:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/assert
+    devDependencies:
+      '@monorepo-private/config--mocha':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--mocha
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--typescript
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../0-meta/scripts
+      '@types/mocha':
+        specifier: 'catalog:'
+        version: 10.0.10
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.4
+      '@types/sinon':
+        specifier: 'catalog:'
+        version: 22.0.0
+      chai:
+        specifier: 'catalog:'
+        version: 6.3.0
+      mocha:
+        specifier: 'catalog:'
+        version: 12.0.3
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      sinon:
+        specifier: 'catalog:'
+        version: 22.1.0
+      tslib:
+        specifier: 'catalog:'
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vitest:
+        specifier: 'catalog:'
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/3-libs--advanced/offirmo-state:
     dependencies:
@@ -2200,7 +2237,77 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
+
+  1-isomorphic/3-libs--advanced/offirmo-state--to-rich-text:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/assert
+      '@monorepo-private/normalize-string':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/normalize-string
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../offirmo-state
+      '@monorepo-private/prettify-any':
+        specifier: workspace:*
+        version: link:../../../2-engine--winter/prettify-any
+      '@monorepo-private/rich-text-format':
+        specifier: workspace:*
+        version: link:../../2-libs--cross-cutting/40-rich-text-format
+      '@monorepo-private/timestamps':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/timestamps
+      '@monorepo-private/ts--utils':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/ts--utils
+      tiny-invariant:
+        specifier: 'catalog:'
+        version: 1.3.3
+    devDependencies:
+      '@monorepo-private/config--mocha':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--mocha
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--typescript
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../0-meta/scripts
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../1-libs--simple/ts--types
+      '@types/mocha':
+        specifier: 'catalog:'
+        version: 10.0.10
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.4
+      '@types/sinon':
+        specifier: 'catalog:'
+        version: 22.0.0
+      chai:
+        specifier: 'catalog:'
+        version: 6.3.0
+      mocha:
+        specifier: 'catalog:'
+        version: 12.0.3
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      sinon:
+        specifier: 'catalog:'
+        version: 22.1.0
+      tslib:
+        specifier: 'catalog:'
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vitest:
+        specifier: 'catalog:'
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/3-libs--advanced/sync-store:
     dependencies:
@@ -2252,7 +2359,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/X-incubator/active/data-structures:
     dependencies:
@@ -2307,7 +2414,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   1-isomorphic/X-incubator/active/http-client:
     dependencies:
@@ -2359,7 +2466,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   2-engine--winter/prettify-any:
     dependencies:
@@ -2423,7 +2530,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/0-dev-tools/offirmo-state-migration-tester:
     dependencies:
@@ -2433,12 +2540,12 @@ importers:
       '@monorepo-private/fs--ls':
         specifier: workspace:*
         version: link:../../1-libs--simple/fs--ls
-      '@monorepo-private/prettify-any':
-        specifier: workspace:*
-        version: link:../../../2-engine--winter/prettify-any
       '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
+      '@monorepo-private/prettify-any':
+        specifier: workspace:*
+        version: link:../../../2-engine--winter/prettify-any
       '@monorepo-private/timestamps':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/timestamps
@@ -2493,7 +2600,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/file-entry:
     dependencies:
@@ -2542,7 +2649,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/fs--better-write-file:
     dependencies:
@@ -2594,7 +2701,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/fs--ls:
     dependencies:
@@ -2640,7 +2747,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/fs--parent:
     dependencies:
@@ -2689,7 +2796,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/load-config:
     dependencies:
@@ -2744,7 +2851,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/print-error--to-terminal:
     dependencies:
@@ -2799,7 +2906,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/read-write-any-structured-file:
     dependencies:
@@ -2869,7 +2976,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/spawn-correctly:
     dependencies:
@@ -2921,7 +3028,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/ohateoas-browser--terminal:
     dependencies:
@@ -2994,7 +3101,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/practical-logger--node:
     dependencies:
@@ -3058,7 +3165,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/rich-text-format--to-terminal:
     dependencies:
@@ -3116,7 +3223,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/soft-execution-context--node:
     dependencies:
@@ -3168,7 +3275,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/universal-debug-api--node:
     dependencies:
@@ -3226,13 +3333,13 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   3-engine--node/X-incubator/active/tui:
     dependencies:
       '@earendil-works/pi-tui':
         specifier: 'catalog:'
-        version: 1.0.2
+        version: 1.1.0
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../../1-isomorphic/1-libs--simple/assert
@@ -3275,7 +3382,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/css--utils--diagnostics:
     dependencies:
@@ -3327,10 +3434,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/parcel--check:
     dependencies:
@@ -3382,10 +3489,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/parcel--config--default:
     dependencies:
@@ -3452,7 +3559,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/parcel--toolbox:
     dependencies:
@@ -3546,10 +3653,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/storypad:
     dependencies:
@@ -3667,10 +3774,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/vite--config--default:
     dependencies:
@@ -3685,13 +3792,13 @@ importers:
         version: link:../vite-plugin-parcel-features
       '@vitejs/plugin-react':
         specifier: 'catalog:'
-        version: 6.1.1(vite@8.3.2)
+        version: 6.1.2(vite@8.3.4)
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vite-plugin-devtools-json:
         specifier: 'catalog:'
-        version: 1.1.0(vite@8.3.2)
+        version: 1.1.1(vite@8.3.4)
     devDependencies:
       '@monorepo-private/config--mocha':
         specifier: workspace:*
@@ -3731,19 +3838,19 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/vite--toolbox:
     dependencies:
       '@vitejs/devtools':
         specifier: ^0
-        version: 0.7.6(@devframes/json-render@1.2.0)(crossws@0.4.12)(srvx@1.0.5)(vite@8.3.2)
+        version: 0.7.6(@devframes/json-render@1.2.3)(crossws@0.4.15)(srvx@1.0.5)(vite@8.3.4)
       '@vitejs/plugin-react':
         specifier: ^6
-        version: 6.1.1(vite@8.3.2)
+        version: 6.1.2(vite@8.3.4)
       vite:
         specifier: ^8
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
   4-engine--browser/0-dev-tools/vite-plugin-parcel-features:
     dependencies:
@@ -3752,7 +3859,7 @@ importers:
         version: link:../../../1-isomorphic/1-libs--simple/assert
       magic-string:
         specifier: 'catalog:'
-        version: 1.4.2
+        version: 1.4.3
       sharp:
         specifier: 'catalog:'
         version: 0.35.5(@types/node@26.6.4)
@@ -3798,10 +3905,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/assets--background:
     dependencies:
@@ -3859,10 +3966,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/assets--heroes:
     dependencies:
@@ -3926,10 +4033,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/better-console-groups:
     dependencies:
@@ -3984,10 +4091,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/browser-features-detection:
     dependencies:
@@ -4042,10 +4149,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/css--0-reset:
     dependencies:
@@ -4097,10 +4204,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/css--1-foundation:
     dependencies:
@@ -4158,10 +4265,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/css--2-framework:
     dependencies:
@@ -4222,10 +4329,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/font--comics:
     dependencies:
@@ -4283,10 +4390,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/font--pixel:
     devDependencies:
@@ -4298,7 +4405,7 @@ importers:
         version: link:../../0-dev-tools/vite--config--default
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
   4-engine--browser/1-libs--simple/font--smallest:
     dependencies:
@@ -4359,10 +4466,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/page-loaded:
     dependencies:
@@ -4414,10 +4521,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/poll-window-variable:
     dependencies:
@@ -4472,10 +4579,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--background-img:
     dependencies:
@@ -4557,10 +4664,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--fake-inset:
     dependencies:
@@ -4630,10 +4737,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--hyperspace:
     dependencies:
@@ -4700,10 +4807,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--starry-sky:
     dependencies:
@@ -4779,10 +4886,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--window:
     dependencies:
@@ -4840,10 +4947,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/style-once:
     dependencies:
@@ -4895,10 +5002,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/wc--social:
     dependencies:
@@ -4962,10 +5069,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/ohateoas-browser--react:
     dependencies:
@@ -5041,10 +5148,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/practical-logger--browser:
     dependencies:
@@ -5108,10 +5215,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/react--error-boundary:
     dependencies:
@@ -5184,10 +5291,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/rich-text-format--to-react:
     dependencies:
@@ -5272,10 +5379,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/soft-execution-context--browser:
     dependencies:
@@ -5333,10 +5440,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/universal-debug-api--browser:
     dependencies:
@@ -5397,10 +5504,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   7-multimorphic/@oh-my-rpg/state--codes:
     dependencies:
@@ -5467,7 +5574,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   7-multimorphic/@oh-my-rpg/state--engagement:
     dependencies:
@@ -5531,7 +5638,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   7-multimorphic/@oh-my-rpg/state--meta:
     dependencies:
@@ -5589,19 +5696,19 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   7-multimorphic/@oh-my-rpg/state--prng:
     dependencies:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/random':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
+      '@monorepo-private/random':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/uuid':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/uuid
@@ -5659,7 +5766,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@fantasy-workout/70-web-core:
     dependencies:
@@ -5717,10 +5824,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/01-known-versions:
     dependencies:
@@ -5766,7 +5873,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/03-pkg-infos-resolver:
     dependencies:
@@ -5827,7 +5934,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/12-structured-file-manifest:
     dependencies:
@@ -5879,7 +5986,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/13-primitives:
     dependencies:
@@ -5931,7 +6038,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/14-package-details:
     dependencies:
@@ -5986,7 +6093,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/15-spec:
     dependencies:
@@ -6038,7 +6145,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/19-graph:
     dependencies:
@@ -6093,7 +6200,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/42-spec--defaults:
     dependencies:
@@ -6145,7 +6252,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/43-spec--load:
     dependencies:
@@ -6197,7 +6304,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/50-state:
     dependencies:
@@ -6282,7 +6389,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/51-plugin:
     dependencies:
@@ -6337,7 +6444,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/52-types-for-plugins:
     dependencies:
@@ -6404,7 +6511,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/60-heuristics:
     dependencies:
@@ -6456,7 +6563,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/60-pkg-analyzer:
     dependencies:
@@ -6538,7 +6645,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/70-operation--apply:
     dependencies:
@@ -6677,7 +6784,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/X-test-package:
     dependencies:
@@ -6723,7 +6830,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--ai--agents--coding:
     dependencies:
@@ -6784,7 +6891,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--changelog:
     dependencies:
@@ -6839,7 +6946,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--editorconfig:
     dependencies:
@@ -6897,7 +7004,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--git:
     dependencies:
@@ -6952,7 +7059,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--jetbrains:
     dependencies:
@@ -7007,7 +7114,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--license:
     dependencies:
@@ -7062,7 +7169,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--mise:
     dependencies:
@@ -7126,7 +7233,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--npm:
     dependencies:
@@ -7193,7 +7300,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--nvm:
     dependencies:
@@ -7254,7 +7361,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--offirmo:
     dependencies:
@@ -7315,7 +7422,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--oxc--oxfmt:
     dependencies:
@@ -7370,7 +7477,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--oxc--oxlint:
     dependencies:
@@ -7425,7 +7532,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--package-json:
     dependencies:
@@ -7492,7 +7599,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--parcel:
     dependencies:
@@ -7553,7 +7660,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--pnpm:
     dependencies:
@@ -7592,7 +7699,7 @@ importers:
         version: link:../../../1-isomorphic/1-libs--simple/utils--error
       '@pnpm/constants':
         specifier: 'catalog:'
-        version: 1102.0.0
+        version: 1102.0.1
       tinyglobby:
         specifier: 'catalog:'
         version: 0.2.17
@@ -7638,7 +7745,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--readme:
     dependencies:
@@ -7693,7 +7800,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--tosort:
     dependencies:
@@ -7742,7 +7849,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--turborepo:
     dependencies:
@@ -7803,7 +7910,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--typescript:
     dependencies:
@@ -7873,7 +7980,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--unit-tests:
     dependencies:
@@ -7925,7 +8032,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--vite:
     dependencies:
@@ -7980,7 +8087,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--vscode:
     dependencies:
@@ -8041,7 +8148,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--yarn--v1:
     dependencies:
@@ -8102,7 +8209,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@rpg--modern/30-marketing:
     dependencies:
@@ -8157,7 +8264,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@rpg--modern/90-final--web-app:
     devDependencies:
@@ -8169,7 +8276,7 @@ importers:
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
   S-skus/@rpg--space/30-marketing:
     dependencies:
@@ -8224,7 +8331,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@rpg--space/80-web-components:
     dependencies:
@@ -8282,10 +8389,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@rpg--space/81-web-core:
     dependencies:
@@ -8343,10 +8450,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@rpg--space/90-final--web-app:
     dependencies:
@@ -8404,10 +8511,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@social-skills/cli--social:
     dependencies:
@@ -8423,9 +8530,6 @@ importers:
       temporal-polyfill:
         specifier: 'catalog:'
         version: 1.0.5
-      tiny-invariant:
-        specifier: 'catalog:'
-        version: 1.3.3
     devDependencies:
       '@monorepo-private/config--mocha':
         specifier: workspace:*
@@ -8468,7 +8572,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/30-marketing:
     dependencies:
@@ -8523,7 +8627,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/80-web-property: {}
 
@@ -8537,7 +8641,7 @@ importers:
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
   S-skus/@tbrpg/l10-definitions:
     dependencies:
@@ -8607,19 +8711,19 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l20-logic--weapons:
     dependencies:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/random':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
+      '@monorepo-private/random':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/random
       '@tbrpg/definitions':
         specifier: workspace:*
         version: link:../l10-definitions
@@ -8671,19 +8775,19 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l21-logic--armors:
     dependencies:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/random':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
+      '@monorepo-private/random':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/random
       '@tbrpg/definitions':
         specifier: workspace:*
         version: link:../l10-definitions
@@ -8735,19 +8839,19 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l22-logic--monsters:
     dependencies:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/random':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
+      '@monorepo-private/random':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/unicode-data':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/unicode-data
@@ -8802,7 +8906,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l24-logic--adventures:
     dependencies:
@@ -8860,19 +8964,19 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l25-logic--adventure--resolved:
     dependencies:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
-      '@monorepo-private/random':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/offirmo-state':
         specifier: workspace:*
         version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
+      '@monorepo-private/random':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/uuid':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/uuid
@@ -8942,7 +9046,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l26-logic--shop:
     dependencies:
@@ -9006,7 +9110,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l30-state--energy:
     dependencies:
@@ -9079,7 +9183,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l31-state--achievements:
     dependencies:
@@ -9149,7 +9253,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l32-state--wallet:
     dependencies:
@@ -9213,7 +9317,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l33-state--inventory:
     dependencies:
@@ -9286,7 +9390,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l34-state--character:
     dependencies:
@@ -9350,22 +9454,22 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l39-state:
     dependencies:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/assert
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/random':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/random
       '@monorepo-private/rich-text-format':
         specifier: workspace:*
         version: link:../../../1-isomorphic/2-libs--cross-cutting/40-rich-text-format
-      '@monorepo-private/offirmo-state':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/timestamps':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/timestamps
@@ -9480,7 +9584,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l40-interfaces:
     dependencies:
@@ -9574,10 +9678,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l50-ui--rich-text:
     dependencies:
@@ -9707,10 +9811,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l60-ohateoas:
     dependencies:
@@ -9795,10 +9899,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tbrpg/l81-web--core:
     dependencies:
@@ -9880,10 +9984,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/50-marketing:
     dependencies:
@@ -9941,10 +10045,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/60-isomorphic-state:
     dependencies:
@@ -10002,10 +10106,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/70-web-core:
     dependencies:
@@ -10018,6 +10122,9 @@ importers:
       '@monorepo-private/css--framework':
         specifier: workspace:*
         version: link:../../../4-engine--browser/1-libs--simple/css--2-framework
+      '@monorepo-private/offirmo-state':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/page-loaded':
         specifier: workspace:*
         version: link:../../../4-engine--browser/1-libs--simple/page-loaded
@@ -10027,24 +10134,15 @@ importers:
       '@monorepo-private/react--error-boundary':
         specifier: workspace:*
         version: link:../../../4-engine--browser/2-libs--cross-cutting/react--error-boundary
-      '@monorepo-private/offirmo-state':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/3-libs--advanced/offirmo-state
       '@monorepo-private/timestamps':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/timestamps
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
-      '@monorepo-private/ts--types--hypermedia':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
       '@monorepo-private/utils--async':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/utils--async
-      '@tbrpg/state--energy':
-        specifier: workspace:*
-        version: link:../../@tbrpg/l30-state--energy
       react-dom:
         specifier: 'catalog:'
         version: 19.3.0(react@19.3.0)
@@ -10064,6 +10162,9 @@ importers:
       '@monorepo-private/soft-execution-context':
         specifier: workspace:*
         version: link:../../../1-isomorphic/2-libs--cross-cutting/30-soft-execution-context
+      '@monorepo-private/ts--types--hypermedia':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -10105,10 +10206,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/80-web-property:
     dependencies:
@@ -10184,10 +10285,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/90-final--web-app:
     dependencies:
@@ -10257,10 +10358,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/10-spec:
     dependencies:
@@ -10333,7 +10434,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/50-output:
     dependencies:
@@ -10388,7 +10489,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/generator--html:
     dependencies:
@@ -10455,7 +10556,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/generator--html--snippets:
     dependencies:
@@ -10507,7 +10608,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/generator--svg:
     dependencies:
@@ -10568,10 +10669,10 @@ importers:
         version: 6.0.3
       vite:
         specifier: 'catalog:'
-        version: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+        version: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/generator--website-entry-points:
     dependencies:
@@ -10656,64 +10757,64 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.3(@types/node@26.6.4)(vite@8.3.2)
+        version: 5.0.3(@types/node@26.6.4)(vite@8.3.4)
 
 packages:
 
-  '@babel/runtime@7.29.7':
-    resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
+  '@babel/runtime@7.29.10':
+    resolution: {integrity: sha512-NpugTzbKgGrNe45Ui32cN8vCFFMxVtP/9rtfwv0nP5FRDAjvYBxJcLVpYA9mr1jxP6cnIT7x9LUzuDTbWYYNRA==}
     engines: {node: '>=6.9.0'}
 
-  '@devframes/agentic@1.2.0':
-    resolution: {integrity: sha512-8FzqOO0TN7RLRhs4Z0svd8Cofs+ojgOtKIatUCPP42VvoockJ+5Eyh+1NQyw3BGAGlnXS8jCQVB0SYMECrcfjQ==}
+  '@devframes/agentic@1.2.3':
+    resolution: {integrity: sha512-GYFvBBPCPsbNF7H79gY6Ky4rwo7C7Gt8qWhwUTUNACEnSi3SrQQPixiTNeccrasAYJiSMPKKOy9A1XbWevpm2g==}
     peerDependencies:
-      devframe: 1.2.0
+      devframe: 1.2.3
 
-  '@devframes/hub-ui@1.2.0':
-    resolution: {integrity: sha512-7q9zfo/i+Iiu5oO4RQdB3aWzt+4BWmKaK4L0UxwPxKibFx45xe3GrATNnoW1PY0kxY1gz2kqc9jdwXDOmXmmdw==}
+  '@devframes/hub-ui@1.2.3':
+    resolution: {integrity: sha512-pGEAj/dUp4B7fZ73v8Ypn9c/Z9lEziz8E0fH7qTAJqZ9ZGbpQSp8aT3d36T3Ew4X9HE4vcA12IU0p40ZxjSxbw==}
     peerDependencies:
-      '@devframes/hub': 1.2.0
-      '@devframes/json-render': 1.2.0
-      devframe: 1.2.0
+      '@devframes/hub': 1.2.3
+      '@devframes/json-render': 1.2.3
+      devframe: 1.2.3
     peerDependenciesMeta:
       '@devframes/json-render':
         optional: true
 
-  '@devframes/hub@1.2.0':
-    resolution: {integrity: sha512-ipsqS0MwpjlAw/S17gOKQ9loCd56BbY9r3vUWPGFtGqdvcyScpMF2UdkIr4vCjYN1y+6W/G5mVL1wjjOUAjV5w==}
+  '@devframes/hub@1.2.3':
+    resolution: {integrity: sha512-Z5WtKK0+UxEZizo1wpRFEYR3y9UtbQk50k47dvtOgn/z/F8lpj4/nbH9HfAIDH6Z7s0vfhvQQQW6U5OnaYMM0g==}
     peerDependencies:
-      '@devframes/agentic': 1.2.0
-      devframe: 1.2.0
+      '@devframes/agentic': 1.2.3
+      devframe: 1.2.3
     peerDependenciesMeta:
       '@devframes/agentic':
         optional: true
 
-  '@devframes/json-render-ui@1.2.0':
-    resolution: {integrity: sha512-wnMefB5YWhVmykLZ1NYDLAVWXdaG14O5rpWV84I13/NhLI6PV7QcY3Ylrt81bslsQTSK2PmWQmj5+gnCls+krA==}
+  '@devframes/json-render-ui@1.2.3':
+    resolution: {integrity: sha512-WKwsLyfJ6VEpd7ji7INY6+Rbep60MOlAUpC7oUHf39RuQtqlG8jUa+lcFAgT+PhLEfB9OxLWjOZi/cgn9L29Cw==}
     peerDependencies:
-      '@devframes/hub': 1.2.0
-      devframe: 1.2.0
+      '@devframes/hub': 1.2.3
+      devframe: 1.2.3
     peerDependenciesMeta:
       '@devframes/hub':
         optional: true
       devframe:
         optional: true
 
-  '@devframes/json-render@1.2.0':
-    resolution: {integrity: sha512-LjRSNm5FVUU5Am5lUUM0Wy5w9EY2PIUI19A1C54SPkms/USyyj+7WwHYyTeeUbAGYBkNsNSi5f5v8k5gczDKvw==}
+  '@devframes/json-render@1.2.3':
+    resolution: {integrity: sha512-7sQFioOPfBt7jBTjVsGXAmnH8jMyXZfZywYd4qPnYZwTyilU5LfuI52LHiPP63CU0H2jmgqFilZQe86IRWRRXQ==}
     peerDependencies:
-      '@devframes/hub': 1.2.0
-      devframe: 1.2.0
+      '@devframes/hub': 1.2.3
+      devframe: 1.2.3
     peerDependenciesMeta:
       '@devframes/hub':
         optional: true
 
-  '@devframes/plugin-inspect@1.2.0':
-    resolution: {integrity: sha512-4DWrXtzRm5CNT1RF7ZV0vtuR3pPSAHpWbBU1/svEsWA2IPm861tFwDpuUvghH21iBNGyxab+j9igdrdC5G162Q==}
+  '@devframes/plugin-inspect@1.2.3':
+    resolution: {integrity: sha512-1HQfTiQkJ+gq0pt0ArWUPiblwCal9miDeEVgZJxFjwOFu0rTo+EkzM3jWgfkfumciVqQuxs862deJgL4F2bdpw==}
     hasBin: true
     peerDependencies:
-      '@devframes/plugin-inspect--assets': 1.2.0
-      devframe: 1.2.0
+      '@devframes/plugin-inspect--assets': 1.2.3
+      devframe: 1.2.3
       vite: ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       '@devframes/plugin-inspect--assets':
@@ -10721,13 +10822,13 @@ packages:
       vite:
         optional: true
 
-  '@devframes/plugin-messages@1.2.0':
-    resolution: {integrity: sha512-5GoXlVrdsZ8ZxFY3PhMi30w9/6i2x/3O3GLoN/IH99LkqeDUdzot0WApgD2xQuoDba2TEgzT16abhpyhX/kDSA==}
+  '@devframes/plugin-messages@1.2.3':
+    resolution: {integrity: sha512-bGRlw/uoBWPDhGYsY/c0aX6fz44iF9GNHDHwo5B3F4GARiXKjPOUae/UUd+WP0pEn524kjQ7NI1q4/cm30Co+g==}
     hasBin: true
     peerDependencies:
-      '@devframes/hub': 1.2.0
-      '@devframes/plugin-messages--assets': 1.2.0
-      devframe: 1.2.0
+      '@devframes/hub': 1.2.3
+      '@devframes/plugin-messages--assets': 1.2.3
+      devframe: 1.2.3
       vite: ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       '@devframes/plugin-messages--assets':
@@ -10735,12 +10836,12 @@ packages:
       vite:
         optional: true
 
-  '@devframes/plugin-terminals@1.2.0':
-    resolution: {integrity: sha512-r/P1YcMIY4djUQXC45UbT1C3z1TylZTK3IcfeYG2z/8D4mdMjN9eT1xe4pTvMKLaBj75DuLP8OmWT2n/mA1oPw==}
+  '@devframes/plugin-terminals@1.2.3':
+    resolution: {integrity: sha512-y9Yla9XMkLwleYVkBlAam7ekPfgNT/vKAQ9UAIBCYGXSprcR19ZrbAco9liwoopTNsjKmd2bathFs4R5TndHeg==}
     hasBin: true
     peerDependencies:
-      '@devframes/plugin-terminals--assets': 1.2.0
-      devframe: 1.2.0
+      '@devframes/plugin-terminals--assets': 1.2.3
+      devframe: 1.2.3
       vite: ^8.0.0
     peerDependenciesMeta:
       '@devframes/plugin-terminals--assets':
@@ -10748,17 +10849,17 @@ packages:
       vite:
         optional: true
 
-  '@devframes/service-open@1.2.0':
-    resolution: {integrity: sha512-tN5qfOEMzNyYSyDEHTm4UC/1vEcLTH1ga+NV5ZyvEmhU9INzgvDagVKJP+6M1XG7yLc1OydpRPVUndEC+USAVA==}
+  '@devframes/service-open@1.2.3':
+    resolution: {integrity: sha512-x71jVlxkERpLnScjyhE/EuL7QvDsaxjoWRffOqp6ntwhCzQvOyWsJOPTHKE3PYrAH1kAbhZj7pBDse7jcMbyzg==}
     peerDependencies:
-      devframe: 1.2.0
+      devframe: 1.2.3
 
-  '@devframes/vite@1.2.0':
-    resolution: {integrity: sha512-upJNfhAlAKfXYajzclF//8SLHnF2m6pjf2eXtpaYHZuIjWQfJG31CjVR3qqCQT1Fn2oyiZjPLuvbMqqYfijVaA==}
+  '@devframes/vite@1.2.3':
+    resolution: {integrity: sha512-VzPL2SyzN1J9YwaBQ1YIb2QLYIhUYlImnN0r/eobraUiozc6rzJwXk1B4IDaOkfCQYN7CcTwkPUIUiR+e52S6A==}
     peerDependencies:
-      '@devframes/hub': 1.2.0
-      '@devframes/hub-ui': 1.2.0
-      devframe: 1.2.0
+      '@devframes/hub': 1.2.3
+      '@devframes/hub-ui': 1.2.3
+      devframe: 1.2.3
       vite: ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       '@devframes/hub':
@@ -10771,8 +10872,8 @@ packages:
   '@dmsnell/diff-match-patch@1.1.0':
     resolution: {integrity: sha512-yejLPmM5pjsGvxS9gXablUSbInW7H976c/FJ4iQxWIm7/38xBySRemTPDe34lhg1gVLbJntX0+sH0jYfU+PN9A==}
 
-  '@earendil-works/pi-tui@1.0.2':
-    resolution: {integrity: sha512-ElfzjnckohEjzHK5Q5iOpqLpQ1YbM/c/XmjBdPVR5k4uoorQPnny5BtT+rvC0cAjVVCUOHWAWppust7FAaEsOQ==}
+  '@earendil-works/pi-tui@1.1.0':
+    resolution: {integrity: sha512-v7wkS0y2ErZvZkSfemqd9RrBZJ5x6p8Ujsv7NdJj01IXJyFM0kNL6rMdcKcvTe7EVTd6ugvDB9VPZSoaBF9QxQ==}
     engines: {node: '>=22.19.0'}
 
   '@emnapi/runtime@1.11.3':
@@ -10956,8 +11057,8 @@ packages:
   '@lezer/common@1.5.3':
     resolution: {integrity: sha512-H0iErY4e43LpXbYDyBci5W4v/RwTgGV3YzYOlJPiGZ8RY8w51kVE+xLn1tg3Z6UmSfyETvtsUK3r7YsgDQEI7Q==}
 
-  '@lezer/lr@1.4.10':
-    resolution: {integrity: sha512-rnCpTIBafOx4mRp43xOxDJbFipJm/c0cia/V5TiGlhmMa+wsSdoGmUN3w5Bqrks/09Q/D4tNAmWaT8p6NRi77A==}
+  '@lezer/lr@1.4.11':
+    resolution: {integrity: sha512-UwgZcl1R66H2hDzBrA7kWyYmX6s8p5TQ+e/t7CuvgCtBEPxbEPaHYHu+pJBvTvDotEJpuQkJjbXuHiw5Cixxgw==}
 
   '@lmdb/lmdb-darwin-arm64@2.8.5':
     resolution: {integrity: sha512-KPDeVScZgA1oq0CiPBcOa3kHIqU+pTOwRFDIhxvmf8CTNvqdZQYp5cCKW0bUk69VygB2PuTiINFWbY78aR2pQw==}
@@ -10993,16 +11094,16 @@ packages:
     resolution: {integrity: sha512-iA7+tyVqfrATAIsIRWQG+a7ZLLD0VaOCKV2Wd/v4mqIU3J9c4jx9p7S0nw1XH3gJCKNBOOwACOPYYSUu9pgT+w==}
     engines: {node: '>=12.0.0'}
 
-  '@modelcontextprotocol/client@2.3.0':
-    resolution: {integrity: sha512-pbHtGj6EeFCHngFE8gtNPaKrsj8Mb1IMw45BLcaPML/m2WTxI7pyYmeNQvaux88Lw8BSO5r7nyRbUyIkICmGrg==}
+  '@modelcontextprotocol/client@2.3.1':
+    resolution: {integrity: sha512-mIGZXpHsjnZ6lD+gD/WCMpR5k8yVQQ8nNFH1N0Srf7AvnwTUMYD6pvTY8ng2+He5FfV7YMZLmrjL7cLa/cc3dQ==}
     engines: {node: '>=20'}
 
-  '@modelcontextprotocol/core@2.3.0':
-    resolution: {integrity: sha512-09BHFaNVBe5pB2AhzCfLj0cqmsKLERvZQ4FblzP90UMGLaXVqdZPByFjURwsUYCmxonUW2yAwgTTvle+8O2/8w==}
+  '@modelcontextprotocol/core@2.3.1':
+    resolution: {integrity: sha512-laVmIhPGpWi7rG9q+0UigblRN0Hws/Yjlb6qLFtVqryXVLkc4h+yN8z731POD2LnAGQlFe7/tXhUm7Bi0YB91g==}
     engines: {node: '>=20'}
 
-  '@modelcontextprotocol/server@2.3.0':
-    resolution: {integrity: sha512-+6b0LdsQLmHsvS7J6sQJ4weTpzUn61fU1JKS+321/+IyDYoHW5CR2Tgqcs6GgAAQvlesCo6yX3xttgmx+XGtJw==}
+  '@modelcontextprotocol/server@2.3.1':
+    resolution: {integrity: sha512-e59MfWuSssj6DoQ96JCTqdW1AXT5/XtnTl0WWd6MU1Ka434fFUGGosCLJbGNySDhHGvxQWoRWK137FXYFkYNWw==}
     engines: {node: '>=20'}
 
   '@msgpackr-extract/msgpackr-extract-darwin-arm64@3.0.4':
@@ -11047,127 +11148,127 @@ packages:
     resolution: {integrity: sha512-nIh/M6Kh3ZtOmlY00DaUYB4xeeV6F3/ts1l29iwl3/cfyY/OuCfUx+v08zgx8TKPTifXRcjjqVQ4KB2zOYSbyw==}
     engines: {node: '>=18.18.0'}
 
-  '@oxc-project/types@0.152.0':
-    resolution: {integrity: sha512-oM/5rLBm2tPkg0iBgkH/FOeR3PCDpY19GTgAZjMFM8h9WI9VW7cLgzp6nwtarYKmovavIQZ+Fe/RKX/8C8O/Rw==}
+  '@oxc-project/types@0.153.0':
+    resolution: {integrity: sha512-jSNrRIyvPVLL5E1z/tS5zLAprosGz/FuI1PWwEOz59j3E4TTTzSpqKb/RDGqJhhW0QHYISGXxq582wGx6T11Tw==}
 
-  '@oxfmt/binding-android-arm-eabi@0.71.0':
-    resolution: {integrity: sha512-l31EyBfB4egJeFua11aQFEUE9nnDtfpWCadqQovm0WL30t/yUHtdFl/5HyFXvd5xT8Ewh3U4TI9f30GowrQ1fw==}
+  '@oxfmt/binding-android-arm-eabi@0.72.0':
+    resolution: {integrity: sha512-u4U1uaDOVBuorGNC/07NLm48nECHOiJJka002YGML16Md2DRvf38RGBt01lH60EOGvNlFVmbLoksQedNBoZHKw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [android]
 
-  '@oxfmt/binding-android-arm64@0.71.0':
-    resolution: {integrity: sha512-E8q39SUZzSXQ08oZoFoTkxRADkdBNgL6De4qgZYr2O4JCunwqrZwAyCebxIF3yVHBafHM30WUkhTkDi+jNYZOw==}
+  '@oxfmt/binding-android-arm64@0.72.0':
+    resolution: {integrity: sha512-GCnM+Ae2mWOKC+92y3FOb6eZJeVnBAVz82e3lITUUg+kxukYKzBNAvJ/hhHIfa2A0md55SYYhdWPddSSy3KPVA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@oxfmt/binding-darwin-arm64@0.71.0':
-    resolution: {integrity: sha512-pTteTrN88DicrmJ3DocBmpNDa6Umfh0iveEG8rnAlDFQpclmtDS7hnIvZbIEV9mDO0Ot1U0sjtoJQ1itd/ZMhQ==}
+  '@oxfmt/binding-darwin-arm64@0.72.0':
+    resolution: {integrity: sha512-LjQ8tlevdtwraFlWC6AnQ1Forzde0clRmnsP3QmK+ydSElDt/J+5Jc+m+//Ly1G97aP7WCNUw110QMIUw2K7xA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@oxfmt/binding-darwin-x64@0.71.0':
-    resolution: {integrity: sha512-G5melRC3IiNEgXlNKJhSExJYQGAQIppHFp2cl/wFrqQcEwmc4k4TkrHaFTR29SDudjoW5AZq5cXPGJDqtlH/Yg==}
+  '@oxfmt/binding-darwin-x64@0.72.0':
+    resolution: {integrity: sha512-+ZbcxhB1C34RQR5IldSyY6Z/yalJIxHXhP36PGE4sEq0f/lgL5jCLmOKoDeVm8dqd9gFGDsd1bNWHSGCAwdSkw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@oxfmt/binding-freebsd-x64@0.71.0':
-    resolution: {integrity: sha512-Hb1P5yKb9aiH2VSbm3Ml37mKjzqpunYet9krw/YK7V5JsAUJDQlju3Yk/dEqQvJD/usBvpi01Vbk9ZDNo0a8Cw==}
+  '@oxfmt/binding-freebsd-x64@0.72.0':
+    resolution: {integrity: sha512-yGPhA8sePEBFV9iGcprhyOk3Bz3fZshswMH3DpYIPZFLT1DG5LjiZ0j6AJQpSueaL6bUK0av1K+5+fe+ldy5EQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
 
-  '@oxfmt/binding-linux-arm-gnueabihf@0.71.0':
-    resolution: {integrity: sha512-r7n4JEO+rkp0kaP3ia+0hv6FzK3PQIHqaF0jxGuhjJ4JHVX9ZVRbgpDVDW+OloyuJsRWpWFDKIHe8gfl1p/4mQ==}
+  '@oxfmt/binding-linux-arm-gnueabihf@0.72.0':
+    resolution: {integrity: sha512-/g5axuqFMcAtoQrFLR5EJEMDjR5Ea4GuzpdDmMpPWAgrF1DmL4kD1NPNVlpXEOxpFJnD6lPvLKYj1lzdlrfifA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxfmt/binding-linux-arm-musleabihf@0.71.0':
-    resolution: {integrity: sha512-EEynTF4nakgqDhVCmd3cHQCmTcw0BM8ea6eHigTdtZ3yxdsBNv+dYkt+OpDDZx1n/jzjI7J+Ht7IgkqFWuJUxQ==}
+  '@oxfmt/binding-linux-arm-musleabihf@0.72.0':
+    resolution: {integrity: sha512-InVitdHbS09PM+w+WinIiyX37rC9R3L7lUP9mKy9uKTEDSUFaLjWsLoreRIxKivnv7Ndqc6Trvi+K+b6ZzhiJg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxfmt/binding-linux-arm64-gnu@0.71.0':
-    resolution: {integrity: sha512-7VgJIrywCwR/G6YMv+HqsccUt8Z4q4mbM2xR+Ry/6AeMk4pCmZ9aO4Srd3mmrvVu8PsCZGP7oHEHSXWTmyloaQ==}
+  '@oxfmt/binding-linux-arm64-gnu@0.72.0':
+    resolution: {integrity: sha512-WKjlyRAxpPjXoqeuwFBim5LscgvY+RNEiZ971C9JlRQZONhJTsXDki/oHFYQE+fzzRpzXh3owZvOdT3kNL2g+g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@oxfmt/binding-linux-arm64-musl@0.71.0':
-    resolution: {integrity: sha512-AOCaminv/+fhinUXKvtPZT4POhNYmN9GfvaJdgJa1AbvuzClWGwDIXfJg8eu3sYaVL2B68jNvmS7LZGAYa0z3A==}
+  '@oxfmt/binding-linux-arm64-musl@0.72.0':
+    resolution: {integrity: sha512-poafnbsPpJhR+5Mbwpf8CscugTyiRAzjTOxRVn8ra3X2jnURs2xL5Du2xl5g2iW85lICMglpmLf8jDjZEbNgzQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@oxfmt/binding-linux-ppc64-gnu@0.71.0':
-    resolution: {integrity: sha512-0SHxuaa4QRLM7jfsd8wc6L7KdLg+FR6/ah9k1eAvcrK/Sni7oxchMvsjwUsyakVAta+wBVDkjJTr7/RFU0uUGA==}
+  '@oxfmt/binding-linux-ppc64-gnu@0.72.0':
+    resolution: {integrity: sha512-zNUi0gKRsO7S3IfPzsTbnm88OedPuX32hmZFWZRWHvWJlAoZRwVbeO6Nb3hng4vDgL7qUKp4TGqzPz1mhsycYg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@oxfmt/binding-linux-riscv64-gnu@0.71.0':
-    resolution: {integrity: sha512-UNKj1+rPorTK6uSlQzpN96vDNbHbL/63zcpznweo0ImQdkDdtQCS7G3puxX++2cESPKT2B56Y6DICUmFTJde5A==}
+  '@oxfmt/binding-linux-riscv64-gnu@0.72.0':
+    resolution: {integrity: sha512-qTY7z/iyF/rWI2HWwWMevXqZW5PZUOofUy2afK7v6rseXnpld3yjgyIk6pCux3DqWQ0lB+f5atvLJNBwzLvFsw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
-  '@oxfmt/binding-linux-riscv64-musl@0.71.0':
-    resolution: {integrity: sha512-5cVXKj7a0mWu7GU6/bZgNyv+KtLgM5S9cnT26Os2/abj8pK/bklHsbdYEHGLLniGjNYkyzwem8mZciPCaDtilw==}
+  '@oxfmt/binding-linux-riscv64-musl@0.72.0':
+    resolution: {integrity: sha512-w18qfo8vEMD6EKEHtzTvjc6jH8yCyXIT1Bn7PFWJd0PpZyzH/VQDx4xvjCh0LGz6GRzqiezbisTdG9AoXtpkZQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [musl]
 
-  '@oxfmt/binding-linux-s390x-gnu@0.71.0':
-    resolution: {integrity: sha512-lNpcMuZvyU1V/CY5h19hac03m4E4PLSYRckcxZOynSPojI4Mwt6nEu9wT/gVf0bclH3xGEWjwqApnSTgjkd2oA==}
+  '@oxfmt/binding-linux-s390x-gnu@0.72.0':
+    resolution: {integrity: sha512-grW8HwEir+vK7fCcq1ZgL3NHQCfZ1PidiERE9Hbf+24xGys+DoDaoqTht4ccfn0PcBwbViLkwkda/KNpJu2KRQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@oxfmt/binding-linux-x64-gnu@0.71.0':
-    resolution: {integrity: sha512-5/Z6pUewQpknXqC4/ykK6Zc6RiteAnPem1Ci7K1RZLVF6w6MMjwHjR4vsjijW4Czidgv7HKeVglGjElADliT9w==}
+  '@oxfmt/binding-linux-x64-gnu@0.72.0':
+    resolution: {integrity: sha512-wQJRQfWBRIn88Pkr449EUViwRayrYUScg7ty+Ihiem21mQ9BUA6S9e/4RAgyNk9lMag0KBouyKskjq61rOC0WQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@oxfmt/binding-linux-x64-musl@0.71.0':
-    resolution: {integrity: sha512-uVdG2N/4GEbOeljpQ+xv+NeEwJWJGj0WaxSiSYnoiqIYy3RWrWd3rGUmxWXP1A8+ferNvvwFoDAtvgsDUvBuSw==}
+  '@oxfmt/binding-linux-x64-musl@0.72.0':
+    resolution: {integrity: sha512-T1B0uQzafxuGPjjaPrZJ497nxoi1BiI65JfsYc56nNpmev3msfb/iaTmH2kQuNFqa8PKxpMlf3GhWrWBvBPORQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@oxfmt/binding-openharmony-arm64@0.71.0':
-    resolution: {integrity: sha512-1LwEZmSDRFKeBaGd/Hgj2xI3SmgGFpF4YtgkSx0sTYdTiZfHWbcFvRIBjL1YiDNdQd9Khda3Ij8CoqBULjskDg==}
+  '@oxfmt/binding-openharmony-arm64@0.72.0':
+    resolution: {integrity: sha512-OKxxgTurl7+hypVplO8QRAbbQlwEs0j1Y6FZv+ZN2qNbdxQk2muMlzuJNBGTCWwxQ0rkkOD1uK/DW1fvzoUSJA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
 
-  '@oxfmt/binding-win32-arm64-msvc@0.71.0':
-    resolution: {integrity: sha512-5tplmkeMXmza3PUptJQy25wCPJbIAg5g5r7zs+DI+7eEYOqbY+7roMdSH2zbDvv1Pb4oTDJ6NWYx9IRxBxXwhQ==}
+  '@oxfmt/binding-win32-arm64-msvc@0.72.0':
+    resolution: {integrity: sha512-L78TKzURqvjuZOCo88ixMbPXf/RP7u31Y0cmjJ/KEmrHmfYhmhEvsDaTYPiyTRne64jUgCbADfY0YeoQk4/Xyw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@oxfmt/binding-win32-ia32-msvc@0.71.0':
-    resolution: {integrity: sha512-T2LWgh3Vx4PYDjtcqRRGDyCsVxeF/VE5xTpUQiCm65bNLwMpRnJYj6Hlkf6qRM3+jxCIOqHD1kVHNQCCiAVMNQ==}
+  '@oxfmt/binding-win32-ia32-msvc@0.72.0':
+    resolution: {integrity: sha512-gQtFW+Ii8BWgtJTAD17TY/WsdNS5gUfAPov8iI1jeq4r9lRRYImmxPL08UU00/RLaCfBJwh2UgINnDY0iOiZ+A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ia32]
     os: [win32]
 
-  '@oxfmt/binding-win32-x64-msvc@0.71.0':
-    resolution: {integrity: sha512-L06SVp7Hu1EQTkh3+PHnKK26dxVbEpOG2InMwCooTE4MA437b5FgfTleCCiGn4ykISHnHU6UHaIg7SiMO7rBHA==}
+  '@oxfmt/binding-win32-x64-msvc@0.72.0':
+    resolution: {integrity: sha512-uhooIN+DCzWX5uH7mQkSVCsODqsGluGJ4n3ch4+mITtWKpESMDjUJUSDBAVFuYQDwqY2McPDKdKJbM0oZVW/Qw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -11202,124 +11303,124 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxlint/binding-android-arm-eabi@1.86.0':
-    resolution: {integrity: sha512-63Ozq6yQn79B2UxjSZ9huJmI+3/ZPI7hxAe6TyFh9oQL447KnIMoffOdtog+h4KILbQr61ZRvFPW5gYbAUgpgQ==}
+  '@oxlint/binding-android-arm-eabi@1.87.0':
+    resolution: {integrity: sha512-22tVIHlB9898OYsBKmYB6He1MCSqdTmK1BVWuSNUTVrpS0KWNege+U9uEYqGJ+KatQag0r/oU44i3OOs46z7HQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [android]
 
-  '@oxlint/binding-android-arm64@1.86.0':
-    resolution: {integrity: sha512-JdLGp44phbf/0Du236Dt06yfK6Qw8xhTFeDvHJdjk167r59OfP5+BL31mgMYVnswS8e+j6tFuccSY0QDC/lgCw==}
+  '@oxlint/binding-android-arm64@1.87.0':
+    resolution: {integrity: sha512-JfZQ3MWf74n8ov0DojZpkOduIubYJvZL5tbTMMhDutsal6u1xH1QuNpN+lK+EQwF8AeAfgwTR2fgh5U2br27XA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@oxlint/binding-darwin-arm64@1.86.0':
-    resolution: {integrity: sha512-h+vkOr4ik6KLFCXdtNVEj9xfnXfNUpPoF95QjORdhiSpLqQePzcN81kGHjAgsw1/G7WBWK5KsFKbI2UK8EyzMA==}
+  '@oxlint/binding-darwin-arm64@1.87.0':
+    resolution: {integrity: sha512-rkx6Xvvw93z2GImVOyvbZwAZcoY0Z6MJW177XNsSB+i/CBsH7ANyelTp01VZyIkM3iSXtqKVb4+ptBgPHap5pQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@oxlint/binding-darwin-x64@1.86.0':
-    resolution: {integrity: sha512-wbglRuH5eKsp68keTOOeKDHU1astWSRYFsh2bwKQTAPb44rD6kVgzYI1ZrAJRTc6/7PH55ZXFCQx0rQXrj0UdA==}
+  '@oxlint/binding-darwin-x64@1.87.0':
+    resolution: {integrity: sha512-cw5nYw7L/pQ2SgGBgOcg/Qo89llQre3vIc/kuBLhSICzu1r5s8L76H3ug6AIFsD98WpROj8/z5JVzkf4daxHaQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@oxlint/binding-freebsd-x64@1.86.0':
-    resolution: {integrity: sha512-yTQ7QSOlNfQsrfbeVweTiegQJLKPjUKgXp/JpGiFzza6Hp29S9LAoH77TM3L0RjK39iQRZB5lk5iq2t241Mfag==}
+  '@oxlint/binding-freebsd-x64@1.87.0':
+    resolution: {integrity: sha512-x/SuznE6loRZK9gz9AS4ZmzNzSu+5KdeoCS+sVHhnrE8HM6AD8UyTjwldQTTqlXGvkwHASgB0NiTNOc3o3PdAg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
 
-  '@oxlint/binding-linux-arm-gnueabihf@1.86.0':
-    resolution: {integrity: sha512-QYJGy0E2Tv8GAayyBIeHFTwQb8u+zrvrOYrifuDGZDr9ad5XsDhiMScpZymhS9fwWjqrgG2ZUwT4vpY0ISqp4Q==}
+  '@oxlint/binding-linux-arm-gnueabihf@1.87.0':
+    resolution: {integrity: sha512-+JEDmCAXiiFmKhAjZhgAOwaHWY6WENOQ5QA+lFuY59tgsUCDOTRi46B+lENK6CWvtxsXpwkZXNOgpjAQcpIpnA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxlint/binding-linux-arm-musleabihf@1.86.0':
-    resolution: {integrity: sha512-oQo83CafLT8p3qh0AGkN0tSUIh5Hm63mfDsoqUmBQUBnSZLNBAbyRaAftfGY5a0cKZ34dG6jAtMYgcY5kZqt5g==}
+  '@oxlint/binding-linux-arm-musleabihf@1.87.0':
+    resolution: {integrity: sha512-/uC9XqXLAC9AHFLNycwmSQEvKqGrOCgU+uXALI7gNW0DG81TJ/3T2eHnKdRvcb5R1gFEfjxDwI4e4zIa29rICQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxlint/binding-linux-arm64-gnu@1.86.0':
-    resolution: {integrity: sha512-EM6wy5c2UM12qPb7iDJDBAZvHyfEJGH6iosFgaFiaRZpirz99//EHcUyD2KAskz07x1TULuiAtsojf4nvWWksw==}
+  '@oxlint/binding-linux-arm64-gnu@1.87.0':
+    resolution: {integrity: sha512-FTRYPsBy/M728vnUv7l+KAwSAa3Qi4BQbhVvy7NYuMTZ0sUa/OWsbMx79HVFw6u/5KWcaYayDsoOiv7xbevzDg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-arm64-musl@1.86.0':
-    resolution: {integrity: sha512-vCiUQb9ZNzZalxYRU4mlZwUqT5f+c7Sk9DwUOplWHtik3Dl4r3DVnUB5tBeRuTAUe6MUVCTylNW7TkkN8J1oTw==}
+  '@oxlint/binding-linux-arm64-musl@1.87.0':
+    resolution: {integrity: sha512-6sC+N7IY0h1egd8SrYUGNN7CUyKJZ4bIZakKa7V7hfinf4jfi8Kq4+klJvFp5DqXcwMn44I5MeBwmJluO1odFg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-linux-ppc64-gnu@1.86.0':
-    resolution: {integrity: sha512-T0AzE89yjTYmOhB/hb6i+rWTpe2mYt+xiguBhs9DEPIJTZ1H8OYqsE4VxJHHw2Wlq8Mztwvp2P8NV87ZOuhPRw==}
+  '@oxlint/binding-linux-ppc64-gnu@1.87.0':
+    resolution: {integrity: sha512-d5Mnn+ICbhoJPi37Ccjy+86T5qfH2+mSTrTMBXNPfB+wqSWOayBBLLIrCXdUy1YssluCVdGkl+DO9w5r5ODmUA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-riscv64-gnu@1.86.0':
-    resolution: {integrity: sha512-s49r0K2f5Oc7fJoMUO1WkdhYK5Ob79uYRwWQ/XNoGysaOq3RUGmGUbHSuXiyydTTA+P9xEdDEnnlZVXiaSJhlw==}
+  '@oxlint/binding-linux-riscv64-gnu@1.87.0':
+    resolution: {integrity: sha512-sf5YWuUo1Dx9loqWCgF8P278MycfcD4JHjDC/LV5j11L3Lqa4PFiwCjD6B8kP4AjsgZZkLn3xbpJEtZBaccs4Q==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-riscv64-musl@1.86.0':
-    resolution: {integrity: sha512-JIa2tYR8ayb3nvcMSZzn4O/xTy13S7MHllu7cBD+B5qDQXXSRy/Vwk1aNpiTjZmBJGwKCHOy/NvnY5Xcwg27uQ==}
+  '@oxlint/binding-linux-riscv64-musl@1.87.0':
+    resolution: {integrity: sha512-+aCraYbmK3uU3P0rFojjeaK9pGY6JvBDXh/0CM+gPyWKmNmXmnFe0qj4qj02U4ibFpbd9Pa9CmDvIdjJUd29rA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-linux-s390x-gnu@1.86.0':
-    resolution: {integrity: sha512-XwXMyBsAuWZkhZU74UNcfQKr1CJJAKnS80dZzOnjl6A4fKcf91IjFgidegQugMHA5SN8ulwDXEDV1yPntjXgQQ==}
+  '@oxlint/binding-linux-s390x-gnu@1.87.0':
+    resolution: {integrity: sha512-7rzbZQIljo6VLWVPqUyLa2P/WV3VFsJB4M52R4NCUJn1A50yjtUsHxiMHFL9opEKGFIiTbZ3VQzmtcJOPUq4NQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-x64-gnu@1.86.0':
-    resolution: {integrity: sha512-C1WjukSyMnr66b+w1/tV8RFVv6d9v0MzDf4p9IxVXknqgmTHBgZh1pccN1eHzFr0b9Tbb3OXoPsAAdAuHAQfeA==}
+  '@oxlint/binding-linux-x64-gnu@1.87.0':
+    resolution: {integrity: sha512-Dry46Fa+AXE/xt9J/YriujU1pU9mzfNWHGQwtOYibAFH8HLrKWCi93AhIGnuUMiwn2JbuBkRyz51f50Ly4r4ow==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-x64-musl@1.86.0':
-    resolution: {integrity: sha512-ap6KLmvC38c6MdYzsIh25cXQupqYvjd37tMNftzrX1DCtkX1Gcf2B+S2B17dD4lKa5c5gJog7DQJyDo82PBKyw==}
+  '@oxlint/binding-linux-x64-musl@1.87.0':
+    resolution: {integrity: sha512-f/HMZez74gJvnRpGz+b5sdGyWrEgRLmFTXg9sNoqjPWogGxYHUhXKTKyMiYsu9rUGR2ciYqL3fk+Ua4JhMJbRA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-openharmony-arm64@1.86.0':
-    resolution: {integrity: sha512-996Q9w/2GLwNyy5Djs39Jt09aFlr4b7TPhoj7dvo5FHmcyiF68nPz73HNc5UAYKIYeK+M9JzPQ4Wg1r1dXvP6A==}
+  '@oxlint/binding-openharmony-arm64@1.87.0':
+    resolution: {integrity: sha512-lEC6ZfPZm/07JlB7FsOWX9o1RiHlXiBW594LSUGuXmekC8LZmvUPP9XzE2WZcNxJi5cHA/Fw56o02c3JxgMA5g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
 
-  '@oxlint/binding-win32-arm64-msvc@1.86.0':
-    resolution: {integrity: sha512-9uTCHYTknNkug5+46ViSoUMuOuGWK61D87QnblU6CXaWKJC630Z7dbls61vdHxya/cR2ycQZ6Mm6ckgF6Cag5g==}
+  '@oxlint/binding-win32-arm64-msvc@1.87.0':
+    resolution: {integrity: sha512-afBWKOD36dUiA9AenaiWpCg8xfyUVPYznyAAVXu413brK4RA5UI/Xoc4yfeGIT8G1a44MV+JR7hioryerBDzGQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@oxlint/binding-win32-ia32-msvc@1.86.0':
-    resolution: {integrity: sha512-a47ga7EKVfMU8rO0i1m3mGwfNRj3FhQyt1d/ukO/E9u1HHF3KpR3tyb3VhuJBGEVPF8uR4exSyHUyx7xbE+uxw==}
+  '@oxlint/binding-win32-ia32-msvc@1.87.0':
+    resolution: {integrity: sha512-daptNsEOuru4/nJTxV4DBHNJ5GepzmaBVQf+jjgKQGi9NRlZKik+RFq4hUL7ewsF1pwjKM+SkYaMbF82UwFGnw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ia32]
     os: [win32]
 
-  '@oxlint/binding-win32-x64-msvc@1.86.0':
-    resolution: {integrity: sha512-az4dzifCRzES1crwu6pDFXzJTIanrdxXFL9TbiJWrx9LKcuacbR83aPvxDA1LKLNswi/RoqitC7Afcflhu3zBQ==}
+  '@oxlint/binding-win32-x64-msvc@1.87.0':
+    resolution: {integrity: sha512-k+m/EShyXE29J/r1fjk0HlAzhN5JhIvj044oSJkXTEkCLrWZQgXb/3r4q5LTw/eaKW/4GuMXG2xmiJs3s5rPNw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -11720,8 +11821,8 @@ packages:
     resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
     engines: {node: '>=12.22.0'}
 
-  '@pnpm/constants@1102.0.0':
-    resolution: {integrity: sha512-HIDFQTclaw7oxZjVUxDP+1dsNtBK8PRXj3qanALtK7iLi/FlVnwFQs9ISBocEX6Kivytn/YCT+UEStoFPBWQeQ==}
+  '@pnpm/constants@1102.0.1':
+    resolution: {integrity: sha512-vLulGZ3iRt6kHcwbGYckrUF2Rd18nfGtpFjyRgbKmEyxLcZmFTBOWKFZSEyS3VVnxFEI7bTPNOGmRC0lD4U1qg==}
     engines: {node: '>=22.13'}
 
   '@pnpm/network.ca-file@1.0.2':
@@ -11732,98 +11833,98 @@ packages:
     resolution: {integrity: sha512-//0sR/cow/s4ICQaYoAobOl4aU8cjU6x/V24V7XkKotb9+O+3zySIYp146vpaobYHnxa4pZX8NkV54Z5AwbDKA==}
     engines: {node: '>=12'}
 
-  '@rolldown/binding-android-arm-eabi@1.2.12':
-    resolution: {integrity: sha512-dB/a1214qKfHMXCpgqR4OZT+jS4kTyEXbQGJPqzobt5EwH5rX080pxE37alt3RzvR1bf1Yz/yGqRfrYAxuPw0A==}
+  '@rolldown/binding-android-arm-eabi@1.2.13':
+    resolution: {integrity: sha512-Vu/NICrgdRvUOeaJZIyB2FP63s6fO/4ud5l8dXmxDx9yDyn+mN0y+gsvsVviSli+T361Aqo0h46EuMoobrwawA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [android]
 
-  '@rolldown/binding-android-arm64@1.2.12':
-    resolution: {integrity: sha512-7KHFgQ5VJxIHcLlrwrc3Xbds7oTNQT7Pgi9gQCJKrd2VGab/UksIOYp6VD8MzCstGxOKMgNamPwUCfxPdP1OHg==}
+  '@rolldown/binding-android-arm64@1.2.13':
+    resolution: {integrity: sha512-6LEoIrGy5vvCd2boNnv2soPSUZj/PRvhp8R/t9KlX+mIZxThIE/ZqxrGXxmuNX0FuvQFvLdZr7S4HrYpYBVhEQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@rolldown/binding-darwin-arm64@1.2.12':
-    resolution: {integrity: sha512-3YIhqHD96nA5SaYNRBR16HnGv4oavZvXfD/ayHM+oYZ0WD/8lBAtf6zQua4kEyAvpqrluKXl0lnOBoiNby7x9w==}
+  '@rolldown/binding-darwin-arm64@1.2.13':
+    resolution: {integrity: sha512-CaJSRzlQ6Q+zkDMVA9OkVxBjVoPRCDEE3v0FSJ9kIQBgRjFApA3Si4ijhbNVUji7ZJt+PfO0e46qy4nPInHUPA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@rolldown/binding-darwin-x64@1.2.12':
-    resolution: {integrity: sha512-UuuJ35MFw4gmFOrE9pEqIV+K3syIKveph+Qc1/ljHZVdoDW4pz/JHR/eMVom+TZGl/5OOvGJOWaOCVt3ZfqhxA==}
+  '@rolldown/binding-darwin-x64@1.2.13':
+    resolution: {integrity: sha512-e4r340I5hxSzJkD3YJBxgzq/rJ3wwxwdLLb2FPt1Zpyem20nrQPT11DDEEkazwxaHumH8wpglsp/Ozgj/wT6mw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@rolldown/binding-freebsd-x64@1.2.12':
-    resolution: {integrity: sha512-uMvssit0a4W+/7D8CbHUvG719mH3R2jwXAlh/XcPvuHTE0g++LymF88DCGNX0HM2rBOn0xrzgXktIB6fLSJBTQ==}
+  '@rolldown/binding-freebsd-x64@1.2.13':
+    resolution: {integrity: sha512-hoBWDZ4/K/mJKVMbsgUd1jfpA2DiOrJ54mpegObU9TBHBBrtX4FLIXJJQRDPZ/2Dn91GvPob+Z2hwKJzf4E5SQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
 
-  '@rolldown/binding-linux-arm-gnueabihf@1.2.12':
-    resolution: {integrity: sha512-XcFu0R0xWnwzSf4IQgFH1rJIckPN1pLy2R+4r9IDB7Yfu/ys9cVqfa4pBrMHj7a3gl8mIR4nRNPg0e5IvEVs6g==}
+  '@rolldown/binding-linux-arm-gnueabihf@1.2.13':
+    resolution: {integrity: sha512-oF9fZu3vTWnTiVAkDFxU9PJLt1nh20K9RRpuHsR7ZnE2L7XookBbDBVLojCVSLGbvtSlxeUNnjAj6DbNsKyzbg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@rolldown/binding-linux-arm64-gnu@1.2.12':
-    resolution: {integrity: sha512-260UrKgn8tz39ak+SMDOirKzr7V04M9dWPw5llW00SwBivCZoWcRBKV1d8cXnRkUmSZA3BdiUmBHWk7734Ulpw==}
+  '@rolldown/binding-linux-arm64-gnu@1.2.13':
+    resolution: {integrity: sha512-DTpb/+jMiqWMPgphn4ksW1zW+XLJ6dJJ9FMvnIk9I291LhCctMPhMYJrP5t9p6C9qa3KXadDdUEZHBaPh3kNxQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-arm64-musl@1.2.12':
-    resolution: {integrity: sha512-5YK1I9SqDkbPgc1IA8BgDl34suqUS2q0KWnBrirm0E51YjOs6eo6dV6jbQfNE/argHRSvd0QUGgtpIoYx+WWpw==}
+  '@rolldown/binding-linux-arm64-musl@1.2.13':
+    resolution: {integrity: sha512-xU+Kvv9N2A3SY35zFh1FWWNjxbadE/BKeqnkXe7vScU4GZsw757BlVmDLITZEq8DPpk6m7uoDYkK7P+x/uU5Ow==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rolldown/binding-linux-ppc64-gnu@1.2.12':
-    resolution: {integrity: sha512-Rkcrmp7eFRg74yL5fXEU91JEWbdEPLevWwGtXpmhbjlD1StScbWTmO94Bhly+Mo+ketKYkdmM1vNUKeWSlx8cQ==}
+  '@rolldown/binding-linux-ppc64-gnu@1.2.13':
+    resolution: {integrity: sha512-XMk/hnhh25oQ756Lclb1Q11h4ll0xC0Esa5w4Vzp+mAE2S3AGJgeM0SonrIgY8fHhjarb6hcoTuwoFG0VVP2ig==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-s390x-gnu@1.2.12':
-    resolution: {integrity: sha512-qvK4DuAsQc2BSjlx+Xr+IzOIvvxbGZqxFwdWfG6F518Erj0GGISyQbJ6pIappnOxlNPzNHvo/L0BwB30GZ+zVw==}
+  '@rolldown/binding-linux-s390x-gnu@1.2.13':
+    resolution: {integrity: sha512-U1BoTHYmlywE2n3HUWjzZ+8EQsKr+OwpxYuDWaubx42tUL8QSL7nOqRz/NVHanibbFP3M1Rxuprz/wNcbMKjqw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-x64-gnu@1.2.12':
-    resolution: {integrity: sha512-Q9uLBO53Xd4QIq1WOycVQyPP1O4HhraEV2qqb3uTrnVw6QZih9duY4vNXOivL1xoUS1/z+W8eF4NMfl2a8Sdjw==}
+  '@rolldown/binding-linux-x64-gnu@1.2.13':
+    resolution: {integrity: sha512-J4cm80Pc6wEwV5AZ42o62sIQgDk+Y7R2s646jIwuvO+4V46QB58N4vVuMPWCBaNgursXLpmUWJV//WQAkPvHBQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-x64-musl@1.2.12':
-    resolution: {integrity: sha512-3IBxWFMjbOZskDPKv8Lf9BCnahlKuHthWkYnyIxOH/QcJrFcS4EmcenthApkwr/5+nEqZlLzeYbxeMaX7A5u4g==}
+  '@rolldown/binding-linux-x64-musl@1.2.13':
+    resolution: {integrity: sha512-W0euZS40U4V6JkmEnVCIX9mcsL6cbXQ4X8c2w+MMOIjFg68TXUW+u3RT+2e1t1pv9mg/EP3pDtK3POXdQ7Rxyw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rolldown/binding-openharmony-arm64@1.2.12':
-    resolution: {integrity: sha512-xtX61xg4LKPkPWilZU1ynKClz5Gj4bf74LML4r3eVLWumKnGjoEr1OSHQhMdbBDoYTi+yjrujvpZe2pUnqCrrA==}
+  '@rolldown/binding-openharmony-arm64@1.2.13':
+    resolution: {integrity: sha512-do/AF/4n9MRshia3a5aXoy8xM2c6mgfT6D7H/dY6my5z+hfCIR4ab7mk4IRj++nsEQpKy39kd0DQnDq+r692tw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
 
-  '@rolldown/binding-win32-arm64-msvc@1.2.12':
-    resolution: {integrity: sha512-At7fPB6PCaIjzgIhEZFxuT+BBFqiQibJDT4d3PhiR3f4E7bbMZF4aKblbFfEM3sETRDd1YiQx/+U/g/B/ou5Ew==}
+  '@rolldown/binding-win32-arm64-msvc@1.2.13':
+    resolution: {integrity: sha512-6FtUf2cJZobutJdxnGYX8z0vtbgqU0b2v8vfBhkXb9wp2MppMFtkunE+IaOntyi01rkIQoPW2GHABtfzsC0BRQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@rolldown/binding-win32-x64-msvc@1.2.12':
-    resolution: {integrity: sha512-WIw2haVKwjuYdXkHaoC0mF8Le71TuCBxjrdKqLbJGctbBABj+ClfmNvtbOnzpq3RokNo5+V1qhtSzJyXorsklQ==}
+  '@rolldown/binding-win32-x64-msvc@1.2.13':
+    resolution: {integrity: sha512-UKhFaZTeTcbKrb3iU82m17jVcPEAoqDkCN5MBqgPyZSwp/cQmib21crTS0DdH7T1B7wZRWEI89YQAOJMet5yhg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -12113,13 +12214,13 @@ packages:
       '@vitejs/devtools-vitest':
         optional: true
 
-  '@vitejs/plugin-react@6.1.1':
-    resolution: {integrity: sha512-yxLaQV9gkhS8ezJqCM6+ndU7mDY6gqAg75NQ+0IjwEI8IYOmQCgkRwHKVSfWXW076DsqMo0Dk+0FK1U+M5RgFw==}
+  '@vitejs/plugin-react@6.1.2':
+    resolution: {integrity: sha512-fhJNGUdscQa4HkI0xFxwonWyhnVReCPDbXI7FH7jmzpnVCrFQI7PRrhWecO263610vOrs9tr2Y4xcf8uAdFxbw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       '@rolldown/plugin-babel': ^0.1.7 || ^0.2.0
       babel-plugin-react-compiler: ^1.0.0
-      oxc-transform-react: ^0.145.0
+      oxc-transform-react: ^0.152.0
       vite: ^8.0.0
     peerDependenciesMeta:
       '@rolldown/plugin-babel':
@@ -12143,8 +12244,8 @@ packages:
   '@vitest/spy@5.0.3':
     resolution: {integrity: sha512-XhFysQTB8AZ+P4gMi+Lpo99vg2AZi0qKpaB9yXQl37+CaMEAPO3iH/wGVnSyL5MPERiLezpqTVtrR6UZH5GCXg==}
 
-  acorn@8.18.0:
-    resolution: {integrity: sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==}
+  acorn@8.19.0:
+    resolution: {integrity: sha512-oJlA3XiRm7Cyk6qFD2Jn8ak9B7jSy0qy00ADO3+8dpT0LSjFihQYv4C02LFCSYJV3Q37xYwwRy5m+IpIiUzqWw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -12195,8 +12296,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  baseline-browser-mapping@2.11.27:
-    resolution: {integrity: sha512-ElY12DaROGuan+lMmZ8Cvo/ZUbXPe7Enc/9VU/b1T3Kp4dwytRcNdR8DoSJN5SNJT/CuvcCA0DHDVmMOCePdRQ==}
+  baseline-browser-mapping@2.11.28:
+    resolution: {integrity: sha512-br0LOmjJqr6Rt4AEkadbcNf67Zpo7EPwKsWbjnRrJIa1QYFHQBqM4C7F2WTbV8ahTEcg1Eo+Y0aWjjORInYFyA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -12224,8 +12325,8 @@ packages:
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
 
-  cac@7.0.0:
-    resolution: {integrity: sha512-tixWYgm5ZoOD+3g6UTea91eow5z6AAHaho3g0V9CNSNb45gM8SmflpAc+GRd1InC4AqN/07Unrgp56Y94N9hJQ==}
+  cac@7.0.1:
+    resolution: {integrity: sha512-86diuUyeeWM8CrqhpGCaDafrzjS1s++7sWy2AbAPoFNz/xKv7ID57CR4pZsMuGCh60PtsnEx4z68b+Vgt07VPw==}
     engines: {node: '>=20.19.0'}
 
   call-bind-apply-helpers@1.0.2:
@@ -12240,8 +12341,8 @@ packages:
     resolution: {integrity: sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==}
     engines: {node: '>= 0.4'}
 
-  caniuse-lite@1.0.30001814:
-    resolution: {integrity: sha512-/Uaf1lAzr59XcMpW0o96WoEfr+VXK2OX4U9AgFoiSHsVJ4HppnIFUjtYzsyDH2+tgANaQb2/oxYGwCPapN1FpA==}
+  caniuse-lite@1.0.30001815:
+    resolution: {integrity: sha512-uDybUEyfgbyJJ93J1vikTylBX31AkdVYeVPeffMQpf8XN7hSfr0oZOn4VFOIMNvtU5+rHvC5Udg2TgtJKHm23Q==}
 
   chai-as-promised@8.0.2:
     resolution: {integrity: sha512-1GadL+sEJVLzDjcawPM4kjfnL+p/9vrxiEUonowKOAzvVg0PixJUdtuDzdkDeQhK3zfOE76GqGkZIQ7/Adcrqw==}
@@ -12352,8 +12453,8 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  crossws@0.4.12:
-    resolution: {integrity: sha512-aypfsr6t0uNvkqaZc6zvBfXzC6pLI0/sIulpkV6RwCVtZqG5ebBzv4weImKK0VNCj91Wl9F5j7p5WU4MNrybng==}
+  crossws@0.4.15:
+    resolution: {integrity: sha512-NsUOpDZosz7nyI+qEIl05yaiXOWaXH2oTeM+XBWtiSWZtb5rzcIsl1AST/HzM2jzUn76eFuyrkn83E6iSBRUvw==}
     peerDependencies:
       srvx: '>=0.11.5'
     peerDependenciesMeta:
@@ -12416,11 +12517,11 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  devframe@1.2.0:
-    resolution: {integrity: sha512-MeLtg4QHnm/khez+pGzRVIaFCi6AT/4Tz8mS+UshySNzr+MTDSNWq4VHEbgio/Bzvd1Qu3sJAwfpqm+V6xNcag==}
+  devframe@1.2.3:
+    resolution: {integrity: sha512-IIe9q99/B4OS2IQ4LNk9H2NFXvWxdLteM1C2OFbpAFIQ4cWLpzmsfWsuwF3VfVclXhKl/MniNwv4vz4a+5CumA==}
     hasBin: true
     peerDependencies:
-      '@devframes/agentic': 1.2.0
+      '@devframes/agentic': 1.2.3
       cac: ^7.0.0
     peerDependenciesMeta:
       '@devframes/agentic':
@@ -12444,8 +12545,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  electron-to-chromium@1.5.444:
-    resolution: {integrity: sha512-5ss/uJfoDYDHT0lfJzT6FbcskIzROIOPf0BbbFkGcvDzoJU7i//9GDrwwIHQVmIsrAGiF3ihpADBRIsrEFt1rQ==}
+  electron-to-chromium@1.5.452:
+    resolution: {integrity: sha512-cVvk1YBSj6571VmV6hdJTqj94Y79xSu8cj6Y9t6ae4Y4431z8/7EJFvu3rVp90xhfuv9BpPKUmaLfTo4+FOGBg==}
 
   emittery@2.1.0:
     resolution: {integrity: sha512-cPP/ddRdWhEQz7+R/QJi22O2iA73YuNWJRgDM2SUVEKA3XRPiv9f5cfGb508s+124sEBlnewHq/CiSOuIyewHg==}
@@ -12612,8 +12713,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  h3@2.0.1:
-    resolution: {integrity: sha512-trUtZ82iNkfYi8An9M2kIM/SPlomO59pTRMt4zMBffuVPdwv5v1Bxs7uShxi7bOIAuZne6zq6TsD9hVYdNgo+A==}
+  h3@2.0.2:
+    resolution: {integrity: sha512-+/zvHSNldYpNURuUUG+y1KzdASUhNnSd1VpqxYFVY40ov3YzuBnCETaUQaT+QbKkoxhh9LRa6AEQdB14LALwdA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -12813,8 +12914,8 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-yaml@5.4.2:
-    resolution: {integrity: sha512-m+aqu+LwO1O6sIopafj8HUVl5aawITwZQe/yHpMCKjaWBaA/d07B/QdMb3529REftiU+RMMHL3Vlsw3hON7vWg==}
+  js-yaml@5.4.3:
+    resolution: {integrity: sha512-yzzNtgczwgoVHNigCyKTXcQJU4Y8t/ikU4UxXW0BvrLfHTGWZhsNcOT2s/a7vn81/4KqVnNmHjaUEPlvWnNwVw==}
     hasBin: true
 
   json-parse-better-errors@1.0.2:
@@ -12936,8 +13037,8 @@ packages:
     resolution: {integrity: sha512-U4N8FgzmWxc8k1VH8Kr6lQg18U7Fjvby6wXHVRX/ZZ7IwWbRMgrRbP0Wrb5q5NVinryp4SQampHKdvtecItxUg==}
     engines: {node: 20 || >=22}
 
-  magic-string@1.4.2:
-    resolution: {integrity: sha512-vG+rjFRj1PqdIBozIxAGMjPlOhaVe+GXpbttY/iSK7rGcJRMlwNJO7dcUwmUqkymsFLJiNGI06t4D7Fr7yRC9g==}
+  magic-string@1.4.3:
+    resolution: {integrity: sha512-z12OxmaPGE0F4xlpGdjuAUckipLpQlTAuAmyGhNoD7ODpYUzvDfvtxUbjM/jwznyP178oju/KDdyi220wNJ0RQ==}
 
   marked@18.0.11:
     resolution: {integrity: sha512-HnslJfsZkRPBDJRHvVtAaWlZHEpSu7u8LgQuJCELjRKuWR+hpq4A7sLq3p8HaI9ypVoXDXxV34CsQJEe1+J5Aw==}
@@ -13005,13 +13106,13 @@ packages:
     resolution: {integrity: sha512-/sF3ee6zvScXMb1XFJ8gDsSnY+X8PbOyjIuBhtgis10W2Jx4ZjIhikUCIF9c4gpJxVnQIsPAFrSwTCuAjicP6g==}
     engines: {node: '>=8.0.0'}
 
-  nanoid@3.3.19:
-    resolution: {integrity: sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==}
+  nanoid@3.3.20:
+    resolution: {integrity: sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanoid@6.0.1:
-    resolution: {integrity: sha512-3wVS3i51pE2pi1k5FFL/95BGfVS0kSsvDVuGXHOtxox/TywUmtgq+3qiTOTbs9J7KfHaXPiN171k/A6dBnaXFw==}
+  nanoid@6.0.2:
+    resolution: {integrity: sha512-hIvVOb9Qr1p/9CNNLOe0OlWvgx/ziTsVwKN/GDSsuArN2K0wDiafP3s0SWmsm7o2BdnyS8Z9Z64NFBUbn6ziBg==}
     engines: {node: ^22 || ^24 || >=26}
     hasBin: true
 
@@ -13021,8 +13122,8 @@ packages:
   nice-try@1.0.5:
     resolution: {integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==}
 
-  node-abi@3.96.0:
-    resolution: {integrity: sha512-rebQ/lz7i0EkoLzUVSrKRzA69zMkwLp95kKMWoMDkkM00Suxz0D7zEQPwRml5fQum24mj7bPvmlgLAmu2JCiYg==}
+  node-abi@3.98.0:
+    resolution: {integrity: sha512-Llh8noNw7s15m+rmIrZnZQbe4gLyasL9loT74rC92PkmwWKeEedKvc7o6pjp8B3MhrYT/Cl846NOYZbz1wmddw==}
     engines: {node: '>=10'}
 
   node-addon-api@5.1.0:
@@ -13042,8 +13143,8 @@ packages:
     resolution: {integrity: sha512-s+w+rBWnpTMwSFbaE0UXsRlg7hU4FjekKU4eyAih5T8nJuNZT1nNsskXpxmeqSK9UzkBl6UgRlnKc8hz8IEqOw==}
     hasBin: true
 
-  node-releases@2.0.57:
-    resolution: {integrity: sha512-kQK9LGGFiHtrWiNhZtA7Qbw17AQz+dmsEKODRIVTXA9+e5MS/2gZEBhYJt13GrAz5/IOZKddH/0Z3TP/Zgo+yw==}
+  node-releases@2.0.58:
+    resolution: {integrity: sha512-BdiKAgbfRlvfMq/XzO/AF9NPmaA8a+YpLAyAFTVFBj3gARrAIfWvNq7Q7NE4se3KgFu0KkrvQMxTS0XVnsGzHg==}
     engines: {node: '>=18'}
 
   normalize-package-data@2.5.0:
@@ -13094,8 +13195,8 @@ packages:
     resolution: {integrity: sha512-19YVAg7T+WTrxggPukVq7DjTv6+PJ867TmhCvBsYwmbFCsZd344rq2Ld1p0wo8f8Qrrhgp82c6FJRqdXWtSEhg==}
     engines: {node: '>= 0.4'}
 
-  oxfmt@0.71.0:
-    resolution: {integrity: sha512-lUPUl0d/+Io5pDrsPXWs6rB4N/bpB78oj9CTDpnbulfDz+0r3XXcHPlQ7kRPJ2GjIT4nX+/mcqunOeP9BvsEtg==}
+  oxfmt@0.72.0:
+    resolution: {integrity: sha512-16OQeL0uhPZbfmT9S9WWM0Nv9+BmVi8Ra1uTYaSKj/qSCs6FB30KOhz9JoNYw6thT+K5bVxsk/tSEOu497i34g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -13111,8 +13212,8 @@ packages:
     resolution: {integrity: sha512-VnK4zlqgmgq/7ZcjzCk/WpN8kKFsYGcB85Io9qT3wL4K8Un3RKmJkp793crNETieMusPMKOA4a+Mw2wbteI6TQ==}
     hasBin: true
 
-  oxlint@1.86.0:
-    resolution: {integrity: sha512-og0lhgvZfgGF//gOOmZXvtr+GmBbAGEnbEhv/QUg7UW2Wi4wHMnJbnMD+zuHgPdJxdklfgpPupdlAaAySyxrZg==}
+  oxlint@1.87.0:
+    resolution: {integrity: sha512-drxVlaW7Oqq7wSy1CN25znRu00aRq8n57Q2wniJRxCmtYVz07ufCm7EVDPQFZURrTgQIjzKrVEHAD/HcvJXObg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -13128,8 +13229,8 @@ packages:
     resolution: {integrity: sha512-ua1L4OgXSBdsu1FPb7F3tYH0F48a6kxvod4pLUlGY9COeJAJQNX/sNH2IiEmsxw7lqYiAwrdHMjz1FctOsyDQg==}
     engines: {node: '>=18'}
 
-  package-manager-detector@1.8.0:
-    resolution: {integrity: sha512-yQA4H19AmPEoMUeavPMDIe1higySl/gH/yaQrkT/s07Qp+7pp2hYz30N3z2l5BkjVkF9Ow6o0wjJamm2y7Sn0A==}
+  package-manager-detector@1.9.0:
+    resolution: {integrity: sha512-zAMfbta9nPA8AKkA4WdmNAT8R8s6Dk0/xwPsqNnRidMFcLo1YkLuPDTgs2f64XdzS8vbLNnoJ+uUIkgbz7oRHA==}
 
   parcel-resolver-ignore@2.2.1:
     resolution: {integrity: sha512-1U2+BCisOb1ZVdi/2w3UKXPHxgCL/9jUz1lcUU4i/gRAMBCTXToUNPFmCE1FzNnao7Xp92Dp3CR2Ogedj/BlQQ==}
@@ -13204,8 +13305,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.5.28:
-    resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
+  postcss@8.5.29:
+    resolution: {integrity: sha512-49cGhUbXj8Qenv0iTMxA1cFBzxXoctpC9Ujd77t1WcbJIr6nF/eI7g/8MgxrYldFRuAXvja7xQRwavoW7kgrxQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prebuild-install@7.1.3:
@@ -13297,8 +13398,8 @@ packages:
     resolution: {integrity: sha512-+crtS5QjFRqFCoQmvGduwYWEBng99ZvmFvF+cUJkGYF1L1BfU8C6Zp9T7f5vPAwyLkUExpvK+ANVZmGU49qi4Q==}
     engines: {node: '>=12'}
 
-  resolve@1.22.12:
-    resolution: {integrity: sha512-TyeJ1zif53BPfHootBGwPRYT1RUt6oGWsaQr8UyZW/eAm9bKoijtvruSDEmZHm92CwS9nj7/fWttqPCgzep8CA==}
+  resolve@1.22.13:
+    resolution: {integrity: sha512-Dj/cW9zBV2aRj6XzCxuGIs3ESZKv02jixne3q6jFZYZ3/Tg09gHHviSMDL4kObh9pqSahdRHEnDoaP2gn8YLhA==}
     engines: {node: '>= 0.4'}
     hasBin: true
 
@@ -13306,8 +13407,8 @@ packages:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  rolldown@1.2.12:
-    resolution: {integrity: sha512-8wafseiaG80xmXSfqidUNqZcylTlhmPZZt+za2m+js2sFZ8dTNlhIOV2WcbIPx2hgwPBJpEUGFAMZ9bgBBLTSQ==}
+  rolldown@1.2.13:
+    resolution: {integrity: sha512-/5apOkwWxtACcQtZ5WlrAsKS4JwXVThQPJZ3RqIruRY9UG9M8e0VlXN068xum/JRKA4aIUoJ13ghe/kGCvidiQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -13554,8 +13655,8 @@ packages:
   tiny-invariant@1.3.3:
     resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==}
 
-  tinybench@6.2.0:
-    resolution: {integrity: sha512-78U2TlB2CnVenajOFzf3BKSm0J6oz5L0NV7g32LCPccvYc0lbWvys4d3uUUCS2B1N8PAf2+aekR8i1KbC3HO7Q==}
+  tinybench@6.2.1:
+    resolution: {integrity: sha512-IAbQaPJIIdhVxi0mqy9lez1wEwje0UQf9F1vwtbelEG5Nbgn0nPOxCvU+mNeNS9gyJTAhrHp74CbUaSynQpZcQ==}
     engines: {node: '>=20.0.0'}
 
   tinyexec@1.3.1:
@@ -13630,8 +13731,8 @@ packages:
   undici-types@8.9.0:
     resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
 
-  update-browserslist-db@1.3.3:
-    resolution: {integrity: sha512-pJ2sYawQS0R/WI928Gj5GlPhTGzbMelq0+4INtSYNDV9ErKJcX6xjGWkoG/VnB3dpUm00zALaqkrUD77pO5TDQ==}
+  update-browserslist-db@1.3.4:
+    resolution: {integrity: sha512-t8wonIOdQyOjtPd2VktlBu6QjTVTks6v8bSi7kd0r2Vll8TK1JYDZtRRdbmCHOAMphkZgrzK+L+vXK4pyZ8t4A==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -13650,13 +13751,13 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vite-plugin-devtools-json@1.1.0:
-    resolution: {integrity: sha512-Fy9nMgMudGzDtUh1tGL7v0WAH0gsnZcZu2LFr/+1YxvYaJnxgbqRqv4jLU2tn5L9oqSaETHVCdDo9f8mSCQEZQ==}
+  vite-plugin-devtools-json@1.1.1:
+    resolution: {integrity: sha512-uDi+KOwi2VNlB0/NEE+wMZnTn9YTumw+EM6FA2wUbJh/i4e+ckSymi6Y5gXLdO+9LZuNzlN55wqsGlQmUmXhlw==}
     peerDependencies:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  vite@8.3.2:
-    resolution: {integrity: sha512-SQr1x6W5vVSbROg7vsyXIaxK9b0G7zsT68acdWWRmnBUsgDieLCRG+Rep9WdZgcposvv/GSnr4GUUBqB3vXq6w==}
+  vite@8.3.4:
+    resolution: {integrity: sha512-IftLE8phJhdNRIGNEV4JCCvfNScoZQVfcXaN8TQropWGJtOHcu+iAB9pHcuGvmEb/kddw0LBe/jS8ztdC6xdiQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -13804,98 +13905,98 @@ packages:
 
 snapshots:
 
-  '@babel/runtime@7.29.7': {}
+  '@babel/runtime@7.29.10': {}
 
-  '@devframes/agentic@1.2.0(crossws@0.4.12)(devframe@1.2.0)':
+  '@devframes/agentic@1.2.3(crossws@0.4.15)(devframe@1.2.3)':
     dependencies:
-      '@modelcontextprotocol/client': 2.3.0
-      '@modelcontextprotocol/server': 2.3.0
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
-      h3: 2.0.1(crossws@0.4.12)
+      '@modelcontextprotocol/client': 2.3.1
+      '@modelcontextprotocol/server': 2.3.1
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
+      h3: 2.0.2(crossws@0.4.15)
       pathe: 2.0.3
     transitivePeerDependencies:
       - crossws
       - ocache
 
-  '@devframes/hub-ui@1.2.0(@devframes/hub@1.2.0)(@devframes/json-render@1.2.0)(devframe@1.2.0)':
+  '@devframes/hub-ui@1.2.3(@devframes/hub@1.2.3)(@devframes/json-render@1.2.3)(devframe@1.2.3)':
     dependencies:
-      '@devframes/hub': 1.2.0(@devframes/agentic@1.2.0)(crossws@0.4.12)(devframe@1.2.0)
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      '@devframes/hub': 1.2.3(@devframes/agentic@1.2.3)(crossws@0.4.15)(devframe@1.2.3)
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
     optionalDependencies:
-      '@devframes/json-render': 1.2.0(@devframes/hub@1.2.0)(devframe@1.2.0)
+      '@devframes/json-render': 1.2.3(@devframes/hub@1.2.3)(devframe@1.2.3)
 
-  '@devframes/hub@1.2.0(@devframes/agentic@1.2.0)(crossws@0.4.12)(devframe@1.2.0)':
+  '@devframes/hub@1.2.3(@devframes/agentic@1.2.3)(crossws@0.4.15)(devframe@1.2.3)':
     dependencies:
       destr: 2.0.5
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
-      h3: 2.0.1(crossws@0.4.12)
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
+      h3: 2.0.2(crossws@0.4.15)
       pathe: 2.0.3
       tinyexec: 1.3.1
       zigpty: 0.2.1
     optionalDependencies:
-      '@devframes/agentic': 1.2.0(crossws@0.4.12)(devframe@1.2.0)
+      '@devframes/agentic': 1.2.3(crossws@0.4.15)(devframe@1.2.3)
     transitivePeerDependencies:
       - crossws
       - ocache
 
-  '@devframes/json-render-ui@1.2.0(@devframes/hub@1.2.0)(devframe@1.2.0)':
+  '@devframes/json-render-ui@1.2.3(@devframes/hub@1.2.3)(devframe@1.2.3)':
     optionalDependencies:
-      '@devframes/hub': 1.2.0(@devframes/agentic@1.2.0)(crossws@0.4.12)(devframe@1.2.0)
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      '@devframes/hub': 1.2.3(@devframes/agentic@1.2.3)(crossws@0.4.15)(devframe@1.2.3)
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
 
-  '@devframes/json-render@1.2.0(@devframes/hub@1.2.0)(devframe@1.2.0)':
+  '@devframes/json-render@1.2.3(@devframes/hub@1.2.3)(devframe@1.2.3)':
     dependencies:
       '@json-render/core': 0.21.0
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
       zod: 4.6.5
     optionalDependencies:
-      '@devframes/hub': 1.2.0(@devframes/agentic@1.2.0)(crossws@0.4.12)(devframe@1.2.0)
+      '@devframes/hub': 1.2.3(@devframes/agentic@1.2.3)(crossws@0.4.15)(devframe@1.2.3)
 
-  '@devframes/plugin-inspect@1.2.0(devframe@1.2.0)(vite@8.3.2)':
+  '@devframes/plugin-inspect@1.2.3(devframe@1.2.3)(vite@8.3.4)':
     dependencies:
-      cac: 7.0.0
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      cac: 7.0.1
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
     optionalDependencies:
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
-  '@devframes/plugin-messages@1.2.0(@devframes/hub@1.2.0)(devframe@1.2.0)(vite@8.3.2)':
+  '@devframes/plugin-messages@1.2.3(@devframes/hub@1.2.3)(devframe@1.2.3)(vite@8.3.4)':
     dependencies:
-      '@devframes/hub': 1.2.0(@devframes/agentic@1.2.0)(crossws@0.4.12)(devframe@1.2.0)
-      '@devframes/service-open': 1.2.0(devframe@1.2.0)
-      cac: 7.0.0
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      '@devframes/hub': 1.2.3(@devframes/agentic@1.2.3)(crossws@0.4.15)(devframe@1.2.3)
+      '@devframes/service-open': 1.2.3(devframe@1.2.3)
+      cac: 7.0.1
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
     optionalDependencies:
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
-  '@devframes/plugin-terminals@1.2.0(@devframes/hub-ui@1.2.0)(@devframes/hub@1.2.0)(devframe@1.2.0)(vite@8.3.2)':
+  '@devframes/plugin-terminals@1.2.3(@devframes/hub-ui@1.2.3)(@devframes/hub@1.2.3)(devframe@1.2.3)(vite@8.3.4)':
     dependencies:
-      '@devframes/vite': 1.2.0(@devframes/hub-ui@1.2.0)(@devframes/hub@1.2.0)(devframe@1.2.0)(vite@8.3.2)
-      cac: 7.0.0
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      '@devframes/vite': 1.2.3(@devframes/hub-ui@1.2.3)(@devframes/hub@1.2.3)(devframe@1.2.3)(vite@8.3.4)
+      cac: 7.0.1
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
       zigpty: 0.2.1
     optionalDependencies:
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
     transitivePeerDependencies:
       - '@devframes/hub'
       - '@devframes/hub-ui'
 
-  '@devframes/service-open@1.2.0(devframe@1.2.0)':
+  '@devframes/service-open@1.2.3(devframe@1.2.3)':
     dependencies:
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
       pathe: 2.0.3
 
-  '@devframes/vite@1.2.0(@devframes/hub-ui@1.2.0)(@devframes/hub@1.2.0)(devframe@1.2.0)(vite@8.3.2)':
+  '@devframes/vite@1.2.3(@devframes/hub-ui@1.2.3)(@devframes/hub@1.2.3)(devframe@1.2.3)(vite@8.3.4)':
     dependencies:
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
       pathe: 2.0.3
     optionalDependencies:
-      '@devframes/hub': 1.2.0(@devframes/agentic@1.2.0)(crossws@0.4.12)(devframe@1.2.0)
-      '@devframes/hub-ui': 1.2.0(@devframes/hub@1.2.0)(@devframes/json-render@1.2.0)(devframe@1.2.0)
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      '@devframes/hub': 1.2.3(@devframes/agentic@1.2.3)(crossws@0.4.15)(devframe@1.2.3)
+      '@devframes/hub-ui': 1.2.3(@devframes/hub@1.2.3)(@devframes/json-render@1.2.3)(devframe@1.2.3)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
   '@dmsnell/diff-match-patch@1.1.0': {}
 
-  '@earendil-works/pi-tui@1.0.2':
+  '@earendil-works/pi-tui@1.1.0':
     dependencies:
       get-east-asian-width: 1.6.0
       marked: 18.0.11
@@ -14026,7 +14127,7 @@ snapshots:
 
   '@lezer/common@1.5.3': {}
 
-  '@lezer/lr@1.4.10':
+  '@lezer/lr@1.4.11':
     dependencies:
       '@lezer/common': 1.5.3
 
@@ -14051,12 +14152,12 @@ snapshots:
   '@mischnic/json-sourcemap@0.1.1':
     dependencies:
       '@lezer/common': 1.5.3
-      '@lezer/lr': 1.4.10
+      '@lezer/lr': 1.4.11
       json5: 2.2.3
 
-  '@modelcontextprotocol/client@2.3.0':
+  '@modelcontextprotocol/client@2.3.1':
     dependencies:
-      '@modelcontextprotocol/core': 2.3.0
+      '@modelcontextprotocol/core': 2.3.1
       cross-spawn: 7.0.6
       eventsource: 3.0.7
       eventsource-parser: 3.1.1
@@ -14064,13 +14165,13 @@ snapshots:
       pkce-challenge: 5.0.1
       zod: 4.6.5
 
-  '@modelcontextprotocol/core@2.3.0':
+  '@modelcontextprotocol/core@2.3.1':
     dependencies:
       zod: 4.6.5
 
-  '@modelcontextprotocol/server@2.3.0':
+  '@modelcontextprotocol/server@2.3.1':
     dependencies:
-      '@modelcontextprotocol/core': 2.3.0
+      '@modelcontextprotocol/core': 2.3.1
       zod: 4.6.5
 
   '@msgpackr-extract/msgpackr-extract-darwin-arm64@3.0.4':
@@ -14103,63 +14204,63 @@ snapshots:
       '@nodelib/fs.scandir': 4.0.1
       fastq: 1.20.3
 
-  '@oxc-project/types@0.152.0': {}
+  '@oxc-project/types@0.153.0': {}
 
-  '@oxfmt/binding-android-arm-eabi@0.71.0':
+  '@oxfmt/binding-android-arm-eabi@0.72.0':
     optional: true
 
-  '@oxfmt/binding-android-arm64@0.71.0':
+  '@oxfmt/binding-android-arm64@0.72.0':
     optional: true
 
-  '@oxfmt/binding-darwin-arm64@0.71.0':
+  '@oxfmt/binding-darwin-arm64@0.72.0':
     optional: true
 
-  '@oxfmt/binding-darwin-x64@0.71.0':
+  '@oxfmt/binding-darwin-x64@0.72.0':
     optional: true
 
-  '@oxfmt/binding-freebsd-x64@0.71.0':
+  '@oxfmt/binding-freebsd-x64@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-arm-gnueabihf@0.71.0':
+  '@oxfmt/binding-linux-arm-gnueabihf@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-arm-musleabihf@0.71.0':
+  '@oxfmt/binding-linux-arm-musleabihf@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-arm64-gnu@0.71.0':
+  '@oxfmt/binding-linux-arm64-gnu@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-arm64-musl@0.71.0':
+  '@oxfmt/binding-linux-arm64-musl@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-ppc64-gnu@0.71.0':
+  '@oxfmt/binding-linux-ppc64-gnu@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-riscv64-gnu@0.71.0':
+  '@oxfmt/binding-linux-riscv64-gnu@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-riscv64-musl@0.71.0':
+  '@oxfmt/binding-linux-riscv64-musl@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-s390x-gnu@0.71.0':
+  '@oxfmt/binding-linux-s390x-gnu@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-x64-gnu@0.71.0':
+  '@oxfmt/binding-linux-x64-gnu@0.72.0':
     optional: true
 
-  '@oxfmt/binding-linux-x64-musl@0.71.0':
+  '@oxfmt/binding-linux-x64-musl@0.72.0':
     optional: true
 
-  '@oxfmt/binding-openharmony-arm64@0.71.0':
+  '@oxfmt/binding-openharmony-arm64@0.72.0':
     optional: true
 
-  '@oxfmt/binding-win32-arm64-msvc@0.71.0':
+  '@oxfmt/binding-win32-arm64-msvc@0.72.0':
     optional: true
 
-  '@oxfmt/binding-win32-ia32-msvc@0.71.0':
+  '@oxfmt/binding-win32-ia32-msvc@0.72.0':
     optional: true
 
-  '@oxfmt/binding-win32-x64-msvc@0.71.0':
+  '@oxfmt/binding-win32-x64-msvc@0.72.0':
     optional: true
 
   '@oxlint-tsgolint/darwin-arm64@7.0.2003':
@@ -14180,61 +14281,61 @@ snapshots:
   '@oxlint-tsgolint/win32-x64@7.0.2003':
     optional: true
 
-  '@oxlint/binding-android-arm-eabi@1.86.0':
+  '@oxlint/binding-android-arm-eabi@1.87.0':
     optional: true
 
-  '@oxlint/binding-android-arm64@1.86.0':
+  '@oxlint/binding-android-arm64@1.87.0':
     optional: true
 
-  '@oxlint/binding-darwin-arm64@1.86.0':
+  '@oxlint/binding-darwin-arm64@1.87.0':
     optional: true
 
-  '@oxlint/binding-darwin-x64@1.86.0':
+  '@oxlint/binding-darwin-x64@1.87.0':
     optional: true
 
-  '@oxlint/binding-freebsd-x64@1.86.0':
+  '@oxlint/binding-freebsd-x64@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-arm-gnueabihf@1.86.0':
+  '@oxlint/binding-linux-arm-gnueabihf@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-arm-musleabihf@1.86.0':
+  '@oxlint/binding-linux-arm-musleabihf@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-arm64-gnu@1.86.0':
+  '@oxlint/binding-linux-arm64-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-arm64-musl@1.86.0':
+  '@oxlint/binding-linux-arm64-musl@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-ppc64-gnu@1.86.0':
+  '@oxlint/binding-linux-ppc64-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-riscv64-gnu@1.86.0':
+  '@oxlint/binding-linux-riscv64-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-riscv64-musl@1.86.0':
+  '@oxlint/binding-linux-riscv64-musl@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-s390x-gnu@1.86.0':
+  '@oxlint/binding-linux-s390x-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-x64-gnu@1.86.0':
+  '@oxlint/binding-linux-x64-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-x64-musl@1.86.0':
+  '@oxlint/binding-linux-x64-musl@1.87.0':
     optional: true
 
-  '@oxlint/binding-openharmony-arm64@1.86.0':
+  '@oxlint/binding-openharmony-arm64@1.87.0':
     optional: true
 
-  '@oxlint/binding-win32-arm64-msvc@1.86.0':
+  '@oxlint/binding-win32-arm64-msvc@1.87.0':
     optional: true
 
-  '@oxlint/binding-win32-ia32-msvc@1.86.0':
+  '@oxlint/binding-win32-ia32-msvc@1.87.0':
     optional: true
 
-  '@oxlint/binding-win32-x64-msvc@1.86.0':
+  '@oxlint/binding-win32-x64-msvc@1.87.0':
     optional: true
 
   '@parcel/bundler-default@2.16.4(@parcel/core@2.16.4)':
@@ -14914,7 +15015,7 @@ snapshots:
 
   '@pnpm/config.env-replace@1.1.0': {}
 
-  '@pnpm/constants@1102.0.0': {}
+  '@pnpm/constants@1102.0.1': {}
 
   '@pnpm/network.ca-file@1.0.2':
     dependencies:
@@ -14926,49 +15027,49 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@rolldown/binding-android-arm-eabi@1.2.12':
+  '@rolldown/binding-android-arm-eabi@1.2.13':
     optional: true
 
-  '@rolldown/binding-android-arm64@1.2.12':
+  '@rolldown/binding-android-arm64@1.2.13':
     optional: true
 
-  '@rolldown/binding-darwin-arm64@1.2.12':
+  '@rolldown/binding-darwin-arm64@1.2.13':
     optional: true
 
-  '@rolldown/binding-darwin-x64@1.2.12':
+  '@rolldown/binding-darwin-x64@1.2.13':
     optional: true
 
-  '@rolldown/binding-freebsd-x64@1.2.12':
+  '@rolldown/binding-freebsd-x64@1.2.13':
     optional: true
 
-  '@rolldown/binding-linux-arm-gnueabihf@1.2.12':
+  '@rolldown/binding-linux-arm-gnueabihf@1.2.13':
     optional: true
 
-  '@rolldown/binding-linux-arm64-gnu@1.2.12':
+  '@rolldown/binding-linux-arm64-gnu@1.2.13':
     optional: true
 
-  '@rolldown/binding-linux-arm64-musl@1.2.12':
+  '@rolldown/binding-linux-arm64-musl@1.2.13':
     optional: true
 
-  '@rolldown/binding-linux-ppc64-gnu@1.2.12':
+  '@rolldown/binding-linux-ppc64-gnu@1.2.13':
     optional: true
 
-  '@rolldown/binding-linux-s390x-gnu@1.2.12':
+  '@rolldown/binding-linux-s390x-gnu@1.2.13':
     optional: true
 
-  '@rolldown/binding-linux-x64-gnu@1.2.12':
+  '@rolldown/binding-linux-x64-gnu@1.2.13':
     optional: true
 
-  '@rolldown/binding-linux-x64-musl@1.2.12':
+  '@rolldown/binding-linux-x64-musl@1.2.13':
     optional: true
 
-  '@rolldown/binding-openharmony-arm64@1.2.12':
+  '@rolldown/binding-openharmony-arm64@1.2.13':
     optional: true
 
-  '@rolldown/binding-win32-arm64-msvc@1.2.12':
+  '@rolldown/binding-win32-arm64-msvc@1.2.13':
     optional: true
 
-  '@rolldown/binding-win32-x64-msvc@1.2.12':
+  '@rolldown/binding-win32-x64-msvc@1.2.13':
     optional: true
 
   '@rolldown/pluginutils@1.0.1': {}
@@ -15184,15 +15285,15 @@ snapshots:
 
   '@types/sinonjs__fake-timers@15.0.1': {}
 
-  '@vitejs/devtools-kit@0.7.6(@devframes/agentic@1.2.0)(cac@7.0.0)(crossws@0.4.12)(srvx@1.0.5)(vite@8.3.2)':
+  '@vitejs/devtools-kit@0.7.6(@devframes/agentic@1.2.3)(cac@7.0.1)(crossws@0.4.15)(srvx@1.0.5)(vite@8.3.4)':
     dependencies:
-      '@devframes/hub': 1.2.0(@devframes/agentic@1.2.0)(crossws@0.4.12)(devframe@1.2.0)
-      '@devframes/json-render': 1.2.0(@devframes/hub@1.2.0)(devframe@1.2.0)
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
+      '@devframes/hub': 1.2.3(@devframes/agentic@1.2.3)(crossws@0.4.15)(devframe@1.2.3)
+      '@devframes/json-render': 1.2.3(@devframes/hub@1.2.3)(devframe@1.2.3)
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
       local-pkg: 1.2.1
       nostics: 1.3.0
-      package-manager-detector: 1.8.0
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      package-manager-detector: 1.9.0
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
     transitivePeerDependencies:
       - '@devframes/agentic'
       - cac
@@ -15200,24 +15301,24 @@ snapshots:
       - ocache
       - srvx
 
-  '@vitejs/devtools@0.7.6(@devframes/json-render@1.2.0)(crossws@0.4.12)(srvx@1.0.5)(vite@8.3.2)':
+  '@vitejs/devtools@0.7.6(@devframes/json-render@1.2.3)(crossws@0.4.15)(srvx@1.0.5)(vite@8.3.4)':
     dependencies:
-      '@devframes/agentic': 1.2.0(crossws@0.4.12)(devframe@1.2.0)
-      '@devframes/hub': 1.2.0(@devframes/agentic@1.2.0)(crossws@0.4.12)(devframe@1.2.0)
-      '@devframes/hub-ui': 1.2.0(@devframes/hub@1.2.0)(@devframes/json-render@1.2.0)(devframe@1.2.0)
-      '@devframes/json-render-ui': 1.2.0(@devframes/hub@1.2.0)(devframe@1.2.0)
-      '@devframes/plugin-inspect': 1.2.0(devframe@1.2.0)(vite@8.3.2)
-      '@devframes/plugin-messages': 1.2.0(@devframes/hub@1.2.0)(devframe@1.2.0)(vite@8.3.2)
-      '@devframes/plugin-terminals': 1.2.0(@devframes/hub-ui@1.2.0)(@devframes/hub@1.2.0)(devframe@1.2.0)(vite@8.3.2)
-      '@vitejs/devtools-kit': 0.7.6(@devframes/agentic@1.2.0)(cac@7.0.0)(crossws@0.4.12)(srvx@1.0.5)(vite@8.3.2)
-      cac: 7.0.0
-      devframe: 1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5)
-      h3: 2.0.1(crossws@0.4.12)
+      '@devframes/agentic': 1.2.3(crossws@0.4.15)(devframe@1.2.3)
+      '@devframes/hub': 1.2.3(@devframes/agentic@1.2.3)(crossws@0.4.15)(devframe@1.2.3)
+      '@devframes/hub-ui': 1.2.3(@devframes/hub@1.2.3)(@devframes/json-render@1.2.3)(devframe@1.2.3)
+      '@devframes/json-render-ui': 1.2.3(@devframes/hub@1.2.3)(devframe@1.2.3)
+      '@devframes/plugin-inspect': 1.2.3(devframe@1.2.3)(vite@8.3.4)
+      '@devframes/plugin-messages': 1.2.3(@devframes/hub@1.2.3)(devframe@1.2.3)(vite@8.3.4)
+      '@devframes/plugin-terminals': 1.2.3(@devframes/hub-ui@1.2.3)(@devframes/hub@1.2.3)(devframe@1.2.3)(vite@8.3.4)
+      '@vitejs/devtools-kit': 0.7.6(@devframes/agentic@1.2.3)(cac@7.0.1)(crossws@0.4.15)(srvx@1.0.5)(vite@8.3.4)
+      cac: 7.0.1
+      devframe: 1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5)
+      h3: 2.0.2(crossws@0.4.15)
       local-pkg: 1.2.1
       nostics: 1.3.0
       obug: 3.0.0
       pathe: 2.0.3
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
     transitivePeerDependencies:
       - '@devframes/json-render'
       - '@devframes/plugin-inspect--assets'
@@ -15227,23 +15328,23 @@ snapshots:
       - ocache
       - srvx
 
-  '@vitejs/plugin-react@6.1.1(vite@8.3.2)':
+  '@vitejs/plugin-react@6.1.2(vite@8.3.4)':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
-  '@vitest/mocker@5.0.3(vite@8.3.2)':
+  '@vitest/mocker@5.0.3(vite@8.3.4)':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       '@vitest/spy': 5.0.3
       estree-walker: 3.0.3
-      magic-string: 1.4.2
+      magic-string: 1.4.3
     optionalDependencies:
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
   '@vitest/spy@5.0.3': {}
 
-  acorn@8.18.0: {}
+  acorn@8.19.0: {}
 
   ansi-styles@3.2.1:
     dependencies:
@@ -15290,7 +15391,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  baseline-browser-mapping@2.11.27: {}
+  baseline-browser-mapping@2.11.28: {}
 
   bl@4.1.0:
     dependencies:
@@ -15313,18 +15414,18 @@ snapshots:
 
   browserslist@4.29.3:
     dependencies:
-      baseline-browser-mapping: 2.11.27
-      caniuse-lite: 1.0.30001814
-      electron-to-chromium: 1.5.444
-      node-releases: 2.0.57
-      update-browserslist-db: 1.3.3(browserslist@4.29.3)
+      baseline-browser-mapping: 2.11.28
+      caniuse-lite: 1.0.30001815
+      electron-to-chromium: 1.5.452
+      node-releases: 2.0.58
+      update-browserslist-db: 1.3.4(browserslist@4.29.3)
 
   buffer@5.7.1:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  cac@7.0.0: {}
+  cac@7.0.1: {}
 
   call-bind-apply-helpers@1.0.2:
     dependencies:
@@ -15343,7 +15444,7 @@ snapshots:
       call-bind-apply-helpers: 1.0.2
       get-intrinsic: 1.3.0
 
-  caniuse-lite@1.0.30001814: {}
+  caniuse-lite@1.0.30001815: {}
 
   chai-as-promised@8.0.2(chai@6.3.0):
     dependencies:
@@ -15443,7 +15544,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  crossws@0.4.12(srvx@1.0.5):
+  crossws@0.4.15(srvx@1.0.5):
     optionalDependencies:
       srvx: 1.0.5
 
@@ -15499,15 +15600,15 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  devframe@1.2.0(@devframes/agentic@1.2.0)(cac@7.0.0)(srvx@1.0.5):
+  devframe@1.2.3(@devframes/agentic@1.2.3)(cac@7.0.1)(srvx@1.0.5):
     dependencies:
-      crossws: 0.4.12(srvx@1.0.5)
-      h3: 2.0.1(crossws@0.4.12)
+      crossws: 0.4.15(srvx@1.0.5)
+      h3: 2.0.2(crossws@0.4.15)
       nostics: 1.3.0
       pathe: 2.0.3
     optionalDependencies:
-      '@devframes/agentic': 1.2.0(crossws@0.4.12)(devframe@1.2.0)
-      cac: 7.0.0
+      '@devframes/agentic': 1.2.3(crossws@0.4.15)(devframe@1.2.3)
+      cac: 7.0.1
     transitivePeerDependencies:
       - ocache
       - srvx
@@ -15526,7 +15627,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  electron-to-chromium@1.5.444: {}
+  electron-to-chromium@1.5.452: {}
 
   emittery@2.1.0: {}
 
@@ -15719,7 +15820,7 @@ snapshots:
 
   gitignore-fs@2.2.3:
     dependencies:
-      '@babel/runtime': 7.29.7
+      '@babel/runtime': 7.29.10
       babel-plugin-add-module-exports: 1.0.4
       ignore: 5.3.2
       promisify-child-process: 4.1.2
@@ -15745,12 +15846,12 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  h3@2.0.1(crossws@0.4.12):
+  h3@2.0.2(crossws@0.4.15):
     dependencies:
       rou3: 1.0.0
       srvx: 1.0.5
     optionalDependencies:
-      crossws: 0.4.12(srvx@1.0.5)
+      crossws: 0.4.15(srvx@1.0.5)
 
   has-bigints@1.1.0: {}
 
@@ -15924,7 +16025,7 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-yaml@5.4.2:
+  js-yaml@5.4.3:
     dependencies:
       argparse: 2.0.1
 
@@ -16025,7 +16126,7 @@ snapshots:
 
   lru-cache@11.5.3: {}
 
-  magic-string@1.4.2:
+  magic-string@1.4.3:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
 
@@ -16057,7 +16158,7 @@ snapshots:
 
   mlly@1.8.2:
     dependencies:
-      acorn: 8.18.0
+      acorn: 8.19.0
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.6.4
@@ -16072,7 +16173,7 @@ snapshots:
       glob: 13.0.6
       is-path-inside: 4.0.0
       is-unicode-supported: 0.1.0
-      js-yaml: 5.4.2
+      js-yaml: 5.4.3
       minimatch: 10.2.6
       ms: 2.1.3
       picocolors: 1.1.1
@@ -16103,15 +16204,15 @@ snapshots:
 
   murmurhash3js-revisited@3.0.0: {}
 
-  nanoid@3.3.19: {}
+  nanoid@3.3.20: {}
 
-  nanoid@6.0.1: {}
+  nanoid@6.0.2: {}
 
   napi-build-utils@2.0.0: {}
 
   nice-try@1.0.5: {}
 
-  node-abi@3.96.0:
+  node-abi@3.98.0:
     dependencies:
       semver: 7.8.5
 
@@ -16130,12 +16231,12 @@ snapshots:
       detect-libc: 2.1.2
     optional: true
 
-  node-releases@2.0.57: {}
+  node-releases@2.0.58: {}
 
   normalize-package-data@2.5.0:
     dependencies:
       hosted-git-info: 2.8.9
-      resolve: 1.22.12
+      resolve: 1.22.13
       semver: 5.7.2
       validate-npm-package-license: 3.0.4
 
@@ -16187,29 +16288,29 @@ snapshots:
       object-keys: 1.1.1
       safe-push-apply: 1.0.0
 
-  oxfmt@0.71.0:
+  oxfmt@0.72.0:
     dependencies:
       tinypool: 2.2.0
     optionalDependencies:
-      '@oxfmt/binding-android-arm-eabi': 0.71.0
-      '@oxfmt/binding-android-arm64': 0.71.0
-      '@oxfmt/binding-darwin-arm64': 0.71.0
-      '@oxfmt/binding-darwin-x64': 0.71.0
-      '@oxfmt/binding-freebsd-x64': 0.71.0
-      '@oxfmt/binding-linux-arm-gnueabihf': 0.71.0
-      '@oxfmt/binding-linux-arm-musleabihf': 0.71.0
-      '@oxfmt/binding-linux-arm64-gnu': 0.71.0
-      '@oxfmt/binding-linux-arm64-musl': 0.71.0
-      '@oxfmt/binding-linux-ppc64-gnu': 0.71.0
-      '@oxfmt/binding-linux-riscv64-gnu': 0.71.0
-      '@oxfmt/binding-linux-riscv64-musl': 0.71.0
-      '@oxfmt/binding-linux-s390x-gnu': 0.71.0
-      '@oxfmt/binding-linux-x64-gnu': 0.71.0
-      '@oxfmt/binding-linux-x64-musl': 0.71.0
-      '@oxfmt/binding-openharmony-arm64': 0.71.0
-      '@oxfmt/binding-win32-arm64-msvc': 0.71.0
-      '@oxfmt/binding-win32-ia32-msvc': 0.71.0
-      '@oxfmt/binding-win32-x64-msvc': 0.71.0
+      '@oxfmt/binding-android-arm-eabi': 0.72.0
+      '@oxfmt/binding-android-arm64': 0.72.0
+      '@oxfmt/binding-darwin-arm64': 0.72.0
+      '@oxfmt/binding-darwin-x64': 0.72.0
+      '@oxfmt/binding-freebsd-x64': 0.72.0
+      '@oxfmt/binding-linux-arm-gnueabihf': 0.72.0
+      '@oxfmt/binding-linux-arm-musleabihf': 0.72.0
+      '@oxfmt/binding-linux-arm64-gnu': 0.72.0
+      '@oxfmt/binding-linux-arm64-musl': 0.72.0
+      '@oxfmt/binding-linux-ppc64-gnu': 0.72.0
+      '@oxfmt/binding-linux-riscv64-gnu': 0.72.0
+      '@oxfmt/binding-linux-riscv64-musl': 0.72.0
+      '@oxfmt/binding-linux-s390x-gnu': 0.72.0
+      '@oxfmt/binding-linux-x64-gnu': 0.72.0
+      '@oxfmt/binding-linux-x64-musl': 0.72.0
+      '@oxfmt/binding-openharmony-arm64': 0.72.0
+      '@oxfmt/binding-win32-arm64-msvc': 0.72.0
+      '@oxfmt/binding-win32-ia32-msvc': 0.72.0
+      '@oxfmt/binding-win32-x64-msvc': 0.72.0
 
   oxlint-tsgolint@7.0.2003:
     optionalDependencies:
@@ -16220,27 +16321,27 @@ snapshots:
       '@oxlint-tsgolint/win32-arm64': 7.0.2003
       '@oxlint-tsgolint/win32-x64': 7.0.2003
 
-  oxlint@1.86.0(oxlint-tsgolint@7.0.2003):
+  oxlint@1.87.0(oxlint-tsgolint@7.0.2003):
     optionalDependencies:
-      '@oxlint/binding-android-arm-eabi': 1.86.0
-      '@oxlint/binding-android-arm64': 1.86.0
-      '@oxlint/binding-darwin-arm64': 1.86.0
-      '@oxlint/binding-darwin-x64': 1.86.0
-      '@oxlint/binding-freebsd-x64': 1.86.0
-      '@oxlint/binding-linux-arm-gnueabihf': 1.86.0
-      '@oxlint/binding-linux-arm-musleabihf': 1.86.0
-      '@oxlint/binding-linux-arm64-gnu': 1.86.0
-      '@oxlint/binding-linux-arm64-musl': 1.86.0
-      '@oxlint/binding-linux-ppc64-gnu': 1.86.0
-      '@oxlint/binding-linux-riscv64-gnu': 1.86.0
-      '@oxlint/binding-linux-riscv64-musl': 1.86.0
-      '@oxlint/binding-linux-s390x-gnu': 1.86.0
-      '@oxlint/binding-linux-x64-gnu': 1.86.0
-      '@oxlint/binding-linux-x64-musl': 1.86.0
-      '@oxlint/binding-openharmony-arm64': 1.86.0
-      '@oxlint/binding-win32-arm64-msvc': 1.86.0
-      '@oxlint/binding-win32-ia32-msvc': 1.86.0
-      '@oxlint/binding-win32-x64-msvc': 1.86.0
+      '@oxlint/binding-android-arm-eabi': 1.87.0
+      '@oxlint/binding-android-arm64': 1.87.0
+      '@oxlint/binding-darwin-arm64': 1.87.0
+      '@oxlint/binding-darwin-x64': 1.87.0
+      '@oxlint/binding-freebsd-x64': 1.87.0
+      '@oxlint/binding-linux-arm-gnueabihf': 1.87.0
+      '@oxlint/binding-linux-arm-musleabihf': 1.87.0
+      '@oxlint/binding-linux-arm64-gnu': 1.87.0
+      '@oxlint/binding-linux-arm64-musl': 1.87.0
+      '@oxlint/binding-linux-ppc64-gnu': 1.87.0
+      '@oxlint/binding-linux-riscv64-gnu': 1.87.0
+      '@oxlint/binding-linux-riscv64-musl': 1.87.0
+      '@oxlint/binding-linux-s390x-gnu': 1.87.0
+      '@oxlint/binding-linux-x64-gnu': 1.87.0
+      '@oxlint/binding-linux-x64-musl': 1.87.0
+      '@oxlint/binding-openharmony-arm64': 1.87.0
+      '@oxlint/binding-win32-arm64-msvc': 1.87.0
+      '@oxlint/binding-win32-ia32-msvc': 1.87.0
+      '@oxlint/binding-win32-x64-msvc': 1.87.0
       oxlint-tsgolint: 7.0.2003
 
   package-json@10.0.1:
@@ -16250,7 +16351,7 @@ snapshots:
       registry-url: 6.0.1
       semver: 7.8.5
 
-  package-manager-detector@1.8.0: {}
+  package-manager-detector@1.9.0: {}
 
   parcel-resolver-ignore@2.2.1:
     dependencies:
@@ -16332,9 +16433,9 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.28:
+  postcss@8.5.29:
     dependencies:
-      nanoid: 3.3.19
+      nanoid: 3.3.20
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
@@ -16346,7 +16447,7 @@ snapshots:
       minimist: 1.2.8
       mkdirp-classic: 0.5.3
       napi-build-utils: 2.0.0
-      node-abi: 3.96.0
+      node-abi: 3.98.0
       pump: 3.0.4
       rc: 1.2.8
       simple-get: 4.0.1
@@ -16443,7 +16544,7 @@ snapshots:
     dependencies:
       rc: 1.2.8
 
-  resolve@1.22.12:
+  resolve@1.22.13:
     dependencies:
       es-errors: 1.3.0
       is-core-module: 2.17.0
@@ -16452,26 +16553,26 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rolldown@1.2.12:
+  rolldown@1.2.13:
     dependencies:
-      '@oxc-project/types': 0.152.0
+      '@oxc-project/types': 0.153.0
       '@rolldown/pluginutils': 1.0.1
     optionalDependencies:
-      '@rolldown/binding-android-arm-eabi': 1.2.12
-      '@rolldown/binding-android-arm64': 1.2.12
-      '@rolldown/binding-darwin-arm64': 1.2.12
-      '@rolldown/binding-darwin-x64': 1.2.12
-      '@rolldown/binding-freebsd-x64': 1.2.12
-      '@rolldown/binding-linux-arm-gnueabihf': 1.2.12
-      '@rolldown/binding-linux-arm64-gnu': 1.2.12
-      '@rolldown/binding-linux-arm64-musl': 1.2.12
-      '@rolldown/binding-linux-ppc64-gnu': 1.2.12
-      '@rolldown/binding-linux-s390x-gnu': 1.2.12
-      '@rolldown/binding-linux-x64-gnu': 1.2.12
-      '@rolldown/binding-linux-x64-musl': 1.2.12
-      '@rolldown/binding-openharmony-arm64': 1.2.12
-      '@rolldown/binding-win32-arm64-msvc': 1.2.12
-      '@rolldown/binding-win32-x64-msvc': 1.2.12
+      '@rolldown/binding-android-arm-eabi': 1.2.13
+      '@rolldown/binding-android-arm64': 1.2.13
+      '@rolldown/binding-darwin-arm64': 1.2.13
+      '@rolldown/binding-darwin-x64': 1.2.13
+      '@rolldown/binding-freebsd-x64': 1.2.13
+      '@rolldown/binding-linux-arm-gnueabihf': 1.2.13
+      '@rolldown/binding-linux-arm64-gnu': 1.2.13
+      '@rolldown/binding-linux-arm64-musl': 1.2.13
+      '@rolldown/binding-linux-ppc64-gnu': 1.2.13
+      '@rolldown/binding-linux-s390x-gnu': 1.2.13
+      '@rolldown/binding-linux-x64-gnu': 1.2.13
+      '@rolldown/binding-linux-x64-musl': 1.2.13
+      '@rolldown/binding-openharmony-arm64': 1.2.13
+      '@rolldown/binding-win32-arm64-msvc': 1.2.13
+      '@rolldown/binding-win32-x64-msvc': 1.2.13
 
   rou3@1.0.0: {}
 
@@ -16764,7 +16865,7 @@ snapshots:
 
   tiny-invariant@1.3.3: {}
 
-  tinybench@6.2.0: {}
+  tinybench@6.2.1: {}
 
   tinyexec@1.3.1: {}
 
@@ -16847,7 +16948,7 @@ snapshots:
 
   undici-types@8.9.0: {}
 
-  update-browserslist-db@1.3.3(browserslist@4.29.3):
+  update-browserslist-db@1.3.4(browserslist@4.29.3):
     dependencies:
       browserslist: 4.29.3
       escalade: 3.2.0
@@ -16864,39 +16965,39 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-devtools-json@1.1.0(vite@8.3.2):
+  vite-plugin-devtools-json@1.1.1(vite@8.3.4):
     dependencies:
       uuid: 14.0.2
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
 
-  vite@8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1):
+  vite@8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
-      postcss: 8.5.28
-      rolldown: 1.2.12
+      postcss: 8.5.29
+      rolldown: 1.2.13
       tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 26.6.4
-      '@vitejs/devtools': 0.7.6(@devframes/json-render@1.2.0)(crossws@0.4.12)(srvx@1.0.5)(vite@8.3.2)
+      '@vitejs/devtools': 0.7.6(@devframes/json-render@1.2.3)(crossws@0.4.15)(srvx@1.0.5)(vite@8.3.4)
       fsevents: 2.3.3
       yaml: 2.9.1
 
-  vitest@5.0.3(@types/node@26.6.4)(vite@8.3.2):
+  vitest@5.0.3(@types/node@26.6.4)(vite@8.3.4):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.3(vite@8.3.2)
+      '@vitest/mocker': 5.0.3(vite@8.3.4)
       chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
-      magic-string: 1.4.2
+      magic-string: 1.4.3
       obug: 2.2.1
       picomatch: 4.0.7
       std-env: 4.3.0
-      tinybench: 6.2.0
+      tinybench: 6.2.1
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
-      vite: 8.3.2(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@26.6.4)(@vitejs/devtools@0.7.6)(yaml@2.9.1)
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@types/node': 26.6.4
