@@ -68,7 +68,7 @@ Term Meaning Example
 **Ducking** Automatically lower one Music gets quieter source when another under voice plays
 -----------------------------------------------------------------------
 
-## Track vs. clip
+## Track vs. clip
 
 **Track** usually means the _lane_, not an individual item. This differs from Spotify terminology, where a song is
 called a track.

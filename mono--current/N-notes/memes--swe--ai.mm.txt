@@ -403,6 +403,7 @@ coding -- review -- Code Review Bench https://codereview.withmartian.com/
 coding -- reviewing = interactions with other subsystems, support, maintenance, upgrades, add-ons, and a bunch of other dimensions
 coding -- rigor = needed at some point. If not in code, somewhere else. https://www.honeycomb.io/blog/production-is-where-the-rigor-goes
 coding -- self-driving codebase
+coding -- software factories = why they fail https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md
 coding -- tech stack choices https://amplifying.ai/research/claude-code-picks
 coding -- technical debt becomes a wise investment https://www.danshapiro.com/blog/2025/12/this-is-a-time-of-technical-deflation/
 coding -- techniques -- goal

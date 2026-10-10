@@ -14,11 +14,14 @@ why did the pirate's commit get rejected? Too many arrr-guments in the diff.
 
 why did the rebase go to therapy? Too many unresolved conflicts from its past.
 
+Why did the empty folder see a therapist? Nobody would track it, and all it had left was baggage it had been told to ignore.
 
 
 
 ## TODO blog posts
 
+- https://refactoringenglish.com/blog/anti-patterns-software-blogging/
+- 
 ### my CLAUDE.md as of October 2026
 
 ### Tree of load-bearing
@@ -104,13 +107,14 @@ Make suggestions for better productivity
 Advocacy
 * rebase, fix conflicts
 * open PRs
+* infinite polite StackOverflow
 * encyclopedic knowledge
 * huge working memory
 * deal with imprecision
 * terminology / naming
 * renaming
 * reviewing (but beware of infinite bugs https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/)
-* "Yes, Captain Yves. L750 is almost certainly the end of L1482"
+* "Yes, Captain. L750 is almost certainly the end of L1482"
 * finding code
   * ❯ in /apps/web in the url /admin
     there is a "+ Create request" button that opens a drawer.

@@ -1,10 +1,3 @@
-## Concepts
-
-- State
-- U, T states
-- U+T bundle
-- Root state
-
 What we want to know?
 
 - is this state up to date or legacy = check schema version

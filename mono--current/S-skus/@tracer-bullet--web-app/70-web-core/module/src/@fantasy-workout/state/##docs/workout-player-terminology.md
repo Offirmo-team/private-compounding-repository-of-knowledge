@@ -96,7 +96,7 @@ Push-ups
 Abdominal Crunches
 ```
 
-## Back vs. Previous
+## Back vs. Previous
 
 **Back** and **Previous** should not mean the same thing.
 

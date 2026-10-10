@@ -94,6 +94,7 @@ API -- solutions -- devtool https://mockapi.io/
 API -- solutions -- devtool https://reqres.in/
 API -- tokens -- M2M "machine to machine"
 API -- tradeoffs = ex. safety / flexibility / extensibility / speed
+Apollo 11 guidance computer (AGC) source code = https://github.com/chrislgarry/Apollo-11
 architecture -- architect thinking -- example https://www.linkedin.com/posts/activity-7455416156187951106-5IAL
 architecture -- architect thinking = What's upstream? What API contracts am I actually working with? Have they been built? If so, do we need to extend those? As tech is moving super fast with AI, where does this UI live in 18 months? Is this a product or a prototype someone will want to scale? What does the team's capability look like? What are the integration seams? Where does the frontend end and something else's problem begin? https://www.linkedin.com/posts/activity-7452112698827276288-m-2S
 architecture -- architectural decision (AD) = a justified design choice that addresses a functional or non-functional requirement that is architecturally significant
@@ -281,6 +282,7 @@ considered harmful
 considered harmful -- clever code https://www.joshwcomeau.com/career/clever-code-considered-harmful/
 considered harmful -- NODE_ENV
 consistency = lack of consistency is the primary long-term killer of large codebases, because it makes it impossible to make any general improvements https://www.seangoedecke.com/large-established-codebases/
+constraints = "A developer vibe-coding a side project a dozen people will ever run, and a team keeping a ten-year-old enterprise system alive for another quarter, share almost no constraints worth naming, and most of the advice in circulation is really one of those two people telling the other how to live" https://x.com/addyosmani/status/2066595308629594363
 constructor
 containers -- podman https://docs.podman.io/en/latest/Introduction.html
 content age rating -- "Common Sense" Media (private org) https://www.commonsensemedia.org/about-us/our-mission/about-our-ratings
@@ -369,6 +371,7 @@ datastreams -- scatter/gather
 debugger
 debugging
 defensive programming = Always think about what can go wrong, what will happen on invalid input, and what might fail, which will help you catch many bugs before they happen https://opensource.com/article/17/5/30-best-practices-software-development-and-testing
+defensive programming = practice of building software that could anticipate or fix errors on its own https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007
 defensive programming https://dev.to/cubiclebuddha/is-defensive-programming-actually-healthy-5flj
 define “good” = what “good” looks like to your org. Achieving that ideal doesn’t depend on which technology you use. It depends on understanding your company’s requirements and what assumptions will remain true regardless of the tools you use.
 definition of done (DoD)
@@ -1041,6 +1044,7 @@ Software Composition Analysis (SCA) detects open source libraries in both your r
 software crisis https://en.wikipedia.org/wiki/Software_crisis
 software development philosophies = +++ https://en.wikipedia.org/wiki/List_of_software_development_philosophies
 software engineering -- is programming integrated over time = from Software Engineering at Google: Lessons Learned from Programming Over Time
+software engineering = invented at a NATO conference? http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF
 software projects failures -- case studies = https://ia.acs.org.au/article/2026/qld-s--183m-child-safety-it-redevelopment-slammed.html
 SOLID
 SOLID -- 1 Single responsibility = https://en.wikipedia.org/wiki/Single_responsibility_principle
@@ -1198,6 +1202,7 @@ unicode -- FAQ https://unicode.org/faq/utf_bom.html#utf16-2
 unicode -- is hard https://mcilloni.ovh/2023/07/23/unicode-is-hard/
 unicode -- terminology https://simonsapin.github.io/wtf-8/#terminology
 unicode -- variation selectors = https://cssence.com/2026/font-variant-emoji/
+Universal Systems Language (USL) = a systems modeling language and methodology for engineering complex software systems that prioritize error prevention and defensive programming.
 Unix philosophy -- A.01 Make each program do one thing well = To do a new job, build afresh rather than complicate old programs by adding new "features"
 Unix philosophy -- A.02 -- OUTDATED = support outputing JSON ;)
 Unix philosophy -- A.02 Expect the output of every program to become the input to another, as yet unknown, program = Don't clutter output with extraneous information. Avoid stringently columnar or binary input formats; Don't insist on interactive input
@@ -1238,6 +1243,7 @@ who's who -- Aaron Swartz https://en.wikipedia.org/wiki/Aaron_Swartz
 who's who -- Eric Elliot https://medium.com/javascript-scene/the-single-biggest-mistake-programmers-make-every-day-62366b432308
 who's who -- James Hamilton = famous AWS eng https://perspectives.mvdirona.com/
 who's who -- Linus Torvald https://www.goodreads.com/author/quotes/92867.Linus_Torvalds
+who's who -- Margaret Hamilton Apollo, defensive programming https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007
 who's who -- Martin Fowler +++ https://martinfowler.com/
 who's who -- Terry A. Davis = TempleOS https://en.wikipedia.org/wiki/Terry_A._Davis
 who's who -- Tim Berners-Lee https://en.wikipedia.org/wiki/Tim_Berners-Lee

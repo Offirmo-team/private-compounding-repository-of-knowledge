@@ -1,6 +1,13 @@
 /////////////////////////////////////////////////
 
-export const ALL_PREDEFINED_WORKOUTS: Array<Workout> = [
+export function getꓽworkout(id: WorkoutⳇId): Immutable<Workout> {
+	const workout = ALL_PREDEFINED_WORKOUTS.find((w) => w.id === id)
+	assert(workout, `unknown workout "${id}"`)
+
+	return workout
+}
+
+export const ALL_PREDEFINED_WORKOUTS: Immutable<Array<Workout>> = enforceꓽimmutable([
 	{
 		id: "scientific-7-minute-workout",
 		title: "7-Minute Workout",
@@ -13,20 +20,19 @@ export const ALL_PREDEFINED_WORKOUTS: Array<Workout> = [
 			{ exercise_id: ALL_EXERCISES‿by_id["wall-sit"].id, duration‿ms: 30_000, side: null },
 			{ exercise_id: ALL_EXERCISES‿by_id["push-up"].id, duration‿ms: 30_000, side: null },
 			{ exercise_id: ALL_EXERCISES‿by_id["abdominal-crunch"].id, duration‿ms: 30_000, side: null },
-			{ exercise_id: ALL_EXERCISES‿by_id["step-up-onto-chair"].id, duration‿ms: 30_000, side: null },
+			{ exercise_id: ALL_EXERCISES‿by_id["step-up-onto-chair"].id, duration‿ms: 30_000, side: null }, // alternating
 			{ exercise_id: ALL_EXERCISES‿by_id["squat"].id, duration‿ms: 30_000, side: null },
 			{ exercise_id: ALL_EXERCISES‿by_id["triceps-dip-on-chair"].id, duration‿ms: 30_000, side: null },
 			{ exercise_id: ALL_EXERCISES‿by_id["plank"].id, duration‿ms: 30_000, side: null },
-			{ exercise_id: ALL_EXERCISES‿by_id["high-knees-running-in-place"].id, duration‿ms: 30_000, side: null },
-			{ exercise_id: ALL_EXERCISES‿by_id["lunge"].id, duration‿ms: 30_000, side: null },
-			{ exercise_id: ALL_EXERCISES‿by_id["push-up-and-rotation"].id, duration‿ms: 30_000, side: null },
-			// the sources don't specify the side, we chose to do both
+			{ exercise_id: ALL_EXERCISES‿by_id["high-knees-running-in-place"].id, duration‿ms: 30_000, side: null }, // alternating
+			{ exercise_id: ALL_EXERCISES‿by_id["lunge"].id, duration‿ms: 30_000, side: null }, // alternating
+			{ exercise_id: ALL_EXERCISES‿by_id["push-up-and-rotation"].id, duration‿ms: 30_000, side: null }, // alternating
+			// the sources don't specify how to handle sides. We chose a full 30s per side (vs. 15s/15s in a single station)
+			// for a meaningful hold, at the cost of a 13th station. cf. ./high-intensity-circuit-training-using-body-weight-maximum/comments.md
 			{ exercise_id: ALL_EXERCISES‿by_id["side-plank"].id, duration‿ms: 30_000, side: "left" },
 			{ exercise_id: ALL_EXERCISES‿by_id["side-plank"].id, duration‿ms: 30_000, side: "right" },
 		],
 		rest_between_exercises‿ms: 10_000,
-		recommended_rounds: { min: 1, max: 3 },
-		target_intensity‿rpe: 8,
 
 		designers: ["Brett Klika", "Chris Jordan"],
 		references: [
@@ -79,10 +85,8 @@ export const ALL_PREDEFINED_WORKOUTS: Array<Workout> = [
 			},
 			{ exercise_id: ALL_EXERCISES‿by_id["bent-over-row"].id, duration‿ms: 60_000, side: null },
 		],
-		// not specified by the source, but the bouts already add up to exactly 7 minutes
-		rest_between_exercises‿ms: 0,
-		recommended_rounds: undefined,
-		target_intensity‿rpe: undefined,
+		// not specified by the source, use same as the other original 7-minutes workout
+		rest_between_exercises‿ms: 10_000,
 
 		designers: ["Mark Verstegen"],
 		references: [
@@ -95,10 +99,14 @@ export const ALL_PREDEFINED_WORKOUTS: Array<Workout> = [
 			},
 		],
 	},
-]
+])
 
 /////////////////////////////////////////////////
 
-import type { Workout } from "../types/types.ts"
+import { assert } from "@monorepo-private/assert"
+import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import type { Workout, WorkoutⳇId } from "../types/index.ts"
 
 import { ALL_EXERCISES‿by_id } from "./exercises.ts"

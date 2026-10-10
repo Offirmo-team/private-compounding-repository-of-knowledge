@@ -55,7 +55,7 @@ const THINGⵧONLINE: ThingWithOnlinePresence = {
 const WEBSITE: WebPage = {
 	...THINGⵧONLINE,
 
-	title: "TODO,
+	title: "TODO",
 	icon: {
 		emoji: "💡",
 		//svg: path.join(__dirname, './icon--rpg.svg'),

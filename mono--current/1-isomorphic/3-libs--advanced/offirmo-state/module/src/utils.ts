@@ -7,8 +7,9 @@ export const enforceꓽimmutable: ImmutabilityEnforcer = <T>(state: T | Immutabl
 //const enforceꓽimmutable: ImmutabilityEnforcer = (state: T): Immutable<T> => state
 //const enforceꓽimmutable: ImmutabilityEnforcer = <T>(state: T): Immutable<T> => deep_freeze<T>(state)
 
+// NOT icepick.thaw(): it returns non-frozen nodes as-is = shared with the original, frozen children included
 export function getꓽmutable_copy<T>(state: T): Mutable<T> {
-	return icepick.thaw<Mutable<T>>(state as any)
+	return structuredClone(state) as Mutable<T>
 }
 export function cast_toꓽimmutable<T>(state: T): Immutable<T> {
 	return state as Immutable<T>

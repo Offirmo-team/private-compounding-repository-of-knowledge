@@ -3,9 +3,6 @@
 Renders Offirmo's "rich text format" document tree to a terminal-friendly string with ANSI styling (bold/italic/dim via
 `chalk`), built on top of a generic text-walker/renderer.
 
-Note: this package contains a top-level `tosort/2025/index.mjs` file holding unsorted/legacy code slated for removal —
-not reviewed here.
-
 ## Findings
 
 - **RT-01 (Critical)** — The package does not compile: `module/index.ts` imports `WalkerCallbacks`,

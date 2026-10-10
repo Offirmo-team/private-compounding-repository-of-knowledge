@@ -8,38 +8,38 @@ export interface Workout {
 	title: ContentⳇTitle
 	caption: ContentⳇCaption
 
-	exercises: WorkoutⳇExercise[] // in order of execution
+	exercises: WorkoutⳇExerciseInstance[] // in order of execution
 	rest_between_exercises‿ms: DurationMs // 0 = no rest
-	recommended_rounds: { min: PositiveInteger; max: PositiveInteger } | undefined // = how many times the whole circuit can be repeated
-	target_intensity‿rpe: FloatInRange<1, 10> | undefined // RPE = Rating of Perceived Exertion, on a 1-10 scale
 
 	designers: string[]
 	references: Reference[]
 }
 
-export interface WorkoutⳇSegment {
-	type: "exercise" | "pause"
-	duration‿ms: DurationMs
-}
 // an exercise as scheduled in a given workout ~ a playlist entry
-export interface WorkoutⳇExercise extends WorkoutⳇSegment {
-	type: "exercise"
-
+export interface WorkoutⳇExerciseInstance {
 	exercise_id: ExerciseⳇId
+	duration‿ms: DurationMs // custom
 	side: Side | null // only for "unilateral" exercises
 }
 
-export interface WorkoutⳇPause extends WorkoutⳇSegment {
-	type: "pause"
+export interface Reference {
+	title: ContentⳇTitle
+	authors: string[]
+	publication: string
+	year: Year
+	url: Url‿str
 }
 
 /////////////////////////////////////////////////
-// ~ track
+// ~ track (to be instantiated)
 
 export type ExerciseⳇId = string
 
 export interface Exercise {
 	id: ExerciseⳇId
+
+	// TODO move all copy and associated to a separate structure to have variants by trainer/language
+
 	title: ContentⳇTitle
 
 	instructions: string[] // step by step
@@ -81,15 +81,5 @@ export interface VideoSource {
 
 /////////////////////////////////////////////////
 
-export interface Reference {
-	title: ContentⳇTitle
-	authors: string[]
-	publication: string
-	year: Year
-	url: Url‿str
-}
-
-/////////////////////////////////////////////////
-
-import type { DurationMs, FloatInRange, PositiveInteger, Url‿str, Year } from "@monorepo-private/ts--types"
+import type { DurationMs, FloatInRange, Url‿str, Year } from "@monorepo-private/ts--types"
 import type { ContentⳇCaption, ContentⳇTitle } from "@monorepo-private/ts--types--hypermedia"
