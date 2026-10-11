@@ -40,6 +40,8 @@ export const PLUGIN: Plugin = {
 							// personal, pragmatic additions
 							// last review 2026/09
 							"*.iml", // contains local infos
+							"vcs.xml", // VCS infos, IDE can regen on its own
+							"modules.xml", // contains dirs added to the project, personal IMO
 						],
 					},
 				}
