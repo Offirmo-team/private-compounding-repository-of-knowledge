@@ -1,30 +1,6 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import { createꓽfilesystem, insertꓽfile } from "@monorepo-private/data-structures"
-import type { Immutable, PathⳇRelative } from "@monorepo-private/ts--types"
-
-import type { Config } from "../../../l0-types/l2-config/index.ts"
-import type { StoryUId, StoryEntry, StoryFolder } from "../types.ts"
-
-import type { State } from "./types.ts"
-
 ////////////////////////////////////////////////////////////////////////////////////
 
-function get_default_state_view(): State["view"] {
-	return {
-		manager: {
-			sidebar: {},
-		},
-		story_area: {
-			drawer: {
-				status_bar: {
-					pills: {},
-				},
-			},
-		},
-	}
-}
-
-function create(): State {
+export function create(): State {
 	return {
 		config: {
 			root_title: "Stories",
@@ -32,11 +8,12 @@ function create(): State {
 		},
 		first_encountered_story‿uid: undefined,
 		tree: createꓽfilesystem<StoryEntry, StoryFolder>(),
+		annotations: {},
 		view: get_default_state_view(),
 	}
 }
 
-function setꓽconfig(state: State, config: Immutable<Config> | undefined): State {
+export function setꓽconfig(state: State, config: Immutable<Config> | undefined): State {
 	return {
 		...state,
 		config: {
@@ -49,7 +26,7 @@ function setꓽconfig(state: State, config: Immutable<Config> | undefined): Stat
 /////////////////////////////////////////////////
 // setup
 
-function registerꓽstory(state: State, story: StoryEntry, path: PathⳇRelative): State {
+export function registerꓽstory(state: State, story: StoryEntry, path: PathⳇRelative): State {
 	const uid = insertꓽfile(state.tree, path, story)
 	assert(uid === story.uid, `uid should be as expected! "${story.uid}" vs. "${uid}"`)
 
@@ -63,24 +40,35 @@ function registerꓽstory(state: State, story: StoryEntry, path: PathⳇRelative
 	return state
 }
 
-/////////////////////////////////////////////////
-
-// TODO clarify
-function requestꓽstory(state: State, uid: StoryUId): State {
+// request:story = the user request to display the given story
+// REMINDER other states have a similar reducer and functionality is split across those reducers
+export function requestꓽstory(state: State, uid: StoryUId): State {
 	//assert(getꓽstoryⵧby_uid(state, uid), `story should exist! "${uid}"`)
+
+	// uid is ignored by this state (see the url one)
+
 	state = {
 		...state,
 		//last_explicitly_activated_story‿uid: uid,
+
+		// reset view state
 		view: get_default_state_view(),
 	}
 
 	return state
 }
 
-function addꓽannotation(state: State, key: string, value: string): State {
-	console.log(`TODO annotations!`, { key, value })
+/////////////////////////////////////////////////
 
-	return state
+export function addꓽannotation(state: State, key: string, value: JSONPrimitiveType): State {
+	//console.warn("addꓽannotation", { key, value })
+	return {
+		...state,
+		annotations: {
+			...state.annotations,
+			[key]: value,
+		},
+	}
 }
 
 // expand the tree all the way to the target
@@ -90,6 +78,21 @@ function folderⵧexpand(state: State, uid: StoryUId): State {
 	return state
 }
 
-/////////////////////////////////////////////////
+function get_default_state_view(): State["view"] {
+	return {
+		manager: {
+			sidebar: {},
+		},
+		story_area: {},
+	}
+}
 
-export { create, setꓽconfig, registerꓽstory, requestꓽstory, addꓽannotation }
+/////////////////////////////////////////////////
+import { assert_from, assert } from "@monorepo-private/assert"
+import { createꓽfilesystem, insertꓽfile } from "@monorepo-private/data-structures"
+import type { Immutable, JSONPrimitiveType, PathⳇRelative } from "@monorepo-private/ts--types"
+
+import type { Config } from "../../../l0-types/l2-config/index.ts"
+import type { StoryUId, StoryEntry, StoryFolder } from "../types.ts"
+
+import type { State } from "./types.ts"

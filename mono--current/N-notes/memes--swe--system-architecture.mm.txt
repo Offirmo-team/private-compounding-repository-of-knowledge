@@ -1,4 +1,6 @@
-
++++ architecture patterns -- 1. ~hexagonal architecture = ports and adapters https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)
++++ architecture patterns -- 2. onion architecture = tree-form layers https://en.wikipedia.org/wiki/Layer_(object-oriented_design)
++++ architecture patterns -- 3. R. Martin's clean architecture = https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 1% rule -- 90-9-1 = 90% consume, 9% edit, 1% add
 1% rule -- lurk, lurker
 1% rule = only 1% participants add content https://en.wikipedia.org/wiki/1%25_rule

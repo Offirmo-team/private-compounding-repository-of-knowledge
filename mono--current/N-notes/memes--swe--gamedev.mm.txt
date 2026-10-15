@@ -5,6 +5,7 @@ $1 reward strategy https://updates.kickstarter.com/the-1-reward-strategy/
 [ ] https://bottomfeeder.substack.com/
 [ ] Magic the gathering -- https://magic.wizards.com/en/news/making-magic/state-of-design-2024
 AAA
+AAA - mockery = AAA minesweeper https://minesweeper.mikelacher.com/
 AI
 ambience = help set the tone for the atmosphere of a space
 assets -- audio -- music

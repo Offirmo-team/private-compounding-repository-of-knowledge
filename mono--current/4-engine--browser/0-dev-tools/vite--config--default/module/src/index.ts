@@ -11,23 +11,23 @@ export const CONFIGⵧDEFAULT: UserConfig = {
 	],
 }
 
-export function extend_default_config(configⵧoverrides: UserConfig): ReturnType<typeof defineConfig> {
+export function extendꓽconfigⵧdefault(configⵧoverrides: UserConfig): ReturnType<typeof defineConfig> {
 	const configⵧfinal = mergeⵧdeep<UserConfig>(CONFIGⵧDEFAULT, configⵧoverrides)
 	return defineConfig(configⵧfinal)
 }
 
 /////////////////////////////////////////////////
 
-// For our "final web app" packages: a generated multi-page site under module/src/, built into dist/.
+// For our "final web app" packages: a generated multipage site under module/src/, built into dist/.
 // Every *.html is an entry; static siblings (.json, .txt, .webmanifest, .well-known/…) are copied verbatim.
 // Zero-arg by default — paths derive from the invoking package's cwd. Pass overrides to opt out.
-export function extend_web_app_config(configⵧoverrides: UserConfig = {}): ReturnType<typeof defineConfig> {
+export function extendꓽconfigⵧweb_app(configⵧoverrides: UserConfig): ReturnType<typeof defineConfig> {
 	const dirⵧroot = configⵧoverrides.root ?? resolve(process.cwd(), "module/src")
 	const dirⵧout = configⵧoverrides.build?.outDir ?? resolve(process.cwd(), "dist")
 
 	const configⵧweb_app: UserConfig = {
 		// Emit RELATIVE asset URLs (./assets/…) rather than absolute (/assets/…).
-		// These apps are served under an arbitrary sub-path (ex. /foo/app/nightly/), not the domain root,
+		// Our apps are often served under an arbitrary sub-path (ex. /foo/app/nightly/), not the domain root,
 		// so absolute URLs would 404. Relative works both at root and under any path.
 		base: "./",
 		root: dirⵧroot,
@@ -39,14 +39,14 @@ export function extend_web_app_config(configⵧoverrides: UserConfig = {}): Retu
 			},
 		},
 		server: {
-			port: 1981,
+			port: 1981, // TODO 1D compute from PWD?
 			strictPort: true,
 			open: true,
 		},
 		plugins: [copy_non_html_assets(dirⵧroot, dirⵧout), serve_devtools_json()],
 	}
 
-	return extend_default_config(mergeⵧdeep(configⵧweb_app, configⵧoverrides))
+	return extendꓽconfigⵧdefault(mergeⵧdeep(configⵧweb_app, configⵧoverrides))
 }
 
 function html_entry_points(dir: string): Record<string, string> {
@@ -71,6 +71,7 @@ function copy_non_html_assets(from: string, to: string): Plugin {
 	}
 }
 
+// PROTOTYPE not sure it works
 // Serves /.well-known/appspecific/com.chrome.devtools.json so Chrome DevTools auto-attaches
 // this app's sources as an editable workspace (needs chrome://flags/#devtools-project-settings).
 // Upstream only hooks `configureServer`, so it's already inert at build time — we pin `apply`

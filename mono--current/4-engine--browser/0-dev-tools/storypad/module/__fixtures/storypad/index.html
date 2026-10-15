@@ -12,25 +12,34 @@
 	// build the index of stories https://storybook.js.org/docs/api/main-config/main-config-indexers
 	// important to load async so that the stories don't pollute the global scope too early (ex. before SXC)
 	// note: the extglob .@(...) syntax breaks the vite v8 globber
-	const storiesⵧown = import.meta.glob("../../src/l0-types/l1-csf/**/*.stories.(js|jsx|ts|tsx|mdx)")
-	const storiesⵧofficial = {} // import.meta.glob('../../src/l3-compat/**/*.stories.(js|jsx|ts|tsx|mdx)') // XXX vite alias don't work
+	const storiesⵧownⵧl0 = import.meta.glob("../../src/l0-types/**/*.stories.(js|jsx|ts|tsx|mdx)")
+	const storiesⵧownⵧl1 = import.meta.glob("../../src/l1-flux/**/*.stories.(js|jsx|ts|tsx|mdx)")
+	const storiesⵧownⵧl2 = import.meta.glob("../../src/l2-view/**/*.stories.(js|jsx|ts|tsx|mdx)")
+	const storiesⵧofficial_examples = import.meta.glob("../../src/l3-compat/**/*.stories.(js|jsx|ts|tsx|mdx)")
+	const storiesⵧshared = import.meta.glob("../../src/__shared/stories/**/*.stories.(js|jsx|ts|tsx|mdx)")
 	const storiesⵧstress_tests = {} // import.meta.glob('../../src/__tests/**/*.stories.(js|jsx|ts|tsx|mdx)') // intentionally break Storypad! Enable on-demand
 	if (DEBUG)
 		console.log("BOOTSTRAP stories", {
 			storiesⵧown,
-			storiesⵧofficial,
+			storiesⵧshared,
+			storiesⵧofficial_examples,
 			storiesⵧstress_tests,
 		})
 
 	startꓽstorypad(
 		{
-			own: storiesⵧown,
-			storybook_official: storiesⵧofficial,
+			ownⳇl0: storiesⵧownⵧl0,
+			ownⳇl1: storiesⵧownⵧl1,
+			ownⳇl2: storiesⵧownⵧl2,
+			storiesⵧshared,
+			storiesⵧofficial_examples,
 			stress: storiesⵧstress_tests,
 		},
 		{
 			root_title: nearest_pkg?.name ?? "unknown pkg",
-			decorators: [decoratorⵧdiagnostics],
+			decorators: [
+				//decoratorⵧdiagnostics
+			],
 		},
 	)
 </script>

@@ -16,17 +16,13 @@
 		"./types": "./module/src/l0-types/_entrypoint.ts"
 	},
 	"scripts": {
-		"_build": "run-s build--vite",
 		"_check": "run-s test--vitest test--mocha check:ts",
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
 		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
 		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
-		"build--vite": "vite build",
 		"check:ts": "echo \"@monorepo-private/storypad\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
-		"start": "npm-run-all clean --parallel _start:main--vite",
-		"startp": "npm-run-all clean --parallel _start:main--parcel",
 		"stories": "npm-run-all clean --parallel _start:storypad--vite",
 		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
 		"test--mocha": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
@@ -45,9 +41,7 @@
 		"core-js": "catalog:",
 		"emittery": "catalog:",
 		"prop-types": "catalog:",
-		"react": "catalog:",
 		"react-dom": "catalog:",
-		"tslib": "catalog:",
 		"typescript-string-enums": "catalog:"
 	},
 	"devDependencies": {
@@ -71,10 +65,16 @@
 		"chai": "catalog:",
 		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
+		"react": "catalog:",
 		"sinon": "catalog:",
+		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vite": "catalog:",
 		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"react": "catalog:",
+		"tslib": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file",
 	"alias": {

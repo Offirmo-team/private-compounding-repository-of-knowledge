@@ -11,16 +11,26 @@ const MONOREPO_SPEC_DEFAULT: Immutable<InfiniteMonorepoSpec> = {
 	namespaceⵧprivate: "@monorepo-private",
 	workspaces: [],
 	package_manager: "pnpm",
+	package_manager__configⵧgeneric: {
+		minimumReleaseAge‿minutes: 10080, // =1w
+	},
 	EOL: "\n",
 	PATH_SEP: "/",
 	root_path‿abs: "NOT_YET_LOADED/",
 	_config_fileⵧroot: undefined,
+
+	key: "MONO",
 }
 
 function completeꓽspec(spec: Immutable<Partial<InfiniteMonorepoSpec>>): Immutable<InfiniteMonorepoSpec> {
 	return {
 		...MONOREPO_SPEC_DEFAULT,
 		...spec,
+
+		package_manager__configⵧgeneric: {
+			...MONOREPO_SPEC_DEFAULT.package_manager__configⵧgeneric,
+			...spec.package_manager__configⵧgeneric,
+		},
 	}
 }
 

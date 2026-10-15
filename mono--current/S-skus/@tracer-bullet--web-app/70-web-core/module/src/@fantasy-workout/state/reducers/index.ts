@@ -2,7 +2,10 @@
 
 const MIN_INCREMENT_MS = 1000 / 24 // TODO review should this be left to the UI?
 
-export function create(now_ms: TimestampUTCMs = getꓽUTC_timestamp‿ms()): Immutable<State> {
+export interface CreateParams {
+	now_ms?: TimestampUTCMs // will be inferred if not provided
+}
+export function create({ now_ms = getꓽUTC_timestamp‿ms() }: CreateParams = {}): Immutable<State> {
 	const state: State = {
 		ⵙapp_id: "@fantasy-workout",
 		schema_version: SCHEMA_VERSION,
@@ -74,7 +77,7 @@ export function exitꓽworkout(
 
 /////////////////////////////////////////////////
 
-export function resume(state: Immutable<State>, now_ms: TimestampUTCMs = getꓽUTC_timestamp‿ms()): Immutable<State> {
+export function resume(state: Immutable<State>, { now_ms = getꓽUTC_timestamp‿ms() } = {}): Immutable<State> {
 	const ǃ = assert_from({ resume })
 
 	ǃ.require(state.u_state.current_workout, `can't resume if no workout`)
@@ -95,7 +98,7 @@ export function resume(state: Immutable<State>, now_ms: TimestampUTCMs = getꓽU
 	}
 }
 
-export function pause(state: Immutable<State>, now_ms: TimestampUTCMs = getꓽUTC_timestamp‿ms()): Immutable<State> {
+export function pause(state: Immutable<State>, { now_ms = getꓽUTC_timestamp‿ms() } = {}): Immutable<State> {
 	const ǃ = assert_from({ resume })
 
 	ǃ.require(state.u_state.current_workout, `can't pause if no workout`)
@@ -139,10 +142,7 @@ function _skip(state: Immutable<State>, now_ms: TimestampUTCMs): Immutable<State
 
 /////////////////////////////////////////////////
 
-export function update_to_now(
-	state: Immutable<State>,
-	now_ms: TimestampUTCMs = getꓽUTC_timestamp‿ms(),
-): Immutable<State> {
+export function update_to_now(state: Immutable<State>, { now_ms = getꓽUTC_timestamp‿ms() } = {}): Immutable<State> {
 	const ǃ = assert_from({ update_to_now })
 
 	const elapsed_since_last_update‿ms = now_ms - state.t_state.timestamp_ms

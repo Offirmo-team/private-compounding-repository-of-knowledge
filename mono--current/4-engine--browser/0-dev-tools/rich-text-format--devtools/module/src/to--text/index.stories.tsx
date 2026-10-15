@@ -1,4 +1,4 @@
-import { $EXAMPLE_COMPLETE_NODE } from "@monorepo-private/rich-text-format/examples"
+import { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "@monorepo-private/rich-text-format/examples"
 
 import { type BaseProps } from "../types.ts"
 
@@ -10,6 +10,6 @@ export default {
 
 export const Default = {
 	args: {
-		$doc: $EXAMPLE_COMPLETE_NODE,
+		$doc: $EXAMPLE_COMPLETE_NODEⵧBLOCK,
 	} as BaseProps,
 }

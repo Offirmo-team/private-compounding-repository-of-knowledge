@@ -4,6 +4,10 @@ export function getꓽall_pending_async(state: Immutable<State>) {
 	return Object.values(state.ↆpackageᐧjson_fetches_by_fqname)
 }
 
+export function getꓽminimum_release_age‿minutes(state: Immutable<State>): number {
+	return state.config.minimum_release_age‿minutes ?? 0 // not declared = no constraint
+}
+
 export function isꓽallowed_package(state: Immutable<State>, pkg_name: PkgFQName): boolean {
 	return !state.packages_blocklist.has(pkg_name)
 }
@@ -101,8 +105,7 @@ import * as semver from "semver"
 import { assert_from, assert } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"
 
-import type { Catalog, State } from "./types.ts"
-import type { PkgFQName, PackageJson, State } from "./types.ts"
+import type { Catalog, PkgFQName, PackageJson, State } from "./types.ts"
 import {
 	isꓽnpm_package,
 	getꓽlikely_corresponding_types_pkg,

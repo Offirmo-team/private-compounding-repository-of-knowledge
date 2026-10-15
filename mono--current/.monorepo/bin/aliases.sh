@@ -2,7 +2,7 @@
 [[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!"
 
 ## default = where "gitc" is supposed to clone it
-export MONOREPO_ROOT__CURRENT=${PCRK_ROOT:-"$HOME/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge"};
+export MONOREPO_ROOT__CURRENT=${PCRK_ROOT:-"$HOME/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge/mono--current/"};
 
 alias  mono.@monorepo-private.config--mocha='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 0-meta/config--mocha/'
 alias  mono.@monorepo-private.config--typescript='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 0-meta/config--typescript/'
@@ -64,14 +64,12 @@ alias  mono.@monorepo-private.soft-execution-context--node='cd "$MONOREPO_ROOT__
 alias  mono.@monorepo-private.universal-debug-api--node='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 3-engine--node/2-libs--cross-cutting/universal-debug-api--node/'
 alias  mono.@monorepo-private.tui='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 3-engine--node/X-incubator/active/tui/'
 alias  mono.@monorepo-private.css--utils--diagnostics='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/css--utils--diagnostics/'
-alias  mono.@monorepo-private.parcel--check='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/parcel--check/'
 alias  mono.undefined.parcel--config--default='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/parcel--config--default/'
 alias  mono.@monorepo-private.parcel-resolver='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/parcel--plugin--resolver--improved/'
-alias  mono.undefined.parcel--toolbox='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/parcel--toolbox/'
+alias  mono.@monorepo-private.parcel--tracer-bullet='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/parcel--tracer-bullet/'
 alias  mono.@monorepo-private.rich-text-format--devtools='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/rich-text-format--devtools/'
 alias  mono.@monorepo-private.storypad='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/storypad/'
 alias  mono.@monorepo-private.vite--config--default='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/vite--config--default/'
-alias  mono.undefined.vite--toolbox='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/vite--toolbox/'
 alias  mono.@monorepo-private.vite-plugin-parcel-features='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/vite-plugin-parcel-features/'
 alias  mono.@monorepo-private.assets--background='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/assets--background/'
 alias  mono.@monorepo-private.assets--heroes='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/assets--heroes/'

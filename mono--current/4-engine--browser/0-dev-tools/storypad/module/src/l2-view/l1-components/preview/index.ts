@@ -1,21 +1,8 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import {
-	type RenderParams,
-	aggregateꓽRenderParams,
-	isꓽRenderParamsWithComponent,
-} from "../../../l0-types/l1-csf/index.ts"
-import { type Story‿v2, isꓽStory‿v2 } from "../../../l0-types/l1-csf/v2/index.ts"
-import { type Story‿v3, isꓽStory‿v3, type Meta‿v3 } from "../../../l0-types/l1-csf/v3/index.ts"
-import type { StoryEntry } from "../../../l1-flux/l1-state/types.ts"
-import type { ObservableState } from "../../../l1-flux/l2-observable/index.ts"
-
 /////////////////////////////////////////////////
 
 const LIB = `renderꓽstory()`
 
-async function renderꓽstory(state: ObservableState, container: HTMLElement) {
+export default async function renderꓽstory(state: ObservableState, container: HTMLElement) {
 	// reminder: we want to "pollute" the current window as few as possible
 	// so we avoid containers and CSS as much as we can
 	console.group(`[${LIB}] Rendering a CSF story…`)
@@ -50,6 +37,8 @@ async function renderꓽstory(state: ObservableState, container: HTMLElement) {
 	}
 	console.groupEnd()
 }
+
+/////////////////////////////////////////////////
 
 function _get_parts(state: ObservableState, storyEntry: Immutable<StoryEntry>) {
 	const global_render_params = state.getꓽRenderParamsⵧglobal<Story‿v2 | Story‿v3>()
@@ -137,4 +126,15 @@ async function _renderⵧstory_v3(
 
 /////////////////////////////////////////////////
 
-export default renderꓽstory
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import {
+	type RenderParams,
+	aggregateꓽRenderParams,
+	isꓽRenderParamsWithComponent,
+} from "../../../l0-types/l1-csf/index.ts"
+import { type Story‿v2, isꓽStory‿v2 } from "../../../l0-types/l1-csf/v2/index.ts"
+import { type Story‿v3, isꓽStory‿v3, type Meta‿v3 } from "../../../l0-types/l1-csf/v3/index.ts"
+import type { StoryEntry } from "../../../l1-flux/l1-state/types.ts"
+import type { ObservableState } from "../../../l1-flux/l2-observable/index.ts"

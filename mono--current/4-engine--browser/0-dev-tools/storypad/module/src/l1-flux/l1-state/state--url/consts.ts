@@ -13,5 +13,10 @@ export const QUERYPARAMS = {
 	// seen: &viewMode=story
 	render_mode: "viewMode",
 
+	// globals
+	// seen:
+	// globals=viewport.value:xs   xs sm md lg xl
 	// globals=theme:dark
+	// globals=backgrounds.value:light
+	// globals=backgrounds.grid:!true
 }

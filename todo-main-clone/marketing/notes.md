@@ -21,19 +21,26 @@ Why did the empty folder see a therapist? Nobody would track it, and all it had 
 ## TODO blog posts
 
 - https://refactoringenglish.com/blog/anti-patterns-software-blogging/
-- 
-### my CLAUDE.md as of October 2026
 
-### Tree of load-bearing
+### TODO my CLAUDE.md as of October 2026
+
+### TODO Tree of load-bearing
+
+onion / hexagonal
+UI as a leaf
+
 
 ### non-AI way to improve productivity
 
 - screens
   - multiple
-  - big (IDE)
+  - one big (IDE) high dynamic/refresh
 - mergiraf https://mergiraf.org/usage.html#registration-as-a-git-merge-driver
 - interactive rebases
 - mouse with back/forward
+- RAM
+- ad blocker
+- tree tabs
 
 ### Claude Code issues
 
@@ -50,7 +57,7 @@ Why did the empty folder see a therapist? Nobody would track it, and all it had 
 - duplication
 - context window too small
 
-
+```
 A real speed-up I found: each details/{id} load works out entitlements twice, one after the other. page.tsx calls getAdminEntitlements(),
 then fetchDetails() calls it again in assertEntitledToViewDetails (its defense-in-depth check) before fetching. That's a full
 extra entitlements round trip before the data fetch even starts. Options:
@@ -83,16 +90,24 @@ you decide whether I should memoise getAdminEntitlements per request so entitlem
 
 The flag checks inside are cheap: LaunchDarkly evaluates them in memory. The entitlements SDK call is the expensive part, and the
 detail page pays for it twice, one after the other.
+```
 
-
-## Tosort
-
+### new SWE metrics
 
 Time To Make The Button Bigger
 Time To Make All Buttons Bigger
 Where is my commit / Time for commit to reach 100% users
 
 
+### beyond "load bearing"
+
+terms from "architecture and structural engineering" with good wisdom for software engineers
+
+### evolution of SWE
+
+- 
+
+## Tosort
 
 similar to https://www.joelotter.com/posts/2026/09/make-it-anyway/ about "creative outlet"
 
@@ -104,7 +119,8 @@ Make suggestions for better productivity
 
 
 
-Advocacy
+### Coding LLM Advocacy
+
 * rebase, fix conflicts
 * open PRs
 * infinite polite StackOverflow

@@ -25,7 +25,19 @@ export type PendingAsync<T> = InspectablePromise<
 	}
 >
 
+export interface ResolverConfig {
+	// only pick versions published at least this long ago (supply chain attacks are usually detected quickly)
+	// same semantic as pnpm's minimumReleaseAge https://pnpm.io/settings#minimumreleaseage
+	minimum_release_age‿minutes: number
+}
+
 export interface State {
+	config: {
+		// undefined = not declared yet = no constraint
+		// can be declared only once, a different value later = conflict
+		minimum_release_age‿minutes: number | undefined
+	}
+
 	latest_known_packageᐧjson_by_fqname: Record<PkgFQName, PackageJson>
 
 	ↆpackageᐧjson_fetches_by_fqname: Record<PkgFQName, PendingAsync<PackageJson>>

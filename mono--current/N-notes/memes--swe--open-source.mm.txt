@@ -22,6 +22,7 @@ license -- proliferation https://en.wikipedia.org/wiki/License_proliferation
 license -- Sustainable Use License (SUL).
 lightweight opensource = response to mixed results of open standards (ex. J2EE standard) when trying to avoid vendor lock-in  https://qconlondon.com/london-2009/qconlondon.com/london-2009/presentation/Java%2benterprise%2bapplication%2bstandards%2band%2bwhy%2bthe%2bindustry%2bmoved%2bto%2blightweight%2bopen%2bsource.html
 monetary value https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4693148
+open-source rugpull = Open Source → Semi Opensource → Open Source discontinued https://community.bitwarden.com/t/published-version-update-in-app-stores/102750/9
 source available = https://news.itsfoss.com/open-source-source-available/
 sponsors -- corporate tiers https://zod.dev/?id=sponsors
 sponsors https://zod.dev/?id=sponsors

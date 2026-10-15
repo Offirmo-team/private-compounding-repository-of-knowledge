@@ -1,4 +1,4 @@
-import { $EXAMPLE_COMPLETE_NODE } from "@monorepo-private/rich-text-format"
+import { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "@monorepo-private/rich-text-format"
 
 import type { Meta‿v2, Story‿v2 } from "./index.ts"
 
@@ -9,7 +9,7 @@ export const String: Story‿v2 = () => "This is a CSF v2 story returning plain 
 export const StringHtml: Story‿v2 = () =>
 	`This is a CSF <strong>v2</strong> story returning <em><strong>HTML</strong> as a text.</em>`
 
-export const RichText: Story‿v2 = () => $EXAMPLE_COMPLETE_NODE
+export const RichText: Story‿v2 = () => $EXAMPLE_COMPLETE_NODEⵧBLOCK
 
 export const HtmlElement: Story‿v2 = () => {
 	const div = document.createElement("div")

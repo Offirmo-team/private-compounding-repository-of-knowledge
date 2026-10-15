@@ -138,6 +138,8 @@ getꓽterminal__size = much better
   - `ↆfoo` (if fetched)
   - `ೱfoo` (if long task)
 
+`FooLike` = “something that either is Foo or can naturally be treated as Foo.” e.g. NodeLike = Node | string | number
+
 ### postfixes
 
 #### units

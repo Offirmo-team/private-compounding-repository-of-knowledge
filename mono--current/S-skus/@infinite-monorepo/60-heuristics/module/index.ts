@@ -1,3 +1,5 @@
+export * from "./git-clone-dir.ts"
+
 /////////////////////////////////////////////////
 
 export function isꓽignored_file(entry: FileEntry): boolean {

@@ -40,7 +40,10 @@ export interface InfiniteMonorepoSpec {
 
 	/////// TOOLING ///////
 	package_manager: PackageManagerKey | PackageManagerSpec
-	package_manager__config?: any
+	package_manager__configⵧgeneric: {
+		minimumReleaseAge‿minutes: number
+	}
+	package_manager__configⵧspecific?: any // specific to the package manager
 	//runtime_envⵧdev: { [key: string]: JsRuntimeSpec }
 
 	/////// CODEGEN ///////

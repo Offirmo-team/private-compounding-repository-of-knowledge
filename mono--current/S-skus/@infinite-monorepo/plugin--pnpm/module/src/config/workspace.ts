@@ -1,6 +1,5 @@
-// https://pnpm.io/settings
-
 /////////////////////////////////////////////////
+// https://pnpm.io/settings
 
 export function getꓽconfigⵧv11ⵧstrictest() {
 	return {
@@ -9,11 +8,12 @@ export function getꓽconfigⵧv11ⵧstrictest() {
 		minimumReleaseAgeStrict: true,
 
 		trustPolicy: "no-downgrade",
+		trustPolicyIgnoreAfter: undefined as undefined | number,
 
 		hoist: false, // too dangerous, hides "phantom dependencies"
 		hoistWorkspacePackages: false,
 		hoistPattern: [], // override default
-		publicHoistPattern: [],
+		publicHoistPattern: [] as Array<string>,
 		shamefullyHoist: false,
 
 		// peer deps cause huge mess, we MUST be strict
@@ -35,13 +35,18 @@ export function getꓽconfigⵧv11ⵧstrictest() {
 
 		enablePrePostScripts: false, // INTENTIONAL for better turbo compat
 
+		packages: [],
+
 		catalogMode: "strict",
 		cleanupUnusedCatalogs: true,
-	} as const
+		catalog: {} as { [key: string]: SemVerⳇRange },
+	}
 }
 
-export function getꓽconfigⵧv11ⵧRECOMMENDED() {
-	const config: any = {
+export type PnpmConfig = Partial<ReturnType<typeof getꓽconfigⵧv11ⵧstrictest>>
+
+export function getꓽconfigⵧv11ⵧRECOMMENDED(): PnpmConfig {
+	const config: PnpmConfig = {
 		...getꓽconfigⵧv11ⵧstrictest(),
 		minimumReleaseAgeIgnoreMissingTime: true, // ignore if no time info
 		trustPolicyIgnoreAfter: 129_600, // 3 months
@@ -96,3 +101,4 @@ export const SETTINGSⵧv10ⵧSTRICTEST = {
  */
 
 /////////////////////////////////////////////////
+import type { SemVerⳇRange } from "@monorepo-private/ts--types"

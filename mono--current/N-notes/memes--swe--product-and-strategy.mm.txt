@@ -501,15 +501,15 @@ startup anti-patterns -- Yes man
 startup anti-patterns -- Zombie
 startup anti-patterns = +++ https://www.itamarnovick.com/intro-to-startup-anti-pattern-series/
 startups should avoid being held hostage by the preferences of their early user base if it deviates from the broader market, ex. social feed or reels
-stay fast https://newsletter.posthog.com/p/how-to-design-your-company-for-speed
+stay fast = https://newsletter.posthog.com/p/how-to-design-your-company-for-speed
 Stock Keeping Unit (SKU) = a clearly identified product https://en.wikipedia.org/wiki/Stock_keeping_unit
-strategic dissonance = (Andy Grove) = mismatch between a company's current strategies and changes in the industry due to strategic inflection points
-strategic inflection point = a moment when everything changes (most react too late)
 strategy -- 01 "where we play"
 strategy -- 02 "how we win"
 strategy -- bowling pin = starts with a niche segment easily attainable then move to next niche or broader market
 strategy -- evergreen vs. cyclic
 strategy -- red ocean vs. blue ocean https://www.blueoceanstrategy.com/tools/red-ocean-vs-blue-ocean-strategy/
+strategy -- strategic dissonance = (Andy Grove) = mismatch between a company's current strategies and changes in the industry due to strategic inflection points
+strategy -- strategic inflection point = a moment when everything changes (most react too late)
 strategy tax = negative pattern in a big company where every project / new product has to synergise/contribute to the cash-cow product = can be killer
 support loops = ex. help desk + social media + phone etc.
 system of work = A connected portfolio of products with clear and discrete value propositions; built on a common platform and data model; can help implement an opinionated set of practices for effective teamwork across all kinds of teams
@@ -543,6 +543,7 @@ utility-seekers = the users don’t want to chat with a ghost in the machine; th
 UX -- principles and cognitive bias relevant https://growth.design/psychology
 UX -- stick to established patterns https://medium.com/@daniel.stoyanov/not-following-well-established-ux-design-patterns-is-almost-always-a-bad-idea-58ae01b4f48a
 value extraction -- creating value, not extracting it
+value proposition -- can't be marginal = esp. perf/security, not enough to disrupt. Example: deno vs node, swamped into node compat
 verbal contracts -- beware https://old.reddit.com/r/KitchenConfidential/comments/1ro61g2/how_the_sriracha_guys_screwed_over_their_supplier/
 wartime vs. peacetime https://newsletter.pragmaticengineer.com/p/wartime-vs-peacetime
 what got us here won't get us there…

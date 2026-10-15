@@ -1,9 +1,10 @@
 
 move pulse to 3-
+mode meta/decisions to browser
 
-move non mono--current to mono--others for easier Webstorm
 
-ABC / BBC / NBC
+rename im pkg managers into a grouped pm--
+
 
 do a size check
 
@@ -11,3 +12,4 @@ expand fantasy-workout into individual packages
 
 mbo
 - setup: fps https://testufo.com/
+- dev https://npmx.dev/

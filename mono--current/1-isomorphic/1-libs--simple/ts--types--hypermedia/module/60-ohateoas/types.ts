@@ -1,6 +1,3 @@
-import { type TimestampUTCMs } from "@monorepo-private/timestamps"
-import type { Immutable } from "@monorepo-private/ts--types"
-
 /////////////////////////////////////////////////
 
 // see https://react.dev/learn/extracting-state-logic-into-a-reducer
@@ -33,19 +30,19 @@ export type ReducerMap<State, Action extends ReducerAction> = Record<Action["typ
 // generic actions
 
 // classic TState
-export const ACTION_TYPEꘌUPDATE_TO_NOW: ReducerAction["type"] = "utilⵧupdate_to_now"
+export const ACTION_TYPEꘌUPDATE_TO_NOW = "utilⵧupdate_to_now"
 export interface ActionUpdateToNow extends ReducerAction {
 	type: typeof ACTION_TYPEꘌUPDATE_TO_NOW
 }
 
 // do nothing
-export const ACTION_TYPEꘌNOOP: ReducerAction["type"] = "utilⵧnoop"
+export const ACTION_TYPEꘌNOOP = "utilⵧnoop"
 export interface ActionNoop extends ReducerAction {
 	type: typeof ACTION_TYPEꘌNOOP
 }
 
 // for ex. restoring a game from cloud or a previous save
-export const ACTION_TYPEꘌSET: ReducerAction["type"] = "utilⵧset"
+export const ACTION_TYPEꘌSET = "utilⵧset"
 export interface ActionSet_<State> extends ReducerAction {
 	type: typeof ACTION_TYPEꘌSET
 	new_state: State
@@ -53,10 +50,13 @@ export interface ActionSet_<State> extends ReducerAction {
 
 // for debug / hacks = ex. replenishing energy during local tests
 // should never make it to the server!
-export const ACTION_TYPEꘌHACK: ReducerAction["type"] = "utilⵧhack"
+export const ACTION_TYPEꘌHACK = "utilⵧhack"
 export interface ActionHack_<State> extends ReducerAction {
 	type: typeof ACTION_TYPEꘌHACK
 	custom_reducer: (state: Immutable<State>) => Immutable<State>
 }
 
 /////////////////////////////////////////////////
+
+import { type TimestampUTCMs } from "@monorepo-private/timestamps"
+import type { Immutable } from "@monorepo-private/ts--types"

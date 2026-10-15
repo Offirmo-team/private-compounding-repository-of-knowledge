@@ -1,7 +1,11 @@
 /////////////////////////////////////////////////
 
 export class PkgInfosResolver {
-	#state: Immutable<StateLib.State> = StateLib.create()
+	#state: Immutable<StateLib.State>
+
+	constructor(config: Immutable<Partial<ResolverConfig>> = {}) {
+		this.#state = StateLib.create(config)
+	}
 
 	/////////////////////////////////////////////////
 
@@ -26,6 +30,9 @@ export class PkgInfosResolver {
 	}
 	declareꓽversion_override(pkg_name: PkgFQName, version: SemVerⳇRange): void {
 		this.#state = StateLib.declareꓽversion_override(this.#state, pkg_name, version)
+	}
+	declareꓽminimum_release_age(minimum_release_age‿minutes: number): void {
+		this.#state = StateLib.declareꓽminimum_release_age(this.#state, minimum_release_age‿minutes)
 	}
 
 	ǃgetꓽversionⵧfor_dependencies_field(pkg_name: PkgFQName) {
@@ -76,5 +83,5 @@ export type * from "./state/types.ts"
 import type { Immutable, SemVerⳇRange } from "@monorepo-private/ts--types"
 
 import * as StateLib from "./state/index.ts"
-import type { PkgFQName, PkgNamespace, PackageJson, Catalog } from "./state/types.ts"
+import type { PkgFQName, PkgNamespace, PackageJson, Catalog, ResolverConfig } from "./state/types.ts"
 import { isꓽtypes_pkg } from "./state/utils--npm.ts"

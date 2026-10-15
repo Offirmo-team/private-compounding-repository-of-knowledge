@@ -1,16 +1,6 @@
-/* PROMPT
- */
-
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable, Basename } from "@monorepo-private/ts--types"
-
-import { LIB, SEPⵧSEGMENTS } from "../../../../consts"
-import type { StoryEntry, StoryFolder, StoryTree } from "../../../../l1-flux/l1-state/types.ts"
-import type { ObservableState } from "../../../../l1-flux/l2-observable"
-
 /////////////////////////////////////////////////
 
-function renderⵧsidebar(state: ObservableState): HTMLElement {
+export default function renderⵧsidebar(state: ObservableState): HTMLElement {
 	console.group(`[${LIB}] renderⵧsidebar()`)
 
 	const root = document.createElement("div")
@@ -81,4 +71,9 @@ function _append_leaf(state: ObservableState, story: Immutable<StoryEntry>, path
 
 /////////////////////////////////////////////////
 
-export default renderⵧsidebar
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable, Basename } from "@monorepo-private/ts--types"
+
+import { LIB, SEPⵧSEGMENTS } from "../../../../consts"
+import type { StoryEntry, StoryFolder, StoryTree } from "../../../../l1-flux/l1-state/types.ts"
+import type { ObservableState } from "../../../../l1-flux/l2-observable"

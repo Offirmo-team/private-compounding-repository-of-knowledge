@@ -48,20 +48,22 @@ function mutatePrimitiveType__boolean(x: Immutable<boolean>): void {
 mutatePrimitiveType__boolean(true)
 
 /////////////////////////////////////////////////
-// The semantic of a Readonly<unknown> is unclear
-// I'm not handling it for now.
-// TODO if a proper use case appears
-/*const a: Immutable<unknown> = 1
+const a: Immutable<unknown> = 1
 
 function mutateUnknown(x: Immutable<unknown>): void {
-	// @ts-expect-error TS2339: Property 'foo' does not exist on type 'Readonly<unknown>'
+	// @ts-expect-error TS18046: 'x' is of type 'unknown'
 	x.foo = 33
-	// @ts-expect-error TS7053: Property 'foo' does not exist on type 'Readonly<unknown>'
-	x['foo'] = 33
-	x['bar'].baz = 'y'
+	// @ts-expect-error TS18046: 'x' is of type 'unknown'
+	x["foo"] = 33
 }
 mutateUnknown({})
-mutateUnknown({} as Immutable<unknown>)*/
+mutateUnknown({} as Immutable<unknown>)
+
+// use case: promise inspection
+interface WithUnknownField {
+	reason?: unknown
+}
+const wuf: Immutable<WithUnknownField> = { reason: new Error("x") } as WithUnknownField
 
 /////////////////////////////////////////////////
 function mutateAny(x: Immutable<any>): void {

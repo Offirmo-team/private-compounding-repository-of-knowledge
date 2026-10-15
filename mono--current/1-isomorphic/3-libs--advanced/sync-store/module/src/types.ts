@@ -4,9 +4,6 @@
  * https://react.dev/reference/react/useReducer
  */
 
-import type { Immutable } from "@monorepo-private/ts--types"
-import { type ReducerAction, type Reducer } from "@monorepo-private/ts--types--hypermedia"
-
 /////////////////////////////////////////////////
 
 /* React
@@ -15,16 +12,16 @@ function useReducer<S, A extends AnyActionArg>(
 	initialState: S,
 ): [S, ActionDispatch<A>];
  */
-interface SyncReducerFns<State, InitArgs, Action extends ReducerAction> {
+export interface SyncReducerFns<State, InitParams, Action extends ReducerAction> {
 	reducer: Reducer<State, Action>
-	init(args?: InitArgs): Immutable<State> // slight departure from React = making the init args optional
+	init(args?: InitParams): Immutable<State> // slight departure from React = making the init args optional
 }
 
 /////////////////////////////////////////////////
 
-type Snapshot<State> = Immutable<State>
+export type Snapshot<State> = Immutable<State>
 
-type SyncStoreUnsubscribeFn = () => void
+export type SyncStoreUnsubscribeFn = () => void
 
 /* React
 export function useSyncExternalStore<Snapshot>(
@@ -33,7 +30,7 @@ export function useSyncExternalStore<Snapshot>(
 	getServerSnapshot?: () => Snapshot,
 ): Snapshot;
  */
-interface SyncStoreFns<State, Action extends ReducerAction> {
+export interface SyncStoreFns<State, Action extends ReducerAction> {
 	subscribe: (onStoreChange: () => void) => SyncStoreUnsubscribeFn
 	getSnapshot: () => Snapshot<State>
 
@@ -43,9 +40,10 @@ interface SyncStoreFns<State, Action extends ReducerAction> {
 
 /////////////////////////////////////////////////
 
-type AllStoreFns<State, InitArgs, Action extends ReducerAction> = SyncStoreFns<State, Action> &
-	SyncReducerFns<State, InitArgs, Action>
+export type AllStoreFns<State, InitParams, Action extends ReducerAction> = SyncStoreFns<State, Action> &
+	SyncReducerFns<State, InitParams, Action>
 
 /////////////////////////////////////////////////
 
-export { type Snapshot, type SyncStoreUnsubscribeFn, type SyncStoreFns, type SyncReducerFns, type AllStoreFns }
+import type { Immutable } from "@monorepo-private/ts--types"
+import { type ReducerAction, type Reducer } from "@monorepo-private/ts--types--hypermedia"

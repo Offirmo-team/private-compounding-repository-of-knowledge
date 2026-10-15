@@ -1,9 +1,22 @@
 /////////////////////////////////////////////////
 
-export function create(): Immutable<State> {
+// manual switch, useful to do faster re-exec during dev
+// retrieve from the current pnpm-lock.yaml + pnpm virtual store, only reach npm for what's missing
+// NOTE: some packages are deep deps and not featured in pnpm-lock.yaml + pnpm virtual store, hence this doesn't prevent 100% of fetches
+const PREFER_LOCAL_PNPM = false
+
+/////////////////////////////////////////////////
+
+export function create(config: Immutable<Partial<ResolverConfig>> = {}): Immutable<State> {
 	return {
+		config: {
+			minimum_release_age‿minutes: config.minimum_release_age‿minutes, // = declared at init, if provided
+		},
+
 		latest_known_packageᐧjson_by_fqname: {},
 		ↆpackageᐧjson_fetches_by_fqname: {},
+		requested_fqnames: new Set(),
+		consumed_fqnames: new Set(),
 		packages_blocklist: new Set(),
 		monorepo_pkgs: new Set(),
 		monorepo_namespaces: new Set(),
@@ -45,10 +58,13 @@ export function processꓽresolved_pending_async(state: Immutable<State>): Immut
 					},
 				}
 				console.log(
-					`${ip._auto ? "preemptive" : "    "} package.json loaded for "${pkg_name}" v${semver.clean(packageᐧjson.version)} (${`includes types? ${hasꓽembedded_typescript_types(packageᐧjson)}`})`,
+					`${ip._auto ? "preemptive" : "    "} package.json loaded for "${pkg_name}" v${semver.clean(packageᐧjson.version ?? "")} (${`includes types? ${hasꓽembedded_typescript_types(packageᐧjson)}`})`,
 				)
 
-				if (packageᐧjson._types_package_json) {
+				if (
+					packageᐧjson._types_package_json &&
+					!state.consumed_fqnames.has(packageᐧjson._types_package_json.name)
+				) {
 					const sub_packageᐧjson = packageᐧjson._types_package_json
 					state = {
 						...state,
@@ -58,7 +74,7 @@ export function processꓽresolved_pending_async(state: Immutable<State>): Immut
 						},
 					}
 					console.log(
-						`types      package.json "${sub_packageᐧjson.name}" loaded for "${pkg_name}" v${semver.clean(sub_packageᐧjson.version)}`,
+						`types      package.json "${sub_packageᐧjson.name}" loaded for "${pkg_name}" v${semver.clean(sub_packageᐧjson.version ?? "")}`,
 					)
 				}
 				break
@@ -99,8 +115,6 @@ export function declareꓽmonorepo_namespace(state: Immutable<State>, ns: PkgNam
 	}
 }
 
-// beware of race conditions
-// TODO fix race condition
 export function declareꓽversion_override(
 	state: Immutable<State>,
 	pkg_name: PkgFQName,
@@ -112,16 +126,62 @@ export function declareꓽversion_override(
 		return state
 	}
 
-	if (state.latest_known_packageᐧjson_by_fqname[pkg_name]) {
-		debugger
-	}
-
-	return {
+	state = {
 		...state,
 		specifier_overrides_by_fqname: {
 			...state.specifier_overrides_by_fqname,
 			[pkg_name]: version,
 		},
+	}
+
+	const versionⵧknown = state.latest_known_packageᐧjson_by_fqname[pkg_name]?.version
+	const isꓽknown_still_valid = !!versionⵧknown && semver.satisfies(versionⵧknown, version)
+	if (state.consumed_fqnames.has(pkg_name)) {
+		assert(
+			isꓽknown_still_valid,
+			`Version override "${version}" for "${pkg_name}" declared too late: v${versionⵧknown} was already used! Declare it earlier.`,
+		)
+		return state
+	}
+	if (isꓽknown_still_valid) return state
+
+	const isꓽretrieved_or_retrieving =
+		state.requested_fqnames.has(pkg_name) || !!state.latest_known_packageᐧjson_by_fqname[pkg_name]
+	if (!isꓽretrieved_or_retrieving) return state // the override will be used when requested
+
+	console.log(`"${pkg_name}": version override "${version}" declared after retrieval, re-retrieving…`)
+	return _launchꓽretrieval(state, pkg_name)
+}
+
+export function declareꓽminimum_release_age(
+	state: Immutable<State>,
+	minimum_release_age‿minutes: number,
+): Immutable<State> {
+	const ǃ = assert_from({ declareꓽminimum_release_age })
+
+	// we can't tell whether a consumed version is old enough (no publish date)
+	assert(
+		state.consumed_fqnames.size === 0,
+		`Minimum release age declared too late, some packages were already used: ${[...state.consumed_fqnames].join(", ")}! Declare it earlier.`,
+	)
+
+	state = {
+		...state,
+		config: { ...state.config, minimum_release_age‿minutes },
+	}
+
+	console.log(
+		`minimum release age = ${minimum_release_age‿minutes}min declared after retrievals, re-retrieving ${state.requested_fqnames.size} package(s)…`,
+	)
+	return [...state.requested_fqnames].reduce((state, pkg_name) => _launchꓽretrieval(state, pkg_name), state)
+}
+
+export function markꓽconsumed(state: Immutable<State>, pkg_name: PkgFQName): Immutable<State> {
+	if (state.consumed_fqnames.has(pkg_name)) return state
+
+	return {
+		...state,
+		consumed_fqnames: new Set([...state.consumed_fqnames, pkg_name]),
 	}
 }
 
@@ -129,13 +189,13 @@ export function declareꓽversion_override(
 export function set(state: Immutable<State>, packageᐧjson: PackageJson, { force = false } = {}): Immutable<State> {
 	const ǃ = assert_from({ set })
 
-	ǃ.for_param({ packageᐧjson }).require(packageᐧjson.name, `Package name is required!`)
+	ǃ.forⵧparam({ packageᐧjson }).require(packageᐧjson.name, `Package name is required!`)
 
 	if (state.latest_known_packageᐧjson_by_fqname[packageᐧjson.name]) {
-		ǃ.for_value({ state }).ensure(force, `Package "${packageᐧjson.name}" should not be already loaded!`)
+		ǃ.forⵧvalue({ state }).ensure(force, `Package "${packageᐧjson.name}" should not be already loaded!`)
 	}
 	if (state.ↆpackageᐧjson_fetches_by_fqname[packageᐧjson.name]) {
-		ǃ.for_value({ state }).ensure(force, `Package "${packageᐧjson.name}" should not be already loading!`)
+		ǃ.forⵧvalue({ state }).ensure(force, `Package "${packageᐧjson.name}" should not be already loading!`)
 	}
 
 	return {
@@ -166,18 +226,7 @@ export function preload_if_npm(
 	}
 	if (state.ↆpackageᐧjson_fetches_by_fqname[maybe_pkg_name]) return state
 
-	const version = state.specifier_overrides_by_fqname[pkg_name]
-	console.log(`PkgVersionResolver now querying "${pkg_name}"…`)
-
-	state = {
-		...state,
-		ↆpackageᐧjson_fetches_by_fqname: {
-			...state.ↆpackageᐧjson_fetches_by_fqname,
-			[pkg_name]: ↆfetchꓽpackageᐧjson(pkg_name, version, _auto),
-		},
-	}
-
-	return state
+	return _launchꓽretrieval(state, pkg_name, _auto)
 }
 
 // TODO review semantic
@@ -199,7 +248,7 @@ export function add_catalog_entry(
 	const v = ǃgetꓽversionⵧfor_catalog(state, pkg_name)
 
 	return {
-		...state,
+		...markꓽconsumed(state, pkg_name),
 		catalogs: {
 			...state.catalogs,
 			[catalog_name]: {
@@ -210,16 +259,36 @@ export function add_catalog_entry(
 	}
 }
 
-function ↆfetchꓽpackageᐧjson(
+// (re-)launch with the current constraints, superseding any previous retrieval
+function _launchꓽretrieval(state: Immutable<State>, pkg_name: PkgFQName, _auto: boolean = false): Immutable<State> {
+	const version = state.specifier_overrides_by_fqname[pkg_name]
+	console.log(`PkgVersionResolver now querying "${pkg_name}"…`)
+
+	// superseded = nobody will await it anymore, a rejection would crash the process as "unhandled"
+	state.ↆpackageᐧjson_fetches_by_fqname[pkg_name]?.catch(() => {})
+
+	const { [pkg_name]: _superseded, ...latest_known_packageᐧjson_by_fqname } = state.latest_known_packageᐧjson_by_fqname
+
+	return {
+		...state,
+		latest_known_packageᐧjson_by_fqname,
+		requested_fqnames: new Set([...state.requested_fqnames, pkg_name]),
+		ↆpackageᐧjson_fetches_by_fqname: {
+			...state.ↆpackageᐧjson_fetches_by_fqname,
+			[pkg_name]: ↆretrieveꓽpackageᐧjson(pkg_name, version, _auto, state.config),
+		},
+	}
+}
+
+function ↆretrieveꓽpackageᐧjson(
 	pkg_name: PkgFQName,
 	version: SemVerⳇRange | undefined,
 	_auto: boolean,
+	config: Immutable<ResolverConfig>,
 ): Immutable<PendingAsync<PackageJson>> {
-	let raw: Promise<PackageJson> = _ↆfetchꓽpackageᐧjson(pkg_name, {
-		...(version && { version }),
-		fullMetadata: true,
-		omitDeprecated: true,
-	})
+	let raw: Promise<PackageJson> = _ↆretrieveꓽpackageᐧjson(pkg_name, version, () =>
+		ↆfetchꓽpackageᐧjsonⵧfrom_network(pkg_name, { ...config, version_specifier: version }),
+	)
 
 	if (!pkg_name.startsWith("@types/")) {
 		// pre-emptively try to load types as well (BUT may not be needed or not exist)
@@ -243,10 +312,19 @@ function ↆfetchꓽpackageᐧjson(
 				)
 
 				try {
-					return await _ↆfetchꓽpackageᐧjson(potential_types_pkg_name)
+					return await _ↆretrieveꓽpackageᐧjson(potential_types_pkg_name, undefined, () =>
+						ↆfetchꓽpackageᐧjsonⵧfrom_network(potential_types_pkg_name, {
+							...config,
+							version_specifier: undefined,
+						}),
+					)
 				} catch (err) {
 					if ((err as any)?.name === "PackageNotFoundError") {
 						console.log(`Preemptive pkg ${potential_types_pkg_name} not found, ignoring.`)
+						return undefined
+					}
+					if ((err as any)?.name === "VersionNotFoundError") {
+						console.log(`Preemptive pkg ${potential_types_pkg_name} has no version old enough, ignoring.`)
 						return undefined
 					}
 
@@ -268,9 +346,22 @@ function ↆfetchꓽpackageᐧjson(
 	})
 }
 
+async function _ↆretrieveꓽpackageᐧjson(
+	pkg_name: PkgFQName,
+	version_specifier: SemVerⳇRange | undefined,
+	ↆfetchⵧfallback: () => Promise<PackageJson>,
+): Promise<PackageJson> {
+	if (!PREFER_LOCAL_PNPM) return ↆfetchⵧfallback()
+
+	const packageᐧjsonⵧlocal = await ↆgetꓽpackageᐧjsonⵧfrom_local_pnpm(pkg_name, version_specifier)
+	if (packageᐧjsonⵧlocal) return packageᐧjsonⵧlocal
+
+	console.log(`"${pkg_name}" not available in the local pnpm store, falling back…`)
+	return ↆfetchⵧfallback()
+}
+
 /////////////////////////////////////////////////
 
-import _ↆfetchꓽpackageᐧjson from "package-json"
 import * as semver from "semver"
 
 import { assert_from, assert } from "@monorepo-private/assert"
@@ -278,5 +369,7 @@ import type { Immutable, SemVerⳇRange } from "@monorepo-private/ts--types"
 import { deriveꓽInspectablePromise } from "@monorepo-private/utils--async"
 
 import { assertꓽallowed_package, isꓽmonorepo_package, ǃgetꓽversionⵧfor_catalog } from "./selectors.ts"
-import type { State, PackageJson, PkgFQName, PkgNamespace, PendingAsync } from "./types.ts"
+import type { State, PackageJson, PkgFQName, PkgNamespace, PendingAsync, ResolverConfig } from "./types.ts"
+import { ↆfetchꓽpackageᐧjsonⵧfrom_network } from "./utils--network.ts"
 import { isꓽnpm_package, getꓽlikely_corresponding_types_pkg, hasꓽembedded_typescript_types } from "./utils--npm.ts"
+import { ↆgetꓽpackageᐧjsonⵧfrom_local_pnpm } from "./utils--pnpm.ts"

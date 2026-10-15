@@ -72,6 +72,7 @@ corn laws https://en.wikipedia.org/wiki/Corn_Laws
 corruption -- Abscam = FBI sting operation where member of Congress were approached with a large sum of money in exchange for... "I've got larceny in my blood. I'd take it in a goddamn minute." "I do not consider myself a hero... what have we come to if turning down a bribe is 'heroic'?" https://en.wikipedia.org/wiki/Abscam
 corruption -- bribes https://bribes.fyi/before-you-go
 corruption -- facilitation payments = minor payments made to public officials through unofficial channels to expedite or secure the performance of routine government actions of a minor nature
+corruption -- lobbying = it is https://carette.xyz/posts/lobbying_and_corruption/
 corruption = abuse of entrusted power for private gain.
 cosmos -- 1610 https://en.wikipedia.org/wiki/Copernican_Revolution
 cosmos -- 1920 galaxies https://en.wikipedia.org/wiki/Great_Debate_(astronomy)
@@ -97,15 +98,17 @@ doomscrolling https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death
 doomsday
 droits de l'homme = https://fr.wikisource.org/wiki/Charte_internationale_des_Droits_de_l%E2%80%99Homme_(1948)/D%C3%A9claration_universelle_des_Droits_de_l%E2%80%99Homme
 early life on Earth https://www.quantamagazine.org/a-treasure-trove-of-cambrian-fossils-rewrites-the-story-of-early-life-20260501/
-electricity
-electricity -- light bulb
-electricity grid = https://spectrum.ieee.org/delhi-electricity-loss
 elite abuses -- Epstein = elite abuses, never indicted https://www.theguardian.com/us-news/2025/dec/23/epstein-unredacted-files-social-media
 elite abuses -- Epstein-class = power level where even child abuse is not warranting any consequence (e.g. Trump, Sam Altman...)
 empire = a state where one set of people (the core) extract resources (typically by force) from another set of people (the periphery) https://acoup.blog/2019/11/22/collections-why-are-there-no-empires-in-age-of-empires/
 empire = diverse forms
 empire = dominant form of large-scale human social organization since as far back as our sources let us see clearly
-energy superusers https://hardware.slashdot.org/story/25/10/31/1646235/the-worlds-secret-electricity-superusers-revealed
+energy -- electricity
+energy -- electricity -- cuts
+energy -- electricity -- light bulb = no longer need for daylight or dangerous weak candles
+energy -- electricity -- voltage sag = can destroy some equipments
+energy -- electricity grid = https://spectrum.ieee.org/delhi-electricity-loss
+energy -- superusers https://hardware.slashdot.org/story/25/10/31/1646235/the-worlds-secret-electricity-superusers-revealed
 every world power has its time in the sun, thanks to the uniqueness of their circumstances and the nature of their character and culture (e.g., they have the essential elements of a strong work ethic, smarts, discipline, education, etc.), but they all eventually decline. Some do so more gracefully than others, with less trauma, but they nevertheless decline https://x.com/RayDalio/status/2022788750388998543
 expand human potential
 family

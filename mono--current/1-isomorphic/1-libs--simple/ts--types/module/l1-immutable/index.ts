@@ -54,7 +54,9 @@ export type Immutable<T> = true extends false
 				? ImmutableSet<M>
 				: T extends EmptyStruct
 					? ImmutableObject<T> // this line is greedy with other container types+fn, must be last!
-					: never // if we reach this, need to extend this conditional type
+					: // only "unknown" reaches here. It can't be mutated without narrowing first = already safe, keep it.
+						// ("never" would make any "unknown" field unassignable, ex. a promise rejection reason)
+						T
 
 /////////////////////
 

@@ -1,23 +1,28 @@
-import { Enum } from "typescript-string-enums"
-
-import type { Emoji, Hyperlink‿x } from "@monorepo-private/ts--types--hypermedia"
-
 /////////////////////////////////////////////////
+
+// Node + can naturally be treated as a Node
+// NOTE:
+// - We want Nodes to be natively JSON serializable, so NO BigInt, date...
+// - boolean, null = let's wait before assigning meaning to them
+export type NodeLike = string | number | Node
+
+export type Node = Partial<StrictNode>
 
 // using type instead of interface to prevent extra properties
 // (bc not supposed to extend this. See $hints for an open-ended extension point)
-type StrictNode = {
-	$v: number // schema version
+export type StrictNode = {
+	$v: number // schema version (currently not enforced anywhere AFAIR)
 
-	// if not provided, inferred from $content shape: Array → block, otherwise → inline
+	// if not provided, inferred from $content shape: Array ? block : inline
 	// (this is the key invariant: block-level nodes MUST have an Array $content)
 	// Not in $hints because it's core to the rendering
 	$type: NodeType | "auto" // auto = "resolve later from $content shape" (see getꓽtype() in misc.ts)
 
 	// Heading, in the generic/semantic sense =
-	// - word or phrase that or sentence that explains what the following part is about
+	// - single word or phrase that or sentence that explains what the following part is about
 	// - written at the beginning of a structural part => is a structural element of a document
 	// - clearly indicates the content of the following section
+	// KEY INVARIANT: if $heading is present, this is a block node
 	// In our case:
 	// - indicates that the content is collapsible into just the heading (if UI allows it)
 	// - ~maps to a heading (HTML h1..h6, Markdown # ## ###) most of the time
@@ -26,7 +31,7 @@ type StrictNode = {
 	// - MAY map to a caption/figcaption if the node is a figure
 	// - may map to simple text if the content is a list (no <h>)
 	$heading: NodeLike | null
-	// Note: no footer, no known use case so far + not the same "collapsible" semantics
+	// $footer NO, no known use case so far + not the same "collapsible" semantics
 
 	// Content of the node
 	// KEY INVARIANT: Array $content ↔ block-level node (this is how 'auto' $type is resolved)
@@ -43,6 +48,7 @@ type StrictNode = {
 
 	// hints for renderers. May or may not be used, depending on renderer support
 	// important read: https://nicolasgallagher.com/about-html-semantics-front-end-architecture/
+	// TODO refine cross-platform (1D)
 	$classes: string[] // not in $hints because too useful, 1st class citizen
 
 	// - NOTE rendering should be still acceptable even if $hints is stripped out
@@ -50,7 +56,7 @@ type StrictNode = {
 	$hints: Hints
 }
 
-const NodeType = Enum(
+export const NodeType = Enum(
 	// inline vs. block https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Display/Block_and_inline_layout
 
 	/////// display "inline"
@@ -95,13 +101,13 @@ const NodeType = Enum(
 
 	// 'auto' is intentionally not listed here: it's NOT a NodeType but a special internal hint to ask the NodeType to be resolved.
 )
-type NodeType = Enum<typeof NodeType> // eslint-disable-line no-redeclare
+export type NodeType = Enum<typeof NodeType> // eslint-disable-line no-redeclare
 
 // hints for progressive enhancement
 // - for rendering, hints should be OPTIONAL and any renderer should be able to render decently without them
 // - for non-rendering (ex. hypermedia features) hints can be made mandatory
 // UnderlyingData = JSON = no, causes the error "Type instantiation is excessively deep and possibly infinite."
-interface Hints<UnderlyingData = any, HyperLink = Hyperlink‿x> {
+export interface Hints<UnderlyingData = any, HyperLink = Hyperlink‿x> {
 	// string or keyword to use as bullets. to remove bullets: ''
 	// https://www.w3schools.com/cssref/pr_list-style-type.php
 	list__style__type?: string
@@ -125,20 +131,15 @@ interface Hints<UnderlyingData = any, HyperLink = Hyperlink‿x> {
 	[k: string]: any // TODO better TS hintable format cf. Matt Poccock
 }
 
-type SubNodeKey = string
-
-type Node = Partial<StrictNode>
-
-// Node + stuff trivial+safe to promote to a Node
-type NodeLike = string | number | Node
-// We want Nodes to be natively JSON serializable, so no BigInt, date...
-// boolean, null = let's wait before assigning meaning to them
-
-///////
-
-// aliases
-type Document = NodeLike
+export type SubNodeKey = string
 
 /////////////////////////////////////////////////
 
-export { NodeType, type Hints, type SubNodeKey, type StrictNode, type Node, type NodeLike, type Document }
+// aliases
+export type Document = NodeLike
+
+/////////////////////////////////////////////////
+
+import { Enum } from "typescript-string-enums"
+
+import type { Emoji, Hyperlink‿x } from "@monorepo-private/ts--types--hypermedia"

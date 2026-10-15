@@ -1,4 +1,4 @@
-import { $EXAMPLE_COMPLETE_NODE } from "@monorepo-private/rich-text-format/examples"
+import { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "@monorepo-private/rich-text-format/examples"
 import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"
 
 import { RichTextCombinedRender as Component } from "./index.tsx"
@@ -15,6 +15,6 @@ export default {
 
 export const Default: Story‿v3 = {
 	args: {
-		$doc: $EXAMPLE_COMPLETE_NODE,
+		$doc: $EXAMPLE_COMPLETE_NODEⵧBLOCK,
 	} as BaseProps,
 }

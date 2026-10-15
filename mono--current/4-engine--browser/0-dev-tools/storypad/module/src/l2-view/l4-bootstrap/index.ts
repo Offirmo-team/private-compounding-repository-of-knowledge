@@ -1,42 +1,29 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import { _request_install_better_console_groups_if_not_already } from "@monorepo-private/better-console-groups"
-import type { Immutable } from "@monorepo-private/ts--types"
-import { asap_but_out_of_immediate_execution } from "@monorepo-private/utils--async"
-/////////////////////////////////////////////////
-
-import { LIB, DEBUG } from "../../consts.ts"
-import type { Config } from "../../l0-types/l2-config/index.ts"
-
 /////////////////////////////////////////////////
 
 _request_install_better_console_groups_if_not_already()
 
 // strange behavior on Parcel.js start
+/*
 Array.from({ length: 10 }, () => {
 	console.log("⇱")
 	console.groupEnd()
 })
+ */
 
 const is_iframe = window.location !== window.parent.location
 console.info(
 	`%c ${LIB} %c${"CSFv3"}%c${"HTML/React"} [${is_iframe ? "SUB frame" : "TOP frame"}]`,
 	"border-radius: 1em; padding: .1em .5em; margin-inline-end: 1ch; background-color: hsl(337, 16%, 28%); color: hsl(42, 100%, 87%); font-weight: bold;",
-	"border-radius: 1em; padding: .1em .5em; margin-inline-end: 1ch; background-color: darkgrey; color: black; font-weight: bold;",
-	"border-radius: 1em; padding: .1em .5em; margin-inline-end: 1ch; background-color: darkgrey; color: black;",
+	`border-radius: 1em; padding: .1em .5em; margin-inline-end: 1ch; background-color: ${is_iframe ? "darkgrey" : "turquoise"}; color: black; font-weight: bold;`,
+	`border-radius: 1em; padding: .1em .5em; margin-inline-end: 1ch; background-color: ${is_iframe ? "darkgrey" : "turquoise"}; color: black;`,
 )
 const misconfig_detection = setTimeout(() => {
 	console.warn(`no call to startꓽstorypad() detected. Check your setup!`)
 }, 1500)
 
-/////////////////////////////////////////////////
-
-import { ObservableState } from "../../l1-flux/l2-observable/index.ts"
-
-import render from "./render-root.ts"
-
 ////////////////////////////////////////////////////////////////////////////////////
 
-async function startꓽstorypad(stories_glob: Immutable<any>, config?: Immutable<Config>) {
+export async function startꓽstorypad(stories_glob: Immutable<any>, config?: Immutable<Config>) {
 	clearTimeout(misconfig_detection)
 
 	DEBUG && console.log(`[${LIB}] scheduling…`)
@@ -93,6 +80,26 @@ async function startꓽstorypad(stories_glob: Immutable<any>, config?: Immutable
 		const flux = new ObservableState()
 		try {
 			await flux.init(stories_glob, config)
+
+			if (is_iframe) {
+				// we want to report some stuff to our parent
+				flux.emitter.on("change", (event) => {
+					switch (event.data.type) {
+						case "addꓽannotation": {
+							sendꓽmessageⵧto_parent_frameⵧif_any({
+								type: "addꓽannotation",
+								payload: { key: event.data.key, value: event.data.value },
+							})
+							break
+						}
+						default: {
+							console.warn("Seen emitted state change of unknown type", event)
+							break
+						}
+					}
+				})
+			}
+
 			console.log(`[${LIB}] 2/3 Flux init ✅`)
 		} catch (err) {
 			console.error(err)
@@ -116,4 +123,14 @@ async function startꓽstorypad(stories_glob: Immutable<any>, config?: Immutable
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-export { startꓽstorypad }
+import { assert_from, assert } from "@monorepo-private/assert"
+import { _request_install_better_console_groups_if_not_already } from "@monorepo-private/better-console-groups"
+import type { Immutable } from "@monorepo-private/ts--types"
+import { asap_but_out_of_immediate_execution } from "@monorepo-private/utils--async"
+
+import { LIB, DEBUG } from "../../consts.ts"
+import type { Config } from "../../l0-types/l2-config/index.ts"
+import { ObservableState } from "../../l1-flux/l2-observable/index.ts"
+import { sendꓽmessageⵧto_parent_frameⵧif_any } from "../l0-services/frame-messaging.ts"
+
+import render from "./render-root.ts"

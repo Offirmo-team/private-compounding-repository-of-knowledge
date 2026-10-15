@@ -1,16 +1,11 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import { type NodeLike, type Node, isꓽNodeLike, assertꓽNodeInvariants } from "../l1-types/index.ts"
-import { NodeType, isꓽNode, getꓽdisplay_type } from "../l1-types/index.ts"
-
-import { getꓽtype } from "./misc.ts"
-import { promoteꓽto_node } from "./promote.ts"
-
 /////////////////////////////////////////////////
 
-function wrap($nodeⵧto_wrap: Immutable<NodeLike>, typeⵧwrapper: NodeType): Immutable<NodeLike> {
-	assert(typeⵧwrapper !== "fragmentⵧinline", `should not wrap in a type with no semantic meaning!`)
+export function wrap($nodeⵧto_wrap: Immutable<NodeLike>, typeⵧwrapper: NodeType): Immutable<NodeLike> {
+	const ǃ = assert_from({ wrap })
+	ǃ.forⵧparam({ typeⵧwrapper }).require(
+		typeⵧwrapper !== "fragmentⵧinline",
+		`should not wrap in a type with no semantic meaning`,
+	)
 
 	const typeⵧwrapped = getꓽtype($nodeⵧto_wrap)
 	if (typeⵧwrapped === typeⵧwrapper) {
@@ -19,11 +14,11 @@ function wrap($nodeⵧto_wrap: Immutable<NodeLike>, typeⵧwrapper: NodeType): I
 	}
 
 	const display_typeⵧwrapped = getꓽdisplay_type($nodeⵧto_wrap)
-	assert(display_typeⵧwrapped)
+	ǃ.ensure(display_typeⵧwrapped)
 	const display_typeⵧwrapper = getꓽdisplay_type({ $type: typeⵧwrapper })
-	assert(display_typeⵧwrapper)
+	ǃ.ensure(display_typeⵧwrapper)
 	if (display_typeⵧwrapped === "block") {
-		assert(display_typeⵧwrapper === "block", "wrap(): cannot wrap a block inside an inline!")
+		ǃ.ensure(display_typeⵧwrapper === "block", "cannot wrap a block inside an inline")
 	}
 
 	if (typeⵧwrapper === "fragmentⵧblock" && display_typeⵧwrapped === "block") {
@@ -65,4 +60,11 @@ function wrap($nodeⵧto_wrap: Immutable<NodeLike>, typeⵧwrapper: NodeType): I
 }
 /////////////////////////////////////////////////
 
-export { wrap }
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import { type NodeLike, type Node, isꓽNodeLike, assertꓽNodeInvariants } from "../l1-types/index.ts"
+import { NodeType, isꓽNode, getꓽdisplay_type } from "../l1-types/index.ts"
+
+import { getꓽtype } from "./misc.ts"
+import { promoteꓽto_node } from "./promote.ts"

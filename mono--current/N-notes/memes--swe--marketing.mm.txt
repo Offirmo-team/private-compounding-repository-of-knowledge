@@ -98,6 +98,7 @@ reputation management -- REPCOM
 reputation management = https://en.wikipedia.org/wiki/Reputation_management
 SEO -- agentic -- insights = https://knownagents.com/insights
 social media -- handle -- confiscation = https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/
+social media -- reverse engineering the algorithm https://www.barchart.com/story/news/5472260/mrbeast-told-billionaire-mark-cuban-he-spends-millions-of-dollars-reverse-engineering-the-algorithms-on-each-platform-so-he-never-runs-out-of-ideas
 talks -- how to speak = +++ https://gist.github.com/StevenMaude/280eadc60938ce4b6960dc60e830662d
 transfer of enthusiasm https://x.com/jasonfried/status/1961157371235111304
 trust building

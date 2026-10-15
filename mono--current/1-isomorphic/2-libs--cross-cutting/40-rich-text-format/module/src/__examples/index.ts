@@ -224,7 +224,7 @@ export const $EXAMPLE__USE_CASE__WALLET: RichText.Document = {
 */
 
 /////// Misc ///////
-export { $EXAMPLE_COMPLETE_NODE } from "../l1-types/guards.ts"
+export { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "../l1-types/guards.ts"
 
 /*
 const $DEMOⵧSIMPLE = (() => {

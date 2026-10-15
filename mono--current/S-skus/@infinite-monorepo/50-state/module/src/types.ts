@@ -46,7 +46,7 @@ export interface SubStateⳇFactsFile {
 		| "error" // issue reading this structured file, ex. parse error
 		| JSONObject // structured result
 	// those props are only present when content is undefined
-	ↆretrieval: Promise<JSONObject>
+	ↆretrieval?: Promise<JSONObject>
 	pending_callbacks?: Array<AsyncCallbackReducer<JSONObject | null>>
 	_error?: XXError
 }

@@ -16,10 +16,8 @@ export const manifestꓽᐧpnpmfileᐧmjs: StructuredFsⳇFileManifest = {
 
 const PLUGIN_ENTRY = Symbol("pnpm")
 
-type PnpmSpec = JSONObject // TODO
-
 interface PluginStateⳇSpec {
-	spec: PnpmSpec
+	config: PnpmConfig
 }
 
 /////////////////////////////////////////////////
@@ -38,14 +36,38 @@ export const PLUGIN: Plugin = {
 
 	onꓽnodeⵧdiscoveredⵧfirst_time(state: Immutable<State>, node: Immutable<Node>): Immutable<State> {
 		// at this stage, we may not even know whether we're using pnpm or not
+		const ǃ = assert_from({ onꓽnodeⵧdiscoveredⵧfirst_time: () => {} })
 
 		switch (node.type) {
 			case "monorepo": {
 				// init plugin state
+
+				const configⵧgeneric = state.specⵧroot.package_manager__configⵧgeneric
+				const configⵧspecific = state.specⵧroot.package_manager__configⵧspecific ?? {}
+				const configⵧaggregated: PnpmConfig = (() => {
+					let result: PnpmConfig = mergeⵧdeep(getꓽconfigⵧv11ⵧRECOMMENDED(), configⵧspecific)
+
+					const to_process = new Set<string>(Object.keys(configⵧgeneric))
+					if (configⵧgeneric.minimumReleaseAge‿minutes) {
+						ǃ.assert(
+							configⵧspecific.minimumReleaseAge === undefined ||
+								configⵧspecific.minimumReleaseAge === configⵧgeneric.minimumReleaseAge‿minutes,
+							`pnpm plugin: conflicting minimum release age! you defined both configⵧspecific.minimumReleaseAge and configⵧgeneric.minimumReleaseAge‿minutes`,
+						)
+						result.minimumReleaseAge = configⵧgeneric.minimumReleaseAge‿minutes
+						to_process.delete("minimumReleaseAge‿minutes")
+					}
+
+					if (to_process.size) {
+						throw new Error(
+							`pnpm plugin: TODO handle generic config "${Array.from(to_process.keys()).join(",")}"`,
+						)
+					}
+
+					return result
+				})()
 				const plugin_state: PluginStateⳇSpec = {
-					spec: {
-						...mergeⵧdeep(getꓽconfigⵧv11ⵧRECOMMENDED(), state.specⵧroot.package_manager__config ?? {}),
-					},
+					config: configⵧaggregated,
 				}
 
 				state = StateLib.reduceꓽplugin_area(state, PLUGIN_ENTRY, () => plugin_state)
@@ -74,9 +96,9 @@ export const PLUGIN: Plugin = {
 							return {
 								...ps,
 								spec: {
-									...ps.spec,
+									...ps.config,
 									allowBuilds: {
-										...ps.spec.allowBuilds,
+										...ps.config.allowBuilds,
 										...result.dataⵧjson.allowBuilds,
 									},
 								},
@@ -338,6 +360,7 @@ import {
 } from "@infinite-monorepo/types-for-plugins"
 import { WORKSPACE_MANIFEST_FILENAME, WANTED_LOCKFILE } from "@pnpm/constants" // https://github.com/pnpm/pnpm/blob/main/core/constants/src/index.ts
 
+import { assert, assert_from } from "@monorepo-private/assert"
 import { lsDirsSync, lsFilesSync } from "@monorepo-private/fs--ls"
 import { mergeⵧdeep } from "@monorepo-private/merge"
 import type {
@@ -349,4 +372,4 @@ import type {
 } from "@monorepo-private/ts--types"
 import { isꓽError } from "@monorepo-private/utils--error/v2"
 
-import { getꓽconfigⵧv11ⵧRECOMMENDED } from "./config/workspace.ts"
+import { type PnpmConfig, getꓽconfigⵧv11ⵧRECOMMENDED } from "./config/workspace.ts"

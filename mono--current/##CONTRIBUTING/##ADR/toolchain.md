@@ -3,18 +3,18 @@
 **pnpm**, killing features:
 
 - catalogs
-- plenty of others
+- plenty of other features, like workspaces, security etc.
 
 Why not npm?
 
-- last try 2022/03 npm ^8
-- (blocker) npm output spurious "timing" lines blotting the output
-- npm requires "run" `npm run dev`
-- overall npm doesn't seem as reliable as yarn
+- last try 2022/03 npm ^8:
+  - (blocker) npm output spurious "timing" lines blotting the output
+  - npm requires "run" `npm run dev`
+  - overall npm doesn't seem as reliable as yarn
 
 Why not yarn? https://yarnpkg.com/blog/bun https://github.com/yarnpkg/berry
 
-- as of 2026 pnpm outpaced it in terms of features and is the de-facto standard
+- as of 2026 pnpm outpaced it in terms of features and pnpm has become the de-facto standard
 
 ## monorepo
 
@@ -25,7 +25,7 @@ Why not yarn? https://yarnpkg.com/blog/bun https://github.com/yarnpkg/berry
 Why not yarn workspaces?
 
 - they can't run commands in the dependency order (TODO reevaluate with turborepo)
-- they can't run commands on a glob (TODO reevaluate TODO reevaluate with turborepo)
+- they can't run commands on a glob (TODO reevaluate with turborepo)
 
 Why not rush? https://github.com/pnpm/pnpm
 

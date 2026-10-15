@@ -13,12 +13,12 @@ const DEBUG = false
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const POSSIBLY_UNRESURRECTED_OFFIRMO_MODULES = [
-	// cross-cutting
-	"@monorepo-private/react--error-boundary",
-	"@monorepo-private/rich-text-format--to-react",
-	"@monorepo-private/soft-execution-context--browser",
-	"@monorepo-private/practical-logger--browser",
-	"@monorepo-private/universal-debug-api--browser",
+	// provision for modules that may temporarily erro while we resurrect the repo
+	//"@monorepo-private/react--error-boundary",
+	//"@monorepo-private/rich-text-format--to-react",
+	//"@monorepo-private/soft-execution-context--browser",
+	//"@monorepo-private/practical-logger--browser",
+	//"@monorepo-private/universal-debug-api--browser",
 ]
 
 export default new Resolver({
@@ -74,13 +74,10 @@ export default new Resolver({
 
 		// no match, let the next resolver in the pipeline handle this dependency.
 		// Since this plugin is a "last resort", this will very likely cause a failure:
-
-		if (true || DEBUG) {
-			console.error("@monorepo-private/parcel-resolver ABOUT TO FAIL")
-			console.error("Params=", params)
-			const { specifier, specifierType, sourcePath, resolveFrom } = params.dependency
-			console.error("Dependency=", { specifier, specifierType, sourcePath, resolveFrom })
-		}
+		console.error("@monorepo-private/parcel-resolver ABOUT TO FAIL")
+		console.error("Params=", params)
+		const { specifier, specifierType, sourcePath, resolveFrom } = params.dependency
+		console.error("Dependency=", { specifier, specifierType, sourcePath, resolveFrom })
 
 		return null
 	},

@@ -1,3 +1,5 @@
-import { extend_default_config } from "@monorepo-private/vite--config--default"
+import { extendꓽconfigⵧdefault } from "@monorepo-private/vite--config--default"
 
-export default extend_default_config({})
+export default extendꓽconfigⵧdefault({
+	// extend here if needed
+})

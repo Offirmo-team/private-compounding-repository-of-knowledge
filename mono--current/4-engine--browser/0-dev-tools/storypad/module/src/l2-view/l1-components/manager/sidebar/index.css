@@ -8,6 +8,9 @@
 
 	font-stretch: ultra-condensed;
 
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+
 	/************************************/
 	/* debug
 	details { background-color: rgba(255,0,0,.2); }

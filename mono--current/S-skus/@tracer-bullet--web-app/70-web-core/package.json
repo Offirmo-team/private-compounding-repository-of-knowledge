@@ -28,8 +28,10 @@
 		"@monorepo-private/page-loaded": "workspace:*",
 		"@monorepo-private/react--background-img": "workspace:*",
 		"@monorepo-private/react--error-boundary": "workspace:*",
+		"@monorepo-private/sync-store": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@monorepo-private/utils--async": "workspace:*",
 		"react-dom": "catalog:"
 	},
@@ -39,7 +41,6 @@
 		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/soft-execution-context": "workspace:*",
-		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",

@@ -1,4 +1,4 @@
-import { $EXAMPLE_COMPLETE_NODE } from "@monorepo-private/rich-text-format"
+import { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "@monorepo-private/rich-text-format"
 import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad/types"
 
 /////////////////////////////////////////////////
@@ -15,7 +15,7 @@ export const RichText: Story‿v3 = {
 	render: () => ({
 		$content: `This is a CSF v3 story returning RichText: ⎨⎨sub⎬⎬`,
 		$refs: {
-			sub: $EXAMPLE_COMPLETE_NODE,
+			sub: $EXAMPLE_COMPLETE_NODEⵧBLOCK,
 		},
 	}),
 }

@@ -1,6 +1,6 @@
 {
 	description: "Storybook replacement",
-	isꓽapp: true,
+	//isꓽapp: true, // bit tricky: storypad is a dev tool. In theory it should provide its own React/tslib but in practice it's better to peer-reuse the parent pkg since we don't want version conflicts
 	status: "pragmatism",
 	_overrides: {
 		dependencies: {
@@ -12,6 +12,7 @@
 		},
 		files: {
 			packageᐧjson: {
+				sideEffects: true,
 				"|exports|./stories/html/html5-kitchen-sink": "./module/src/__shared/stories/html/html5-kitchen-sink_by_dbox.stories.ts",
 				"|exports|./stories/html/html-demos--offirmo": "./module/src/__shared/stories/html/html-demos-by-offirmo.stories.ts",
 				"|exports|./stories/html/html-demos--others": "./module/src/__shared/stories/html/html-demos-misc.stories.ts",
@@ -19,6 +20,7 @@
 
 				"|exports|./stories/html/elements/*": "./module/src/__shared/stories/html/elements/*.stories.ts",
 
+				// only works in Parcel? Maybe clean
 				"|alias|@storybook/test": "./module/src/l3-compat/@storybook/test.ts",
 			},
 		},

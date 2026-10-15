@@ -26,8 +26,8 @@ function completeꓽspec(spec: Immutable<Partial<InfiniteMonorepoSpec>>): Immuta
 }
 ```
 
-Currently `InfiniteMonorepoSpec` has no deeply-nested object fields besides `package_manager__config?: any`, so this
-isn't a live bug today, but if a future field (e.g. `runtimeⵧlocal: JsRuntimeSpec<...>`, which IS an object) needs
+Currently `InfiniteMonorepoSpec` has no deeply-nested object fields besides `package_manager__configⵧspecific?: any`, so
+this isn't a live bug today, but if a future field (e.g. `runtimeⵧlocal: JsRuntimeSpec<...>`, which IS an object) needs
 partial override, `completeꓽspec` will replace the whole object rather than merging it. Not urgent, but worth a one-line
 comment noting the merge is intentionally shallow, since `runtimeⵧlocal` is already a union that can be an object
 (`JsRuntimeSpec`).

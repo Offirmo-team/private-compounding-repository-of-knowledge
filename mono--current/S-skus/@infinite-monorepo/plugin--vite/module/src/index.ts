@@ -136,18 +136,22 @@ export const PLUGIN: Plugin = {
 							text: pkg_details.isꓽapp
 								? `
 import { defineConfig, type UserConfig } from "vite"
-import { extend_web_app_config } from "@monorepo-private/vite--config--default"
+import { extendꓽconfigⵧweb_app } from "@monorepo-private/vite--config--default"
 
 export default defineConfig(({ command }): UserConfig => {
-	const config = extend_web_app_config() as UserConfig
+	const config = extendꓽconfigⵧweb_app({
+		// extend here if needed
+	}) as UserConfig
 	// extend here if needed
 	return config
 })
 `
 								: `
-import { extend_default_config } from "@monorepo-private/vite--config--default"
+import { extendꓽconfigⵧdefault } from "@monorepo-private/vite--config--default"
 
-export default extend_default_config({})
+export default extendꓽconfigⵧdefault({
+	// extend here if needed
+})
 `,
 						},
 					} satisfies FileOutputPresent

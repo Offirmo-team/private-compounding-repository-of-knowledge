@@ -36,7 +36,7 @@ Added support for exports https://parceljs.org/features/dependency-resolution/#p
 
 - XXX all packages and sub-packages must have a `.parcelrc`!
 - Check our custom config and remove everything unsure
-- use parcel--check
+- use parcel--tracer-bullet to investigate
 
 ### globs not working
 
@@ -50,7 +50,7 @@ May be solved by "common troubleshooting", or use `--no-hmr`
 
 ## tosort
 
-Doesn't work, bugs on unit tests and many other places.
+Doesn't work, bugs on unit tests and many other places:
 
 ```json
 "validators": {
@@ -58,7 +58,7 @@ Doesn't work, bugs on unit tests and many other places.
 }
 ```
 
-Doesn't bring anything
+Doesn't bring anything:
 
 ```json
 "transformers": {

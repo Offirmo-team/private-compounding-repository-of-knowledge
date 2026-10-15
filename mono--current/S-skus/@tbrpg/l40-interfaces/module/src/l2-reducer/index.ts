@@ -23,8 +23,8 @@ import { ActionType, type TBRPGAction } from "../l1-actions/index.ts"
 /////////////////////////////////////////////////
 // pure, e.g. for React.useReducer()
 
-export function init(SXC?: TBRSoftExecutionContext, args?: TBRPGState.CreateParams): Immutable<State> {
-	return TBRPGState.create(SXC, args)
+export function init(SXC?: TBRSoftExecutionContext, params?: TBRPGState.CreateParams): Immutable<State> {
+	return TBRPGState.create(SXC, params)
 }
 
 export function reducer(state: Immutable<State>, action: Immutable<TBRPGAction>): Immutable<State> {

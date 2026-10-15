@@ -60,7 +60,6 @@ export const PLUGIN: Plugin = {
 				// when staying on LTS, @types should not pick latest non-LTS
 				const rl = StateLib.getꓽruntimeⵧlocal(state, node)
 				if (rl.name === "node") {
-					// TODO XXX race condition here if previously pre-loaded
 					state.pkg_infos_resolver.declareꓽversion_override("@types/node", rl.versionsⵧacceptable)
 				}
 				break
@@ -270,6 +269,20 @@ pnpm i ...
 
 					const monorepo_root_node = node
 
+					const monorepo_root__default = (() => {
+						const nodeⵧscm = Object.values(state.graphs.nodesⵧscm).find((n) => n.type === "repository")
+						const urlⵧorigin = nodeⵧscm && _getꓽgit_remote_urlⵧorigin(nodeⵧscm.path‿abs)
+						if (!nodeⵧscm || !urlⵧorigin) {
+							console.warn(
+								`No git "origin" remote, can't infer where gitc would clone this repo, using the current path.`,
+							)
+							return monorepo_root_node.path‿abs
+						}
+
+						const monorepo_path_in_repo = path.relative(nodeⵧscm.path‿abs, monorepo_root_node.path‿abs)
+						return path.join(deriveꓽgit_clone_dir({ url: urlⵧorigin }), monorepo_path_in_repo) + "/"
+					})()
+
 					state = StateLib.requestꓽfile_output(state, {
 						parent_node: monorepo_root_node,
 						intent: "present--exact",
@@ -280,13 +293,13 @@ pnpm i ...
 						},
 						content: {
 							text:
-								// TODO 1) proper key with default 2) computation of where gitc would clone
+								// TODO proper key with default
 								`
 #@IgnoreInspection BashAddShebang
 [[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!"
 
 ## default = where "gitc" is supposed to clone it
-export MONOREPO_ROOT__CURRENT=\${${state.specⵧroot.key || "MONOREPO"}_ROOT:-"$HOME/work/src/x-external/off/${node.path‿ar}/"};
+export MONOREPO_ROOT__CURRENT=\${${state.specⵧroot.key || "MONOREPO"}_ROOT:-"${monorepo_root__default}"};
 
 ` +
 								package_nodes
@@ -316,8 +329,27 @@ export default PLUGIN
 
 /////////////////////////////////////////////////
 
+// raw config value = as cloned (git remote get-url would apply url.insteadOf rewrites)
+function _getꓽgit_remote_urlⵧorigin(repo_root‿abs: string): string | undefined {
+	try {
+		const url = execFileSync("git", ["config", "--get", "remote.origin.url"], {
+			cwd: repo_root‿abs,
+			encoding: "utf8",
+			stdio: ["ignore", "pipe", "ignore"],
+		}).trim()
+		return url || undefined
+	} catch {
+		// no such remote (exit code 1), not a repo, or git unavailable
+		return undefined
+	}
+}
+
+/////////////////////////////////////////////////
+
+import { execFileSync } from "node:child_process"
 import * as path from "node:path"
 
+import { deriveꓽgit_clone_dir } from "@infinite-monorepo/heuristics"
 import { manifestꓽpnpmᝍworkspaceᐧyaml } from "@infinite-monorepo/plugin--pnpm"
 import * as StateLib from "@infinite-monorepo/state"
 import { type FileOutputPresent, getꓽnodeⵧmonorepo, getꓽruntimeⵧlocal, type State } from "@infinite-monorepo/state"

@@ -158,6 +158,11 @@ export function onꓽspec_chain_loaded(
 		}
 	}
 
+	// early retrievals (preloads) may have started without it, the resolver will re-target them
+	state.pkg_infos_resolver.declareꓽminimum_release_age(
+		state.specⵧroot.package_manager__configⵧgeneric.minimumReleaseAge‿minutes,
+	)
+
 	return state
 }
 
