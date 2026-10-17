@@ -51,7 +51,22 @@ export interface SubStateⳇFactsFile {
 	_error?: XXError
 }
 
+// tslint:disable-next-line: variable-name
+export const ApplySteps = Enum(
+	// exact order of plugins, must match 100%
+	"onꓽload",
+	"onꓽspec_loaded", // full spec loaded from config + plugins
+	//"onꓽnodeⵧdiscoveredⵧfirst_time", plugin-specific, happens intermingled as plugins are discovered
+	//"onꓽnodeⵧdiscoveredⵧbfs", same
+	"onꓽnodesⵧdiscovered", // all nodes discovered, no "onꓽnodeⵧdiscoveredⵧ*" not happen anymore
+	"onꓽnodeⵧrefine",
+	"onꓽapply",
+)
+export type ApplySteps = Enum<typeof ApplySteps> // eslint-disable-line no-redeclare
+
 export interface State {
+	steps_completed: Set<ApplySteps>
+
 	file_manifests: Record<AnyRepoFilePathⳇRelative, StructuredFsⳇFileManifest>
 	root_pkg_details: PureModuleDetails // TODO should be in the node?
 
@@ -92,6 +107,7 @@ import type { PureModuleDetails } from "@infinite-monorepo/package-details"
 import { PkgInfosResolver } from "@infinite-monorepo/pkg-infos-resolver"
 import type { InfiniteMonorepoSpec } from "@infinite-monorepo/spec"
 import type { StructuredFsⳇFileManifest } from "@infinite-monorepo/structured-file-manifest"
+import { Enum } from "typescript-string-enums"
 
 import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
 import { type XXError } from "@monorepo-private/utils--error"

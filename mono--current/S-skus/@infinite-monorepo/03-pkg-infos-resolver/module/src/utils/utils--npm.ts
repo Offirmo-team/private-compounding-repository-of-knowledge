@@ -39,7 +39,7 @@ export function getꓽlikely_corresponding_types_pkg(pkg_name: PkgFQName): PkgFQ
 export function hasꓽembedded_typescript_types(packageᐧjson: PackageJson): boolean {
 	if (packageᐧjson.types) return true
 
-	// non standard
+	// non-standard
 	const raw = packageᐧjson as any
 	if (
 		raw.typings ||
@@ -56,7 +56,7 @@ export function hasꓽembedded_typescript_types(packageᐧjson: PackageJson): bo
 
 	// warning @types/strip-bom@4.0.1: This is a stub types definition. strip-bom provides its own type definitions, so you do not need this installed.
 	if (packageᐧjson.name === "strip-bom") {
-		// types are not declared in package.json, they just have a sibling .d.ts, can't guess from the package.json only
+		// types are not declared in package.json, they just have a sibling .d.ts, can't guess from the package.json only TODO report
 		return true
 	}
 
@@ -73,4 +73,4 @@ export function hasꓽembedded_typescript_types(packageᐧjson: PackageJson): bo
 
 import { assert_from } from "@monorepo-private/assert"
 
-import type { PkgFQName, PackageJson, PkgNamespace } from "./types.ts"
+import type { PkgFQName, PackageJson, PkgNamespace } from "../state/types.ts"

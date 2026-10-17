@@ -175,6 +175,7 @@ cargo cult = Let’s face it. You are not Google scale and you never will be. St
 case -- CamelCase
 case -- SHOUTY_CASE
 case -- snake_case
+cathedral and bazaar = 2 different dev process = exclusive coders vs organic https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar
 CD (continuous delivery) -- [see dedicated file]
 certificates -- root
 change -- category -- C1 = removing a product
@@ -213,6 +214,7 @@ code reuse -- DRY
 code reuse -- reduce reuse recycle
 code reuse -- small focused modules = Make small focused modules for reusability and to make it possible to build larger more advanced things that are easier to reason about https://sindresorhus.com/blog/small-focused-modules
 code review https://www.linkedin.com/posts/ajgreenwell_code-reviews-have-unwritten-laws-i-had-activity-7239611908914319360-_MHW/
+code smell = a surface indication that usually corresponds to a deeper problem in the system https://martinfowler.com/bliki/CodeSmell.html
 codebase -- type -- hobby
 codebase -- type -- large established codebase = single-digit million lines of code (~5M, let’s say); Somewhere between 100 and 1000 engineers working on the same codebase; The first working version of the codebase is at least ten years old
 codebase -- type -- open source
@@ -316,6 +318,7 @@ CTAP
 culture -- low/high context https://journals.sagepub.com/doi/10.1177/0146167212455828
 Cupertino effect = bad spell checking
 currying https://en.wikipedia.org/wiki/Currying
+data -- clump = the same few data items passed around together. E.g. start and end => should be a range https://martinfowler.com/bliki/DataClump.html
 data -- description = for discoverability
 data -- hydration
 data -- insert
@@ -474,6 +477,26 @@ entitlements -- non-standard offerings or commercial terms to meet their needs t
 EOL "end of life"
 EOL -- support = https://www.herodevs.com/support
 epochs: a backward-compatible language evolution mechanism https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1881r0.html
+Eric Raymond 19 lessons -- A security system is only as secure as its secret. Beware of pseudo-secrets.
+Eric Raymond 19 lessons -- Any tool should be useful in the expected way, but a truly great tool lends itself to uses you never expected.
+Eric Raymond 19 lessons -- Every good work of software starts by scratching a developer's personal itch.
+Eric Raymond 19 lessons -- Given a large enough beta-tester and co-developer base, almost every problem will be characterized quickly and the fix obvious to someone.
+Eric Raymond 19 lessons -- Good programmers know what to write. Great ones know what to rewrite (and reuse).
+Eric Raymond 19 lessons -- If you have the right attitude, interesting problems will find you.
+Eric Raymond 19 lessons -- If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
+Eric Raymond 19 lessons -- Often, the most striking and innovative solutions come from realizing that your concept of the problem was wrong.
+Eric Raymond 19 lessons -- Perfection (in design) is achieved not when there is nothing more to add, but rather when there is nothing more to take away. (Attributed to Antoine de Saint-Exupéry)
+Eric Raymond 19 lessons -- Plan to throw one [version] away; you will, anyhow (copied from Frederick Brooks's The Mythical Man-Month).
+Eric Raymond 19 lessons -- Provided the development coordinator has a communications medium at least as good as the Internet, and knows how to lead without coercion, many heads are inevitably better than one.
+Eric Raymond 19 lessons -- Release early. Release often. And listen to your customers.
+Eric Raymond 19 lessons -- Smart data structures and dumb code works a lot better than the other way around.
+Eric Raymond 19 lessons -- The next best thing to having good ideas is recognizing good ideas from your users. Sometimes the latter is better.
+Eric Raymond 19 lessons -- To solve an interesting problem, start by finding a problem that is interesting to you.
+Eric Raymond 19 lessons -- Treating your users as co-developers is your least-hassle route to rapid code improvement and effective debugging.
+Eric Raymond 19 lessons -- When writing gateway software of any kind, take pains to disturb the data stream as little as possible—and never throw away information unless the recipient forces you to!
+Eric Raymond 19 lessons -- When you lose interest in a program, your last duty to it is to hand it off to a competent successor.
+Eric Raymond 19 lessons -- When your [configuration] language is nowhere near Turing-complete, syntactic sugar can be your friend.
+Eric Raymond 19 lessons = attributes associated with good practice in open source software development
 error -- failure type – open / close = open = allow, close = deny, best choice depends on context https://community.opentext.com/cybersec/b/cybersecurity-blog/posts/security-fundamentals-part-1-fail-open-vs-fail-closed
 error -- handling -- exceptions, error codes, monads, etc. https://www.boost.org/doc/libs/1_84_0/libs/outcome/doc/html/alternatives.html
 error -- handling -- fail fast = Check input and fail on nonsensical input or invalid state as early as possible, preferably with an exception or error response that will make the exact problem clear to your caller https://opensource.com/article/17/5/30-best-practices-software-development-and-testing
@@ -962,6 +985,8 @@ queue
 reactive programming
 recursion
 red / blue deployment -- compatibility window = period, measured either in elapsed time or number of releases, where all versions of a component released during this window must be compatible with all components of the current version, and vice versa.
+refactoring -- techniques -- expand, migrate, and contract = pattern to implement backward-incompatible changes to an interface in a safe manner, by breaking the change into three distinct phases: expand, migrate, and contract https://martinfowler.com/bliki/ParallelChange.html
+refactoring = https://martinfowler.com/tags/refactoring.html
 regex -- bring more problems = Some people, when confronted with a problem, think “I know, I'll use regular expressions.” Now they have two problems. https://regex.info/blog/2006-09-15/247
 regex -- lookahead/lookbehind https://www.regular-expressions.info/lookaround.html
 regex https://regexlearn.com/

@@ -1,9 +1,13 @@
 /////////////////////////////////////////////////
+// XXX written by Claude Code XXX
+// We used to use the "package-json" package
 // Retrieve package.json files from public sources, resiliently:
 // - light requests = a single version manifest, NOT the multi-MB "packument" (unless no other choice)
 // - per-request timeout + retries + global concurrency cap
 // - several sources: a transient failure (timeout, 429, 5xx, network) moves to the next one
 // - a 404 is conclusive = "no such package"
+
+const LIB = "PkgVersionResolver/FromRegistries"
 
 export interface NetworkRetrievalOptions {
 	version_specifier: SemVerⳇRange | undefined
@@ -28,8 +32,8 @@ export interface VersionInfos {
 
 const REQUEST_TIMEOUT‿ms = 20_000
 const REQUEST_TIMEOUTⵧpackument‿ms = 120_000 // can be several MB
-const ATTEMPTS_PER_SOURCE = 3
-const MAX_CONCURRENT_REQUESTS = 6
+const ATTEMPTS_PER_SOURCE = 2
+const MAX_CONCURRENT_REQUESTS = 60
 
 const REGISTRIES = [
 	{ source: "npm", base_url: "https://registry.npmjs.org" },
@@ -48,11 +52,13 @@ export async function ↆfetchꓽpackageᐧjsonⵧfrom_network(
 	},
 ): Promise<PackageJson> {
 	console.log(
-		`"${pkg_name}@${options.version_specifier ?? "latest"}" retrieving from the network… (min release age = ${options.minimum_release_age‿minutes}min)`,
+		`[${LIB}] retrieving "${pkg_name}@${options.version_specifier ?? "latest"}"… (min release age = ${options.minimum_release_age‿minutes}min)`,
 	)
 
 	const needsꓽversion_selection = !!options.version_specifier || options.minimum_release_age‿minutes > 0
-	if (!needsꓽversion_selection) return _ↆfetchꓽmanifest(pkg_name, "latest", env)
+	if (!needsꓽversion_selection) {
+		return _ↆfetchꓽmanifest(pkg_name, "latest", env)
+	}
 
 	const { version, manifest } = await _ↆselectꓽversion(pkg_name, options, env)
 	return manifest ?? _ↆfetchꓽmanifest(pkg_name, version, env)
@@ -114,16 +120,18 @@ async function _ↆselectꓽversion(
 ): Promise<{ version: SemVerⳇExact; manifest?: PackageJson }> {
 	// deps.dev = light (no manifests) but it's only an optimization:
 	// on any miss (it may lag behind npm), the npm packument is authoritative
-	const versionⵧdeps_dev = await _ↆfetchꓽversion_infosⵧdeps_dev(pkg_name, env).then(
+	const versionⵧfromꓽapiᐧdepsᐧdev = await _ↆfetchꓽversion_infosⵧfromꓽapiᐧdepsᐧdev(pkg_name, env).then(
 		(infos) => (infos ? pickꓽversion(infos, options, env.now‿ms) : undefined),
 		(err) => {
 			console.warn(
-				`"${pkg_name}": deps.dev unavailable (${_describeꓽerror(err)}), falling back to the full packument…`,
+				`\`[${LIB}] "${pkg_name}": api.deps.dev unavailable (${_describeꓽerror(err)}), falling back to the full packument…`,
 			)
 			return undefined
 		},
 	)
-	if (versionⵧdeps_dev) return { version: versionⵧdeps_dev }
+	if (versionⵧfromꓽapiᐧdepsᐧdev) {
+		return { version: versionⵧfromꓽapiᐧdepsᐧdev }
+	}
 
 	const packument = await _ↆfetchꓽjsonⵧfirst_conclusive(
 		pkg_name,
@@ -131,7 +139,9 @@ async function _ↆselectꓽversion(
 		REQUEST_TIMEOUTⵧpackument‿ms,
 		env,
 	)
-	if (packument === null) throw _createꓽerror("PackageNotFoundError", `Package "${pkg_name}" could not be found`)
+	if (packument === null) {
+		throw _createꓽerror("PackageNotFoundError", `Package "${pkg_name}" could not be found`)
+	}
 
 	const version = pickꓽversion(_toꓽversion_infosⵧfrom_packument(packument), options, env.now‿ms)
 	if (!version) {
@@ -145,7 +155,7 @@ async function _ↆselectꓽversion(
 }
 
 // null = conclusive "not found"
-async function _ↆfetchꓽversion_infosⵧdeps_dev(
+async function _ↆfetchꓽversion_infosⵧfromꓽapiᐧdepsᐧdev(
 	pkg_name: PkgFQName,
 	env: Immutable<NetworkEnv>,
 ): Promise<VersionInfos | null> {
@@ -192,20 +202,13 @@ async function _ↆfetchꓽjsonⵧfirst_conclusive(
 			failures.push(`- ${source}: ${_describeꓽerror(err)}`)
 			const next = candidates[index + 1]
 			if (next)
-				console.warn(`"${pkg_name}": ${source} unavailable (${_describeꓽerror(err)}), trying ${next.source}…`)
+				console.warn(
+					`[${LIB}] "${pkg_name}": ${source} unavailable (${_describeꓽerror(err)}), trying ${next.source}…`,
+				)
 		}
 	}
 
-	throw new Error(`All sources failed for "${pkg_name}":\n${failures.join("\n")}${_getꓽproxy_hint(process.env)}`)
-}
-
-// Node's fetch() ignores the proxy env vars unless opted-in https://nodejs.org/api/cli.html#node_use_env_proxy1
-// = direct connections, which are dropped on proxied networks (connect timeouts)
-function _getꓽproxy_hint(env: Immutable<Record<string, string | undefined>>): string {
-	const hasꓽproxy = !!(env["HTTPS_PROXY"] || env["https_proxy"] || env["HTTP_PROXY"] || env["http_proxy"])
-	if (!hasꓽproxy || env["NODE_USE_ENV_PROXY"] === "1") return ""
-
-	return `\nHint: a proxy is configured in your env but Node's fetch() ignores it, try again with NODE_USE_ENV_PROXY=1`
+	throw new Error(`All sources failed for "${pkg_name}":\n${failures.join("\n")}`)
 }
 
 async function _ↆfetchꓽjsonⵧwith_retries(
@@ -215,11 +218,16 @@ async function _ↆfetchꓽjsonⵧwith_retries(
 	attempt = 1,
 ): Promise<any | null> {
 	try {
+		console.log(`[${LIB}] fetching #${attempt} "${url}"…`)
 		return await _ↆfetchꓽjson(url, timeout‿ms, env)
 	} catch (err) {
-		if (!_isꓽtransient(err) || attempt >= ATTEMPTS_PER_SOURCE) throw err
+		if (!_isꓽtransient(err) || attempt >= ATTEMPTS_PER_SOURCE) {
+			console.error(`[${LIB}] Fetch failure! Note: did you set NODE_USE_ENV_PROXY=1 ?`)
+			throw err
+		}
 
 		await elapsed_time_ms(env.retry_delay‿ms * attempt)
+		console.log(`[${LIB}] retrying…`)
 		return _ↆfetchꓽjsonⵧwith_retries(url, timeout‿ms, env, attempt + 1)
 	}
 }
@@ -256,8 +264,12 @@ function _createꓽconcurrency_limiter(max: number) {
 	const waiting: Array<() => void> = []
 
 	return async function limitꓽconcurrency<T>(task: () => Promise<T>): Promise<T> {
-		if (active_count < max) active_count++
-		else await new Promise<void>((resolve) => waiting.push(resolve)) // a finishing task hands us its slot
+		if (active_count < max) {
+			active_count++
+		} else {
+			console.log(`[${LIB}] self-rate limiting`)
+			await new Promise<void>((resolve) => waiting.push(resolve))
+		} // a finishing task hands us its slot
 
 		try {
 			return await task()
@@ -299,4 +311,4 @@ import { assert } from "@monorepo-private/assert"
 import type { Immutable, SemVerⳇExact, SemVerⳇRange } from "@monorepo-private/ts--types"
 import { elapsed_time_ms } from "@monorepo-private/utils--async"
 
-import type { PackageJson, PkgFQName } from "./types.ts"
+import type { PackageJson, PkgFQName } from "../state/types.ts"

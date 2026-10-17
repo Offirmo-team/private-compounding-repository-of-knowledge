@@ -1,6 +1,10 @@
 /////////////////////////////////////////////////
+// XXX written by Claude Code XXX
 // Retrieve package.json files from the local pnpm lockfile + virtual store
-// = no network, useful when npm is unreachable / throttled
+// = faster + avoid network, useful for test runs
+// ONLY support my current pnpm config
+// OPTIONAL, can be dropped
+const LIB = "PkgVersionResolver/FromLocal"
 
 // only the subset we use https://github.com/pnpm/spec/blob/master/lockfile/9.0.md
 export interface PnpmLockfile {
@@ -149,4 +153,4 @@ import * as semver from "semver"
 import { assert } from "@monorepo-private/assert"
 import type { Immutable, SemVerⳇExact, SemVerⳇRange } from "@monorepo-private/ts--types"
 
-import type { PackageJson, PkgFQName } from "./types.ts"
+import type { PackageJson, PkgFQName } from "../state/types.ts"

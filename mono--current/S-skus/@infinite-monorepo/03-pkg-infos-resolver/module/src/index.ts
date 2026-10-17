@@ -1,17 +1,28 @@
 /////////////////////////////////////////////////
 
 export class PkgInfosResolver {
-	#state: Immutable<StateLib.State>
-
-	constructor(config: Immutable<Partial<ResolverConfig>> = {}) {
-		this.#state = StateLib.create(config)
-	}
+	#state: Immutable<StateLib.State> = StateLib.create()
 
 	/////////////////////////////////////////////////
 
 	preload(pkg_name: string): void {
 		this.#state = StateLib.preload_if_npm(this.#state, pkg_name)
 	}
+
+	// usually happens during onꓽload
+	declareꓽversion_override(pkg_name: PkgFQName, version: SemVerⳇRange): void {
+		this.#state = StateLib.declareꓽversion_override(this.#state, pkg_name, version)
+	}
+	declareꓽminimum_release_age(minimum_release_age‿minutes: number): void {
+		this.#state = StateLib.declareꓽminimum_release_age(this.#state, minimum_release_age‿minutes)
+	}
+
+	async ೱfinalizeꓽcritical_config(): Promise<void> {
+		this.#state = StateLib.finalizeꓽcritical_config(this.#state)
+		await this.#state.ↆcritical_config
+	}
+
+	/////////////////////////////////////////////////
 
 	hasꓽasync_operations__pending(): boolean {
 		return StateLib.getꓽall_pending_async(this.#state).length > 0
@@ -27,12 +38,6 @@ export class PkgInfosResolver {
 	}
 	declareꓽmonorepo_namespace(ns: PkgNamespace): void {
 		this.#state = StateLib.declareꓽmonorepo_namespace(this.#state, ns)
-	}
-	declareꓽversion_override(pkg_name: PkgFQName, version: SemVerⳇRange): void {
-		this.#state = StateLib.declareꓽversion_override(this.#state, pkg_name, version)
-	}
-	declareꓽminimum_release_age(minimum_release_age‿minutes: number): void {
-		this.#state = StateLib.declareꓽminimum_release_age(this.#state, minimum_release_age‿minutes)
 	}
 
 	ǃgetꓽversionⵧfor_dependencies_field(pkg_name: PkgFQName) {
@@ -83,5 +88,5 @@ export type * from "./state/types.ts"
 import type { Immutable, SemVerⳇRange } from "@monorepo-private/ts--types"
 
 import * as StateLib from "./state/index.ts"
-import type { PkgFQName, PkgNamespace, PackageJson, Catalog, ResolverConfig } from "./state/types.ts"
-import { isꓽtypes_pkg } from "./state/utils--npm.ts"
+import type { PkgFQName, PkgNamespace, PackageJson, Catalog, ResolutionConfig } from "./state/types.ts"
+import { isꓽtypes_pkg } from "./utils/utils--npm.ts"

@@ -15,6 +15,8 @@ assumptions -- check them
 assumptions -- do not assume
 bets
 C-level
+change -- big C = rapid course corrections through job cuts, recruiting a fresh management team, and redesigning roles and responsibilities to score quick wins.
+change -- small C = smaller, sharpening https://www.library.hbs.edu/working-knowledge/how-small-c-change-can-beat-large-scale-rebuilding
 CAIO "Chief AI Officer" = would champion AI use cases and bring business & technology together to push through the difficulties and disruption
 CEO -- "If I/we got fired today, what would the new CEO do?"
 challenges -- ask questions

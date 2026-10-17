@@ -1,11 +1,18 @@
 /////////////////////////////////////////////////
 
 export function getꓽall_pending_async(state: Immutable<State>) {
-	return Object.values(state.ↆpackageᐧjson_fetches_by_fqname)
-}
+	const ǃ = assert_from({ getꓽall_pending_async })
 
-export function getꓽminimum_release_age‿minutes(state: Immutable<State>): number {
-	return state.config.minimum_release_age‿minutes ?? 0 // not declared = no constraint
+	const pending = Object.values(state.ↆpackageᐧjson_fetches_by_fqname)
+
+	if (pending.length > 0) {
+		ǃ.ensure(
+			state.ↆcritical_config.state === "fulfilled",
+			"race condition: critical config not finalized, pending asyncs will never resolve",
+		)
+	}
+
+	return pending
 }
 
 export function isꓽallowed_package(state: Immutable<State>, pkg_name: PkgFQName): boolean {
@@ -105,10 +112,6 @@ import * as semver from "semver"
 import { assert_from, assert } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"
 
+import { isꓽnpm_package, getꓽnamespace } from "../utils/utils--npm.ts"
+
 import type { Catalog, PkgFQName, PackageJson, State } from "./types.ts"
-import {
-	isꓽnpm_package,
-	getꓽlikely_corresponding_types_pkg,
-	hasꓽembedded_typescript_types,
-	getꓽnamespace,
-} from "./utils--npm.ts"

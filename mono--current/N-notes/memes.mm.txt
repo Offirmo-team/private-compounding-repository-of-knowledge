@@ -775,6 +775,7 @@ inversion: Avoiding stupidity is easier than trying to be brilliant. Instead of 
 investing
 investing -- fund vs index = index always better
 investing -- Nancy Pelosi Stock Tracker ♟ https://x.com/PelosiTracker_/status/1874859312616759754
+invisible hand = things correct themselves through incentives (disputed) https://en.wikipedia.org/wiki/Invisible_hand
 invisible hand: Markets aggregate knowledge. Rising prices signal falling supply or increased demand, which incentivizes an increase in production. The opposite is true for falling prices. Prices are a signal wrapped in an incentive.
 IQ -- it exists, it's measurable
 irredentism = movement whose members claim (usually on behalf of their nation), and seek to occupy, territory which they consider "lost" (or "unredeemed"), based on history or legend https://www.reddit.com/r/history/comments/sji919/is_there_a_term_for_this_phenomenon/
@@ -934,6 +935,7 @@ life -- care
 life -- diseases -- heart disfunction = New York Heart Association Functional Classification https://en.wikipedia.org/wiki/New_York_Heart_Association_Functional_Classification
 life -- draw a random life = https://anyhumanever.com/
 life -- fallacies -- "you are a tool. It sucks not being on top" = not true, "being of service to something or someone, which gives purpose"
+life -- happiness -- Stockdale = believe you will prevail in the end and turn the experience into the defining event of my life, which, in retrospect, you would not trade
 life -- high economic connectedness = https://julienreszka.com/blog/your-key-to-success-isn-t-more-luck-or-hard-work/
 life -- le petit pecheur
 life -- lines of life = most common to rarest: criticize > gossip > get involved > encourage > help
@@ -1195,6 +1197,7 @@ overnight success takes a long time = https://paulbuchheit.blogspot.com/2009/01/
 Overton window = You can control thought without limiting speech. You can do it by defining the limits of acceptable thought while allowing for lively debate within these barriers. For example, Fox News and MSNBC set limits on what political thoughts they consider acceptable, but in the grand scheme of things, they’re both fairly conventional. The political spectrum stretches far beyond the ideas they entertain, but ideas outside their limits are shunned.
 paradigm shift https://en.wikipedia.org/wiki/Paradigm_shift
 paradox -- du réformateur https://pierre-yves-gomez.fr/le-paradoxe-du-reformateur/
+paradox -- Stockdale && = naive optimists backlash bc not facing the truth. Need to be long term optimist but not irrealistic https://www.jimcollins.com/concepts/Stockdale-Concept.html “You must never confuse faith that you will prevail in the end—which you can never afford to lose—with the discipline to confront the most brutal facts of your current reality, whatever they might be.”
 paradox of Abundance = The average quality of information is getting worse and worse. But the best stuff is getting better and better. Markets of abundance are simultaneously bad for the median consumer but good for conscious consumers.
 paradox of Consensus = Under ancient Jewish law, if a suspect was found guilty by every judge, they were deemed innocent. Too much agreement implied a systemic error in the judicial process. Unanimous agreement sometimes leads to bad decisions.
 paradox of Specificity = Focus isn’t as constraining as it seems. In the age of the Internet, when everybody has Google search and personalized social media feeds, differentiation is free marketing. The more specific your goal, the more opportunities you’ll create for yourself. Narrowing your aperture can expand your horizons.

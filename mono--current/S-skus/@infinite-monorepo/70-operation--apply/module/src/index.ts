@@ -29,22 +29,23 @@ const plugins: Record<string, Plugin> = {
 }
 
 export async function apply(from?: PathⳇAny) {
-	console.group(styleText("bold", `@infinite-monorepo/apply…`))
+	console.log(styleText(["bold", "italic"], "------------ @infinite-monorepo ------------"))
 
 	from = (function normalize(): PathⳇAbsolute {
 		if (!from) return process.cwd()
 
 		if (from.startsWith("~")) {
-			const HOME_path‿abs: DirPathⳇAbsolute = `${homedir()}${path.sep}` // TODO XDG? TODO can it fail in CI?
-			return path.resolve(HOME_path‿abs, from.slice(2))
+			const HOME_path‿abs: DirPathⳇAbsolute = `${homedir()}${nodeꓽpath.sep}` // TODO XDG? TODO can it fail in CI?
+			return nodeꓽpath.resolve(HOME_path‿abs, from.slice(2))
 		}
 
-		return path.resolve(process.cwd(), from)
+		return nodeꓽpath.resolve(process.cwd(), from)
 	})()
-	console.log("monorepo path (normalized) =", from)
-	await fs.mkdir(from, { recursive: true }) // in case we're initializing a new monorepo, in a subdir of a git repo
+	console.log("monorepo path (normalized) =", nodeꓽpath.relative(homedir(), from))
+	await nodeꓽfs.mkdir(from, { recursive: true }) // in case we're initializing a new monorepo, in a subdir of a git repo
 
 	////////////
+	console.log(styleText("italic", "------------ init & plugin load… ------------"))
 	let state = (function init_state() {
 		let state = StateLib.create()
 		state.pkg_infos_resolver.declareꓽmonorepo_namespace(state.specⵧroot.namespace)
@@ -71,6 +72,10 @@ export async function apply(from?: PathⳇAny) {
 				nodesⵧbfs_untraversed__count,
 			})
 
+			if (round_count > 10) {
+				debugger
+			}
+
 			return hasꓽasync_operations__pending || nodesⵧnew__count > 0 || nodesⵧbfs_untraversed__count > 0
 		}
 
@@ -89,6 +94,7 @@ export async function apply(from?: PathⳇAny) {
 				console.group(
 					`↳ onꓽnodeⵧdiscoveredⵧfirst_time : [${styleText("yellow", _outdated_node.type)}] ${styleText("gray", _outdated_node?.path‿ar || "??")}`,
 				)
+				assert(!state.steps_completed.has("onꓽnodesⵧdiscovered"), "unexpected late node discovery")
 
 				state = await Object.entries(plugins).reduce(async (ೱstate, [plugin__name, plugin]) => {
 					let state = await ೱstate
@@ -122,6 +128,7 @@ export async function apply(from?: PathⳇAny) {
 				console.group(
 					`↳ onꓽnodeⵧdiscoveredⵧbfs L${bfs_target} : [${styleText("yellow", _outdated_node.type)}] ${styleText("gray", _outdated_node?.path‿ar || "??")}`,
 				)
+				assert(!state.steps_completed.has("onꓽnodesⵧdiscovered"), "unexpected late node discovery")
 
 				state = await Object.entries(plugins).reduce(async (ೱstate, [plugin__name, plugin]) => {
 					let state = await ೱstate
@@ -137,7 +144,13 @@ export async function apply(from?: PathⳇAny) {
 					return state
 				}, Promise.resolve<Immutable<State>>(state))
 				state = StateLib.reportꓽnodeⵧtraversedⵧbfs(state, state.graphs.nodesⵧworkspace[_outdated_node.path‿abs])
-				if (_outdated_node.type === "package") {
+				if (_outdated_node.type === "monorepo") {
+					// as soon as possible, to unlock package analysis (below)
+					state.pkg_infos_resolver.declareꓽminimum_release_age(
+						state.specⵧroot.package_manager__configⵧgeneric.minimumReleaseAge‿minutes,
+					)
+					await state.pkg_infos_resolver.ೱfinalizeꓽcritical_config()
+				} else if (_outdated_node.type === "package") {
 					// analyze
 					// TODO 1D support non-pure modules
 					// TODO 1D parallel
@@ -201,12 +214,13 @@ export async function apply(from?: PathⳇAny) {
 			console.group(`↳ onꓽload [${styleText("blue", plugin__name)}]`)
 			const before = state
 			state = plugin.onꓽload(state)
-			if (state !== before) console.log("⚡️change")
+			if (state !== before) console.log("⚡️state change")
 			console.groupEnd()
 
 			return state
 		}, state)
 		await _propagate()
+		state = StateLib.reportꓽstep_completed(state, "onꓽload")
 		console.groupEnd()
 		return state
 	})()
@@ -223,14 +237,16 @@ export async function apply(from?: PathⳇAny) {
 		state.pkg_infos_resolver.declareꓽmonorepo_namespace(state.specⵧroot.namespaceⵧprivate)
 
 		await _propagate() // <<<<< This will call the plugins
-
+		state = StateLib.reportꓽstep_completed(state, "onꓽspec_loaded")
 		console.groupEnd()
 
 		return state
 	})()
 
+	state = StateLib.reportꓽstep_completed(state, "onꓽnodesⵧdiscovered")
+	await _propagate()
+
 	console.log(styleText("italic", "------------ plugins graphs discovery DONE ------------"))
-	// TODO 1D prevent late discovery of new node
 
 	//////////// plugins onꓽrefine
 	console.log(styleText("italic", "------------ About to refine… ------------"))
@@ -294,7 +310,7 @@ export async function apply(from?: PathⳇAny) {
 		})
 
 		await _propagate()
-
+		state = StateLib.reportꓽstep_completed(state, "onꓽnodeⵧrefine")
 		console.groupEnd()
 
 		return state
@@ -346,7 +362,7 @@ export async function apply(from?: PathⳇAny) {
 		console.groupEnd()
 
 		await _propagate()
-
+		state = StateLib.reportꓽstep_completed(state, "onꓽapply")
 		return state
 	})()
 
@@ -363,7 +379,7 @@ export async function apply(from?: PathⳇAny) {
 			switch (spec.intent) {
 				case "not-present":
 					console.log(`- Removing file ${path}…`)
-					return fs.rm(path, { force: true })
+					return nodeꓽfs.rm(path, { force: true })
 
 				case "present":
 					console.log(`- Writing file if not exist ${path}…`)
@@ -420,13 +436,13 @@ export async function apply(from?: PathⳇAny) {
 /////////////////////////////////////////////////
 
 async function ensureSymlink(target: string, linkPath: string) {
-	await fs.mkdir(path.dirname(linkPath), { recursive: true })
+	await nodeꓽfs.mkdir(nodeꓽpath.dirname(linkPath), { recursive: true })
 
 	try {
-		const stat = await fs.lstat(linkPath)
+		const stat = await nodeꓽfs.lstat(linkPath)
 
 		if (stat.isSymbolicLink()) {
-			const actual = await fs.readlink(linkPath)
+			const actual = await nodeꓽfs.readlink(linkPath)
 			if (actual === target) {
 				console.log("Symlink already exists with correct target, skipping.")
 			} else {
@@ -435,16 +451,16 @@ async function ensureSymlink(target: string, linkPath: string) {
 		} else {
 			throw new Error(`Path exists but is not a symlink: ${linkPath}`)
 		}
-	} catch (err) {
+	} catch (err: any) {
 		if (err.code !== "ENOENT") throw err
-		await fs.symlink(target, linkPath)
+		await nodeꓽfs.symlink(target, linkPath)
 		console.log(`Symlink created: ${linkPath} -> ${target}`)
 	}
 }
 
 async function ensureFile(path: PathⳇAbsolute, onCreate: () => Promise<void>): Promise<void> {
 	try {
-		await fs.access(path)
+		await nodeꓽfs.access(path)
 	} catch {
 		await onCreate()
 	}
@@ -452,9 +468,9 @@ async function ensureFile(path: PathⳇAbsolute, onCreate: () => Promise<void>):
 
 /////////////////////////////////////////////////
 
-import * as fs from "node:fs/promises"
+import * as nodeꓽfs from "node:fs/promises"
 import { homedir } from "node:os"
-import path from "node:path"
+import nodeꓽpath from "node:path"
 import process from "node:process"
 import { styleText } from "node:util"
 
@@ -487,7 +503,7 @@ import pluginꓽvite from "@infinite-monorepo/plugin--vite"
 import pluginꓽyarnᝍᝍv1 from "@infinite-monorepo/plugin--yarn--v1"
 import { loadꓽspecⵧchainⵧraw } from "@infinite-monorepo/spec--load"
 import * as StateLib from "@infinite-monorepo/state"
-import { type State } from "@infinite-monorepo/state"
+import { reportꓽstep_completed, type State } from "@infinite-monorepo/state"
 import { type Plugin } from "@infinite-monorepo/types-for-plugins"
 
 import { assert } from "@monorepo-private/assert"

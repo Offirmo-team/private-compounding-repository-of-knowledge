@@ -2,13 +2,28 @@
 
 // MUST match resolveꓽasync_operations()
 export function hasꓽasync_operations__pending(state: Immutable<State>): boolean {
-	const has_pending_facts = Object.entries(state.facts.files).some(([path, substate]) => {
-		return !!substate.ↆretrieval
+	return getꓽasync_operations__pending(state).length > 0
+}
+
+// must return [] to avoid infinite loops in apply
+export function getꓽasync_operations__pending(state: Immutable<State>): Array<Immutable<Promise<unknown>>> {
+	const pending_facts = Object.entries(state.facts.files).map(([path, substate]) => {
+		return substate.ↆretrieval
 	})
 
-	const has_pending_resolutions = state.pkg_infos_resolver.hasꓽasync_operations__pending()
+	const has_fully_explored_monorepo_node: boolean = (() => {
+		const monorepo_node = Object.values(state.graphs.nodesⵧworkspace).find((n) => n.type === "monorepo")
+		if (!monorepo_node) return false
 
-	return has_pending_facts || has_pending_resolutions
+		return monorepo_node.statusⵧbfs === "done"
+	})()
+	const includeꓽpkg_infos_resolver = has_fully_explored_monorepo_node
+
+	const pkg_infos_resolver__pending_resolutions = includeꓽpkg_infos_resolver
+		? state.pkg_infos_resolver.hasꓽasync_operations__pending() && state.pkg_infos_resolver.ೱall_pending_loaded() // rem hasꓽasync_operations__pending can only be called under some assumptions
+		: null
+
+	return [...pending_facts, pkg_infos_resolver__pending_resolutions].filter((p) => !!p)
 }
 
 // TODO return node refs

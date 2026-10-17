@@ -23,7 +23,8 @@
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/json-stable-stringify": "workspace:*",
 		"@monorepo-private/read-write-any-structured-file": "workspace:*",
-		"@monorepo-private/utils--error": "workspace:*"
+		"@monorepo-private/utils--error": "workspace:*",
+		"typescript-string-enums": "catalog:"
 	},
 	"devDependencies": {
 		"@infinite-monorepo/primitives": "workspace:*",

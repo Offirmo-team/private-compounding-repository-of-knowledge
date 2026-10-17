@@ -339,6 +339,7 @@ interface layout patterns -- holy grail
 interface layout patterns -- masonry https://ishadeed.com/article/css-grid-masonry/
 interface layout patterns https://web.dev/patterns/layout/
 interop https://developer.mozilla.org/en-US/blog/interop2023-mdn-doc-updates/
+iT woRKs BeTter in THe aPp!! = bad https://shkspr.mobi/blog/2026/08/it-works-better-in-the-app/
 Javascript fatigue
 Javascript pressure = pressure to adopt JavaScript only grow as your investment in the JavaScript front end ecosystem grows https://htmx.org/essays/hypermedia-on-whatever-youd-like/#feeling-the-javascript-pressure
 jpeg https://spectrum.ieee.org/jpeg-image-format-history

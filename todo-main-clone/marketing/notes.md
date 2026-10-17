@@ -16,6 +16,8 @@ why did the rebase go to therapy? Too many unresolved conflicts from its past.
 
 Why did the empty folder see a therapist? Nobody would track it, and all it had left was baggage it had been told to ignore.
 
+Why did the SSH key break up with the password? It needed a relationship with less exposure.
+
 
 
 ## TODO blog posts
@@ -117,6 +119,9 @@ review my whole git config from this repo tho user to system
 Flag any issue
 Make suggestions for better productivity
 
+
+
+inspect my Claude Code setup especially the hooks and plugins and tell me if there is sth to clean or incorrect
 
 
 ### Coding LLM Advocacy

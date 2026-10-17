@@ -118,8 +118,8 @@ export const PLUGIN: Plugin = {
 							"node_modules/",
 
 							// generic clearly local-only
-							"*.local",
-							"*local.*", // ex. Claude settings.local.json
+							"*.local", // ex. foo.local
+							"*.local.*", // ex. Claude settings.local.json
 
 							// generic clearly temporary
 							"tmp/",

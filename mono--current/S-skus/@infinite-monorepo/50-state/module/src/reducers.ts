@@ -1,13 +1,13 @@
 /////////////////////////////////////////////////
 
-import type { StructuredContent } from "@monorepo-private/read-write-any-structured-file/module/src/types.ts"
-
+const LIB = "@infinite-monorepo/state"
 const DEBUG = true
 
 export function create(): Immutable<State> {
-	DEBUG && console.debug("Creating state...")
+	DEBUG && console.debug(`[${LIB}] Creating state…`)
 
 	return {
+		steps_completed: new Set(),
 		specⵧroot: completeꓽspec({}),
 		pkg_infos_resolver: new PkgInfosResolver(),
 
@@ -35,7 +35,7 @@ export function create(): Immutable<State> {
 export function declareꓽfile_manifest(state: Immutable<State>, manifest: StructuredFsⳇFileManifest): Immutable<State> {
 	DEBUG &&
 		console.debug(
-			`Declaring manifest… ${styleText("yellow", manifest.path‿ar)} [${manifest.format ? styleText("red", manifest.format) : styleText("green", "auto")}]`,
+			`[${LIB}] Declaring manifest… ${styleText("yellow", manifest.path‿ar)} [${manifest.format ? styleText("red", manifest.format) : styleText("green", "auto")}]`,
 		)
 	//DEBUG && console.debug('Declaring manifest…', manifest)
 
@@ -54,12 +54,24 @@ export function declareꓽfile_manifest(state: Immutable<State>, manifest: Struc
 	}
 }
 
+export function reportꓽstep_completed(state: Immutable<State>, step: ApplySteps): Immutable<State> {
+	const ǃ = assert_from({ reportꓽstep_completed })
+
+	// should only be marked once and only once
+	ǃ.ensure(!state.steps_completed.has(step), `step already marked as done`)
+
+	return {
+		...state,
+		steps_completed: new Set([...state.steps_completed, step]),
+	}
+}
+
 export function onꓽspec_chain_loaded(
 	state: Immutable<State>,
 	spec_chain: Awaited<ReturnType<typeof loadꓽspecⵧchainⵧraw>>,
 ): Immutable<State> {
 	const ǃ = assert_from({ onꓽspec_chain_loaded })
-	DEBUG && console.debug("On spec chain loaded...")
+	DEBUG && console.debug(`[${LIB}] On spec chain loaded...`)
 
 	// traverse the chain, discovering nodes
 	const PENDING: DirPathⳇAbsolute = "PENDING/"
@@ -95,7 +107,7 @@ export function onꓽspec_chain_loaded(
 	}
 
 	spec_chain.forEach((result) => {
-		console.log("Spec loaded:", result)
+		console.log(`[${LIB}] Spec loaded:`, result)
 
 		if (result.boundary === "git") {
 			if (nodeⵧscm_root.path‿abs === PENDING) {
@@ -158,11 +170,6 @@ export function onꓽspec_chain_loaded(
 		}
 	}
 
-	// early retrievals (preloads) may have started without it, the resolver will re-target them
-	state.pkg_infos_resolver.declareꓽminimum_release_age(
-		state.specⵧroot.package_manager__configⵧgeneric.minimumReleaseAge‿minutes,
-	)
-
 	return state
 }
 
@@ -176,7 +183,11 @@ export function registerꓽnode<NodeType extends Node>(
 	parent_node: Immutable<NodeRef> | null,
 ): Immutable<State> {
 	const ǃ = assert_from({ onꓽspec_chain_loaded })
-	DEBUG && console.debug(`Registering "${styleText("yellow", _node.type)}" node...`, styleText("gray", _node.path‿abs))
+	DEBUG &&
+		console.debug(
+			`[${LIB}] Registering "${styleText("yellow", _node.type)}" node...`,
+			styleText("gray", _node.path‿abs),
+		)
 
 	ǃ.forⵧparam({ _node }).require(!!_node.path‿abs && _node.path‿abs !== "PENDING/")
 
@@ -264,7 +275,7 @@ export function registerꓽnode<NodeType extends Node>(
 export function reportꓽnodeⵧanalyzed(state: Immutable<State>, node_ref: Immutable<NodeRef>): Immutable<State> {
 	DEBUG &&
 		console.debug(
-			"Marking node analyzed...",
+			`[${LIB}] Marking node analyzed...`,
 			styleText("yellow", node_ref.type),
 			styleText("gray", node_ref.path‿abs),
 		)
@@ -286,7 +297,7 @@ export function reportꓽnodeⵧtraversedⵧbfs<NodeType extends NodeBase>(
 
 	DEBUG &&
 		console.debug(
-			`Marking node BFS traversed… L${node_ref.bfs_level}`,
+			`[${LIB}] Marking node BFS traversed… L${node_ref.bfs_level}`,
 			styleText("yellow", node_ref.type),
 			styleText("gray", node_ref.path‿abs),
 		)
@@ -481,7 +492,7 @@ export function requestꓽfactsⵧabout_file(
 ): Immutable<State> {
 	DEBUG &&
 		console.debug(
-			`requestꓽfactsⵧabout_file("${styleText("yellow", manifest.path‿ar)}" from "${styleText("yellow", parent_node?.path‿ar)}")`,
+			`[${LIB}] requestꓽfactsⵧabout_file("${styleText("yellow", manifest.path‿ar)}" from "${styleText("yellow", parent_node?.path‿ar)}")`,
 		)
 
 	const path_abs = _resolveꓽarpath(state, manifest.path‿ar, parent_node)
@@ -588,9 +599,7 @@ export function requestꓽfile_output(
 // special async
 // MUST match hasꓽasync_operations__pending()
 export async function resolveꓽasync_operations(state: Immutable<State>): Promise<Immutable<State>> {
-	const pending: Array<Promise<void>> = []
-
-	pending.push(state.pkg_infos_resolver.ೱall_pending_loaded())
+	const pending = getꓽasync_operations__pending(state)
 
 	// only files so far
 	Object.entries(state.facts.files).forEach(([path, substate]) => {
@@ -748,7 +757,7 @@ import type { Immutable, PathⳇAbsolute, DirPathⳇAbsolute, DirPathⳇRelative
 import { normalizeError } from "@monorepo-private/utils--error"
 import { isꓽErrorⵧrsrc_not_found } from "@monorepo-private/utils--error/v2"
 
-import { getꓽnodesⵧbfs_untraversed } from "./selectors.ts"
+import { getꓽasync_operations__pending, getꓽnodesⵧbfs_untraversed } from "./selectors.ts"
 import type {
 	State,
 	FileOutputAbsent,
@@ -756,4 +765,5 @@ import type {
 	AsyncCallbackReducer,
 	SubStateⳇFactsFile,
 	TraversalTracking,
+	ApplySteps,
 } from "./types.ts"

@@ -7,12 +7,12 @@
 ## contains auto-generated content from @infinite-monorepo/plugin--typescript
 ## https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns
 *.local
+*.local.*
 *.log
 *.map
 *.tmp
 *.tsbuildinfo
 *.vars
-*local.*
 .cache/
 .claude/worktrees/
 .env
