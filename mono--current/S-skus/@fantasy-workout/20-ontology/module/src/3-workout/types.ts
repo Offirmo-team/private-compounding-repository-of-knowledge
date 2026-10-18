@@ -32,9 +32,30 @@ export interface Reference {
 
 /////////////////////////////////////////////////
 
+export interface WorkoutⳇAsPlaylist {
+	presentation: WorkoutⳇContentBundle
+
+	segments: WorkoutⳇSegment[] // in order of execution
+
+	// should not be needed
+	_id: WorkoutⳇId
+}
+
+export interface WorkoutⳇSegmentⳇBase {
+	type: string
+	duration‿ms: DurationMs
+}
+export interface WorkoutⳇSegmentⳇPause extends WorkoutⳇSegmentⳇBase {
+	type: "pause"
+}
+export interface WorkoutⳇSegmentⳇExercise extends ExerciseⳇAsTrack, WorkoutⳇSegmentⳇBase {
+	type: "exercise"
+}
+export type WorkoutⳇSegment = WorkoutⳇSegmentⳇPause | WorkoutⳇSegmentⳇExercise
+
 /////////////////////////////////////////////////
 
-import type { DurationMs, FloatInRange, Url‿str, Year } from "@monorepo-private/ts--types"
+import type { DurationMs, Url‿str, Year } from "@monorepo-private/ts--types"
 import type { ContentⳇCaption, ContentⳇTitle } from "@monorepo-private/ts--types--hypermedia"
 
-import type { Exercise, ExerciseⳇContentBundle } from "../2-exercise/types.ts"
+import type { Exercise, ExerciseⳇAsTrack } from "../2-exercise/types.ts"

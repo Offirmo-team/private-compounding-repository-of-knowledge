@@ -14,6 +14,8 @@ export type Action = ActionPause | ActionResume | ActionUpdateToNow | ActionNoop
 
 /////////////////////////////////////////////////
 
+import type { State, CreateParams } from "@fantasy-workout/state"
+
 import type {
 	ActionHack_,
 	ActionNoop,
@@ -21,5 +23,3 @@ import type {
 	ActionUpdateToNow,
 	BaseReducerAction,
 } from "@monorepo-private/ts--types--hypermedia"
-
-import type { State, CreateParams } from "../state/index.ts"

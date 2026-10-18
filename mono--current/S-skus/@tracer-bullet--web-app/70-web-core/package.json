@@ -15,7 +15,6 @@
 		"check:ts": "echo \"@tracer-bullet--web-app/web-core\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
-		"sandbox": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/src/@fantasy-workout/state/##sandbox/index.ts",
 		"stories": "npm-run-all clean --parallel _start:storypad--vite",
 		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
 		"watch:check:ts": "tsc --noEmit --watch"
@@ -24,14 +23,9 @@
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/assets--background": "workspace:*",
 		"@monorepo-private/css--framework": "workspace:*",
-		"@monorepo-private/offirmo-state": "workspace:*",
 		"@monorepo-private/page-loaded": "workspace:*",
 		"@monorepo-private/react--background-img": "workspace:*",
 		"@monorepo-private/react--error-boundary": "workspace:*",
-		"@monorepo-private/sync-store": "workspace:*",
-		"@monorepo-private/timestamps": "workspace:*",
-		"@monorepo-private/ts--types": "workspace:*",
-		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@monorepo-private/utils--async": "workspace:*",
 		"react-dom": "catalog:"
 	},

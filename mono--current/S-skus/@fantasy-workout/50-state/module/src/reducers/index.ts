@@ -228,11 +228,12 @@ function _reset_workout(state: Immutable<State>, now_ms: TimestampUTCMs): Immuta
 
 /////////////////////////////////////////////////
 
+import { getꓽworkout } from "@fantasy-workout/data"
+import type { WorkoutⳇId } from "@fantasy-workout/ontology"
+
 import { assert_from, assert } from "@monorepo-private/assert"
 import { type Immutable } from "@monorepo-private/offirmo-state"
 import { type TimestampUTCMs, getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
 
-import { getꓽworkout } from "../../data/index.ts"
-import type { WorkoutⳇId } from "../../types/index.ts"
 import { SCHEMA_VERSION } from "../consts.ts"
 import { type State } from "../types.ts"

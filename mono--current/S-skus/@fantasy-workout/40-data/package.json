@@ -19,6 +19,7 @@
 		"@monorepo-private/ts--types": "workspace:*"
 	},
 	"devDependencies": {
+		"@fantasy-workout/ontology": "workspace:*",
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",

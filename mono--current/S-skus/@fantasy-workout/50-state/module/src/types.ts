@@ -30,8 +30,8 @@ export interface State extends BaseRootState<UState, TState> {
 
 /////////////////////////////////////////////////
 
+import type { Workout } from "@fantasy-workout/ontology"
+
 import { type BaseUState, type BaseTState, type BaseRootState, type Immutable } from "@monorepo-private/offirmo-state"
 import type { TimestampUTCMs } from "@monorepo-private/timestamps"
 import type { DurationMs } from "@monorepo-private/ts--types"
-
-import type { Workout } from "../types/index.ts"

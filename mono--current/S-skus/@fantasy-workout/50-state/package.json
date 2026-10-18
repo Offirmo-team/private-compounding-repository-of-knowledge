@@ -15,10 +15,12 @@
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
+		"@fantasy-workout/data": "workspace:*",
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*"
 	},
 	"devDependencies": {
+		"@fantasy-workout/ontology": "workspace:*",
 		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/offirmo-state": "workspace:*",

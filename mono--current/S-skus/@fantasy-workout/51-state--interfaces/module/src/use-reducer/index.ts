@@ -44,6 +44,9 @@ export function reducer_bulk(state: Immutable<State>, actions: Immutable<Array<A
 
 /////////////////////////////////////////////////
 
+import type { State, CreateParams } from "@fantasy-workout/state"
+import * as StateLib from "@fantasy-workout/state"
+
 import { reduceꓽhack, reduceꓽnoop, reduceꓽset, type SyncReducerFns } from "@monorepo-private/sync-store"
 import type { Immutable } from "@monorepo-private/ts--types"
 import {
@@ -53,6 +56,4 @@ import {
 	ACTION_TYPEꘌUPDATE_TO_NOW,
 } from "@monorepo-private/ts--types--hypermedia"
 
-import type { State, CreateParams } from "../../state/index.ts"
-import * as StateLib from "../../state/index.ts"
 import { type Action } from "../actions.ts"

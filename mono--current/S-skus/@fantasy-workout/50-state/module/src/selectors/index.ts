@@ -59,11 +59,7 @@ export function getꓽcurrent_workout(state: Immutable<State>): Immutable<Workou
 
 /////////////////////////////////////////////////
 
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable, PositiveInteger } from "@monorepo-private/ts--types"
-import type { ContentⳇCaption, ContentⳇTitle } from "@monorepo-private/ts--types--hypermedia"
-
-import { ALL_PREDEFINED_WORKOUTS, getꓽexercise } from "../../data/index.ts"
+import { ALL_PREDEFINED_WORKOUTS, getꓽexercise } from "@fantasy-workout/data"
 import type {
 	Workout,
 	WorkoutInstance,
@@ -71,5 +67,10 @@ import type {
 	WorkoutⳇSegment,
 	WorkoutⳇSegmentⳇExercise,
 	WorkoutⳇSegmentⳇPause,
-} from "../../types/index.ts"
+} from "@fantasy-workout/ontology"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable, PositiveInteger } from "@monorepo-private/ts--types"
+import type { ContentⳇCaption, ContentⳇTitle } from "@monorepo-private/ts--types--hypermedia"
+
 import type { State } from "../types.ts"

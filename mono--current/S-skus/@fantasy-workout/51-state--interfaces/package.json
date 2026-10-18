@@ -20,6 +20,7 @@
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
+		"@fantasy-workout/state": "workspace:*",
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/sync-store": "workspace:*",
 		"@monorepo-private/ts--types--hypermedia": "workspace:*"

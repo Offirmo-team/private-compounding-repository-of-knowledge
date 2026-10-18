@@ -10,10 +10,11 @@ export function getꓽworkout(id: WorkoutⳇId): Immutable<Workout> {
 export const ALL_PREDEFINED_WORKOUTS: Immutable<Array<Workout>> = enforceꓽimmutable([
 	{
 		id: "scientific-7-minute-workout",
-		title: "7-Minute Workout",
-		caption:
-			"A high-intensity circuit using only your body weight, a chair and a wall. Maximum results, minimal time.",
-
+		presentationⵧdefault: {
+			title: "7-Minute Workout",
+			caption:
+				"A high-intensity circuit using only your body weight, a chair and a wall. Maximum results, minimal time.",
+		},
 		// order matters: alternates muscle groups so that they can recover
 		exercises: [
 			{ exercise_id: ALL_EXERCISES‿by_id["jumping-jacks"].id, duration‿ms: 30_000, side: null },
@@ -55,8 +56,10 @@ export const ALL_PREDEFINED_WORKOUTS: Immutable<Array<Workout>> = enforceꓽimmu
 
 	{
 		id: "advanced-7-minute-workout",
-		title: "Advanced 7-Minute Workout",
-		caption: "A harder take on the 7-Minute Workout: compound moves, with a pair of dumbbells.",
+		presentationⵧdefault: {
+			title: "Advanced 7-Minute Workout",
+			caption: "A harder take on the 7-Minute Workout: compound moves, with a pair of dumbbells.",
+		},
 
 		exercises: [
 			{
@@ -103,10 +106,10 @@ export const ALL_PREDEFINED_WORKOUTS: Immutable<Array<Workout>> = enforceꓽimmu
 
 /////////////////////////////////////////////////
 
+import type { Workout, WorkoutⳇId } from "@fantasy-workout/ontology"
+
 import { assert } from "@monorepo-private/assert"
 import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import type { Immutable } from "@monorepo-private/ts--types"
-
-import type { Workout, WorkoutⳇId } from "../types/index.ts"
 
 import { ALL_EXERCISES‿by_id } from "./exercises.ts"

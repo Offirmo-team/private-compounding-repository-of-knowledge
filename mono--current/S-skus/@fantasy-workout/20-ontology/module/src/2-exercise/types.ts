@@ -3,7 +3,7 @@
 
 export type ExerciseⳇId = string
 
-export interface ExerciseⳇDetails {
+export interface ExerciseⳇSpec {
 	id: ExerciseⳇId
 
 	equipment: Equipment[]
@@ -34,7 +34,22 @@ export interface ExerciseⳇContentBundle {
 
 /////////////////////////////////////////////////
 
-import type { DurationMs, FloatInRange, Url‿str, Year } from "@monorepo-private/ts--types"
-import type { ContentⳇCaption, ContentⳇTitle } from "@monorepo-private/ts--types--hypermedia"
+// fully resolved, ready to be "played" (rendered)
+export interface ExerciseⳇAsTrack {
+	duration‿ms: DurationMs // custom
+	side: Side | null // only for "unilateral" exercises
+
+	laterality: Laterality
+	execution: Execution
+	presentation: ExerciseⳇContentBundle
+
+	// should not be needed
+	_id: ExerciseⳇId
+}
+
+/////////////////////////////////////////////////
+
+import type { DurationMs } from "@monorepo-private/ts--types"
+import type { ContentⳇTitle } from "@monorepo-private/ts--types--hypermedia"
 
 import type { Side, Equipment, BodyFocus, Laterality, Execution } from "../1-primitives/types.ts"
