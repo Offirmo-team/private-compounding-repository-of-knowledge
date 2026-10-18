@@ -1,0 +1,3 @@
+{
+	"extends": "@monorepo-private/parcel-config"
+}

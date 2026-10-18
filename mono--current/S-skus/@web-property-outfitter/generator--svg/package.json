@@ -32,6 +32,7 @@
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/chai": "catalog:",
@@ -50,5 +51,5 @@
 	"peerDependencies": {
 		"tslib": "catalog:"
 	},
-	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
 }

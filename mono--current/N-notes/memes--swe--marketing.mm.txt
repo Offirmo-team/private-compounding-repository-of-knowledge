@@ -42,8 +42,6 @@ CEMs -- not = Avoid images (esp. lifestyle/promotional) and use simple logos. Us
 CEMs -- SPAM compliance = consent of the recipient, accurate sender identification and a simple way to unsubscribe
 CEMs = offers, advertises, or promotes a product, service, or supplier, and includes promotional language, imagery, or links
 channels -- attacks = fishing https://fly.io/blog/kurt-got-got/
-channels -- LinkedIn -- https://typegrow.com/tools/linkedin-text-formatter
-channels -- reddit = very important for LLMs.
 coding challenges = e.g. https://dev.to/challenges
 creator strategy
 cringe = https://www.cringebot3000.com/
@@ -61,7 +59,6 @@ email -- drip = regular email for existing users
 email -- goodbye = https://www.reddit.com/r/sysadmin/comments/1wjdpgx/psa_grammarly_will_send_unhinged_messages_to_all/
 email -- newsletter
 email -- refresher = "Since you first signed up for X, the product’s changed a lot..."
-email -- resurrect
 email -- resurrect
 email -- updates
 email -- welcome
@@ -83,17 +80,17 @@ other people's castle
 presence -- AI skills = e.g. https://clerk.com/docs/guides/ai/skills
 presence -- GitHub = e.g. https://github.com/langchain-ai
 presence -- marketplaces
+presence -- reddit = very important for LLMs.
 presence -- social networks -- LinkedIn
 presence -- social networks -- LinkedIn -- cringe generator https://www.cringebot3000.com/
 presence -- social networks -- LinkedIn -- featured customers
+presence -- social networks -- LinkedIn -- https://typegrow.com/tools/linkedin-text-formatter
 presence -- stores -- app stores
+presence -- stores -- app stores -- screenshots https://before.click/
 presence -- stores -- webextensions
 presence -- wikipedia -- beware: notability, neutrality, primary source
 presence -- wikipedia = e.g. https://en.wikipedia.org/wiki/N8n
 reputation example of Meta = long history of anti-competitive, censorial, and invasive practices https://www.eff.org/deeplinks/2025/01/mad-meta-dont-let-them-collect-and-monetize-your-personal-data
-reputation management
-reputation management
-reputation management -- REPCOM
 reputation management -- REPCOM
 reputation management = https://en.wikipedia.org/wiki/Reputation_management
 SEO -- agentic -- insights = https://knownagents.com/insights
@@ -127,4 +124,4 @@ web property -- trust = e.g. https://trust.lorikeetcx.ai/
 web-property -- liveness = need updates, need ditplay of activity: release, podcasts, conferences...
 web-property -- mascot-dex https://octodex.github.com/
 web-property -- social validation
-web-property -- swag shop = e.g. https://remix.run/blog/oss-remix-store + rationale inside https://au.pcmag.com/security/117827/kash-patels-apparel-site-is-trying-to-trick-visitors-into-installing-malware
+web-property -- swag shop = e.g., https://remix.run/blog/oss-remix-store + rationale inside https://au.pcmag.com/security/117827/kash-patels-apparel-site-is-trying-to-trick-visitors-into-installing-malware

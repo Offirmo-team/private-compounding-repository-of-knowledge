@@ -23,21 +23,21 @@
 		"@infinite-monorepo/plugin--jetbrains": "workspace:*",
 		"@infinite-monorepo/plugin--license": "workspace:*",
 		"@infinite-monorepo/plugin--mise": "workspace:*",
-		"@infinite-monorepo/plugin--npm": "workspace:*",
 		"@infinite-monorepo/plugin--nvm": "workspace:*",
 		"@infinite-monorepo/plugin--offirmo": "workspace:*",
 		"@infinite-monorepo/plugin--oxc--oxfmt": "workspace:*",
 		"@infinite-monorepo/plugin--oxc--oxlint": "workspace:*",
-		"@infinite-monorepo/plugin--package-json": "workspace:*",
 		"@infinite-monorepo/plugin--parcel": "workspace:*",
-		"@infinite-monorepo/plugin--pnpm": "workspace:*",
+		"@infinite-monorepo/plugin--pm--npm": "workspace:*",
+		"@infinite-monorepo/plugin--pm--package-json": "workspace:*",
+		"@infinite-monorepo/plugin--pm--pnpm": "workspace:*",
+		"@infinite-monorepo/plugin--pm--yarn--v1": "workspace:*",
 		"@infinite-monorepo/plugin--readme": "workspace:*",
 		"@infinite-monorepo/plugin--tosort": "workspace:*",
 		"@infinite-monorepo/plugin--turborepo": "workspace:*",
 		"@infinite-monorepo/plugin--typescript": "workspace:*",
 		"@infinite-monorepo/plugin--unit-tests": "workspace:*",
 		"@infinite-monorepo/plugin--vite": "workspace:*",
-		"@infinite-monorepo/plugin--yarn--v1": "workspace:*",
 		"@infinite-monorepo/spec--load": "workspace:*",
 		"@infinite-monorepo/state": "workspace:*",
 		"@monorepo-private/assert": "workspace:*",
@@ -65,5 +65,5 @@
 	"peerDependencies": {
 		"tslib": "catalog:"
 	},
-	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
 }

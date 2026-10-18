@@ -9,7 +9,7 @@ catalogs:
   default:
     '@earendil-works/pi-tui':
       specifier: ^1
-      version: 1.2.0
+      version: 1.3.0
     '@nodelib/fs.walk':
       specifier: ^3
       version: 3.0.1
@@ -162,7 +162,7 @@ catalogs:
       version: 0.73.0
     oxlint:
       specifier: ^1
-      version: 1.87.0
+      version: 1.88.0
     oxlint-tsgolint:
       specifier: ^7
       version: 7.0.2004
@@ -180,10 +180,10 @@ catalogs:
       version: 15.8.1
     react:
       specifier: ^19
-      version: 19.3.0
+      version: 19.3.1
     react-dom:
       specifier: ^19
-      version: 19.3.0
+      version: 19.3.1
     semver:
       specifier: ^7
       version: 7.8.5
@@ -207,7 +207,7 @@ catalogs:
       version: 5.0.0
     temporal-polyfill:
       specifier: ^1
-      version: 1.0.5
+      version: 1.0.6
     terminal-size:
       specifier: ^4
       version: 4.0.1
@@ -222,7 +222,7 @@ catalogs:
       version: 2.8.1
     turbo:
       specifier: ^2
-      version: 2.11.7
+      version: 2.11.8
     type-fest:
       specifier: ^5
       version: 5.10.0
@@ -240,7 +240,7 @@ catalogs:
       version: 1.1.2
     vitest:
       specifier: ^5
-      version: 5.0.4
+      version: 5.0.5
     write-json-file:
       specifier: ^7
       version: 7.0.0
@@ -260,13 +260,13 @@ importers:
         version: 0.73.0
       oxlint:
         specifier: 'catalog:'
-        version: 1.87.0(oxlint-tsgolint@7.0.2004)
+        version: 1.88.0(oxlint-tsgolint@7.0.2004)
       oxlint-tsgolint:
         specifier: 'catalog:'
         version: 7.0.2004
       turbo:
         specifier: 'catalog:'
-        version: 2.11.7
+        version: 2.11.8
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -309,8 +309,6 @@ importers:
       '@tsconfig/strictest':
         specifier: 'catalog:'
         version: 2.0.8
-
-  0-meta/decisions: {}
 
   0-meta/scripts:
     dependencies:
@@ -373,7 +371,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/gravatar:
     dependencies:
@@ -422,7 +420,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/json-stable-stringify:
     dependencies:
@@ -477,7 +475,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/marketing--creator:
     dependencies:
@@ -526,7 +524,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/merge:
     dependencies:
@@ -584,7 +582,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/murmurhash:
     dependencies:
@@ -642,7 +640,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/normalize-string:
     dependencies:
@@ -691,7 +689,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/poll:
     dependencies:
@@ -740,7 +738,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/promise-try:
     dependencies:
@@ -789,7 +787,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/pulse:
     dependencies:
@@ -850,7 +848,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/random:
     dependencies:
@@ -899,7 +897,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/set-deep-property:
     dependencies:
@@ -954,7 +952,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/timestamps:
     dependencies:
@@ -1003,7 +1001,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/ts--types:
     dependencies:
@@ -1052,7 +1050,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/ts--types--hypermedia:
     dependencies:
@@ -1113,7 +1111,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/ts--utils:
     dependencies:
@@ -1168,7 +1166,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/type-detection:
     dependencies:
@@ -1220,7 +1218,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/unicode-data:
     dependencies:
@@ -1269,7 +1267,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/url:
     dependencies:
@@ -1318,7 +1316,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/utils--async:
     dependencies:
@@ -1367,7 +1365,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/utils--error:
     dependencies:
@@ -1422,7 +1420,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/utils--sort:
     dependencies:
@@ -1474,7 +1472,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/1-libs--simple/uuid:
     dependencies:
@@ -1529,7 +1527,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/10-practical-logger--types:
     dependencies:
@@ -1578,7 +1576,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/11-practical-logger--core:
     dependencies:
@@ -1633,7 +1631,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/12-practical-logger--minimal-noop:
     dependencies:
@@ -1685,7 +1683,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/20-universal-debug-api--types:
     dependencies:
@@ -1734,7 +1732,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/21-universal-debug-api--placeholder:
     dependencies:
@@ -1789,7 +1787,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/30-soft-execution-context:
     dependencies:
@@ -1853,7 +1851,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/40-rich-text-format:
     dependencies:
@@ -1920,7 +1918,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/41-rich-text-format--to-textual:
     dependencies:
@@ -1981,7 +1979,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/50-ohateoas:
     dependencies:
@@ -2057,7 +2055,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/2-libs--cross-cutting/credits:
     dependencies:
@@ -2112,7 +2110,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/3-libs--advanced/flux:
     dependencies:
@@ -2158,7 +2156,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/3-libs--advanced/offirmo-state:
     dependencies:
@@ -2234,7 +2232,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/3-libs--advanced/offirmo-state--to-rich-text:
     dependencies:
@@ -2304,7 +2302,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/3-libs--advanced/sync-store:
     dependencies:
@@ -2356,7 +2354,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/X-incubator/active/data-structures:
     dependencies:
@@ -2411,7 +2409,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   1-isomorphic/X-incubator/active/http-client:
     dependencies:
@@ -2463,7 +2461,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   2-engine--winter/prettify-any:
     dependencies:
@@ -2527,7 +2525,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/0-dev-tools/offirmo-state-migration-tester:
     dependencies:
@@ -2597,7 +2595,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/file-entry:
     dependencies:
@@ -2646,7 +2644,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/fs--better-write-file:
     dependencies:
@@ -2698,7 +2696,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/fs--ls:
     dependencies:
@@ -2744,7 +2742,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/fs--parent:
     dependencies:
@@ -2793,7 +2791,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/load-config:
     dependencies:
@@ -2848,7 +2846,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/print-error--to-terminal:
     dependencies:
@@ -2903,7 +2901,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/read-write-any-structured-file:
     dependencies:
@@ -2973,7 +2971,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/1-libs--simple/spawn-correctly:
     dependencies:
@@ -3025,7 +3023,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/ohateoas-browser--terminal:
     dependencies:
@@ -3098,7 +3096,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/practical-logger--node:
     dependencies:
@@ -3162,7 +3160,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/rich-text-format--to-terminal:
     dependencies:
@@ -3220,7 +3218,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/soft-execution-context--node:
     dependencies:
@@ -3272,7 +3270,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/2-libs--cross-cutting/universal-debug-api--node:
     dependencies:
@@ -3330,13 +3328,13 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   3-engine--node/X-incubator/active/tui:
     dependencies:
       '@earendil-works/pi-tui':
         specifier: 'catalog:'
-        version: 1.2.0
+        version: 1.3.0
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../../1-isomorphic/1-libs--simple/assert
@@ -3379,7 +3377,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/css--utils--diagnostics:
     dependencies:
@@ -3399,6 +3397,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../vite--config--default
@@ -3434,7 +3435,41 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
+
+  4-engine--browser/0-dev-tools/decisions:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/assert
+    devDependencies:
+      '@monorepo-private/config--mocha':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--mocha
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../0-meta/scripts
+      '@types/mocha':
+        specifier: 'catalog:'
+        version: 10.0.10
+      '@types/node':
+        specifier: 'catalog:'
+        version: 24.19.2
+      '@types/sinon':
+        specifier: 'catalog:'
+        version: 22.0.0
+      chai:
+        specifier: 'catalog:'
+        version: 6.3.0
+      mocha:
+        specifier: 'catalog:'
+        version: 12.0.3
+      sinon:
+        specifier: 'catalog:'
+        version: 22.1.0
+      vitest:
+        specifier: 'catalog:'
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/parcel--config--default:
     dependencies:
@@ -3501,7 +3536,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/parcel--tracer-bullet:
     dependencies:
@@ -3524,6 +3559,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../vite--config--default
@@ -3559,7 +3597,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/rich-text-format--devtools:
     dependencies:
@@ -3588,6 +3626,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -3617,10 +3658,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -3635,7 +3676,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/storypad:
     dependencies:
@@ -3674,7 +3715,7 @@ importers:
         version: 15.8.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       typescript-string-enums:
         specifier: 'catalog:'
         version: 1.0.0
@@ -3741,7 +3782,7 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -3756,7 +3797,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/vite--config--default:
     dependencies:
@@ -3817,7 +3858,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/0-dev-tools/vite-plugin-parcel-features:
     dependencies:
@@ -3875,7 +3916,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/assets--background:
     dependencies:
@@ -3898,6 +3939,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -3936,7 +3980,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/assets--heroes:
     dependencies:
@@ -3962,6 +4006,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -3985,10 +4032,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -4003,7 +4050,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/better-console-groups:
     dependencies:
@@ -4026,6 +4073,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4061,7 +4111,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/browser-features-detection:
     dependencies:
@@ -4084,6 +4134,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4119,7 +4172,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/css--0-reset:
     dependencies:
@@ -4139,6 +4192,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4174,7 +4230,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/css--1-foundation:
     dependencies:
@@ -4197,6 +4253,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4235,7 +4294,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/css--2-framework:
     dependencies:
@@ -4261,6 +4320,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4299,7 +4361,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/font--comics:
     dependencies:
@@ -4319,6 +4381,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4342,10 +4407,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -4360,19 +4425,22 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/font--pixel:
     devDependencies:
       '@monorepo-private/parcel-config':
         specifier: workspace:*
         version: link:../../0-dev-tools/parcel--config--default
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
       vite:
         specifier: 'catalog:'
-        version: 8.3.4(@types/node@26.6.5)(yaml@2.9.1)
+        version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
 
   4-engine--browser/1-libs--simple/font--smallest:
     dependencies:
@@ -4395,6 +4463,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4418,10 +4489,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -4436,7 +4507,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/page-loaded:
     dependencies:
@@ -4456,6 +4527,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4491,7 +4565,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/poll-window-variable:
     dependencies:
@@ -4514,6 +4588,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4549,7 +4626,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--background-img:
     dependencies:
@@ -4587,6 +4664,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -4616,10 +4696,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -4634,7 +4714,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--fake-inset:
     dependencies:
@@ -4663,6 +4743,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4689,10 +4772,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -4707,7 +4790,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--hyperspace:
     dependencies:
@@ -4733,6 +4816,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4759,10 +4845,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -4777,7 +4863,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--starry-sky:
     dependencies:
@@ -4806,6 +4892,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -4838,10 +4927,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -4856,7 +4945,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/react--window:
     dependencies:
@@ -4876,6 +4965,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4899,10 +4991,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -4917,7 +5009,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/style-once:
     dependencies:
@@ -4937,6 +5029,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -4972,7 +5067,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/1-libs--simple/wc--social:
     dependencies:
@@ -4995,6 +5090,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/ts--types--hypermedia':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
@@ -5021,10 +5119,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -5039,7 +5137,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/ohateoas-browser--react:
     dependencies:
@@ -5071,6 +5169,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -5100,10 +5201,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -5118,7 +5219,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/practical-logger--browser:
     dependencies:
@@ -5147,6 +5248,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -5185,7 +5289,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/react--error-boundary:
     dependencies:
@@ -5217,6 +5321,9 @@ importers:
       '@monorepo-private/soft-execution-context':
         specifier: workspace:*
         version: link:../../../1-isomorphic/2-libs--cross-cutting/30-soft-execution-context
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -5243,10 +5350,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -5261,7 +5368,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/rich-text-format--to-react:
     dependencies:
@@ -5302,6 +5409,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -5331,10 +5441,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -5349,7 +5459,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/soft-execution-context--browser:
     dependencies:
@@ -5375,6 +5485,9 @@ importers:
       '@monorepo-private/soft-execution-context':
         specifier: workspace:*
         version: link:../../../1-isomorphic/2-libs--cross-cutting/30-soft-execution-context
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -5410,7 +5523,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   4-engine--browser/2-libs--cross-cutting/universal-debug-api--browser:
     dependencies:
@@ -5439,6 +5552,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
@@ -5474,7 +5590,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   7-multimorphic/@oh-my-rpg/state--codes:
     dependencies:
@@ -5541,7 +5657,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   7-multimorphic/@oh-my-rpg/state--engagement:
     dependencies:
@@ -5605,7 +5721,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   7-multimorphic/@oh-my-rpg/state--meta:
     dependencies:
@@ -5663,7 +5779,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   7-multimorphic/@oh-my-rpg/state--prng:
     dependencies:
@@ -5733,7 +5849,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@fantasy-workout/70-web-core:
     dependencies:
@@ -5753,6 +5869,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -5776,10 +5895,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -5794,7 +5913,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/01-known-versions:
     dependencies:
@@ -5840,7 +5959,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/03-pkg-infos-resolver:
     dependencies:
@@ -5901,7 +6020,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/12-structured-file-manifest:
     dependencies:
@@ -5953,7 +6072,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/13-primitives:
     dependencies:
@@ -6005,7 +6124,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/14-package-details:
     dependencies:
@@ -6060,7 +6179,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/15-spec:
     dependencies:
@@ -6112,7 +6231,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/19-graph:
     dependencies:
@@ -6167,7 +6286,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/42-spec--defaults:
     dependencies:
@@ -6219,7 +6338,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/43-spec--load:
     dependencies:
@@ -6271,7 +6390,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/50-state:
     dependencies:
@@ -6359,7 +6478,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/51-plugin:
     dependencies:
@@ -6414,7 +6533,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/52-types-for-plugins:
     dependencies:
@@ -6481,7 +6600,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/60-heuristics:
     dependencies:
@@ -6533,7 +6652,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/60-pkg-analyzer:
     dependencies:
@@ -6615,7 +6734,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/70-operation--apply:
     dependencies:
@@ -6646,9 +6765,6 @@ importers:
       '@infinite-monorepo/plugin--mise':
         specifier: workspace:*
         version: link:../plugin--mise
-      '@infinite-monorepo/plugin--npm':
-        specifier: workspace:*
-        version: link:../plugin--npm
       '@infinite-monorepo/plugin--nvm':
         specifier: workspace:*
         version: link:../plugin--nvm
@@ -6661,15 +6777,21 @@ importers:
       '@infinite-monorepo/plugin--oxc--oxlint':
         specifier: workspace:*
         version: link:../plugin--oxc--oxlint
-      '@infinite-monorepo/plugin--package-json':
-        specifier: workspace:*
-        version: link:../plugin--package-json
       '@infinite-monorepo/plugin--parcel':
         specifier: workspace:*
         version: link:../plugin--parcel
-      '@infinite-monorepo/plugin--pnpm':
+      '@infinite-monorepo/plugin--pm--npm':
         specifier: workspace:*
-        version: link:../plugin--pnpm
+        version: link:../plugin--pm--npm
+      '@infinite-monorepo/plugin--pm--package-json':
+        specifier: workspace:*
+        version: link:../plugin--pm--package-json
+      '@infinite-monorepo/plugin--pm--pnpm':
+        specifier: workspace:*
+        version: link:../plugin--pm--pnpm
+      '@infinite-monorepo/plugin--pm--yarn--v1':
+        specifier: workspace:*
+        version: link:../plugin--pm--yarn--v1
       '@infinite-monorepo/plugin--readme':
         specifier: workspace:*
         version: link:../plugin--readme
@@ -6688,9 +6810,6 @@ importers:
       '@infinite-monorepo/plugin--vite':
         specifier: workspace:*
         version: link:../plugin--vite
-      '@infinite-monorepo/plugin--yarn--v1':
-        specifier: workspace:*
-        version: link:../plugin--yarn--v1
       '@infinite-monorepo/spec--load':
         specifier: workspace:*
         version: link:../43-spec--load
@@ -6754,7 +6873,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/X-test-package:
     dependencies:
@@ -6800,7 +6919,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--ai--agents--coding:
     dependencies:
@@ -6861,7 +6980,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--changelog:
     dependencies:
@@ -6916,7 +7035,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--editorconfig:
     dependencies:
@@ -6974,7 +7093,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--git:
     dependencies:
@@ -7029,7 +7148,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--jetbrains:
     dependencies:
@@ -7084,7 +7203,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--license:
     dependencies:
@@ -7139,7 +7258,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--mise:
     dependencies:
@@ -7203,74 +7322,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
-
-  S-skus/@infinite-monorepo/plugin--npm:
-    dependencies:
-      '@infinite-monorepo/plugin--git':
-        specifier: workspace:*
-        version: link:../plugin--git
-      '@infinite-monorepo/plugin--package-json':
-        specifier: workspace:*
-        version: link:../plugin--package-json
-      '@infinite-monorepo/state':
-        specifier: workspace:*
-        version: link:../50-state
-      '@infinite-monorepo/types-for-plugins':
-        specifier: workspace:*
-        version: link:../52-types-for-plugins
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/assert
-      semver:
-        specifier: 'catalog:'
-        version: 7.8.5
-    devDependencies:
-      '@monorepo-private/config--mocha':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--mocha
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/ts--types':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types
-      '@types/mocha':
-        specifier: 'catalog:'
-        version: 10.0.10
-      '@types/node':
-        specifier: 'catalog:'
-        version: 24.19.2
-      '@types/semver':
-        specifier: 'catalog:'
-        version: 7.8.0
-      '@types/sinon':
-        specifier: 'catalog:'
-        version: 22.0.0
-      chai:
-        specifier: 'catalog:'
-        version: 6.3.0
-      mocha:
-        specifier: 'catalog:'
-        version: 12.0.3
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      sinon:
-        specifier: 'catalog:'
-        version: 22.1.0
-      tslib:
-        specifier: 'catalog:'
-        version: 2.8.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vitest:
-        specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--nvm:
     dependencies:
@@ -7331,16 +7383,16 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--offirmo:
     dependencies:
       '@infinite-monorepo/heuristics':
         specifier: workspace:*
         version: link:../60-heuristics
-      '@infinite-monorepo/plugin--pnpm':
+      '@infinite-monorepo/plugin--pm--pnpm':
         specifier: workspace:*
-        version: link:../plugin--pnpm
+        version: link:../plugin--pm--pnpm
       '@infinite-monorepo/state':
         specifier: workspace:*
         version: link:../50-state
@@ -7395,7 +7447,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--oxc--oxfmt:
     dependencies:
@@ -7450,7 +7502,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--oxc--oxlint:
     dependencies:
@@ -7505,9 +7557,137 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
-  S-skus/@infinite-monorepo/plugin--package-json:
+  S-skus/@infinite-monorepo/plugin--parcel:
+    dependencies:
+      '@infinite-monorepo/plugin--git':
+        specifier: workspace:*
+        version: link:../plugin--git
+      '@infinite-monorepo/plugin--pm--package-json':
+        specifier: workspace:*
+        version: link:../plugin--pm--package-json
+      '@infinite-monorepo/state':
+        specifier: workspace:*
+        version: link:../50-state
+      '@infinite-monorepo/types-for-plugins':
+        specifier: workspace:*
+        version: link:../52-types-for-plugins
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/assert
+    devDependencies:
+      '@monorepo-private/config--mocha':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--mocha
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--typescript
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../0-meta/scripts
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/ts--types
+      '@types/mocha':
+        specifier: 'catalog:'
+        version: 10.0.10
+      '@types/node':
+        specifier: 'catalog:'
+        version: 24.19.2
+      '@types/sinon':
+        specifier: 'catalog:'
+        version: 22.0.0
+      chai:
+        specifier: 'catalog:'
+        version: 6.3.0
+      mocha:
+        specifier: 'catalog:'
+        version: 12.0.3
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      sinon:
+        specifier: 'catalog:'
+        version: 22.1.0
+      tslib:
+        specifier: 'catalog:'
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vitest:
+        specifier: 'catalog:'
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
+
+  S-skus/@infinite-monorepo/plugin--pm--npm:
+    dependencies:
+      '@infinite-monorepo/plugin--git':
+        specifier: workspace:*
+        version: link:../plugin--git
+      '@infinite-monorepo/plugin--pm--package-json':
+        specifier: workspace:*
+        version: link:../plugin--pm--package-json
+      '@infinite-monorepo/state':
+        specifier: workspace:*
+        version: link:../50-state
+      '@infinite-monorepo/types-for-plugins':
+        specifier: workspace:*
+        version: link:../52-types-for-plugins
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/assert
+      semver:
+        specifier: 'catalog:'
+        version: 7.8.5
+    devDependencies:
+      '@monorepo-private/config--mocha':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--mocha
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--typescript
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../0-meta/scripts
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/ts--types
+      '@types/mocha':
+        specifier: 'catalog:'
+        version: 10.0.10
+      '@types/node':
+        specifier: 'catalog:'
+        version: 24.19.2
+      '@types/semver':
+        specifier: 'catalog:'
+        version: 7.8.0
+      '@types/sinon':
+        specifier: 'catalog:'
+        version: 22.0.0
+      chai:
+        specifier: 'catalog:'
+        version: 6.3.0
+      mocha:
+        specifier: 'catalog:'
+        version: 12.0.3
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      sinon:
+        specifier: 'catalog:'
+        version: 22.1.0
+      tslib:
+        specifier: 'catalog:'
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vitest:
+        specifier: 'catalog:'
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
+
+  S-skus/@infinite-monorepo/plugin--pm--package-json:
     dependencies:
       '@infinite-monorepo/package-details':
         specifier: workspace:*
@@ -7572,70 +7752,9 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
-  S-skus/@infinite-monorepo/plugin--parcel:
-    dependencies:
-      '@infinite-monorepo/plugin--git':
-        specifier: workspace:*
-        version: link:../plugin--git
-      '@infinite-monorepo/plugin--package-json':
-        specifier: workspace:*
-        version: link:../plugin--package-json
-      '@infinite-monorepo/state':
-        specifier: workspace:*
-        version: link:../50-state
-      '@infinite-monorepo/types-for-plugins':
-        specifier: workspace:*
-        version: link:../52-types-for-plugins
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/assert
-    devDependencies:
-      '@monorepo-private/config--mocha':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--mocha
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/ts--types':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types
-      '@types/mocha':
-        specifier: 'catalog:'
-        version: 10.0.10
-      '@types/node':
-        specifier: 'catalog:'
-        version: 24.19.2
-      '@types/sinon':
-        specifier: 'catalog:'
-        version: 22.0.0
-      chai:
-        specifier: 'catalog:'
-        version: 6.3.0
-      mocha:
-        specifier: 'catalog:'
-        version: 12.0.3
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      sinon:
-        specifier: 'catalog:'
-        version: 22.1.0
-      tslib:
-        specifier: 'catalog:'
-        version: 2.8.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vitest:
-        specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
-
-  S-skus/@infinite-monorepo/plugin--pnpm:
+  S-skus/@infinite-monorepo/plugin--pm--pnpm:
     dependencies:
       '@infinite-monorepo/package-details':
         specifier: workspace:*
@@ -7646,12 +7765,12 @@ importers:
       '@infinite-monorepo/plugin--mise':
         specifier: workspace:*
         version: link:../plugin--mise
-      '@infinite-monorepo/plugin--npm':
+      '@infinite-monorepo/plugin--pm--npm':
         specifier: workspace:*
-        version: link:../plugin--npm
-      '@infinite-monorepo/plugin--package-json':
+        version: link:../plugin--pm--npm
+      '@infinite-monorepo/plugin--pm--package-json':
         specifier: workspace:*
-        version: link:../plugin--package-json
+        version: link:../plugin--pm--package-json
       '@infinite-monorepo/state':
         specifier: workspace:*
         version: link:../50-state
@@ -7718,7 +7837,68 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
+
+  S-skus/@infinite-monorepo/plugin--pm--yarn--v1:
+    dependencies:
+      '@infinite-monorepo/plugin--git':
+        specifier: workspace:*
+        version: link:../plugin--git
+      '@infinite-monorepo/plugin--pm--package-json':
+        specifier: workspace:*
+        version: link:../plugin--pm--package-json
+      '@infinite-monorepo/state':
+        specifier: workspace:*
+        version: link:../50-state
+      '@infinite-monorepo/types-for-plugins':
+        specifier: workspace:*
+        version: link:../52-types-for-plugins
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/assert
+    devDependencies:
+      '@monorepo-private/config--mocha':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--mocha
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../0-meta/config--typescript
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../0-meta/scripts
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../1-isomorphic/1-libs--simple/ts--types
+      '@types/mocha':
+        specifier: 'catalog:'
+        version: 10.0.10
+      '@types/node':
+        specifier: 'catalog:'
+        version: 24.19.2
+      '@types/sinon':
+        specifier: 'catalog:'
+        version: 22.0.0
+      chai:
+        specifier: 'catalog:'
+        version: 6.3.0
+      mocha:
+        specifier: 'catalog:'
+        version: 12.0.3
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      sinon:
+        specifier: 'catalog:'
+        version: 22.1.0
+      tslib:
+        specifier: 'catalog:'
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vitest:
+        specifier: 'catalog:'
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--readme:
     dependencies:
@@ -7773,7 +7953,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--tosort:
     dependencies:
@@ -7822,7 +8002,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--turborepo:
     dependencies:
@@ -7883,7 +8063,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--typescript:
     dependencies:
@@ -7953,7 +8133,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--unit-tests:
     dependencies:
@@ -8005,7 +8185,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--vite:
     dependencies:
@@ -8060,7 +8240,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@infinite-monorepo/plugin--vscode:
     dependencies:
@@ -8121,68 +8301,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
-
-  S-skus/@infinite-monorepo/plugin--yarn--v1:
-    dependencies:
-      '@infinite-monorepo/plugin--git':
-        specifier: workspace:*
-        version: link:../plugin--git
-      '@infinite-monorepo/plugin--package-json':
-        specifier: workspace:*
-        version: link:../plugin--package-json
-      '@infinite-monorepo/state':
-        specifier: workspace:*
-        version: link:../50-state
-      '@infinite-monorepo/types-for-plugins':
-        specifier: workspace:*
-        version: link:../52-types-for-plugins
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/assert
-    devDependencies:
-      '@monorepo-private/config--mocha':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--mocha
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/ts--types':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types
-      '@types/mocha':
-        specifier: 'catalog:'
-        version: 10.0.10
-      '@types/node':
-        specifier: 'catalog:'
-        version: 24.19.2
-      '@types/sinon':
-        specifier: 'catalog:'
-        version: 22.0.0
-      chai:
-        specifier: 'catalog:'
-        version: 6.3.0
-      mocha:
-        specifier: 'catalog:'
-        version: 12.0.3
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      sinon:
-        specifier: 'catalog:'
-        version: 22.1.0
-      tslib:
-        specifier: 'catalog:'
-        version: 2.8.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vitest:
-        specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@rpg--modern/30-marketing:
     dependencies:
@@ -8237,19 +8356,22 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@rpg--modern/90-final--web-app:
     devDependencies:
       '@monorepo-private/parcel-config':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/parcel--config--default
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
       vite:
         specifier: 'catalog:'
-        version: 8.3.4(@types/node@26.6.5)(yaml@2.9.1)
+        version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
 
   S-skus/@rpg--space/30-marketing:
     dependencies:
@@ -8304,7 +8426,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@rpg--space/80-web-components:
     dependencies:
@@ -8324,6 +8446,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -8347,10 +8472,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -8365,7 +8490,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@rpg--space/81-web-core:
     dependencies:
@@ -8385,6 +8510,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -8408,10 +8536,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -8426,7 +8554,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@rpg--space/90-final--web-app:
     dependencies:
@@ -8449,6 +8577,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -8487,7 +8618,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@social-skills/cli--social:
     dependencies:
@@ -8502,7 +8633,7 @@ importers:
         version: link:../../../1-isomorphic/1-libs--simple/type-detection
       temporal-polyfill:
         specifier: 'catalog:'
-        version: 1.0.5
+        version: 1.0.6
     devDependencies:
       '@monorepo-private/config--mocha':
         specifier: workspace:*
@@ -8545,7 +8676,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/30-marketing:
     dependencies:
@@ -8600,7 +8731,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/80-web-property: {}
 
@@ -8609,12 +8740,15 @@ importers:
       '@monorepo-private/parcel-config':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/parcel--config--default
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
       vite:
         specifier: 'catalog:'
-        version: 8.3.4(@types/node@26.6.5)(yaml@2.9.1)
+        version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
 
   S-skus/@tbrpg/l10-definitions:
     dependencies:
@@ -8684,7 +8818,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l20-logic--weapons:
     dependencies:
@@ -8748,7 +8882,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l21-logic--armors:
     dependencies:
@@ -8812,7 +8946,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l22-logic--monsters:
     dependencies:
@@ -8879,7 +9013,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l24-logic--adventures:
     dependencies:
@@ -8937,7 +9071,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l25-logic--adventure--resolved:
     dependencies:
@@ -9019,7 +9153,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l26-logic--shop:
     dependencies:
@@ -9083,7 +9217,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l30-state--energy:
     dependencies:
@@ -9156,7 +9290,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l31-state--achievements:
     dependencies:
@@ -9226,7 +9360,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l32-state--wallet:
     dependencies:
@@ -9290,7 +9424,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l33-state--inventory:
     dependencies:
@@ -9363,7 +9497,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l34-state--character:
     dependencies:
@@ -9427,7 +9561,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l39-state:
     dependencies:
@@ -9557,7 +9691,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l40-interfaces:
     dependencies:
@@ -9592,6 +9726,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -9630,10 +9767,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -9648,7 +9785,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l50-ui--rich-text:
     dependencies:
@@ -9719,6 +9856,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -9763,10 +9903,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -9781,7 +9921,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l60-ohateoas:
     dependencies:
@@ -9825,6 +9965,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -9851,10 +9994,10 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -9869,7 +10012,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tbrpg/l81-web--core:
     dependencies:
@@ -9893,7 +10036,7 @@ importers:
         version: link:../../../1-isomorphic/1-libs--simple/utils--async
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
     devDependencies:
       '@monorepo-private/config--mocha':
         specifier: workspace:*
@@ -9910,6 +10053,9 @@ importers:
       '@monorepo-private/soft-execution-context':
         specifier: workspace:*
         version: link:../../../1-isomorphic/2-libs--cross-cutting/30-soft-execution-context
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -9939,7 +10085,7 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -9954,7 +10100,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/50-marketing:
     dependencies:
@@ -9977,6 +10123,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -10015,7 +10164,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/60-isomorphic-state:
     dependencies:
@@ -10038,6 +10187,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -10076,7 +10228,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/70-web-core:
     dependencies:
@@ -10118,7 +10270,7 @@ importers:
         version: link:../../../1-isomorphic/1-libs--simple/utils--async
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
     devDependencies:
       '@monorepo-private/config--mocha':
         specifier: workspace:*
@@ -10135,6 +10287,9 @@ importers:
       '@monorepo-private/soft-execution-context':
         specifier: workspace:*
         version: link:../../../1-isomorphic/2-libs--cross-cutting/30-soft-execution-context
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -10164,7 +10319,7 @@ importers:
         version: 4.1.5
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       sinon:
         specifier: 'catalog:'
         version: 22.1.0
@@ -10179,7 +10334,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/80-web-property:
     dependencies:
@@ -10211,6 +10366,9 @@ importers:
       '@monorepo-private/spawn-correctly':
         specifier: workspace:*
         version: link:../../../3-engine--node/1-libs--simple/spawn-correctly
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/timestamps':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/timestamps
@@ -10258,7 +10416,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@tracer-bullet--web-app/90-final--web-app:
     dependencies:
@@ -10273,10 +10431,10 @@ importers:
         version: link:../70-web-core
       react:
         specifier: 'catalog:'
-        version: 19.3.0
+        version: 19.3.1
       react-dom:
         specifier: 'catalog:'
-        version: 19.3.0(react@19.3.0)
+        version: 19.3.1(react@19.3.1)
       tslib:
         specifier: 'catalog:'
         version: 2.8.1
@@ -10293,6 +10451,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
@@ -10331,7 +10492,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/10-spec:
     dependencies:
@@ -10404,7 +10565,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/50-output:
     dependencies:
@@ -10459,7 +10620,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/generator--html:
     dependencies:
@@ -10526,7 +10687,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/generator--html--snippets:
     dependencies:
@@ -10578,7 +10739,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/generator--svg:
     dependencies:
@@ -10601,6 +10762,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/storypad
       '@monorepo-private/ts--types':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/ts--types
@@ -10642,7 +10806,7 @@ importers:
         version: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
   S-skus/@web-property-outfitter/generator--website-entry-points:
     dependencies:
@@ -10727,7 +10891,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: 'catalog:'
-        version: 5.0.4(@types/node@24.19.2)(vite@8.3.4)
+        version: 5.0.5(@types/node@24.19.2)(vite@8.3.4)
 
 packages:
 
@@ -10738,8 +10902,8 @@ packages:
   '@dmsnell/diff-match-patch@1.1.0':
     resolution: {integrity: sha512-yejLPmM5pjsGvxS9gXablUSbInW7H976c/FJ4iQxWIm7/38xBySRemTPDe34lhg1gVLbJntX0+sH0jYfU+PN9A==}
 
-  '@earendil-works/pi-tui@1.2.0':
-    resolution: {integrity: sha512-OdJCiYklkL3TqmdmGKUflHoLy9zw18GBYO0DPASZvGlP4RkDXAZzLLDt7cidJ6wUR7DBrKb13rrekDsXgMF60g==}
+  '@earendil-works/pi-tui@1.3.0':
+    resolution: {integrity: sha512-AlKvEwEWyVtnuw7SVb4N/mUhlfIohyFslUNWarZVdLHHSdt3ca5EhMLwTzblBpDpaofSz+f+tAHie6CfxVrWKA==}
     engines: {node: '>=22.19.0'}
 
   '@emnapi/runtime@1.11.3':
@@ -10939,8 +11103,8 @@ packages:
     resolution: {integrity: sha512-nIh/M6Kh3ZtOmlY00DaUYB4xeeV6F3/ts1l29iwl3/cfyY/OuCfUx+v08zgx8TKPTifXRcjjqVQ4KB2zOYSbyw==}
     engines: {node: '>=18.18.0'}
 
-  '@oxc-project/types@0.153.0':
-    resolution: {integrity: sha512-jSNrRIyvPVLL5E1z/tS5zLAprosGz/FuI1PWwEOz59j3E4TTTzSpqKb/RDGqJhhW0QHYISGXxq582wGx6T11Tw==}
+  '@oxc-project/types@0.154.0':
+    resolution: {integrity: sha512-KYOUGQFlLWR+s4QMV2Q9ko38TZm7EdO87Qm7rvZLqk/webse/cDjtyxKhg/47l0byCbs/k46LT8qc4PKjAikzA==}
 
   '@oxfmt/binding-android-arm-eabi@0.73.0':
     resolution: {integrity: sha512-dhunAdMbi/4o0Y66/+Wl6rpsNqpvE4i26Qw6bB77A97L2lJoktWg6m+X9QOon8iOEEqzD9rEZqFi5uZ4oIzhCA==}
@@ -11094,124 +11258,124 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxlint/binding-android-arm-eabi@1.87.0':
-    resolution: {integrity: sha512-22tVIHlB9898OYsBKmYB6He1MCSqdTmK1BVWuSNUTVrpS0KWNege+U9uEYqGJ+KatQag0r/oU44i3OOs46z7HQ==}
+  '@oxlint/binding-android-arm-eabi@1.88.0':
+    resolution: {integrity: sha512-k6Fgkf86ubfeH4GvqYsRolfuVAp0pfYVZvifSlXNHPdMaWUOfxUrmLEeDD7hF6U2oJuhsVxhSWq86/xCJ+9MmA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [android]
 
-  '@oxlint/binding-android-arm64@1.87.0':
-    resolution: {integrity: sha512-JfZQ3MWf74n8ov0DojZpkOduIubYJvZL5tbTMMhDutsal6u1xH1QuNpN+lK+EQwF8AeAfgwTR2fgh5U2br27XA==}
+  '@oxlint/binding-android-arm64@1.88.0':
+    resolution: {integrity: sha512-AsIyhl9o1ejwtac7NMbhKpMdSml6NWR0ljKjZERxC8OHYDAW8o/Om9n1QHVLi4VCEUo42Zte2/Op9kyoGpJZMg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@oxlint/binding-darwin-arm64@1.87.0':
-    resolution: {integrity: sha512-rkx6Xvvw93z2GImVOyvbZwAZcoY0Z6MJW177XNsSB+i/CBsH7ANyelTp01VZyIkM3iSXtqKVb4+ptBgPHap5pQ==}
+  '@oxlint/binding-darwin-arm64@1.88.0':
+    resolution: {integrity: sha512-qgBjB7eEKcCB4RqjXGuoSZq74g0wD09fWFJ+HWcCJcKaga8TeUHtb+BY0SsxdleSLBgx4RZ7qmgo0EzqEq7JoQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@oxlint/binding-darwin-x64@1.87.0':
-    resolution: {integrity: sha512-cw5nYw7L/pQ2SgGBgOcg/Qo89llQre3vIc/kuBLhSICzu1r5s8L76H3ug6AIFsD98WpROj8/z5JVzkf4daxHaQ==}
+  '@oxlint/binding-darwin-x64@1.88.0':
+    resolution: {integrity: sha512-sCz3X5Mw/xdzEzn4fsCt1Iq8NKJnGNfhR+b9B5k+4DysYAHsmIhYoocnBPiQ9kvY3+pUun2A0Z8Vtun/Nv6YoQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@oxlint/binding-freebsd-x64@1.87.0':
-    resolution: {integrity: sha512-x/SuznE6loRZK9gz9AS4ZmzNzSu+5KdeoCS+sVHhnrE8HM6AD8UyTjwldQTTqlXGvkwHASgB0NiTNOc3o3PdAg==}
+  '@oxlint/binding-freebsd-x64@1.88.0':
+    resolution: {integrity: sha512-xTOdYOIqCufgIj0knvxu86FBfovP6QBiD7ngNva01gb8xPQCD5gXkE5APGczH35zStim1O3zqvFbLQmY85xXRg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
 
-  '@oxlint/binding-linux-arm-gnueabihf@1.87.0':
-    resolution: {integrity: sha512-+JEDmCAXiiFmKhAjZhgAOwaHWY6WENOQ5QA+lFuY59tgsUCDOTRi46B+lENK6CWvtxsXpwkZXNOgpjAQcpIpnA==}
+  '@oxlint/binding-linux-arm-gnueabihf@1.88.0':
+    resolution: {integrity: sha512-BLadtw88NdYJBrAtC1dYzrPfSP2d5zgx6iuZycdD0YmZBJ2Nqbit9Z4PSaIb6gxK25dweArGMPbOmq/0ugwUPg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxlint/binding-linux-arm-musleabihf@1.87.0':
-    resolution: {integrity: sha512-/uC9XqXLAC9AHFLNycwmSQEvKqGrOCgU+uXALI7gNW0DG81TJ/3T2eHnKdRvcb5R1gFEfjxDwI4e4zIa29rICQ==}
+  '@oxlint/binding-linux-arm-musleabihf@1.88.0':
+    resolution: {integrity: sha512-wILSczl/DaZsCcf7j7tvNbssp8hxEHIJxrv4j7+JjI3TAL1U/JTWbeUtoJJC/vo8+2hkTmHLYoKJjmiNbijdXw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxlint/binding-linux-arm64-gnu@1.87.0':
-    resolution: {integrity: sha512-FTRYPsBy/M728vnUv7l+KAwSAa3Qi4BQbhVvy7NYuMTZ0sUa/OWsbMx79HVFw6u/5KWcaYayDsoOiv7xbevzDg==}
+  '@oxlint/binding-linux-arm64-gnu@1.88.0':
+    resolution: {integrity: sha512-jutT2Hy8JCuZuMwIFHo2HtyxfOfBJHyQxlBHBK1SL9W2f8n/WhjAP0FnDMz9d/mjhv9+QA0mx5AdQ9fDjsrFFg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-arm64-musl@1.87.0':
-    resolution: {integrity: sha512-6sC+N7IY0h1egd8SrYUGNN7CUyKJZ4bIZakKa7V7hfinf4jfi8Kq4+klJvFp5DqXcwMn44I5MeBwmJluO1odFg==}
+  '@oxlint/binding-linux-arm64-musl@1.88.0':
+    resolution: {integrity: sha512-8N8iGV9hh4Lkeuq7QsEkjoXNRRflqR1G2qyoGYXcA0k5qllrdqmfylKEXyHIVERxqNDyMO4StqDQ0uLxXcBQAg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-linux-ppc64-gnu@1.87.0':
-    resolution: {integrity: sha512-d5Mnn+ICbhoJPi37Ccjy+86T5qfH2+mSTrTMBXNPfB+wqSWOayBBLLIrCXdUy1YssluCVdGkl+DO9w5r5ODmUA==}
+  '@oxlint/binding-linux-ppc64-gnu@1.88.0':
+    resolution: {integrity: sha512-5ydcQt3znNQ/rGEWYRvpS2cK9+T18P2VYgnyJ+eloEAwi9YUmsXy5VGrRqNWIK6qzWwHGnEE3ojVqqQNo+f0hA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-riscv64-gnu@1.87.0':
-    resolution: {integrity: sha512-sf5YWuUo1Dx9loqWCgF8P278MycfcD4JHjDC/LV5j11L3Lqa4PFiwCjD6B8kP4AjsgZZkLn3xbpJEtZBaccs4Q==}
+  '@oxlint/binding-linux-riscv64-gnu@1.88.0':
+    resolution: {integrity: sha512-iGx0uvFT54b/5DPJdEBCxYIrVB3v0uTy+JhRh3CyEp8/22BXDkG8rffkFwREdLsdj9mOrPbJYVOZw8ipcBuzjw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-riscv64-musl@1.87.0':
-    resolution: {integrity: sha512-+aCraYbmK3uU3P0rFojjeaK9pGY6JvBDXh/0CM+gPyWKmNmXmnFe0qj4qj02U4ibFpbd9Pa9CmDvIdjJUd29rA==}
+  '@oxlint/binding-linux-riscv64-musl@1.88.0':
+    resolution: {integrity: sha512-Wt47mKMWelVjRjuR7BCFxXkB0m79K1sTEbqMHRWciKUgo5iv7sWsF4RXSOyFYHD9zerNrkRZblnN273rhwOA1Q==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-linux-s390x-gnu@1.87.0':
-    resolution: {integrity: sha512-7rzbZQIljo6VLWVPqUyLa2P/WV3VFsJB4M52R4NCUJn1A50yjtUsHxiMHFL9opEKGFIiTbZ3VQzmtcJOPUq4NQ==}
+  '@oxlint/binding-linux-s390x-gnu@1.88.0':
+    resolution: {integrity: sha512-g3L12KCS4+1gtUt3RbJ4F+Yxx4LNmmZLEPfhd8rAHEJjJk2lAgNfnjGoP/phJyhG5WS6VbNYbJtadJelNfvTMA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-x64-gnu@1.87.0':
-    resolution: {integrity: sha512-Dry46Fa+AXE/xt9J/YriujU1pU9mzfNWHGQwtOYibAFH8HLrKWCi93AhIGnuUMiwn2JbuBkRyz51f50Ly4r4ow==}
+  '@oxlint/binding-linux-x64-gnu@1.88.0':
+    resolution: {integrity: sha512-og/XHVDOD9ZJgRiZkT9DgzQd4sr+JZW7e4l17Q/jVMZiIbeEd4uIu9iAoUbTF1gIvVZoRc4QDOxyVUvQGp4WHg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-x64-musl@1.87.0':
-    resolution: {integrity: sha512-f/HMZez74gJvnRpGz+b5sdGyWrEgRLmFTXg9sNoqjPWogGxYHUhXKTKyMiYsu9rUGR2ciYqL3fk+Ua4JhMJbRA==}
+  '@oxlint/binding-linux-x64-musl@1.88.0':
+    resolution: {integrity: sha512-EmhBsp+xuKb6YbZNEMLBo80Xw71AZOIm18do8ni/GLX/Lw1XzNhVYpbxO1KasYtoAvrGtCOdCPULRlIE0bPbTQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-openharmony-arm64@1.87.0':
-    resolution: {integrity: sha512-lEC6ZfPZm/07JlB7FsOWX9o1RiHlXiBW594LSUGuXmekC8LZmvUPP9XzE2WZcNxJi5cHA/Fw56o02c3JxgMA5g==}
+  '@oxlint/binding-openharmony-arm64@1.88.0':
+    resolution: {integrity: sha512-DBUcx/KwYdg1DAz+G01P/GFv512J04EsZadbHptx2FTpWT/MWRg21ZToNHt9pnsfQRBQ3et/g+vqzbvrdAVbuA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
 
-  '@oxlint/binding-win32-arm64-msvc@1.87.0':
-    resolution: {integrity: sha512-afBWKOD36dUiA9AenaiWpCg8xfyUVPYznyAAVXu413brK4RA5UI/Xoc4yfeGIT8G1a44MV+JR7hioryerBDzGQ==}
+  '@oxlint/binding-win32-arm64-msvc@1.88.0':
+    resolution: {integrity: sha512-xeVd0n4XG5HvynxfYvXi6uB+JvZbVZataowPS8cYpMbYg9mwE4sSyElFQd4LVJFifq8bRLDSR18XgEildmcXAg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@oxlint/binding-win32-ia32-msvc@1.87.0':
-    resolution: {integrity: sha512-daptNsEOuru4/nJTxV4DBHNJ5GepzmaBVQf+jjgKQGi9NRlZKik+RFq4hUL7ewsF1pwjKM+SkYaMbF82UwFGnw==}
+  '@oxlint/binding-win32-ia32-msvc@1.88.0':
+    resolution: {integrity: sha512-MA6iOw//amleaz2mVMsZrA7NHlEexjTrhIxSMFCXQi6IUuQO+3Od00GZhr2iCYw6RFzMW36jkKK/WHBXMsoQAw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ia32]
     os: [win32]
 
-  '@oxlint/binding-win32-x64-msvc@1.87.0':
-    resolution: {integrity: sha512-k+m/EShyXE29J/r1fjk0HlAzhN5JhIvj044oSJkXTEkCLrWZQgXb/3r4q5LTw/eaKW/4GuMXG2xmiJs3s5rPNw==}
+  '@oxlint/binding-win32-x64-msvc@1.88.0':
+    resolution: {integrity: sha512-3Sz6rVWe8Dy+ufsXurFN1GX2dX43F/lQMSLelK9gFjiba7nHvLlqlhR5cHlWVnCpSqUY1hN9pyCX9XToe6ve6g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -11584,98 +11748,98 @@ packages:
     resolution: {integrity: sha512-vLulGZ3iRt6kHcwbGYckrUF2Rd18nfGtpFjyRgbKmEyxLcZmFTBOWKFZSEyS3VVnxFEI7bTPNOGmRC0lD4U1qg==}
     engines: {node: '>=22.13'}
 
-  '@rolldown/binding-android-arm-eabi@1.2.13':
-    resolution: {integrity: sha512-Vu/NICrgdRvUOeaJZIyB2FP63s6fO/4ud5l8dXmxDx9yDyn+mN0y+gsvsVviSli+T361Aqo0h46EuMoobrwawA==}
+  '@rolldown/binding-android-arm-eabi@1.2.14':
+    resolution: {integrity: sha512-aWR+XKH9+rW7m5fWq/5360J3mHycrx/o6xZM2DQFdJnTMdyP7/WzxPjhtLbVWdKo2y612/4U1bWqb3HQhiF7vg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [android]
 
-  '@rolldown/binding-android-arm64@1.2.13':
-    resolution: {integrity: sha512-6LEoIrGy5vvCd2boNnv2soPSUZj/PRvhp8R/t9KlX+mIZxThIE/ZqxrGXxmuNX0FuvQFvLdZr7S4HrYpYBVhEQ==}
+  '@rolldown/binding-android-arm64@1.2.14':
+    resolution: {integrity: sha512-QiVxHofl6A8lQU7WAtOUY4QMVZXohxwz7WJJoeh8NBEUyKfIkMRKhYyq8az/1RypNiIXzNTtiS6KwHz0erxYRQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@rolldown/binding-darwin-arm64@1.2.13':
-    resolution: {integrity: sha512-CaJSRzlQ6Q+zkDMVA9OkVxBjVoPRCDEE3v0FSJ9kIQBgRjFApA3Si4ijhbNVUji7ZJt+PfO0e46qy4nPInHUPA==}
+  '@rolldown/binding-darwin-arm64@1.2.14':
+    resolution: {integrity: sha512-lTQOzHuBIooh3jIr5XINQkjPGEuGy+Dsy0meXDr6Sjty0b99kYgGh4uBC/8mJX1T0kC8d6S0aPP1Y+bHkh6aBw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@rolldown/binding-darwin-x64@1.2.13':
-    resolution: {integrity: sha512-e4r340I5hxSzJkD3YJBxgzq/rJ3wwxwdLLb2FPt1Zpyem20nrQPT11DDEEkazwxaHumH8wpglsp/Ozgj/wT6mw==}
+  '@rolldown/binding-darwin-x64@1.2.14':
+    resolution: {integrity: sha512-hyMKEGatjmBYCs/Q4sbIcL/GqpFEqsX3wc+HYVQ/85A4rxc1o7rPm4DUI4GV4k/h0ITddwFSGpqQunI14GXjTA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@rolldown/binding-freebsd-x64@1.2.13':
-    resolution: {integrity: sha512-hoBWDZ4/K/mJKVMbsgUd1jfpA2DiOrJ54mpegObU9TBHBBrtX4FLIXJJQRDPZ/2Dn91GvPob+Z2hwKJzf4E5SQ==}
+  '@rolldown/binding-freebsd-x64@1.2.14':
+    resolution: {integrity: sha512-u371GbXoVXrEgP20PwzoGNOdAOqAMhzo19JzzY+V4YmmnC+DTOoqdbMu+O+54emM59Mik/UdrtWgcuEDKWRPKA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
 
-  '@rolldown/binding-linux-arm-gnueabihf@1.2.13':
-    resolution: {integrity: sha512-oF9fZu3vTWnTiVAkDFxU9PJLt1nh20K9RRpuHsR7ZnE2L7XookBbDBVLojCVSLGbvtSlxeUNnjAj6DbNsKyzbg==}
+  '@rolldown/binding-linux-arm-gnueabihf@1.2.14':
+    resolution: {integrity: sha512-BqwKsdZQf6EqVWr8fv2MrDYzAvOZ7+NYFSJESRGs87fkseEhs0TU9TXgRJTkZoRRkxTizyEg1LKUXfU3/78uqg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@rolldown/binding-linux-arm64-gnu@1.2.13':
-    resolution: {integrity: sha512-DTpb/+jMiqWMPgphn4ksW1zW+XLJ6dJJ9FMvnIk9I291LhCctMPhMYJrP5t9p6C9qa3KXadDdUEZHBaPh3kNxQ==}
+  '@rolldown/binding-linux-arm64-gnu@1.2.14':
+    resolution: {integrity: sha512-SD9kY8M009x/7s57Z1dgUVlP5+uYBgKQK0Tkr1WIWngrtUJmRCW1RJFMY7QDla2khXhmg2i5Io7MUjcmZNZ/KQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-arm64-musl@1.2.13':
-    resolution: {integrity: sha512-xU+Kvv9N2A3SY35zFh1FWWNjxbadE/BKeqnkXe7vScU4GZsw757BlVmDLITZEq8DPpk6m7uoDYkK7P+x/uU5Ow==}
+  '@rolldown/binding-linux-arm64-musl@1.2.14':
+    resolution: {integrity: sha512-BJ2CL19M6uuWesMgnqJzgxoI+N+eV7b0A9O9vLV42y+gitC41fNa8KElau1tHVzuLWX5GzEuxMPhAO0tQXQMkg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rolldown/binding-linux-ppc64-gnu@1.2.13':
-    resolution: {integrity: sha512-XMk/hnhh25oQ756Lclb1Q11h4ll0xC0Esa5w4Vzp+mAE2S3AGJgeM0SonrIgY8fHhjarb6hcoTuwoFG0VVP2ig==}
+  '@rolldown/binding-linux-ppc64-gnu@1.2.14':
+    resolution: {integrity: sha512-4+Kl8daPV8NDHaD7mfCcc1pRM+Qg7ab8DyMm5FG5WoZgv4h2i3KFN1CybYBNbQqmuYm7ftJLvmMI1eHYJ22S/Q==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-s390x-gnu@1.2.13':
-    resolution: {integrity: sha512-U1BoTHYmlywE2n3HUWjzZ+8EQsKr+OwpxYuDWaubx42tUL8QSL7nOqRz/NVHanibbFP3M1Rxuprz/wNcbMKjqw==}
+  '@rolldown/binding-linux-s390x-gnu@1.2.14':
+    resolution: {integrity: sha512-V/h8ePq1fKDrmtFMz6xcCN3DKvuvMRrwwD1q0PkBeeo4DpK64biaKvqWGVxqCeYKqeRk7gE7/iKPxLCn08O97A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-x64-gnu@1.2.13':
-    resolution: {integrity: sha512-J4cm80Pc6wEwV5AZ42o62sIQgDk+Y7R2s646jIwuvO+4V46QB58N4vVuMPWCBaNgursXLpmUWJV//WQAkPvHBQ==}
+  '@rolldown/binding-linux-x64-gnu@1.2.14':
+    resolution: {integrity: sha512-WxalXzgrLVpKC93xfpaJ3gCXUWzeCr+FRCbDVD2mUAy4L6Vo3lNVz0epUEUpxPWJkLNYUwM4OSIikv36OJ9mLg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rolldown/binding-linux-x64-musl@1.2.13':
-    resolution: {integrity: sha512-W0euZS40U4V6JkmEnVCIX9mcsL6cbXQ4X8c2w+MMOIjFg68TXUW+u3RT+2e1t1pv9mg/EP3pDtK3POXdQ7Rxyw==}
+  '@rolldown/binding-linux-x64-musl@1.2.14':
+    resolution: {integrity: sha512-3G3tnAmTpdk9jO3GQtyHXqeFD2SlecfTws/Y3M2mmj9nMBwwuLT4kur8sZKeu7ENUHSpVO3cIsm5A52LEWWwlg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rolldown/binding-openharmony-arm64@1.2.13':
-    resolution: {integrity: sha512-do/AF/4n9MRshia3a5aXoy8xM2c6mgfT6D7H/dY6my5z+hfCIR4ab7mk4IRj++nsEQpKy39kd0DQnDq+r692tw==}
+  '@rolldown/binding-openharmony-arm64@1.2.14':
+    resolution: {integrity: sha512-qyr5XiNGxm2ytx17vvtcJ9nXn6v1gENETi503bJx3OGwZ1tSonj7BosxbMa/xeAfSl5iS9X6KjEWYXLu6v1L7Q==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
 
-  '@rolldown/binding-win32-arm64-msvc@1.2.13':
-    resolution: {integrity: sha512-6FtUf2cJZobutJdxnGYX8z0vtbgqU0b2v8vfBhkXb9wp2MppMFtkunE+IaOntyi01rkIQoPW2GHABtfzsC0BRQ==}
+  '@rolldown/binding-win32-arm64-msvc@1.2.14':
+    resolution: {integrity: sha512-oA4o5o0S2yB199YyYXDzKUv1Z56Rc+mgOjwm7Z/vJ9Z8igiDPYvoOuDyo6g7AK/ZaF09nPhDKVnGBcYHO11GXA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@rolldown/binding-win32-x64-msvc@1.2.13':
-    resolution: {integrity: sha512-UKhFaZTeTcbKrb3iU82m17jVcPEAoqDkCN5MBqgPyZSwp/cQmib21crTS0DdH7T1B7wZRWEI89YQAOJMet5yhg==}
+  '@rolldown/binding-win32-x64-msvc@1.2.14':
+    resolution: {integrity: sha512-9mE94bf2GZUaR/fUSXCMpBoWkctu421Mi0ORpm4zqfbkjKep7RxzPFa5etcGs5h+2KApoWBOA/hAJa/7saGgEQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -11858,33 +12022,33 @@ packages:
     peerDependencies:
       '@tsparticles/engine': 4.4.0
 
-  '@turbo/darwin-64@2.11.7':
-    resolution: {integrity: sha512-Z2LFOxwbiJueD1miByXJS/BrW21vv6YaQXZustty5jEX4vQYw6zyh101Sz1QO7WG0mqBzKagZ/DoAeeujI0/Sw==}
+  '@turbo/darwin-64@2.11.8':
+    resolution: {integrity: sha512-u+6s4C2hskRYx6MkW2uT7BCW6sESCL/+5bjHDDWUfQfQliCSJ7lAHAL6RQaw0an9WU6nJvwYgT786mEWul2kDw==}
     cpu: [x64]
     os: [darwin]
 
-  '@turbo/darwin-arm64@2.11.7':
-    resolution: {integrity: sha512-Vhv8ybgIflosNDSSRD9fNXHlCFA60dsGyTqQmc7l28SEX5jOaweCCD4BBYNd8/p0WGkw3e7tZbfA9w6FsujGvw==}
+  '@turbo/darwin-arm64@2.11.8':
+    resolution: {integrity: sha512-y3qpPbclA4MuzAf/pSp6ivifp2mBCiLMHyf/bVq2eAJLjTnzev9JG5eqFhM0UvDGi0b3QKRNZi2HiavPnLbEbw==}
     cpu: [arm64]
     os: [darwin]
 
-  '@turbo/linux-64@2.11.7':
-    resolution: {integrity: sha512-rAqRp3blQKk1+ylMGlZHAW0eJjVNuuGUm4ZrC6RU1Im8tLryvaO4a2zLQ/FQi1TRlmKqKV9YXBki2YeytlLbXA==}
+  '@turbo/linux-64@2.11.8':
+    resolution: {integrity: sha512-5Pm0icIkXPjk/HxhZD2AFMCyfH8RlITgtOksoSAdeLtXHAagzAqaAkdqG+6Ebd3eGPT1k3nJZWQD4wCLlIte5g==}
     cpu: [x64]
     os: [android, linux]
 
-  '@turbo/linux-arm64@2.11.7':
-    resolution: {integrity: sha512-thVYGov7S+llXAxrl3kBb/efalav0xhrjl5NHCR6AfKx14JkbqaetvbVwyss4FvZ9rt+Pv3xsTb+8SIYix8DTg==}
+  '@turbo/linux-arm64@2.11.8':
+    resolution: {integrity: sha512-gh/Pcg7WVLS22SpoFqNxs/4y6feU/+Qa9nkCLTOHMTLjE3ADeqMjLFulq1LVCsWD2vjQccCnaZSUOLJ/lHzBRQ==}
     cpu: [arm64]
     os: [android, linux]
 
-  '@turbo/windows-64@2.11.7':
-    resolution: {integrity: sha512-ZIoKT7J7KutgYl4bGxmmgeUQjG+7E0nY8BF9dxUOiMH2vdTsM4JQ2uSwTYFkTR2Llbg6ghGjSmuZ8LQtkLEYjg==}
+  '@turbo/windows-64@2.11.8':
+    resolution: {integrity: sha512-NnHtcWPE6PymlYsCKEuYditlY/nMeCEB3xyD4yc3cpqpxW7/4Xqdlqd5TpqvEpjS8CDazPHelGCQS/ghUIoZ6g==}
     cpu: [x64]
     os: [win32]
 
-  '@turbo/windows-arm64@2.11.7':
-    resolution: {integrity: sha512-88Xv2f7SLGVJ68lRRx8o375dKmnZYNdDtvlKcPA0kZpcF93eAQd8l96BKQ0/AMHG0bMJA0Z5QqoqtetxzNsC+g==}
+  '@turbo/windows-arm64@2.11.8':
+    resolution: {integrity: sha512-o8UyM/VlYCvW5Enfo2O37Pe11p3wmnEYtJrohXA2SyOlehmo5KyXpptPRKrXOMNfdmoYEulo6Nhj0tIv2UB0hA==}
     cpu: [arm64]
     os: [win32]
 
@@ -11917,9 +12081,6 @@ packages:
 
   '@types/node@24.19.2':
     resolution: {integrity: sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ==}
-
-  '@types/node@26.6.5':
-    resolution: {integrity: sha512-uMzsv9stDdofIZBx4UGh4Z9ZgXnGC9seRDscilBcTHAeOFk67MZg/k9bWVfO+bk4qZmG+l52hRnLwUiH2LnJTg==}
 
   '@types/prettyjson@0.0.33':
     resolution: {integrity: sha512-hHZMkavT9OXFq8p6pTCiaREtPxMRfy9NMp+Qa4PWH0RINQjyh0crOhoqUFA/cvIZncpjBpdvxkoe7nmVbyBJXw==}
@@ -11960,8 +12121,8 @@ packages:
       oxc-transform-react:
         optional: true
 
-  '@vitest/mocker@5.0.4':
-    resolution: {integrity: sha512-tqAlrYWce4iUxhr3ncNohejtCTOcHeE8XWrSNZY3OhPoDn01yeGv+gnaBy64ATp7o6pb03eIbBAjzmibpc9vIQ==}
+  '@vitest/mocker@5.0.5':
+    resolution: {integrity: sha512-xLL3lkDegJZw+MGoGaCCsFayDZthGgpAtr3Vziyfc4p7xH89K7KRPcRBBh/kEYm0Aqkt5DtTmkYpBtRV/FrHZg==}
     peerDependencies:
       msw: ^2.4.9 || ^3.0.0
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -11971,8 +12132,8 @@ packages:
       vite:
         optional: true
 
-  '@vitest/spy@5.0.4':
-    resolution: {integrity: sha512-MZKk/gSkm2q+ICobMxCpH1mA+cCAWm8WV7UhxlqGjq/sJ3AGc1BqFOs5CRVXxH78wQtme9q/NAAgBquj4AcyMw==}
+  '@vitest/spy@5.0.5':
+    resolution: {integrity: sha512-lwJRExuH417257Q5wv9QYugN9IMJkoxcrKrYxGPQkBzl7wlNpTUxD/5yNX4ESKVUIShKPgkGchYPFMWOOk0wzw==}
 
   ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
@@ -11982,8 +12143,8 @@ packages:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
     engines: {node: '>=8'}
 
-  argparse@2.0.1:
-    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+  argparse@3.0.3:
+    resolution: {integrity: sha512-Sn98ftV3KfsO8xfLPHG6oT8y+b0yvbrLgZjgPDXsharNY15tTAjqIsIju4S32nl6/iEUNNE4v+yL2Zhm8ooP3w==}
 
   array-buffer-byte-length@1.0.2:
     resolution: {integrity: sha512-LHE+8BuR7RYGDKvnrmcuSq3tDcKv9OFEXQt/HpbZhY7V6h0zlUXutnAD82GiFx9rdieCMjkvtcsPqBwgUl1Iiw==}
@@ -12015,8 +12176,8 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  baseline-browser-mapping@2.11.28:
-    resolution: {integrity: sha512-br0LOmjJqr6Rt4AEkadbcNf67Zpo7EPwKsWbjnRrJIa1QYFHQBqM4C7F2WTbV8ahTEcg1Eo+Y0aWjjORInYFyA==}
+  baseline-browser-mapping@2.11.29:
+    resolution: {integrity: sha512-YeesxhUmR4h5y5V8KF8iBCqJb8YFrBJ++XBTeGcWIaQOYXGN19JM0FoiOjAhwuDoln8owMgXcWBmgHtYSkky2w==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -12050,8 +12211,8 @@ packages:
     resolution: {integrity: sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==}
     engines: {node: '>= 0.4'}
 
-  caniuse-lite@1.0.30001815:
-    resolution: {integrity: sha512-uDybUEyfgbyJJ93J1vikTylBX31AkdVYeVPeffMQpf8XN7hSfr0oZOn4VFOIMNvtU5+rHvC5Udg2TgtJKHm23Q==}
+  caniuse-lite@1.0.30001816:
+    resolution: {integrity: sha512-+8Yx7BXCoqk6IF8yTicjfUR6D/ldJzdlsodlEOiOSPmhK844WIgk67/zIQaGAOxNkZyyvBlrRFnLvqKIoqbAFw==}
 
   chai-as-promised@8.0.2:
     resolution: {integrity: sha512-1GadL+sEJVLzDjcawPM4kjfnL+p/9vrxiEUonowKOAzvVg0PixJUdtuDzdkDeQhK3zfOE76GqGkZIQ7/Adcrqw==}
@@ -12192,8 +12353,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  electron-to-chromium@1.5.453:
-    resolution: {integrity: sha512-9r/nz9akllr3SZsHUhfK10ktUH6j0Dbo3cKdh91khw0FvR6HhXGnATmOq5X8ena2aq4GXLQ1koh3nvKaQJaNmQ==}
+  electron-to-chromium@1.5.457:
+    resolution: {integrity: sha512-RNKsgErRmkzRgC8nOV1wzFhSbfGlYJ6k4LT/aE7oFrDYaQgHhTh5oTp0ZgSbRRybKR8HlZIdCWc38Y+CDTk1Jw==}
 
   emittery@2.1.0:
     resolution: {integrity: sha512-cPP/ddRdWhEQz7+R/QJi22O2iA73YuNWJRgDM2SUVEKA3XRPiv9f5cfGb508s+124sEBlnewHq/CiSOuIyewHg==}
@@ -12502,8 +12663,8 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-yaml@5.4.3:
-    resolution: {integrity: sha512-yzzNtgczwgoVHNigCyKTXcQJU4Y8t/ikU4UxXW0BvrLfHTGWZhsNcOT2s/a7vn81/4KqVnNmHjaUEPlvWnNwVw==}
+  js-yaml@5.5.0:
+    resolution: {integrity: sha512-paNr4LFIFPjeeSmwNYdrb8FafLLG/Cr2Af3GjbsHJ5CxIjH4r0c2emlmRdAtpPAieP1gRVzk6buBbVP5gBMGAg==}
     hasBin: true
 
   json-parse-better-errors@1.0.2:
@@ -12681,8 +12842,8 @@ packages:
   node-addon-api@7.1.1:
     resolution: {integrity: sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==}
 
-  node-releases@2.0.58:
-    resolution: {integrity: sha512-BdiKAgbfRlvfMq/XzO/AF9NPmaA8a+YpLAyAFTVFBj3gARrAIfWvNq7Q7NE4se3KgFu0KkrvQMxTS0XVnsGzHg==}
+  node-releases@2.0.59:
+    resolution: {integrity: sha512-5qr2okC4ItAI0hG5SaV0HoYMpnM/Y6+Oqr7AmPYy/2uEoGvS+GbSKLeRxSS1uAdu59yz0ouzcuXievSgg///WA==}
     engines: {node: '>=18'}
 
   normalize-package-data@2.5.0:
@@ -12740,8 +12901,8 @@ packages:
     resolution: {integrity: sha512-vQ9WDF3fiZJvRdSDosNOflerOCOpwol6vWzVDxW76RcU19cjTh7engvkHLvmv+tzedR8fAiJUVUGr6IVZdkzXQ==}
     hasBin: true
 
-  oxlint@1.87.0:
-    resolution: {integrity: sha512-drxVlaW7Oqq7wSy1CN25znRu00aRq8n57Q2wniJRxCmtYVz07ufCm7EVDPQFZURrTgQIjzKrVEHAD/HcvJXObg==}
+  oxlint@1.88.0:
+    resolution: {integrity: sha512-uIcFgw8BmqvFRGzH5+r7d2zJMEexwNSrEmM6WQNnGh3VkO0XYTEFoyxyNE6tjKMUib9Cue4XJA2DoWruO5D6aw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -12827,10 +12988,10 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-dom@19.3.0:
-    resolution: {integrity: sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==}
+  react-dom@19.3.1:
+    resolution: {integrity: sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ==}
     peerDependencies:
-      react: ^19.3.0
+      react: ^19.3.1
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -12839,8 +13000,8 @@ packages:
     resolution: {integrity: sha512-FPvF2XxTSikpJxcr+bHut2H4gJ17+18Uy20D5/F+SKzFap62R3cM5wH6b8WN3LyGSYeQilLEcJcR1fjBSI2S1A==}
     engines: {node: '>=0.10.0'}
 
-  react@19.3.0:
-    resolution: {integrity: sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==}
+  react@19.3.1:
+    resolution: {integrity: sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==}
     engines: {node: '>=0.10.0'}
 
   read-pkg@3.0.0:
@@ -12871,8 +13032,8 @@ packages:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  rolldown@1.2.13:
-    resolution: {integrity: sha512-/5apOkwWxtACcQtZ5WlrAsKS4JwXVThQPJZ3RqIruRY9UG9M8e0VlXN068xum/JRKA4aIUoJ13ghe/kGCvidiQ==}
+  rolldown@1.2.14:
+    resolution: {integrity: sha512-eTBTTqMR6uHKLgcUqpJP8ntzDI6V4LYA8negAMBEI7gkgVvOdrx6VsvS2Ym+83KhOPdLCHWJu0w7UQFJZhHKNw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -13060,8 +13221,8 @@ packages:
     resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
     engines: {node: '>=20'}
 
-  temporal-polyfill@1.0.5:
-    resolution: {integrity: sha512-+H/mmY74i6wXCMcjIhGuSnODcyZnc4eois2myhOyX0UqRAKNXQY5m9iB1en5jQ/n4SXtjLXo1ElBI5bmn8tZwQ==}
+  temporal-polyfill@1.0.6:
+    resolution: {integrity: sha512-tYyEry1HLGUDbm2356W3iYD0OZdo7rlP7h98Zr/EnjqLZQwTAfcBDUvJnJbfA15v/vQad57hJZScG5O0W2oKEA==}
 
   temporal-spec@1.0.1:
     resolution: {integrity: sha512-wxVoanmDeavXie1vu2JaQ3WIc3JZnWAOYFBsJyATaVsXsycKYUflGsyBmrRSnoCpZJpwPyr38VpgSUlQ8CbFxg==}
@@ -13095,8 +13256,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  turbo@2.11.7:
-    resolution: {integrity: sha512-RhXHbqfvY6o3xt/zSHCwSNwLrZlXiqHzewi4eAj9PtZ1T1CqgMJ2yIDb7SKPTG9IikTm925mfzL6hldQVdyNWw==}
+  turbo@2.11.8:
+    resolution: {integrity: sha512-OwiFs6xNO5c2XtPgYCgCXuSlkur4b5T/OeAbOKzgsHh5mmJ9Sh7m041fz2JchrvyQv8hmae+1n07HfBmvDLZRA==}
     hasBin: true
 
   type-detect@4.0.8:
@@ -13145,9 +13306,6 @@ packages:
 
   undici-types@7.24.6:
     resolution: {integrity: sha512-WRNW+sJgj5OBN4/0JpHFqtqzhpbnV0GuB+OozA9gCL7a993SmU+1JBZCzLNxYsbMfIeDL+lTsphD5jN5N+n0zg==}
-
-  undici-types@8.9.0:
-    resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
 
   update-browserslist-db@1.3.4:
     resolution: {integrity: sha512-t8wonIOdQyOjtPd2VktlBu6QjTVTks6v8bSi7kd0r2Vll8TK1JYDZtRRdbmCHOAMphkZgrzK+L+vXK4pyZ8t4A==}
@@ -13214,20 +13372,20 @@ packages:
       yaml:
         optional: true
 
-  vitest@5.0.4:
-    resolution: {integrity: sha512-z0WxZRV2Sg48wF0FSgMq3TFG8JS38/Qr96vZVZdX6+Em9raQTvnXQvdTFJe2m3rfyJnEHeHQ/snceIdi8D1pVg==}
+  vitest@5.0.5:
+    resolution: {integrity: sha512-cPODOMF8YnkiiYtDdHo6n4wWmBrOBBbOIYH2d33M4l3CdNn72h+qMmO6uXffUN6A5AZFXNND/d+krS9mgkXRfg==}
     engines: {node: ^22.12.0 || ^24.0.0 || >=26.0.0}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
       '@opentelemetry/api': ^1.9.0
       '@types/node': ^22.0.0 || >=24.0.0
-      '@vitest/browser-playwright': 5.0.4
-      '@vitest/browser-preview': 5.0.4
+      '@vitest/browser-playwright': 5.0.5
+      '@vitest/browser-preview': 5.0.5
       '@vitest/browser-webdriverio': ^5.0.0-beta.5 || >=5.0.0
-      '@vitest/coverage-istanbul': 5.0.4
-      '@vitest/coverage-v8': 5.0.4
-      '@vitest/ui': 5.0.4
+      '@vitest/coverage-istanbul': 5.0.5
+      '@vitest/coverage-v8': 5.0.5
+      '@vitest/ui': 5.0.5
       happy-dom: '*'
       jsdom: '*'
       vite: ^6.4.0 || ^7.0.0 || ^8.0.0
@@ -13312,7 +13470,7 @@ snapshots:
 
   '@dmsnell/diff-match-patch@1.1.0': {}
 
-  '@earendil-works/pi-tui@1.2.0':
+  '@earendil-works/pi-tui@1.3.0':
     dependencies:
       get-east-asian-width: 1.6.0
       marked: 18.0.11
@@ -13461,7 +13619,7 @@ snapshots:
       '@nodelib/fs.scandir': 4.0.1
       fastq: 1.20.3
 
-  '@oxc-project/types@0.153.0': {}
+  '@oxc-project/types@0.154.0': {}
 
   '@oxfmt/binding-android-arm-eabi@0.73.0':
     optional: true
@@ -13538,61 +13696,61 @@ snapshots:
   '@oxlint-tsgolint/win32-x64@7.0.2004':
     optional: true
 
-  '@oxlint/binding-android-arm-eabi@1.87.0':
+  '@oxlint/binding-android-arm-eabi@1.88.0':
     optional: true
 
-  '@oxlint/binding-android-arm64@1.87.0':
+  '@oxlint/binding-android-arm64@1.88.0':
     optional: true
 
-  '@oxlint/binding-darwin-arm64@1.87.0':
+  '@oxlint/binding-darwin-arm64@1.88.0':
     optional: true
 
-  '@oxlint/binding-darwin-x64@1.87.0':
+  '@oxlint/binding-darwin-x64@1.88.0':
     optional: true
 
-  '@oxlint/binding-freebsd-x64@1.87.0':
+  '@oxlint/binding-freebsd-x64@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-arm-gnueabihf@1.87.0':
+  '@oxlint/binding-linux-arm-gnueabihf@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-arm-musleabihf@1.87.0':
+  '@oxlint/binding-linux-arm-musleabihf@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-arm64-gnu@1.87.0':
+  '@oxlint/binding-linux-arm64-gnu@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-arm64-musl@1.87.0':
+  '@oxlint/binding-linux-arm64-musl@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-ppc64-gnu@1.87.0':
+  '@oxlint/binding-linux-ppc64-gnu@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-riscv64-gnu@1.87.0':
+  '@oxlint/binding-linux-riscv64-gnu@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-riscv64-musl@1.87.0':
+  '@oxlint/binding-linux-riscv64-musl@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-s390x-gnu@1.87.0':
+  '@oxlint/binding-linux-s390x-gnu@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-x64-gnu@1.87.0':
+  '@oxlint/binding-linux-x64-gnu@1.88.0':
     optional: true
 
-  '@oxlint/binding-linux-x64-musl@1.87.0':
+  '@oxlint/binding-linux-x64-musl@1.88.0':
     optional: true
 
-  '@oxlint/binding-openharmony-arm64@1.87.0':
+  '@oxlint/binding-openharmony-arm64@1.88.0':
     optional: true
 
-  '@oxlint/binding-win32-arm64-msvc@1.87.0':
+  '@oxlint/binding-win32-arm64-msvc@1.88.0':
     optional: true
 
-  '@oxlint/binding-win32-ia32-msvc@1.87.0':
+  '@oxlint/binding-win32-ia32-msvc@1.88.0':
     optional: true
 
-  '@oxlint/binding-win32-x64-msvc@1.87.0':
+  '@oxlint/binding-win32-x64-msvc@1.88.0':
     optional: true
 
   '@parcel/bundler-default@2.16.4':
@@ -14186,49 +14344,49 @@ snapshots:
 
   '@pnpm/constants@1102.0.1': {}
 
-  '@rolldown/binding-android-arm-eabi@1.2.13':
+  '@rolldown/binding-android-arm-eabi@1.2.14':
     optional: true
 
-  '@rolldown/binding-android-arm64@1.2.13':
+  '@rolldown/binding-android-arm64@1.2.14':
     optional: true
 
-  '@rolldown/binding-darwin-arm64@1.2.13':
+  '@rolldown/binding-darwin-arm64@1.2.14':
     optional: true
 
-  '@rolldown/binding-darwin-x64@1.2.13':
+  '@rolldown/binding-darwin-x64@1.2.14':
     optional: true
 
-  '@rolldown/binding-freebsd-x64@1.2.13':
+  '@rolldown/binding-freebsd-x64@1.2.14':
     optional: true
 
-  '@rolldown/binding-linux-arm-gnueabihf@1.2.13':
+  '@rolldown/binding-linux-arm-gnueabihf@1.2.14':
     optional: true
 
-  '@rolldown/binding-linux-arm64-gnu@1.2.13':
+  '@rolldown/binding-linux-arm64-gnu@1.2.14':
     optional: true
 
-  '@rolldown/binding-linux-arm64-musl@1.2.13':
+  '@rolldown/binding-linux-arm64-musl@1.2.14':
     optional: true
 
-  '@rolldown/binding-linux-ppc64-gnu@1.2.13':
+  '@rolldown/binding-linux-ppc64-gnu@1.2.14':
     optional: true
 
-  '@rolldown/binding-linux-s390x-gnu@1.2.13':
+  '@rolldown/binding-linux-s390x-gnu@1.2.14':
     optional: true
 
-  '@rolldown/binding-linux-x64-gnu@1.2.13':
+  '@rolldown/binding-linux-x64-gnu@1.2.14':
     optional: true
 
-  '@rolldown/binding-linux-x64-musl@1.2.13':
+  '@rolldown/binding-linux-x64-musl@1.2.14':
     optional: true
 
-  '@rolldown/binding-openharmony-arm64@1.2.13':
+  '@rolldown/binding-openharmony-arm64@1.2.14':
     optional: true
 
-  '@rolldown/binding-win32-arm64-msvc@1.2.13':
+  '@rolldown/binding-win32-arm64-msvc@1.2.14':
     optional: true
 
-  '@rolldown/binding-win32-x64-msvc@1.2.13':
+  '@rolldown/binding-win32-x64-msvc@1.2.14':
     optional: true
 
   '@rolldown/pluginutils@1.0.1': {}
@@ -14379,22 +14537,22 @@ snapshots:
       '@tsparticles/animation-utils': 4.4.0(@tsparticles/engine@4.4.0)
       '@tsparticles/engine': 4.4.0
 
-  '@turbo/darwin-64@2.11.7':
+  '@turbo/darwin-64@2.11.8':
     optional: true
 
-  '@turbo/darwin-arm64@2.11.7':
+  '@turbo/darwin-arm64@2.11.8':
     optional: true
 
-  '@turbo/linux-64@2.11.7':
+  '@turbo/linux-64@2.11.8':
     optional: true
 
-  '@turbo/linux-arm64@2.11.7':
+  '@turbo/linux-arm64@2.11.8':
     optional: true
 
-  '@turbo/windows-64@2.11.7':
+  '@turbo/windows-64@2.11.8':
     optional: true
 
-  '@turbo/windows-arm64@2.11.7':
+  '@turbo/windows-arm64@2.11.8':
     optional: true
 
   '@types/chai@5.2.3':
@@ -14408,7 +14566,7 @@ snapshots:
 
   '@types/cross-spawn@6.0.6':
     dependencies:
-      '@types/node': 26.6.5
+      '@types/node': 24.19.2
 
   '@types/deep-eql@4.0.2': {}
 
@@ -14423,10 +14581,6 @@ snapshots:
   '@types/node@24.19.2':
     dependencies:
       undici-types: 7.24.6
-
-  '@types/node@26.6.5':
-    dependencies:
-      undici-types: 8.9.0
 
   '@types/prettyjson@0.0.33': {}
 
@@ -14453,16 +14607,16 @@ snapshots:
       '@rolldown/pluginutils': 1.0.1
       vite: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
 
-  '@vitest/mocker@5.0.4(vite@8.3.4)':
+  '@vitest/mocker@5.0.5(vite@8.3.4)':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
-      '@vitest/spy': 5.0.4
+      '@vitest/spy': 5.0.5
       estree-walker: 3.0.3
       magic-string: 1.4.3
     optionalDependencies:
       vite: 8.3.4(@types/node@24.19.2)(yaml@2.9.1)
 
-  '@vitest/spy@5.0.4': {}
+  '@vitest/spy@5.0.5': {}
 
   ansi-styles@3.2.1:
     dependencies:
@@ -14472,7 +14626,7 @@ snapshots:
     dependencies:
       color-convert: 2.0.1
 
-  argparse@2.0.1: {}
+  argparse@3.0.3: {}
 
   array-buffer-byte-length@1.0.2:
     dependencies:
@@ -14503,7 +14657,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  baseline-browser-mapping@2.11.28: {}
+  baseline-browser-mapping@2.11.29: {}
 
   bowser@2.14.1: {}
 
@@ -14520,10 +14674,10 @@ snapshots:
 
   browserslist@4.29.3:
     dependencies:
-      baseline-browser-mapping: 2.11.28
-      caniuse-lite: 1.0.30001815
-      electron-to-chromium: 1.5.453
-      node-releases: 2.0.58
+      baseline-browser-mapping: 2.11.29
+      caniuse-lite: 1.0.30001816
+      electron-to-chromium: 1.5.457
+      node-releases: 2.0.59
       update-browserslist-db: 1.3.4(browserslist@4.29.3)
 
   call-bind-apply-helpers@1.0.2:
@@ -14543,7 +14697,7 @@ snapshots:
       call-bind-apply-helpers: 1.0.2
       get-intrinsic: 1.3.0
 
-  caniuse-lite@1.0.30001815: {}
+  caniuse-lite@1.0.30001816: {}
 
   chai-as-promised@8.0.2(chai@6.3.0):
     dependencies:
@@ -14672,7 +14826,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  electron-to-chromium@1.5.453: {}
+  electron-to-chromium@1.5.457: {}
 
   emittery@2.1.0: {}
 
@@ -15031,9 +15185,9 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-yaml@5.4.3:
+  js-yaml@5.5.0:
     dependencies:
-      argparse: 2.0.1
+      argparse: 3.0.3
 
   json-parse-better-errors@1.0.2: {}
 
@@ -15145,7 +15299,7 @@ snapshots:
       glob: 13.0.6
       is-path-inside: 4.0.0
       is-unicode-supported: 0.1.0
-      js-yaml: 5.4.3
+      js-yaml: 5.5.0
       minimatch: 10.2.6
       ms: 2.1.3
       picocolors: 1.1.1
@@ -15168,7 +15322,7 @@ snapshots:
 
   node-addon-api@7.1.1: {}
 
-  node-releases@2.0.58: {}
+  node-releases@2.0.59: {}
 
   normalize-package-data@2.5.0:
     dependencies:
@@ -15248,27 +15402,27 @@ snapshots:
       '@oxlint-tsgolint/win32-arm64': 7.0.2004
       '@oxlint-tsgolint/win32-x64': 7.0.2004
 
-  oxlint@1.87.0(oxlint-tsgolint@7.0.2004):
+  oxlint@1.88.0(oxlint-tsgolint@7.0.2004):
     optionalDependencies:
-      '@oxlint/binding-android-arm-eabi': 1.87.0
-      '@oxlint/binding-android-arm64': 1.87.0
-      '@oxlint/binding-darwin-arm64': 1.87.0
-      '@oxlint/binding-darwin-x64': 1.87.0
-      '@oxlint/binding-freebsd-x64': 1.87.0
-      '@oxlint/binding-linux-arm-gnueabihf': 1.87.0
-      '@oxlint/binding-linux-arm-musleabihf': 1.87.0
-      '@oxlint/binding-linux-arm64-gnu': 1.87.0
-      '@oxlint/binding-linux-arm64-musl': 1.87.0
-      '@oxlint/binding-linux-ppc64-gnu': 1.87.0
-      '@oxlint/binding-linux-riscv64-gnu': 1.87.0
-      '@oxlint/binding-linux-riscv64-musl': 1.87.0
-      '@oxlint/binding-linux-s390x-gnu': 1.87.0
-      '@oxlint/binding-linux-x64-gnu': 1.87.0
-      '@oxlint/binding-linux-x64-musl': 1.87.0
-      '@oxlint/binding-openharmony-arm64': 1.87.0
-      '@oxlint/binding-win32-arm64-msvc': 1.87.0
-      '@oxlint/binding-win32-ia32-msvc': 1.87.0
-      '@oxlint/binding-win32-x64-msvc': 1.87.0
+      '@oxlint/binding-android-arm-eabi': 1.88.0
+      '@oxlint/binding-android-arm64': 1.88.0
+      '@oxlint/binding-darwin-arm64': 1.88.0
+      '@oxlint/binding-darwin-x64': 1.88.0
+      '@oxlint/binding-freebsd-x64': 1.88.0
+      '@oxlint/binding-linux-arm-gnueabihf': 1.88.0
+      '@oxlint/binding-linux-arm-musleabihf': 1.88.0
+      '@oxlint/binding-linux-arm64-gnu': 1.88.0
+      '@oxlint/binding-linux-arm64-musl': 1.88.0
+      '@oxlint/binding-linux-ppc64-gnu': 1.88.0
+      '@oxlint/binding-linux-riscv64-gnu': 1.88.0
+      '@oxlint/binding-linux-riscv64-musl': 1.88.0
+      '@oxlint/binding-linux-s390x-gnu': 1.88.0
+      '@oxlint/binding-linux-x64-gnu': 1.88.0
+      '@oxlint/binding-linux-x64-musl': 1.88.0
+      '@oxlint/binding-openharmony-arm64': 1.88.0
+      '@oxlint/binding-win32-arm64-msvc': 1.88.0
+      '@oxlint/binding-win32-ia32-msvc': 1.88.0
+      '@oxlint/binding-win32-x64-msvc': 1.88.0
       oxlint-tsgolint: 7.0.2004
 
   parse-imports-ts@1.0.4(typescript@6.0.3):
@@ -15330,16 +15484,16 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-dom@19.3.0(react@19.3.0):
+  react-dom@19.3.1(react@19.3.1):
     dependencies:
-      react: 19.3.0
+      react: 19.3.1
       scheduler: 0.28.0
 
   react-is@16.13.1: {}
 
   react-refresh@0.16.0: {}
 
-  react@19.3.0: {}
+  react@19.3.1: {}
 
   read-pkg@3.0.0:
     dependencies:
@@ -15380,26 +15534,26 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rolldown@1.2.13:
+  rolldown@1.2.14:
     dependencies:
-      '@oxc-project/types': 0.153.0
+      '@oxc-project/types': 0.154.0
       '@rolldown/pluginutils': 1.0.1
     optionalDependencies:
-      '@rolldown/binding-android-arm-eabi': 1.2.13
-      '@rolldown/binding-android-arm64': 1.2.13
-      '@rolldown/binding-darwin-arm64': 1.2.13
-      '@rolldown/binding-darwin-x64': 1.2.13
-      '@rolldown/binding-freebsd-x64': 1.2.13
-      '@rolldown/binding-linux-arm-gnueabihf': 1.2.13
-      '@rolldown/binding-linux-arm64-gnu': 1.2.13
-      '@rolldown/binding-linux-arm64-musl': 1.2.13
-      '@rolldown/binding-linux-ppc64-gnu': 1.2.13
-      '@rolldown/binding-linux-s390x-gnu': 1.2.13
-      '@rolldown/binding-linux-x64-gnu': 1.2.13
-      '@rolldown/binding-linux-x64-musl': 1.2.13
-      '@rolldown/binding-openharmony-arm64': 1.2.13
-      '@rolldown/binding-win32-arm64-msvc': 1.2.13
-      '@rolldown/binding-win32-x64-msvc': 1.2.13
+      '@rolldown/binding-android-arm-eabi': 1.2.14
+      '@rolldown/binding-android-arm64': 1.2.14
+      '@rolldown/binding-darwin-arm64': 1.2.14
+      '@rolldown/binding-darwin-x64': 1.2.14
+      '@rolldown/binding-freebsd-x64': 1.2.14
+      '@rolldown/binding-linux-arm-gnueabihf': 1.2.14
+      '@rolldown/binding-linux-arm64-gnu': 1.2.14
+      '@rolldown/binding-linux-arm64-musl': 1.2.14
+      '@rolldown/binding-linux-ppc64-gnu': 1.2.14
+      '@rolldown/binding-linux-s390x-gnu': 1.2.14
+      '@rolldown/binding-linux-x64-gnu': 1.2.14
+      '@rolldown/binding-linux-x64-musl': 1.2.14
+      '@rolldown/binding-openharmony-arm64': 1.2.14
+      '@rolldown/binding-win32-arm64-msvc': 1.2.14
+      '@rolldown/binding-win32-x64-msvc': 1.2.14
 
   run-parallel@1.2.0:
     dependencies:
@@ -15627,7 +15781,7 @@ snapshots:
 
   tagged-tag@1.0.0: {}
 
-  temporal-polyfill@1.0.5:
+  temporal-polyfill@1.0.6:
     dependencies:
       temporal-spec: 1.0.1
       temporal-utils: 1.0.3
@@ -15653,14 +15807,14 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  turbo@2.11.7:
+  turbo@2.11.8:
     optionalDependencies:
-      '@turbo/darwin-64': 2.11.7
-      '@turbo/darwin-arm64': 2.11.7
-      '@turbo/linux-64': 2.11.7
-      '@turbo/linux-arm64': 2.11.7
-      '@turbo/windows-64': 2.11.7
-      '@turbo/windows-arm64': 2.11.7
+      '@turbo/darwin-64': 2.11.8
+      '@turbo/darwin-arm64': 2.11.8
+      '@turbo/linux-64': 2.11.8
+      '@turbo/linux-arm64': 2.11.8
+      '@turbo/windows-64': 2.11.8
+      '@turbo/windows-arm64': 2.11.8
 
   type-detect@4.0.8: {}
 
@@ -15717,8 +15871,6 @@ snapshots:
 
   undici-types@7.24.6: {}
 
-  undici-types@8.9.0: {}
-
   update-browserslist-db@1.3.4(browserslist@4.29.3):
     dependencies:
       browserslist: 4.29.3
@@ -15744,29 +15896,17 @@ snapshots:
       lightningcss: 1.33.0
       picomatch: 4.0.7
       postcss: 8.5.30
-      rolldown: 1.2.13
+      rolldown: 1.2.14
       tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 24.19.2
       fsevents: 2.3.3
       yaml: 2.9.1
 
-  vite@8.3.4(@types/node@26.6.5)(yaml@2.9.1):
-    dependencies:
-      lightningcss: 1.33.0
-      picomatch: 4.0.7
-      postcss: 8.5.30
-      rolldown: 1.2.13
-      tinyglobby: 0.2.17
-    optionalDependencies:
-      '@types/node': 26.6.5
-      fsevents: 2.3.3
-      yaml: 2.9.1
-
-  vitest@5.0.4(@types/node@24.19.2)(vite@8.3.4):
+  vitest@5.0.5(@types/node@24.19.2)(vite@8.3.4):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.4(vite@8.3.4)
+      '@vitest/mocker': 5.0.5(vite@8.3.4)
       chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0

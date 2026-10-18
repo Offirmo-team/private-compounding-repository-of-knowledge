@@ -107,7 +107,9 @@ export const PLUGIN: Plugin = {
 						// TODO improve "rings"
 					} else {
 						// utils
-						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "npm-run-all", { type: "dev" })
+						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "npm-run-all", {
+							type: "dev",
+						})
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@monorepo-private/scripts", {
 							type: "dev",
 						})
@@ -350,7 +352,7 @@ import { execFileSync } from "node:child_process"
 import * as path from "node:path"
 
 import { deriveꓽgit_clone_dir } from "@infinite-monorepo/heuristics"
-import { manifestꓽpnpmᝍworkspaceᐧyaml } from "@infinite-monorepo/plugin--pnpm"
+import { manifestꓽpnpmᝍworkspaceᐧyaml } from "@infinite-monorepo/plugin--pm--pnpm"
 import * as StateLib from "@infinite-monorepo/state"
 import { type FileOutputPresent, getꓽnodeⵧmonorepo, getꓽruntimeⵧlocal, type State } from "@infinite-monorepo/state"
 import {

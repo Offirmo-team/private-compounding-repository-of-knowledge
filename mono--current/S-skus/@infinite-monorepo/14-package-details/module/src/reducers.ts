@@ -301,8 +301,8 @@ export function reconcile(details: Immutable<PureModuleDetails>): Immutable<Pure
 
 	if (isꓽtargeting_browser(details)) {
 		// NO we hoist to prevent cycles
-		//details = addꓽdependency(details, "@monorepo-private/storypad", { type: "dev" })
-		details = removeꓽdependency(details, "@monorepo-private/storypad") // try to break cycles
+		details = addꓽdependency(details, "@monorepo-private/storypad", { type: "dev" })
+		//details = removeꓽdependency(details, "@monorepo-private/storypad") // try to break cycles
 	}
 
 	////////////

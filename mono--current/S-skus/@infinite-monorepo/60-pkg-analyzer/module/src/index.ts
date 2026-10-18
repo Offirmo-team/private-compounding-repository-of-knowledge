@@ -347,7 +347,7 @@ export async function updateⵧfrom_files(
 	details.isꓽapp = details._manifest.isꓽapp ?? false // ?? module_path.includes("sandbox") || details.entrypointⵧexports['.']?.ext === ".html")
 
 	// inits
-	if (details.target === "browser" && details.hasꓽstories && !details.entrypointⵧstorypad) {
+	if (/*details.target === "browser" && */ details.hasꓽstories && !details.entrypointⵧstorypad) {
 		// auto-create storypad in the right place
 		const storypad__path = path.resolve(root‿abspath, "__fixtures", "storypad")
 		const storypad__content = `<!doctype html>

@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@infinite-monorepo/plugin--git": "workspace:*",
-		"@infinite-monorepo/plugin--package-json": "workspace:*",
+		"@infinite-monorepo/plugin--pm--package-json": "workspace:*",
 		"@infinite-monorepo/state": "workspace:*",
 		"@infinite-monorepo/types-for-plugins": "workspace:*",
 		"@monorepo-private/assert": "workspace:*"
@@ -39,5 +39,5 @@
 	"peerDependencies": {
 		"tslib": "catalog:"
 	},
-	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
 }

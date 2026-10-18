@@ -47,6 +47,7 @@
 		"@monorepo-private/rich-text-format--to-react": "workspace:*",
 		"@monorepo-private/rich-text-format--to-textual": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@oh-my-rpg/state--prng": "workspace:*",
@@ -73,5 +74,5 @@
 		"react": "catalog:",
 		"tslib": "catalog:"
 	},
-	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
 }

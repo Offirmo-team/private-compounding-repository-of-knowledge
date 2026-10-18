@@ -276,7 +276,7 @@ function _on_failure(context: Context): never {
 	const message__body__assertion = (() => {
 		if (typeof assertion_description === "function") assertion_description = assertion_description()
 
-		if (!!assertion_description) return String(assertion_description)
+		if (assertion_description) return String(assertion_description)
 
 		// auto detail...
 

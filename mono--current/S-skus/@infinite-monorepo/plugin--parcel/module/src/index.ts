@@ -49,7 +49,10 @@ export const PLUGIN: Plugin = {
 					].join(" ")
 
 					if (pkg_details.hasꓽstories || pkg_details.entrypointⵧstorypad) {
-						assert(!!pkg_details.entrypointⵧstorypad, `Expected storypad to be defined!`)
+						assert(
+							!!pkg_details.entrypointⵧstorypad,
+							`Seen stories: Expected a storypad entrypoint to be defined!`,
+						)
 						state = StateLib.addꓽscript(
 							state,
 							node,
@@ -211,7 +214,7 @@ export default PLUGIN
 import path from "node:path"
 
 import { manifestꓽᐧgitignore } from "@infinite-monorepo/plugin--git"
-import { manifestꓽpackageᐧjson } from "@infinite-monorepo/plugin--package-json"
+import { manifestꓽpackageᐧjson } from "@infinite-monorepo/plugin--pm--package-json"
 import * as StateLib from "@infinite-monorepo/state"
 import { PATHVARⵧROOTⵧPACKAGE } from "@infinite-monorepo/types-for-plugins"
 import type {

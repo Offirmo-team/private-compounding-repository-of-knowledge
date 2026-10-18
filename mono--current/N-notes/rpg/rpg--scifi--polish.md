@@ -27,6 +27,12 @@ Planets and sounds from EV Nova https://github.com/andrews05/ResForge
 
 space ambiant sounds https://www.youtube.com/playlist?list=PLsO8fxO6PnRfGUc0Td1lFXVnnq_Jn455U
 
+
+## assets
+
+https://www.jpl.nasa.gov/images/?page=9&topics=Exoplanets&sortBy=score
+
+
 ## tosort
 
 

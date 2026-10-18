@@ -1,0 +1,2 @@
+- workout ~= playlist
+- exercise ~= track in playlist

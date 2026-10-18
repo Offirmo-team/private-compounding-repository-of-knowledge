@@ -41,6 +41,7 @@
 		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/soft-execution-context": "workspace:*",
+		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
@@ -62,5 +63,5 @@
 		"react": "catalog:",
 		"tslib": "catalog:"
 	},
-	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
 }

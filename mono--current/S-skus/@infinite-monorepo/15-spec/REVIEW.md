@@ -21,7 +21,7 @@ The package is type-only (no runtime code, no imports of `assert`), yet lists `@
 `dependency`. Since this package exports only types (`export type { ... }`), it likely doesn't need this as a real
 dependency at all — probably left over from a generator template or copy-paste from a sibling package. Same
 auto-generation trailer comment
-(`"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"`) suggests this is
+(`"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"`) suggests this is
 tool-generated and may be low priority to fix by hand, but worth flagging since it inflates the install graph for a
 types-only package.
 

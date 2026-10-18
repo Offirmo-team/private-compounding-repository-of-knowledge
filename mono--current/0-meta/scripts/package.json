@@ -18,5 +18,5 @@
 		"tiny-invariant": "catalog:",
 		"write-json-file": "catalog:"
 	},
-	"// @infinite-monorepo/plugin--package-json": "auto generated some content in this file"
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
 }

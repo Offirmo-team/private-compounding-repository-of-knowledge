@@ -7,9 +7,9 @@
 #   FORBIDDEN_KEYWORDS="acme, Project Phoenix" ./scripts/check-forbidden-keywords.bash
 # Keywords are comma or newline separated, surrounding whitespace is trimmed:
 #   export FORBIDDEN_KEYWORDS="
+#      /Users/
 #      acme
-#      project phoenix
-#      john.doe@example.com
+#      john.doe
 #   "
 #   ./scripts/check-forbidden-keywords.bash
 set -euo pipefail

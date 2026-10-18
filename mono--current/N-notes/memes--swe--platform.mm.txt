@@ -27,6 +27,7 @@ CD -- No Downtime = No "maintenance mode" or expected downtime as part of releas
 CD -- solution -- ? https://mergify.com/
 CI (Continuous Integration) https://www.browserstack.com/guide/difference-between-continuous-integration-and-continuous-delivery
 CI -- best practices -- Mergify = https://blog.mergify.com/continuous-integration-best-practices-drive-results/
+CI -- case studies -- Linear 2026 = https://linear.app/now/ci-bottleneck-reworked
 CI -- healing = resolve minor issues ex. lockfile or formatting
 CI -- It Works on My Machine = why not? possible with signed commit?
 CI -- merge protection
