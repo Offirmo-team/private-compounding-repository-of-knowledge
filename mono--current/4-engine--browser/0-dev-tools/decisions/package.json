@@ -11,14 +11,8 @@
 		"@monorepo-private/assert": "workspace:*"
 	},
 	"devDependencies": {
-		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
-		"chai": "catalog:",
-		"mocha": "catalog:",
-		"sinon": "catalog:",
 		"vitest": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"

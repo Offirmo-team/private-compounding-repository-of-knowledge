@@ -152,6 +152,7 @@ OWASP Top 10:2025 -- A09:2025 - Logging & Alerting Failures
 OWASP Top 10:2025 -- A10:2025 - Mishandling of Exceptional Conditions
 OWASP Top 10:2025 https://owasp.org/Top10/2025/0x00_2025-Introduction/
 passkeys -- 2026/05 update = https://www.dashlane.com/blog/passkeys-long-way
+passkeys -- advocacy = https://scotthelme.co.uk/passkeys-are-not-a-trap/
 passkeys -- test https://github.com/Dashlane/passkeys-resources
 passkeys = a modern cryptographic alternative to passwords and seed phrases. Passkeys combine something you have (a physical device such as a laptop, mobile phone, or a security key like YubiKey) with something you are or know (a fingerprint, face, or PIN) to generate a cryptographic public/private key pair that secures an account.
 password -- peppering (pwd managers) https://passwordbits.com/salting-passwords/
@@ -253,6 +254,7 @@ VPNs -- are lawful technical tools = https://www.techradar.com/vpn/vpn-privacy-s
 vulnerability -- sourcemaps leak = sourcemaps = https://neciudan.dev/everything-you-need-to-know-about-sourcemaps
 weakness -- CWE "Common Weakness Enumeration" https://cwe.mitre.org/
 weakness =
+who's who -- Bruce Schneier https://www.schneier.com/essays/
 XML External Entity (XXE) = attack where an attacker is able to exploit applications processing XML inputs using improperly configured parser
 YubiKey = not necessarily safer if no pin = if stolen and no pin, cooked
 zero trust  = an IT security model that requires strict identity verification for every person and device trying to access resources on a private network, regardless of whether they are sitting within or outside of the network perimeter https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/
@@ -263,4 +265,3 @@ zero trust -- Network Access (ZTNA) https://www.cloudflare.com/learning/security
 zero-day = a vulnerability that attackers know about, and there is no patch available from the vendor
 ZK-SNARKs https://vitalik.eth.limo/general/2022/06/15/using_snarks.html
 zxcvbn = password strength estimation https://zxcvbn-ts.github.io/zxcvbn/
-who's who -- Bruce Schneier https://www.schneier.com/essays/

@@ -5,7 +5,7 @@ import { Enum } from "typescript-string-enums"
 
 import { getꓽschema_versionⵧloose } from "@monorepo-private/offirmo-state"
 import * as RichText from "@monorepo-private/rich-text-format"
-import type { Immutable, JSONObject, JSON } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇObject, JsonⳇValue } from "@monorepo-private/ts--types"
 
 import { LIB } from "../consts.ts"
 import { create, re_seed, rename_avatar, switch_class, _autoplay } from "../reducers/index.ts"
@@ -19,8 +19,8 @@ import { type State } from "../types.ts"
 // Exception-free nested nullable attribute accessor
 const mb =
 	(...p: string[]) =>
-	(o: JSON): JSON =>
-		p.map((c: string) => (o = ((o || {}) as JSONObject)[c])) && o
+	(o: JsonⳇValue): JsonⳇValue =>
+		p.map((c: string) => (o = ((o || {}) as JsonⳇObject)[c])) && o
 
 function coerce_to_number_or_zero(x: any): number {
 	const res = Number(x)

@@ -17,6 +17,7 @@ A sheng of rice earns gratitude, a dou of rice earns enmity = Give someone a sma
 Abenomics = the economic strategy implemented by Shinzo Abe of Japan and is comprised of three arrows: monetary policy, fiscal stimulus and structural reforms https://coinmarketcap.com/academy/glossary/abenomics
 amity-enmity complex https://en.m.wikipedia.org/wiki/Amity-enmity_complex
 And then the men with guns tell you to do it anyway = https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/
+archives = Hittite royal archive https://www.thehistoryblog.com/archives/77107
 aristocracy = a form of government that places power in the hands of a small, privileged ruling class, the aristocrats https://en.wikipedia.org/wiki/Aristocracy
 backwardness https://en.wikipedia.org/wiki/The_Moral_Basis_of_a_Backward_Society
 Balogh Balage https://archaeologyillustrated.com/
@@ -57,8 +58,10 @@ capitalism -- surveillance && -- 7. A movement that aims to impose a new collect
 capitalism -- surveillance && -- 8. An expropriation of critical human rights that is best understood as a coup from above: an overthrow of the people’s sovereignty .
 capitalism -- surveillance && = https://matduggan.com/you-know-gdpr-is-good-based-on-who-hates-it/
 capitalism -- W. H. Mallock -- "is justified because it permits the most talented members of society to use the less talented for the sake of maximizing efficiency. Labor, for him, was an inert mass that was useless unless those with managerial and entrepreneurial talent set them to work. Hence, wealth is created, not by labor, but by the knowledge and ability of those who control labor. Maximization of corporate profits means in this case that the most entrepreneurial, innovative and inventive segment of society has used labor and resources to create wealth. In Mallock's view labor, by itself, creates nothing; it's not the wrench that puts the machine together, but the genius who invented it."
+capitalism = https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/
 care -- doesn't scale https://stevenscrawls.com/care-doesnt-scale/
 case studies -- Taylor Farms = how one company's reach became a national risk https://farmaction.us/taylorfarmsreport/
+CGPM "General Conference on Weights and Measures" = https://www.bipm.org/en/cgpm-2026/resolution-5
 China / multi-power
 citizenship -- acquisition
 citizenship -- revocation = https://thewalrus.ca/canada-gave-them-citizenship-then-changed-its-mind/
@@ -113,6 +116,7 @@ energy -- electricity -- light bulb = no longer need for daylight or dangerous w
 energy -- electricity -- voltage sag = can destroy some equipments
 energy -- electricity grid = https://spectrum.ieee.org/delhi-electricity-loss
 energy -- superusers https://hardware.slashdot.org/story/25/10/31/1646235/the-worlds-secret-electricity-superusers-revealed
+environment -- toxic substance contamination = https://www.audubon.org/magazine/internet-has-rat-poison-problem
 every world power has its time in the sun, thanks to the uniqueness of their circumstances and the nature of their character and culture (e.g., they have the essential elements of a strong work ethic, smarts, discipline, education, etc.), but they all eventually decline. Some do so more gracefully than others, with less trauma, but they nevertheless decline https://x.com/RayDalio/status/2022788750388998543
 expand human potential
 family

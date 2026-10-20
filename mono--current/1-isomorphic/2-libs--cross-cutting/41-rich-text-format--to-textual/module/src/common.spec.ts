@@ -1,0 +1,9 @@
+/////////////////////////////////////////////////
+
+describe(`${LIB} -- common`, () => {})
+
+/////////////////////////////////////////////////
+
+import { describe, expect, it } from "vitest"
+
+import { LIB } from "./consts.ts"

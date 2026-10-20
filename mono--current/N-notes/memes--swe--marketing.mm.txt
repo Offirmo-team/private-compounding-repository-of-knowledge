@@ -67,6 +67,7 @@ Google Search Console
 growth & activation
 house ads = surfacing first-party content / features to user
 how to plan 1 month of content = https://www.instagram.com/p/DFvFOJyNBY9/
+https://chromewebstore.google.com/detail/omnibug/bknpehncffejahipecakbfkomebjmokl
 i18n = international marketing https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory#International_marketing https://en.wikipedia.org/wiki/International_marketing
 local scene = 1) need a scene to perform (feedback, emulation) 2) if not known on local scene, where?
 logo
@@ -79,6 +80,7 @@ mind share = When people think of examples of a product type or category, they u
 other people's castle
 presence -- AI skills = e.g. https://clerk.com/docs/guides/ai/skills
 presence -- GitHub = e.g. https://github.com/langchain-ai
+presence -- Hacker News = https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic
 presence -- marketplaces
 presence -- reddit = very important for LLMs.
 presence -- social networks -- LinkedIn

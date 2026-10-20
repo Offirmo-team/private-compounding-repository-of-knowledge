@@ -22,20 +22,14 @@
 		"typescript-string-enums": "catalog:"
 	},
 	"devDependencies": {
-		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
 		"@types/chroma-js": "catalog:",
-		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
 		"@web-property-outfitter/generator--svg": "workspace:*",
-		"chai": "catalog:",
-		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
-		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

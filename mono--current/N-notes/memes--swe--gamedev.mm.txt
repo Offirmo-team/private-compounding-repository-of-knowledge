@@ -1,4 +1,5 @@
 $1 reward strategy https://updates.kickstarter.com/the-1-reward-strategy/
++++ generic concepts in game loop https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code
 +++ https://en.wikipedia.org/wiki/Glossary_of_video_game_terms
 3D -- crazy hard and costly https://media.steampowered.com/apps/valve/2021/Half-Life_Alyx_Locomotion_Slides.pdf
 5 major video game award ceremonies: the Golden Joystick Awards, The Game Awards, the D.I.C.E. Awards, the Game Developers Choice Awards, and the British Academy Games Awards https://en.wikipedia.org/wiki/Baldur%27s_Gate_3
@@ -91,6 +92,7 @@ fun & cool -- realising everything we already know
 fun & cool -- true heroism
 fun -- a theory of fun for game design https://www.theoryoffun.com/
 gacha (gateway to gambling?)
+game as a harness = https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code
 games -- Pixie Hollow = "From that moment on, I was completely drawn into the world of fairies—it even deepened my love for nature. I can’t even remember how many hours I spent online day to night. There was always so much to do: gathering ingredients, dyeing clothes, shopping for new outfits, decorating my home, and playing Bubble Bounce, Firefly Light-Up, and Water Web. Pure magic. Please look at the photos and just feel the nostalgia with me 😔 btw, my in-game name was Cutesky" https://www.reddit.com/r/PixieHollow/comments/1kitzr2/any_pixies_out_there/
 gating
 genre

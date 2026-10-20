@@ -1,4 +1,4 @@
-import type { PositiveInteger, JSONObject } from "@monorepo-private/ts--types"
+import type { PositiveInteger, JsonⳇObject } from "@monorepo-private/ts--types"
 
 /////////////////////////////////////////////////
 
@@ -8,7 +8,7 @@ export interface Schema<T = unknown> {
 	parse(data: unknown): T
 }
 
-export interface RequestOptions<T = JSONObject> {
+export interface RequestOptions<T = JsonⳇObject> {
 	method: HttpMethod
 	body: unknown
 	headers: Record<string, string>
@@ -17,7 +17,7 @@ export interface RequestOptions<T = JSONObject> {
 	schema: Schema<T>
 }
 
-export interface HttpResponse<T = JSONObject> {
+export interface HttpResponse<T = JsonⳇObject> {
 	status: number
 	data: T | undefined
 	headers: Headers

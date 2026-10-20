@@ -1,7 +1,9 @@
 
 ## TODO LinkedIn
 
-### GenAI solved one of the hard problems in computer science: naming + screenshots
+### Web formats
+
+https://jakearchibald.com/2026/jpeg-xl-vs-avif/
 
 
 ### Jokes

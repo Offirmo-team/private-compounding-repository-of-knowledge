@@ -5,8 +5,8 @@ import { Enum } from "typescript-string-enums"
 import { assert_from, assert } from "@monorepo-private/assert"
 import type { Hints as RichTextHints, NodeLike as RichTextNodeLike } from "@monorepo-private/rich-text-format"
 import type {
-	JSON,
-	JSONPrimitiveType,
+	JsonⳇValue,
+	JsonⳇPrimitive,
 	Story,
 	WithHints,
 	InputSpec,
@@ -161,7 +161,7 @@ interface OHAHyperActionBlueprint extends OHAHyper, ReducerAction {
 
 	// required parameters we need to get from the user (or pre-supplied)
 	// input as in "form"
-	input?: Record<string, InputSpec<JSONPrimitiveType, OHAHyperMedia>> // the data of the action, could be anything (or nothing)
+	input?: Record<string, InputSpec<JsonⳇPrimitive, OHAHyperMedia>> // the data of the action, could be anything (or nothing)
 
 	hints?: OHAHyper["hints"] & {
 		change_type?: StateChangeCategory
@@ -176,7 +176,7 @@ interface OHAHyperActionBlueprint extends OHAHyper, ReducerAction {
 // constructed from the above
 // much simpler, correspond to a ~rpc
 interface OHAHyperAction extends ReducerAction {
-	payload?: Record<string, JSONPrimitiveType>
+	payload?: Record<string, JsonⳇPrimitive>
 
 	// TODO requirements on previous state, see TBRPG
 }
@@ -189,7 +189,7 @@ interface OHAPendingEngagement extends TrackedEngagement<OHAHyperMedia> {
 
 /////////////////////////////////////////////////
 
-interface OHARichTextHints<UnderlyingData = JSON> extends RichTextHints<UnderlyingData, OHAHyperLink‿x> {
+interface OHARichTextHints<UnderlyingData = JsonⳇValue> extends RichTextHints<UnderlyingData, OHAHyperLink‿x> {
 	links?: Record<string, OHAHyperLink‿x> // HATEOAS links to other related resources with appropriate rel. Record as it's extremely convenient for lookup. key should be core "rel" or anything
 	actions?: Record<string, OHAHyperActionBlueprint> // OHA actions. Record as it's extremely convenient for lookup. key should be the action key
 	engagements?: Array<OHAPendingEngagement> // array bc order is important

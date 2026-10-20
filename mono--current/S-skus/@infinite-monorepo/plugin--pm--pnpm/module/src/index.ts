@@ -367,7 +367,7 @@ import type {
 	DirPathⳇAbsolute,
 	DirPathⳇRelative,
 	Immutable,
-	JSONObject,
+	JsonⳇObject,
 	PathⳇAbsolute,
 } from "@monorepo-private/ts--types"
 import { isꓽError } from "@monorepo-private/utils--error/v2"

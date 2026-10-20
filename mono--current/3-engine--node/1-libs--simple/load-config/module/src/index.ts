@@ -5,7 +5,7 @@
  * TODO 1D allow branching to a sibling folder = arch repo / multi mono repo
  */
 export type Optionsⳇloadꓽconfigⵧchain = {
-	defaults: JSONObject | undefined
+	defaults: JsonⳇObject | undefined
 	from: PathⳇAny
 }
 export async function loadꓽconfigⵧchain(
@@ -123,7 +123,7 @@ export async function loadꓽconfigⵧchain(
 }
 
 export interface Optionsⳇloadꓽconfigⵧtopmost {
-	defaults?: JSONObject
+	defaults?: JsonⳇObject
 	boundary?: Result["boundary"]
 }
 export async function loadꓽconfigⵧtopmost(radix: string, options: Optionsⳇloadꓽconfigⵧtopmost = {}): Promise<Result> {
@@ -142,7 +142,7 @@ export async function loadꓽconfigⵧtopmost(radix: string, options: Optionsⳇ
 /////////////////////////////////////////////////
 
 export interface Result {
-	data: JSONObject | null // can be null if no file, ex. just reporting a boundary, also if no defaults provided
+	data: JsonⳇObject | null // can be null if no file, ex. just reporting a boundary, also if no defaults provided
 	parent_folder_path‿abs: DirPathⳇAbsolute
 	exact_file_path‿abs: FilePathⳇAbsolute | null // can be null if no file
 	hasꓽpackageᐧjson: boolean // is there a package.json in the same folder?
@@ -164,7 +164,7 @@ import * as process from "node:process"
 import { lsDirsSync, lsFilesSync } from "@monorepo-private/fs--ls"
 import { ↆloadꓽfileⵧdefault_export, ↆreadꓽfile } from "@monorepo-private/read-write-any-structured-file/read"
 import type {
-	JSONObject,
+	JsonⳇObject,
 	DirPathⳇAbsolute,
 	PathⳇAbsolute,
 	FilePathⳇAbsolute,

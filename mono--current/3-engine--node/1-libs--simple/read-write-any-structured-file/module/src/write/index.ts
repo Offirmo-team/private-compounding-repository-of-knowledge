@@ -2,7 +2,7 @@
 
 export async function ೱwriteꓽfile(
 	file_path: FilePathⳇAny,
-	content: Immutable<JSONObject>,
+	content: Immutable<JsonⳇObject>,
 	format?: StructuredFileFormat | undefined, // SSoT: format will be inferred from extension if absent
 	{}: {} = {},
 ): Promise<void> {
@@ -48,7 +48,7 @@ export async function ೱwriteꓽfileⵧjson5(file_path: FilePathⳇAny, content
 	await _ↆwrite_raw(file_path, content_serialized)
 }
 
-export async function ೱwriteꓽfileⵧjson(file_path: FilePathⳇAny, content: Immutable<JSONObject>): Promise<void> {
+export async function ೱwriteꓽfileⵧjson(file_path: FilePathⳇAny, content: Immutable<JsonⳇObject>): Promise<void> {
 	const content_serialized = stringifyⵧstable(content, {
 		indent: "\t", // TODO configurable write-json-file used to auto detect, should we use it?
 	})
@@ -126,7 +126,7 @@ import * as fs from "node:fs/promises"
 import * as path from "node:path"
 
 import { stringifyⵧstable, sort_before_stringify } from "@monorepo-private/json-stable-stringify"
-import type { JSONObject, FilePathⳇAny, Immutable } from "@monorepo-private/ts--types"
+import type { JsonⳇObject, FilePathⳇAny, Immutable } from "@monorepo-private/ts--types"
 
 import { inferꓽformat_from_path, ↆimportꓽjson5, ↆimportꓽtoml, ↆimportꓽyaml } from "../common/index.ts"
 import type {

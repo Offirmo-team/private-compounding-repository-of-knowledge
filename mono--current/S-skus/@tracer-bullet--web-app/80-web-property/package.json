@@ -21,7 +21,6 @@
 		"@tracer-bullet--web-app/web-core": "workspace:*"
 	},
 	"devDependencies": {
-		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/fs--parent": "workspace:*",
 		"@monorepo-private/parcel-config": "workspace:*",
@@ -31,15 +30,10 @@
 		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
-		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
 		"@web-property-outfitter/generator--website-entry-points": "workspace:*",
 		"@web-property-outfitter/spec": "workspace:*",
-		"chai": "catalog:",
-		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
-		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vite": "catalog:",

@@ -18,6 +18,7 @@
 .env
 .env.*
 .mise/
+.monorepo/
 .parcel
 .parcel-cache
 .turbo/

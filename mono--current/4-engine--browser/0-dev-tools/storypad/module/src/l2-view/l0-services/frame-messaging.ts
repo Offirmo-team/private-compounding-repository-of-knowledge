@@ -7,7 +7,7 @@ export type FrameMessage = {
 	type: "addꓽannotation"
 	payload: {
 		key: string
-		value: JSONPrimitiveType
+		value: JsonⳇPrimitive
 	}
 }
 
@@ -48,6 +48,6 @@ function isꓽFrameMessage(x: unknown): x is FrameMessage {
 /////////////////////////////////////////////////
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable, JSONPrimitiveType } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇPrimitive } from "@monorepo-private/ts--types"
 
 import { DEBUG, LIB } from "../../consts.ts"

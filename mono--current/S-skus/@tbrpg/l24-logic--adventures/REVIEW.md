@@ -57,9 +57,9 @@ No unnecessary classes/OOP; pure functions and plain types throughout, consisten
 
 ## Tests
 
-Uses legacy mocha + chai (expected/fine for existing code). `index.tests.ts` covers data sanity thresholds, both
-pickers, and the coin-gain/loss generator across all `CoinsGain` variants including the wallet-capping edge case — solid
-coverage aside from the one pending test (G11-P8-06). `data/index.tests.ts` cross-validates i18n keys against `ENTRIES`
-hids bidirectionally (every i18n key has a descriptor, every descriptor has an i18n message) and checks outcome-type
+Uses legacy mocha + chai (expected/fine for existing code). `index.spec.ts` covers data sanity thresholds, both pickers,
+and the coin-gain/loss generator across all `CoinsGain` variants including the wallet-capping edge case — solid coverage
+aside from the one pending test (G11-P8-06). `data/index.tests.ts` cross-validates i18n keys against `ENTRIES` hids
+bidirectionally (every i18n key has a descriptor, every descriptor has an i18n message) and checks outcome-type
 distribution against an expected list — thorough for a data-integrity suite, aside from the two non-assertive
 dev-tooling tests noted in G11-P8-07.

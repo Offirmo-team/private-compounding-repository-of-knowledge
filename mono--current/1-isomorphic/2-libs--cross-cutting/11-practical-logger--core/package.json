@@ -10,11 +10,10 @@
 		"./__shared-demos": "./module/src/__shared-demos/_entrypoint.ts"
 	},
 	"scripts": {
-		"check": "run-s test--vitest test--mocha check:ts",
+		"check": "run-s test--vitest check:ts",
 		"check:ts": "echo \"@monorepo-private/practical-logger--core\" && tsc --noEmit",
 		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demo/index.ts",
 		"dev": "run-s  watch:check:ts",
-		"test--mocha": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./node_modules/mocha/bin/mocha.js --bail --config ./node_modules/@monorepo-private/config--mocha/module/mocharc.json ./node_modules/@monorepo-private/config--mocha/module/mocha-chai-init-node.mjs './module/**/*.tests.ts' --ignore '**/~~*/**'",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
@@ -23,18 +22,13 @@
 		"@monorepo-private/practical-logger--types": "workspace:*"
 	},
 	"devDependencies": {
-		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/utils--error": "workspace:*",
 		"@types/chai": "catalog:",
-		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
 		"chai": "catalog:",
-		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
-		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

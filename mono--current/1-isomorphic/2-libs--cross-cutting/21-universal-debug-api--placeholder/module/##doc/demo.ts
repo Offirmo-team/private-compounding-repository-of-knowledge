@@ -16,7 +16,7 @@ logger.fatal("Hello")
 
 addDebugCommand("foo", () => {})
 
-addDebugCommand("demo_logger", demo_logger_api)
+addDebugCommand("demo_logger", () => demo_logger_api(getLogger))
 
 exposeInternal("foo.bar.baz", 42)
 

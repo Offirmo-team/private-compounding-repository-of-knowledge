@@ -1,4 +1,4 @@
-import type { JSONObject } from "@monorepo-private/ts--types"
+import type { JsonⳇObject } from "@monorepo-private/ts--types"
 
 export const STRUCTURED_FILE_FORMATS = [
 	// in order of preference
@@ -50,7 +50,7 @@ export type StructuredFileFormatⳇParser = (typeof STRUCTURED_FILE_FORMATS__PAR
 
 export interface StructuredContent {
 	dataⵧraw: string
-	dataⵧjson: JSONObject
+	dataⵧjson: JsonⳇObject
 	dataⵧx?: never // TODO advanced data format saving comments, position of elements, etc.
 
 	// TODO schema
@@ -59,10 +59,10 @@ export interface StructuredContent {
 	_parser: StructuredFileFormatⳇParser
 }
 
-export type ContentⳇDefaultExport = JSONObject
-export type ContentⳇJson5 = JSONObject
-export type ContentⳇYaml = JSONObject
+export type ContentⳇDefaultExport = JsonⳇObject
+export type ContentⳇJson5 = JsonⳇObject
+export type ContentⳇYaml = JsonⳇObject
 export type ContentⳇList = { entries: string[] }
 export type ContentⳇSingleValue = { value: string }
 export type ContentⳇText = { text: string }
-export type ContentⳇMarkup = { text: string; frontmatter?: JSONObject }
+export type ContentⳇMarkup = { text: string; frontmatter?: JsonⳇObject }

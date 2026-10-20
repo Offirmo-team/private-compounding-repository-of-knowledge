@@ -1,6 +1,6 @@
 import * as path from "node:path"
 
-import type { JSONObject, FilePathⳇAny, Immutable, JSON } from "@monorepo-private/ts--types"
+import type { JsonⳇObject, FilePathⳇAny, Immutable, JsonⳇValue } from "@monorepo-private/ts--types"
 import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
 import type { StructuredFileFormat } from "../types.ts"
@@ -99,7 +99,7 @@ function inferꓽformat_from_path(file_path: FilePathⳇAny): StructuredFileForm
 	return undefined
 }
 
-function _getꓽjson__type(a: Immutable<JSON>): "object" | "array" | "primitive" | "undef" {
+function _getꓽjson__type(a: Immutable<JsonⳇValue>): "object" | "array" | "primitive" | "undef" {
 	if (a === undefined) {
 		return "undef"
 	}
@@ -120,7 +120,7 @@ function _getꓽjson__type(a: Immutable<JSON>): "object" | "array" | "primitive"
 
 // XXX TODO move to lib
 // XXX TODO compare with merge:deep
-function mergeꓽjson(a: Immutable<JSON>, b: Immutable<JSON>): Immutable<JSON> {
+function mergeꓽjson(a: Immutable<JsonⳇValue>, b: Immutable<JsonⳇValue>): Immutable<JsonⳇValue> {
 	if (a === undefined) {
 		return b
 	}
@@ -139,14 +139,14 @@ function mergeꓽjson(a: Immutable<JSON>, b: Immutable<JSON>): Immutable<JSON> {
 			throw new Error(`Cannot merge conflicting primitive JSON values: ${a} vs ${b}!`)
 		case "array":
 			// TODO set for uniqueness!
-			return [...(a as JSON[]), ...(b as JSON[])].sort()
+			return [...(a as JsonⳇValue[]), ...(b as JsonⳇValue[])].sort()
 		case "object": {
-			const result: Immutable<JSONObject> = {}
-			const k1 = Object.keys(a as JSONObject)
-			const k2 = Object.keys(b as JSONObject)
+			const result: Immutable<JsonⳇObject> = {}
+			const k1 = Object.keys(a as JsonⳇObject)
+			const k2 = Object.keys(b as JsonⳇObject)
 			const all_keys = Array.from(new Set([...k1, ...k2])).sort()
 			for (const k of all_keys) {
-				result[k] = mergeꓽjson((a as Immutable<JSONObject>)[k], (b as Immutable<JSONObject>)[k])
+				result[k] = mergeꓽjson((a as Immutable<JsonⳇObject>)[k], (b as Immutable<JsonⳇObject>)[k])
 			}
 			return result
 		}

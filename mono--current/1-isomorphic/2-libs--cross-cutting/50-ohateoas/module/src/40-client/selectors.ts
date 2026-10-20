@@ -1,19 +1,19 @@
 import { type OHAHyperActionBlueprint, type OHAHyperAction, type OHAFeedback } from "@monorepo-private/ohateoas"
 import { getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
-import type { Immutable, JSONPrimitiveType } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇPrimitive } from "@monorepo-private/ts--types"
 
 /////////////////////////////////////////////////
 
 function deriveꓽaction(
 	action_blueprint: Immutable<OHAHyperActionBlueprint>,
-	partial_payload: Record<string, JSONPrimitiveType> = {},
+	partial_payload: Record<string, JsonⳇPrimitive> = {},
 ): {
 	action: OHAHyperAction
 	feedback: OHAFeedback
 } {
 	const { type, input = {}, feedback: _feedback = {} } = action_blueprint
 
-	const final_payload = new Map<string, JSONPrimitiveType>()
+	const final_payload = new Map<string, JsonⳇPrimitive>()
 	Object.entries(input).forEach(([k, spec]) => {
 		if (Object.hasOwn(partial_payload, k)) {
 			final_payload.set(k, partial_payload[k])

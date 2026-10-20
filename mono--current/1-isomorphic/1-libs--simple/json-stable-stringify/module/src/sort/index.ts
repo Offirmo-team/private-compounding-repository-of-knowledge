@@ -14,9 +14,9 @@ export const DEFAULT_OPTIONS: Options = {
 }
 
 export function sort_before_stringify(
-	obj: Immutable<JSONObject>,
+	obj: Immutable<JsonⳇObject>,
 	_options: Immutable<Partial<Options>> = {},
-): Immutable<JSONObject> {
+): Immutable<JsonⳇObject> {
 	const options: Options = {
 		...DEFAULT_OPTIONS,
 		..._options,
@@ -144,7 +144,7 @@ export function sort_before_stringify(
 /////////////////////////////////////////////////
 
 import { assertⵧnever_reached } from "@monorepo-private/assert"
-import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇObject } from "@monorepo-private/ts--types"
 import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
 import { CYCLES__REPLACEMENT_VALUE, CYCLES__ERROR_MESSAGE, NON_JSON__ERROR_MESSAGE, default_cmp } from "../consts.ts"

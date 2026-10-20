@@ -446,11 +446,14 @@ function assertꓽmigrated(entry: FileEntry, { root‿abspath }: { root‿abspat
 
 	const { path‿abs, basename‿no_ᐧext, ext, extⵧextended } = entry
 
-	if (basename‿no_ᐧext.endsWith("_spec")) {
-		migration_target = path‿abs.replace("_spec", ".tests")
-	} else if (extⵧextended.startsWith(".spec")) {
-		migration_target = path‿abs.replace(".spec", ".tests")
+	/* Legacy, removing as of 2026/10
+	if (extⵧextended.startsWith(".test")) {
+		migration_target = path‿abs.replace(".test", ".spec")
 	}
+	if (extⵧextended.startsWith(".tests")) {
+		migration_target = path‿abs.replace(".tests", ".spec")
+	}
+	*/
 
 	if (basename‿no_ᐧext.toUpperCase() === "LICENSE" && ext) {
 		migration_target = path.join(path.dirname(entry.path‿abs), "LICENSE") // official name is uppercase without extension TODO link

@@ -278,22 +278,23 @@ cryptocurrency -- legality https://en.wikipedia.org/wiki/Legality_of_cryptocurre
 cryptocurrency = a medium of exchange secured by a blockchain-based ledger https://ethereum.org/en/developers/docs/intro-to-ether/#what-is-a-cryptocurrency
 CT "Crypto Twitter" = a subset of the popular social media platform Twitter, specifically focused on cryptocurrency, blockchain technology, and decentralized finance https://www.bitget.com/wiki/what-is-ct-in-crypto
 CT -- "manipulation caller" = genre on Crypto Twitter with a strong survivorship-bias problem
-culture -- "Be your own bank" and personally secure your assets
+culture -- "Be your own bank" = personally secure your assets
 culture -- "HODL"
 culture -- "horrifically adversarial environment. Anything that can be exploited will be exploited" @kayn
 culture -- "Ignoring sensible advice is what we do in crypto"
+culture -- "sewer rat" = analogy (Andreas Antonopoulos) surviving is tough but makes strong immunity and resilience, vs "bubble boys" https://medium.com/coinmonks/how-andreas-antonopoulos-revolutionized-our-thinking-about-bitcoin-2e921f3c3387
 culture -- "skill issue" = newbie hostile culture, learn by yourself etc.
 culture -- "to the moon"
 culture -- cypherpunk = (1993) "The Cypherpunks are actively engaged in making the networks safer for privacy" https://www.activism.net/cypherpunk/manifesto.html
 culture -- dark forest = detection means certain death at the hands of advanced predators, ex. frontrunning, wrench etc.  https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest
-culture -- slang -- degen = slang derived from "degenerate", typically refers to someone who engages in high-risk, speculative trading or investment with the potential for high rewards. It describes individuals who prioritize potential gains over calculated risks and are known for their aggressive and sometimes reckless approach.
-culture -- slang -- GM = good morning
-culture -- slang -- KOL = Key Opinion Leader = crypto influencer (can also be booster / rug puller)
-culture -- slang -- printing = making money?
-culture -- slang -- RICO'd = charged under the RICO Act or disappeared, went silent, or faced major legal trouble
-culture -- slang -- WAGMI = we're all gonna make it
-culture -- slang https://www.coinbase.com/en-au/learn/tip-and-tutorials/crypto-slang-guide
-custody -- against custodial exchanges = "n July 2025, @MEXC_Official froze over $3 million of my funds" https://x.com/TheWhiteWhaleHL/status/1959650308319047902
+culture -- degen = slang derived from "degenerate", typically refers to someone who engages in high-risk, speculative trading or investment with the potential for high rewards. It describes individuals who prioritize potential gains over calculated risks and are known for their aggressive and sometimes reckless approach.
+culture -- GM = good morning
+culture -- KOL = Key Opinion Leader = crypto influencer (can also be booster / rug puller)
+culture -- printing = making money?
+culture -- RICO'd = charged under the RICO Act or disappeared, went silent, or faced major legal trouble
+culture -- slang = https://www.coinbase.com/en-au/learn/tip-and-tutorials/crypto-slang-guide
+culture -- WAGMI = we're all gonna make it
+custody -- against custodial exchanges = "on July 2025, @MEXC_Official froze over $3 million of my funds" https://x.com/TheWhiteWhaleHL/status/1959650308319047902
 custody -- non-custodial = "even if someone goes and nukes the platform, censors it, DDoS’s it, or takes down AWS, you can still go to the chain and get your assets back."
 custody -- partially custodial = ex. Infinex
 custody -- self-custody = funds are not waived

@@ -24,8 +24,8 @@ module/src/index.stories.ts:59:19 - error TS2339: Property 'addꓽcontent' does 
 ```
 
 This means `check:ts` (`tsc --noEmit`) is currently broken for this package, and the only unit test file
-(`index.tests.ts`) cannot even compile/run. This is a real, live, verified bug — fix is trivial: add `addꓽcontent` to
-the export list in `reducers.ts`.
+(`index.spec.ts`) cannot even compile/run. This is a real, live, verified bug — fix is trivial: add `addꓽcontent` to the
+export list in `reducers.ts`.
 
 ### G12E-P2-02 — Major — `module/__fixtures/examples/index.ts` uses a broken relative import path, also breaking `tsc`
 
@@ -58,7 +58,7 @@ functional-style convention: it reassigns the outer `layer` variable from within
 it. The return type annotation should simply be removed (or changed to `void`), and ideally the function should be
 rewritten to return the group and let the caller append it, consistent with the rest of the reducer style in this file.
 
-### G12E-P2-04 — Minor — `index.tests.ts` uses mocha + chai, not vitest, despite the misleading `.tests.ts` naming and vitest being a devDependency
+### G12E-P2-04 — Minor — `index.spec.ts` uses mocha + chai, not vitest, despite the misleading `.tests.ts` naming and vitest being a devDependency
 
 Per the explicit check requested: `module/src/index.tests.ts` imports `{ expect } from "chai"` and uses mocha's global
 `describe`/`it` (no imports for those, relying on the mocha global test runner registered via the `test` npm script,
@@ -69,7 +69,7 @@ invokes it) — it looks like a vestige of an in-progress or planned migration t
 
 ### G12E-P2-05 — Minor — Thin test coverage: only `getꓽsvg‿str()` is tested; `reducers.ts` mutation/update logic, `selectors.ts` (`getꓽlayer`, `getꓽviewbox__dimensions`, `getꓽsvg‿strⵧgroup`), and `types-guards.ts` (`isꓽSVG`, `isꓽSVGGroupElement`) have no dedicated tests
 
-`index.tests.ts` only covers 4 cases (emoji/simple/viewbox/background) through the high-level `getꓽsvg‿str`. Functions
+`index.spec.ts` only covers 4 cases (emoji/simple/viewbox/background) through the high-level `getꓽsvg‿str`. Functions
 like `updateꓽlayer` (has non-trivial `found`/`has_change` bookkeeping in `reducers.ts` lines 86-107), `addꓽlayer`'s
 `assert(layer.id, ...)` guard, and `getꓽlayer`'s not-found assertion in `selectors.ts` are untested. Given the migration
 direction, any new tests added here should be vitest, per project convention.

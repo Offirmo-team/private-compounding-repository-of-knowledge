@@ -2,7 +2,7 @@ import EventEmitter from "emittery"
 
 import { assert_from, assert } from "@monorepo-private/assert"
 import { isꓽframed } from "@monorepo-private/browser-features-detection/is-framed"
-import type { Immutable, JSONPrimitiveType } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇPrimitive } from "@monorepo-private/ts--types"
 
 import type { ImportGlob } from "../../l0-types/l0-glob/index.ts"
 import { type CommonRenderParams } from "../../l0-types/l1-csf/index.ts"
@@ -80,7 +80,7 @@ class ObservableState {
 		//this.emitter.emit(EMITTER_EVT, { type: `requestꓽstory`, uid })
 	}
 
-	addꓽannotation(key: string, value: JSONPrimitiveType) {
+	addꓽannotation(key: string, value: JsonⳇPrimitive) {
 		this.stateⵧin_mem = InMemState.addꓽannotation(this.stateⵧin_mem, key, value)
 
 		this.emitter.emit(EMITTER_EVT, { type: `addꓽannotation`, key, value })
@@ -118,7 +118,7 @@ class ObservableState {
 		return RenderMode.manager
 	}
 
-	getꓽpills(): Immutable<{ [key: string]: JSONPrimitiveType }> {
+	getꓽpills(): Immutable<{ [key: string]: JsonⳇPrimitive }> {
 		return this.stateⵧin_mem.annotations
 		//return this.stateⵧin_mem.view.story_area.drawer.status_bar.pills
 	}

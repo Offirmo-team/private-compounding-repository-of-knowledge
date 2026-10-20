@@ -1,0 +1,35 @@
+{
+	"name": "@monorepo-private/set-deep-property",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/index.ts"
+	},
+	"scripts": {
+		"check": "run-s test--vitest check:ts",
+		"check:ts": "echo \"@monorepo-private/set-deep-property\" && tsc --noEmit",
+		"dev": "run-s  watch:check:ts",
+		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@types/icepick": "catalog:",
+		"@types/node": "catalog:",
+		"icepick": "catalog:",
+		"npm-run-all": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
+}

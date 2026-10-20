@@ -6,7 +6,7 @@ Walks up the filesystem from a given path (or cwd) toward the fs root, collectin
 ## Findings
 
 - **LC-01 (Major)** — `package.json` lists `@monorepo-private/ts--types` only under `devDependencies` (line 26), but
-  `module/src/index.ts:165-172` imports types from it (`JSONObject`, `DirPathⳇAbsolute`, `PathⳇAbsolute`,
+  `module/src/index.ts:165-172` imports types from it (`JsonⳇObject`, `DirPathⳇAbsolute`, `PathⳇAbsolute`,
   `FilePathⳇAbsolute`, `PathSeparator`, `PathⳇAny`) directly in the package's real (non-test, non-sandbox) source file
   that's the package's `exports` entrypoint. Since this monorepo ships packages as raw `.ts` sources via `exports` (not
   compiled `.d.ts`), any consumer whose own `tsc` walks into `load-config`'s `module/src/index.ts` will need

@@ -20,7 +20,7 @@ export interface FileOutputAbsent extends BaseFileOutput {
 export interface FileOutputPresent extends BaseFileOutput {
 	intent: "present" | "present--exact" | "present--containing" | "symlink"
 	manifest: StructuredFsⳇFileManifest
-	content: Immutable<JSONObject>
+	content: Immutable<JsonⳇObject>
 }
 
 export interface TraversalTracking {
@@ -44,10 +44,10 @@ export interface SubStateⳇFactsFile {
 		| undefined // not loaded yet (promise pending)
 		| null // null = file not found
 		| "error" // issue reading this structured file, ex. parse error
-		| JSONObject // structured result
+		| JsonⳇObject // structured result
 	// those props are only present when content is undefined
-	ↆretrieval?: Promise<JSONObject>
-	pending_callbacks?: Array<AsyncCallbackReducer<JSONObject | null>>
+	ↆretrieval?: Promise<JsonⳇObject>
+	pending_callbacks?: Array<AsyncCallbackReducer<JsonⳇObject | null>>
 	_error?: XXError
 }
 
@@ -109,5 +109,5 @@ import type { InfiniteMonorepoSpec } from "@infinite-monorepo/spec"
 import type { StructuredFsⳇFileManifest } from "@infinite-monorepo/structured-file-manifest"
 import { Enum } from "typescript-string-enums"
 
-import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇObject } from "@monorepo-private/ts--types"
 import { type XXError } from "@monorepo-private/utils--error"

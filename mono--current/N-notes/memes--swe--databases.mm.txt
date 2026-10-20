@@ -7,6 +7,7 @@ ACID -- 2 Consistency = integrity constraints: "valid state" before AND after a 
 ACID -- 3 Isolation = "independent transactions"
 ACID -- 4 Durability = transaction resistance to system failures "once committed, always committed"
 ACID = a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps https://en.wikipedia.org/wiki/ACID
+aggregation queries = COUNT, SUM, MIN, MAX, AVG...
 append-only
 backup
 BASE -- 1. BA = Basically available = the system does guarantee availability, in terms of the CAP theorem.

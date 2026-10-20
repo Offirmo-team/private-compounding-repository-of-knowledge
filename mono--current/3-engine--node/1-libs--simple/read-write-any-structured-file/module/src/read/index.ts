@@ -7,7 +7,7 @@ import * as path from "node:path"
 import split_lines from "split-lines"
 import strip_bom from "strip-bom"
 
-import type { JSONObject, FilePathⳇAny } from "@monorepo-private/ts--types"
+import type { JsonⳇObject, FilePathⳇAny } from "@monorepo-private/ts--types"
 
 import { inferꓽformat_from_path, ↆimportꓽjson5, ↆimportꓽyaml } from "../common/index.ts"
 import type {
@@ -108,7 +108,7 @@ async function ↆloadꓽfileⵧjson5(
 	const ↆpkgꓽjson5 = ↆimportꓽjson5()
 	const ↆcontent‿raw = _readRawTextFile(file_path, content_hint)
 	const [JSON5, content] = await Promise.all([ↆpkgꓽjson5, ↆcontent‿raw])
-	return JSON5.parse(content) as JSONObject
+	return JSON5.parse(content) as JsonⳇObject
 }
 
 async function ↆloadꓽfileⵧyaml(
@@ -118,7 +118,7 @@ async function ↆloadꓽfileⵧyaml(
 	const ↆpkgꓽyaml = ↆimportꓽyaml()
 	const ↆcontent‿raw = _readRawTextFile(file_path, content_hint)
 	const [yaml, content] = await Promise.all([ↆpkgꓽyaml, ↆcontent‿raw])
-	return yaml.parse(content) as JSONObject
+	return yaml.parse(content) as JsonⳇObject
 }
 
 async function ↆloadꓽfileⵧlist(
@@ -164,7 +164,7 @@ async function ↆloadꓽfileⵧmarkdown(
 		const yaml = await ↆpkgꓽyaml
 		return {
 			text,
-			frontmatter: yaml.parse(frontmatter_raw) as JSONObject,
+			frontmatter: yaml.parse(frontmatter_raw) as JsonⳇObject,
 		}
 	}
 

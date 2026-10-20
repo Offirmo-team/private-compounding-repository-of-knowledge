@@ -1,4 +1,4 @@
-import type { JSONPrimitiveType } from "@monorepo-private/ts--types"
+import type { JsonⳇPrimitive } from "@monorepo-private/ts--types"
 
 import type { Config } from "../../../l0-types/l2-config/index.ts"
 import type { StoryUId, StoryTree } from "../types.ts"
@@ -12,7 +12,7 @@ export interface State {
 
 	tree: StoryTree
 
-	annotations: Record<string, JSONPrimitiveType>
+	annotations: Record<string, JsonⳇPrimitive>
 
 	view: {
 		manager: {

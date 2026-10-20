@@ -2,12 +2,13 @@
 
 export function expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str(url: Url‿str, msg: string): void {
 	assert(typeof url === "string", `${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str -- should be a string!`)
-	expect(() => new URL(url), `${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str -- should be parseable by URL()!`).not.to
-		.throw
 	expect(
-		normalize_unicode(url).trim(),
-		`${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str -- should be normalized!`,
-	).to.equal(url)
+		() => new URL(url),
+		`${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str -- should be parseable by URL()!`,
+	).not.toThrow()
+	expect(normalize_unicode(url).trim(), `${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str -- should be normalized!`).toBe(
+		url,
+	)
 }
 
 export function expectㆍtoㆍbeㆍaㆍvalidㆍSocialNetworkLink(snl: SocialNetworkLink, msg: string): void {
@@ -50,14 +51,14 @@ export function expectㆍtoㆍbeㆍaㆍvalidㆍCreator(creator: Creator): void {
 		expect(
 			normalizeꓽemailⵧreasonable(creator.email),
 			`expectㆍtoㆍbeㆍaㆍvalidㆍCreator -- normalizeꓽemailⵧreasonable`,
-		).to.equal(creator.email)
+		).toBe(creator.email)
 	}
 }
 
 /////////////////////////////////////////////////
 import { strict as assert } from "node:assert"
 
-import { expect } from "chai"
+import { expect } from "vitest"
 
 import { normalizeꓽemailⵧreasonable, normalize_unicode } from "@monorepo-private/normalize-string"
 import type {

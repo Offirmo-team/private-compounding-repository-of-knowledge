@@ -19,16 +19,10 @@
 		"@monorepo-private/practical-logger--types": "workspace:*"
 	},
 	"devDependencies": {
-		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
-		"chai": "catalog:",
-		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
-		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

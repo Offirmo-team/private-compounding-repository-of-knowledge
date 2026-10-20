@@ -16,20 +16,15 @@
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/offirmo-state": "workspace:*",
-		"@monorepo-private/ts--types": "workspace:*"
+		"@monorepo-private/ts--utils": "workspace:*"
 	},
 	"devDependencies": {
 		"@fantasy-workout/ontology": "workspace:*",
-		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/mocha": "catalog:",
+		"@monorepo-private/ts--types": "workspace:*",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
-		"chai": "catalog:",
-		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
-		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

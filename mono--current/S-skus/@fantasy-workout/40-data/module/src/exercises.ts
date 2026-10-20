@@ -320,4 +320,5 @@ import type { ExerciseⳇId, ExerciseⳇSpec } from "@fantasy-workout/ontology"
 
 import { assert } from "@monorepo-private/assert"
 import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
-import { type Immutable, flat_list_to_dict } from "@monorepo-private/ts--types"
+import type { Immutable } from "@monorepo-private/ts--types"
+import { flat_list_to_dict } from "@monorepo-private/ts--utils"

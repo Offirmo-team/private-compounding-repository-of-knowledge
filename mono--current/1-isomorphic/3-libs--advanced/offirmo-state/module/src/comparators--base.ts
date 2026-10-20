@@ -1,7 +1,7 @@
 import * as jsondiffpatch from "jsondiffpatch"
 import memoize_one from "memoize-one"
 
-import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇObject } from "@monorepo-private/ts--types"
 
 /////////////////////////////////////////////////
 
@@ -16,7 +16,7 @@ const _getꓽadvanced_json_differ = memoize_one(() => {
 })
 
 // used only in tests
-function getꓽjson_difference(a: Immutable<any>, b: Immutable<any>): JSONObject {
+function getꓽjson_difference(a: Immutable<any>, b: Immutable<any>): JsonⳇObject {
 	// TODO assert params JSON objects?
 	return _getꓽadvanced_json_differ().diff(a, b) as any // hide the proprietary return type, not needed for now
 }

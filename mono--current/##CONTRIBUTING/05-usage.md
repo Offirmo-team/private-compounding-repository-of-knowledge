@@ -23,7 +23,7 @@ TODO auto-generate this list!!
 pnpx turbo check
   pnpx turbo check --filter="./0-meta/*"
   pnpx turbo check --filter="./1-isomorphic/**"
-    pnpx turbo check --filter="./1-isomorphic/1-libs--simple/*"
+    pnpx turbo check --filter="./1-isomorphic/1-libs--simple/*"         ✅
     pnpx turbo check --filter="./1-isomorphic/2-libs--cross-cutting/*"
     pnpx turbo check --filter="./1-isomorphic/3-libs--advanced/*"
   pnpx turbo check --filter="./2-engine--winter/**"

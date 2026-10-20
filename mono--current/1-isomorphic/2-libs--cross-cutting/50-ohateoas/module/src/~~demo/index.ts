@@ -1,4 +1,4 @@
-import type { Immutable, JSONPrimitiveType } from '@monorepo-private/ts--types'
+import type { Immutable, JsonⳇPrimitive } from '@monorepo-private/ts--types'
 import { getꓽUTC_timestamp‿ms } from '@monorepo-private/timestamps'
 import { getꓽrandom, getꓽengine } from '@monorepo-private/random'
 

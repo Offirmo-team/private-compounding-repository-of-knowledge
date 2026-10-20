@@ -33,7 +33,7 @@ import { renderⵧto_terminal } from "@monorepo-private/rich-text-format--to-ter
 //import { createꓽserver } from '../~~sandbox/example--tbrpg/server/index.ts'
 //import { createꓽserver } from '../~~sandbox/example--tbrpg/server/index.ts'
 import { getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
-import type { Immutable, JSONPrimitiveType } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇPrimitive } from "@monorepo-private/ts--types"
 import { normalizeꓽuri‿str, type Uri‿str } from "@monorepo-private/ts--types--hypermedia"
 
 import { createꓽserver } from "../../../../1-isomorphic/2-libs--cross-cutting/ohateoas/module/src/__fixtures/example--01-hello-world/index.ts"

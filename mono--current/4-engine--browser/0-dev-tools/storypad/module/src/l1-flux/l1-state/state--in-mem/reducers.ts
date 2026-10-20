@@ -60,7 +60,7 @@ export function requestꓽstory(state: State, uid: StoryUId): State {
 
 /////////////////////////////////////////////////
 
-export function addꓽannotation(state: State, key: string, value: JSONPrimitiveType): State {
+export function addꓽannotation(state: State, key: string, value: JsonⳇPrimitive): State {
 	//console.warn("addꓽannotation", { key, value })
 	return {
 		...state,
@@ -90,7 +90,7 @@ function get_default_state_view(): State["view"] {
 /////////////////////////////////////////////////
 import { assert_from, assert } from "@monorepo-private/assert"
 import { createꓽfilesystem, insertꓽfile } from "@monorepo-private/data-structures"
-import type { Immutable, JSONPrimitiveType, PathⳇRelative } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇPrimitive, PathⳇRelative } from "@monorepo-private/ts--types"
 
 import type { Config } from "../../../l0-types/l2-config/index.ts"
 import type { StoryUId, StoryEntry, StoryFolder } from "../types.ts"

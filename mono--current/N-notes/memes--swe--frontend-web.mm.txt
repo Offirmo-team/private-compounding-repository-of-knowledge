@@ -5,6 +5,7 @@
 1979-05-28 Design Considerations for an Anthropophilic Computer https://web.stanford.edu/dept/SUL/sites/mac/primary/docs/bom/anthrophilic.html
 2023-09 React -- server components https://www.joshwcomeau.com/react/server-components/
 2024 https://socket.dev/blog/tc39-advances-10-ecmascript-proposals-key-features-to-watch
+2026 clear website https://www.si.gov/
 [ ] +++ https://dev.to/anze_kop1tar/acronyms-you-should-know-when-going-to-a-job-interview-369l
 [ ] 37signals suite https://stimulus.hotwired.dev/
 [ ] advanced architecture -- Background Synchronization API
@@ -291,8 +292,10 @@ fonts -- concepts +++ https://fonts.google.com/knowledge/glossary
 fonts -- concepts -- subsetting https://fonts.google.com/knowledge/glossary/subsetting
 fonts -- Font Friday https://pimpmytype.com/fontfriday/
 FORC "Fear of Removing CSS" = https://x-team.com/blog/forc-fear-of-removing-css
-formats -- jpg = https://guillaumetech.github.io/posts/jpg-scaling-chrome/
-formats -- webp
+formats -- image -- AVIF = 🟢 overall excellent, better than webP https://caniuse.com/avif https://jakearchibald.com/2026/jpeg-xl-vs-avif/
+formats -- image -- JPEG XL = limited 2026/10 ++progressive but inferior to AVIF? https://jakearchibald.com/2026/jpeg-xl-vs-avif/
+formats -- image -- jpg = (outdated 🏚️) https://guillaumetech.github.io/posts/jpg-scaling-chrome/
+formats -- image -- webp = (outdated 🏚️) https://caniuse.com/webp
 frameworks -- "Remember that time when 3 out of 4 websites look like Bootstrap?"
 frontend cross-concerns = hosting, cache configuration, security headers, DDoS protection, progressive rollout...
 frontend routing

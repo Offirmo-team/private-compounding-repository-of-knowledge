@@ -123,9 +123,10 @@ export const PLUGIN: Plugin = {
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "vitest", {
 							type: "dev",
 						})
-						/* 2026/09 mocha considered legacy, TODO no longer force it if unused.
-						 * if used, it will naturally appear.
-						 */
+						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@types/node", {
+							type: "dev",
+						})
+						/* 2026/09 mocha considered legacy
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "mocha", {
 							type: "dev",
 						})
@@ -144,9 +145,7 @@ export const PLUGIN: Plugin = {
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@types/sinon", {
 							type: "dev",
 						})
-						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@types/node", {
-							type: "dev",
-						})
+						 */
 					}
 				}
 
@@ -364,5 +363,5 @@ import {
 	type StructuredFsⳇFileManifest,
 } from "@infinite-monorepo/types-for-plugins"
 
-import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇObject } from "@monorepo-private/ts--types"
 import { isꓽError } from "@monorepo-private/utils--error/v2"

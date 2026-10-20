@@ -12,7 +12,7 @@ const DEFAULT_OPTIONS: Options = {
 }
 
 export function json_stable_stringify(
-	obj: Immutable<JSONObject>,
+	obj: Immutable<JsonⳇObject>,
 	_options: Immutable<Partial<Options>> = {},
 ): ReturnType<(typeof JSON)["stringify"]> {
 	const options: Options = {
@@ -26,7 +26,7 @@ export function json_stable_stringify(
 
 /////////////////////////////////////////////////
 
-import type { Immutable, JSONObject } from "@monorepo-private/ts--types"
+import type { Immutable, JsonⳇObject } from "@monorepo-private/ts--types"
 
 import {
 	type Options as BaseOptions,

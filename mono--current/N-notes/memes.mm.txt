@@ -1,4 +1,5 @@
 "Unsafe at Any Speed" = scandal of a dangerous car, raising manufacturer responsibility https://ratjens.substack.com/p/unsafe-at-any-speed
++++ https://www.stephendiehl.com/posts/internet_predatory_cesspit/
 10 things that require zero talent -- attitude
 10 things that require zero talent -- being coachable
 10 things that require zero talent -- being on time
@@ -931,6 +932,7 @@ life -- 65yo -- barely any major work https://statmodeling.stat.columbia.edu/202
 life -- aging -- photoaging https://en.wikipedia.org/wiki/Photoaging
 life -- authentic life despite the apparent absurdity or incomprehensibility of existence https://en.wikipedia.org/wiki/Existentialism
 life -- balance between living the moment and preparing the long-term = ex. of ppl dying at 50 before planned retirement / travelling (Also Gospel's parable)
+life -- cancer = https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/
 life -- care
 life -- diseases -- heart disfunction = New York Heart Association Functional Classification https://en.wikipedia.org/wiki/New_York_Heart_Association_Functional_Classification
 life -- draw a random life = https://anyhumanever.com/
@@ -1142,9 +1144,11 @@ natural order of things in society = established by the dominant ideology
 needs / wants https://en.wikipedia.org/wiki/Need
 negative work = pushing back unneeded things, saving time and effort, but not visible https://www.linkedin.com/posts/andrewmhenderson_negative-work-is-the-most-important-role-share-7457132081052147712-ZLaM
 network effect
+neuro -- TOOM (Theory of Other Minds) = awareness that ppl don't think the same https://erikengdahl.se/autism/isnt/help.html
 neuro-divergent
 neurodivergent -- neurotypical = https://erikengdahl.se/autism/isnt/
 neurodivergent = now the majority?
+neurotypical -- seen as a handicap = interesting POV https://erikengdahl.se/autism/isnt/
 never eat alone
 Never interrupt someone doing what you said couldn't be done.
 Never job backwards. What-might-have-been was a waste of time. Follow your fate, and be satisfied with it, and be glad not to be a second-hand motor salesman, or a yellow-press journalist, pickled in gin and nicotine, or a cripple—or dead (Fleming / James Bond)
@@ -1831,6 +1835,7 @@ wokeness = An aggressively performative focus on social justice https://paulgrah
 word frequency -- English https://frequencylist.com/
 work -- 4-hour workweek
 work -- anger = don't https://www.seangoedecke.com/you-should-never-be-angry-at-work/
+work -- blue & white collar = https://ptrbrynt.com/posts/were-we-blue-collar-workers-all-along
 work -- busy work https://en.wikipedia.org/wiki/Busy_work
 work -- corporate slave (but also never achieving anything?)
 work -- ghostworking = https://www.linkedin.com/news/story/the-ghostworking-trend-explained-7359850/

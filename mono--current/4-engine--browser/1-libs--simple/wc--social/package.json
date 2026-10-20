@@ -24,7 +24,6 @@
 		"@monorepo-private/assert": "workspace:*"
 	},
 	"devDependencies": {
-		"@monorepo-private/config--mocha": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/marketing--creator": "workspace:*",
 		"@monorepo-private/parcel-config": "workspace:*",
@@ -32,15 +31,10 @@
 		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
-		"@types/mocha": "catalog:",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
-		"chai": "catalog:",
-		"mocha": "catalog:",
 		"npm-run-all": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:",
-		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vite": "catalog:",

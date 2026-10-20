@@ -65,8 +65,9 @@
 2026-07-21 agentic containment escape https://openai.com/index/hugging-face-model-evaluation-security-incident/
 2026-08-27 Amazon shut downs mechanical turk https://www.mturk.com/help
 2026-09-27 AI companies in fierce arms race to demonstrate their model is the most existentially threatening to humanity https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/ https://calnewport.com/its-time-to-investigate-the-ai-labs/
-2026/09-x = trying to 1) regulatory capture 2) abdicate of responsibility and blame https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067
-2026/09-x Dario Amodei "we must pace the frontier" https://darioamodei.com/post/we-must-pace-the-frontier
+2026-09-x = trying to 1) regulatory capture 2) abdicate of responsibility and blame https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067
+2026-09-x Dario Amodei "we must pace the frontier" https://darioamodei.com/post/we-must-pace-the-frontier
+2026-10 SI "Super Intelligence" = https://www.si.gov/
 [ ] https://claude.dev/
 [ ] https://earendil.com/
 [ ] https://github.com/earendil-works
@@ -274,6 +275,7 @@ challenges -- biases -- left-leaning = https://tech.slashdot.org/story/25/04/10/
 challenges -- biases = for ex. write a fairy tale after being primed https://deploymentsafety.openai.com/gpt-5-4-thinking/bias
 challenges -- blindspots https://ezyang.github.io/ai-blindspots/
 challenges -- burnout = Does anyone really care? https://ky.fyi/posts/ai-burnout
+challenges -- cheating = https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/
 challenges -- citation accuracy
 challenges -- coded gaze = Automated systems are not inherently neutral. They reflect the priorities, preferences, and prejudices - the coded gaze - of those who have the power to mold artificial intelligence.
 challenges -- cognitive surrender = https://science.slashdot.org/story/26/04/03/2334204/cognitive-surrender-leads-ai-users-to-abandon-logical-thinking-research-finds
@@ -282,7 +284,7 @@ challenges -- copyright infringement -- The robber got robbed = https://develope
 challenges -- copyright infringement -- Verbatim Recall of Copyrighted Books https://github.com/cauchy221/Alignment-Whack-a-Mole-Code
 challenges -- copyright infringement = “An astonishing theft of unprecedented proportions” https://www.niemanlab.org/2026/09/an-astonishing-theft-of-unprecedented-proportions-court-records-show-what-microsoft-and-openai-actually-thought-about-ai-training/ https://arxiv.org/html/2602.10758v1 https://torrentfreak.com/uploading-pirated-books-via-bittorrent-qualifies-as-fair-use-meta/
 challenges -- copyright unclarity = Who Owns the Code Claude Wrote? https://legallayer.substack.com/p/who-owns-the-claude-code-wrote
-challenges -- Creation becomes cheap, verification does not = https://dev.to/marcosomma/am-i-becoming-too-slow-for-the-ai-world-1904
+challenges -- creation becomes cheap, verification does not = https://dev.to/marcosomma/am-i-becoming-too-slow-for-the-ai-world-1904
 challenges -- cybersecurity
 challenges -- data loss = rm -rf
 challenges -- datacenter availability and consumption = https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/
@@ -303,6 +305,7 @@ challenges -- illusion of understanding = hypothesis that LLMs don't actually pe
 challenges -- inaccuracy (answer quality)
 challenges -- incentives -- doom loop = the end-product threatens the economic foundations of its essential suppliers https://www.niemanlab.org/2026/09/an-astonishing-theft-of-unprecedented-proportions-court-records-show-what-microsoft-and-openai-actually-thought-about-ai-training/
 challenges -- incentives re-adjustment = many previous behaviors are no longer incentivized the same https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons/
+challenges -- incorrect self-preservation = trolley problem
 challenges -- inference speed = improved by dedicated engines e.g. https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai
 challenges -- influence = e.g. https://responsiblestatecraft.org/israel-influence-chatgpt/
 challenges -- language = not English
@@ -316,6 +319,7 @@ challenges -- model collapse = as AI grows, systems are trained on their own out
 challenges -- money aligned LLMs = ads, preferred providers
 challenges -- no more community = missing Stack Overflow https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/
 challenges -- over-delegation see [[AI fluency -- delegation]]
+challenges -- overeager = How Far Will AI Assistants Go for a Refund They Can’t Get? https://www.vals.ai/blogs/impossible-refund
 challenges -- predictability + consistency -- Clarifying question = Before doing a task, some models are prone to asking clarifying questions, or asking permission https://tombedor.dev/yes-or-no-please/
 challenges -- predictability + consistency -- Off topic replies = The assistant goes off script and tries to make friendly conversation, rather than answering a question directly https://tombedor.dev/yes-or-no-please/
 challenges -- predictability + consistency -- Pedantic replies and subjective questions = the assistant is unsure or split hair https://tombedor.dev/yes-or-no-please/
@@ -345,7 +349,6 @@ chatbots -- Gemini
 chatbots -- GroqChat https://groq.com/
 chatbots = the "chat" in ChatGPT, the reason why AI exploded in 2023
 clanker
-Claudeception https://github.com/blader/Claudeception/commits/main/
 claws -- challenges -- cross-channels
 claws -- challenges -- memory
 claws -- challenges -- security https://x.com/theonejvo/status/2015892980851474595 https://composio.dev/content/openclaw-security-and-vulnerabilities
@@ -388,6 +391,7 @@ coding -- codeless repo = contains only specs and tests, purely language-agnosti
 coding -- compound engineering = Plan → Work → Review → Compound → Repeat https://every.to/guides/compound-engineering
 coding -- death of software https://www.a16z.news/p/death-of-software-nah
 coding -- developer vs. sociotechnic vs. project organizer
+coding -- features 2026/10 https://anoma.ly/notes/opencode-2-0/
 coding -- gas town https://www.dolthub.com/blog/2026-01-15-a-day-in-gas-town/
 coding -- hand-coding vs. vibe-coding vs. craft-coding = hand doesn't scale, vibe is cheap but slop = trade-off, craft is better quality but more expensive = different trade-off https://peterbloem.nl/blog/craft-coding
 coding -- hype cycle = challenge the coding claims (pre-Claude code but still interesting read) https://www.linkedin.com/posts/svpino_literally-everyone-is-freaking-out-over-codex-activity-7329865083411402752-T8KU
@@ -769,6 +773,7 @@ prompt -- best practices -- CloudFlare = https://developers.cloudflare.com/worke
 prompt -- best practices -- google https://ai.google.dev/gemini-api/docs/prompting-strategies?hl=en
 prompt -- dev = https://developers.cloudflare.com/workers/get-started/prompting/#build-workers-using-a-prompt
 prompt -- dev tools https://developers.cloudflare.com/workers/get-started/prompting/#additional-uses
+prompt -- engineering -- components -- anti-cheat = https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/
 prompt -- engineering -- components -- Constraints = The boundaries: length, tone, what to include, what to leave out, what to avoid. Constraints are how you keep the output usable without heavy editing.
 prompt -- engineering -- components -- Context = The background Claude cannot know unless you provide it: the audience, the situation, prior decisions, the source material. This is the component professionals most often omit.
 prompt -- engineering -- components -- Output format = The shape of the result: a table, a bulleted list, a three-paragraph memo, a draft email. Stating the format up front saves an iteration.

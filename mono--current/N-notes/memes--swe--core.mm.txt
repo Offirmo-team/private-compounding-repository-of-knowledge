@@ -701,6 +701,7 @@ lang -- confuguration -- https://medv.io/blog/things-i-dont-like-in-configuratio
 lang -- confuguration -- JSON5
 lang -- confuguration -- TS
 lang -- E = https://www.crockford.com/ec/etut.html
+lang -- esoteric = https://esolangs.org/wiki/Truth-machine
 lang -- F# https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
 lang -- go
 lang -- go -- advocacy https://github.com/microsoft/typescript-go/discussions/411
@@ -841,6 +842,7 @@ o11y observability https://o11y.eu/blog/what-is-o11y/
 object
 object model = memory, working representation ex. DOM, CCSOM...
 observability = is just another word for “understanding”
+ontology = epresentation, formal naming, and definitions of the categories, properties, and relations between the concepts, data, or entities that pertain to one, many, or all domains of discourse https://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html https://en.wikipedia.org/wiki/Ontology_(information_science)
 OOP -- against https://paulgraham.com/noop.html
 OOP -- fake strengths -- abstraction -> any interface
 OOP -- fake strengths -- code re-use
@@ -1120,6 +1122,7 @@ strict -- use strict
 stringbool = string convertible to a bool, ex.yes, no, Y, false, true, 0, 1...
 style guides https://google.github.io/styleguide/
 superapp
+SWE = blue or white collar? = https://ptrbrynt.com/posts/were-we-blue-collar-workers-all-along
 syntactic salt https://en.wikipedia.org/wiki/Syntactic_sugar#Syntactic_salt
 syntactic sugar https://en.wikipedia.org/wiki/Syntactic_sugar
 system boundaries = a publicly exposed interface that third-party developers are going to use. It’s the inability to make breaking changes because you have external users to support that really defines a boundary. As a result, you have to pay special attention to get the design of a system boundary right—it’s not easy to make changes in the future. Boundaries are more important than other parts of our programs that we can refactor at will. https://www.tedinski.com/2018/02/06/system-boundaries.html
@@ -1163,6 +1166,7 @@ threads
 threads -- virtual https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html
 time -- clock time = can jump backwards or forward (NTP adjustments, clock drift correction)
 time -- monotonic = only goes forward, unaffected by NTP sync, DST, or the user changing their system clock.
+time -- negative leap seconds = https://www.bipm.org/en/cgpm-2026/resolution-5
 time-travel https://docs.snowflake.com/en/user-guide/data-time-travel
 tool -- ast-grep https://ast-grep.github.io/guide/quick-start.html
 tool -- curl = https://curl.se/
