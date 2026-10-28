@@ -5,7 +5,7 @@
 This monorepo follows a semi-strict folder structure aimed at:
 
 - compounding complexity, with higher layers relying on tested, reliable lower layers
-- progressive resurrection (see [concepts](../02-concepts.md))
+- progressive resurrection (see [concepts](../10-concepts.md))
 - avoiding dependency cycles, for the same reasons as above
   - if a higher layer or a SKU is no longer needed or no longer maintained, it can be deleted/parked without breaking
     the other SKUs/layers

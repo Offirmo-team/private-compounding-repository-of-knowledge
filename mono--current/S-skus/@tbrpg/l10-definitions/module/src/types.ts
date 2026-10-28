@@ -1,12 +1,12 @@
 import { Enum } from "typescript-string-enums"
 
-import { type NodeLike } from "@monorepo-private/rich-text-format"
+import { type NodeⳇLike } from "@monorepo-private/rich-text-format"
 import { type WithUUID } from "@monorepo-private/uuid"
 
 /////////////////////////////////////////////////
 
 /** The hypermedia type we use all over the app */
-type HypermediaContentType = NodeLike
+type HypermediaContentType = NodeⳇLike
 // TODO hints for progressive enhancement
 
 /////////////////////

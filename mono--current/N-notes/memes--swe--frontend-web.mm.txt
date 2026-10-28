@@ -576,6 +576,7 @@ UI -- layout -- masonry
 UI -- layout -- table
 UI -- layout -- tree
 UI -- loading skeleton = a simplified version of the UI shown during loading
+UI -- micro interactions = for buttons, forms, selection controls, modals, navigation, and more https://www.typeui.sh/micro-interactions
 UI -- modes https://en.wikipedia.org/wiki/User_interface#Modalities_and_modes
 UI -- overlays -- avoid https://www.nngroup.com/articles/overuse-of-overlays/
 UI -- overlays -- dismissal https://www.nngroup.com/articles/accidental-overlay-dismissal/

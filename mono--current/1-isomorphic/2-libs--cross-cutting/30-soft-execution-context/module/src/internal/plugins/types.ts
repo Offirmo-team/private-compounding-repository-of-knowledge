@@ -1,9 +1,7 @@
-//import type {  } from './types.js'
-
 /////////////////////////////////////////////////
 
-interface SXCPlugin<State = {}> {
-	id: string
+export interface SXCPlugin<State = {}> {
+	id: SXCPluginⳇId
 
 	augment: (ROOT_PROTOTYPE: any) => void
 
@@ -12,6 +10,9 @@ interface SXCPlugin<State = {}> {
 	}
 }
 
-/////////////////////////////////////////////////
+// to be extended through TS module augmentation
+export interface InternalSXCⳇStateⳇPlugins {}
 
-export { type SXCPlugin }
+export type SXCPluginⳇId = keyof InternalSXCⳇStateⳇPlugins
+
+/////////////////////////////////////////////////

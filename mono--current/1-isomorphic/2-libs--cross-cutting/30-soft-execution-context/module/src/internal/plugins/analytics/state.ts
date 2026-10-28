@@ -1,8 +1,10 @@
-interface State {
+/////////////////////////////////////////////////
+
+export interface State {
 	details: Record<string, any>
 }
 
-function create(parent_state: State | undefined) {
+export function create(parent_state: State | undefined) {
 	const details = parent_state ? Object.create(parent_state.details) : Object.create(null) // NO auto-details here, let's keep it simple. See core or platform specific code.
 
 	return {
@@ -10,7 +12,7 @@ function create(parent_state: State | undefined) {
 	}
 }
 
-function addDetail(state: State, key: string, value: any): State {
+export function addDetail(state: State, key: string, value: any): State {
 	if (Object.hasOwn(state.details, key) && state.details[key] === value) {
 		// no change
 		return state
@@ -25,6 +27,14 @@ function addDetail(state: State, key: string, value: any): State {
 	}
 }
 
-/////////////////////
+/////////////////////////////////////////////////
+// TS module augmentation
 
-export { type State, create, addDetail }
+import "../types.ts"
+declare module "../types.ts" {
+	interface InternalSXCⳇStateⳇPlugins {
+		analytics: State
+	}
+}
+
+/////////////////////////////////////////////////

@@ -13,7 +13,5 @@ describe(`${LIB} -- internal event emitter`, () => {
 
 import { afterEach, beforeAll, describe, expect, it } from "vitest"
 
-import { displayError } from "@monorepo-private/print-error-to-terminal"
-
 import { LIB } from "../consts.ts"
 import { _TEST_ONLY__reset_root_SXC } from "../index.ts"

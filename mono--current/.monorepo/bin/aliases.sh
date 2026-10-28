@@ -1,5 +1,5 @@
 #@IgnoreInspection BashAddShebang
-[[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!"
+[[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!" >&2
 
 ## default = where "gitc" is supposed to clone it
 export MONOREPO_ROOT__CURRENT=${PCRK_ROOT:-"$HOME/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge/mono--current/"};
@@ -8,6 +8,7 @@ alias  mono.@monorepo-private.config--mocha='cd "$MONOREPO_ROOT__CURRENT"; mise 
 alias  mono.@monorepo-private.config--typescript='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 0-meta/config--typescript/'
 alias  mono.@monorepo-private.scripts='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 0-meta/scripts/'
 alias  mono.@monorepo-private.assert='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/1-libs--simple/0-assert/'
+alias  mono.@monorepo-private.freeze='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/1-libs--simple/0-freeze/'
 alias  mono.@monorepo-private.normalize-string='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/1-libs--simple/1-normalize-string/'
 alias  mono.@monorepo-private.poll='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/1-libs--simple/1-poll/'
 alias  mono.@monorepo-private.promise-try='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/1-libs--simple/1-promise-try/'
@@ -35,8 +36,10 @@ alias  mono.@monorepo-private.practical-logger--minimal-noop='cd "$MONOREPO_ROOT
 alias  mono.@monorepo-private.universal-debug-api--types='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/20-universal-debug-api--types/'
 alias  mono.@monorepo-private.universal-debug-api--placeholder='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/21-universal-debug-api--placeholder/'
 alias  mono.@monorepo-private.soft-execution-context='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/30-soft-execution-context/'
-alias  mono.@monorepo-private.rich-text-format='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/40-rich-text-format/'
+alias  mono.@monorepo-private.rich-text-format--core='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/40-rich-text-format--core/'
 alias  mono.@monorepo-private.rich-text-format--to-textual='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/41-rich-text-format--to-textual/'
+alias  mono.@monorepo-private.rich-text-format--builder='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/42-rich-text-format--builder/'
+alias  mono.@monorepo-private.rich-text-format='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/49-rich-text-format/'
 alias  mono.@monorepo-private.ohateoas='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/50-ohateoas/'
 alias  mono.@monorepo-private.credits='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/2-libs--cross-cutting/credits/'
 alias  mono.@monorepo-private.flux='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 1-isomorphic/3-libs--advanced/flux/'

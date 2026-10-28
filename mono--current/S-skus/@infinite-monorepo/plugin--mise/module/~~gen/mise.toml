@@ -22,9 +22,6 @@ npm.package_manager = "pnpm"
 #################################################
 ## https://mise.jdx.dev/dev-tools/
 [tools]
-turbo = "latest"
-## https://github.com/antfu-collective/ni
-"npm:@antfu/ni" = "latest"
 
 
 ### TO REVIEW

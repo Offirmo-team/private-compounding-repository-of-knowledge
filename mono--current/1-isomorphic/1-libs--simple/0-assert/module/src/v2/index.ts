@@ -85,21 +85,19 @@ export const assert: AssertSugar = Object.assign(_assert, {
 /////////////////////////////////////////////////
 
 // most recommended usage: auto-builds a clear error message
-export function assert_from(fn_in_obj: { [name: string]: Function }) {
+export function assert_from(fn_in_obj: { [name: string]: Function }, { LIB }: { LIB?: string } = {}) {
 	_assert(typeof fn_in_obj === "object" && fn_in_obj)
 	const [caller__name, caller] = Object.entries(fn_in_obj)[0] || []
 	_assert(caller__name)
 	_assert(typeof caller === "function")
 
 	const context: Context = {
+		...(LIB && { LIB }),
 		caller,
 		caller__name,
 	}
 
 	return {
-		of_lib(lib: string) {
-			throw new Error(`Not implemented!`)
-		},
 		forⵧparam(value_in_obj: { [name: string]: any }) {
 			_assert(typeof value_in_obj === "object" && value_in_obj)
 			const [object_under_check__name, object_under_check] = Object.entries(value_in_obj)[0] || []
@@ -223,7 +221,7 @@ class UnreachablePathError extends ExtendedError {
 /////////////////////////////////////////////////
 
 type Context = {
-	lib?: string
+	LIB?: string
 
 	caller?: Function
 	caller__name?: string
@@ -267,7 +265,7 @@ interface AssertSugar extends AssertFn {
 /////////////////////////////////////////////////
 
 function _on_failure(context: Context): never {
-	let { caller, caller__name, object_under_check__name, assertion, assertion_description, error } = context
+	let { LIB, caller__name, object_under_check__name, assertion, assertion_description, error } = context
 
 	if (isꓽprod) {
 		throw error // no details
@@ -301,6 +299,7 @@ function _on_failure(context: Context): never {
 	})()
 
 	const message__body = [
+		...(LIB ? [`[${LIB}]`] : []),
 		...(caller__name ? [`${caller__name}():`] : []),
 		`${error!.message__prefix}:`,
 		...(object_under_check__name ? [`${object_under_check__name}`] : []),

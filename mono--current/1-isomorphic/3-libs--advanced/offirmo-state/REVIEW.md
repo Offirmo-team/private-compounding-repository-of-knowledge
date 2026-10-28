@@ -1,7 +1,3 @@
-# Review: @monorepo-private/offirmo-state (offirmo-state)
-
-## Findings
-
 - **G3-P13-01** [Minor] `README.md` is essentially a scratchpad of open design questions ("XXX purely experimental",
   CRDT links to review, etc.) and does not document the actual current public API (selectors, type-guards, comparators,
   migration helpers, `utils.ts` reducer helpers). Anyone onboarding to this package gets no real usage guidance.
@@ -36,11 +32,7 @@
   threaded through the whole migration pipeline, annotated with `// TODO review: useful?`. Either finish this extension
   point or remove the indirection.
 
-- **G3-P13-07** [Nit] `vitest` is listed as a devDependency but the package has zero vitest test files — all
-  `*.tests.ts` still use mocha + chai. Not a bug (existing mocha/chai tests are fine per project policy), just noting
-  the dependency is currently unused.
-
 No unnecessary OOP/class usage found — the package is consistently written as plain interfaces/types + pure functions,
 in line with the project's functional style guidance. No security concerns identified (no I/O, no external input parsing
-beyond in-memory objects). No outdated/vulnerable dependencies stood out (icepick, jsondiffpatch, memoize-one,
+beyond in-memory objects). No outdated/vulnerable dependencies stood out (jsondiffpatch, memoize-one,
 typescript-string-enums are all pinned via the workspace catalog).

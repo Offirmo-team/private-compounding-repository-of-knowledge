@@ -1,7 +1,7 @@
 import stylize_string from "chalk"
 
 import {
-	type NodeLike,
+	type NodeⳇLike,
 	type WalkerCallbacks,
 	type RenderingOptionsⵧToText,
 	type RenderToTextState,
@@ -69,7 +69,7 @@ const callbacksⵧto_terminal: Partial<WalkerCallbacks<State, RenderingOptions�
 	on_classⵧafter,
 }
 
-function renderⵧto_terminal(doc: Immutable<NodeLike>, callback_overrides = {}) {
+function renderⵧto_terminal(doc: Immutable<NodeⳇLike>, callback_overrides = {}) {
 	//console.log(`${LIB} Rendering:`, doc)
 	return renderⵧto_text(
 		doc,

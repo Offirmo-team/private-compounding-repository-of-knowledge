@@ -16,7 +16,6 @@ catalog:
    "@types/chroma-js": ^3
    "@types/core-js": ^2
    "@types/cross-spawn": ^6
-   "@types/icepick": ^2
    "@types/mocha": ^10
    "@types/murmurhash3js-revisited": ^3
    "@types/node": ^24
@@ -40,7 +39,6 @@ catalog:
    emittery: ^2
    fraction.js: ^4
    gitignore-fs: ^2
-   icepick: ^2
    json5: ^2
    jsondiffpatch: ^0.7
    lightningcss: ^1
@@ -53,7 +51,7 @@ catalog:
    murmurhash3js-revisited: ^3
    nanoid: ^6
    npm-run-all: ^4
-   oxfmt: ^0.73
+   oxfmt: ^0.74
    oxlint: ^1
    oxlint-tsgolint: ^7
    parse-imports-ts: ^1

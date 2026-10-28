@@ -35,6 +35,7 @@ best of -- steam -- 2024 https://store.steampowered.com/sale/bestof2024
 Bethesda Effect = players frequently prefer the first game they play in a franchise (or by a specific developer) over the newer, technically superior iterations, mythologizing it due to nostalgia rather than actual objective superiority
 Big Dumb Object (BDO) is any mysterious object, usually of extraterrestrial or unknown origin and immense power, in a story which generates an intense sense of wonder by its mere existence. To a certain extent, the term deliberately deflates the intended grandeur of the mysterious object. https://en.wikipedia.org/wiki/Big_Dumb_Object
 biome
+BioWare https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware
 bonus stage
 capture the flag
 casual
@@ -204,6 +205,7 @@ player taxonomy -- Magic -- Spike = wants to prove something, primarily how good
 player taxonomy -- Magic -- Timmy = wants to experience something. plays because he enjoys the feeling he gets when he plays. Power, Social, Diversity, Adrenalin gamers. THE ENTIRE REASON TO PLAY IS HAVING A GOOD TIME
 player taxonomy -- Magic https://magic.wizards.com/en/news/making-magic/timmy-johnny-and-spike-revisited-2006-03-20
 playthrough
+polish -- assets https://lastmuseum.com/about
 PR-generated worlds =  emergence, self-organization https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 procedural generation
 progression -- horizontal = Recruit > Soldier (max level) > Learn to wield guns (expac 1) > Learn to wield swords (expac 2) > Learn to do magic stuff (expac 3) > and so on

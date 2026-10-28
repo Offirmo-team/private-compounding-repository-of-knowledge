@@ -1,17 +1,8 @@
-import { getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
+/////////////////////////////////////////////////
 
-import { INTERNAL_PROP } from "../../consts.ts"
-import * as TopState from "../../state.ts"
-import { flattenOwnAndInheritedProps } from "../../utils.ts"
-import { PLUGIN_ID as PLUGIN_ID_DI } from "../dependency-injection/index.ts"
-import type { SXCPlugin } from "../types.ts"
+export const PLUGIN_ID: SXCPlugin["id"] = "analytics"
 
-import * as StateFns from "./state.ts"
-import { type State } from "./state.ts"
-
-const PLUGIN_ID: SXCPlugin["id"] = "analytics"
-
-const PLUGIN: SXCPlugin = {
+export const PLUGIN: SXCPlugin = {
 	id: PLUGIN_ID,
 	state: StateFns,
 	augment: (prototype) => {
@@ -65,4 +56,15 @@ const PLUGIN: SXCPlugin = {
 	},
 }
 
-export { PLUGIN_ID, PLUGIN }
+/////////////////////////////////////////////////
+
+import { getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
+
+import { INTERNAL_PROP } from "../../consts.ts"
+import * as TopState from "../../state.ts"
+import { flattenOwnAndInheritedProps } from "../../utils.ts"
+import { PLUGIN_ID as PLUGIN_ID_DI } from "../dependency-injection/index.ts"
+import type { SXCPlugin } from "../types.ts"
+
+import * as StateFns from "./state.ts"
+import { type State } from "./state.ts"

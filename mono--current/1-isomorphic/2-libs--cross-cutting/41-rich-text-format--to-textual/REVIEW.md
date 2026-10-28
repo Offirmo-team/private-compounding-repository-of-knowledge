@@ -1,6 +1,6 @@
 # Code Review — `@monorepo-private/rich-text-format--to-textual`
 
-Renders `@monorepo-private/rich-text-format` `Node`/`NodeLike` documents to plain text/Markdown, built on a generic,
+Renders `@monorepo-private/rich-text-format` `Node`/`NodeⳇLike` documents to plain text/Markdown, built on a generic,
 hook-based tree-walker (`walk.ts`) shared by (presumably) all textual renderers.
 
 Note: this package contains a `module/~~tosort/2026/to-debug/index.ts` and `module/~~tosort/2026/to-html/index.ts` — not

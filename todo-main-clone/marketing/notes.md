@@ -123,6 +123,11 @@ Make suggestions for better productivity
 
 
 
+inspect my zsh and bash config files (I use both)
+review and make suggestions for correctness and speed
+(my shells are a bit slow to start)
+
+
 inspect my Claude Code setup especially the hooks and plugins and tell me if there is sth to clean or incorrect
 
 

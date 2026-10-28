@@ -58,6 +58,7 @@
 2026-03-24 "Issue tracking is dead" https://linear.app/next
 2026-03-31 "From Hierarchy to Intelligence" = thesis of redefining company organization https://block.xyz/inside/from-hierarchy-to-intelligence
 2026-03-31 Claude Code's source code leak https://kuber.studio/blog/AI/Claude-Code's-Entire-Source-Code-Got-Leaked-via-a-Sourcemap-in-npm,-Let's-Talk-About-it https://news.ycombinator.com/item?id=47584540 https://x.com/Fried_rice/status/2038894956459290963 https://github.com/chatgptprojects/clear-code/tree/642c7f944bbe5f7e57c05d756ab7fa7c9c5035cc
+2026-04 Vulnpocalypse = model finds lots of vuln
 2026-04-07 Anthropic Mythos announced = "Claude Mythos’ large increase in capabilities has led us to decide not to make it generally available (...) In response, we have launched Project Glasswing, an effort to use Mythos Preview to help secure the world’s most critical software, and to prepare the industry" https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf
 2026-05-14 huge bun rewrite, still debated https://github.com/oven-sh/bun/pull/30412
 2026-07 "dark night of Mathematics" = the latest model easily disprove open conjectures e.g. https://chatgpt.com/share/6a60b2eb-0b64-83ee-9c76-7931ca1de063 https://web.archive.org/web/20260722122743/https://twitter.com/DmitryRybin1/status/2079906232069177643 https://kirwinhampshire.substack.com/p/the-dark-night-of-mathematics
@@ -554,6 +555,7 @@ genAI -- use cases -- Copy generation = Draft marketing copy, emails, blog posts
 genAI -- use cases -- Search = Search call transcripts, internal knowledge sources and other large corpuses of data to answer questions from users.
 genAI -- use cases -- Stylistic conversion = Rewrite content in a different style or language.
 genAI -- use cases -- Text classification = Classify intent in customer chat logs, support tickets and more.
+GenAI take on humans https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans
 gender shade = accuracy of AI powered gender classification products http://gendershades.org/
 GPT "Generative Pre-trained Transformer" = understand language (natural & formal)
 graveyard = list of dead AI tools https://tooldirectory.ai/ai-graveyard
@@ -740,6 +742,7 @@ papers -- "attention is all you need" = https://arxiv.org/pdf/1706.03762.pdf
 papers -- "The illusion of thinking" -- responses https://slashdot.org/story/25/06/19/165237/reasoning-llms-deliver-value-today-so-agi-hype-doesnt-matter https://garymarcus.substack.com/p/seven-replies-to-the-viral-apple
 papers -- "The illusion of thinking" = from Apple https://machinelearning.apple.com/research/illusion-of-thinking 🆕2025-06
 papers -- https://arxiv.org/pdf/2510.18395
+parallelism = smarter not harder https://aisle.com/blog/system-over-model-zero-day-discovery-at-the-jagged-frontier
 parameter
 parameter -- hyperparameter = values provided to the model from the outside to make adjustments that can influence the learning process and its performance, among other things
 pathways = broader AU architecture underpinning PaLM
@@ -853,6 +856,7 @@ rsrcs -- staying current -- trending papers https://huggingface.co/papers/week/2
 sandboxing -- solutions -- Cloudflare Dynamic workers = https://blog.cloudflare.com/dynamic-workers/ https://developers.cloudflare.com/workers/runtime-apis/bindings/worker-loader/
 sandboxing -- solutions -- Daytona = https://www.daytona.io/
 sandboxing -- solutions -- Docker = https://docs.docker.com/ai/sandboxes/
+sandboxing -- solutions -- https://github.com/NVIDIA/OpenShell/
 sandboxing -- solutions -- sprites https://fly.io/blog/unfortunately-mcp/
 sandboxing -- solutions -- Vercel Sandboxes = https://vercel.com/docs/vercel-sandbox/quickstart
 sandboxing https://spawn-queue.acm.org/doi/10.1145/3733699
@@ -1032,6 +1036,7 @@ vector database -- solutions
 vulnerability research https://googleprojectzero.blogspot.com/2024/10/from-naptime-to-big-sleep.html
 watermarking -- SynthID = a process for assigning each token a “score” based on its previous tokens (for instance, sum the token’s ID with the IDs of its previous three tokens then take mod 5). To apply the watermark, the model adopts a sampling strategy like “out of the top five most likely tokens, pick the one with the top SynthID score” https://www.seangoedecke.com/text-ai-watermarks/ https://www.nature.com/articles/s41586-024-08025-4
 watermarking outputs https://proceedings.mlr.press/v202/zhao23i.html
+Waymo effect = what happens when a technology removes the friction of dealing with another human being https://www.researchagenda.news/articles/the-waymo-effect.html
 weak AI = only good for very specific tasks
 weak-to-strong generalization https://openai.com/research/weak-to-strong-generalization
 who's who -- Andrej Karpathy = huge expert founding member of OpenAI, director of AI at Tesla https://karpathy.ai/ https://www.youtube.com/@AndrejKarpathy

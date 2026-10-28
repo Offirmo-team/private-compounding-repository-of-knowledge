@@ -19,6 +19,7 @@ amity-enmity complex https://en.m.wikipedia.org/wiki/Amity-enmity_complex
 And then the men with guns tell you to do it anyway = https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/
 archives = Hittite royal archive https://www.thehistoryblog.com/archives/77107
 aristocracy = a form of government that places power in the hands of a small, privileged ruling class, the aristocrats https://en.wikipedia.org/wiki/Aristocracy
+artworks, by culture = https://lastmuseum.com/cultures
 backwardness https://en.wikipedia.org/wiki/The_Moral_Basis_of_a_Backward_Society
 Balogh Balage https://archaeologyillustrated.com/
 banned words -- USA = https://pen.org/banned-words-list/
@@ -181,7 +182,9 @@ https://en.wikipedia.org/wiki/Hallstatt_culture
 https://en.wikipedia.org/wiki/Historical_European_martial_arts
 https://en.wikipedia.org/wiki/Historical_recurrence
 https://en.wikipedia.org/wiki/History_of_the_Peloponnesian_War https://el.wikisource.org/wiki/%CE%99%CF%83%CF%84%CE%BF%CF%81%CE%AF%CE%B1_%CF%84%CE%BF%CF%85_%CE%A0%CE%B5%CE%BB%CE%BF%CF%80%CE%BF%CE%BD%CE%BD%CE%B7%CF%83%CE%B9%CE%B1%CE%BA%CE%BF%CF%8D_%CE%A0%CE%BF%CE%BB%CE%AD%CE%BC%CE%BF%CF%85
+https://en.wikipedia.org/wiki/International_Air_&_Space_Hall_of_Fame
 https://en.wikipedia.org/wiki/Joseph_Swan inventor
+capitalism -- the Tobacco Industry Drove Rise of Ultra-Processed Foods https://vcresearch.berkeley.edu/news/how-tobacco-industry-drove-rise-ultra-processed-foods
 https://en.wikipedia.org/wiki/Makuria
 https://en.wikipedia.org/wiki/Native_metal
 https://en.wikipedia.org/wiki/Parallel_Lives
@@ -232,6 +235,7 @@ money -- currency -- decimalisation https://en.wikipedia.org/wiki/Decimalisation
 money -- currency = https://en.wikipedia.org/wiki/Currency
 money -- gold standard https://laviedesidees.fr/La-fin-de-l-etalon-or
 money -- world' safe banker = exorbitant privilege allowing “to incur debt to foreign countries at no cost”  https://mail.blockworks.com/p/operation-return-to-gold
+museum https://lastmuseum.com/about
 natural resource -- depletion
 natural resource https://en.wikipedia.org/wiki/Natural_resource
 numeral system https://en.wikipedia.org/wiki/Positional_notation
@@ -241,6 +245,7 @@ peaceful transition of power = from a leadership to another, e.g. election, inde
 pollution -- 12xx https://en.wikipedia.org/wiki/Pea_soup_fog
 population renewal
 potholes = https://thewalrus.ca/montreal-potholes/
+precision manufacturing = https://admiralcloudberg.medium.com/a-matter-of-millimeters-the-story-of-qantas-flight-32-bdaa62dc98e7
 private healthcare makes industries less innovative = because trapped by jobs providing healthcare https://werd.io/private-healthcare-makes-industries-less-innovative-its-time-for-change/
 problems -- & are the conduit of progress https://mail.blockworks.com/p/problems-are-the-conduit-of-progress
 problems -- Kevin Kelly "Most of the problems we have today are created by the solutions we had in the past." https://www.ted.com/talks/kevin_kelly_the_future_will_be_shaped_by_optimists

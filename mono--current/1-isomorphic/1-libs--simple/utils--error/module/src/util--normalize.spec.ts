@@ -1,5 +1,6 @@
-import * as icepick from "icepick"
 import { describe, it, expect } from "vitest"
+
+import { freezeⵧdeep } from "@monorepo-private/freeze"
 
 import { COMMON_ERROR_FIELDS_EXTENDED } from "./fields.ts"
 import type { XXError } from "./types.ts"
@@ -12,7 +13,7 @@ describe(`@monorepo-private/utils--error`, () => {
 		describe("when AD-HOC re-creating the error object", () => {
 			it("should work and re-create only if the object is not already an error -- base", () => {
 				let err = new Error("foo!")
-				err = icepick.freeze(err)
+				err = freezeⵧdeep(err)
 
 				const normalized_err = normalizeError(err)
 				expect(normalized_err).toBe(err) // NO re-creation
@@ -23,7 +24,7 @@ describe(`@monorepo-private/utils--error`, () => {
 				xerr.details = {
 					foo: 42,
 				}
-				xerr = icepick.freeze(xerr)
+				xerr = freezeⵧdeep(xerr)
 
 				const normalized_err = normalizeError(xerr)
 				expect(normalized_err).toBe(xerr) // NO re-creation
@@ -92,7 +93,7 @@ describe(`@monorepo-private/utils--error`, () => {
 				xerr.details = {
 					foo: 42,
 				}
-				xerr = icepick.freeze<any>(xerr)
+				xerr = freezeⵧdeep<any>(xerr)
 
 				const normalized_err = normalizeError(xerr, { alwaysRecreate: true })
 				expect(normalized_err).not.toBe(xerr)

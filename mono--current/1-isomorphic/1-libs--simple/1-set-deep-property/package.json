@@ -19,10 +19,9 @@
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/freeze": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/icepick": "catalog:",
 		"@types/node": "catalog:",
-		"icepick": "catalog:",
 		"npm-run-all": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

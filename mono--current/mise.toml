@@ -13,7 +13,3 @@ idiomatic_version_file_enable_tools = ["node", "pnpm"]
 
 [settings.npm]
 package_manager = "pnpm"
-
-[tools]
-"npm:@antfu/ni" = "latest"
-turbo = "latest"

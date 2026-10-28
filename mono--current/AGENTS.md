@@ -16,7 +16,8 @@ DO NOT call `brew`. The local installation is a bit specific. Ask the user to do
 
 ## Code style guidelines
 
-See [07-conventions--formatting.md](%23%23CONTRIBUTING/07-conventions--formatting.md)
+See [61-conventions--formatting.md](%23%23CONTRIBUTING/61-conventions--formatting.md) and
+[62-conventions--naming.md](%23%23CONTRIBUTING/62-conventions--naming.md)
 
 ## Testing instructions
 

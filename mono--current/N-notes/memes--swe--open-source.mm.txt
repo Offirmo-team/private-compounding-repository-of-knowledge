@@ -2,6 +2,7 @@
 AI https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/
 as a financial weapon = to deny the opportunity for a private code to sell e.g. vs. Oracle
 bags.fun
+case studies -- Android = open as a feature https://keepandroidopen.org/
 commercial vs. non-commercial OSS https://leerob.substack.com/p/reflections-on-the-react-community
 contribution ladder https://modelcontextprotocol.io/community/contributor-ladder
 copyleft

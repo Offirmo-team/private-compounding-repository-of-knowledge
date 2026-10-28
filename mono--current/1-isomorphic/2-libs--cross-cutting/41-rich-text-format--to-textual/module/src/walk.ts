@@ -3,10 +3,10 @@
 import { assert_from, assert } from "@monorepo-private/assert"
 import { capitalizeⵧfirst } from "@monorepo-private/normalize-string"
 import {
-	type NodeLike,
+	type NodeⳇLike,
 	NodeType,
 	type SubNodeKey,
-	type StrictNode,
+	type NodeⳇNormalized,
 	type Node,
 	isꓽNodeLike,
 } from "@monorepo-private/rich-text-format"
@@ -46,7 +46,7 @@ const DEFAULT_RENDERING_OPTIONSⵧWalk = Object.freeze<BaseRenderingOptions>({
 // Hooks
 
 interface BaseWalkState {
-	aggregated_refs: StrictNode["$refs"]
+	aggregated_refs: NodeⳇNormalized["$refs"]
 
 	depthⵧh: number // header depth
 	depthⵧlist: number // list depth
@@ -61,7 +61,7 @@ interface BaseWalkState {
 
 interface BaseHookParams<RendererState> {
 	// shared generic state, see BaseWalkState for explanations
-	$node: Immutable<StrictNode>
+	$node: Immutable<NodeⳇNormalized>
 
 	// base, common state
 	bstate: Immutable<BaseWalkState> // hooks can peek, but are not allowed to mutate it
@@ -117,7 +117,7 @@ interface OnTypeParams<RendererState> extends BaseHookParams<RendererState> {
 
 // it's useful to have a dynamic way to resolve unknown refs, ex. if querying a big data store = inconvenient to preload all possible $refs
 interface UnknownRefResolver<RendererState, RenderingOptions> {
-	($ref_key: string, context: BaseHookParams<RendererState>, options: RenderingOptions): NodeLike | undefined
+	($ref_key: string, context: BaseHookParams<RendererState>, options: RenderingOptions): NodeⳇLike | undefined
 }
 
 interface RendererStateCreator<RendererState, RenderingOptions> {
@@ -238,7 +238,7 @@ const SUB_NODE_HR: Node = Object.freeze<Node>({
 /////////////////////////////////////////////////
 
 function walk<CustomWalkState, RenderingOptions extends BaseRenderingOptions>(
-	$raw_node: Immutable<NodeLike>,
+	$raw_node: Immutable<NodeⳇLike>,
 	raw_callbacks: Immutable<Partial<WalkerCallbacks<CustomWalkState, RenderingOptions>>>,
 	options: RenderingOptions, // this internal fn can't default unknown type, so we expect the caller to give us full options
 ) {
@@ -297,7 +297,7 @@ function _walk<CustomWalkState, RenderingOptions extends BaseRenderingOptions>(
 	options: RenderingOptions,
 	bstateⵧparent: BaseWalkState,
 	xstateⵧparent: CustomWalkState,
-	$raw_node: Immutable<NodeLike>,
+	$raw_node: Immutable<NodeⳇLike>,
 	$snk?: SubNodeKey, // if this node was a ref, its SubNodeKey
 ) {
 	const ǃ = assert_from({ _walk })
@@ -339,7 +339,7 @@ function _walk<CustomWalkState, RenderingOptions extends BaseRenderingOptions>(
 	return xstate
 }
 
-function maybe_strip_hints($node: Immutable<StrictNode>, should_strip: boolean): Immutable<StrictNode> {
+function maybe_strip_hints($node: Immutable<NodeⳇNormalized>, should_strip: boolean): Immutable<NodeⳇNormalized> {
 	if (!should_strip) {
 		return $node
 	}
@@ -357,7 +357,7 @@ function _walkꓽStringWithRefs<CustomWalkState, RenderingOptions extends BaseRe
 	options: RenderingOptions,
 	bstate: BaseWalkState,
 	xstate: CustomWalkState,
-	$node: Immutable<StrictNode>,
+	$node: Immutable<NodeⳇNormalized>,
 	$content: string, // looks like "Hello ⎨⎨world⎬⎬, welcome to ⎨⎨place|filter1|filter2⎬⎬
 ) {
 	const ǃ = assert_from({ _walk_StringWithRefs: _walkꓽStringWithRefs })
@@ -405,7 +405,7 @@ function _walkꓽStringWithRefs<CustomWalkState, RenderingOptions extends BaseRe
 			assert($ref_key, `${LIB}: syntax error in content "${$content}", empty ⎨⎨⎬⎬!`)
 
 			let $referenced_node = promoteꓽto_node(
-				(function _resolve_ref_by_id(): Immutable<StrictNode>["$refs"][string] {
+				(function _resolve_ref_by_id(): Immutable<NodeⳇNormalized>["$refs"][string] {
 					if ($ref_key === "br") {
 						ǃ.assert(
 							!bstate.aggregated_refs[$ref_key],
@@ -512,7 +512,7 @@ function _walkꓽcontent<CustomWalkState, RenderingOptions extends BaseRendering
 	options: RenderingOptions,
 	bstate: BaseWalkState,
 	xstate: CustomWalkState,
-	$node: Immutable<StrictNode>,
+	$node: Immutable<NodeⳇNormalized>,
 ) {
 	const ǃ = assert_from({ _walk_content: _walkꓽcontent })
 

@@ -1,5 +1,7 @@
 +++ https://www.sequoiacap.com/article/the-templeton-compression/
++++ thoughts on Flash = 1) don't rely on a 3rd party 2) you're at the mercy of the 1st party https://web.archive.org/web/20170615060422/https://www.apple.com/hotnews/thoughts-on-flash/ https://en.wikipedia.org/wiki/Thoughts_on_Flash
 1997 Amazon shareowners letter https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm
+2010/04/29 "thoughts on Flash" https://web.archive.org/web/20170615060422/https://www.apple.com/hotnews/thoughts-on-flash/
 [ ] +++ growth.design
 [ ] +++ https://www.threads.com/@prodmgmt.world
 [ ] digital product strategy and marketing https://lukew.com/
@@ -421,6 +423,7 @@ side projects -- outside of job https://www.reddit.com/r/SideProject/comments/1b
 simplicity "no ads, no gimmicks, no games"
 sleeper technology
 social features -- complex "block" feature of other users https://dcurt.is/block-carefully
+social media algorithm = +100% engagement https://thenextweb.com/news/mosseri-instagram-algorithm-opt-out-engagement-australia
 solutions engineering -- post‑sales = implementations end‑to‑end: discovery → design → build → UAT → launch → hypercare; owning scope, acceptance criteria, timelines, risks, cutover, and stakeholder comms.
 solutions engineering -- pre‑sales = targeted discovery, demos/POCs, solution diagrams, and implementation estimates/SOW inputs.
 stalking horse = figure used to test a concept or mount a challenge on behalf of a third party. If the idea proves viable or popular, the third party can then declare its interest and advance the concept with little risk of failure. If the concept fails, the third party will not be tainted by association with the failed concept and can either drop the idea completely or bide its time and wait until a better moment to launch an attack https://en.wikipedia.org/wiki/Stalking_horse

@@ -1,1 +1,1 @@
-../../../../../../../1-isomorphic/1-libs--simple/type-detection/module/01-primitives/index.ts
+../../../../../../../1-isomorphic/1-libs--simple/1-type-detection/module/01-primitives/index.ts

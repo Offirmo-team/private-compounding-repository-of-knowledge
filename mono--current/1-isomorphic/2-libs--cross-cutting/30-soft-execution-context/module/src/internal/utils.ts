@@ -1,14 +1,14 @@
 import type { SoftExecutionContext } from "../types.ts"
 
 import { INTERNAL_PROP } from "./consts.ts"
-import type { InternalSXC, InternalSXCState } from "./types.ts"
+import type { InternalSXC, InternalSXCⳇState } from "./types.ts"
 
 /////////////////////////////////////////////////
 
 // for debug (TODO review)
 function _flattenSXC(SXC: SoftExecutionContext) {
 	const _SXC = getInternalSXC(SXC)
-	let state: InternalSXCState | undefined = _SXC[INTERNAL_PROP]
+	let state: InternalSXCⳇState | undefined = _SXC[INTERNAL_PROP]
 
 	const plugins = {
 		...state.plugins,
@@ -20,7 +20,7 @@ function _flattenSXC(SXC: SoftExecutionContext) {
 
 	plugins.error_handling.details = flattenOwnAndInheritedProps(plugins.error_handling.details)
 
-	plugins.logical_stack.stack = flattenOwnAndInheritedProps(plugins.logical_stack.stack)
+	plugins.logical_stack.stack = flattenOwnAndInheritedProps(plugins.logical_stack.stack as any)
 
 	return plugins
 }
@@ -55,12 +55,12 @@ function getInternalSXC(SXC: any): InternalSXC {
 }
 
 // needed for various tree traversal algorithms
-function _getSXCStatePath(SXC: SoftExecutionContext): InternalSXCState[] {
+function _getSXCStatePath(SXC: SoftExecutionContext): InternalSXCⳇState[] {
 	const _SXC = getInternalSXC(SXC)
 
 	if (!_SXC[INTERNAL_PROP].cache.statePath) {
 		const path = []
-		let state: InternalSXCState | undefined = _SXC[INTERNAL_PROP]
+		let state: InternalSXCⳇState | undefined = _SXC[INTERNAL_PROP]
 
 		while (state) {
 			path.unshift(state)

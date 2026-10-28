@@ -1,26 +1,20 @@
-import type { XXError } from "@monorepo-private/utils--error"
-
-import type { SoftExecutionContext } from "../types.ts"
-
-import { INTERNAL_PROP } from "./consts.ts"
-
 /////////////////////////////////////////////////
 
-interface InternalSXCState {
+export interface InternalSXCⳇState {
 	sid: number // not really useful yet, but helps debug
 
-	parent: InternalSXCState | undefined
+	parent: InternalSXCⳇState | undefined
 
-	plugins: Record<string, unknown>
+	plugins: InternalSXCⳇStateⳇPlugins
 
 	// per-SXC cache for complex computations
 	cache: {
-		statePath?: InternalSXCState[] // chain of all parent states to this one
+		statePath?: InternalSXCⳇState[] // chain of all parent states to this one
 	}
 }
 
-interface InternalSXC extends SoftExecutionContext {
-	[INTERNAL_PROP]: InternalSXCState
+export interface InternalSXC extends SoftExecutionContext {
+	[INTERNAL_PROP]: InternalSXCⳇState
 
 	// from plugins
 	_decorateErrorWithDetails(err: XXError): XXError
@@ -29,4 +23,9 @@ interface InternalSXC extends SoftExecutionContext {
 
 /////////////////////////////////////////////////
 
-export { type InternalSXCState, type InternalSXC }
+import type { XXError } from "@monorepo-private/utils--error"
+
+import type { SoftExecutionContext } from "../types.ts"
+
+import { INTERNAL_PROP } from "./consts.ts"
+import type { InternalSXCⳇStateⳇPlugins } from "./plugins/types.ts"

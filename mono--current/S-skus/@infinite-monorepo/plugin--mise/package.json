@@ -17,15 +17,13 @@
 		"@infinite-monorepo/plugin--git": "workspace:*",
 		"@infinite-monorepo/state": "workspace:*",
 		"@infinite-monorepo/types-for-plugins": "workspace:*",
-		"@monorepo-private/assert": "workspace:*",
-		"semver": "catalog:"
+		"@monorepo-private/assert": "workspace:*"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
 		"@types/node": "catalog:",
-		"@types/semver": "catalog:",
 		"npm-run-all": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

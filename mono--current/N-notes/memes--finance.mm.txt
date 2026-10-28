@@ -3,6 +3,7 @@
 1999–2002 sale of British gold reserves https://en.wikipedia.org/wiki/1999%E2%80%932002_sale_of_British_gold_reserves
 2008 financial crisis https://en.wikipedia.org/wiki/2008_financial_crisis
 2023-10 bank run collapsing Silicon Valley Bank https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank
+2026 gold out of USA https://www.bbc.com/news/articles/cvgyn8q8gqxo
 ? eToro
 [ ] AI https://github.com/georgezouq/awesome-ai-in-finance
 [ ] https://en.wikipedia.org/wiki/Portal:Money
@@ -108,6 +109,7 @@ fraud -- external = deceptive practices intended to secure unlawful financial ga
 fraud -- internal = intentional acts of deception carried out by employees, contractors, or suppliers with the aim of obtaining unauthorised financial or personal gain.
 funding -- quadratic
 funding -- stock exchange
+GNU Taler https://www.taler.net/en/faq.html
 gold clause = clause on contracts to be paid in gold in case currency changes https://en.wikipedia.org/wiki/Gold_clause
 government -- budget deficit
 government -- fiscal austerity

@@ -1,23 +1,23 @@
 import { assert_from, assert } from "@monorepo-private/assert"
-import type { StrictNode, NodeLike } from "@monorepo-private/rich-text-format"
+import type { NodeⳇNormalized, NodeⳇLike } from "@monorepo-private/rich-text-format"
 import { wrap, isꓽlist, isꓽNodeLike } from "@monorepo-private/rich-text-format"
 import { type Immutable } from "@monorepo-private/ts--types"
 
 /////////////////////////////////////////////////
 
-function isꓽlink($node: Immutable<StrictNode>): boolean {
+function isꓽlink($node: Immutable<NodeⳇNormalized>): boolean {
 	return !!$node.$hints.href
 }
 
 // for iterating only
-function getꓽcontent‿nodes_list($node: Immutable<StrictNode>): Array<Immutable<NodeLike>> {
-	let result: Array<Immutable<NodeLike>> = [] // so far
+function getꓽcontent‿nodes_list($node: Immutable<NodeⳇNormalized>): Array<Immutable<NodeⳇLike>> {
+	let result: Array<Immutable<NodeⳇLike>> = [] // so far
 
 	if (isꓽNodeLike($node.$content)) {
 		// simply promote to array
 		result.push($node.$content)
 	} else if (Array.isArray($node.$content)) {
-		result = $node.$content as Array<Immutable<NodeLike>>
+		result = $node.$content as Array<Immutable<NodeⳇLike>>
 	} else {
 		throw new Error("Unknown case!")
 	}

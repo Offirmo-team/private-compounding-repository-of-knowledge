@@ -1,14 +1,8 @@
-import { INTERNAL_PROP } from "../../consts.ts"
-import * as TopState from "../../state.ts"
-import { flattenOwnAndInheritedProps } from "../../utils.ts"
-import type { SXCPlugin } from "../types.ts"
+/////////////////////////////////////////////////
 
-import * as StateFns from "./state.ts"
-import { type State } from "./state.ts"
+export const PLUGIN_ID: SXCPlugin["id"] = "dependency_injection"
 
-const PLUGIN_ID: SXCPlugin["id"] = "dependency_injection"
-
-const PLUGIN: SXCPlugin = {
+export const PLUGIN: SXCPlugin = {
 	id: PLUGIN_ID,
 	state: StateFns,
 	augment: (prototype) => {
@@ -40,4 +34,12 @@ const PLUGIN: SXCPlugin = {
 	},
 }
 
-export { PLUGIN_ID, PLUGIN }
+/////////////////////////////////////////////////
+
+import { INTERNAL_PROP } from "../../consts.ts"
+import * as TopState from "../../state.ts"
+import { flattenOwnAndInheritedProps } from "../../utils.ts"
+import type { SXCPlugin } from "../types.ts"
+
+import * as StateFns from "./state.ts"
+import { type State } from "./state.ts"

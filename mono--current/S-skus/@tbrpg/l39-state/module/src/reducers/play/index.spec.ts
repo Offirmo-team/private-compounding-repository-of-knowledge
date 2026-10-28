@@ -1,17 +1,4 @@
-import { xxx_internal_reset_prng_cache } from "@oh-my-rpg/state--prng"
-import { ALL_ADVENTURE_ARCHETYPES } from "@tbrpg/logic--adventures"
-import { InventorySlot, get_unequipped_item_count, get_equipped_item_count } from "@tbrpg/state--inventory"
-import { Currency, get_currency_amount } from "@tbrpg/state--wallet"
-import { expect } from "chai"
-import * as icepick from "icepick"
-
-import { LIB } from "../../consts.ts"
-import { getꓽavailable_energy‿float } from "../../selectors/index.ts"
-import { type State } from "../../types.ts"
-import { create } from "../index.ts"
-import { _lose_all_energy } from "../internal.ts"
-
-import { play } from "./index.ts"
+/////////////////////////////////////////////////
 
 describe(`${LIB} - reducer - play`, function () {
 	beforeEach(() => xxx_internal_reset_prng_cache())
@@ -169,17 +156,17 @@ describe(`${LIB} - reducer - play`, function () {
 				it("should generate a suitable enemy", () => {
 					let state = create()
 					state =
-						icepick.setIn(state, ["u_state", "avatar", "attributes", "level"], 500) ||
+						setꓽpropertyⵧdeep(state, "u_state.avatar.attributes.level", 500) ||
 						(() => {
-							// This is for typechecking the icepick above
+							// This is for typechecking the deep set above
 							;(state as State).u_state.avatar.attributes.level = 500
 						})()
 
 					for (let i = 0; i < 100; ++i) {
 						state =
-							icepick.setIn(state, ["t_state", "energy", "available_energy"], { n: 7, d: 1 }) ||
+							setꓽpropertyⵧdeep(state, "t_state.energy.available_energy", { n: 7, d: 1 }) ||
 							(() => {
-								// This is for typechecking the icepick above
+								// This is for typechecking the deep set above
 								;(state as State).t_state.energy.available_energy = { n: 7, d: 1 }
 							})()
 
@@ -212,3 +199,21 @@ describe(`${LIB} - reducer - play`, function () {
 			})
 	})
 })
+
+/////////////////////////////////////////////////
+
+import { xxx_internal_reset_prng_cache } from "@oh-my-rpg/state--prng"
+import { ALL_ADVENTURE_ARCHETYPES } from "@tbrpg/logic--adventures"
+import { InventorySlot, get_unequipped_item_count, get_equipped_item_count } from "@tbrpg/state--inventory"
+import { Currency, get_currency_amount } from "@tbrpg/state--wallet"
+import { expect } from "chai"
+
+import { setꓽpropertyⵧdeep } from "@monorepo-private/set-deep-property"
+
+import { LIB } from "../../consts.ts"
+import { getꓽavailable_energy‿float } from "../../selectors/index.ts"
+import { type State } from "../../types.ts"
+import { create } from "../index.ts"
+import { _lose_all_energy } from "../internal.ts"
+
+import { play } from "./index.ts"

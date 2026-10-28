@@ -1,47 +1,8 @@
-import Emittery from "emittery"
-
-import { type TimestampUTCMs } from "@monorepo-private/timestamps"
-import { type XXError } from "@monorepo-private/utils--error"
-
 /////////////////////////////////////////////////
-
-export interface BaseInjections {
-	logger: any // TODO improve typing
-
-	// detected env
-	ENV: string
-	IS_DEV_MODE: boolean
-	IS_VERBOSE: boolean // common CLI flag triggering extra debugging
-	CHANNEL: string
-	SESSION_START_TIME_MS: TimestampUTCMs
-}
-
-export interface BaseAnalyticsDetails {
-	ENV: string
-	CHANNEL: string
-}
-
-export interface BaseErrorDetails {
-	ENV: string
-	CHANNEL: string
-}
 
 export interface WithSXC<Injections = {}, AnalyticsDetails = {}, ErrorDetails = {}> {
 	SXC: SoftExecutionContext<Injections, AnalyticsDetails, ErrorDetails>
 }
-
-export interface EventDataMap<Injections, AnalyticsDetails, ErrorDetails> {
-	analytics: { eventId: string; details: Record<string, any> }
-	"final-error": Injections & BaseInjections & WithSXC<Injections, AnalyticsDetails, ErrorDetails> & { err: XXError }
-}
-
-export type OperationParams<Injections, AnalyticsDetails, ErrorDetails> = Injections &
-	BaseInjections &
-	WithSXC<Injections, AnalyticsDetails, ErrorDetails>
-
-export type Operation<T, Injections, AnalyticsDetails, ErrorDetails> = (
-	params: OperationParams<Injections, AnalyticsDetails, ErrorDetails>,
-) => T
 
 export interface SoftExecutionContext<Injections = {}, AnalyticsDetails = {}, ErrorDetails = {}> {
 	/////////////////////
@@ -58,10 +19,7 @@ export interface SoftExecutionContext<Injections = {}, AnalyticsDetails = {}, Er
 	/////////////////////
 	// plugin: dependency injection
 	injectDependencies: (
-		p: Partial<
-			Injections & BaseInjections
-			//& WithSXC<Injections, AnalyticsDetails, ErrorDetails>
-		>,
+		p: Partial<Injections & BaseInjections>,
 	) => SoftExecutionContext<Injections, AnalyticsDetails, ErrorDetails>
 	getInjectedDependencies: () => Injections & BaseInjections & WithSXC<Injections, AnalyticsDetails, ErrorDetails>
 
@@ -118,3 +76,44 @@ export interface SoftExecutionContext<Injections = {}, AnalyticsDetails = {}, Er
 		_reject: (reason?: any) => void,
 	) => void) => Promise<T>*/
 }
+
+export interface BaseInjections {
+	logger: any // TODO improve typing
+
+	// detected env
+	ENV: string
+	IS_DEV_MODE: boolean
+	IS_VERBOSE: boolean // common CLI flag triggering extra debugging
+	CHANNEL: string
+	SESSION_START_TIME_MS: TimestampUTCMs
+}
+
+export interface BaseAnalyticsDetails {
+	ENV: string
+	CHANNEL: string
+}
+
+export interface BaseErrorDetails {
+	ENV: string
+	CHANNEL: string
+}
+
+export interface EventDataMap<Injections, AnalyticsDetails, ErrorDetails> {
+	analytics: { eventId: string; details: Record<string, any> }
+	"final-error": Injections & BaseInjections & WithSXC<Injections, AnalyticsDetails, ErrorDetails> & { err: XXError }
+}
+
+export type OperationParams<Injections, AnalyticsDetails, ErrorDetails> = Injections &
+	BaseInjections &
+	WithSXC<Injections, AnalyticsDetails, ErrorDetails>
+
+export type Operation<T, Injections, AnalyticsDetails, ErrorDetails> = (
+	params: OperationParams<Injections, AnalyticsDetails, ErrorDetails>,
+) => T
+
+/////////////////////////////////////////////////
+
+import Emittery from "emittery"
+
+import { type TimestampUTCMs } from "@monorepo-private/timestamps"
+import { type XXError } from "@monorepo-private/utils--error"

@@ -24,7 +24,7 @@ import type {
 
 /////////////////////////////////////////////////
 
-function getꓽcta(hyper: OHAHyperLink | OHAHyperActionBlueprint | string): RichText.NodeLike {
+function getꓽcta(hyper: OHAHyperLink | OHAHyperActionBlueprint | string): RichText.NodeⳇLike {
 	let is_code = false
 
 	let candidate: string = (() => {

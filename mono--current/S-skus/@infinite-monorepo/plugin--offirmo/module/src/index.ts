@@ -297,7 +297,7 @@ pnpm i ...
 								// TODO proper key with default
 								`
 #@IgnoreInspection BashAddShebang
-[[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!"
+[[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!" >&2
 
 ## default = where "gitc" is supposed to clone it
 export MONOREPO_ROOT__CURRENT=\${${state.specⵧroot.key || "MONOREPO"}_ROOT:-"${monorepo_root__default}"};

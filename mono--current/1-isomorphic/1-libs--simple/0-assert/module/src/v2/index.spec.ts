@@ -62,7 +62,7 @@ describe(`@monorepo-private/assert`, () => {
 		})
 	})
 
-	describe("assert", () => {
+	describe("exports -- assert().*", () => {
 		describe("assert()", () => {
 			// TODO 1D test if propagate test info in TS
 
@@ -136,33 +136,54 @@ describe(`@monorepo-private/assert`, () => {
 		})
 	})
 
-	describe("assert_from() ", () => {
-		it("when a description is provided, it is used in the error message", () => {
-			let h = 12
-			function add_hour__with_description(inc: number): void {
-				const ǃ = assert_from({ add_hour__with_description })
-				h += inc
-				ǃ.forⵧvalue({ h }).ensure(h >= 0 && h <= 23, "should be between 0 and 23")
-			}
+	describe("exports -- assert_from().**", () => {
+		// major feature
+		describe("description", function () {
+			describe("fully auto-generated description", function () {
+				it("generates a description from known data -- minimal caller infos", () => {
+					let h = 12
+					function add_hour__without_description(inc: number): void {
+						const ǃ = assert_from({ add_hour__without_description })
+						h += inc
+						ǃ.forⵧvalue({ h }).ensure(h >= 0 && h <= 23)
+					}
 
-			h = 12
-			expect(() => add_hour__with_description(20), "with description").toThrow(
-				"add_hour__with_description(): Post-condition failed: h should be between 0 and 23!",
-			)
-		})
+					h = 12
+					expect(() => add_hour__without_description(20)).toThrow(
+						"add_hour__without_description(): Post-condition failed: assertion about h should be true!",
+					)
+				})
 
-		it("when a description is not provided, a generic one is generated", () => {
-			let h = 12
-			function add_hour__without_description(inc: number): void {
-				const ǃ = assert_from({ add_hour__without_description })
-				h += inc
-				ǃ.forⵧvalue({ h }).ensure(h >= 0 && h <= 23)
-			}
+				it("generates a description from known data -- extended caller infos", () => {
+					let h = 12
+					function add_hour__without_description(inc: number): void {
+						const ǃ = assert_from({ add_hour__without_description }, { LIB: "FooLib" })
+						h += inc
+						ǃ.forⵧvalue({ h }).ensure(h >= 0 && h <= 23)
+					}
 
-			h = 12
-			expect(() => add_hour__without_description(20), "without description").toThrow(
-				"add_hour__without_description(): Post-condition failed: assertion about h should be true!",
-			)
+					h = 12
+					expect(() => add_hour__without_description(20)).toThrow(
+						"[FooLib] add_hour__without_description(): Post-condition failed: assertion about h should be true!",
+					)
+				})
+			})
+
+			describe("when a description is provided", () => {
+				it("it is used in the error message + enriched", () => {
+					let h = 12
+					function add_hour__with_description(inc: number): void {
+						const ǃ = assert_from({ add_hour__with_description }, { LIB: "FooLib" })
+						h += inc
+						ǃ.forⵧvalue({ h }).ensure(h >= 0 && h <= 23, "should be between 0 and 23")
+					}
+
+					h = 12
+					expect(() => add_hour__with_description(20), "with description").toThrow(
+						"[FooLib] add_hour__with_description(): Post-condition failed: h should be between 0 and 23!",
+					)
+				})
+			})
 		})
 	})
 

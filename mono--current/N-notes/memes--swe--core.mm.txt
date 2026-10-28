@@ -32,10 +32,9 @@
 2010 tech bubble, a period where mediocre people could raise ludicrous money amid a venture capitalist echo chamber fueled by low-interest rates https://www.sandofsky.com/lambda-school/
 2025 https://www.oreilly.com/radar/the-end-of-programming-as-we-know-it/
 5 min zoom vs 10 emails/comments volley = https://blog.jpl-consulting.com/2010/04/ten-email-volley-or-five-minute-phone-call/
-? [ ] performance https://www.seangoedecke.com/bad-code-at-big-companies/ https://news.ycombinator.com/item?id=46082223
-? https://kiss-and-solid.com/blog
-? microformats https://web.archive.org/web/20250926192326/https://www.hotelsmallorca24.com/microformatiquecom/
+[ ] https://kiss-and-solid.com/blog
 [ ] performance -- https://www.nair.sh/guides-and-opinions/communicating-your-expertise/why-senior-developers-fail-to-communicate-their-expertise
+[ ] performance https://www.seangoedecke.com/bad-code-at-big-companies/ https://news.ycombinator.com/item?id=46082223
 abort controller https://kettanaito.com/blog/dont-sleep-on-abort-controller
 abstract = something that exists in thought as an idea
 abstraction -- level
@@ -324,6 +323,7 @@ data -- hydration
 data -- insert
 data -- lake
 data -- lineage tracking = who created it, transformed it, enriched it...
+data -- microformats https://web.archive.org/web/20250926192326/https://www.hotelsmallorca24.com/microformatiquecom/
 data -- parse, don't validate = avoiding validation functions and encoding invariants in the type level instead (can be heavy on the type system + not always doable) https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/
 data -- parser -- at boundary -- tradeoff = parsing everything up front sometimes requires values be parsed long before they are actually used
 data -- parser -- at boundary = discharging checks on input up-front, right on the boundary between a program and the outside world, and once those checks have been performed, they never need to be checked again  https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
@@ -336,6 +336,8 @@ data -- semi-structured = markdown, html, microformats
 data -- structured = Excel files, Tabular form of data etc.,
 data -- unstructured = Emails, PDFs, Images, Audio & Video files, Social media posts.
 data -- upsert
+data -- validate everything
+data -- validation = "Does this input data contain the right stuff?" see zod
 data -- versioning = of content + schema
 data = the most important. just data types = can compile, good data types = trivial code
 data format -- consumer vs producer
@@ -695,49 +697,50 @@ l10n -- i18n -- ICU format https://formatjs.github.io/
 l10n -- i18n -- pseudolocalization = [Lóôõrēĕėęm iìíîpsúûüũm]
 l10n -- i18n -- text size change https://www.w3.org/International/articles/article-text-size
 l10n -- truly local = more than just translation
-lang -- Bend = massively parallel, high-level programming language https://github.com/HigherOrderCO/Bend
-lang -- Clojure = ~lisp https://clojure.org/ https://clojure.org/guides/getting_started
-lang -- confuguration -- https://medv.io/blog/things-i-dont-like-in-configuration-languages
-lang -- confuguration -- JSON5
-lang -- confuguration -- TS
-lang -- E = https://www.crockford.com/ec/etut.html
-lang -- esoteric = https://esolangs.org/wiki/Truth-machine
-lang -- F# https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
-lang -- go
-lang -- go -- advocacy https://github.com/microsoft/typescript-go/discussions/411
-lang -- JS -- engines http://developer.telerik.com/featured/a-guide-to-javascript-engines-for-idiots/
-lang -- JS -- equality
-lang -- JS -- interview http://www.toptal.com/javascript/interview-questions
-lang -- JS -- interview https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
-lang -- JS -- parseInt http://stackoverflow.com/questions/17106681/parseint-vs-unary-plus-when-to-use-which/17106702#17106702
-lang -- JS -- realms https://stackoverflow.com/questions/49832187/how-to-understand-js-realms/49832343#49832343
-lang -- JS -- runtimes https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/
-lang -- JSX = Javascript XML, from React
-lang -- Lean = Math language https://lean-lang.org/ https://overreacted.io/the-math-is-haunted/
-lang -- OCaml
-lang -- Rust https://www.rust-lang.org/
-lang -- swiftlang = from Apple https://x.com/awesomekling/status/1822236888188498031
-lang -- Tcl = very compact, often embedded https://en.wikipedia.org/wiki/Tcl
-lang -- There are only two kinds of languages: the ones people complain about and the ones nobody uses.
-lang -- TS -- tsconfig https://json.schemastore.org/tsconfig
-lang -- wasp = high level website / SaaS https://wasp.sh/
-lang -- wolfram = https://woxi.ad-si.com/
+langs -- Bend = massively parallel, high-level programming language https://github.com/HigherOrderCO/Bend
+langs -- Clojure = ~lisp https://clojure.org/ https://clojure.org/guides/getting_started
+langs -- E = https://www.crockford.com/ec/etut.html
+langs -- F# = https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
+langs -- go -- advocacy https://github.com/microsoft/typescript-go/discussions/411
+langs -- go -- challenges = google, inferior to Rust, specific trade-offs https://codeandcake.dev/posts/2026-10-22-docker-is-weird
+langs -- JS -- engines http://developer.telerik.com/featured/a-guide-to-javascript-engines-for-idiots/
+langs -- JS -- equality
+langs -- JS -- interview http://www.toptal.com/javascript/interview-questions https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
+langs -- JS -- parseInt http://stackoverflow.com/questions/17106681/parseint-vs-unary-plus-when-to-use-which/17106702#17106702
+langs -- JS -- realms https://stackoverflow.com/questions/49832187/how-to-understand-js-realms/49832343#49832343
+langs -- JS -- runtimes https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/
+langs -- JSX = Javascript XML, from React
+langs -- Lean = Math language https://lean-lang.org/ https://overreacted.io/the-math-is-haunted/
+langs -- OCaml
+langs -- Rust https://www.rust-lang.org/
+langs -- swiftlang = from Apple https://x.com/awesomekling/status/1822236888188498031
+langs -- Tcl = very compact, often embedded https://en.wikipedia.org/wiki/Tcl
+langs -- TS -- branded types
+langs -- TS -- discriminated unions = { error: Error } | { result: Result }
+langs -- TS -- module augmentation
+langs -- TS -- tsconfig = https://json.schemastore.org/tsconfig
+langs -- wasp = high level website / SaaS https://wasp.sh/
+langs -- wolfram = https://woxi.ad-si.com/
 language -- && Server Index Format (LSIF)
 language -- && Server Protocol https://microsoft.github.io/language-server-protocol/
-language -- features -- contract enforcement
-language -- features -- data hiding
-language -- features -- encapsulation
-language -- features -- polymorphism
-language -- interpreted && -- types simples / types par référence
-language -- language tags
-language -- type -- markup = a text-encoding system which specifies the structure and formatting of a document and potentially the relationships among its parts.[1] Markup can control the display of a document or enrich its content to facilitate automated processing https://en.wikipedia.org/wiki/Markup_language
-language -- types https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
+languages -- "There are only two kinds of languages: the ones people complain about and the ones nobody uses"
 languages -- configuration -- https://github.com/bazelbuild/starlark/
+languages -- configuration -- https://medv.io/blog/things-i-dont-like-in-configuration-languages
+languages -- configuration -- JSON5
+languages -- configuration -- TS
+languages -- esoteric = https://esolangs.org/wiki/Truth-machine
+languages -- features -- contract enforcement
+languages -- features -- data hiding
+languages -- features -- encapsulation
+languages -- features -- polymorphism
 languages -- generations = (disputed) https://en.wikipedia.org/wiki/Programming_language_generations
-languages -- higher level -- wrongly against = Von Neumann https://www.reddit.com/r/compsci/comments/zx1eu8/von_neumann_was_admonishing_people_who_built/
+languages -- higher level && -- wrongly against = Von Neumann https://www.reddit.com/r/compsci/comments/zx1eu8/von_neumann_was_admonishing_people_who_built/
+languages -- interpreted && -- types simples / types par référence
 languages -- trends
+languages -- types -- markup = a text-encoding system which specifies the structure and formatting of a document and potentially the relationships among its parts.[1] Markup can control the display of a document or enrich its content to facilitate automated processing https://en.wikipedia.org/wiki/Markup_language
+languages -- types = https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
 languages -- ur-languages = ALGOL, Lisp, ML, Self, Forth, APL, Prolog https://madhadron.com/programming/seven_ur_languages.html
-languages -- weekend = for fun https://stackoverflow.blog/2017/02/07/what-programming-languages-weekends/
+languages -- weekend && = peek usage in WE = fun/interest vs corporate https://stackoverflow.blog/2017/02/07/what-programming-languages-weekends/
 layers
 layers -- abstraction
 layers -- shearing && = +++ very important concept
@@ -1243,8 +1246,6 @@ uptime / downtime
 use boring technology
 User Generated Content (UGC)
 UX "User Experience" = see dedicated file
-validate everything
-validation = "Does this input data contain the right stuff?" see zod
 vaporware
 variables pointer / natives
 vendoring https://htmx.org/essays/vendoring/

@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 #MISE description="ensures the committed symlinks exist and point to their (relative) target, ex. after moving files around"
 
-set -euo pipefail
+set -Eeuo pipefail
 
-echo "Executing task ${MISE_TASK_NAME:-$(basename "${BASH_SOURCE[0]}" .bash)}..."
+readonly TASK_NAME="${MISE_TASK_NAME:-$(basename "${BASH_SOURCE[0]}" .bash)}"
+trap 'fail "unexpected error running: $BASH_COMMAND"' ERR
+
+echo "Executing task $TASK_NAME..."
 
 
 main() {
@@ -19,7 +22,7 @@ main() {
 		0-meta/config--typescript/module/_vendor/strictest
 
 	ensure_symlink \
-		1-isomorphic/1-libs--simple/type-detection/module/01-primitives/index.ts \
+		1-isomorphic/1-libs--simple/1-type-detection/module/01-primitives/index.ts \
 		2-engine--winter/prettify-any/module/src/__vendor/@monorepo-private/type-detection/index.ts
 
 	ensure_symlink \
@@ -47,8 +50,7 @@ ensure_symlink() {
 	local -r link="$2"
 
 	if [[ ! -e "$origin" ]]; then
-		echo "  ✗ $link: origin not found: $origin" >&2
-		return 1
+		fail "$link: origin not found: $origin (moved/renamed? update it in this script)"
 	fi
 	if [[ -L "$link" && "$link" -ef "$origin" && "$(readlink "$link")" != /* ]]; then
 		echo "  ✓ $link"
@@ -62,6 +64,11 @@ ensure_symlink() {
 	rm -rf "$link"
 	gln --symbolic --relative "$origin" "$link"
 	echo "  ↻ $link -> $(readlink "$link")"
+}
+
+fail() {
+	echo "❌ Task $TASK_NAME FAILED: $1" >&2
+	exit 1
 }
 
 

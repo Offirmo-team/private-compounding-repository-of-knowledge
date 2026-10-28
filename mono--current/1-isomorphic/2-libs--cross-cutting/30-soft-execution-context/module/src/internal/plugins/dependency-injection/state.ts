@@ -1,10 +1,10 @@
 /////////////////////////////////////////////////
 
-interface State {
+export interface State {
 	context: Record<string, any>
 }
 
-function create(parent_state: State | undefined) {
+export function create(parent_state: State | undefined) {
 	const context = parent_state ? Object.create(parent_state.context) : Object.create(null) // NO auto-injections here, let's keep it simple. See core & common
 
 	return {
@@ -12,7 +12,7 @@ function create(parent_state: State | undefined) {
 	}
 }
 
-function injectDependency(state: State, key: string, value: any): State {
+export function injectDependency(state: State, key: string, value: any): State {
 	if (Object.hasOwn(state.context, key) && state.context[key] === value) {
 		// no change
 		return state
@@ -28,5 +28,13 @@ function injectDependency(state: State, key: string, value: any): State {
 }
 
 /////////////////////////////////////////////////
+// TS module augmentation
 
-export { type State, create, injectDependency }
+import "../types.ts"
+declare module "../types.ts" {
+	interface InternalSXCⳇStateⳇPlugins {
+		dependency_injection: State
+	}
+}
+
+/////////////////////////////////////////////////

@@ -1,56 +1,8 @@
-import { getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
-import { createError as _createError, normalizeError, type XXError } from "@monorepo-private/utils--error"
+/////////////////////////////////////////////////
 
-import type { Operation } from "../../../types.ts"
-import { INTERNAL_PROP } from "../../consts.ts"
-import * as TopState from "../../state.ts"
-import type { InternalSXC } from "../../types.ts"
-import { flattenOwnAndInheritedProps } from "../../utils.ts"
-import type { SXCPlugin } from "../types.ts"
+export const PLUGIN_ID: SXCPlugin["id"] = "error_handling"
 
-import { _create_catcher } from "./catch-factory.ts"
-import * as StateFns from "./state.ts"
-import { type State } from "./state.ts"
-
-const PLUGIN_ID: SXCPlugin["id"] = "error_handling"
-
-function _clean_temp(err: XXError) {
-	delete err._temp
-	return err
-}
-
-function _handleError(
-	{
-		SXC,
-		debugId = "?",
-		shouldRethrow = true,
-	}: {
-		SXC: InternalSXC
-		debugId?: string
-		shouldRethrow?: boolean
-	},
-	err: unknown,
-) {
-	_create_catcher({
-		debugId,
-		decorators: [
-			(err) => normalizeError(err, { alwaysRecreate: true }),
-			(err) => SXC._decorateErrorWithLogicalStack(err as XXError),
-			(err) => SXC._decorateErrorWithDetails(err as XXError),
-		],
-		onError: shouldRethrow
-			? undefined
-			: (err) => {
-					const params = {
-						...SXC.getInjectedDependencies(),
-						err: _clean_temp(err as XXError),
-					}
-					SXC.emitter.emit("final-error", params)
-				},
-	})(err)
-}
-
-const PLUGIN: SXCPlugin = {
+export const PLUGIN: SXCPlugin = {
 	id: PLUGIN_ID,
 	state: StateFns,
 	augment: (prototype) => {
@@ -69,7 +21,7 @@ const PLUGIN: SXCPlugin = {
 			err.details = {
 				...autoDetails,
 				...userDetails,
-				...(err.details || {}),
+				...err.details,
 			}
 
 			return err
@@ -213,4 +165,56 @@ const PLUGIN: SXCPlugin = {
 	},
 }
 
-export { PLUGIN }
+/////////////////////////////////////////////////
+
+function _clean_temp(err: XXError) {
+	delete err._temp
+	return err
+}
+
+function _handleError(
+	{
+		SXC,
+		debugId = "?",
+		shouldRethrow = true,
+	}: {
+		SXC: InternalSXC
+		debugId?: string
+		shouldRethrow?: boolean
+	},
+	err: unknown,
+) {
+	_create_catcher({
+		debugId,
+		decorators: [
+			(err) => normalizeError(err, { alwaysRecreate: true }),
+			(err) => SXC._decorateErrorWithLogicalStack(err as XXError),
+			(err) => SXC._decorateErrorWithDetails(err as XXError),
+		],
+		onError: shouldRethrow
+			? undefined
+			: (err) => {
+					const params = {
+						...SXC.getInjectedDependencies(),
+						err: _clean_temp(err as XXError),
+					}
+					SXC.emitter.emit("final-error", params)
+				},
+	})(err)
+}
+
+/////////////////////////////////////////////////
+
+import { getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
+import { createError as _createError, normalizeError, type XXError } from "@monorepo-private/utils--error"
+
+import type { Operation } from "../../../types.ts"
+import { INTERNAL_PROP } from "../../consts.ts"
+import * as TopState from "../../state.ts"
+import type { InternalSXC } from "../../types.ts"
+import { flattenOwnAndInheritedProps } from "../../utils.ts"
+import type { SXCPlugin } from "../types.ts"
+
+import { _create_catcher } from "./catch-factory.ts"
+import * as StateFns from "./state.ts"
+import { type State } from "./state.ts"

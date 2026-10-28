@@ -27,12 +27,8 @@
 		"@monorepo-private/practical-logger--core": "workspace:*",
 		"@monorepo-private/print-error-to-terminal": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/chai": "catalog:",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
-		"chai": "catalog:",
 		"npm-run-all": "catalog:",
-		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

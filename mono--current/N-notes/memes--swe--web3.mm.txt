@@ -113,6 +113,7 @@ address -- evm = the right-most 160 bits of a Keccak hash of an ECDSA public key
 address -- screening = "against sanctions lists and high-risk activity"
 address gap limit = chains that use address derivation recommend a limit of derived checks https://support.ledger.com/article/360010892360-zd
 advocacy -- "Stand with crypto" https://www.standwithcrypto.org/au
+against = https://www.stephendiehl.com/posts/against_crypto/
 Airdrop = gift of assets, usually as an incentive to use a new thing
 airdrops -- double claiming
 altcoin = anything not BitCoin (or maybe Ether, depending on who you ask)
@@ -651,6 +652,7 @@ RICO Act "Racketeer Influenced and Corrupt Organizations Act" = a U.S. federal l
 risks -- cryptostealer -- example https://gist.github.com/jdstaerk/9e73837f0ba23735ef04a736c6b97c09
 risks -- private key loss -- ex. https://bitcoinhistorynl.beehiiv.com/p/17-000-btc-lost https://blockworks.co/news/bitomat-exchange-deleted-17000-bitcoin
 role blind and clear signing = ???
+room 641A = a telecommunication interception facility operated by AT&T for the U.S. National Security Agency, as part of an American mass surveillance program https://en.wikipedia.org/wiki/Room_641A
 rotation = swapping crypto around cycles, ex. BTC-to-ETH
 RPC = interface to interact with a blockchain through a node
 RSA = I’ve factored the RSA keys of a Certificate Authority from the 90s. https://mcpherrin.ca/2026/09/07/rsa.html

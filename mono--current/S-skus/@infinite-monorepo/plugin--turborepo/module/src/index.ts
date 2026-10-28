@@ -41,6 +41,10 @@ export const PLUGIN: Plugin = {
 				}
 				state = StateLib.requestꓽfile_output(state, output_specꓽᐧgitignore)
 
+				/* TODO REVIEW prefer brew turbo instead?
+				// NO mise.toml `tools.turbo`: ?
+				// - the root devDependency (cf. refine) is the pinned source of truth; a global turbo, if any, defers to it
+				// - a mise-installed turbo is unpinned and, installed via pnpm, breaks whenever the pnpm store is wiped
 				const output_specꓽmiseᐧtoml: FileOutputPresent = {
 					parent_node: node,
 					manifest: manifestꓽmiseᐧtoml,
@@ -52,6 +56,7 @@ export const PLUGIN: Plugin = {
 					},
 				}
 				state = StateLib.requestꓽfile_output(state, output_specꓽmiseᐧtoml)
+				 */
 
 				break
 			}

@@ -1,5 +1,6 @@
-import { freeze } from "icepick"
 import { describe, it, expect } from "vitest"
+
+import { freezeⵧdeep } from "@monorepo-private/freeze"
 
 import { DELETE, setꓽpropertyⵧdeep } from "./index.ts"
 
@@ -9,21 +10,21 @@ describe(`set-deep-property`, () => {
 	describe("setꓽpropertyⵧdeep()", () => {
 		describe("setting a value", () => {
 			it("should work -- already at val = NO MUTATION", () => {
-				const current = freeze({ a: { b: { c: 42 } } })
+				const current = freezeⵧdeep({ a: { b: { c: 42 } } })
 				const next = setꓽpropertyⵧdeep(current, "a.b.c", 42)
 				expect(next).toStrictEqual({ a: { b: { c: 42 } } })
 				expect(next).toBe(current) // no change
 			})
 
 			it("should work -- new val = MUTATION", () => {
-				const current = freeze({ a: { b: { c: 42 } } })
+				const current = freezeⵧdeep({ a: { b: { c: 42 } } })
 				const next = setꓽpropertyⵧdeep(current, "a.b.c", -3)
 				expect(next).toStrictEqual({ a: { b: { c: -3 } } })
 				expect(next).not.toBe(current)
 			})
 
 			it("should work -- alternate separator", () => {
-				const current = freeze({
+				const current = freezeⵧdeep({
 					exports: {
 						".": "./foo.ts",
 					},
@@ -39,7 +40,7 @@ describe(`set-deep-property`, () => {
 			})
 
 			it("should work -- no change to existing props", () => {
-				const current = freeze({
+				const current = freezeⵧdeep({
 					a: {
 						b: 23,
 						z: "hi",
@@ -63,7 +64,7 @@ describe(`set-deep-property`, () => {
 			})
 
 			it("should work -- missing paths = MUTATION", () => {
-				const current = freeze({ a: {} })
+				const current = freezeⵧdeep({ a: {} })
 				const next = setꓽpropertyⵧdeep(current, "a.b.c", 42)
 				expect(next).toStrictEqual({ a: { b: { c: 42 } } })
 				expect(next).not.toBe(current)
@@ -72,7 +73,7 @@ describe(`set-deep-property`, () => {
 
 		describe("deleting a value", () => {
 			it("should work -- change", () => {
-				const current = freeze({
+				const current = freezeⵧdeep({
 					a: {
 						b: -3,
 						z: "hi",
@@ -95,7 +96,7 @@ describe(`set-deep-property`, () => {
 			})
 
 			it("should work -- missing paths (no change)", () => {
-				const current = freeze({})
+				const current = freezeⵧdeep({})
 				const next = setꓽpropertyⵧdeep(current, "a.b.c", ">DELETE<")
 				expect(next).toStrictEqual({})
 				expect(next).toBe(current) // no change

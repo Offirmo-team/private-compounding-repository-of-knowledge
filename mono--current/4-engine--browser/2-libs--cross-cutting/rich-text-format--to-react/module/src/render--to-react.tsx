@@ -6,9 +6,9 @@ import { type ReactNode } from "react"
 import { assert_from, assert } from "@monorepo-private/assert"
 import { normalize_unicode, capitalizeⵧfirst, normalizeꓽurl } from "@monorepo-private/normalize-string"
 import {
-	type NodeLike,
+	type NodeⳇLike,
 	type Node,
-	type StrictNode,
+	type NodeⳇNormalized,
 	Enum,
 	NodeType,
 	isꓽlist,
@@ -73,7 +73,7 @@ function _generateꓽown_react_key({
 	$node,
 }: {
 	$snk: SubNodeKey
-	$node: Immutable<StrictNode> | Immutable<Node>
+	$node: Immutable<NodeⳇNormalized> | Immutable<Node>
 }) {
 	let key = $snk
 
@@ -145,7 +145,7 @@ function _getꓽaggregated_keyed_children({ xstate }: { xstate: WalkState }): Ar
 	return children
 }
 
-function _getꓽaggregated_classes({ $node }: { $node: Immutable<StrictNode> }): Set<string> {
+function _getꓽaggregated_classes({ $node }: { $node: Immutable<NodeⳇNormalized> }): Set<string> {
 	const { $type, $classes, $hints } = $node
 
 	const classes = new Set<string>([...$classes, ...(NODE_TYPE_TO_EXTRA_CLASSES[$type] || [])])
@@ -219,7 +219,7 @@ function _getꓽfinal_element_creator({
 	bstate,
 	classes,
 }: {
-	$node: Immutable<StrictNode>
+	$node: Immutable<NodeⳇNormalized>
 	bstate: Immutable<BaseWalkState>
 	classes: Set<string>
 }): (children: ReactNode[]) => React.ReactNode {
@@ -383,7 +383,7 @@ const callbacksⵧto_react: Partial<WalkerCallbacks<WalkState, RenderingOptions�
 /////////////////////////////////////////////////
 
 function renderⵧto_react(
-	$doc: Immutable<NodeLike>,
+	$doc: Immutable<NodeⳇLike>,
 	callback_overrides: Partial<WalkerCallbacks<WalkState, RenderingOptionsⵧToReact>> = {},
 	raw_options: Partial<RenderingOptionsⵧToReact> = {},
 ) {

@@ -1,4 +1,4 @@
-import type { NodeLike } from "@monorepo-private/rich-text-format"
+import type { NodeⳇLike } from "@monorepo-private/rich-text-format"
 import * as RichTextExamples from "@monorepo-private/rich-text-format/examples"
 import type { Meta, Story } from "@monorepo-private/storypad/types"
 
@@ -7,7 +7,7 @@ import renderⵧto_react from "./render--to-react.tsx"
 /////////////////////////////////////////////////
 
 type Props = {
-	$doc: NodeLike
+	$doc: NodeⳇLike
 }
 
 function Component(props: Props) {

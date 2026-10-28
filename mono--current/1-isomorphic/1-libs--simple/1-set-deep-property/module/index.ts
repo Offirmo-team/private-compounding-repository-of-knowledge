@@ -1,10 +1,8 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-
 /////////////////////////////////////////////////
 
-const DELETE = ">DELETE<" as const // using a string instead of a symbol to be usable in a JSON file
+export const DELETE = ">DELETE<" as const // using a string instead of a symbol to be usable in a JSON file
 
-function setꓽpropertyⵧdeep<V, T = any>(target: T, path: string, value: V | typeof DELETE): T {
+export function setꓽpropertyⵧdeep<V, T = any>(target: T, path: string, value: V | typeof DELETE): T {
 	const SEPARATOR = path.startsWith("|") ? "|" : "."
 	const path‿split = path.split(SEPARATOR)
 	if (SEPARATOR === "|") {
@@ -59,4 +57,4 @@ function setꓽpropertyⵧdeep<V, T = any>(target: T, path: string, value: V | t
 
 /////////////////////////////////////////////////
 
-export { DELETE, setꓽpropertyⵧdeep }
+import { assert_from, assert } from "@monorepo-private/assert"

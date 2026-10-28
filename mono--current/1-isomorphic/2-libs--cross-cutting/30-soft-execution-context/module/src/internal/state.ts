@@ -1,24 +1,24 @@
 // Note: let's keep everything immutable
 
-import type { SXCPlugin } from "./plugins/types.ts"
-import type { InternalSXCState } from "./types.ts"
+import type { InternalSXCⳇStateⳇPlugins, SXCPlugin } from "./plugins/types.ts"
+import type { InternalSXCⳇState } from "./types.ts"
 
 /////////////////////////////////////////////////
 
 let instance_count = 0
-function create(parent_state: InternalSXCState | undefined): InternalSXCState {
+function create(parent_state: InternalSXCⳇState | undefined): InternalSXCⳇState {
 	return {
 		sid: instance_count++, // not really useful yet, but helps debug
 		parent: parent_state,
-		plugins: {},
+		plugins: {} as InternalSXCⳇStateⳇPlugins, // will be initialized immediately, not worth under-typing
 		cache: {}, // per-SXC cache for complex computations
 	}
 }
 
 function activate_plugin<PluginState = {}>(
-	state: InternalSXCState,
+	state: InternalSXCⳇState,
 	PLUGIN: SXCPlugin<PluginState> /*, args*/,
-): InternalSXCState {
+): InternalSXCⳇState {
 	const plugin_parent_state = state.parent?.plugins?.[PLUGIN.id] as PluginState | undefined
 
 	const plugin_state = PLUGIN.state.create(plugin_parent_state)
@@ -36,10 +36,10 @@ function activate_plugin<PluginState = {}>(
 }
 
 function reduce_plugin<PluginState>(
-	state: InternalSXCState,
+	state: InternalSXCⳇState,
 	PLUGIN_ID: SXCPlugin["id"],
 	reducer: (s: PluginState) => PluginState,
-): InternalSXCState {
+): InternalSXCⳇState {
 	const initial_plugin_state = state.plugins[PLUGIN_ID] as PluginState
 	const new_plugin_state = reducer(initial_plugin_state)
 
@@ -57,7 +57,7 @@ function reduce_plugin<PluginState>(
 /////////////////////////////////////////////////
 
 export {
-	type InternalSXCState, // for convenience
+	type InternalSXCⳇState, // for convenience
 	create,
 	activate_plugin,
 	reduce_plugin,

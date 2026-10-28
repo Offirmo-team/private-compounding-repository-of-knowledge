@@ -1,13 +1,3 @@
-# Review: `assert`
-
-Semantic, low-boilerplate assertion library (pre/post-conditions, param checks) that auto-generates error messages and
-throws typed `Error` subclasses; intended to replace ad-hoc `if (!x) throw ...` code.
-
-## Findings
-
-- **G2-P1-03** (Minor) — Unused dev dependencies: `sinon` and `@types/sinon` are declared in `package.json` but there is
-  no reference to `sinon` anywhere in `module/`. `package.json:24,28`
-
 - **G2-P1-04** (Minor) — Repeated destructuring pattern `Object.entries(x)[0] || []` to pull the single key/value out of
   a `{name: value}` "named argument" object appears 3 times with the same shape (once in `assert_from`, once in
   `forⵧparam`, once in `forⵧvalue`). Per the project's own convention ("once a similar chunk of code is reused more than

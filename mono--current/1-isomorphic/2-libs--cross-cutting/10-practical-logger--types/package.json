@@ -21,9 +21,7 @@
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/chai": "catalog:",
 		"@types/node": "catalog:",
-		"chai": "catalog:",
 		"npm-run-all": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

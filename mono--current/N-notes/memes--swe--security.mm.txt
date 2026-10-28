@@ -107,6 +107,7 @@ guidelines -- S/O https://stackoverflow.com/questions/2794016/what-should-every-
 hacking kingpin = no remorse https://www.bbc.com/news/articles/cm2w0pvg4wko
 have I been pwned? https://www.troyhunt.com/
 high-risk communities = activists, journalists, human rights defenders, academics, and other employees associated with civil society organizations that are at heightened risk of being targeted by cyber threat actors because of their identity or work https://www.cisa.gov/audiences/high-risk-communities
+https://pwn.watch/ live pwn
 In-the-Wild (ITW) exploit
 input -- never trust any input!
 input -- validate input from all untrusted sources - use whitelists not blacklists
@@ -140,6 +141,7 @@ network security -- lateral movement = when an attacker moves within a network a
 NIST "United States National Institute of Standards and Technology"  https://blog.cloudflare.com/nist-sp-1300-85/
 NIST -- Computer Security Resource Center https://csrc.nist.gov/
 OAuth 2.0 PKCE flow = ???
+OneCRL = dynamic certificates revocation https://blog.mozilla.org/security/2015/03/03/revoking-intermediate-certificates-introducing-onecrl/
 OWASP Top 10:2025 -- A01:2025 - Broken Access Control
 OWASP Top 10:2025 -- A02:2025 - Security Misconfiguration
 OWASP Top 10:2025 -- A03:2025 - Software Supply Chain Failures

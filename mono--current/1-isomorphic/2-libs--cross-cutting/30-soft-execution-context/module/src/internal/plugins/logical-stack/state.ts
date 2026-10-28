@@ -1,12 +1,10 @@
-import type { Stack } from "./types.ts"
-
 /////////////////////////////////////////////////
 
-interface State {
+export interface State {
 	stack: Stack
 }
 
-function create(parent_state: State | undefined): State {
+export function create(parent_state: State | undefined): State {
 	const stack = parent_state ? Object.create(parent_state.stack) : Object.create(null)
 
 	stack.operation = undefined // should never inherit this one
@@ -16,7 +14,7 @@ function create(parent_state: State | undefined): State {
 	}
 }
 
-function set_module(state: State, module: string): State {
+export function set_module(state: State, module: string): State {
 	if (state.stack.module === module) return state // it's ok to inherit
 
 	if (Object.hasOwn(state.stack, "module")) throw new Error(`SXC LogicalStack "module" unexpected override!`)
@@ -30,7 +28,7 @@ function set_module(state: State, module: string): State {
 	}
 }
 
-function set_operation(state: State, operation: string): State {
+export function set_operation(state: State, operation: string): State {
 	if (Object.hasOwn(state.stack, "operation") && state.stack.operation)
 		throw new Error(`SXC LogicalStack "operation" unexpected override!`)
 
@@ -44,5 +42,15 @@ function set_operation(state: State, operation: string): State {
 }
 
 /////////////////////////////////////////////////
+// TS module augmentation
 
-export { type State, create, set_module, set_operation }
+import "../types.ts"
+declare module "../types.ts" {
+	interface InternalSXCⳇStateⳇPlugins {
+		logical_stack: State
+	}
+}
+
+/////////////////////////////////////////////////
+
+import type { Stack } from "./types.ts"

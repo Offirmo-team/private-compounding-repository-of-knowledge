@@ -1,5 +1,5 @@
 import { assert_from, assert } from "@monorepo-private/assert"
-import type { NodeLike } from "@monorepo-private/rich-text-format"
+import type { NodeⳇLike } from "@monorepo-private/rich-text-format"
 import { getꓽdisplay_type, getꓽtype } from "@monorepo-private/rich-text-format"
 import type { Immutable } from "@monorepo-private/ts--types"
 
@@ -261,7 +261,7 @@ const callbacksⵧto_text: Partial<WalkerCallbacks<State, RenderingOptionsⵧToT
 }
 
 function renderⵧto_text(
-	$doc: Immutable<NodeLike>,
+	$doc: Immutable<NodeⳇLike>,
 	options: Partial<RenderingOptionsⵧToText> = {},
 	callback_overrides: Partial<WalkerCallbacks<State, RenderingOptionsⵧToText>> = {},
 ): string {

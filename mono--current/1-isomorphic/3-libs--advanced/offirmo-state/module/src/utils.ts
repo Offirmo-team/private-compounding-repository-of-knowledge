@@ -1,11 +1,9 @@
 /////////////////////////////////////////////////
 
-// TODO dynamic switch, ex. for dev/prod
 // TODO evaluate https://github.com/unadlib/mutative
 export const enforceꓽimmutable: ImmutabilityEnforcer = <T>(state: T | Immutable<T>): Immutable<T> =>
-	icepick.freeze<T>(state as T) as Immutable<T>
+	freezeⵧdeep<T>(state as T) as Immutable<T>
 //const enforceꓽimmutable: ImmutabilityEnforcer = (state: T): Immutable<T> => state
-//const enforceꓽimmutable: ImmutabilityEnforcer = <T>(state: T): Immutable<T> => deep_freeze<T>(state)
 
 // NOT icepick.thaw(): it returns non-frozen nodes as-is = shared with the original, frozen children included
 export function getꓽmutable_copy<T>(state: T): Mutable<T> {
@@ -250,9 +248,8 @@ export function createꓽActionⳇReconcile<State>(
 export { type Immutable, type ImmutabilityEnforcer } from "@monorepo-private/ts--types"
 
 /////////////////////////////////////////////////
-import * as icepick from "icepick"
-
 import { assert_from, assert } from "@monorepo-private/assert"
+import { freezeⵧdeep } from "@monorepo-private/freeze"
 import { type TimestampUTCMs, getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
 import type { Immutable, Mutable, ImmutabilityEnforcer } from "@monorepo-private/ts--types"
 

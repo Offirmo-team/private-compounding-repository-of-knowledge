@@ -3,7 +3,7 @@
 import { Enum } from "typescript-string-enums"
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import type { Hints as RichTextHints, NodeLike as RichTextNodeLike } from "@monorepo-private/rich-text-format"
+import type { Hints as RichTextHints, NodeⳇLike as RichTextNodeLike } from "@monorepo-private/rich-text-format"
 import type {
 	JsonⳇValue,
 	JsonⳇPrimitive,

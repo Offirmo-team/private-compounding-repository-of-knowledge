@@ -1,4 +1,4 @@
-import { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "@monorepo-private/rich-text-format"
+import { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "@monorepo-private/rich-text-format/examples"
 
 import type { Story‿v3 } from "./index.ts"
 

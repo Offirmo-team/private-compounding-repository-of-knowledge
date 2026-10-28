@@ -523,6 +523,7 @@ evolution -- quirks of human anatomy https://www.sdbonline.org/sites/fly/lewheld
 evolution https://en.wikipedia.org/wiki/Evolutionary_game_theory
 excuses vs. solutions
 executive
+exit the cave = need a scene https://turtlespace.blog/p/exit-the-cave
 experiments -- Dartmouth scar & = "Perceptions of the impact of negatively valued physical characteristics on social interaction" believing they have a scar, perceive discrimination https://psycnet.apa.org/doiLanding?doi=10.1037%2F0022-3514.39.5.861
 experiments -- monkey ladder & = https://factschology.com/factschology-articles-podcast/monkey-ladder-experiment-truth
 experiments -- Universe 25 = "mouse utopia" behavioral sink https://en.wikipedia.org/wiki/Behavioral_sink
@@ -691,6 +692,7 @@ high school -- "What You'll Wish You'd Known" https://paulgraham.com/hs.html
 high-profile = ~widely known, ex. high-profile media
 high/low functioning human
 higher mountain after the previous one, have to go down before going higher
+higher social class predicts increased unethical behavior = Seven studies using experimental and naturalistic methods reveal that upper-class individuals behave more unethically than lower-class individuals. The tendencies are accounted for, in part, by their more favorable attitudes toward greed https://www.pnas.org/doi/10.1073/pnas.1118373109
 historic recurrence https://en.wikipedia.org/wiki/Historic_recurrence
 HIV epidemic https://www.datawrapper.de/blog/hiv-aids-epidemic-history
 Hock Principle = Simple, clear purpose and principles give rise to complex and intelligent behavior. Complex rules and regulations give rise to simple and stupid behavior.
@@ -724,6 +726,7 @@ ideas -- structuring -- "Pyramid Principle" = lead with the answer, then grouped
 identity -- "I’d tied my identity and reputation to hard work"
 idées = (no natural upper bound) ne s'usent que si l'on ne s'en sert pas (contre intuitif) https://en.wikipedia.org/wiki/Lindy_effect#History
 If I can't have it, neither can you = (crab mentality / panier de crabes) mindset of people who try to prevent others from gaining a favorable position, even if attaining such position would not directly impact those trying to stop them. It is usually summarized with the phrase: "If I can't have it, neither can you" https://en.wikipedia.org/wiki/Crab_mentality
+If people would just = Bad systems punish everyone for what a few might do, Good systems don't rely on goodwill but the people who were going to behave anyway barely even notice them https://herman.bearblog.dev/if-people-would-just/
 if you grow as a frog, you become a shinier, jump higher frog. But you need a kiss from the princess to become you. a core deep in oneself able to do things beyond ordinary
 Ig Nobel = https://arstechnica.com/science/2026/09/meet-the-2026-ig-nobel-prize-winners/
 IKEA effect = labor leads to love https://www.hbs.edu/ris/Publication%20Files/11-091.pdf
@@ -1114,6 +1117,7 @@ motivation -- addiction -- gambling -- sport, casino, trading, crypto
 motivation -- addiction -- gambling https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what
 motivation -- addiction -- to revenge = James Kimmel Jr., author of "The Science of Revenge: Understanding the World's Deadliest Addiction--And How to Overcome It
 motivation -- social environment = +++ "motivational origins of social loafing to be the lack of an understanding of individual contributions, unchallenging tasks given to the individual, low personal satisfaction from the task, and lack of a united group. Theories investigating why social loafing occurs range from group members' feeling that their contributions will not be noticed to group members' realizing their efforts are not necessary." (+ rest) https://en.wikipedia.org/wiki/Social_loafing
+music https://www.henrikkarlsson.xyz/p/music
 must be nice = jealousy
 mutual assured destruction https://en.wikipedia.org/wiki/Mutual_assured_destruction
 Mutually Exclusive, Collectively Exhaustive (MECE) https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-exhaustive/
@@ -1834,6 +1838,7 @@ wisdom of the rooms = AA steps
 wokeness = An aggressively performative focus on social justice https://paulgraham.com/woke.html
 word frequency -- English https://frequencylist.com/
 work -- 4-hour workweek
+work -- 996 = https://lucumr.pocoo.org/2025/9/4/996/
 work -- anger = don't https://www.seangoedecke.com/you-should-never-be-angry-at-work/
 work -- blue & white collar = https://ptrbrynt.com/posts/were-we-blue-collar-workers-all-along
 work -- busy work https://en.wikipedia.org/wiki/Busy_work

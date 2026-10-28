@@ -1,12 +1,5 @@
-# Review: `@monorepo-private/set-deep-property`
-
 Purpose: an opinionated, immutable deep-property setter/deleter for plain objects
 (`setꓽpropertyⵧdeep(target, path, value)`), supporting a dot or pipe path separator and a `DELETE` sentinel value.
-
-## Findings
-
-- **[Minor] G2-P9-01** — `module/index.ts:1` imports `assert_from` from `@monorepo-private/assert` but never uses it
-  (only `assert` is called, at line 18). Dead import.
 
 - **[Minor] G2-P9-02** — Silent type coercion when a path segment collides with an existing non-object (primitive)
   value: e.g. `setꓽpropertyⵧdeep({ a: 5 }, "a.b.c", 1)` will do `current["a"] = { ...current["a"] }`, and spreading a
@@ -29,22 +22,13 @@ Purpose: an opinionated, immutable deep-property setter/deleter for plain object
   which creates `a` and `a.b` in `result` for nothing). Harmless (the copies are garbage-collected), but it's wasted
   work; could short-circuit earlier by checking existence of the full path first when deleting.
 
-- **[Nit] G2-P9-05** — `package.json` declares `sinon`/`@types/sinon` as devDependencies but no file in the package uses
-  `sinon` (confirmed via grep) — same copy-paste-template dead dependency pattern seen in sibling packages.
-
 - **[Nit] G2-P9-06** — The `DELETE` sentinel is a plain exported string constant (`">DELETE<"`), so a caller
   legitimately wanting to _set_ a property to that exact string value would instead trigger a delete. Documented via the
   distinctive value chosen, and inherent to any sentinel-based API, so low risk — just noting the edge case.
-
-No `~~tosort` folder present in this package.
 
 The core algorithm was traced by hand against all 7 existing test cases (set: no-op, mutate, alternate `|` separator,
 no-change-to-sibling-props, missing-path-creation; delete: existing key, already-absent key) and is correct and
 consistent with expected immutability semantics (returns the original reference when nothing changed, a new
 shallow-copied-along-the-path object when something did, and never touches sibling branches). No OOP/class usage —
 implemented as a single pure-ish function (it never mutates its `target` input; the local `result`/`current` copies are
-freshly created). README accurately describes the exported API. Tests use the legacy mocha+chai stack, consistent with
-"existing tests are fine" guidance. `vitest` and `icepick`/`@types/icepick` are present as devDependencies and `icepick`
-is actually used (in tests, for `freeze()`), unlike the sinon dependency above.
-
-No other issues found.
+freshly created). README accurately describes the exported API.

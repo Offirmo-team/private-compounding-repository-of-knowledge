@@ -18,9 +18,9 @@
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/freeze": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
-		"icepick": "catalog:",
 		"jsondiffpatch": "catalog:",
 		"memoize-one": "catalog:",
 		"typescript-string-enums": "catalog:"
@@ -31,7 +31,6 @@
 		"@monorepo-private/soft-execution-context": "workspace:*",
 		"@monorepo-private/utils--error": "workspace:*",
 		"@types/chai": "catalog:",
-		"@types/icepick": "catalog:",
 		"@types/node": "catalog:",
 		"chai": "catalog:",
 		"npm-run-all": "catalog:",
