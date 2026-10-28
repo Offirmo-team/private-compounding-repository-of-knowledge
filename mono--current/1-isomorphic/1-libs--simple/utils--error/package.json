@@ -10,9 +10,11 @@
 		"./v2": "./module/src/v2/_entrypoint.ts"
 	},
 	"scripts": {
-		"check": "run-s test--vitest check:ts",
+		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@monorepo-private/utils--error\" && tsc --noEmit",
+		"check:unit-tests": "run-s test",
 		"dev": "run-s  watch:check:ts",
+		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},

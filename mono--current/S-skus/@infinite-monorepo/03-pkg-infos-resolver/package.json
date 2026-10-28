@@ -9,10 +9,12 @@
 		".": "./module/src/index.ts"
 	},
 	"scripts": {
-		"check": "run-s test--vitest check:ts",
+		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@infinite-monorepo/pkg-infos-resolver\" && tsc --noEmit",
+		"check:unit-tests": "run-s test",
 		"dev": "run-s  watch:check:ts",
 		"sandbox": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##sandbox/index.ts",
+		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},

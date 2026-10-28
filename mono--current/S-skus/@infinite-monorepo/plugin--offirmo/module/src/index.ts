@@ -126,7 +126,7 @@ export const PLUGIN: Plugin = {
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@types/node", {
 							type: "dev",
 						})
-						/* 2026/09 mocha considered legacy
+						/* 2026/09 mocha now considered legacy
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "mocha", {
 							type: "dev",
 						})

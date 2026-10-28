@@ -204,8 +204,6 @@ export const PLUGIN: Plugin = {
 					scripts["check:ts"] = `echo "${pkg_details.fqname}" && tsc --noEmit`
 					scripts["watch:check:ts"] = "tsc --noEmit --watch"
 					scripts["dev"] = `run-s ${scriptsⵧclean.length ? "clean" : ""} watch:check:ts`
-				} else {
-					//scripts['dev'] = TODO ??
 				}
 
 				if (pkg_details.isꓽpublished) {
@@ -215,11 +213,20 @@ export const PLUGIN: Plugin = {
 
 				// TODO 1D smoke tests
 
-				const scriptsⵧchecks = Object.keys(scripts)
-					.filter((k) => k.startsWith("test") || k.startsWith("check"))
+				const scriptsⵧtest = Object.keys(scripts)
+					.filter((k) => k.startsWith("test"))
 					.filter((k) => !k.endsWith("--watch"))
 					.sort()
 					.reverse() // do that "test" is before "check"
+				if (scriptsⵧtest.length) {
+					scripts["test"] = `run-s ${scriptsⵧtest.join(" ")}`
+					scripts["check:unit-tests"] = `run-s test`
+				}
+
+				const scriptsⵧchecks = Object.keys(scripts)
+					.filter((k) => k.startsWith("check"))
+					.filter((k) => !k.endsWith("--watch"))
+					.sort()
 				if (scriptsⵧchecks.length) {
 					const name =
 						pkg_details.status === "stable" // TODO improve this status check

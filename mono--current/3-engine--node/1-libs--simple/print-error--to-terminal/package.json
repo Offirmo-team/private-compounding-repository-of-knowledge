@@ -9,10 +9,12 @@
 		".": "./module/src/index.ts"
 	},
 	"scripts": {
-		"check": "run-s test--vitest check:ts",
+		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@monorepo-private/print-error-to-terminal\" && tsc --noEmit",
+		"check:unit-tests": "run-s test",
 		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/src/##doc/demo.ts",
 		"dev": "run-s  watch:check:ts",
+		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},

@@ -51,7 +51,7 @@ catalog:
    murmurhash3js-revisited: ^3
    nanoid: ^6
    npm-run-all: ^4
-   oxfmt: ^0.74
+   oxfmt: ^0.75
    oxlint: ^1
    oxlint-tsgolint: ^7
    parse-imports-ts: ^1

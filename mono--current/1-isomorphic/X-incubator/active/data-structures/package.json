@@ -9,9 +9,11 @@
 		".": "./module/src/index.ts"
 	},
 	"scripts": {
-		"_check": "run-s test--vitest check:ts",
+		"_check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@monorepo-private/data-structures\" && tsc --noEmit",
+		"check:unit-tests": "run-s test",
 		"dev": "run-s  watch:check:ts",
+		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},

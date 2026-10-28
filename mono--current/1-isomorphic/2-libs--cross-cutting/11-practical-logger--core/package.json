@@ -10,10 +10,12 @@
 		"./__shared-demos": "./module/src/__shared-demos/_entrypoint.ts"
 	},
 	"scripts": {
-		"check": "run-s test--vitest check:ts",
+		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@monorepo-private/practical-logger--core\" && tsc --noEmit",
+		"check:unit-tests": "run-s test",
 		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demo/index.ts",
 		"dev": "run-s  watch:check:ts",
+		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},

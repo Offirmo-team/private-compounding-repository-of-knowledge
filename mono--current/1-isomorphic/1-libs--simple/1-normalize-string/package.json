@@ -11,9 +11,11 @@
 		"./url": "./module/l3-normalizers/3-url/_entrypoint.ts"
 	},
 	"scripts": {
-		"check": "run-s test--vitest check:ts",
+		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@monorepo-private/normalize-string\" && tsc --noEmit",
+		"check:unit-tests": "run-s test",
 		"dev": "run-s  watch:check:ts",
+		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
