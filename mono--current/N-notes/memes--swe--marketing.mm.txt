@@ -78,6 +78,7 @@ material -- screenshots?
 material -- video https://www.capcut.com/newsroom/dreamina-seedance-2
 mind share = When people think of examples of a product type or category, they usually think of a limited number of brand names https://en.wikipedia.org/wiki/Mind_share
 other people's castle
+other people's castle = https://xlii.space/eng/malicious-software-on-google-ads/
 presence -- AI skills = e.g. https://clerk.com/docs/guides/ai/skills
 presence -- GitHub = e.g. https://github.com/langchain-ai
 presence -- Hacker News = https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic

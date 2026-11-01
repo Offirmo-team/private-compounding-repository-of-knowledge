@@ -318,7 +318,7 @@ MVP -- earliest -- 06 && "app store"-able product
 MVP -- earliest -- 07 && "pro" = entitlements, billing, compliance...
 MVP -- earliest = "why I prefer Earliest Testable/Usable/Lovable" https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp
 MVP -- Most Advanced Yet Acceptable (MAYA) = UX concept https://every.to/p/the-most-advanced-yet-acceptable-products-win
-mvp -- satisficing = satisfy + suffice = good enough even if not optimal https://en.wikipedia.org/wiki/Satisficing
+MVP -- satisficing = satisfy + suffice = good enough even if not optimal https://en.wikipedia.org/wiki/Satisficing
 MVP -- SRP "sales ready product" = converts prospects in the moment—during a demo, and then shortens the sales cycle, ramps revenue quickly, and pushes a company towards market dominance https://www.sequoiacap.com/article/the-templeton-compression/
 near-success syndrome = nearly there but fail https://x.com/garrytan/status/2062760454649487491
 network -- defensible? path to critical mass?
@@ -337,8 +337,7 @@ only the paranoid survive (Andy Grove) = success breeds complacency, complacency
 only the paranoid survive -- 1 assume disaster is coming
 only the paranoid survive -- 2 spot threats before they explode = if you wait until a crisis is obvious, it's already too late
 only the paranoid survive -- 3 reinvent before you're forced to = industries shit, adapt or die
-organic = is this user organic? ex. insider (test account, QA account, employee account /adjacent), bot, abuser...
-other people's castle = https://xlii.space/eng/malicious-software-on-google-ads/
+organic = is this user organic? e.g. insider (test account, QA account, employee account /adjacent), bot, abuser...
 outsiders = Sometimes you need folks who have a “beginner’s mind” when looking at a problem and haven’t been jaded by the status quo https://speedrun.substack.com/p/sr005-apps-reviewed-the-3-signals-that-get-startups-in
 overfitting = the solution accomplishes one goal — but as soon as it needs to do something else, it’s almost back to square one https://medium.com/design-bootcamp/overfitting-and-the-problem-with-use-cases-337d9f4bf4d7
 path to commercial viability = e.g. X moonshots "proved much longer and riskier than hoped"
