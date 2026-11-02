@@ -1,11 +1,12 @@
 import * as jsondiffpatch from "jsondiffpatch"
-import memoize_one from "memoize-one"
+import memoize_once from "memoize-one"
 
 import type { Immutable, JsonⳇObject } from "@monorepo-private/ts--types"
 
 /////////////////////////////////////////////////
 
-const _getꓽadvanced_json_differ = memoize_one(() => {
+// @ts-ignore "memoize-one" has a type declaration issue as of 2026/10
+const _getꓽadvanced_json_differ = memoize_once(() => {
 	const advanced_json_differ = jsondiffpatch.create({
 		// method used to match objects when diffing arrays
 		// by default === operator is used

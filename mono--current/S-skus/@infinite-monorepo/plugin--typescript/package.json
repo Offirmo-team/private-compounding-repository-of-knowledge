@@ -8,7 +8,8 @@
 		".": "./module/src/index.ts",
 		"./module/tsconfigs/strictest/dom/tsconfig.json": "./module/tsconfigs/strictest/dom/tsconfig.json",
 		"./module/tsconfigs/strictest/isomorphic/tsconfig.json": "./module/tsconfigs/strictest/isomorphic/tsconfig.json",
-		"./module/tsconfigs/strictest/node24/tsconfig.json": "./module/tsconfigs/strictest/node24/tsconfig.json"
+		"./module/tsconfigs/strictest/node24/tsconfig.json": "./module/tsconfigs/strictest/node24/tsconfig.json",
+		"./module/tsconfigs/strictest/node26/tsconfig.json": "./module/tsconfigs/strictest/node26/tsconfig.json"
 	},
 	"scripts": {
 		"check": "run-s check:ts",
@@ -28,6 +29,7 @@
 		"@monorepo-private/ts--types": "workspace:*",
 		"@tsconfig/node-ts": "catalog:",
 		"@tsconfig/node24": "catalog:",
+		"@tsconfig/node26": "catalog:",
 		"@tsconfig/strictest": "catalog:",
 		"@types/node": "catalog:",
 		"jsondiffpatch": "catalog:",

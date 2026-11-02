@@ -1,5 +1,6 @@
-import { apply } from '@infinite-monorepo/operation--apply'
-import path from 'node:path'
+import path from "node:path"
+
+import { apply } from "@infinite-monorepo/operation--apply"
 
 /////////////////////////////////////////////////
 
@@ -9,4 +10,6 @@ console.log(`Hi!`)
 //await apply(THIS_MONOREPO_ROOT__CURRENT)
 //await apply(path.resolve(THIS_MONOREPO_ROOT__CURRENT, '../stack--imtest'))
 
-await apply(path.normalize('~/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge/mono--current/'))
+await apply(
+	path.normalize("~/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge/mono--current/"),
+)

@@ -1,14 +1,14 @@
 import React, { type CSSProperties, useState, useRef } from "react"
 
 import {
-	OHALinkRelation,
+	OHAⳇLinkRelation,
 	type State,
 	getꓽcta,
-	OHAHyperActionBlueprint,
+	OHAⳇHyperActionBlueprint,
 	deriveꓽaction,
-	type OHAHyperLink,
-	type OHAStory,
-	type OHAHyperAction,
+	type OHAⳇHyperLink,
+	type OHAⳇStory,
+	type OHAⳇHyperAction,
 	isꓽOHAHyperLink,
 } from "@monorepo-private/ohateoas"
 import * as RichText from "@monorepo-private/rich-text-format"
@@ -25,7 +25,7 @@ const NAME = `<OHAFrame>/1`
 interface Props {
 	available_width: CSSProperties["width"]
 	state: State
-	onꓽinteraction: (x: OHAHyperAction | OHAHyperLink | "reload") => Promise<OHAStory | undefined>
+	onꓽinteraction: (x: OHAⳇHyperAction | OHAⳇHyperLink | "reload") => Promise<OHAⳇStory | undefined>
 }
 function ᄆComponent({ state, available_width, onꓽinteraction }: Props) {
 	if (window.oᐧextra?.flagꓽdebug_render) console.log(`🔄 ${NAME}`)
@@ -36,7 +36,7 @@ function ᄆComponent({ state, available_width, onꓽinteraction }: Props) {
 
 	const $doc = state.$representation
 
-	async function on_click_action(action_blueprint: OHAHyperActionBlueprint) {
+	async function on_click_action(action_blueprint: OHAⳇHyperActionBlueprint) {
 		const { action, feedback } = deriveꓽaction(action_blueprint)
 
 		console.log(`on_click_action`, action_blueprint, action, feedback)
@@ -74,12 +74,12 @@ function ᄆComponent({ state, available_width, onꓽinteraction }: Props) {
 			setStory(`Executing "${getꓽcta(action_blueprint)}"…`)
 		}
 
-		if (feedback[OHALinkRelation.continueᝍto]) {
+		if (feedback[OHAⳇLinkRelation.continueᝍto]) {
 			throw new Error(`Not implemented continueᝍto!`)
 		}
 
 		ೱtask
-			.then((story?: OHAStory) => {
+			.then((story?: OHAⳇStory) => {
 				console.log("task done", story)
 
 				if (RichText.isꓽNodeLike(story)) {
@@ -100,7 +100,7 @@ function ᄆComponent({ state, available_width, onꓽinteraction }: Props) {
 			})
 	}
 
-	function _onꓽinteraction(x: OHAHyperActionBlueprint | OHAHyperLink): void {
+	function _onꓽinteraction(x: OHAⳇHyperActionBlueprint | OHAⳇHyperLink): void {
 		if (isꓽOHAHyperLink(x)) return void onꓽinteraction(x)
 
 		on_click_action(x)

@@ -1,16 +1,16 @@
 import React, { use } from "react"
 
 import {
-	type OHAHyperMedia,
+	type OHAⳇHyperMedia,
 	getꓽlinks,
 	getꓽengagements,
 	getꓽaction_blueprints,
 	getꓽcta,
-	OHAHyperActionBlueprint,
+	OHAⳇHyperActionBlueprint,
 	deriveꓽaction,
-	type OHAHyperLink,
-	type OHAStory,
-	type OHAHyperAction,
+	type OHAⳇHyperLink,
+	type OHAⳇStory,
+	type OHAⳇHyperAction,
 	type OHAServer,
 } from "@monorepo-private/ohateoas"
 
@@ -20,8 +20,8 @@ import { ᄆComponent as ᄆComponent_ } from "./component.tsx"
 const NAME = `OHAViewPort/2`
 
 interface Props {
-	ↆ$doc: Promise<OHAHyperMedia>
-	onꓽinteraction: (x: OHAHyperActionBlueprint | OHAHyperLink) => void
+	ↆ$doc: Promise<OHAⳇHyperMedia>
+	onꓽinteraction: (x: OHAⳇHyperActionBlueprint | OHAⳇHyperLink) => void
 }
 function ᄆComponent({ ↆ$doc, onꓽinteraction }: Props) {
 	if (window.oᐧextra?.flagꓽdebug_render) console.log(`🔄 ${NAME}`)

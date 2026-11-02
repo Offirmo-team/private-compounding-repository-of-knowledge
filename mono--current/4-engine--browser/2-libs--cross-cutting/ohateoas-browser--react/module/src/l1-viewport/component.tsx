@@ -1,18 +1,18 @@
 import React, { type CSSProperties } from "react"
 
 import {
-	type OHAHyperMedia,
+	type OHAⳇHyperMedia,
 	getꓽlinks,
 	getꓽengagements,
 	getꓽaction_blueprints,
 	getꓽcta,
-	OHAHyperActionBlueprint,
+	OHAⳇHyperActionBlueprint,
 	deriveꓽaction,
-	type OHAHyperLink,
-	type OHAStory,
-	type OHAHyperAction,
+	type OHAⳇHyperLink,
+	type OHAⳇStory,
+	type OHAⳇHyperAction,
 	type OHAServer,
-	OHAPendingEngagement,
+	OHAⳇPendingEngagement,
 } from "@monorepo-private/ohateoas"
 import renderⵧto_react from "@monorepo-private/rich-text-format--to-react"
 import type { Immutable } from "@monorepo-private/ts--types"
@@ -26,9 +26,9 @@ const NAME = `<OHAViewPort>/1`
 
 interface Props {
 	available_width: CSSProperties["width"]
-	$doc: OHAHyperMedia
+	$doc: OHAⳇHyperMedia
 	background_tasks: Array<unknown>
-	onꓽinteraction: (x: OHAHyperActionBlueprint | OHAHyperLink) => void
+	onꓽinteraction: (x: OHAⳇHyperActionBlueprint | OHAⳇHyperLink) => void
 }
 function ᄆComponent({ available_width = "100%", $doc, background_tasks = [], onꓽinteraction }: Props) {
 	if (window.oᐧextra?.flagꓽdebug_render) console.log(`🔄 ${NAME}`)
@@ -64,7 +64,7 @@ function ᄆComponent({ available_width = "100%", $doc, background_tasks = [], o
 /////////////////////////////////////////////////
 
 interface EngagementProps {
-	engagements: Array<OHAPendingEngagement>
+	engagements: Array<OHAⳇPendingEngagement>
 }
 function ᄆEngagements({ engagements }: EngagementProps) {
 	if (engagements.length === 0) return undefined
@@ -120,8 +120,8 @@ function ᄆEngagements({ engagements }: EngagementProps) {
 }
 
 interface LinksProps {
-	links: Record<string, Immutable<OHAHyperLink>>
-	onꓽclick: (x: OHAHyperLink) => void
+	links: Record<string, Immutable<OHAⳇHyperLink>>
+	onꓽclick: (x: OHAⳇHyperLink) => void
 }
 function ᄆLinks({ links, onꓽclick }: LinksProps) {
 	if (Object.keys(links).length === 0) return undefined
@@ -141,8 +141,8 @@ function ᄆLinks({ links, onꓽclick }: LinksProps) {
 }
 
 interface ActionsProps {
-	action_blueprints: Record<string, Immutable<OHAHyperActionBlueprint>>
-	onꓽclick: (x: OHAHyperActionBlueprint) => void
+	action_blueprints: Record<string, Immutable<OHAⳇHyperActionBlueprint>>
+	onꓽclick: (x: OHAⳇHyperActionBlueprint) => void
 }
 function ᄆActions({ action_blueprints, onꓽclick }: ActionsProps) {
 	if (Object.keys(action_blueprints).length === 0) return undefined

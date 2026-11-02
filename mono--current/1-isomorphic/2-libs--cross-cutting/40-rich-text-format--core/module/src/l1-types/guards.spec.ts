@@ -12,9 +12,9 @@ describe(`${LIB} -- type guards`, () => {
 		})
 
 		it("should work -- true", () => {
-			expect(isꓽNode({ $v: 1 })).toBe(true)
-			expect(isꓽNode({ $content: "foo" })).toBe(true)
-			expect(isꓽNode({ $content: ["foo"] })).toBe(true) // block variant
+			expect(isꓽNode({ $v: 1 }), "1").toBe(true)
+			expect(isꓽNode({ $content: "foo" }), "2").toBe(true)
+			expect(isꓽNode({ $content: ["foo"] }), "3").toBe(true) // block variant
 		})
 
 		describe("[BUG#2] should accept numeric $content (number is a valid NodeLike)", () => {

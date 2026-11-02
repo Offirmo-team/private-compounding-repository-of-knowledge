@@ -1,6 +1,13 @@
 /////////////////////////////////////////////////
 
-describe(`${LIB} -- common`, () => {})
+describe(`${LIB} -- common`, () => {
+	describe("isꓽlink()", function () {
+		it.skip("should work")
+	})
+	describe("getꓽcontent‿nodes_list()", function () {
+		it.skip("should work")
+	})
+})
 
 /////////////////////////////////////////////////
 

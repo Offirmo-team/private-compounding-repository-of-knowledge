@@ -22,7 +22,7 @@ import {
 	getꓽlink‿str,
 	getꓽaction_blueprints,
 	getꓽcta,
-	OHALinkRelation,
+	OHAⳇLinkRelation,
 } from "@monorepo-private/ohateoas"
 import * as StateLib from "@monorepo-private/ohateoas"
 import { prettifyꓽjson } from "@monorepo-private/prettify-any"
@@ -85,10 +85,10 @@ async function main() {
 		const action_blueprints = getꓽaction_blueprints($doc)
 		const links = getꓽlinks($doc)
 
-		if (links[OHALinkRelation.continueᝍto]) {
-			const { href } = links[OHALinkRelation.continueᝍto]
+		if (links[OHAⳇLinkRelation.continueᝍto]) {
+			const { href } = links[OHAⳇLinkRelation.continueᝍto]
 			assert(href !== state.urlⵧload && href !== state.urlⵧself, `continue-to should be different!`)
-			console.log(`[Continuing to "${OHALinkRelation.continueᝍto}"...]`)
+			console.log(`[Continuing to "${OHAⳇLinkRelation.continueᝍto}"...]`)
 			state = StateLib.navigate_to(state, href)
 			continue loop
 		}

@@ -8,8 +8,8 @@ export const KNOWN_VERSIONS = {
 	},
 	"Node.js": {
 		// https://github.com/nodejs/release#release-schedule
-		// [ ] NEXT: 2026-10-28 active LTS start 26
-		LTS: 24,
+		// [ ] NEXT: 2027-10-20 active LTS start 27 (new schedule: from v27, every major becomes LTS)
+		LTS: 26,
 	},
 	pnpm: {
 		// https://pnpm.io/blog

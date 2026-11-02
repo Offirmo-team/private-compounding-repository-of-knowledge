@@ -4,6 +4,7 @@
 			// those are true dev deps not seen by current tooling (TODO 1D improve our tool to follow tsconfig deps)
 			"@tsconfig/strictest": { type: "dev" },
 			"@tsconfig/node24": { type: "dev" },
+			"@tsconfig/node26": { type: "dev" },
 			"@tsconfig/node-ts": { type: "dev" },
 		},
 		files: {

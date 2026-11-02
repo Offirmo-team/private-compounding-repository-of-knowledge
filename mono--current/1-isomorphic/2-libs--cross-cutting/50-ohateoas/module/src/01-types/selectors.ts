@@ -7,19 +7,19 @@ import {
 } from "@monorepo-private/ts--types--hypermedia"
 
 import { isꓽOHAHyperLink } from "./type-guards.ts"
-import type { OHAHyperLink, OHAHyperLink‿x, OHALinkRelation } from "./types.ts"
+import type { OHAⳇHyperLink, OHAⳇHyperLink‿x, OHAⳇLinkRelation } from "./types.ts"
 
 /////////////////////////////////////////////////
 
 // promote to the most expressive of "X"
 function promote_toꓽOHAHyperLink(
-	link: Immutable<OHAHyperLink‿x>,
-	hints: Immutable<Partial<Omit<OHAHyperLink, "href">>> = {},
-): Immutable<OHAHyperLink> {
+	link: Immutable<OHAⳇHyperLink‿x>,
+	hints: Immutable<Partial<Omit<OHAⳇHyperLink, "href">>> = {},
+): Immutable<OHAⳇHyperLink> {
 	if (isꓽOHAHyperLink(link))
 		return {
 			...link,
-			rel: Array.from(new Set<OHALinkRelation>([...(link.rel ?? []), ...(hints.rel ?? [])]).values()).sort(),
+			rel: Array.from(new Set<OHAⳇLinkRelation>([...(link.rel ?? []), ...(hints.rel ?? [])]).values()).sort(),
 		}
 
 	return {
@@ -28,7 +28,7 @@ function promote_toꓽOHAHyperLink(
 	}
 }
 
-function getꓽuriⵧnormalized‿str(link: Immutable<OHAHyperLink‿x>): Url‿str {
+function getꓽuriⵧnormalized‿str(link: Immutable<OHAⳇHyperLink‿x>): Url‿str {
 	if (isꓽOHAHyperLink(link)) return _getꓽuriⵧnormalized‿str(link.href)
 
 	return _getꓽuriⵧnormalized‿str(link as Uri‿x) // TODO better TS discrimination

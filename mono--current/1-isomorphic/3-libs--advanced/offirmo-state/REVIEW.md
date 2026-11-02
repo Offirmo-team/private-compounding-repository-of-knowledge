@@ -31,8 +31,3 @@
 - **G3-P13-06** [Nit] `migration.ts` declares an `export interface Libs {}` (empty) plus `const LIBS: Libs = {}`,
   threaded through the whole migration pipeline, annotated with `// TODO review: useful?`. Either finish this extension
   point or remove the indirection.
-
-No unnecessary OOP/class usage found — the package is consistently written as plain interfaces/types + pure functions,
-in line with the project's functional style guidance. No security concerns identified (no I/O, no external input parsing
-beyond in-memory objects). No outdated/vulnerable dependencies stood out (jsondiffpatch, memoize-one,
-typescript-string-enums are all pinned via the workspace catalog).

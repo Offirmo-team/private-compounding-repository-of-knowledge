@@ -1,28 +1,14 @@
 // New "Offirmo's Hyper Architecture" OHA
 
-import { Enum } from "typescript-string-enums"
-
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Hints as RichTextHints, NodeⳇLike as RichTextNodeLike } from "@monorepo-private/rich-text-format"
-import type {
-	JsonⳇValue,
-	JsonⳇPrimitive,
-	Story,
-	WithHints,
-	InputSpec,
-	TrackedEngagement,
-} from "@monorepo-private/ts--types"
-import type { ReducerAction, Uri‿x } from "@monorepo-private/ts--types--hypermedia"
-
 /////////////////////////////////////////////////
 // 1. Hypertext / Hypermedia
 
 // IMPORTANT
 // RichTextNode = no links/actions (will be ignored if any)
 // HyperMedia   = RichTextNode + links/actions
-type OHAHyperMedia = RichTextNodeLike
+export type OHAⳇHyperMedia = RichTextⳇNodeⳇLike
 
-type OHAStory = Story<OHAHyperMedia>
+export type OHAⳇStory = Story<OHAⳇHyperMedia>
 
 /////////////////////////////////////////////////
 // 2a. Hyperlinks
@@ -31,11 +17,11 @@ type OHAStory = Story<OHAHyperMedia>
 // @see https://hypermedia.systems/
 
 // as usual, the client is free to ignore all hints; it should still work
-interface OHAHyperHints {
-	cta?: RichTextNodeLike // optional bc 1) not always needed (ex. already an anchor) 2) SSoT = should ideally be derived BUT useful bc same action could have different CTA following the context (ex. equip the best equipment)
+interface OHAⳇHyperHints {
+	cta?: RichTextⳇNodeⳇLike // optional bc 1) not always needed (ex. already an anchor) 2) SSoT = should ideally be derived BUT useful bc same action could have different CTA following the context (ex. equip the best equipment)
 	keyboard_shortcut?: string // TODO 1D high level format
 }
-interface OHAHyper extends WithHints<OHAHyperHints> {
+export interface OHAⳇHyper extends WithHints<OHAⳇHyperHints> {
 	// hyper target of this
 	href?: Uri‿x // optional bc can sometimes be inferred = current
 
@@ -46,7 +32,7 @@ interface OHAHyper extends WithHints<OHAHyperHints> {
 }
 
 // tslint:disable-next-line: variable-name
-export const OHALinkRelation = Enum(
+export const OHAⳇLinkRelation = Enum(
 	// inspired by https://www.iana.org/assignments/link-relations/link-relations.xhtml
 	"self",
 	"home", // != root
@@ -85,9 +71,9 @@ export const OHALinkRelation = Enum(
 	"contact",
 	// TODO llm?
 )
-export type OHALinkRelation = Enum<typeof OHALinkRelation> // eslint-disable-line no-redeclare
+export type OHAⳇLinkRelation = Enum<typeof OHAⳇLinkRelation> // eslint-disable-line no-redeclare
 
-type OHALinkTarget =
+export type OHAⳇLinkTarget =
 	// inspired by https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement/target
 	| "_self" // The current browsing context (default)
 	| "_help" // ideally aside the current browsing context if possible, new window if not TODO review name
@@ -98,18 +84,18 @@ type OHALinkTarget =
 	// special OHA
 	| "_root" // the closest root, ~to a webapp (may not be the topmost HATEOAS context) = needed for immersion, ex. full-screen cutscene yet not necessarily topmost, ex. windowed game
 
-interface OHAHyperLink extends OHAHyper {
+export interface OHAⳇHyperLink extends OHAⳇHyper {
 	href: Uri‿x // mandatory for this subtype
 
-	rel?: OHALinkRelation[]
+	rel?: OHAⳇLinkRelation[]
 
-	target?: OHALinkTarget
+	target?: OHAⳇLinkTarget
 
 	// TODO some kind of feedback engagement? needed for links?
 }
 
 // "x" = "any [kind of format]"
-type OHAHyperLink‿x = OHAHyperLink | Uri‿x
+export type OHAⳇHyperLink‿x = OHAⳇHyperLink | Uri‿x
 
 /////////////////////////////////////////////////
 // 2b. Hyperactions (improved ~forms)
@@ -133,15 +119,15 @@ type StateChangeCategory =
 // ex. ack "your request has been received"
 // ex. wait "processing..."
 // ex. prepare transition "hyperspace" from planet A to planet B
-interface OHAFeedback extends WithHints {
+export interface OHAⳇFeedback extends WithHints {
 	tracking?:
 		| "forget" // as in "fire-and-forget" = no tracking UI of the action is needed. Ex. sending an email
 		| "background" // tracking UI recommended but doesn't prevent sending other actions
 		| "foreground" // (default) full "waiting/loading" UI, no other action can be sent until this one is resolved
 
-	story?: OHAStory // the message to show to the user. not mandatory bc can also be inferred from the action's CTA
+	story?: OHAⳇStory // the message to show to the user. not mandatory bc can also be inferred from the action's CTA
 
-	[OHALinkRelation.continueᝍto]?: Uri‿x // if present, ultimately navigate to this resource once the action is dispatched and no other UI/engagement is pending
+	[OHAⳇLinkRelation.continueᝍto]?: Uri‿x // if present, ultimately navigate to this resource once the action is dispatched and no other UI/engagement is pending
 
 	// XXX should this be in the story itself?
 	/*hints?: {
@@ -155,27 +141,27 @@ interface OHAFeedback extends WithHints {
 // this is intentional as the point is to decouple client & server
 // actions dispatched from the client should originate from the server
 // so the client shouldn't have to know about strict typing
-interface OHAHyperActionBlueprint extends OHAHyper, ReducerAction {
+export interface OHAⳇHyperActionBlueprint extends OHAⳇHyper, ReducerAction {
 	href: never // this differentiates it from a hyperlink
 	// if a navigation is needed, use feedback
 
 	// required parameters we need to get from the user (or pre-supplied)
 	// input as in "form"
-	input?: Record<string, InputSpec<JsonⳇPrimitive, OHAHyperMedia>> // the data of the action, could be anything (or nothing)
+	input?: Record<string, InputSpec<JsonⳇPrimitive, OHAⳇHyperMedia>> // the data of the action, could be anything (or nothing)
 
-	hints?: OHAHyper["hints"] & {
+	hints?: OHAⳇHyper["hints"] & {
 		change_type?: StateChangeCategory
 		// TODO some sort of risk?
 	}
 
 	// aftermath
 	// this is needed in the blueprint so that the client knows what to do/show WITHOUT waiting for the server
-	feedback?: OHAFeedback
+	feedback?: OHAⳇFeedback
 }
 
 // constructed from the above
 // much simpler, correspond to a ~rpc
-interface OHAHyperAction extends ReducerAction {
+export interface OHAⳇHyperAction extends ReducerAction {
 	payload?: Record<string, JsonⳇPrimitive>
 
 	// TODO requirements on previous state, see TBRPG
@@ -183,16 +169,19 @@ interface OHAHyperAction extends ReducerAction {
 
 /////////////////////////////////////////////////
 
-interface OHAPendingEngagement extends TrackedEngagement<OHAHyperMedia> {
-	ack_action?: OHAHyperAction // the action to dispatch to acknowledge this engagement as seen
+export interface OHAⳇPendingEngagement extends TrackedEngagement<OHAⳇHyperMedia> {
+	ack_action?: OHAⳇHyperAction // the action to dispatch to acknowledge this engagement as seen
 }
 
 /////////////////////////////////////////////////
 
-interface OHARichTextHints<UnderlyingData = JsonⳇValue> extends RichTextHints<UnderlyingData, OHAHyperLink‿x> {
-	links?: Record<string, OHAHyperLink‿x> // HATEOAS links to other related resources with appropriate rel. Record as it's extremely convenient for lookup. key should be core "rel" or anything
-	actions?: Record<string, OHAHyperActionBlueprint> // OHA actions. Record as it's extremely convenient for lookup. key should be the action key
-	engagements?: Array<OHAPendingEngagement> // array bc order is important
+export interface OHAⳇRichTextHints<UnderlyingData = JsonⳇValue> extends RichTextⳇHints<
+	UnderlyingData,
+	OHAⳇHyperLink‿x
+> {
+	links?: Record<string, OHAⳇHyperLink‿x> // HATEOAS links to other related resources with appropriate rel. Record as it's extremely convenient for lookup. key should be core "rel" or anything
+	actions?: Record<string, OHAⳇHyperActionBlueprint> // OHA actions. Record as it's extremely convenient for lookup. key should be the action key
+	engagements?: Array<OHAⳇPendingEngagement> // array bc order is important
 }
 
 /////////////////////////////////////////////////
@@ -206,17 +195,18 @@ export {
 	type Uri‿x,
 } from "@monorepo-private/ts--types--hypermedia"
 
-export {
-	type RichTextNodeLike,
-	type OHAHyperMedia,
-	type OHARichTextHints,
-	type OHAHyper,
-	type OHALinkTarget,
-	type OHAHyperLink,
-	type OHAHyperLink‿x,
-	type OHAHyperActionBlueprint,
-	type OHAHyperAction,
-	type OHAFeedback,
-	type OHAStory,
-	type OHAPendingEngagement,
-}
+/////////////////////////////////////////////////
+
+import { Enum } from "typescript-string-enums"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Hints as RichTextⳇHints, NodeⳇLike as RichTextⳇNodeⳇLike } from "@monorepo-private/rich-text-format"
+import type {
+	JsonⳇValue,
+	JsonⳇPrimitive,
+	Story,
+	WithHints,
+	InputSpec,
+	TrackedEngagement,
+} from "@monorepo-private/ts--types"
+import type { ReducerAction, Uri‿x } from "@monorepo-private/ts--types--hypermedia"

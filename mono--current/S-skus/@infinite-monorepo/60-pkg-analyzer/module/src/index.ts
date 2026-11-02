@@ -88,6 +88,9 @@ export async function updateⵧfrom_files(
 	const _manifest = JSON5.parse(fs.readFileSync(entryⵧmanifest.path‿abs, "utf8"))
 	details = DetailsLib.updateⵧfrom_manifest(details, _manifest)
 
+	/*if (_details.root‿abspath.endsWith("/0-dev-tools/parcel--config--default/")) {
+		debugger
+	}*/
 	if (fqname === debug_pkg) {
 		debugger
 	}

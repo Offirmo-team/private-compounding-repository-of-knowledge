@@ -170,6 +170,7 @@ recessions
 recessions -- great https://en.wikipedia.org/wiki/Great_Recession
 regulatory protection = are subject to oversight by financial regulators
 reserve banking -- fractional = https://en.wikipedia.org/wiki/Fractional-reserve_banking
+S&P 500 companie = https://www.kadoa.com/companies
 saving
 scam -- situations = The customer is led to believe the payment or action is for a legitimate purpose (e.g. investing, helping a romantic partner, or resolving an issue for their benefit), when in fact the true intent is to steal funds; or The perpetrator uses a false identity or impersonates someone else to gain the customer’s trust.
 scam = when a customer suffers a financial loss after being deceived or psychologically manipulated into: making payment/s to a perpetrator or third party; or providing a perpetrator access to, or disclosing information (such as online banking login details, one-time passcodes, or card details) that enables the perpetrator to access, the customer’s account so that the perpetrator can transfer the customer’s funds or make payments.

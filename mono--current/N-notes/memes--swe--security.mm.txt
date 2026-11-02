@@ -59,6 +59,7 @@ cloud -- Cloudbleed https://en.m.wikipedia.org/wiki/Cloudbleed
 compartmentalize - so your system is not all or nothing
 content scrapping = can be anti-competitive https://www.kasada.io/use-cases/content-scraping/
 Content security policy (CSP) https://web.dev/articles/csp
+CPE "Common Platform Enumeration" = a structured naming scheme for information technology systems, software, and packages. Based upon the generic syntax for Uniform Resource Identifiers (URI) https://nvd.nist.gov/products/cpe https://en.wikipedia.org/wiki/Common_Platform_Enumeration
 credential stealer = harvests browser data, SSH keys, npm tokens, GitHub CLI credentials, AWS secrets, and cryptocurrency wallets
 cryptographic safe = safe custody service for various technology owners who require secure offline storage of their cryptographic materials and other highly sensitive information
 cryptography -- ciphertext indistinguishability = important security property of encryption schemes = an adversary will be unable to distinguish pairs of ciphertexts based on the message they encrypt. indistinguishability under chosen plaintext attack is considered a basic requirement for most provably secure public key cryptosystems  https://cse.iitkgp.ac.in/~debdeep/courses_iitkgp/FCrypto/scribes/scribe8.pdf
@@ -76,6 +77,7 @@ cryptography -- SHA "Secure Cryptographic Hashing"
 cryptography -- using cryptography doesn't mean you're secure (attackers will look for a weaker link)
 CVE "Common Vulnerabilities and Exposures" = a catalog of publicly disclosed vulnerabilities and exposures. Each CVE includes a unique identifier, summary, associated metadata like the Common Weakness Enumeration (CWE) and Common Platform Enumeration (CPE), and a severity score that can range from None to Critical. The format of a CVE ID consists of a fixed prefix, the year of the disclosure and an arbitrary sequence number ​​like CVE-2017-0144. Memorable names such as "EternalBlue"  (CVE-2017-0144)  are often associated with high-profile exploits to enhance recall. https://blog.cloudflare.com/vulnerability-transparency-strengthening-security-through-responsible/#what-is-a-cve
 CVE -- CNA "CVE Numbering Authority" = an authorized party that  can assign CVE identifiers for vulnerabilities discovered within its products and ecosystems https://blog.cloudflare.com/vulnerability-transparency-strengthening-security-through-responsible/#what-is-a-cna
+CWE "Common Weakness Enumeration" = a community-developed list of common software and hardware weakness types that could have security ramifications https://cwe.mitre.org/about/new_to_cwe.html
 Cybersecurity Assessment Tool (CAT) https://cybercat.tools/#assessment
 cybervolunteer https://www.cisa.gov/audiences/high-risk-communities/cybervolunteerresourcecenter
 dark web https://www.group-ib.com/blog/dark-web-fraud/
@@ -158,6 +160,7 @@ passkeys -- advocacy = https://scotthelme.co.uk/passkeys-are-not-a-trap/
 passkeys -- test https://github.com/Dashlane/passkeys-resources
 passkeys = a modern cryptographic alternative to passwords and seed phrases. Passkeys combine something you have (a physical device such as a laptop, mobile phone, or a security key like YubiKey) with something you are or know (a fingerprint, face, or PIN) to generate a cryptographic public/private key pair that secures an account.
 password -- peppering (pwd managers) https://passwordbits.com/salting-passwords/
+persistent, self-updating background daemon = bad https://news.ycombinator.com/item?id=50060694
 pin codes -- most common https://informationisbeautiful.net/visualizations/most-common-pin-codes/
 PKI = Public Key Infrastructure
 plan for security from the start - it's not something you can bolt on at the end

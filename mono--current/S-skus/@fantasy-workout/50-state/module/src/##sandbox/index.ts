@@ -20,7 +20,10 @@ console.log(
 				return `exercise "${s.exercise.title}"${s.side ? `/${s.side}` : ""} (${s.duration‿ms / 1000}s)`
 			}
 			default:
-				assertⵧnever_reached(`unknown segment: ${JSON.stringify(s satisfies never)}`)
+				assertⵧnever_reached(
+					{ s },
+					{ discriminant: "type", extra_description: () => `unknown segment: ${JSON.stringify(s)}` },
+				)
 		}
 	}),
 )

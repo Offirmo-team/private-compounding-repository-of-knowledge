@@ -1,16 +1,7 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
-
-import { SCHEMA_VERSION } from "../consts.ts"
-import { NodeType, type NodeⳇNormalized, type Node, type NodeⳇLike } from "../l1-types/types.ts"
-
-import { getꓽtype, isꓽdisplayⵧinline } from "./misc.ts"
-
 /////////////////////////////////////////////////
 
-function simplifyꓽnode($any_node: NodeⳇLike): NodeⳇLike
-function simplifyꓽnode($any_node: Immutable<NodeⳇLike>): Immutable<NodeⳇLike> {
+export function simplifyꓽnode($any_node: NodeⳇLike): NodeⳇLike
+export function simplifyꓽnode($any_node: Immutable<NodeⳇLike>): Immutable<NodeⳇLike> {
 	assert($any_node != null, `simplifyꓽnode(): param should be defined!`)
 
 	if (!isꓽobjectⵧplain($any_node)) {
@@ -86,4 +77,11 @@ function simplifyꓽnode($any_node: Immutable<NodeⳇLike>): Immutable<NodeⳇLi
 
 /////////////////////////////////////////////////
 
-export { simplifyꓽnode }
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
+
+import { SCHEMA_VERSION } from "../consts.ts"
+import { NodeType, type NodeⳇNormalized, type Node, type NodeⳇLike } from "../l1-types/types.ts"
+
+import { getꓽtype, isꓽdisplayⵧinline } from "./misc.ts"

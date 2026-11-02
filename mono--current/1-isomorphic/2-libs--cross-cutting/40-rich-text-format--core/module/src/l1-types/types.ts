@@ -24,6 +24,7 @@ export type Node = Partial<NodeⳇNormalized>
 // - defaults in-place (easier internal manipulations)
 // - affordances resolved to stricter type
 // - variations resolved to canonical (e.g. normalized Unicode, normalized emails...)
+// TODO 1D rewrite it as discriminated union block | inline
 export type NodeⳇNormalized = {
 	$v: number // schema version (currently not enforced anywhere AFAIR)
 

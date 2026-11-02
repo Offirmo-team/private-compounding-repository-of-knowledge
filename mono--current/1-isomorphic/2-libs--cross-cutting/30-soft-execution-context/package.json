@@ -27,7 +27,6 @@
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/practical-logger--core": "workspace:*",
-		"@monorepo-private/print-error-to-terminal": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@types/node": "catalog:",
 		"npm-run-all": "catalog:",

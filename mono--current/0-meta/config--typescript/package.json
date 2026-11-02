@@ -12,6 +12,7 @@
 	"devDependencies": {
 		"@tsconfig/node-ts": "catalog:",
 		"@tsconfig/node24": "catalog:",
+		"@tsconfig/node26": "catalog:",
 		"@tsconfig/strictest": "catalog:"
 	},
 	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"

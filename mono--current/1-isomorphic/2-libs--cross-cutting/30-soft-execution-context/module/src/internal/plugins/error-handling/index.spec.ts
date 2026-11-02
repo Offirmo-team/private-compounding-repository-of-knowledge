@@ -83,7 +83,5 @@ describe(`${LIB} -- plugins -- Error Handling`, () => {
 
 import { afterEach, beforeAll, describe, expect, it } from "vitest"
 
-import { displayError } from "@monorepo-private/print-error-to-terminal"
-
 import { LIB } from "../../../consts.ts"
 import { getRootSXC, _TEST_ONLY__reset_root_SXC } from "../../../index.ts"

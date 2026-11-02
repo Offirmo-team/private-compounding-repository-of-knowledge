@@ -4,12 +4,14 @@
 			// TODO 1D follow tsconfig deps
 			"@tsconfig/strictest": { type: "dev" },
 			"@tsconfig/node24": { type: "dev" },
+			"@tsconfig/node26": { type: "dev" },
 			"@tsconfig/node-ts": { type: "dev" },
 		},
 		files: {
 			packageᐧjson: {
 				"|exports|./module/tsconfigs/strictest/isomorphic/tsconfig.json": "./module/tsconfigs/strictest/isomorphic/tsconfig.json",
 				"|exports|./module/tsconfigs/strictest/node24/tsconfig.json": "./module/tsconfigs/strictest/node24/tsconfig.json",
+				"|exports|./module/tsconfigs/strictest/node26/tsconfig.json": "./module/tsconfigs/strictest/node26/tsconfig.json",
 				"|exports|./module/tsconfigs/strictest/dom/tsconfig.json": "./module/tsconfigs/strictest/dom/tsconfig.json",
 			},
 		},

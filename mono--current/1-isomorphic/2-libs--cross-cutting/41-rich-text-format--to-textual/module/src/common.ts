@@ -1,16 +1,11 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { NodeⳇNormalized, NodeⳇLike } from "@monorepo-private/rich-text-format"
-import { wrap, isꓽlist, isꓽNodeLike } from "@monorepo-private/rich-text-format"
-import { type Immutable } from "@monorepo-private/ts--types"
-
 /////////////////////////////////////////////////
 
-function isꓽlink($node: Immutable<NodeⳇNormalized>): boolean {
+export function isꓽlink($node: Immutable<NodeⳇNormalized>): boolean {
 	return !!$node.$hints.href
 }
 
 // for iterating only
-function getꓽcontent‿nodes_list($node: Immutable<NodeⳇNormalized>): Array<Immutable<NodeⳇLike>> {
+export function getꓽcontent‿nodes_list($node: Immutable<NodeⳇNormalized>): Array<Immutable<NodeⳇLike>> {
 	let result: Array<Immutable<NodeⳇLike>> = [] // so far
 
 	if (isꓽNodeLike($node.$content)) {
@@ -48,4 +43,7 @@ function getꓽcontent‿nodes_list($node: Immutable<NodeⳇNormalized>): Array<
 
 /////////////////////////////////////////////////
 
-export { isꓽlink, getꓽcontent‿nodes_list }
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { NodeⳇNormalized, NodeⳇLike } from "@monorepo-private/rich-text-format--core"
+import { wrap, isꓽlist, isꓽNodeLike } from "@monorepo-private/rich-text-format--core"
+import { type Immutable } from "@monorepo-private/ts--types"

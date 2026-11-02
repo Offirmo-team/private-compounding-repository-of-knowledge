@@ -39,6 +39,9 @@ export class PkgInfosResolver {
 	declareꓽmonorepo_namespace(ns: PkgNamespace): void {
 		this.#state = StateLib.declareꓽmonorepo_namespace(this.#state, ns)
 	}
+	isꓽmonorepo_package(pkg_name: PkgFQName): boolean {
+		return StateLib.isꓽmonorepo_package(this.#state, pkg_name)
+	}
 
 	ǃgetꓽversionⵧfor_dependencies_field(pkg_name: PkgFQName) {
 		return StateLib.ǃgetꓽversionⵧfor_dependencies_field(this.#state, pkg_name)

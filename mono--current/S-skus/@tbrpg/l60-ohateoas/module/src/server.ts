@@ -7,11 +7,11 @@ import {
 import * as RichText from '@monorepo-private/rich-text-format'
 import {
 	ROOT_URI,
-	type OHARichTextHints,
+	type OHAⳇRichTextHints,
 	type OHAServer,
-	type OHAStory,
-	type OHAHyperActionBlueprint,
-	type OHAFeedback, OHALinkRelation, type OHAHyperLink, type OHAPendingEngagement, type OHAHyperMedia,
+	type OHAⳇStory,
+	type OHAⳇHyperActionBlueprint,
+	type OHAⳇFeedback, OHAⳇLinkRelation, type OHAⳇHyperLink, type OHAⳇPendingEngagement, type OHAⳇHyperMedia,
 } from '@monorepo-private/ohateoas'
 import {ActionType, createꓽall_store_fns} from '@tbrpg/interfaces'
 import * as UIRT from '@tbrpg/ui--rich-text'
@@ -29,7 +29,7 @@ const DEBUG = true
 
 const URIꘌROOT = normalizeꓽuri‿str('/session/adventures/')
 
-const URIꘌEQUIPMENT: OHAHyperLink = {
+const URIꘌEQUIPMENT: OHAⳇHyperLink = {
 	href: '/session/equipment/',
 	target: 'character_sheet/equipment',
 	rel: [],
@@ -59,15 +59,15 @@ function createꓽserver(): OHAServer {
 		// prepare aggregation
 		let $builder = RichText.fragmentⵧblock() // "block" bc maps to a ~frame/sub-browser
 
-		const links: NonNullable<OHARichTextHints['links']> = {
-			[OHALinkRelation.self]: normalizeꓽuri‿str(path), // intentionally strip query & path until considered relevant
-			[OHALinkRelation.home]: URIꘌROOT, // could be DEFAULT_ROOT_URI or sth else, ex. /user/:xyz/savegame/:xyz/
+		const links: NonNullable<OHAⳇRichTextHints['links']> = {
+			[OHAⳇLinkRelation.self]: normalizeꓽuri‿str(path), // intentionally strip query & path until considered relevant
+			[OHAⳇLinkRelation.home]: URIꘌROOT, // could be DEFAULT_ROOT_URI or sth else, ex. /user/:xyz/savegame/:xyz/
 		}
 
-		const actions: NonNullable<OHARichTextHints['actions']> = {
+		const actions: NonNullable<OHAⳇRichTextHints['actions']> = {
 		}
 
-		const engagements: NonNullable<OHARichTextHints['engagements']> = []
+		const engagements: NonNullable<OHAⳇRichTextHints['engagements']> = []
 
 		const prompt: Array<PromptFragment> = []
 		prompt.push({ text: `
@@ -95,7 +95,7 @@ a fantasy RPG where you play as a hero and try to maximise your power and explor
 					.pushText('Welcome to The Boring RPG!')
 					//.pushLineBreak() TODO should be auto sep
 
-				links[OHALinkRelation.continueᝍto] = '/session/'
+				links[OHAⳇLinkRelation.continueᝍto] = '/session/'
 
 				break
 			}
@@ -107,7 +107,7 @@ a fantasy RPG where you play as a hero and try to maximise your power and explor
 					.pushNode($recap, { id: 'recap'})
 				//.pushLineBreak() TODO should be auto sep
 
-				links[OHALinkRelation.continueᝍto] = '/session/adventures/'
+				links[OHAⳇLinkRelation.continueᝍto] = '/session/adventures/'
 
 				break
 			}
@@ -169,8 +169,8 @@ a fantasy RPG where you play as a hero and try to maximise your power and explor
 								durationⵧmin‿ms: 1000, // if present, never resolve the action faster than this (illusion of labor) Do not abuse! (default to some value depending on the verb)
 							},
 						}
-					} as OHAHyperActionBlueprint['feedback'],
-				} as OHAHyperActionBlueprint
+					} as OHAⳇHyperActionBlueprint['feedback'],
+				} as OHAⳇHyperActionBlueprint
 
 				links['equipment'] = URIꘌEQUIPMENT
 
@@ -180,7 +180,7 @@ a fantasy RPG where you play as a hero and try to maximise your power and explor
 			case '/session/adventures/last': {
 				throw new Error(`Not implemented!`)
 
-				links[OHALinkRelation.continueᝍto] = '/session/adventures/'
+				links[OHAⳇLinkRelation.continueᝍto] = '/session/adventures/'
 
 				break
 			}
@@ -191,7 +191,7 @@ a fantasy RPG where you play as a hero and try to maximise your power and explor
 
 		////////////
 		// wrap together
-		$builder.addHints<OHARichTextHints>({
+		$builder.addHints<OHAⳇRichTextHints>({
 			links,
 			actions,
 			engagements,
@@ -212,7 +212,7 @@ a fantasy RPG where you play as a hero and try to maximise your power and explor
 			...action
 		}
 
-		let result_story: OHAStory | undefined = undefined
+		let result_story: OHAⳇStory | undefined = undefined
 
 		const state = all_store_fns.getSnapshot()
 
@@ -236,7 +236,7 @@ a fantasy RPG where you play as a hero and try to maximise your power and explor
 							role: 'assistant',
 							message: 'Encountered something!',
 							hints: {
-								[OHALinkRelation.continueᝍto]: '/session/adventures/last'
+								[OHAⳇLinkRelation.continueᝍto]: '/session/adventures/last'
 							}
 						}
 					}

@@ -1,13 +1,13 @@
-import { describe, it, expect } from "vitest"
-
-import { assert, assert_from } from "@monorepo-private/assert"
-
 /////////////////////////////////////////////////
 
 describe(`@monorepo-private/assert`, () => {
-	function set_hour(h: number): void {
-		assert.pre(Number.isSafeInteger(h))
-		assert.pre(h >= 0 && h <= 23, "hour must be between 0 and 23")
+	function capture_thrown_error(fn: () => void): any {
+		try {
+			fn()
+		} catch (err) {
+			return err
+		}
+		throw new Error("expected the assertion to throw, but it did not")
 	}
 
 	describe("[sandbox]", () => {
@@ -51,6 +51,11 @@ describe(`@monorepo-private/assert`, () => {
 		})
 
 		it.skip("should capture a correct stacktrace", () => {
+			function set_hour(h: number): void {
+				assert.pre(Number.isSafeInteger(h))
+				assert.pre(h >= 0 && h <= 23, "hour must be between 0 and 23")
+			}
+
 			try {
 				set_hour(-1)
 				throw new Error("xxx")
@@ -185,18 +190,70 @@ describe(`@monorepo-private/assert`, () => {
 				})
 			})
 		})
+
+		describe("accumulating checks", function () {
+			type Hour = number
+
+			function ǃꓽHour(h: number) {
+				const ǃ = assert_from({ ǃꓽHour })
+
+				ǃ.forⵧvalue({ h }).check(Number.isSafeInteger(h))
+				ǃ.check(h >= 0 && h <= 23)
+
+				return ǃ
+			}
+			function assertꓽHour(h: number): asserts h is Hour {
+				const ǃ = ǃꓽHour(h)
+				ǃ.assertꓽno_issues()
+			}
+			function isꓽHour(h: number): h is Hour {
+				const ǃ = ǃꓽHour(h)
+				return ǃ.hasꓽno_issues()
+			}
+
+			it("should work", () => {
+				expect(isꓽHour(13)).toBe(true)
+				expect(isꓽHour(-1)).toBe(false)
+
+				expect(capture_thrown_error(() => assertꓽHour(12.5)).message).toBe(
+					"ǃꓽHour(): Assertion failed: assertion about h should be true!",
+				)
+			})
+		})
 	})
 
-	describe("thrown error objects", () => {
-		function capture_thrown_error(fn: () => void): any {
-			try {
-				fn()
-			} catch (err) {
-				return err
-			}
-			throw new Error("expected the assertion to throw, but it did not")
-		}
+	describe("assertⵧnever_reached()", function () {
+		it("should work and bring TS safety", () => {
+			type Foo = "a" | "b"
+			const foo = "b" as Foo // `as` = prevent TS from narrowing foo to "b"
 
+			expect(() => {
+				switch (foo) {
+					case "a":
+						break
+					default:
+						// @ts-expect-error "b" is not handled
+						assertⵧnever_reached({ foo })
+				}
+			}).toThrow('Unreachable branch executed: foo = "b"!')
+		})
+
+		it("should allow discriminant and extra description", () => {
+			type Obj = { foo: "a" } | { foo: "b" } // discriminated union = obj itself narrows to `never`
+			const obj = { foo: "c" } as unknown as Obj // simulate untrusted data / bad cast
+
+			expect(() => {
+				switch (obj.foo) {
+					case "a":
+					case "b":
+						break
+					default:
+						assertⵧnever_reached({ obj }, { discriminant: "foo", extra_description: "the thingy" })
+				}
+			}).toThrow('Unreachable branch executed: the thingy (obj.foo = "c")!')
+		})
+	})
+	describe("[internal] thrown error objects", () => {
 		it("stay instanceof Error and expose the correct subclass .name", () => {
 			const err = capture_thrown_error(() => assert(false))
 			expect(err).toBeInstanceOf(Error)
@@ -213,3 +270,9 @@ describe(`@monorepo-private/assert`, () => {
 		})
 	})
 })
+
+/////////////////////////////////////////////////
+
+import { describe, it, expect } from "vitest"
+
+import { assert, assert_from, assertⵧnever_reached } from "@monorepo-private/assert"

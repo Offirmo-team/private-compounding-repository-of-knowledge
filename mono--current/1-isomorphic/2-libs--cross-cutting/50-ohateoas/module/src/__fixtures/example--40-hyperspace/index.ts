@@ -3,13 +3,13 @@ import type { SemVer } from "@monorepo-private/ts--types"
 import { getꓽscheme_specific_part, normalizeꓽuri‿str } from "@monorepo-private/ts--types--hypermedia"
 
 import {
-	type OHAHyperMedia,
-	type OHAHyperActionBlueprint,
-	type OHAHyperAction,
-	type OHAPendingEngagement,
-	type OHAHyperLink,
-	type OHARichTextHints,
-	OHALinkRelation,
+	type OHAⳇHyperMedia,
+	type OHAⳇHyperActionBlueprint,
+	type OHAⳇHyperAction,
+	type OHAⳇPendingEngagement,
+	type OHAⳇHyperLink,
+	type OHAⳇRichTextHints,
+	OHAⳇLinkRelation,
 } from "../../01-types/types.ts"
 import type { OHAServer } from "../../30-server/types.ts"
 
@@ -38,14 +38,14 @@ function createꓽserver(): OHAServer {
 		// prepare aggregation
 		let $builder = RichText.fragmentⵧblock() // "block" bc maps to a ~frame/sub-browser
 
-		const links: OHARichTextHints["links"] = {
-			[OHALinkRelation.self]: normalizeꓽuri‿str(path), // intentionally strip query & path until considered relevant
-			[OHALinkRelation.home]: URIꘌROOT, // could be DEFAULT_ROOT_URI or sth else, ex. /user/:xyz/savegame/:xyz/
+		const links: OHAⳇRichTextHints["links"] = {
+			[OHAⳇLinkRelation.self]: normalizeꓽuri‿str(path), // intentionally strip query & path until considered relevant
+			[OHAⳇLinkRelation.home]: URIꘌROOT, // could be DEFAULT_ROOT_URI or sth else, ex. /user/:xyz/savegame/:xyz/
 		}
 
-		const actions: OHARichTextHints["actions"] = {}
+		const actions: OHAⳇRichTextHints["actions"] = {}
 
-		const engagements: OHARichTextHints["engagements"] = []
+		const engagements: OHAⳇRichTextHints["engagements"] = []
 
 		////////////
 
@@ -97,7 +97,7 @@ function createꓽserver(): OHAServer {
 
 		////////////
 		// wrap together
-		$builder.addHints<OHARichTextHints>({
+		$builder.addHints<OHAⳇRichTextHints>({
 			links,
 			actions,
 			engagements,

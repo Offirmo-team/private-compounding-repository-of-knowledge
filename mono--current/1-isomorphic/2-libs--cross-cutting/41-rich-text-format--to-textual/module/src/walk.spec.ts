@@ -186,7 +186,7 @@ describe(`${LIB} -- renderers -- walker (internal)`, () => {
 
 import { beforeEach, describe, expect, it } from "vitest"
 
-import { type Node } from "@monorepo-private/rich-text-format"
+import { type Node } from "@monorepo-private/rich-text-format--core"
 
 import { LIB } from "./consts.ts"
 import { renderⵧto_text, callbacksⵧto_text } from "./to-text/index.ts"

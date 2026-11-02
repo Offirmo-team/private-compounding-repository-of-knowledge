@@ -14,4 +14,4 @@ export default CREATOR
 
 /////////////////////////////////////////////////
 
-import type { Creator } from "@monorepo-private/ts--types--hypermedia"
+import { type Url‿str, type Creator } from "@monorepo-private/credits"

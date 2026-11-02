@@ -10,6 +10,7 @@ const plugins: Record<string, Plugin> = {
 	pluginꓽchangelog,
 	pluginꓽeditorconfig,
 	pluginꓽgit,
+	pluginꓽgraph,
 	pluginꓽjetbrains,
 	pluginꓽlicense,
 	pluginꓽmise,
@@ -155,17 +156,6 @@ export async function apply(from?: PathⳇAny) {
 					// TODO 1D support non-pure modules
 					// TODO 1D parallel
 					const updated_details = await (async (): Promise<Immutable<PureModuleDetails>> => {
-						if (
-							// TODO clean those exceptions
-							_outdated_node.path‿abs.endsWith("/0-dev-tools/parcel--config--default/") ||
-							_outdated_node.path‿abs.endsWith("/0-dev-tools/parcel--toolbox/") ||
-							_outdated_node.path‿abs.endsWith("/0-dev-tools/vite--toolbox/")
-						)
-							return {
-								...state.graphs.nodesⵧworkspace[_outdated_node.path‿abs].details,
-								_error: new Error("special package not implemented"),
-							}
-
 						try {
 							let updated_details = await updateⵧfrom_files(
 								state.graphs.nodesⵧworkspace[_outdated_node.path‿abs].details,
@@ -384,7 +374,7 @@ export async function apply(from?: PathⳇAny) {
 				case "present":
 					console.log(`- Writing file if not exist ${path}…`)
 					return ensureFile(path, async () => {
-						ೱwriteꓽfile(path, trim_before_stringify(spec.content as any), spec.manifest.format)
+						return ೱwriteꓽfile(path, trim_before_stringify(spec.content as any), spec.manifest.format)
 					})
 
 				case "present--exact":
@@ -483,6 +473,7 @@ import pluginꓽaiᝍᝍagentsᝍᝍcoding from "@infinite-monorepo/plugin--ai--
 import pluginꓽchangelog from "@infinite-monorepo/plugin--changelog"
 import pluginꓽeditorconfig from "@infinite-monorepo/plugin--editorconfig"
 import pluginꓽgit from "@infinite-monorepo/plugin--git"
+import pluginꓽgraph from "@infinite-monorepo/plugin--graph"
 import pluginꓽjetbrains from "@infinite-monorepo/plugin--jetbrains"
 import pluginꓽlicense from "@infinite-monorepo/plugin--license"
 import pluginꓽmise from "@infinite-monorepo/plugin--mise"

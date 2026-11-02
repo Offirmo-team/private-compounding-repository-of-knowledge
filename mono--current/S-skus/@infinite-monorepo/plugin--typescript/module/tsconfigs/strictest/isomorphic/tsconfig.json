@@ -70,7 +70,7 @@
 			"ES2025" // see target (update marker)
 		],
 
-		"target": "ES2025", // as og 2026/03 widely supported node LTS + FF ESR
+		"target": "ES2025", // as of 2026/03 widely supported node LTS + FF ESR. 2026 not supported yet by our version of TypeScript
 
 		/*** Compiler Diagnostics ***/
 		"listEmittedFiles": false,

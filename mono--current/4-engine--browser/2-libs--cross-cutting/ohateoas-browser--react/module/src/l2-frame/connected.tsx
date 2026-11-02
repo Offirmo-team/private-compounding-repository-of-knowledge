@@ -1,9 +1,9 @@
 import React, { type CSSProperties, useState, useEffect } from "react"
 
 import {
-	type OHAHyperLink,
-	type OHAStory,
-	type OHAHyperAction,
+	type OHAⳇHyperLink,
+	type OHAⳇStory,
+	type OHAⳇHyperAction,
 	type OHAServer,
 	create,
 	navigate_to,
@@ -49,7 +49,7 @@ function ᄆComponent({ available_width, starting_url = DEFAULT_ROOT_URI, server
 		}
 	}, [state.urlⵧload, state.reload_counter])
 
-	function onꓽinteraction(x: OHAHyperAction | OHAHyperLink | "reload"): Promise<OHAStory | undefined> {
+	function onꓽinteraction(x: OHAⳇHyperAction | OHAⳇHyperLink | "reload"): Promise<OHAⳇStory | undefined> {
 		if (x === "reload") {
 			setState((state) => navigate_to(state, { href: state.urlⵧself, reload: true }))
 			return Promise.resolve(undefined)

@@ -1,6 +1,8 @@
 /////////////////////////////////////////////////
 
 export function renderꓽstateⵧprettified_text(state: Immutable<Object>): string {
+	return stringifyⵧstable(state)
+	/* precedence_violation:
 	const options = getꓽoptionsⵧfull()
 
 	const _prettifyꓽobjectⵧkeyⳇvalue = options.prettifyꓽobjectⵧkeyⳇvalue
@@ -42,17 +44,19 @@ export function renderꓽstateⵧprettified_text(state: Immutable<Object>): stri
 			},
 		}
 		const lines = _prettifyꓽobjectⵧkeyⳇvalue(rest, st)
-		return [[lines[0], o.stylizeꓽdim("/*"), ...header, o.stylizeꓽdim("*/")].join(" "), ...lines.slice(1)]
+		return [[lines[0], o.stylizeꓽdim("/*"), ...header, o.stylizeꓽdim("*\/")].join(" "), ...lines.slice(1)]
 	}
 
 	return prettifyꓽjson(state, options)
+*/
 }
 
 /////////////////////////////////////////////////
 
 import assert from "tiny-invariant"
 
+import { stringifyⵧstable } from "@monorepo-private/json-stable-stringify"
 import { isꓽWithSchemaVersion } from "@monorepo-private/offirmo-state"
-import { type State, prettifyꓽjson, getꓽoptionsⵧfull } from "@monorepo-private/prettify-any"
+//import { type State, prettifyꓽjson, getꓽoptionsⵧfull } from "@monorepo-private/prettify-any"
 import { getꓽUTC_timestampⵧhuman_readable‿ms } from "@monorepo-private/timestamps"
 import type { Immutable } from "@monorepo-private/ts--types"

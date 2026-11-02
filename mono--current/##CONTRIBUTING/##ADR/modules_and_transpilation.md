@@ -51,9 +51,49 @@ When published, the public modules (in this repo) follow those conventions:
 
 ### PENDING updates
 
-- [ ] 🆙 2026-10-20 oldest active LTS node 24 → 26 https://github.com/nodejs/release#release-schedule
+- [ ] 🆙 2027-10-20 oldest active LTS node 26 → 27 https://github.com/nodejs/release#release-schedule
 - [ ] 🆙 mid 2027 [ES2027](https://en.wikipedia.org/wiki/ECMAScript_version_history)
 - [ ] 🆙 TypeScript 8 [announcements](https://devblogs.microsoft.com/typescript/)
+
+### update 2026-10-31
+
+🆕 2026-10-20 oldest active LTS node 24 → 26 https://github.com/nodejs/release#release-schedule
+
+Updated state:
+
+1. Node runtime version
+
+- 🆕oldest _active_ LTS node = [26](https://nodejs.org/en/about/previous-releases)
+- SaaS providers: most recent node supported by…
+  - 🆕AWS lambda = [26](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html)
+  - 🆕Vercel = [26](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions)
+- killer features after LTS?
+  - ?
+
+⭆ latest supported node = 26 (if updated, search for "engines", "@types/node", "update marker")
+
+2. ECMAScript version
+
+- latest ES = [ES2026](https://en.wikipedia.org/wiki/ECMAScript_version_history) +
+  [latest spec](https://262.ecma-international.org/17.0/)
+- latest ES _reasonably_ supported by above node LTS (latest minor) = ?? [ES2025](https://node.green/#ES2025)
+- 🆕latest ES supported by TypeScript as a target = [2026](https://www.typescriptlang.org/tsconfig#target)
+  [code](https://github.com/microsoft/TypeScript/blob/main/packages/typescript/enums/scriptTarget.js)
+- 🆕latest ES supported by TypeScript as a lib =
+  [2025](https://github.com/microsoft/TypeScript/tree/main/tsc/internal/bundled/libs)
+- latest ES reasonably supported by browsers or polyfills = ??
+  ~[ES2025](https://compat-table.github.io/compat-table/es2016plus/)
+
+⭆ 🆕latest convenient ES = 2026 (if changed, need search&replace in package.json, search for "es2024" and "update
+marker")
+
+3. ES module
+
+- we consider webpack outdated and are no longer taking into account its limitations
+- we consider the ecosystem advanced enough to move to full ESM
+  https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c#how-can-i-move-my-commonjs-project-to-esm
+
+⭆ latest convenient module = ES (module = 2022 in TypeScript)
 
 ### update 2026-09-03 (no change)
 

@@ -1,37 +1,111 @@
-import { describe, it, expect } from "vitest"
-
-import { assertꓽshape } from "./index.ts"
-
 /////////////////////////////////////////////////
 
 describe("@monorepo-private/type-detection -- shape", () => {
+	const REFERENCE = {
+		foo: "bar",
+		baz: 42,
+	}
+	const MATCHING__EXACT = {
+		// same props, same types
+		foo: "baz",
+		baz: -1,
+	}
+	const MATCHING__WITH_EXTRA = {
+		...MATCHING__EXACT,
+		gloups: "gnokman", // extra prop
+	}
+	const MATCHING__PARTIAL = {
+		foo: "baz", // only one prop
+	}
+	const MATCHING__PARTIAL__WITH_EXTRA = {
+		foo: "baz", // only one prop
+		gloups: "gnokman", // extra prop
+	}
+
+	const NOT_MATCHING__TYPE = {
+		foo: "baz",
+		baz: "oh no!",
+	}
+
+	describe("hasꓽshape()", () => {
+		describe("default", () => {
+			it("should work", () => {
+				// should always match
+				expect(hasꓽshape(REFERENCE, MATCHING__EXACT), "MATCHING__EXACT").toBe(true)
+
+				// extra allowed by default
+				expect(hasꓽshape(REFERENCE, MATCHING__WITH_EXTRA), "MATCHING__WITH_EXTRA").toBe(true)
+
+				// partial not allowed by default
+				expect(hasꓽshape(REFERENCE, MATCHING__PARTIAL), "MATCHING__PARTIAL").toBe(false)
+				expect(hasꓽshape(REFERENCE, MATCHING__PARTIAL__WITH_EXTRA), "MATCHING__PARTIAL__WITH_EXTRA").toBe(false)
+
+				// mismatching type
+				expect(hasꓽshape(REFERENCE, NOT_MATCHING__TYPE), "NOT_MATCHING__TYPE").toBe(false)
+			})
+		})
+
+		it("should work -- allow_extra_props = true", () => {
+			const allow_extra_props = true
+			expect(hasꓽshape(REFERENCE, MATCHING__WITH_EXTRA, { allow_extra_props }), "MATCHING__WITH_EXTRA").toBe(true)
+			expect(
+				hasꓽshape(REFERENCE, MATCHING__PARTIAL__WITH_EXTRA, {
+					allow_extra_props,
+					match_reference_props: "some",
+				}),
+				"MATCHING__PARTIAL__WITH_EXTRA",
+			).toBe(true)
+		})
+
+		it("should work -- allow_extra_props = false", () => {
+			const allow_extra_props = false
+			expect(hasꓽshape(REFERENCE, MATCHING__WITH_EXTRA, { allow_extra_props })).toBe(false)
+			expect(
+				hasꓽshape(REFERENCE, MATCHING__PARTIAL__WITH_EXTRA, {
+					allow_extra_props,
+					match_reference_props: "some",
+				}),
+			).toBe(false)
+		})
+
+		it("should work -- match_reference_props = some", () => {
+			const match_reference_props = "some"
+
+			expect(hasꓽshape(REFERENCE, MATCHING__EXACT, { match_reference_props }), "MATCHING__EXACT").toBe(true)
+
+			expect(hasꓽshape(REFERENCE, MATCHING__WITH_EXTRA, { match_reference_props }), "MATCHING__WITH_EXTRA").toBe(
+				true,
+			)
+
+			expect(hasꓽshape(REFERENCE, MATCHING__PARTIAL, { match_reference_props }), "MATCHING__PARTIAL").toBe(true)
+			expect(
+				hasꓽshape(REFERENCE, MATCHING__PARTIAL__WITH_EXTRA, { match_reference_props }),
+				"MATCHING__PARTIAL__WITH_EXTRA",
+			).toBe(true)
+
+			expect(hasꓽshape(REFERENCE, NOT_MATCHING__TYPE, { match_reference_props }), "NOT_MATCHING__TYPE").toBe(false)
+		})
+
+		it("should work -- match_reference_props = all", () => {
+			const match_reference_props = "all"
+
+			expect(hasꓽshape(REFERENCE, MATCHING__EXACT, { match_reference_props }), "MATCHING__EXACT").toBe(true)
+
+			expect(hasꓽshape(REFERENCE, MATCHING__WITH_EXTRA, { match_reference_props }), "MATCHING__WITH_EXTRA").toBe(
+				true,
+			)
+
+			expect(hasꓽshape(REFERENCE, MATCHING__PARTIAL, { match_reference_props }), "MATCHING__PARTIAL").toBe(false)
+			expect(
+				hasꓽshape(REFERENCE, MATCHING__PARTIAL__WITH_EXTRA, { match_reference_props }),
+				"MATCHING__PARTIAL__WITH_EXTRA",
+			).toBe(false)
+
+			expect(hasꓽshape(REFERENCE, NOT_MATCHING__TYPE, { match_reference_props }), "NOT_MATCHING__TYPE").toBe(false)
+		})
+	})
+
 	describe("assertꓽshape()", () => {
-		const REFERENCE = {
-			foo: "bar",
-			baz: 42,
-		}
-		const MATCHING__EXACT = {
-			// same props, same types
-			foo: "baz",
-			baz: -1,
-		}
-		const MATCHING__WITH_EXTRA = {
-			...MATCHING__EXACT,
-			gloups: "gnokman", // extra prop
-		}
-		const MATCHING__PARTIAL = {
-			foo: "baz", // only one prop
-		}
-		const MATCHING__PARTIAL__WITH_EXTRA = {
-			foo: "baz", // only one prop
-			gloups: "gnokman", // extra prop
-		}
-
-		const NOT_MATCHING__TYPE = {
-			foo: "baz",
-			baz: "oh no!",
-		}
-
 		describe("default", () => {
 			it("should work", () => {
 				// should always match
@@ -145,3 +219,9 @@ describe("@monorepo-private/type-detection -- shape", () => {
 		})
 	})
 })
+
+/////////////////////////////////////////////////
+
+import { describe, it, expect } from "vitest"
+
+import { assertꓽshape, hasꓽshape } from "./index.ts"

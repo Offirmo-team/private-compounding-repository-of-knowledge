@@ -157,6 +157,7 @@ big ideas -- democratized finance
 big ideas -- internet-native money
 big ideas -- self-sovereignty
 big ideas / high minded ideals
+big tech censoring = https://paulfwalsh.substack.com/p/meta-censored-the-no-kings-instagram
 BIP -- statuses -- process = “Workflow > Progression through BIP Statuses > Deployed > Process BIPs”  “A Process BIP may change status from Complete to Deployed when... https://groups.google.com/g/bitcoindev/c/j4_toD-ofEc/m/TgSc-CRvAwAJ
 BIP https://www.ledger.com/academy/what-is-a-bitcoin-improvement-proposal-bip
 BIP-141 Segregated Witness "SegWit" https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki

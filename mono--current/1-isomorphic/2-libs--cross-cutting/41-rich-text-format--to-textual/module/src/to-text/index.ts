@@ -1,25 +1,44 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { NodeⳇLike } from "@monorepo-private/rich-text-format"
-import { getꓽdisplay_type, getꓽtype } from "@monorepo-private/rich-text-format"
-import type { Immutable } from "@monorepo-private/ts--types"
+/////////////////////////////////////////////////
 
-import { isꓽlink } from "../common.ts"
-import { type BaseRenderingOptions, type WalkerCallbacks, walk, DEFAULT_RENDERING_OPTIONSⵧWalk } from "../walk.ts"
+export function renderⵧto_text(
+	$doc: Immutable<NodeⳇLike>,
+	options: Partial<RenderingOptionsⵧToText> = {},
+	callback_overrides: Partial<WalkerCallbacks<State, RenderingOptionsⵧToText>> = {},
+): string {
+	const full_options: RenderingOptionsⵧToText = {
+		...DEFAULT_RENDERING_OPTIONSⵧToText,
+		...options,
+	}
+
+	const xstate = walk<State, RenderingOptionsⵧToText>(
+		$doc,
+		{
+			...callbacksⵧto_text,
+			...callback_overrides,
+		},
+		full_options,
+	)
+
+	return "\n".repeat(xstate.marginⵧtop‿lines) + xstate.str + "\n".repeat(xstate.marginⵧbottom‿lines)
+	//	return xstate.str
+}
 
 /////////////////////////////////////////////////
 
-interface RenderingOptionsⵧToText extends BaseRenderingOptions {
+export interface RenderingOptionsⵧToText extends BaseRenderingOptions {
 	use_hints?: boolean // use known hints to improve rendering? or ignore them and render the most basic style?
 	style:
 		| "basic" // text only
 		//| 'advanced' // more intelligent: detect KV lists; allow bullet-less lists XXX TODO review should it be based on hints instead? also KV = nothing
 		| "markdown"
 }
-const DEFAULT_RENDERING_OPTIONSⵧToText = Object.freeze<RenderingOptionsⵧToText>({
+export const DEFAULT_RENDERING_OPTIONSⵧToText = Object.freeze<RenderingOptionsⵧToText>({
 	...DEFAULT_RENDERING_OPTIONSⵧWalk,
 	use_hints: true,
 	style: "markdown",
 })
+
+export type RenderToTextState = State
 
 type State = {
 	// accumulated content
@@ -251,7 +270,7 @@ const onꓽconcatenateⵧsub_node: WalkerCallbacks<State, RenderingOptionsⵧToT
 	return xstate
 }
 
-const callbacksⵧto_text: Partial<WalkerCallbacks<State, RenderingOptionsⵧToText>> = {
+export const callbacksⵧto_text: Partial<WalkerCallbacks<State, RenderingOptionsⵧToText>> = {
 	createꓽstate,
 
 	onꓽnodeⵧexit,
@@ -260,37 +279,12 @@ const callbacksⵧto_text: Partial<WalkerCallbacks<State, RenderingOptionsⵧToT
 	onꓽconcatenateⵧsub_node,
 }
 
-function renderⵧto_text(
-	$doc: Immutable<NodeⳇLike>,
-	options: Partial<RenderingOptionsⵧToText> = {},
-	callback_overrides: Partial<WalkerCallbacks<State, RenderingOptionsⵧToText>> = {},
-): string {
-	const full_options: RenderingOptionsⵧToText = {
-		...DEFAULT_RENDERING_OPTIONSⵧToText,
-		...options,
-	}
-
-	const xstate = walk<State, RenderingOptionsⵧToText>(
-		$doc,
-		{
-			...callbacksⵧto_text,
-			...callback_overrides,
-		},
-		full_options,
-	)
-
-	return "\n".repeat(xstate.marginⵧtop‿lines) + xstate.str + "\n".repeat(xstate.marginⵧbottom‿lines)
-	//	return xstate.str
-}
-
 /////////////////////////////////////////////////
 
-type RenderToTextState = State
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { NodeⳇLike } from "@monorepo-private/rich-text-format--core"
+import { getꓽdisplay_type, getꓽtype } from "@monorepo-private/rich-text-format--core"
+import type { Immutable } from "@monorepo-private/ts--types"
 
-export {
-	type RenderingOptionsⵧToText,
-	type RenderToTextState,
-	DEFAULT_RENDERING_OPTIONSⵧToText,
-	callbacksⵧto_text,
-	renderⵧto_text,
-}
+import { isꓽlink } from "../common.ts"
+import { type BaseRenderingOptions, type WalkerCallbacks, walk, DEFAULT_RENDERING_OPTIONSⵧWalk } from "../walk.ts"

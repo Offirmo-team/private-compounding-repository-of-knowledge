@@ -1,6 +1,6 @@
 import type { Immutable, Story } from "@monorepo-private/ts--types"
 
-import type { OHAHyperMedia, OHAHyperLink, OHAHyperAction } from "../01-types/types.ts"
+import type { OHAⳇHyperMedia, OHAⳇHyperLink, OHAⳇHyperAction } from "../01-types/types.ts"
 
 /////////////////////////////////////////////////
 
@@ -10,16 +10,16 @@ interface OHAServer {
 
 	// the base one, return a HATEOAS hypermedia representation including hyperlinks/actions
 	// should always respond to '/' as a starting point of the rsrc discovery
-	ↆget(url?: OHAHyperLink["href"]): Promise<OHAHyperMedia> // the returned resource representation should contain everything needed to move forward
+	ↆget(url?: OHAⳇHyperLink["href"]): Promise<OHAⳇHyperMedia> // the returned resource representation should contain everything needed to move forward
 
 	// dispatch an action
 	dispatch(
-		action: Immutable<OHAHyperAction>,
-		url?: OHAHyperLink["href"], // the action target rsrc, defaulting to '/'
+		action: Immutable<OHAⳇHyperAction>,
+		url?: OHAⳇHyperLink["href"], // the action target rsrc, defaulting to '/'
 	): Promise<
 		// Must be a "can-be-lost" feedback, for ex. "ticket created" or "action acknowledged"
 		// REMINDER that the action itself has a "feedback" that will be played while waiting for the result
-		| Story<OHAHyperMedia>
+		| Story<OHAⳇHyperMedia>
 		// A response may not be needed, for ex. sending a mail or simple button click (in this case, the action's feedback "tracking" should have said so)
 		| undefined
 	>

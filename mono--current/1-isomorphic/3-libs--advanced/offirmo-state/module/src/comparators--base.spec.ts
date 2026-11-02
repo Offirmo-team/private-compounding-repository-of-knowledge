@@ -1,10 +1,10 @@
-import { expect } from "chai"
+import { describe, it, expect } from "vitest"
 
 import { getꓽjson_difference } from "./comparators--base.ts"
 import { LIB } from "./consts.ts"
 
-describe(`${LIB} - comparators`, function () {
-	describe("getꓽjson_difference()", function () {
+describe(`${LIB} - comparators`, () => {
+	describe("getꓽjson_difference()", () => {
 		it("should work", () => {
 			const nodiff = getꓽjson_difference(
 				{
@@ -14,7 +14,7 @@ describe(`${LIB} - comparators`, function () {
 					foo: 33,
 				},
 			)
-			expect(nodiff, "no diff").to.deep.equal(undefined)
+			expect(nodiff, "no diff").toBeUndefined()
 
 			const diff = getꓽjson_difference(
 				{
@@ -27,7 +27,7 @@ describe(`${LIB} - comparators`, function () {
 				},
 			)
 			//console.log(diff)
-			expect(diff).to.deep.equal({
+			expect(diff).toStrictEqual({
 				foo: [33, 34],
 				bar: [42, 0, 0],
 				baz: [42],

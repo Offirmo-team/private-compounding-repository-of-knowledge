@@ -145,7 +145,7 @@ export function processꓽresolved_pending_async(state: Immutable<State>): Immut
 			}
 
 			default:
-				assertⵧnever_reached()
+				assertⵧnever_reached({ ↆinspectable }, { discriminant: "state" })
 		}
 
 		modified = true

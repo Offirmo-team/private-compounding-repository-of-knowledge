@@ -152,7 +152,5 @@ describe(`${LIB} -- plugins -- Logical Stack`, () => {
 
 import { afterEach, beforeAll, describe, expect, it } from "vitest"
 
-import { error_to_string, displayError } from "@monorepo-private/print-error-to-terminal"
-
 import { LIB } from "../../../consts.ts"
 import { type SoftExecutionContext, getRootSXC, _TEST_ONLY__reset_root_SXC } from "../../../index.ts"

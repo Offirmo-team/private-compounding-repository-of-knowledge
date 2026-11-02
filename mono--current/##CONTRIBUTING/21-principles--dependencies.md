@@ -6,7 +6,6 @@ Principles:
 - from "safe" authors if possible, ex. sindre
 - if commonly used, wrap foreign modules into a thin, semantic layer so that we can swap them
 - run the candidates through https://bundlephobia.com/ and https://npmx.dev/
--
 
 Intentionally outdated dependencies:
 

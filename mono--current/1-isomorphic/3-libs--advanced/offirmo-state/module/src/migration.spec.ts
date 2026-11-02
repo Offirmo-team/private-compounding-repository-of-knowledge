@@ -1,4 +1,4 @@
-import { expect } from "chai"
+import { describe, it, expect } from "vitest"
 
 import { type SoftExecutionContext, getRootSXC } from "@monorepo-private/soft-execution-context"
 import type { Immutable } from "@monorepo-private/ts--types"
@@ -15,13 +15,13 @@ import {
 import { LIB } from "./consts.ts"
 import { type LastMigrationStep, type MigrationStep, migrate_toꓽlatestⵧgeneric } from "./migration.ts"
 
-describe(`${LIB} - migration`, function () {
+describe(`${LIB} - migration`, () => {
 	const TEST_SXC = getRootSXC()
 	const LIB = "@monorepo-private/offirmo-state--UNIT-TEST"
 	TEST_SXC.setLogicalStack({ module: LIB })
 
-	describe("migrate_toꓽlatestⵧgeneric()", function () {
-		describe("on base state", function () {
+	describe("migrate_toꓽlatestⵧgeneric()", () => {
+		describe("on base state", () => {
 			const SCHEMA_VERSION = SCHEMA_VERSION_A
 
 			type State2 = StateA_U_v2
@@ -89,17 +89,17 @@ describe(`${LIB} - migration`, function () {
 			}
 
 			it("should work in nominal case 0 -> 2", () => {
-				expect(migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v0, HINTS)).to.deep.equal(DEMO_STATE_v2)
+				expect(migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v0, HINTS)).toStrictEqual(DEMO_STATE_v2)
 			})
 
 			it("should work in nominal case 1 -> 2", () => {
-				expect(migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v1, HINTS)).to.deep.equal(DEMO_STATE_v2)
+				expect(migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v1, HINTS)).toStrictEqual(DEMO_STATE_v2)
 			})
 
 			it("should work in nominal case 2 -> 2", () => {
-				//expect(migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v2, HINTS)).to.deep.equal(DEMO_STATE_v2)
+				//expect(migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v2, HINTS)).toStrictEqual(DEMO_STATE_v2)
 				// identity if already good version
-				expect(migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v2, HINTS)).to.equal(DEMO_STATE_v2)
+				expect(migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v2, HINTS)).toBe(DEMO_STATE_v2)
 			})
 
 			it("should throw on end of pipeline (too old version)", () => {
@@ -124,12 +124,12 @@ describe(`${LIB} - migration`, function () {
 					})
 				}
 
-				expect(() => migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v0)).to.throw("migration")
+				expect(() => migrate_toꓽlatest(TEST_SXC, DEMO_STATE_v0)).toThrow("migration")
 			})
 		})
 
-		describe("on Bundled UState + TState", function () {})
+		describe.todo("on Bundled UState + TState")
 
-		describe("on RootState with subStates", function () {})
+		describe.todo("on RootState with subStates")
 	})
 })

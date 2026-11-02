@@ -21,15 +21,15 @@ after`,
 Example of NodeType.fragmentⵧblock
 
 `,
-			$EXAMPLE__BLOCK__OLⵧCONTENT: `
+			$EXAMPLE__BLOCK__OLⵧDIRECT_CONTENT: `
 1. ol item #1
 2. ol item #2
 3. ol item #3
 `,
 			$EXAMPLE__BLOCK__OLⵧREFS: `
-1. ol item #1
-2. ol item #2
-3. ol item #3
+1. ol ref 001
+2. ol ref 002
+3. ol ref 003
 `,
 			$EXAMPLE__BLOCK__OLⵧWITH_HEADING: `
 # 3 sector model
@@ -38,15 +38,15 @@ Example of NodeType.fragmentⵧblock
 2. secondary = manufacturing
 3. tertiary = services
 `,
-			$EXAMPLE__BLOCK__ULⵧCONTENT: `
+			$EXAMPLE__BLOCK__ULⵧDIRECT_CONTENT: `
 - ul item #1
 - ul item #2
 - ul item #3
 `,
 			$EXAMPLE__BLOCK__ULⵧREFS: `
-- ul item #1
-- ul item #2
-- ul item #3
+- ul ref 001
+- ul ref 002
+- ul ref 003
 `,
 			$EXAMPLE__BLOCK__HR: `
 
@@ -57,8 +57,9 @@ Example of NodeType.fragmentⵧblock
 			$EXAMPLE__REFSⵧINSIDE: `Hello, **world**!`,
 			$EXAMPLE__REFSⵧOUTSIDE: `Hello, **world**!`,
 
+			$EXAMPLE_COMPLETE_NODEⵧINLINE: "Hello, World!",
 			// margin above is normal, trim() can be done caller side if needed
-			$EXAMPLE_COMPLETE_NODE: `
+			$EXAMPLE_COMPLETE_NODEⵧBLOCK: `
 
 
 
@@ -225,8 +226,8 @@ ${key}: \`${str}\`,
 
 import { beforeEach, describe, expect, it } from "vitest"
 
-import * as RichText from "@monorepo-private/rich-text-format"
-import * as RichTextExamples from "@monorepo-private/rich-text-format/examples"
+import * as RichText from "@monorepo-private/rich-text-format--core"
+import * as RichTextExamples from "@monorepo-private/rich-text-format--core/examples"
 
 import { LIB } from "../consts.ts"
 

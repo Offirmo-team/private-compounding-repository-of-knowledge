@@ -1,4 +1,4 @@
-import { expect } from "chai"
+import { describe, it, expect } from "vitest"
 
 import {
 	DEMO_USTATE,
@@ -10,20 +10,20 @@ import {
 import { fluid_select } from "./comparators--fluid.ts"
 import { LIB } from "./consts.ts"
 
-describe(`${LIB} - FLUID selectors`, function () {
-	describe("hasꓽhigher_investment_than()", function () {
-		context("on semantic equality", function () {
+describe(`${LIB} - FLUID selectors`, () => {
+	describe("hasꓽhigher_investment_than()", () => {
+		describe("on semantic equality", () => {
 			it("should select the selected", () => {
 				const existing = DEMO_ROOT_STATE
 				const candidate = {
 					...DEMO_ROOT_STATE,
 				}
-				expect(fluid_select(candidate).hasꓽhigher_investment_than(existing)).to.be.true
-				expect(fluid_select(existing).hasꓽhigher_investment_than(candidate)).to.be.true
+				expect(fluid_select(candidate).hasꓽhigher_investment_than(existing)).toBe(true)
+				expect(fluid_select(existing).hasꓽhigher_investment_than(candidate)).toBe(true)
 			})
 		})
 
-		context("on nominal case of increasing revisions", function () {
+		describe("on nominal case of increasing revisions", () => {
 			it("should select the highest revision", () => {
 				const existing = DEMO_ROOT_STATE
 				const candidate = {
@@ -33,24 +33,24 @@ describe(`${LIB} - FLUID selectors`, function () {
 						revision: DEMO_ROOT_STATE.u_state.revision + 1,
 					},
 				}
-				expect(fluid_select(candidate).hasꓽhigher_investment_than(existing)).to.be.true
-				expect(fluid_select(existing).hasꓽhigher_investment_than(candidate)).to.be.false
+				expect(fluid_select(candidate).hasꓽhigher_investment_than(existing)).toBe(true)
+				expect(fluid_select(existing).hasꓽhigher_investment_than(candidate)).toBe(false)
 			})
 		})
 
-		context("on fork case", function () {
+		describe("on fork case", () => {
 			it("should select the version with most recent involvement", () => {
 				const existing = DEMO_ROOT_STATE
 				const candidate = {
 					...DEMO_ROOT_STATE,
 					last_user_investment_tms: DEMO_ROOT_STATE.last_user_investment_tms + 10,
 				}
-				expect(fluid_select(candidate).hasꓽhigher_investment_than(existing)).to.be.true
-				expect(fluid_select(existing).hasꓽhigher_investment_than(candidate)).to.be.false
+				expect(fluid_select(candidate).hasꓽhigher_investment_than(existing)).toBe(true)
+				expect(fluid_select(existing).hasꓽhigher_investment_than(candidate)).toBe(false)
 			})
 		})
 
-		context("on tricky case of reverse version vs. revision", function () {
+		describe("on tricky case of reverse version vs. revision", () => {
 			it("should select the lower schema version with higher involvement", () => {
 				const existing = DEMO_ROOT_STATE
 				const candidate = {
@@ -66,11 +66,11 @@ describe(`${LIB} - FLUID selectors`, function () {
 						//revision: DEMO_ROOT_STATE.t_state.revision + 1,
 					},
 				}
-				expect(fluid_select(candidate).hasꓽhigher_investment_than(existing)).to.be.true
-				expect(fluid_select(existing).hasꓽhigher_investment_than(candidate)).to.be.false
+				expect(fluid_select(candidate).hasꓽhigher_investment_than(existing)).toBe(true)
+				expect(fluid_select(existing).hasꓽhigher_investment_than(candidate)).toBe(false)
 			})
 		})
 	})
 
-	describe("hasꓽvaluable_difference_with", function () {})
+	describe.todo("hasꓽvaluable_difference_with")
 })

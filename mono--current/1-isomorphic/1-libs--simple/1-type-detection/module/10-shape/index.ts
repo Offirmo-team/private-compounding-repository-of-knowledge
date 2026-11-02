@@ -49,8 +49,7 @@ type Options = {
 	test_depth: 0 // which depth to go. !0 not supported yet
 }
 
-// TODO swap has -> assert?
-export function assertꓽshape<T extends object>(
+function ǃꓽshape<T extends object>(
 	reference: T,
 	under_test: object,
 	{
@@ -59,11 +58,12 @@ export function assertꓽshape<T extends object>(
 		type_match = "simple",
 		test_depth = 0,
 	}: Partial<Options> = {},
-): asserts under_test is T {
+) {
 	const ǃ = assert_from({ assertꓽshape })
 
-	ǃ.forⵧparam({ reference }).require(isꓽobjectⵧdefined_non_array(reference), `should be a k/v object!`)
-	ǃ.forⵧparam({ under_test }).require(isꓽobjectⵧdefined_non_array(under_test), `should be a k/v object!`)
+	ǃ.forⵧparam({ reference }).check(isꓽobjectⵧdefined_non_array(reference), `should be a k/v object`)
+	ǃ.forⵧparam({ under_test }).check(isꓽobjectⵧdefined_non_array(under_test), `should be a k/v object`)
+	if (ǃ.hasꓽissues()) return ǃ
 
 	const keysⵧref = new Set<string>(Object.keys(reference))
 	const keysⵧunder_test = new Set<string>(Object.keys(under_test))
@@ -72,23 +72,23 @@ export function assertꓽshape<T extends object>(
 
 	// even if technically possible with some + allow extra,
 	// this is too suspicious
-	ǃ.require(!keysⵧunder_test.isDisjointFrom(keysⵧref), `ref & ut must have some common props`)
+	ǃ.check(!keysⵧunder_test.isDisjointFrom(keysⵧref), `ref & ut must have some common props`)
 
 	switch (match_reference_props) {
 		case "all":
-			ǃ.require(keysⵧunder_test.isSupersetOf(keysⵧref), `missing props from reference`)
+			ǃ.check(keysⵧunder_test.isSupersetOf(keysⵧref), `missing props from reference`)
 			break
 		case "some":
 			// already tested above with isDisjointFrom
 			//if (keysⵧmatching.size === 0) return false
 			break
 		default:
-			throw new Error(`hasꓽshape: unsupported match_reference_props value!`)
+			assertⵧnever_reached({ match_reference_props })
 	}
 
 	if (!allow_extra_props) {
 		const extra = keysⵧunder_test.difference(keysⵧref)
-		ǃ.require(extra.size === 0, `unexpected extraneous props, ex. "${Array.from(extra.keys())[0]!}"!`)
+		ǃ.check(extra.size === 0, `unexpected extraneous props, e.g. "${Array.from(extra.keys())[0]!}"!`)
 	}
 
 	switch (type_match) {
@@ -98,17 +98,28 @@ export function assertꓽshape<T extends object>(
 			break
 		case "simple": {
 			for (const key of keysⵧmatching) {
-				ǃ.forⵧvalue({ key }).ensure(
+				ǃ.forⵧvalue({ key }).check(
 					getꓽtypeofⵧimproved(reference[key]) === getꓽtypeofⵧimproved((under_test as any)[key]),
 					`types for prop "${String(key)}" should match: "${getꓽtypeofⵧimproved(reference[key])}" vs. "${getꓽtypeofⵧimproved((under_test as any)[key])}"`,
 				)
 			}
-			ǃ.assert(test_depth === 0, `unsupported test_depth param`)
+			ǃ.check(test_depth === 0, `unsupported test_depth param`)
 			break
 		}
 		default:
-			throw new Error(`hasꓽshape: unsupported type_match value!`)
+			assertⵧnever_reached({ type_match })
 	}
+
+	return ǃ
+}
+
+export function assertꓽshape<T extends object>(
+	reference: T,
+	under_test: object,
+	options?: Partial<Options>,
+): asserts under_test is T {
+	const ǃ = ǃꓽshape(reference, under_test, options)
+	ǃ.assertꓽno_issues()
 }
 
 export function hasꓽshape<T extends object>(
@@ -116,18 +127,13 @@ export function hasꓽshape<T extends object>(
 	under_test: object,
 	options: Partial<Options> = {},
 ): under_test is T {
-	try {
-		assertꓽshape(reference, under_test, options)
-		return true
-	} catch {
-		// TODO one day filter arg error vs runtime error
-		return false
-	}
+	const ǃ = ǃꓽshape(reference, under_test, options)
+	return ǃ.hasꓽno_issues()
 }
 
 /////////////////////////////////////////////////
 
-import { assert_from } from "@monorepo-private/assert"
+import { assert_from, assertⵧnever_reached } from "@monorepo-private/assert"
 
 import { isꓽobjectⵧdefined_non_array } from "../01-primitives/index.ts"
 import { isꓽThenable } from "../03-thenable/index.ts"

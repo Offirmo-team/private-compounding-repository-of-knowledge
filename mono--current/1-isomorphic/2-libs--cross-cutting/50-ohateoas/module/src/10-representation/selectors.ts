@@ -13,24 +13,24 @@ import { getꓽuriⵧnormalized‿str } from "@monorepo-private/ts--types--hyper
 
 import { promote_toꓽOHAHyperLink } from "../01-types/selectors.ts"
 import { isꓽOHAHyperLink, isꓽOHAHyperActionBlueprint } from "../01-types/type-guards.ts"
-import { OHALinkRelation } from "../01-types/types.ts"
+import { OHAⳇLinkRelation } from "../01-types/types.ts"
 import type {
-	OHARichTextHints,
-	OHAHyperMedia,
-	OHAHyperActionBlueprint,
-	OHAHyperLink,
-	OHAPendingEngagement,
+	OHAⳇRichTextHints,
+	OHAⳇHyperMedia,
+	OHAⳇHyperActionBlueprint,
+	OHAⳇHyperLink,
+	OHAⳇPendingEngagement,
 } from "../01-types/types.ts"
 
 /////////////////////////////////////////////////
 
-function getꓽcta(hyper: OHAHyperLink | OHAHyperActionBlueprint | string): RichText.NodeⳇLike {
+function getꓽcta(hyper: OHAⳇHyperLink | OHAⳇHyperActionBlueprint | string): RichText.NodeⳇLike {
 	let is_code = false
 
 	let candidate: string = (() => {
 		if (typeof hyper === "string") {
 			switch (hyper) {
-				case OHALinkRelation.self:
+				case OHAⳇLinkRelation.self:
 					return "Reload"
 				default:
 					return hyper
@@ -44,7 +44,7 @@ function getꓽcta(hyper: OHAHyperLink | OHAHyperActionBlueprint | string): Rich
 			const { rel = [], href } = hyper
 			const candidates =
 				// trying to find an expressive relation
-				rel.filter((r) => r !== OHALinkRelation.continueᝍto && r !== OHALinkRelation.self)
+				rel.filter((r) => r !== OHAⳇLinkRelation.continueᝍto && r !== OHAⳇLinkRelation.self)
 			if (candidates.length === 0) is_code = true
 			return candidates[0] ?? getꓽuriⵧnormalized‿str(href) // fallback on the URL itself
 		}
@@ -98,26 +98,26 @@ function getꓽcta(hyper: OHAHyperLink | OHAHyperActionBlueprint | string): Rich
 	return candidate
 }
 
-function getꓽlink‿str(link: Immutable<OHAHyperLink>): string {
+function getꓽlink‿str(link: Immutable<OHAⳇHyperLink>): string {
 	const { href, rel = [], target = "_self", hints = {} } = link
 	return `"${href}" [${rel.join(", ")}]  🎯${target}`
 }
 
-function getꓽhints(repr: Immutable<OHAHyperMedia>): Immutable<OHARichTextHints> {
+function getꓽhints(repr: Immutable<OHAⳇHyperMedia>): Immutable<OHAⳇRichTextHints> {
 	const { $hints = {} } = repr as any
 	return $hints
 }
 
-function getꓽengagements(repr: Immutable<OHAHyperMedia>): Immutable<Array<OHAPendingEngagement>> {
+function getꓽengagements(repr: Immutable<OHAⳇHyperMedia>): Immutable<Array<OHAⳇPendingEngagement>> {
 	const { engagements = [] } = getꓽhints(repr)
 
 	return engagements
 }
 
 function getꓽlinks(
-	repr: Immutable<OHAHyperMedia>,
+	repr: Immutable<OHAⳇHyperMedia>,
 	{ filter_outꓽtechnical = false }: { filter_outꓽtechnical?: boolean } = {},
-): Record<string, Immutable<OHAHyperLink>> {
+): Record<string, Immutable<OHAⳇHyperLink>> {
 	const { links = {} } = getꓽhints(repr)
 
 	return Object.fromEntries(
@@ -127,18 +127,18 @@ function getꓽlinks(
 				if (filter_outꓽtechnical) {
 					return (
 						true &&
-						k !== OHALinkRelation.self && // "reload"
-						k !== OHALinkRelation.home
+						k !== OHAⳇLinkRelation.self && // "reload"
+						k !== OHAⳇLinkRelation.home
 					) // "home"
 				}
 
 				return true
 			})
-			.map(([k, l]) => [k, promote_toꓽOHAHyperLink(l, { rel: [k as OHALinkRelation] })]),
+			.map(([k, l]) => [k, promote_toꓽOHAHyperLink(l, { rel: [k as OHAⳇLinkRelation] })]),
 	)
 }
 
-function getꓽaction_blueprints(repr: Immutable<OHAHyperMedia>): Immutable<Record<string, OHAHyperActionBlueprint>> {
+function getꓽaction_blueprints(repr: Immutable<OHAⳇHyperMedia>): Immutable<Record<string, OHAⳇHyperActionBlueprint>> {
 	const { actions = {} } = getꓽhints(repr)
 	return actions
 }

@@ -1,15 +1,3 @@
-import {
-	type Url‿str,
-	type Thing,
-	type WithOnlinePresence,
-	type ThingWithOnlinePresence,
-	type Asset,
-	registerꓽasset_usageⵧload,
-	_getꓽurl_tobind,
-	_getꓽpath_tobind,
-} from "@monorepo-private/credits"
-import CREATOR from "@monorepo-private/credits/authors/neon.dimensionss"
-
 /////////////////////////////////////////////////
 
 // https://parceljs.org/recipes/image/#image-formats
@@ -18,10 +6,8 @@ const url: Url‿str = new URL(
 	import.meta.url,
 ).href
 
-/////////////////////////////////////////////////
-
 const THING: Thing = {
-	description: "An AI generated cityscape.",
+	caption: "An AI generated cityscape.",
 	creator: CREATOR,
 	since‿y: 2024,
 }
@@ -39,16 +25,30 @@ const ASSET: Asset = {
 	alt: "A bright futuristic cityscape with cliffs and greenery.",
 
 	ai_involvement: {
-		generators: ["unknown"],
 		level: "major",
 	},
 }
+
+/////////////////////////////////////////////////
+
+export const getꓽurl = _getꓽurl_tobind.bind(ASSET)
+
+export const getꓽpath = _getꓽpath_tobind.bind(ASSET)
+
+/////////////////////////////////////////////////
 
 registerꓽasset_usageⵧload(ASSET)
 
 /////////////////////////////////////////////////
 
-const getꓽurl = _getꓽurl_tobind.bind(ASSET)
-const getꓽpath = _getꓽpath_tobind.bind(ASSET)
-
-export { getꓽurl, getꓽpath }
+import {
+	type Url‿str,
+	type Thing,
+	type WithOnlinePresence,
+	type ThingWithOnlinePresence,
+	type Asset,
+	registerꓽasset_usageⵧload,
+	_getꓽurl_tobind,
+	_getꓽpath_tobind,
+} from "@monorepo-private/credits"
+import CREATOR from "@monorepo-private/credits/authors/neon.dimensionss"

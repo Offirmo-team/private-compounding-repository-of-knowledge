@@ -1,0 +1,5 @@
+{
+	// XXX this is a special package not having the expected format
+	_dontꓽpresent: true,
+	name: "parcel-config", // folder name differs, this is the name used by dependents (cf. plugin--parcel), this is needed by infinite-monorepo logic
+}

@@ -296,6 +296,7 @@ formats -- image -- AVIF = 🟢 overall excellent, better than webP https://cani
 formats -- image -- JPEG XL = limited 2026/10 ++progressive but inferior to AVIF? https://jakearchibald.com/2026/jpeg-xl-vs-avif/
 formats -- image -- jpg = (outdated 🏚️) https://guillaumetech.github.io/posts/jpg-scaling-chrome/
 formats -- image -- webp = (outdated 🏚️) https://caniuse.com/webp
+formats -- H264 = https://sidbala.com/h-264-is-magic/ https://en.wikipedia.org/wiki/Advanced_Video_Coding
 frameworks -- "Remember that time when 3 out of 4 websites look like Bootstrap?"
 frontend cross-concerns = hosting, cache configuration, security headers, DDoS protection, progressive rollout...
 frontend routing

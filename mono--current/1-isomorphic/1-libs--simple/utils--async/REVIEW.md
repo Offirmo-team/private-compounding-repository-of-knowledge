@@ -1,17 +1,3 @@
-# Review: @monorepo-private/utils--async
-
-Isomorphic async/scheduling utilities: ponyfills for `nextTick`/`setImmediate`/`requestIdleCallback`, semantic
-scheduling helpers (`asap_but_not_synchronous`, `schedule_when_idle_but_not_too_far`, `dezalgo`, …), small `Promise`
-helpers (`forArray(...).executeSequentially`, `deriveꓽInspectablePromise`), and simple `awaitable` timers
-(`next_microtask`, `end_of_current_event_loop`, `elapsed_time_ms`, `next_idle`, `all_planned_idle_executed`).
-
-Note: this package contains a `module/~~gen/spikes/browser-event-loop.html` folder holding unsorted/legacy
-spike/experiment code (per instructions, not reviewed here) — it's a plain HTML/JS scratch file, not part of the
-published module surface (excluded from `module/**/*.ts` glob and TS project), so it has no runtime impact, but see
-G2-P14-05 below regarding whether it should ship at all.
-
-## Findings
-
 ### G2-P14-01 (Minor) — Existing tests are useful but inherently flaky, timing-based, and mocha/chai (pre-existing, not a new-test violation)
 
 All 4 test files (`contract.tests.ts`, `ponyfills.tests.ts`, `promises.tests.ts`, `semantic.tests.ts`) rely on
@@ -48,17 +34,3 @@ function's runtime return value is a dropped Promise, not `void`. TypeScript all
 `Promise<void>` is assignable where `void` is expected), but it means any caller relying on `dezalgo(fn)()` returning a
 promise to await completion will silently get `undefined` instead — a subtle "fire and forget" trap for something
 explicitly meant to control async timing.
-
-### G2-P14-05 (Nit) — Spike HTML file bundled in the package
-
-`module/~~gen/spikes/browser-event-loop.html` is a manual scratch/demo page (open in browser, check console). It's
-correctly excluded from TS compilation via the `~~` prefix, but if `~~gen` isn't excluded from the npm-published files
-(not verified here, no explicit `files` field in `package.json`), this could ship inside the npm tarball. Low priority
-since the package is `"private": true`.
-
-## Summary
-
-No critical bugs. The library is small, well-commented, functional-style (no OOP), and its riskiest area is the
-node-only ponyfill for `requestIdleCallback`/`didTimeout` semantics not lining up with the "wait for idle" helper in
-`awaitable.ts` (G2-P14-02/03) — worth a dedicated test if `all_planned_idle_executed()` is actually used anywhere in
-Node contexts. Existing mocha/chai tests are fine per project policy; any new tests here should use vitest.

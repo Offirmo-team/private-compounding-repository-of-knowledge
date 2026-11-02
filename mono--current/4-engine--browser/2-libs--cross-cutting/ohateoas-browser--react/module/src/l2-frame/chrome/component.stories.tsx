@@ -1,4 +1,4 @@
-import type { OHAHyper, OHALinkRelation, OHALinkTarget } from "@monorepo-private/ohateoas"
+import type { OHAⳇHyper, OHAⳇLinkRelation, OHAⳇLinkTarget } from "@monorepo-private/ohateoas"
 import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"
 import type { Uri‿x } from "@monorepo-private/ts--types--hypermedia"
 

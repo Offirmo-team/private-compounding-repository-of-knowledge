@@ -10,7 +10,7 @@ noted):
 
 - `module/##demo/` — contains a single `index.ts` which is just a `// TODO demo printed in the terminal` stub (trivial
   enough to mention, see finding below)
-- `module/src/~~demo/browser/` and `module/src/~~demo/node/` — alternate demo entry points
+- `module/~~sandbox/browser` and `module/~~sandbox/node` — alternate demo entry points
 
 ## Findings
 
@@ -64,7 +64,7 @@ it's needed.
 
 The `demo` script runs `module/##demo/index.ts`, whose entire content is `// TODO demo printed in the terminal` —
 running `npm run demo` currently does nothing. The actually-working demo logic (using `terminal-image` and the
-`__example/scifi-city-solar-01` asset) lives instead in the excluded `module/src/~~demo/node/index.ts`, which nothing in
+`__example/scifi-city-solar-01` asset) lives instead in the excluded `module/~~sandbox/node`, which nothing in
 `package.json` references.
 
 ### G3-P10-06 — Severity: Minor/Legal — Example asset shipped with an explicitly unresolved license

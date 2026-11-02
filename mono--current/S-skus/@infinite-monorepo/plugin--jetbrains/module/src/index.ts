@@ -12,12 +12,26 @@ export const manifestꓽᐧideaⳇrequired_plugins: StructuredFsⳇFileManifest 
 	doc: ["https://www.jetbrains.com/help/idea/managing-plugins.html#required-plugins"],
 }
 
+const webstormⳇtestsⵧunit__path‿ar: PackagePathⳇRelative = `${PATHVARⵧROOTⵧPACKAGE}/webstorm--tests--unit.run.xml`
+export const manifestꓽwebstormⳇtestsⵧunit: StructuredFsⳇFileManifest = {
+	path‿ar: webstormⳇtestsⵧunit__path‿ar,
+	format: "text", // .xml is not inferrable
+	doc: [
+		"https://www.jetbrains.com/help/webstorm/vitest.html",
+		"https://www.jetbrains.com/help/webstorm/run-debug-configuration.html#share-configurations",
+	],
+}
+
+// keep in sync with the "test--vitest" script from @infinite-monorepo/plugin--pm--package-json
+const VITEST_OPTIONS = `--dir module --exclude **/~~*/**` // no shell = no quotes needed
+
 /////////////////////////////////////////////////
 
 export const PLUGIN: Plugin = {
 	onꓽload(state: Immutable<State>): Immutable<State> {
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧideaⳇᐧgitignore)
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧideaⳇrequired_plugins)
+		state = StateLib.declareꓽfile_manifest(state, manifestꓽwebstormⳇtestsⵧunit)
 
 		return state
 	},

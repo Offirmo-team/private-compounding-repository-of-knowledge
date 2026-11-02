@@ -2,15 +2,15 @@ import * as RichText from "@monorepo-private/rich-text-format"
 import type { SemVer } from "@monorepo-private/ts--types"
 import { normalizeꓽuri‿str, getꓽscheme_specific_part } from "@monorepo-private/ts--types--hypermedia"
 
-import { OHALinkRelation } from "../../01-types/types.ts"
+import { OHAⳇLinkRelation } from "../../01-types/types.ts"
 import type {
-	OHAHyperMedia,
-	OHARichTextHints,
-	OHAHyperActionBlueprint,
-	OHAHyperAction,
-	OHAPendingEngagement,
-	OHAHyperLink,
-	OHAHyper,
+	OHAⳇHyperMedia,
+	OHAⳇRichTextHints,
+	OHAⳇHyperActionBlueprint,
+	OHAⳇHyperAction,
+	OHAⳇPendingEngagement,
+	OHAⳇHyperLink,
+	OHAⳇHyper,
 } from "../../01-types/types.ts"
 import { type OHAServer, ROOT_URI } from "../../30-server/index.ts"
 
@@ -22,7 +22,7 @@ const DEBUG = false
 
 const URIꘌROOT = normalizeꓽuri‿str("/session/adventures/")
 
-const URIꘌEQUIPMENT: OHAHyperLink = {
+const URIꘌEQUIPMENT: OHAⳇHyperLink = {
 	href: "/session/equipment/",
 	target: "character_sheet/equipment",
 	rel: [],
@@ -43,14 +43,14 @@ function createꓽserver(): OHAServer {
 		// prepare aggregation
 		let $builder = RichText.fragmentⵧblock() // "block" bc maps to a ~frame/sub-browser
 
-		const links: OHARichTextHints["links"] = {
-			[OHALinkRelation.self]: normalizeꓽuri‿str(path), // intentionally strip query & path until considered relevant
-			[OHALinkRelation.home]: URIꘌROOT, // could be DEFAULT_ROOT_URI or sth else, ex. /user/:xyz/savegame/:xyz/
+		const links: OHAⳇRichTextHints["links"] = {
+			[OHAⳇLinkRelation.self]: normalizeꓽuri‿str(path), // intentionally strip query & path until considered relevant
+			[OHAⳇLinkRelation.home]: URIꘌROOT, // could be DEFAULT_ROOT_URI or sth else, ex. /user/:xyz/savegame/:xyz/
 		}
 
-		const actions: OHARichTextHints["actions"] = {}
+		const actions: OHAⳇRichTextHints["actions"] = {}
 
-		const engagements: OHARichTextHints["engagements"] = []
+		const engagements: OHAⳇRichTextHints["engagements"] = []
 
 		////////////
 
@@ -62,7 +62,7 @@ function createꓽserver(): OHAServer {
 			story: "Welcome to my game! This is a hobby game, no guarantee.",
 
 			uid: -1,
-		} as OHAPendingEngagement)
+		} as OHAⳇPendingEngagement)
 
 		// TODO recursive routing
 
@@ -73,7 +73,7 @@ function createꓽserver(): OHAServer {
 
 				// imagining a login screen, then continue on login
 
-				links[OHALinkRelation.continueᝍto] = "/session/"
+				links[OHAⳇLinkRelation.continueᝍto] = "/session/"
 
 				break
 			}
@@ -85,7 +85,7 @@ function createꓽserver(): OHAServer {
 
 				// imagining a character/savegame selection, then continue to game
 
-				links[OHALinkRelation.continueᝍto] = "/session/adventures/"
+				links[OHAⳇLinkRelation.continueᝍto] = "/session/adventures/"
 
 				break
 			}
@@ -131,8 +131,8 @@ function createꓽserver(): OHAServer {
 								durationⵧmin‿ms: 1000, // if present, never resolve the action faster than this (illusion of labor) Do not abuse! (default to some value depending on the verb)
 							},
 						},
-					} as OHAHyperActionBlueprint["feedback"],
-				} as OHAHyperActionBlueprint
+					} as OHAⳇHyperActionBlueprint["feedback"],
+				} as OHAⳇHyperActionBlueprint
 
 				links["equipment"] = URIꘌEQUIPMENT
 
@@ -142,7 +142,7 @@ function createꓽserver(): OHAServer {
 			case "/session/adventures/last": {
 				throw new Error(`Not implemented!`)
 
-				links[OHALinkRelation.continueᝍto] = "/session/adventures/"
+				links[OHAⳇLinkRelation.continueᝍto] = "/session/adventures/"
 
 				break
 			}
@@ -153,7 +153,7 @@ function createꓽserver(): OHAServer {
 
 		////////////
 		// wrap together
-		$builder.addHints<OHARichTextHints>({
+		$builder.addHints<OHAⳇRichTextHints>({
 			links,
 			actions,
 			engagements,

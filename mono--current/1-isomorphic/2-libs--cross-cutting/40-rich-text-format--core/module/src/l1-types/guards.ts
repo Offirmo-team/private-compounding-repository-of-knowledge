@@ -48,15 +48,14 @@ export function getꓽdisplay_type($nodelike: Immutable<NodeⳇLike>): "inline" 
 // we centralize the internal assertions.
 // To be used internally before/after node manipulations
 // is part of assertꓽNode / isꓽNode, beware of loops
-export function assertꓽNodeInvariants(candidate: Immutable<Node>): asserts candidate is Immutable<Node>
-export function assertꓽNodeInvariants(candidate: Node): asserts candidate is Node
-export function assertꓽNodeInvariants(candidate: Immutable<Node>): asserts candidate is Immutable<Node> {
-	const ǃ = assert_from({ assertꓽNodeInvariants })
-	ǃ.forⵧparam({ candidate }).require(!!candidate, "should be defined")
+export function ǃꓽNodeInvariants(candidate: Immutable<Node>) {
+	const ǃ = assert_from({ ǃꓽNodeInvariants })
+	ǃ.forⵧparam({ candidate }).check(!!candidate, "should be defined")
+	if (ǃ.hasꓽissues()) return ǃ
 
 	if (candidate.$type === "br") {
 		// convenient, prevent the renderers from having to do special handling
-		ǃ.forⵧparam({ candidate }).require(
+		ǃ.forⵧparam({ candidate }).check(
 			candidate.$content === "\n",
 			"a br node should have newline content. You should not create a br node manually, use {{br}}",
 		)
@@ -64,80 +63,102 @@ export function assertꓽNodeInvariants(candidate: Immutable<Node>): asserts can
 
 	if (candidate.$type === "hr") {
 		// no content, this one is too special
-		ǃ.forⵧparam({ candidate }).require(
+		ǃ.forⵧparam({ candidate }).check(
 			!candidate.$content,
 			"a hr node should have NO content. You should not create a hr node manually, use {{hr}}",
 		)
 	}
 
 	if (candidate.$heading) {
-		ǃ.require(
+		ǃ.check(
 			getꓽdisplay_type(candidate.$heading) === "inline",
 			`$heading content should be inline (think markdown header)!`,
 		)
 	}
 
 	if (getꓽdisplay_type(candidate) === "block") {
-		ǃ.require(
-			Array.isArray(candidate.$content) || !candidate.$content,
-			"block nodes $content must have a block shape",
-		)
+		ǃ.check(Array.isArray(candidate.$content) || !candidate.$content, "block nodes $content must have a block shape")
 	} else {
-		ǃ.require(!Array.isArray(candidate.$content), "inline nodes $content must NOT have a block shape")
+		ǃ.check(!Array.isArray(candidate.$content), "inline nodes $content must NOT have a block shape")
 	}
+
+	return ǃ
+}
+export function assertꓽNodeInvariants(candidate: Immutable<Node>): asserts candidate is Immutable<Node>
+export function assertꓽNodeInvariants(candidate: Node): asserts candidate is Node
+export function assertꓽNodeInvariants(candidate: Immutable<Node>): asserts candidate is Immutable<Node> {
+	const ǃ = ǃꓽNodeInvariants(candidate)
+	ǃ.assertꓽno_issues()
+}
+
+function ǃꓽNode(candidate: Immutable<Node>) {
+	const ǃ = assert_from({ ǃꓽNode })
+
+	ǃ.issues.push(...ǃꓽNodeInvariants(candidate).issues)
+
+	const reference: NodeⳇNormalized = (() => {
+		// Adapt the reference value to match the candidate's type,
+		// so that assertꓽshape's "simple" type_match doesn't reject valid NodeLike variants (number vs string).
+		function _adaptꓽNodeLikeꓽref(candidate_subvalue: Immutable<NodeⳇLike>): NodeⳇLike {
+			// NodeⳇPromotable
+			if (typeof candidate_subvalue === "number") return 42
+			if (typeof candidate_subvalue === "string") return "demo"
+
+			// Node
+			if (isꓽobjectⵧdefined_non_array(candidate_subvalue)) return { $content: "Hello, ⎨⎨target⎬⎬!" } // allowed
+
+			throw new Error(`Unknown subvalue type: ${candidate_subvalue}`)
+		}
+
+		if (getꓽdisplay_type(candidate) === "block") {
+			let reference = {
+				...$EXAMPLE_COMPLETE_NODEⵧBLOCK,
+			}
+			// heading is optional
+			reference["$heading"] = candidate?.$heading ? _adaptꓽNodeLikeꓽref(candidate?.$heading) : null
+			return reference
+		}
+
+		let reference = {
+			...$EXAMPLE_COMPLETE_NODEⵧINLINE,
+		}
+		// inline $content can be flexible
+		reference.$content = candidate.$content ? _adaptꓽNodeLikeꓽref(candidate.$content as Immutable<NodeⳇLike>) : "foo"
+
+		return reference
+	})()
+	ǃ.check(
+		hasꓽshape(reference, candidate, {
+			// "Node" is quite loose, so we only expect at least 1 prop
+			match_reference_props: "some",
+			// but no extra prop
+			allow_extra_props: false,
+		}),
+		"should have correct shape",
+	)
+
+	// validate $type against the enum if present
+	if (candidate["$type"] !== undefined && candidate["$type"] !== "auto") {
+		ǃ.forⵧparam({ candidate }).check(
+			Enum.isType(NodeType, candidate["$type"]),
+			`Node type should be an allowed value "${candidate["$type"]}"!`,
+		)
+	}
+
+	return ǃ
 }
 
 export function assertꓽNode(candidate: Immutable<Node>): asserts candidate is Immutable<Node>
 export function assertꓽNode(candidate: Node): asserts candidate is Node
 export function assertꓽNode(candidate: Immutable<Node>): asserts candidate is Immutable<Node> {
-	const ǃ = assert_from({ assertꓽNode })
-
-	assertꓽNodeInvariants(candidate)
-
-	const reference: Record<string, any> = {
-		...$EXAMPLE_COMPLETE_NODEⵧBLOCK,
-	}
-	// adapt the reference
-	if (!candidate?.$heading) {
-		reference["$heading"] = null
-	} else {
-		reference["$heading"] = _adaptꓽNodeLikeꓽref(candidate?.$heading)
-	}
-	reference["$content"] = _adaptꓽNodeLikeꓽref(candidate?.$content, candidate)
-
-	assertꓽshape(reference, candidate, {
-		// "Node" is quite loose, so we only expect at least 1 prop
-		match_reference_props: "some",
-		// but no extra prop
-		allow_extra_props: false,
-	})
-
-	// validate $type against the enum if present
-	if (candidate["$type"] !== undefined && candidate["$type"] !== "auto") {
-		ǃ.forⵧparam({ candidate }).require(
-			Enum.isType(NodeType, candidate["$type"]),
-			`Node type should be an allowed value "${candidate["$type"]}"!`,
-		)
-	}
-}
-// Adapt the reference value to match the candidate's type,
-// so that assertꓽshape's "simple" type_match doesn't reject valid NodeLike variants (number vs string).
-function _adaptꓽNodeLikeꓽref(candidate_value: unknown, candidate?: Immutable<NodeⳇLike>): NodeⳇLike | NodeⳇLike[] {
-	if (typeof candidate_value === "number") return 0
-	if (typeof candidate_value === "string") return "demo"
-	if (candidate && getꓽdisplay_type(candidate) === "block") return ["Hello, ⎨⎨target⎬⎬!"] // mandatory array
-
-	if (isꓽobjectⵧdefined_non_array(candidate_value)) return { $content: "Hello, ⎨⎨target⎬⎬!" } // allowed
-
-	//if (Array.isArray(candidate_value)) return [] as Array<NodeLike>
-
-	return "Hello, ⎨⎨target⎬⎬!"
+	const ǃ = ǃꓽNode(candidate)
+	ǃ.assertꓽno_issues()
 }
 
 export function isꓽNode(node: Immutable<any>): node is Immutable<Node>
 export function isꓽNode(node: any): node is Node
 export function isꓽNode(node: Immutable<any>): node is Immutable<Node> {
-	// shortcut to not trigger the assertion debug
+	// shortcuts
 	if (Array.isArray(node)) {
 		// common case of checking the $content
 		return false
@@ -146,12 +167,8 @@ export function isꓽNode(node: Immutable<any>): node is Immutable<Node> {
 		return false
 	}
 
-	try {
-		assertꓽNode(node)
-		return true
-	} catch (err) {
-		return false
-	}
+	const ǃ = ǃꓽNode(node)
+	return ǃ.hasꓽno_issues()
 }
 
 export function isꓽNodeLike($nodelike: Immutable<any>): $nodelike is Immutable<NodeⳇLike>
@@ -168,9 +185,9 @@ import { Enum } from "typescript-string-enums"
 
 import { assert_from } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"
-import { assertꓽshape, isꓽobjectⵧdefined_non_array } from "@monorepo-private/type-detection"
+import { hasꓽshape, isꓽobjectⵧdefined_non_array } from "@monorepo-private/type-detection"
 
-import { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "../__examples/index.ts"
+import { $EXAMPLE_COMPLETE_NODEⵧBLOCK, $EXAMPLE_COMPLETE_NODEⵧINLINE } from "../__examples/index.ts"
 
-import { NodeType, type NodeⳇPromotable } from "./types.ts"
-import type { Node, NodeⳇNormalized, NodeⳇLike } from "./types.ts"
+import type { Node, NodeⳇPromotable, NodeⳇNormalized, NodeⳇLike } from "./types.ts"
+import { NodeType } from "./types.ts"

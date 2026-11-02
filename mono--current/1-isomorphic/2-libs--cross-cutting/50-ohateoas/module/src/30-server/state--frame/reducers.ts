@@ -3,9 +3,9 @@ import * as RichText from "@monorepo-private/rich-text-format"
 import type { Immutable, Url‿str } from "@monorepo-private/ts--types"
 
 import {
-	OHALinkRelation,
-	type OHAHyperLink‿x,
-	type OHAHyperMedia,
+	OHAⳇLinkRelation,
+	type OHAⳇHyperLink‿x,
+	type OHAⳇHyperMedia,
 	getꓽuriⵧnormalized‿str,
 } from "../../01-types/index.ts"
 import { getꓽlinks } from "../../10-representation/index.ts"
@@ -34,7 +34,7 @@ function create(starting_url: Url‿str = ROOT_URI): Immutable<State> {
 	}
 }
 
-function onꓽloaded(state: Immutable<State>, $representation: Immutable<OHAHyperMedia | Error>): Immutable<State> {
+function onꓽloaded(state: Immutable<State>, $representation: Immutable<OHAⳇHyperMedia | Error>): Immutable<State> {
 	DEBUG &&
 		console.log(`↘ ${LIB}: onꓽloaded()`, {
 			state: structuredClone(state),
@@ -74,7 +74,7 @@ function onꓽloaded(state: Immutable<State>, $representation: Immutable<OHAHype
 
 		const links = getꓽlinks($representation)
 
-		const urlⵧself = getꓽuriⵧnormalized‿str(links[OHALinkRelation.self] || state.urlⵧload)
+		const urlⵧself = getꓽuriⵧnormalized‿str(links[OHAⳇLinkRelation.self] || state.urlⵧload)
 		/*if (urlⵧself !== state.urlⵧself) {
 			state = {
 				...state,
@@ -82,7 +82,7 @@ function onꓽloaded(state: Immutable<State>, $representation: Immutable<OHAHype
 			}
 		}*/
 
-		const urlⵧhome = getꓽuriⵧnormalized‿str(links[OHALinkRelation.home] || ROOT_URI)
+		const urlⵧhome = getꓽuriⵧnormalized‿str(links[OHAⳇLinkRelation.home] || ROOT_URI)
 		/*if (urlⵧhome !== state.urlⵧhome) {
 			state = {
 				...state,
@@ -90,7 +90,7 @@ function onꓽloaded(state: Immutable<State>, $representation: Immutable<OHAHype
 			}
 		}*/
 
-		const linkⵧcontinue = links[OHALinkRelation.continueᝍto]
+		const linkⵧcontinue = links[OHAⳇLinkRelation.continueᝍto]
 		if (linkⵧcontinue) {
 			const linkⵧcontinue_str = getꓽuriⵧnormalized‿str(linkⵧcontinue)
 			//assert(linkⵧcontinue_str !== state.urlⵧself, `linkⵧcontinue should not be the same as urlⵧself!`)
@@ -105,7 +105,7 @@ function onꓽloaded(state: Immutable<State>, $representation: Immutable<OHAHype
 function navigate_to(
 	state: Immutable<State>,
 	options: {
-		href?: OHAHyperLink‿x
+		href?: OHAⳇHyperLink‿x
 		type?: "push" | "replace"
 		reload?: boolean // force (re)load even if same url
 	},

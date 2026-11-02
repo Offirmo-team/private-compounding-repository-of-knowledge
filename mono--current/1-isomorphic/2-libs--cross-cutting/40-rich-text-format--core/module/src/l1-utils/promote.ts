@@ -1,16 +1,8 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import { assertꓽstringⵧnormalized } from "@monorepo-private/normalize-string"
-import type { Immutable } from "@monorepo-private/ts--types"
-import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
-
-import { LIB } from "../consts.ts"
-import { NodeType, type NodeⳇLike, type Node, assertꓽNode } from "../l1-types/index.ts"
-
 /////////////////////////////////////////////////
 
-function promoteꓽto_node($raw: NodeⳇLike): Node
-function promoteꓽto_node($raw: Immutable<NodeⳇLike>): Immutable<Node>
-function promoteꓽto_node($raw: Immutable<NodeⳇLike>): Immutable<Node> {
+export function promoteꓽto_node($raw: NodeⳇLike): Node
+export function promoteꓽto_node($raw: Immutable<NodeⳇLike>): Immutable<Node>
+export function promoteꓽto_node($raw: Immutable<NodeⳇLike>): Immutable<Node> {
 	switch (typeof $raw) {
 		case "string":
 		case "number":
@@ -29,7 +21,7 @@ function promoteꓽto_node($raw: Immutable<NodeⳇLike>): Immutable<Node> {
 }
 
 // for builder
-function promoteꓽto_string_for_node_content(str: Immutable<Exclude<NodeⳇLike, Node>>): string {
+export function promoteꓽto_string_for_node_content(str: Immutable<Exclude<NodeⳇLike, Node>>): string {
 	switch (typeof str) {
 		case "string": {
 			// note: can be empty, esp. at node creation
@@ -49,4 +41,10 @@ function promoteꓽto_string_for_node_content(str: Immutable<Exclude<NodeⳇLike
 
 /////////////////////////////////////////////////
 
-export { promoteꓽto_node, promoteꓽto_string_for_node_content }
+import { assert_from, assert } from "@monorepo-private/assert"
+import { assertꓽstringⵧnormalized } from "@monorepo-private/normalize-string"
+import type { Immutable } from "@monorepo-private/ts--types"
+import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
+
+import { LIB } from "../consts.ts"
+import { NodeType, type NodeⳇLike, type Node, assertꓽNode } from "../l1-types/index.ts"

@@ -1,18 +1,9 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import { normalize_unicode } from "@monorepo-private/normalize-string"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import { LIB, SCHEMA_VERSION } from "../consts.ts"
-import { type NodeⳇNormalized, type Node } from "../l1-types/types.ts"
-
-import { getꓽtype } from "./misc.ts"
-
 /////////////////////////////////////////////////
 
 /** Normalize the given node (not deeply, only 1st level) */
-function normalizeꓽnode($raw_node: Node): NodeⳇNormalized
-function normalizeꓽnode($raw_node: Immutable<Node>): Immutable<NodeⳇNormalized>
-function normalizeꓽnode($raw_node: Immutable<Node>): Immutable<NodeⳇNormalized> {
+export function normalizeꓽnode($raw_node: Node): NodeⳇNormalized
+export function normalizeꓽnode($raw_node: Immutable<Node>): Immutable<NodeⳇNormalized>
+export function normalizeꓽnode($raw_node: Immutable<Node>): Immutable<NodeⳇNormalized> {
 	assert(!!$raw_node, `normalize_node(): param should be defined!`)
 
 	let {
@@ -68,4 +59,11 @@ function normalizeꓽnode($raw_node: Immutable<Node>): Immutable<NodeⳇNormaliz
 
 /////////////////////////////////////////////////
 
-export { normalizeꓽnode }
+import { assert_from, assert } from "@monorepo-private/assert"
+import { normalize_unicode } from "@monorepo-private/normalize-string"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import { LIB, SCHEMA_VERSION } from "../consts.ts"
+import { type NodeⳇNormalized, type Node } from "../l1-types/types.ts"
+
+import { getꓽtype } from "./misc.ts"

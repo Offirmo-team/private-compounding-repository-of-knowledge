@@ -32,7 +32,7 @@ export function sort_before_stringify(
 				case "throw":
 					throw new Error(CYCLES__ERROR_MESSAGE)
 				default:
-					assertⵧnever_reached()
+					assertⵧnever_reached({ "options.onꓽcycle": options.onꓽcycle })
 			}
 		}
 
@@ -46,7 +46,7 @@ export function sort_before_stringify(
 					case "throw":
 						throw new Error(CYCLES__ERROR_MESSAGE)
 					default:
-						assertⵧnever_reached()
+						assertⵧnever_reached({ "options.onꓽcycle": options.onꓽcycle })
 				}
 			}
 		}
@@ -59,7 +59,7 @@ export function sort_before_stringify(
 				case "throw":
 					throw new Error(CYCLES__ERROR_MESSAGE)
 				default:
-					assertⵧnever_reached()
+					assertⵧnever_reached({ "options.onꓽcycle": options.onꓽcycle })
 			}
 		}
 
@@ -75,7 +75,7 @@ export function sort_before_stringify(
 					case "throw":
 						throw new Error(CYCLES__ERROR_MESSAGE)
 					default:
-						assertⵧnever_reached()
+						assertⵧnever_reached({ "options.onꓽcycle": options.onꓽcycle })
 				}
 			}
 		}
@@ -125,7 +125,7 @@ export function sort_before_stringify(
 					console.warn(NON_JSON__ERROR_MESSAGE)
 					return { warn: "non-json object encountered" }
 				default:
-					assertⵧnever_reached()
+					assertⵧnever_reached({ "options.onꓽnonᝍjson": options.onꓽnonᝍjson })
 			}
 		}
 

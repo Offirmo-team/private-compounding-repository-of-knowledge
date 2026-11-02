@@ -1,7 +1,7 @@
 import type { Immutable } from "@monorepo-private/ts--types"
 import type { Url‿str } from "@monorepo-private/ts--types--hypermedia"
 
-import type { OHAHyperMedia } from "../../01-types/index.ts"
+import type { OHAⳇHyperMedia } from "../../01-types/index.ts"
 
 /////////////////////////////////////////////////
 
@@ -22,7 +22,7 @@ interface State {
 	urlⵧload: Url‿str // url we're loading or have loaded with no pending load
 	reload_counter: number // for mutating this state on reload
 
-	$representation: OHAHyperMedia | undefined // latest we got
+	$representation: OHAⳇHyperMedia | undefined // latest we got
 	//urlⵧself: Url‿str | undefined // "self" advertised by the $representation. can be != load if the rsrc returns a different "self"
 
 	status_msg: string

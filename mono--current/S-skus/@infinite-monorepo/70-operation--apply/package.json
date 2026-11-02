@@ -11,6 +11,7 @@
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@infinite-monorepo/operation--apply\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
+		"sandbox": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##sandbox/index.ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -20,6 +21,7 @@
 		"@infinite-monorepo/plugin--changelog": "workspace:*",
 		"@infinite-monorepo/plugin--editorconfig": "workspace:*",
 		"@infinite-monorepo/plugin--git": "workspace:*",
+		"@infinite-monorepo/plugin--graph": "workspace:*",
 		"@infinite-monorepo/plugin--jetbrains": "workspace:*",
 		"@infinite-monorepo/plugin--license": "workspace:*",
 		"@infinite-monorepo/plugin--mise": "workspace:*",

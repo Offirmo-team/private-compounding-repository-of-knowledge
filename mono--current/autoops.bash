@@ -14,7 +14,7 @@ mise install
 pushd ./S-skus/@infinite-monorepo/70-operation--apply > /dev/null
 ## critical to be able to reach npm registry in some cases
 export NODE_USE_ENV_PROXY=1
-node module/~~sandbox/index.ts 2>&1 | tee "$AUTOOPS_LOG"
+node module/##sandbox/index.ts 2>&1 | tee "$AUTOOPS_LOG"
 popd > /dev/null
 
 #################################################

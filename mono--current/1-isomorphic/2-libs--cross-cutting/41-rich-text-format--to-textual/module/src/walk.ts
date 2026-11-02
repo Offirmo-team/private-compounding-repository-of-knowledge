@@ -1,33 +1,108 @@
-/** "walk" is the foundation on which all the renderers are based */
-
-import { assert_from, assert } from "@monorepo-private/assert"
-import { capitalizeⵧfirst } from "@monorepo-private/normalize-string"
-import {
-	type NodeⳇLike,
-	NodeType,
-	type SubNodeKey,
-	type NodeⳇNormalized,
-	type Node,
-	isꓽNodeLike,
-} from "@monorepo-private/rich-text-format"
-import {
-	normalizeꓽnode,
-	promoteꓽto_node,
-	getꓽdisplay_type,
-	getꓽtype,
-	isꓽlist,
-	wrap,
-} from "@monorepo-private/rich-text-format"
-import type { Immutable } from "@monorepo-private/ts--types"
-import { hasꓽshape, isꓽexact_stringified_number } from "@monorepo-private/type-detection"
-
-import { getꓽcontent‿nodes_list } from "./common.ts"
-import { LIB } from "./consts.ts"
+/////////////////////////////////////////////////
+// "walk" is the foundation on which all the renderers are based
 
 /////////////////////////////////////////////////
-// base rendering options
 
-interface BaseRenderingOptions {
+export function walk<CustomWalkState, RenderingOptions extends BaseRenderingOptions>(
+	$raw_node: Immutable<NodeⳇLike>,
+	raw_callbacks: Immutable<Partial<WalkerCallbacks<CustomWalkState, RenderingOptions>>>,
+	options: RenderingOptions, // this internal fn can't default unknown type, so we expect the caller to give us full options
+) {
+	const ǃ = assert_from({ walk }, { LIB })
+
+	const callbacksⵧdefault = _getꓽcallbacksⵧdefault<CustomWalkState, RenderingOptions>()
+	ǃ.forⵧparam({ raw_callbacks }).require(
+		hasꓽshape(callbacksⵧdefault, raw_callbacks, {
+			allow_extra_props: false,
+			match_reference_props: "some",
+		}),
+		`custom callbacks should match the expected format, check the API`,
+	)
+
+	const callbacks: WalkerCallbacks<CustomWalkState, RenderingOptions> = {
+		...callbacksⵧdefault,
+		...(raw_callbacks as any as WalkerCallbacks<CustomWalkState, RenderingOptions>),
+	}
+
+	ǃ.forⵧparam({ options }).require(
+		hasꓽshape(options, DEFAULT_RENDERING_OPTIONSⵧWalk, {
+			allow_extra_props: true,
+			match_reference_props: "some",
+		}),
+		`${LIB}[walk]: options should match the expected format, check the API!`,
+	)
+
+	const bstate: BaseWalkState = {
+		aggregated_refs: {},
+
+		depthⵧh: -1, // TODO 1D allow starting at different depth through options
+		depthⵧnodes: -1,
+		depthⵧlist: -1,
+
+		$snk: "_$root",
+
+		//$parent_node: null,
+		//$id: 'root',
+		//$root_node,
+	}
+	let xstate = callbacks.createꓽstate(options, undefined)
+	//xstate = callbacks.onꓽnodeⵧenter({ $node, bstate, xstate }, options) not really needed since no parent. avoid a useless promotion.
+
+	return _walk(callbacks, options, bstate, xstate, $raw_node, "_$root")
+}
+
+/////////////////////////////////////////////////
+
+/** Walk recursively inside a node. Must return a NEW "node" state = this is NOT a reducer!! */
+function _walk<CustomWalkState, RenderingOptions extends BaseRenderingOptions>(
+	callbacks: Immutable<WalkerCallbacks<CustomWalkState, RenderingOptions>>,
+	options: RenderingOptions,
+	bstateⵧparent: BaseWalkState,
+	xstateⵧparent: CustomWalkState,
+	$raw_node: Immutable<NodeⳇLike>,
+	$snk?: SubNodeKey, // if this node was a ref, its SubNodeKey
+) {
+	const ǃ = assert_from({ _walk }, { LIB })
+
+	ǃ.forⵧparam({ $raw_node }).require(isꓽNodeLike($raw_node))
+
+	const $node = maybe_strip_hints(normalizeꓽnode(promoteꓽto_node($raw_node)), options.shouldꓽstrip_hints)
+	const { $heading, $refs, $type } = $node
+	ǃ.forⵧparam({ $raw_node }).require($type !== "auto", `${LIB}: $type should never be "auto" at this stage!`)
+
+	// ~linting
+	// TODO 1D lint which block can be a child of another
+	// TODO 1D lint circular refs
+
+	// build child states
+	const bstate: BaseWalkState = {
+		...bstateⵧparent,
+		aggregated_refs: Object.create(
+			bstateⵧparent.aggregated_refs,
+			Object.fromEntries(Object.entries($refs).map(([k, value]) => [k, { value }])),
+		),
+		depthⵧnodes: bstateⵧparent.depthⵧnodes + 1,
+		...(getꓽtype($node) === NodeType.ol && { depthⵧlist: bstateⵧparent.depthⵧlist + 1 }),
+		...(getꓽtype($node) === NodeType.ul && { depthⵧlist: bstateⵧparent.depthⵧlist + 1 }),
+
+		...($heading !== null && { depthⵧh: bstateⵧparent.depthⵧh + 1 }),
+
+		...($snk && { $snk }),
+	}
+	let xstate = callbacks.createꓽstate(options, xstateⵧparent)
+
+	xstate = callbacks.onꓽnodeⵧenter({ $node, bstate, xstate }, options)
+
+	xstate = _walkꓽcontent(callbacks, options, bstate, xstate, $node)
+
+	xstate = callbacks.onꓽnodeⵧexit({ $node, bstate, xstate }, options)
+
+	return xstate
+}
+
+/////////////////////////////////////////////////
+
+export interface BaseRenderingOptions {
 	shouldꓽstrip_hints: boolean // experimental
 
 	// what should happen if a sub-node could not be resolved?
@@ -37,7 +112,7 @@ interface BaseRenderingOptions {
 		| "placeholder" // NOT RECOMMENDED: replace with an ugly placeholder. Useful if we can't afford to fail.
 }
 
-const DEFAULT_RENDERING_OPTIONSⵧWalk = Object.freeze<BaseRenderingOptions>({
+export const DEFAULT_RENDERING_OPTIONSⵧWalk = Object.freeze<BaseRenderingOptions>({
 	shouldꓽstrip_hints: false,
 	shouldꓽrecover_from_unknown_sub_nodes: "crash",
 })
@@ -45,7 +120,7 @@ const DEFAULT_RENDERING_OPTIONSⵧWalk = Object.freeze<BaseRenderingOptions>({
 /////////////////////////////////////////////////
 // Hooks
 
-interface BaseWalkState {
+export interface BaseWalkState {
 	aggregated_refs: NodeⳇNormalized["$refs"]
 
 	depthⵧh: number // header depth
@@ -129,7 +204,7 @@ interface WalkerReducer<RendererState, P extends BaseHookParams<RendererState>, 
 	(params: P, options: RenderingOptions): RendererState
 }
 
-interface WalkerCallbacks<RendererState, RenderingOptions extends BaseRenderingOptions> {
+export interface WalkerCallbacks<RendererState, RenderingOptions extends BaseRenderingOptions> {
 	// whatever state the renderer needs
 	// usually accumulates the output (at least)
 	createꓽstate: RendererStateCreator<RendererState, RenderingOptions>
@@ -234,110 +309,6 @@ const SUB_NODE_HR: Node = Object.freeze<Node>({
 	$type: "hr",
 	// no content, this one is too special
 })
-
-/////////////////////////////////////////////////
-
-function walk<CustomWalkState, RenderingOptions extends BaseRenderingOptions>(
-	$raw_node: Immutable<NodeⳇLike>,
-	raw_callbacks: Immutable<Partial<WalkerCallbacks<CustomWalkState, RenderingOptions>>>,
-	options: RenderingOptions, // this internal fn can't default unknown type, so we expect the caller to give us full options
-) {
-	const ǃ = assert_from({ walk })
-
-	const callbacksⵧdefault = _getꓽcallbacksⵧdefault<CustomWalkState, RenderingOptions>()
-	ǃ.assert(
-		hasꓽshape(callbacksⵧdefault, raw_callbacks, {
-			allow_extra_props: false,
-			match_reference_props: "some",
-		}),
-		`${LIB}[walk]: custom callbacks should match the expected format, check the API!`,
-	)
-
-	const callbacks: WalkerCallbacks<CustomWalkState, RenderingOptions> = {
-		...callbacksⵧdefault,
-		...(raw_callbacks as any as WalkerCallbacks<CustomWalkState, RenderingOptions>),
-	}
-
-	ǃ.assert(
-		hasꓽshape(options, DEFAULT_RENDERING_OPTIONSⵧWalk, {
-			allow_extra_props: true,
-			match_reference_props: "some",
-		}),
-		`${LIB}[walk]: options should match the expected format, check the API!`,
-	)
-
-	const bstate: BaseWalkState = {
-		aggregated_refs: {},
-
-		depthⵧh: -1, // TODO 1D allow starting at different depth through options
-		depthⵧnodes: -1,
-		depthⵧlist: -1,
-
-		$snk: "_$root",
-
-		//$parent_node: null,
-		//$id: 'root',
-		//$root_node,
-	}
-	let xstate = callbacks.createꓽstate(options, undefined)
-	//xstate = callbacks.onꓽnodeⵧenter({ $node, bstate, xstate }, options) not really needed since no parent. avoid a promotion.
-
-	return _walk(callbacks, options, bstate, xstate, $raw_node, "_$root")
-}
-
-/////////////////////////////////////////////////
-
-export { type BaseRenderingOptions, DEFAULT_RENDERING_OPTIONSⵧWalk, type WalkerCallbacks, type BaseWalkState, walk }
-
-/////////////////////////////////////////////////
-
-/** Walk recursively inside a node. Must return a NEW "node" state = this is NOT a reducer!! */
-function _walk<CustomWalkState, RenderingOptions extends BaseRenderingOptions>(
-	callbacks: Immutable<WalkerCallbacks<CustomWalkState, RenderingOptions>>,
-	options: RenderingOptions,
-	bstateⵧparent: BaseWalkState,
-	xstateⵧparent: CustomWalkState,
-	$raw_node: Immutable<NodeⳇLike>,
-	$snk?: SubNodeKey, // if this node was a ref, its SubNodeKey
-) {
-	const ǃ = assert_from({ _walk })
-
-	ǃ.forⵧparam({ $raw_node }).require(isꓽNodeLike($raw_node))
-
-	const $node = maybe_strip_hints(normalizeꓽnode(promoteꓽto_node($raw_node)), options.shouldꓽstrip_hints)
-	const { $heading, $refs, $type } = $node
-	ǃ.forⵧparam({ $raw_node }).require($type !== "auto", `${LIB}: $type should never be "auto" at this stage!`)
-
-	// ~linting
-	// TODO 1D lint which block can be a child of another
-	// TODO 1D lint circular refs
-
-	// build child states
-	const bstate: BaseWalkState = {
-		...bstateⵧparent,
-		aggregated_refs: Object.create(
-			bstateⵧparent.aggregated_refs,
-			Object.fromEntries(Object.entries($refs).map(([k, value]) => [k, { value }])),
-		),
-		depthⵧnodes: bstateⵧparent.depthⵧnodes + 1,
-		...(getꓽtype($node) === NodeType.ol && { depthⵧlist: bstateⵧparent.depthⵧlist + 1 }),
-		...(getꓽtype($node) === NodeType.ul && { depthⵧlist: bstateⵧparent.depthⵧlist + 1 }),
-
-		// XXX
-		...($heading !== null && { depthⵧh: bstateⵧparent.depthⵧh + 1 }),
-
-		...($snk && { $snk }),
-	}
-	let xstate = callbacks.createꓽstate(options, xstateⵧparent)
-
-	xstate = callbacks.onꓽnodeⵧenter({ $node, bstate, xstate }, options)
-
-	xstate = _walkꓽcontent(callbacks, options, bstate, xstate, $node)
-
-	xstate = callbacks.onꓽnodeⵧexit({ $node, bstate, xstate }, options)
-
-	return xstate
-}
 
 function maybe_strip_hints($node: Immutable<NodeⳇNormalized>, should_strip: boolean): Immutable<NodeⳇNormalized> {
 	if (!should_strip) {
@@ -553,3 +524,29 @@ function _walkꓽcontent<CustomWalkState, RenderingOptions extends BaseRendering
 
 	return xstate
 }
+
+/////////////////////////////////////////////////
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import { capitalizeⵧfirst } from "@monorepo-private/normalize-string"
+import {
+	type NodeⳇLike,
+	NodeType,
+	type SubNodeKey,
+	type NodeⳇNormalized,
+	type Node,
+	isꓽNodeLike,
+} from "@monorepo-private/rich-text-format--core"
+import {
+	normalizeꓽnode,
+	promoteꓽto_node,
+	getꓽdisplay_type,
+	getꓽtype,
+	isꓽlist,
+	wrap,
+} from "@monorepo-private/rich-text-format--core"
+import type { Immutable } from "@monorepo-private/ts--types"
+import { hasꓽshape, isꓽexact_stringified_number } from "@monorepo-private/type-detection"
+
+import { getꓽcontent‿nodes_list } from "./common.ts"
+import { LIB } from "./consts.ts"

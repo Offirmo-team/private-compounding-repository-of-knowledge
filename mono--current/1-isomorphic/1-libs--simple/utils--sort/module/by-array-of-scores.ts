@@ -13,34 +13,34 @@ export function compareꓽscores(score_a: Score, score_b: Score): number {
 	if (score_b === null) return -1
 	if (score_a === null) return +1
 
-	ǃ.assert(score_a.length > 0, `score should have length! (A)`)
-	ǃ.assert(score_b.length > 0, `score should have length! (B)`)
+	ǃ.forⵧparam({ score_a }).require(score_a.length > 0, `should have length`)
+	ǃ.forⵧparam({ score_b }).require(score_b.length > 0, `should have length`)
 
-	return Array.from({ length: Math.max(score_a.length, score_b.length) }).reduce<number>((acc, _, index) => {
-		if (acc === 0) {
-			try {
-				const score_unit_a = score_a[index]
-				ǃ.assert(
-					typeof score_unit_a === "number",
-					`Score comparison should never yield different path on previous equality! (A)`,
-				)
-				const score_unit_b = score_b[index]
-				ǃ.assert(
-					typeof score_unit_b === "number",
-					`Score comparison should never yield different path on previous equality! (B)`,
-				)
+	// stops at the first difference
+	for (const index of Array.from({ length: Math.max(score_a.length, score_b.length) }).keys()) {
+		try {
+			const score_unit_a = score_a[index]
+			ǃ.forⵧvalue({ score_unit_a }).assert(
+				typeof score_unit_a === "number",
+				`Score comparison should never yield different path on previous equality`,
+			)
+			const score_unit_b = score_b[index]
+			ǃ.forⵧvalue({ score_unit_b }).assert(
+				typeof score_unit_b === "number",
+				`Score comparison should never yield different path on previous equality`,
+			)
 
-				acc = score_unit_a! - score_unit_b!
-			} catch (err) {
-				console.error(`compare_scores(…) Error at #${index}!`, err)
-				console.log(score_a)
-				console.log(score_b)
-				throw err
-			}
+			const difference = score_unit_a! - score_unit_b!
+			if (difference !== 0) return difference
+		} catch (err) {
+			console.error(`compare_scores(…) Error at #${index}!`, err)
+			console.log(score_a)
+			console.log(score_b)
+			throw err
 		}
+	}
 
-		return acc
-	}, 0)
+	return 0
 }
 
 /////////////////////////////////////////////////

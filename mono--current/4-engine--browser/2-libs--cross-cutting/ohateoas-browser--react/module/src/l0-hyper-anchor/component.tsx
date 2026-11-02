@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react"
 
-import { type OHAHyperLink, getꓽcta } from "@monorepo-private/ohateoas"
+import { type OHAⳇHyperLink, getꓽcta } from "@monorepo-private/ohateoas"
 import renderⵧto_react from "@monorepo-private/rich-text-format--to-react"
 import { getꓽuriⵧnormalized‿str } from "@monorepo-private/ts--types--hypermedia"
 
@@ -8,8 +8,8 @@ import { getꓽuriⵧnormalized‿str } from "@monorepo-private/ts--types--hyper
 const NAME = `<OHAAnchor>/1`
 
 interface Props {
-	href: OHAHyperLink
-	onꓽclick: (link: OHAHyperLink) => void
+	href: OHAⳇHyperLink
+	onꓽclick: (link: OHAⳇHyperLink) => void
 }
 function ᄆComponent({ href, onꓽclick }: Props) {
 	if (window.oᐧextra?.flagꓽdebug_render) console.log(`🔄 ${NAME}`)
