@@ -722,6 +722,7 @@ models -- quiet nerfing = observed lower quality a while after release https://g
 models -- routing -- auto = auto select
 models -- routing -- fusion = several models discuss between themselves
 models -- routing -- stealth = hidden model  under a pseudonym before annoucement e.g. https://openrouter.ai/openrouter/hunter-alpha
+models -- semantic -- openrouter = notable: auto, free https://openrouter.ai/openrouter/
 models -- size class = nano / super / ultra
 models -- specialized -- Controlled Knowledge Exposure = e.g. like a year 5 pupil https://littlelearner-ll.github.io/
 models -- specialized -- embeddings
@@ -733,7 +734,6 @@ Moravec’s paradox = counterintuitive truth: high-level reasoning requires very
 NLG "Natural Language Generation"
 NLP "Natural Language Processing" = proofreading, grammar check, sentiment analysis, translation…
 NN "Neural Network" = computer architecture inspired by the human brain
-nodels -- semantic -- openrouter = notable: auto, free https://openrouter.ai/openrouter/
 NotebookLM
 on making = I gain a lot of fulfillment by making things. I don't consider things built by others at my request to be made by me, and are therefore much less fulfilling https://beej.us/blog/data/ai-making/
 OpenAI GPTs = custom versions of ChatGPT that you can create for a specific purpose with instructions, expanded knowledge, and custom capabilities
