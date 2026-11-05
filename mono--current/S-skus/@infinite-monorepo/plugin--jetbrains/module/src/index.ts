@@ -56,6 +56,7 @@ export const PLUGIN: Plugin = {
 							"*.iml", // contains local infos
 							"vcs.xml", // VCS infos, IDE can regen on its own
 							"modules.xml", // contains dirs added to the project, personal IMO
+							"markdown.xml", // as of 2026/11 private preferences
 						],
 					},
 				}
