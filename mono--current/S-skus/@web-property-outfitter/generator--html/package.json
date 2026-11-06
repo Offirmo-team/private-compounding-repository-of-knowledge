@@ -11,7 +11,7 @@
 	"scripts": {
 		"_check": "run-s check:ts",
 		"check:ts": "echo \"@web-property-outfitter/generator--html\" && tsc --noEmit",
-		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demo/demo--personal-blog/index.ts",
+		"demo": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./module/##demo/demo--personal-blog/index.ts",
 		"dev": "run-s  watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},

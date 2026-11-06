@@ -11,7 +11,7 @@
 	"scripts": {
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@infinite-monorepo/pkg-analyzer\" && tsc --noEmit",
-		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##demo/index.ts",
+		"demo": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./module/##demo/index.ts",
 		"dev": "run-s  watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},

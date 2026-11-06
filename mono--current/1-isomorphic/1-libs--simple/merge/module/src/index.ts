@@ -24,6 +24,39 @@ export function mergeⵧdeep<T>(a: T | undefined, b: T | undefined): T {
 	return b as T
 }
 
+// Variant for combining several partial specs of the same JSON content, where a disagreement is a bug:
+// - assuming undefined = unknown/missing => yielding to the other value (same as mergeⵧdeep)
+// - null is a primitive like any other
+// - any conflict => throw: different types, or different primitive values
+// - arrays are merged with deduplication by value (===) = ~set (same as mergeⵧdeep)
+// - objects are expected to be PLAIN, output keys are sorted
+export function mergeⵧdeepⵧno_conflict<T>(a: T | undefined, b: T | undefined): T {
+	if (b === undefined) return a as T
+	if (a === undefined) return b as T
+
+	const type_a = getꓽjson__type(a)
+	const type_b = getꓽjson__type(b)
+	if (type_a !== type_b) {
+		throw new Error(`Cannot merge different JSON types: ${type_a} vs ${type_b}!`)
+	}
+
+	switch (type_a) {
+		case "primitive":
+			if (a === b) return a
+			throw new Error(`Cannot merge conflicting primitive JSON values: ${a} vs ${b}!`)
+
+		case "array":
+			return mergeⵧarrays(a as unknown[], b as unknown[]) as T
+
+		case "object": {
+			const obj_a = a as Record<string, unknown>
+			const obj_b = b as Record<string, unknown>
+			const all_keys = Array.from(new Set([...Object.keys(obj_a), ...Object.keys(obj_b)])).sort()
+			return Object.fromEntries(all_keys.map((k) => [k, mergeⵧdeepⵧno_conflict(obj_a[k], obj_b[k])])) as T
+		}
+	}
+}
+
 function haveCompatibleContainerTypes(a: unknown, b: unknown): boolean {
 	if (Array.isArray(a)) return Array.isArray(b) || b === null
 	if (Array.isArray(b)) return Array.isArray(a) || a === null
@@ -73,6 +106,17 @@ function mergeⵧobjects(a: Record<string, unknown>, b: Record<string, unknown>)
 		}
 	}
 	return result
+}
+
+function getꓽjson__type(x: unknown): "object" | "array" | "primitive" {
+	if (Array.isArray(x)) return "array"
+
+	if (x === null) return "primitive"
+	if (["string", "number", "boolean"].includes(typeof x)) return "primitive"
+
+	if (isꓽobjectⵧplain(x)) return "object"
+
+	throw new Error("Incorrect JSON!")
 }
 
 /////////////////////////////////////////////////

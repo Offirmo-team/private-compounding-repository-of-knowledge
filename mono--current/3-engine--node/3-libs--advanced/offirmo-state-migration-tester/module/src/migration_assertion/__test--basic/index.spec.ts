@@ -1,13 +1,6 @@
-import { expect } from "chai"
-
-import type { WithSchemaVersion } from "@monorepo-private/offirmo-state"
-
-import { LIB } from "../../consts.ts"
-import { itㆍshouldㆍmigrateㆍcorrectly } from "../index.ts"
-
 /////////////////////////////////////////////////
 
-describe(`${LIB} - example usage`, function () {
+describe(`${LIB} - example usage`, () => {
 	const SCHEMA_VERSION = 3
 
 	function migrate_toꓽlatest(state: WithSchemaVersion) {
@@ -21,7 +14,7 @@ describe(`${LIB} - example usage`, function () {
 		return state
 	}
 
-	describe("migration of a new state", function () {
+	describe("migration of a new state", () => {
 		const LATEST_EXPECTED_DATA = { schema_version: 3, foo: 42 }
 
 		itㆍshouldㆍmigrateㆍcorrectly({
@@ -33,13 +26,11 @@ describe(`${LIB} - example usage`, function () {
 			import_meta_url: import.meta.url, // for resolving the path below
 			relative_dir_path: "./migrations_of_blank_state_specs",
 			describe,
-			context,
 			it,
-			expect,
 		})
 	})
 
-	describe("migration of an existing state", function () {
+	describe("migration of an existing state", () => {
 		const LATEST_EXPECTED_DATA = { schema_version: 3, foo: 144 }
 
 		itㆍshouldㆍmigrateㆍcorrectly({
@@ -51,9 +42,16 @@ describe(`${LIB} - example usage`, function () {
 			import_meta_url: import.meta.url, // for resolving the path below
 			relative_dir_path: "./migrations_of_active_state_specs",
 			describe,
-			context,
 			it,
-			expect,
 		})
 	})
 })
+
+/////////////////////////////////////////////////
+
+import { describe, expect, it } from "vitest"
+
+import type { WithSchemaVersion } from "@monorepo-private/offirmo-state"
+
+import { LIB } from "../../consts.ts"
+import { itㆍshouldㆍmigrateㆍcorrectly } from "../index.ts"

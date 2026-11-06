@@ -15,6 +15,8 @@ a country is a farm
 a prohibition is only as strong as its enforcement
 A sheng of rice earns gratitude, a dou of rice earns enmity = Give someone a small measure of rice (sheng, about one liter) in a crisis, and they feel deep thankfulness. Give them a huge measure (dou, about ten liters), and they begin to expect it, grow greedy, and eventually resent you when it stops or when they feel overly indebted. Core lesson: Excessive, unconditional, or long-term financial and material handouts can foster dependency, breed entitlement, and turn a benefactor into an enemy. Kindness works best with boundaries and moderation.
 Abenomics = the economic strategy implemented by Shinzo Abe of Japan and is comprised of three arrows: monetary policy, fiscal stimulus and structural reforms https://coinmarketcap.com/academy/glossary/abenomics
+aeronautics https://en.wikipedia.org/wiki/International_Air_&_Space_Hall_of_Fame
+agriculture https://en.wikipedia.org/wiki/British_Agricultural_Revolution
 amity-enmity complex https://en.m.wikipedia.org/wiki/Amity-enmity_complex
 And then the men with guns tell you to do it anyway = https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/
 archives = Hittite royal archive https://www.thehistoryblog.com/archives/77107
@@ -177,15 +179,11 @@ hammurabi
 health care https://en.wikipedia.org/wiki/Healthcare_in_the_United_States
 history https://en.wikipedia.org/wiki/History_of_the_Peloponnesian_War
 https://en.prolewiki.org/
-https://en.prolewiki.org/wiki/Library:Simple_Sabotage_Field_Manual
 https://en.wikipedia.org/wiki/Baby_farming
-https://en.wikipedia.org/wiki/British_Agricultural_Revolution
 https://en.wikipedia.org/wiki/File:Molzbach_1.jpg
 https://en.wikipedia.org/wiki/Hallstatt_culture
-https://en.wikipedia.org/wiki/Historical_European_martial_arts
 https://en.wikipedia.org/wiki/Historical_recurrence
 https://en.wikipedia.org/wiki/History_of_the_Peloponnesian_War https://el.wikisource.org/wiki/%CE%99%CF%83%CF%84%CE%BF%CF%81%CE%AF%CE%B1_%CF%84%CE%BF%CF%85_%CE%A0%CE%B5%CE%BB%CE%BF%CF%80%CE%BF%CE%BD%CE%BD%CE%B7%CF%83%CE%B9%CE%B1%CE%BA%CE%BF%CF%8D_%CE%A0%CE%BF%CE%BB%CE%AD%CE%BC%CE%BF%CF%85
-https://en.wikipedia.org/wiki/International_Air_&_Space_Hall_of_Fame
 https://en.wikipedia.org/wiki/Joseph_Swan inventor
 https://en.wikipedia.org/wiki/Makuria
 https://en.wikipedia.org/wiki/Native_metal
@@ -228,6 +226,7 @@ loi du talion
 mafia -- https://en.wikipedia.org/wiki/Five_Families
 mafia -- Racketeer Influenced and Corrupt Organizations (RICO) Act =  1970 U.S. federal law designed to combat organized crime by targeting the leaders of criminal enterprises rather than just subordinates. It allows prosecutors to charge individuals with a "pattern of racketeering" (at least two acts within 10 years) for crimes committed on behalf of an organization.
 making big things
+martial arts https://en.wikipedia.org/wiki/Historical_European_martial_arts
 medias
 Melian dialogue
 military tactics https://civilization.fandom.com/wiki/Military_Tactics_(Civ6)
@@ -263,6 +262,7 @@ robber barons https://en.wikipedia.org/wiki/Robber_baron_(industrialist)
 robust, comprehensive and world-leading legislation https://www.linkedin.com/news/story/australia-faces-new-125-tariff-8938602/
 rsrc depletion -- peak https://en.wikipedia.org/wiki/Peak_minerals
 rsrc depletion https://en.wikipedia.org/wiki/Resource_depletion
+sabotage https://en.prolewiki.org/wiki/Library:Simple_Sabotage_Field_Manual
 sanction = trade, freezing, restricting
 sanctions -- against = usually only impact the innocents
 sanctions -- evasion -- stripping = removing, disguising or altering customer or payment information to avoid Sanctions, or

@@ -23,11 +23,16 @@ TODO auto-generate this list!!
 pnpm exec turbo check
   pnpm exec turbo check --filter="./0-meta/*"
   pnpm exec turbo check --filter="./1-isomorphic/**"
-    pnpm exec turbo check --filter="./1-isomorphic/1-libs--simple/*"         ✅
-    pnpm exec turbo check --filter="./1-isomorphic/2-libs--cross-cutting/*"
-    pnpm exec turbo check --filter="./1-isomorphic/3-libs--advanced/*"
-  pnpm exec turbo check --filter="./2-engine--winter/**"
+    pnpm exec turbo  check --filter="./1-isomorphic/1-libs--simple/*"         ✅
+    pnpm exec turbo  check --filter="./1-isomorphic/2-libs--cross-cutting/*"  ✅
+    pnpm exec turbo  check --filter="./1-isomorphic/3-libs--advanced/*"       ✅
+    pnpm exec turbo _check --filter="./1-isomorphic/X-incubator/active/*"     ❌
+  pnpm exec turbo check --filter="./2-engine--winter/**"                      ✅
   pnpm exec turbo check --filter="./3-engine--node/**"
+    pnpm exec turbo  check --filter="./3-engine--node/1-libs--simple/*"         ❌
+    pnpm exec turbo  check --filter="./3-engine--node/2-libs--cross-cutting/*"  ?
+    pnpm exec turbo  check --filter="./3-engine--node/3-libs--advanced/*"       ?
+    pnpm exec turbo _check --filter="./3-engine--node/X-incubator/active/*"     ?
   pnpm exec turbo check --filter="./4-engine--browser/**"
   pnpm exec turbo check --filter="./7-multimorphic/**"
   pnpm exec turbo check --filter="./B-backend/**"

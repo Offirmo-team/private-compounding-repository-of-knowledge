@@ -10,6 +10,11 @@
 
 	"compilerOptions": {
 		"module": "nodenext",
-		"moduleResolution": "nodenext"
+		"moduleResolution": "nodenext",
+
+		"lib": [
+			"ES2025", // see target (update marker)
+			"ESNext.Temporal" // native since node 26, needs re-adding since "lib" from isomorphic overrides @tsconfig/node26's
+		]
 	}
 }

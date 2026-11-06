@@ -389,7 +389,7 @@ export async function apply(from?: PathⳇAny) {
 						(content) => {
 							return ೱwriteꓽfile(
 								path,
-								trim_before_stringify(mergeꓽjson(content, spec.content as any)),
+								trim_before_stringify(mergeⵧdeepⵧno_conflict(content, spec.content as any)),
 								spec.manifest.format,
 							)
 						},
@@ -499,6 +499,7 @@ import { type Plugin } from "@infinite-monorepo/types-for-plugins"
 
 import { assert } from "@monorepo-private/assert"
 import { trim_before_stringify } from "@monorepo-private/json-stable-stringify"
+import { mergeⵧdeepⵧno_conflict } from "@monorepo-private/merge"
 import { ↆreadꓽfile } from "@monorepo-private/read-write-any-structured-file/read"
-import { mergeꓽjson, ೱwriteꓽfile } from "@monorepo-private/read-write-any-structured-file/write"
+import { ೱwriteꓽfile } from "@monorepo-private/read-write-any-structured-file/write"
 import type { DirPathⳇAbsolute, Immutable, PathⳇAbsolute, PathⳇAny } from "@monorepo-private/ts--types"

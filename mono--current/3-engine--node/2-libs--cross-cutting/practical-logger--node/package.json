@@ -12,7 +12,7 @@
 		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@monorepo-private/practical-logger--node\" && tsc --noEmit",
 		"check:unit-tests": "run-s test",
-		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##doc/demo.ts",
+		"demo": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./module/##doc/demo.ts",
 		"dev": "run-s  watch:check:ts",
 		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
@@ -29,9 +29,7 @@
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/chai": "catalog:",
 		"@types/node": "catalog:",
-		"chai": "catalog:",
 		"npm-run-all": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

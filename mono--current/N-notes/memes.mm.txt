@@ -213,7 +213,6 @@ Byron Katie's "The Work" -- the 4 questions -- 3. How do you react, what happens
 Byron Katie's "The Work" -- the 4 questions -- 4. Who would you be without the thought?
 Byron Katie's "The Work" https://thework.com/
 cadre = should lead, can change the world (cf. "du rôle social de l'officier")
-Can the Subaltern Speak? = highlights the challenges faced by marginalised groups in having their voices heard within dominant power structure https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak#%22Can_the_Subaltern_Speak?%22
 cancel culture -- ex. of Brendan Eich https://www.spacebar.news/stop-using-brave-browser/
 cancer = 1 in 8 cancer cases worldwide is caused by infections, study suggests https://www.cbc.ca/lite/story/9.7361622
 cannabis -- Huge study finds no evidence cannabis helps anxiety, depression, or PTSD https://www.sciencedaily.com/releases/2026/03/260319044656.htm
@@ -611,7 +610,6 @@ game theory -- zero-sum -- non-zero-sum = interacting parties' aggregate gains a
 game theory -- zero-sum = two competing entities, where the result is an advantage for one side and an equivalent loss for the other https://en.wikipedia.org/wiki/Zero-sum_game
 gateway effect / gateway hypothesis = gateway drug (cannabis), gateway gambling (gacha games) = pathway to dangerous addictions https://www.library.hbs.edu/working-knowledge/the-15-billion-question-have-loot-boxes-turned-video-gaming-into-gambling
 gender -- no good things about boys = "Good things about boys? I’m really trying here, but I have to say I’m drawing a blank" https://lisamckaywriting.com/ten-good-things-about-boys-attaining-synthetic-happiness-one-gender-stereotype-at-a-time/
-gender shade =  accuracy of AI powered gender classification products http://gendershades.org/
 genes -- kenya https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-shatters-the-2-hour-barrier-at-2026-london-marathon/?_bhlid=1a1a4a8ee14d0acb7c63c750cfde547370c42111&utm_campaign=the-negative-split-software-engineering-effect&utm_medium=newsletter&utm_source=newsletter.manager.dev
 genetics -- linkage https://en.wikipedia.org/wiki/Genetic_linkage
 genius -- Edison -- Anthropic = "But we see perspiration becoming increasingly automated"
@@ -1155,6 +1153,7 @@ neuro-divergent
 neurodivergent -- neurotypical = https://erikengdahl.se/autism/isnt/
 neurodivergent = now the majority?
 neurotypical -- seen as a handicap = interesting POV https://erikengdahl.se/autism/isnt/
+Never complain, never explain = https://en.wikipedia.org/wiki/Never_complain,_never_explain
 never eat alone
 Never interrupt someone doing what you said couldn't be done.
 Never job backwards. What-might-have-been was a waste of time. Follow your fate, and be satisfied with it, and be glad not to be a second-hand motor salesman, or a yellow-press journalist, pickled in gin and nicotine, or a cripple—or dead (Fleming / James Bond)
@@ -1301,7 +1300,9 @@ Pope Francis 15 spiritual diseases -- 15 = disease of worldly profit, of forms o
 Pope Francis 15 spiritual diseases https://www.vatican.va/content/francesco/en/speeches/2014/december/documents/papa-francesco_20141222_curia-romana.html
 porn
 positive good = defense technique arguing an overall "positive good" ex. colonisation = trains (which were for stealing rsrcs) hospitals etc. https://en.wikipedia.org/wiki/Pro-slavery_ideology_in_the_United_States
+power -- Can the Subaltern Speak? = highlights the challenges faced by marginalised groups in having their voices heard within dominant power structure https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak#%22Can_the_Subaltern_Speak?%22
 power -- French and Raven five bases of power = reward, coercion, legitimate, expert, referent, informational https://en.wikipedia.org/wiki/French_and_Raven%27s_bases_of_power
+power -- personal && -- referent && = reverence gained by a charismatic leader who has strong interpersonal relationship skills. Becomes important when leadership increasingly relies on collaboration and influence rather than command and control. https://en.wikipedia.org/wiki/Referent_power
 power -- Tony Benn's' Five Questions About Power -- 01 What power have you got?
 power -- Tony Benn's' Five Questions About Power -- 02 Where did you get it from?
 power -- Tony Benn's' Five Questions About Power -- 03 In whose interests do you use it?

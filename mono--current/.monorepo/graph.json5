@@ -13,16 +13,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "chai-fetch-mock",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "chai-moment",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
 					fqname: "mocha",
 					isꓽmonorepo: false,
 					type: "normal",
@@ -2337,110 +2327,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "@monorepo-private/normalize-string",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/rich-text-format",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/timestamps",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ts--types",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ts--types--hypermedia",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/type-detection",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "typescript-string-enums",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/random",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "chalk",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/ohateoas",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 10,
-			path‿rel: "1-isomorphic/2-libs--cross-cutting/50-ohateoas/",
-			precedence_group: 1,
-			precedence_pkg: 50,
-			precedence_subgroup: 2,
-			sibling_deps_count: 1,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
 					fqname: "@monorepo-private/marketing--creator",
 					isꓽmonorepo: true,
 					type: "normal",
@@ -2565,105 +2451,6 @@
 			precedence_pkg: 999,
 			precedence_subgroup: 3,
 			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/json-stable-stringify",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/normalize-string",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/offirmo-state",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/rich-text-format",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/timestamps",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ts--utils",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "tiny-invariant",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/ts--types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/offirmo-state--to-rich-text",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 1,
-			monorepo_deps_count: 10,
-			path‿rel: "1-isomorphic/3-libs--advanced/offirmo-state--to-rich-text/",
-			precedence_group: 1,
-			precedence_pkg: 999,
-			precedence_subgroup: 3,
-			sibling_deps_count: 1,
 		},
 		{
 			deps: [
@@ -2846,6 +2633,110 @@
 					type: "normal",
 				},
 				{
+					fqname: "@monorepo-private/rich-text-format",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/timestamps",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ts--types",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ts--types--hypermedia",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/type-detection",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "typescript-string-enums",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/random",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "chalk",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/ohateoas",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 10,
+			path‿rel: "1-isomorphic/X-incubator/active/50-ohateoas/",
+			precedence_group: 1,
+			precedence_pkg: 50,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/normalize-string",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
 					fqname: "tslib",
 					isꓽmonorepo: false,
 					type: "peer",
@@ -2994,6 +2885,105 @@
 					type: "normal",
 				},
 				{
+					fqname: "@monorepo-private/json-stable-stringify",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/normalize-string",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/offirmo-state",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/rich-text-format",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/timestamps",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ts--utils",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "tiny-invariant",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/ts--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/offirmo-state--to-rich-text",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 10,
+			path‿rel: "1-isomorphic/X-incubator/active/offirmo-state--to-rich-text/",
+			precedence_group: 1,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
 					fqname: "terminal-size",
 					isꓽmonorepo: false,
 					type: "normal",
@@ -3019,22 +3009,12 @@
 					type: "dev",
 				},
 				{
-					fqname: "@types/chai",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "@types/node",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
 				{
 					fqname: "@types/prettyjson",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "chai",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3088,46 +3068,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "@monorepo-private/fs--ls",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/offirmo-state",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/prettify-any",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/timestamps",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "jsondiffpatch",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "load-json-file",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "sinon",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "write-json-file",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
 					fqname: "tslib",
 					isꓽmonorepo: false,
 					type: "peer",
@@ -3143,98 +3083,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "@types/chai",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "@types/sinon",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "chai",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/state-migration-tester",
-			issues: [
-				{
-					dep: "@monorepo-private/fs--ls",
-					message: 'depends on "@monorepo-private/fs--ls" which comes later in the explicit order (3.1.999 > 3.0.999)',
-					type: "precedence_violation",
-				},
-			],
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 7,
-			path‿rel: "3-engine--node/0-dev-tools/offirmo-state-migration-tester/",
-			precedence_group: 3,
-			precedence_pkg: 999,
-			precedence_subgroup: 0,
-			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/chai",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "chai",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3569,17 +3418,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "@types/chai",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "chai",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3624,11 +3463,6 @@
 				},
 				{
 					fqname: "@monorepo-private/json-stable-stringify",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/type-detection",
 					isꓽmonorepo: true,
 					type: "normal",
 				},
@@ -3707,7 +3541,7 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 0,
-			monorepo_deps_count: 6,
+			monorepo_deps_count: 5,
 			path‿rel: "3-engine--node/1-libs--simple/read-write-any-structured-file/",
 			precedence_group: 3,
 			precedence_pkg: 999,
@@ -3791,110 +3625,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "@monorepo-private/normalize-string",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ohateoas",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/prettify-any",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/rich-text-format",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/rich-text-format--to-terminal",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/timestamps",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ts--types--hypermedia",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "zx",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/ts--types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/ohateoas-browser--terminal",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 1,
-			monorepo_deps_count: 11,
-			path‿rel: "3-engine--node/2-libs--cross-cutting/ohateoas-browser--terminal/",
-			precedence_group: 3,
-			precedence_pkg: 999,
-			precedence_subgroup: 2,
-			sibling_deps_count: 1,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
 					fqname: "@monorepo-private/practical-logger--core",
 					isꓽmonorepo: true,
 					type: "normal",
@@ -3935,17 +3665,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "@types/chai",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "chai",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3989,7 +3709,7 @@
 					type: "normal",
 				},
 				{
-					fqname: "@monorepo-private/rich-text-format",
+					fqname: "@monorepo-private/rich-text-format--to-textual",
 					isꓽmonorepo: true,
 					type: "normal",
 				},
@@ -4009,6 +3729,16 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/rich-text-format",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/rich-text-format--core",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -4019,17 +3749,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "@types/chai",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "chai",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4058,7 +3778,7 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 0,
-			monorepo_deps_count: 5,
+			monorepo_deps_count: 7,
 			path‿rel: "3-engine--node/2-libs--cross-cutting/rich-text-format--to-terminal/",
 			precedence_group: 3,
 			precedence_pkg: 999,
@@ -4217,6 +3937,214 @@
 			precedence_pkg: 999,
 			precedence_subgroup: 2,
 			sibling_deps_count: 1,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/fs--ls",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/offirmo-state",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/prettify-any",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/timestamps",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "jsondiffpatch",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "load-json-file",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "sinon",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "write-json-file",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "@types/sinon",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/state-migration-tester",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 7,
+			path‿rel: "3-engine--node/3-libs--advanced/offirmo-state-migration-tester/",
+			precedence_group: 3,
+			precedence_pkg: 999,
+			precedence_subgroup: 3,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/normalize-string",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ohateoas",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/prettify-any",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/rich-text-format",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/rich-text-format--to-terminal",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/timestamps",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ts--types--hypermedia",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "zx",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/ts--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/ohateoas-browser--terminal",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 11,
+			path‿rel: "3-engine--node/X-incubator/active/ohateoas-browser--terminal/",
+			precedence_group: 3,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
 		},
 		{
 			deps: [
@@ -9371,6 +9299,11 @@
 					type: "normal",
 				},
 				{
+					fqname: "@monorepo-private/merge",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
 					fqname: "@monorepo-private/read-write-any-structured-file",
 					isꓽmonorepo: true,
 					type: "normal",
@@ -9450,7 +9383,7 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 0,
-			monorepo_deps_count: 16,
+			monorepo_deps_count: 17,
 			path‿rel: "S-skus/@infinite-monorepo/50-state/",
 			precedence_group: 99,
 			precedence_pkg: 50,
@@ -9966,6 +9899,11 @@
 					type: "normal",
 				},
 				{
+					fqname: "@monorepo-private/merge",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
 					fqname: "@monorepo-private/read-write-any-structured-file",
 					isꓽmonorepo: true,
 					type: "normal",
@@ -10147,7 +10085,7 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 0,
-			monorepo_deps_count: 35,
+			monorepo_deps_count: 36,
 			path‿rel: "S-skus/@infinite-monorepo/70-operation--apply/",
 			precedence_group: 99,
 			precedence_pkg: 70,
@@ -12797,11 +12735,6 @@
 				{
 					fqname: "@monorepo-private/type-detection",
 					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "temporal-polyfill",
-					isꓽmonorepo: false,
 					type: "normal",
 				},
 				{

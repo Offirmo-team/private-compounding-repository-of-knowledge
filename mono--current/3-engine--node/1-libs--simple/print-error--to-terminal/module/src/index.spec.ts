@@ -1,10 +1,4 @@
-import { stripVTControlCharacters } from "node:util"
-
-import { expect } from "chai"
-
-import { createError } from "@monorepo-private/utils--error"
-
-import { displayError, error_to_string } from "./index.ts"
+/////////////////////////////////////////////////
 
 describe(`@monorepo-private/print-error-to-terminal`, () => {
 	describe("error_to_string()", () => {
@@ -14,9 +8,9 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 
 			const s = stripVTControlCharacters(error_to_string(err))
 			//console.error(error_to_string(err), '\n' + s)
-			expect(s).to.include("❗ Error ❗") // name
-			expect(s).to.include('message: "foo"')
-			expect(s).to.include('statusCode: "555"')
+			expect(s).toContain("❗ Error ❗") // name
+			expect(s).toContain('message: "foo"')
+			expect(s).toContain('statusCode: "555"')
 		})
 
 		it("should work -- typed error", () => {
@@ -24,9 +18,9 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 			;(err as any).statusCode = 555
 
 			const s = stripVTControlCharacters(error_to_string(err))
-			expect(s).to.include("❗ TypeError ❗") // name
-			expect(s).to.include('message: "foo"')
-			expect(s).to.include('statusCode: "555"')
+			expect(s).toContain("❗ TypeError ❗") // name
+			expect(s).toContain('message: "foo"')
+			expect(s).toContain('statusCode: "555"')
 		})
 
 		it("should work -- advanced error -- framesToPop", () => {
@@ -36,8 +30,8 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 
 			const s = stripVTControlCharacters(error_to_string(err))
 			//console.error(error_to_string(err), '\n' + s)
-			expect(s).not.to.include("framesToPop: ") // should not be displayed as a prop
-			expect(s).to.include("↳ ⟨frames popped: 4⟩") // displayed as part of the stack
+			expect(s).not.toContain("framesToPop: ") // should not be displayed as a prop
+			expect(s).toContain("↳ ⟨frames popped: 4⟩") // displayed as part of the stack
 		})
 
 		it("should work -- advanced error -- extra field", () => {
@@ -47,8 +41,8 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 
 			const s = stripVTControlCharacters(error_to_string(err))
 			//console.error(error_to_string(err), '\n' + s)
-			expect(s).to.include("details:")
-			expect(s).to.include('  foo: "42"')
+			expect(s).toContain("details:")
+			expect(s).toContain('  foo: "42"')
 		})
 
 		it("should ensure the title mentions an error -- custom name", () => {
@@ -66,7 +60,7 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 
 			const s = stripVTControlCharacters(error_to_string(err))
 			//console.error(error_to_string(err), '\n' + s)
-			expect(s).to.include("┏━❗ ⟨Error⟩ CustomException ❗")
+			expect(s).toContain("┏━❗ ⟨Error⟩ CustomException ❗")
 		})
 
 		it("should ensure the title mentions an error -- no name", () => {
@@ -85,10 +79,10 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 
 			const s = stripVTControlCharacters(error_to_string(err))
 			//console.error(error_to_string(err), '\n' + s)
-			expect(s).to.include("┏━❗ ⟨Error⟩ ⟨unnamed??⟩ ❗")
+			expect(s).toContain("┏━❗ ⟨Error⟩ ⟨unnamed??⟩ ❗")
 		})
 
-		describe("cause chaining", function () {
+		describe("cause chaining", () => {
 			it("should work -- trivial error", () => {
 				const err1 = new RangeError("bar")
 				;(err1 as any).code = "ERR_CPU_USAGE"
@@ -99,10 +93,10 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 
 				const s = stripVTControlCharacters(error_to_string(err2))
 				//console.error(error_to_string(err2), '\n' + s)
-				expect(s).to.include("cause:")
-				expect(s).to.include("┃ ┏━❗ RangeError ❗")
-				expect(s).to.include('┃ ┃ message: "bar"')
-				expect(s).to.include('┃ ┃ code: "ERR_CPU_USAGE"')
+				expect(s).toContain("cause:")
+				expect(s).toContain("┃ ┏━❗ RangeError ❗")
+				expect(s).toContain('┃ ┃ message: "bar"')
+				expect(s).toContain('┃ ┃ code: "ERR_CPU_USAGE"')
 			})
 
 			it("should work -- advanced error", () => {
@@ -125,12 +119,12 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 
 				const s = stripVTControlCharacters(error_to_string(err2))
 				//console.error(error_to_string(err2), '\n' + s)
-				expect(s).to.include("┃ cause:")
-				expect(s).to.include("┃ ┏━❗ RangeError ❗")
-				expect(s).to.include('┃ ┃ message: "RangeError: bar"')
-				expect(s).to.include("┃ ┃ details:")
-				expect(s).to.include('┃ ┃   foo: "42"')
-				expect(s).to.include("┃ ┃ ↳ ⟨frames popped: 2⟩")
+				expect(s).toContain("┃ cause:")
+				expect(s).toContain("┃ ┏━❗ RangeError ❗")
+				expect(s).toContain('┃ ┃ message: "RangeError: bar"')
+				expect(s).toContain("┃ ┃ details:")
+				expect(s).toContain('┃ ┃   foo: "42"')
+				expect(s).toContain("┃ ┃ ↳ ⟨frames popped: 2⟩")
 			})
 
 			it("should work -- infinite loop -- trivial", () => {
@@ -140,7 +134,7 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 
 				const s = stripVTControlCharacters(error_to_string(err))
 				//console.error(error_to_string(err), '\n' + s)
-				expect(s).to.include("cause: ⟨CIRCULAR REFERENCE!!⟩")
+				expect(s).toContain("cause: ⟨CIRCULAR REFERENCE!!⟩")
 			})
 		})
 	})
@@ -154,3 +148,13 @@ describe(`@monorepo-private/print-error-to-terminal`, () => {
 		})
 	})
 })
+
+/////////////////////////////////////////////////
+
+import { stripVTControlCharacters } from "node:util"
+
+import { describe, expect, it } from "vitest"
+
+import { createError } from "@monorepo-private/utils--error"
+
+import { displayError, error_to_string } from "./index.ts"

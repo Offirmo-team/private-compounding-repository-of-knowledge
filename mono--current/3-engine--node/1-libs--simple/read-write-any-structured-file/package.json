@@ -13,13 +13,12 @@
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@monorepo-private/read-write-any-structured-file\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
-		"sandbox": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/__sandbox/read.ts",
+		"sandbox": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./module/__sandbox/read.ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/json-stable-stringify": "workspace:*",
-		"@monorepo-private/type-detection": "workspace:*",
 		"json5": "catalog:",
 		"smol-toml": "catalog:",
 		"split-lines": "catalog:",

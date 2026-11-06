@@ -28,6 +28,8 @@ function _increase_indentation(st: State): State {
 }
 
 const DEBUG = false
+// "poison pill" accessors, ex. reading `.callee` on a strict-mode `arguments` throws a TypeError
+const KEYSⵧPOISONED_IN_STRICT_MODE: ReadonlySet<PropertyKey> = new Set(["caller", "callee"])
 const OPTIONS__PRETTIFYⵧDEFAULT: PrettifyOptions = {
 	can_throw: false, // common usage is to debug, we need to always work
 
@@ -155,100 +157,16 @@ const OPTIONS__PRETTIFYⵧDEFAULT: PrettifyOptions = {
 	},
 	prettifyꓽobjectⵧkeyⳇvalue: (obj: Object, st: State): string[] => {
 		if (DEBUG) console.log("prettifyꓽobjectⵧkeyⳇvalue", obj)
-		let { o } = st
+		const { o } = st
 
 		try {
-			const keys = Reflect.ownKeys(obj)
-
-			if (o.should_sort_keys)
-				keys.sort((a: string | number | symbol, b: string | number | symbol) => {
-					let res = cmp(typeof a, typeof b)
-
-					if (res === 0) {
-						res = cmp(a, b)
-					}
-
-					return res
-				})
-
-			const parent_state = st // for passing infos up
-			st = _increase_indentation(st)
-			st = {
-				...st,
-				circular: new Set([...Array.from(st.circular as any), obj]),
+			return _prettifyꓽobjectⵧkeyⳇvalue(obj, st)
+		} catch {
+			try {
+				return _prettifyꓽobjectⵧkeyⳇvalue(obj, st, KEYSⵧPOISONED_IN_STRICT_MODE)
+			} catch (err) {
+				return [o.stylizeꓽerror(`[error prettifying:${(err as any)?.message}/po--kv]`)]
 			}
-
-			//const trailing_comma = '⧼' + o.stylizeꓽsyntax(',') + '⧽' // debug
-			const trailing_comma = o.stylizeꓽsyntax(",")
-			let kvs: string[][] = keys.map((k): string[] => {
-				const v = (obj as any)[k]
-
-				if (typeof v === "function" && v.name === k) {
-					// special display
-					return [o.prettifyꓽfunction(v, st, { as_prop: true })]
-				}
-
-				const key = o.prettifyꓽproperty__name(k, st)
-				let sub_lines = o.prettifyꓽany(v, st)
-
-				/*
-				const max_remaining_length‿charcount = o.max_width‿charcount - st.indent_levelⵧcurrent * o.indent_size‿charcount - toꓽstringⵧwithout_ansi(key).length - 1
-				if (toꓽstringⵧwithout_ansi(sub_lines.join(',')).length < max_remaining_length‿charcount) {
-					// coerce into a single line
-					sub_lines = [
-						sub_lines.join(', '),
-					]
-				}
-*/
-
-				return [key + o.stylizeꓽsyntax(": ") + sub_lines[0], ...sub_lines.slice(1)]
-			})
-
-			if (keys.length > 1) {
-				// separate the entries with commas
-				// TODO one day trailing comma, but only if multi-line
-				kvs = [
-					...kvs.slice(0, -1).map((sub_lines) => {
-						return [...sub_lines.slice(0, -1), ...sub_lines.slice(-1).map((s) => s + trailing_comma)]
-					}),
-					...kvs.slice(-1),
-				]
-			}
-			let lines: string[] = kvs.flat()
-
-			// pass some infos up
-			parent_state.indent_levelⵧmax = Math.max(parent_state.indent_levelⵧmax, st.indent_levelⵧmax)
-			parent_state.isꓽjson = parent_state.isꓽjson && st.isꓽjson
-
-			// compact the representation if appropriate
-			let should_compact_to_single_line: boolean =
-				!o.eol ||
-				(() => {
-					if (!o.should_compact_objects) return false
-
-					if (keys.length <= 1) return true
-
-					// TODO compact on small objects
-
-					return false
-				})()
-
-			let final_lines = [o.stylizeꓽsyntax("{"), ...lines, o.stylizeꓽsyntax("}")]
-
-			if (should_compact_to_single_line) {
-				return [final_lines.join("")]
-			}
-
-			// indent
-			final_lines = [
-				final_lines[0]!,
-				...final_lines.slice(1, -1).map((s) => st.indent_string + s),
-				...final_lines.slice(-1),
-			]
-
-			return final_lines
-		} catch (err) {
-			return [o.stylizeꓽerror(`[error prettifying:${(err as any)?.message}/po--kv]`)]
 		}
 	},
 	prettifyꓽobject: (obj: Object, st: State, { display_constructor = true } = {}): string[] => {
@@ -285,55 +203,60 @@ const OPTIONS__PRETTIFYⵧDEFAULT: PrettifyOptions = {
 					if (proto && proto.constructor && proto.constructor.name) {
 						if (proto.constructor !== Object) {
 							st.isꓽjson = false
-							return [
+							const prefix =
 								o.stylizeꓽsyntax("new ") +
-									((globalThis as any)[proto.constructor.name] === proto.constructor
-										? o.stylizeꓽglobal(proto.constructor.name)
-										: o.stylizeꓽuser(proto.constructor.name)) +
-									o.stylizeꓽsyntax("(") +
-									(() => {
-										switch (proto.constructor.name) {
-											// all primitives that can be an Object
-											case "String":
-												return o.prettifyꓽstring(obj as string, st)
-											case "Number":
-												return o.prettifyꓽnumber(obj as number, st)
-											case "Boolean":
-												return o.prettifyꓽboolean(obj as boolean, st)
+								((globalThis as any)[proto.constructor.name] === proto.constructor
+									? o.stylizeꓽglobal(proto.constructor.name)
+									: o.stylizeꓽuser(proto.constructor.name)) +
+								o.stylizeꓽsyntax("(")
+							const inner_lines = ((): string[] => {
+								switch (proto.constructor.name) {
+									// all primitives that can be an Object
+									case "String":
+										return [o.prettifyꓽstring(obj as string, st)]
+									case "Number":
+										return [o.prettifyꓽnumber(obj as number, st)]
+									case "Boolean":
+										return [o.prettifyꓽboolean(obj as boolean, st)]
 
-											// recognize some objects
-											case "Set":
-												return o.prettifyꓽarray(Array.from((obj as Set<any>).keys()), st)
-											case "WeakSet":
-												return o.stylizeꓽdim("/\*not enumerable*\/")
-											case "Date":
-												return o.stylizeꓽdim(`/*${(obj as any)[o.date_serialization_fn]()}*/`)
+									// recognize some objects
+									case "Set":
+										return o.prettifyꓽarray(Array.from((obj as Set<any>).keys()), st)
+									case "WeakSet":
+										return [o.stylizeꓽdim("/\*not enumerable*\/")]
+									case "Date":
+										return [o.stylizeꓽdim(`/*${(obj as any)[o.date_serialization_fn]()}*/`)]
 
-											// node
-											case "Buffer":
-												// too big!
-												return "/*…*/"
-											case "Gunzip": // seen in fetch_ponyfill response
-												// too big!
-												return "/*…*/"
+									// node
+									case "Buffer":
+										// too big!
+										return ["/*…*/"]
+									case "Gunzip": // seen in fetch_ponyfill response
+										// too big!
+										return ["/*…*/"]
 
-											// other
-											default:
-												if (proto.constructor.name.endsWith("Error")) {
-													const err: Error = obj as any
-													// no need to pretty print it as copy/pastable to code,
-													// 99.9% chance that's not what we want here
-													return o.stylizeꓽerror(o.quote + err.message + o.quote)
-												}
-
-												// Beware! This can turn into a huge thing, ex. a fetch response
-												// REM we MUST NOT have display_constructor = true to avoid infinite loops
-												return o.prettifyꓽobject(obj, st, { display_constructor: false })
-											//return '/*…*/'
+									// other
+									default:
+										if (proto.constructor.name.endsWith("Error")) {
+											const err: Error = obj as any
+											// no need to pretty print it as copy/pastable to code,
+											// 99.9% chance that's not what we want here
+											return [o.stylizeꓽerror(o.quote + err.message + o.quote)]
 										}
-									})() +
-									o.stylizeꓽsyntax(")"),
-							]
+
+										// Beware! This can turn into a huge thing, ex. a fetch response
+										// REM we MUST NOT have display_constructor = true to avoid infinite loops
+										return o.prettifyꓽobject(obj, st, { display_constructor: false })
+									//return '/*…*/'
+								}
+							})()
+
+							return inner_lines.map(
+								(line, index) =>
+									(index === 0 ? prefix : "") +
+									line +
+									(index === inner_lines.length - 1 ? o.stylizeꓽsyntax(")") : ""),
+							)
 						}
 					}
 				} catch (err) {
@@ -419,6 +342,105 @@ const OPTIONS__PRETTIFYⵧDEFAULT: PrettifyOptions = {
 			return [o.stylizeꓽerror(`[error prettifying:${(err as any)?.message}/pa]`)]
 		}
 	},
+}
+
+function _prettifyꓽobjectⵧkeyⳇvalue(obj: Object, st: State, keys_to_not_read?: ReadonlySet<PropertyKey>): string[] {
+	const { o } = st
+
+	const keys = Reflect.ownKeys(obj)
+
+	if (o.should_sort_keys)
+		keys.sort((a: string | number | symbol, b: string | number | symbol) => {
+			let res = cmp(typeof a, typeof b)
+
+			if (res === 0) {
+				res = cmp(a, b)
+			}
+
+			return res
+		})
+
+	const parent_state = st // for passing infos up
+	st = _increase_indentation(st)
+	st = {
+		...st,
+		circular: new Set([...Array.from(st.circular as any), obj]),
+	}
+
+	//const trailing_comma = '⧼' + o.stylizeꓽsyntax(',') + '⧽' // debug
+	const trailing_comma = o.stylizeꓽsyntax(",")
+	let kvs: string[][] = keys.map((k): string[] => {
+		if (keys_to_not_read?.has(k)) {
+			st.isꓽjson = false
+			return [o.prettifyꓽproperty__name(k, st) + o.stylizeꓽsyntax(": ") + o.stylizeꓽdim("/*<poison pill>*/")]
+		}
+
+		const v = (obj as any)[k]
+
+		if (typeof v === "function" && v.name === k) {
+			// special display
+			return [o.prettifyꓽfunction(v, st, { as_prop: true })]
+		}
+
+		const key = o.prettifyꓽproperty__name(k, st)
+		let sub_lines = o.prettifyꓽany(v, st)
+
+		/*
+		const max_remaining_length‿charcount = o.max_width‿charcount - st.indent_levelⵧcurrent * o.indent_size‿charcount - toꓽstringⵧwithout_ansi(key).length - 1
+		if (toꓽstringⵧwithout_ansi(sub_lines.join(',')).length < max_remaining_length‿charcount) {
+			// coerce into a single line
+			sub_lines = [
+				sub_lines.join(', '),
+			]
+		}
+*/
+
+		return [key + o.stylizeꓽsyntax(": ") + sub_lines[0], ...sub_lines.slice(1)]
+	})
+
+	if (keys.length > 1) {
+		// separate the entries with commas
+		// TODO one day trailing comma, but only if multi-line
+		kvs = [
+			...kvs.slice(0, -1).map((sub_lines) => {
+				return [...sub_lines.slice(0, -1), ...sub_lines.slice(-1).map((s) => s + trailing_comma)]
+			}),
+			...kvs.slice(-1),
+		]
+	}
+	let lines: string[] = kvs.flat()
+
+	// pass some infos up
+	parent_state.indent_levelⵧmax = Math.max(parent_state.indent_levelⵧmax, st.indent_levelⵧmax)
+	parent_state.isꓽjson = parent_state.isꓽjson && st.isꓽjson
+
+	// compact the representation if appropriate
+	let should_compact_to_single_line: boolean =
+		!o.eol ||
+		(() => {
+			if (!o.should_compact_objects) return false
+
+			if (keys.length <= 1) return true
+
+			// TODO compact on small objects
+
+			return false
+		})()
+
+	let final_lines = [o.stylizeꓽsyntax("{"), ...lines, o.stylizeꓽsyntax("}")]
+
+	if (should_compact_to_single_line) {
+		return [final_lines.join("")]
+	}
+
+	// indent
+	final_lines = [
+		final_lines[0]!,
+		...final_lines.slice(1, -1).map((s) => st.indent_string + s),
+		...final_lines.slice(-1),
+	]
+
+	return final_lines
 }
 
 /////////////////////////////////////////////////

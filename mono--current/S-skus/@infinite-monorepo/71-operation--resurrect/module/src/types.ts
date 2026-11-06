@@ -21,10 +21,11 @@ export interface ResurrectionIssueⵧgraph {
 export interface ResurrectionIssueⵧscript {
 	source: "script" // discriminant
 	script: string // ex. "check:ts"
+	log‿abs: PathⳇAbsolute // full output of the failed run
 }
 
 /////////////////////////////////////////////////
 
 import type { PackageGraphⳇIssueⵧany, PackageGraphⳇPackage } from "@infinite-monorepo/plugin--graph"
 
-import type { Immutable } from "@monorepo-private/ts--types"
+import type { Immutable, PathⳇAbsolute } from "@monorepo-private/ts--types"

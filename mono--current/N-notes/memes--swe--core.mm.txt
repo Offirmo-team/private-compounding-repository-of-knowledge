@@ -462,6 +462,7 @@ effective engineer -- LeadDev -- 08. Think long term = e.g. implications of deci
 effective engineer -- LeadDev -- 09. Leave software projects better than you found them
 effective engineer -- LeadDev -- 10. Be comfortable taking on new challenges
 effective engineer -- LeadDev https://www.linkedin.com/posts/addyosmani_softwareengineering-programming-effectiveness-activity-7018966411389661184-pVev
+effects = hard and expensive https://cekrem.github.io/posts/effect-without-effect-ts/
 egress/ingress
 Emergency Stop (E-Stop) = fail-safe control switch used to immediately halt machinery in hazardous situations to prevent injury or equipment damage
 emscripten
@@ -558,6 +559,7 @@ function
 function -- 1st-class object
 function -- first-class function
 function -- higher-order function
+function signature = What it needs, what it takes, what it returns, how it can fail https://cekrem.github.io/posts/effect-without-effect-ts/
 functional programming
 GAFAM "Google, Amazon, Facebook, Apple, Microsoft"
 GAFAM -- "megacap companies"
@@ -1128,6 +1130,7 @@ superapp
 SWE = blue or white collar? = https://ptrbrynt.com/posts/were-we-blue-collar-workers-all-along
 syntactic salt https://en.wikipedia.org/wiki/Syntactic_sugar#Syntactic_salt
 syntactic sugar https://en.wikipedia.org/wiki/Syntactic_sugar
+syscall = programmatic way in which a computer program requests a service from the operating system on which it is executed https://syscall.sh/ https://en.wikipedia.org/wiki/System_call
 system boundaries = a publicly exposed interface that third-party developers are going to use. It’s the inability to make breaking changes because you have external users to support that really defines a boundary. As a result, you have to pay special attention to get the design of a system boundary right—it’s not easy to make changes in the future. Boundaries are more important than other parts of our programs that we can refactor at will. https://www.tedinski.com/2018/02/06/system-boundaries.html
 system call
 tainting an object https://react.dev/reference/react/experimental_taintObjectReference

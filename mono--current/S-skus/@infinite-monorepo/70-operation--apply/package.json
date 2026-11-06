@@ -11,7 +11,7 @@
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@infinite-monorepo/operation--apply\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
-		"sandbox": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##sandbox/index.ts",
+		"sandbox": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./module/##sandbox/index.ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -44,6 +44,7 @@
 		"@infinite-monorepo/state": "workspace:*",
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/json-stable-stringify": "workspace:*",
+		"@monorepo-private/merge": "workspace:*",
 		"@monorepo-private/read-write-any-structured-file": "workspace:*"
 	},
 	"devDependencies": {

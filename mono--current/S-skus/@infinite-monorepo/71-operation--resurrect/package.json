@@ -13,7 +13,7 @@
 		"check:ts": "echo \"@infinite-monorepo/operation--resurrect\" && tsc --noEmit",
 		"check:unit-tests": "run-s test",
 		"dev": "run-s  watch:check:ts",
-		"sandbox": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##sandbox/index.ts",
+		"sandbox": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./module/##sandbox/index.ts",
 		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"

@@ -1,8 +1,10 @@
+import { Readable } from "node:stream"
 import * as util from "node:util"
 
 import chalk from "chalk"
 import { render as prettyjson } from "prettyjson"
 import getꓽterminal_size from "terminal-size"
+import { describe, expect, it } from "vitest"
 //import { injectꓽlibꓽchalk } from './injectable-lib--chalk.ts'
 //injectꓽlibꓽchalk(chalk as any)
 
@@ -143,7 +145,7 @@ describe("@monorepo-private/prettify-any", function () {
 					test_to_console([])
 				})
 
-				context("with elements being primitive types", function () {
+				describe("with elements being primitive types", function () {
 					it("should work -- tuple -- 1", () => {
 						test_to_console(["foo"])
 					})
@@ -157,7 +159,7 @@ describe("@monorepo-private/prettify-any", function () {
 					})
 				})
 
-				context("with elements being non-primitive types", function () {
+				describe("with elements being non-primitive types", function () {
 					it("should work -- simple", () => {
 						test_to_console([{ foo: "bar" }])
 					})
@@ -279,7 +281,7 @@ describe("@monorepo-private/prettify-any", function () {
 					test_to_console(async function foo(a: number) {})
 				})
 
-				it("should work -- generator")
+				it.todo("should work -- generator")
 			})
 
 			describe("other objects", function () {
@@ -292,8 +294,8 @@ describe("@monorepo-private/prettify-any", function () {
 					test_to_console(Object.create(null))
 				})
 
-				it("should work -- with objects -- this", () => {
-					if (should_test_verbose) test_to_console(this)
+				it("should work -- with objects -- test context", (context) => {
+					if (should_test_verbose) test_to_console(context)
 				})
 
 				it("should work -- with objects -- known global", () => {
@@ -420,20 +422,9 @@ describe("@monorepo-private/prettify-any", function () {
 					console.log("☐ prettifyꓽany(…):", prettifyꓽany(deep_mixed))
 				})
 
-				it("should handle deep objects - fetch", async () => {
-					const ↆf: Promise<any> = fetch("https://www.google.com").catch((err) => {
-						if ((err as any).message?.includes("fetch failed")) {
-							// offline, let it slide
-							// TODO one day find a better complex object
-							// or maybe create a server ourselves?
-							return err
-						}
-						throw err
-					})
-
-					return ↆf.then((fetch_raw_result: any) => {
-						test_to_console(fetch_raw_result)
-					})
+				// a fetch() Response would be closer to real life, but its internals are private fields = invisible
+				it("should handle deep objects -- node stream", () => {
+					test_to_console(Readable.from(["foo", "bar"]))
 				})
 			})
 
@@ -447,7 +438,6 @@ describe("@monorepo-private/prettify-any", function () {
 				test_to_console(out)
 			})
 
-			// TODO
 			it("should handle arguments", () => {
 				test_to_console(arguments)
 			})

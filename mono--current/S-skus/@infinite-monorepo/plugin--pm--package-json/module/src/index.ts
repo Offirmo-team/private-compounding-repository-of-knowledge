@@ -12,7 +12,7 @@ export const manifestꓽpackageᐧjson: StructuredFsⳇFileManifest = {
 const PURE_MODULE_CONTENT_RELPATH = "module" // for now
 
 // TODO configurable
-const NODE__OPTIONS = `--env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local`
+const NODE__OPTIONS = `--env-file-if-exists=.env.local --localstorage-file=.node-ls.local`
 const NODE_INVOCATION = `node ${NODE__OPTIONS}` //  --experimental-strip-types
 
 /////////////////////////////////////////////////

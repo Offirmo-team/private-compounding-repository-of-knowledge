@@ -91,6 +91,7 @@ consistency vs. comprehensiveness = consistency may be more important than compr
 consolidation = common across multiple industries, which is fueling competition. But, competition was in turn fueling commoditization
 consolidation = not always the right move https://www.cloudflare.com/the-net/platform-consolidation-costs/
 constructive confrontation = spot threats/issues/problems, debate aggressively, make bold moves before competitors/enemies
+consumer company = not B2B or institutional. rarer? https://asymco.com/2026/11/01/the-last-consumer-company/
 consumer technology = intended for use by consumers in the general public, as opposed to technology created for businesses or government organizations https://builtin.com/consumer-tech
 consumer technology = usually ads supported :/
 content is king -- small payments = failed to materialize

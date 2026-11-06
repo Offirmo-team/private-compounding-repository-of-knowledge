@@ -9,7 +9,7 @@
 		".": "./module/src/index.css"
 	},
 	"scripts": {
-		"_build:bundle": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./++gen/build--bundle/index.ts",
+		"_build:bundle": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./++gen/build--bundle/index.ts",
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
 		"_start:demo--parcel": "parcel serve module/__fixtures/wc-kitchen-sink/demo.html --port 1981 --lazy --no-autoinstall",
 		"_start:demo--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/wc-kitchen-sink/demo.html",

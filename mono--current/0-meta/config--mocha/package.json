@@ -10,8 +10,6 @@
 	"dependencies": {
 		"chai": "catalog:",
 		"chai-as-promised": "catalog:",
-		"chai-fetch-mock": "catalog:",
-		"chai-moment": "catalog:",
 		"mocha": "catalog:",
 		"sinon": "catalog:",
 		"sinon-chai": "catalog:"

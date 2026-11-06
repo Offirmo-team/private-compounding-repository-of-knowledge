@@ -48,7 +48,9 @@ Display:
   - the **end of the zone** with blocking issues
   - OR **>= 5 packages with blocking issues** (enough work for now)
 - then list the packages with issues, in resurrection order, with their issues
-  - script failure = just the failed script (no output: run it yourself)
+  - script failure = the failed script + the path of its log `<pkg>/.monorepo/resurrect--<script>.log` (`:` → `--`)
+    = command, duration, exit code, load avg vs. cores (= overloaded machine?), stdout, stderr
+    - removed on success = a log exists only if the last run failed
 - exit code = 1 if blocking issues (set by the caller, ex. the sandbox: `pnpm sandbox --from 1.2 --all`)
 
 ## Misc decisions
@@ -68,3 +70,6 @@ Display:
 ## Open questions / TODO
 
 - speed: cache the results (ex. by content hash), stop a package's checks at its 1st failure
+- flaky `check:unit-tests` (~1 run in 3, OK on rerun). Suspected: oversubscription = 1 package per core, BUT each
+  `vitest run` also spawns `cores - 1` workers (= ~cores² threads + `tsc`s) → default 5s test timeouts. To confirm with
+  the logs (load avg), then fix ex. `VITEST_MAX_WORKERS=1` in the env of the spawned scripts

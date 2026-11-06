@@ -1,20 +1,13 @@
-import * as path from "node:path"
-import { fileURLToPath } from "node:url"
-
-import { expect } from "chai"
-
-import { createꓽfile_entry } from "./index.ts"
-
 /////////////////////////////////////////////////
 
-describe(`@monorepo-private/file-entry -- examples`, function () {
+describe(`@monorepo-private/file-entry -- examples`, () => {
 	const dirname = path.dirname(fileURLToPath(import.meta.url))
 	const root = path.resolve(dirname, "../..")
 
-	describe("createꓽfile_entry(…)", function () {
+	describe("createꓽfile_entry(…)", () => {
 		it("should work -- simple file", () => {
 			const out = createꓽfile_entry(path.resolve(dirname, "./index.ts"), root)
-			expect(out).to.deep.equal({
+			expect(out).toStrictEqual({
 				basename: "index.ts",
 
 				ext: ".ts",
@@ -34,7 +27,7 @@ describe(`@monorepo-private/file-entry -- examples`, function () {
 
 		it("should work -- double extension", () => {
 			const out = createꓽfile_entry(path.resolve(dirname, "./index.tests.ts"), root)
-			expect(out).to.deep.equal({
+			expect(out).toStrictEqual({
 				basename: "index.tests.ts",
 
 				ext: ".ts",
@@ -54,7 +47,7 @@ describe(`@monorepo-private/file-entry -- examples`, function () {
 
 		it("should work -- dotfile", () => {
 			const out = createꓽfile_entry(path.resolve(dirname, "./.nojekyll"), root)
-			expect(out).to.deep.equal({
+			expect(out).toStrictEqual({
 				basename: ".nojekyll",
 
 				ext: "",
@@ -73,3 +66,12 @@ describe(`@monorepo-private/file-entry -- examples`, function () {
 		})
 	})
 })
+
+/////////////////////////////////////////////////
+
+import * as path from "node:path"
+import { fileURLToPath } from "node:url"
+
+import { describe, expect, it } from "vitest"
+
+import { createꓽfile_entry } from "./index.ts"

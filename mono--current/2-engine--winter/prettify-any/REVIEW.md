@@ -1,13 +1,3 @@
-# Review: `2-engine--winter/prettify-any`
-
-A functional-style library that intelligently pretty-prints any JS value (objects, arrays, primitives, circular refs) to
-a copy/paste-able, optionally colorized string, for debug purposes on node/browser/winter runtimes.
-
-Note: this package contains a `module/~~tosort/2022/indent-string.ts` file holding unsorted/legacy code slated for
-removal — not reviewed here.
-
-## Findings
-
 ### G1-P6-01 — Major: hard Node-only dependency breaks the package's own isomorphic/"winter" claim
 
 `module/src/options--display.ts` does:
@@ -32,32 +22,6 @@ no guard/dynamic-import/injection fallback. This will throw or fail to bundle in
 `module/MANIFEST.json5` even marks `terminal-size` as `{ type: "optional" }` in its `_overrides.dependencies`, but the
 generated `package.json` lists it as a plain (required) `dependencies` entry and the code treats it as mandatory — the
 manifest's intent and the actual code disagree.
-
-### G1-P6-02 — Minor: unused `assert_from` import
-
-`module/src/options.ts:1` and `module/src/injectable-lib--chalk.ts:4` both
-`import { assert_from, assert } from "@monorepo-private/assert"`, but only `assert` is ever called in either file.
-`assert_from` is dead code (imported, never used).
-
-### G1-P6-03 — Minor: unused `sinon` / `@types/sinon` devDependencies
-
-`sinon` and `@types/sinon` are declared in `package.json` devDependencies but there is no reference to `sinon` anywhere
-in `module/`. Dead dependency declarations.
-
-### G1-P6-04 — Nit: broken usage example in README.md
-
-`README.md` lines 32-37:
-
-```ts
-import
-import {
-	prettifyꓽany,
-	prettifyꓽjson,
-} from '@monorepo-private/prettify-any'
-```
-
-The stray `import` on its own line (33) is leftover cruft — this snippet is not valid/copy-pasteable TypeScript, which
-is ironic given the library's stated goal of producing copy/paste-able output.
 
 ### G1-P6-05 — Nit: `State.circular` typed as `WeakSet<object>` but silently becomes a `Set<object>` at runtime
 
@@ -87,16 +51,3 @@ current call path (harmless, but dead).
 initialized in `v2.ts`, but no code ever reads it to make a wrapping/truncation decision. This is consistent with the
 `DisplayOptions.max_width‿charcount` field being explicitly commented `// NOT IMPLEMENTED TODO` in `types.ts` — it's
 tracked state for a feature that was never finished, effectively dead today.
-
-## Other observations (no action needed)
-
-- No OOP/class usage found in source (the only `class` mention is a code comment about heuristically detecting `class`
-  declarations via `Function.prototype.toString`) — consistent with the monorepo's functional-programming style
-  guidance.
-- Tests (`index.tests.ts`, `utils.tests.ts`) use legacy mocha + chai, which is expected/fine per the migration note
-  (only new tests must use vitest). `vitest` is already listed as a devDependency in `package.json` but not yet used —
-  presumably provisioned ahead of a future migration; not a bug.
-- `package.json` `exports`/`type`/`main` fields are consistent with the actual `module/src/index.ts` entry point; no
-  structural mismatch found.
-- No security issues identified (no `eval`, no dynamic code execution, no untrusted I/O — `console.log`-only side
-  effects in `dumpꓽanyⵧprettified`).

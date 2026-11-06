@@ -1,5 +1,3 @@
-import { Temporal } from "temporal-polyfill"
-
 import assert from "@monorepo-private/assert/v1"
 import {
 	capitalizeⵧfirst,

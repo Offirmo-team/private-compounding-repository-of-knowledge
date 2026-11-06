@@ -28,19 +28,12 @@ Missing features (worse than util.inspect)
 ## Usage
 
 ```ts
-// "@monorepo-private/prettify-any": "*",
-
-import
-import {
-	prettifyꓽany,
-	prettifyꓽjson,
-} from '@monorepo-private/prettify-any'
+import { prettifyꓽany, prettifyꓽjson } from "@monorepo-private/prettify-any"
 
 prettifyꓽjson(foo)
 prettifyꓽjson(foo)
 
-import { dumpꓽanyⵧprettified } from '@monorepo-private/prettify-any'
+import { dumpꓽanyⵧprettified } from "@monorepo-private/prettify-any"
 
-dumpꓽanyⵧprettified('hello', {foo})
-
+dumpꓽanyⵧprettified("hello", { foo })
 ```

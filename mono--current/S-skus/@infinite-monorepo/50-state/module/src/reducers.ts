@@ -573,7 +573,7 @@ export function requestꓽfile_output(
 		} else if (candidate_spec.intent === "present--containing") {
 			const merge_spec: Immutable<FileOutputPresent> = {
 				...candidate_spec,
-				content: mergeꓽjson(
+				content: mergeⵧdeepⵧno_conflict(
 					(existing as any as FileOutputPresent).content,
 					(candidate_spec as any as FileOutputPresent).content!,
 				) as any,
@@ -751,7 +751,7 @@ import type { StructuredFsⳇFileManifest } from "@infinite-monorepo/structured-
 
 import { assert_from, assert } from "@monorepo-private/assert"
 import { stringifyⵧstable } from "@monorepo-private/json-stable-stringify"
-import { mergeꓽjson } from "@monorepo-private/read-write-any-structured-file"
+import { mergeⵧdeepⵧno_conflict } from "@monorepo-private/merge"
 import { ↆreadꓽfile } from "@monorepo-private/read-write-any-structured-file/read"
 import type { Immutable, PathⳇAbsolute, DirPathⳇAbsolute, DirPathⳇRelative } from "@monorepo-private/ts--types"
 import { normalizeError } from "@monorepo-private/utils--error"

@@ -1,9 +1,4 @@
-import { ALL_LOG_LEVELS } from "@monorepo-private/practical-logger--core"
-import type { LogSink, LogPayload } from "@monorepo-private/practical-logger--types"
-
-import { LIB } from "./consts.ts"
-
-import { createLogger } from "./index.ts"
+/////////////////////////////////////////////////
 
 describe(`${LIB} - index`, () => {
 	describe("createLogger()", () => {
@@ -62,3 +57,14 @@ describe(`${LIB} - index`, () => {
 		})
 	})
 })
+
+/////////////////////////////////////////////////
+
+import { describe, expect, it } from "vitest"
+
+import { ALL_LOG_LEVELS } from "@monorepo-private/practical-logger--core"
+import type { LogSink, LogPayload } from "@monorepo-private/practical-logger--types"
+
+import { LIB } from "./consts.ts"
+
+import { createLogger } from "./index.ts"

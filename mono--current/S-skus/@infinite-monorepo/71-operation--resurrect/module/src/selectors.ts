@@ -131,7 +131,7 @@ function _formatꓽissue(issue: Immutable<ResurrectionIssue>): string {
 		case "graph":
 			return `   - [graph] ${styleText("yellow", issue.issue.type)}: ${issue.issue.message}`
 		case "script":
-			return `   - [${styleText("yellow", issue.script)}] failed`
+			return `   - [${styleText("yellow", issue.script)}] failed, see ${styleText("gray", issue.log‿abs)}`
 		default:
 			assertⵧnever_reached({ issue }, { discriminant: "source" })
 	}

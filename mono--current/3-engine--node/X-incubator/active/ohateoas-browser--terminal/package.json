@@ -1,40 +1,35 @@
 {
-	"name": "@monorepo-private/state-migration-tester",
+	"name": "@monorepo-private/ohateoas-browser--terminal",
 	"version": "0.0.1",
 	"private": true,
-	"description": "helper for testing migrations",
+	"description": "Terminal implementation of a Offirmo’s Hypermedia Architecture browser",
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
-		".": "./module/src/index.ts"
+		".": "./module/index.ts"
 	},
 	"scripts": {
-		"check": "run-s check:ts check:unit-tests",
-		"check:ts": "echo \"@monorepo-private/state-migration-tester\" && tsc --noEmit",
-		"check:unit-tests": "run-s test",
+		"_check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/ohateoas-browser--terminal\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
-		"test": "run-s test--vitest",
-		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
-		"@monorepo-private/fs--ls": "workspace:*",
-		"@monorepo-private/offirmo-state": "workspace:*",
+		"@monorepo-private/normalize-string": "workspace:*",
+		"@monorepo-private/ohateoas": "workspace:*",
 		"@monorepo-private/prettify-any": "workspace:*",
+		"@monorepo-private/rich-text-format": "workspace:*",
+		"@monorepo-private/rich-text-format--to-terminal": "workspace:*",
 		"@monorepo-private/timestamps": "workspace:*",
-		"jsondiffpatch": "catalog:",
-		"load-json-file": "catalog:",
-		"sinon": "catalog:",
-		"write-json-file": "catalog:"
+		"@monorepo-private/ts--types--hypermedia": "workspace:*",
+		"zx": "catalog:"
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@types/chai": "catalog:",
+		"@monorepo-private/ts--types": "workspace:*",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
-		"chai": "catalog:",
 		"npm-run-all": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

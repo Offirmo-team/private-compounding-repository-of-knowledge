@@ -126,7 +126,7 @@ describe("@infinite-monorepo/operation--resurrect -- selectors", () => {
 					},
 					{
 						pkg: _createꓽpackage("b/"),
-						issues: [{ source: "script", script: "check:ts" }],
+						issues: [{ source: "script", script: "check:ts", log‿abs: "/b/.monorepo/resurrect--check--ts.log" }],
 						isꓽblocking: false,
 					},
 				]),
@@ -136,7 +136,7 @@ describe("@infinite-monorepo/operation--resurrect -- selectors", () => {
 			expect(report.indexOf("1. @test/a/ a/ [1.1.5.0]")).toBeGreaterThan(-1)
 			expect(report).toContain("[graph] dep_cycle: in a dependency cycle with @test/b/")
 			expect(report.indexOf("2. @test/b/ b/")).toBeGreaterThan(report.indexOf("1. @test/a/"))
-			expect(report).toContain("[check:ts] failed")
+			expect(report).toContain("[check:ts] failed, see /b/.monorepo/resurrect--check--ts.log")
 			expect(report).toContain("b/ [1.1.5.0] (not blocking)")
 			expect(report).not.toContain("a/ [1.1.5.0] (not blocking)")
 		})

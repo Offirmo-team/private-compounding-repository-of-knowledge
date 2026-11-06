@@ -597,6 +597,7 @@ nodes -- running -- solutions -- https://dappnode.com/
 nodes -- seed = Nodes whose IP addresses are included in the Bitcoin client for use during a new installation when the normal bootstrapping process through IRC wasn't possible.
 nodes -- super & = A participant in a p2p network which connects to as many other nodes as possible
 normie friendly = to break out of the limited circle
+North Korea -- scapegoats? = or inside job?
 North Korea = crypto thiefs. 2024-12 = North Korean hackers had stolen $1.34bn of cryptocurrency in 2024, a record total and double what they stole the year before (Chainalysis)
 on-chain -- off-chain = not really on the blockchain, ex. exchanges, custodial wallets = pay for nothing, may not have the reserves, may not be able to survive a panic
 on-chain = also describes a provider of services that operates directly on a blockchain = not a CEX
@@ -733,6 +734,7 @@ solutions -- ccxt = CryptoCurrency eXchange Trading Library https://github.com/c
 solutions -- Cloudflare -- Ethereum gateway https://developers.cloudflare.com/web3/ethereum-gateway/
 solutions -- Cloudflare -- IFPS
 solutions -- CoinGecko = ranking website https://www.coingecko.com/
+solutions -- Free Software Media System = https://jellyfin.org/
 solutions -- Geth (Go Ethereum) = an open source blockchain protocol implementing the standard Ethereum specification plus other useful features such as a pluggable consensus engine. Geth is among the most widely used implementations of Ethereum nodes. It supports both the standard DAG based Proof-of-Work consensus and Proof-of-Authority (PoA) consensus with its implementation called Clique https://github.com/ethereum/go-ethereum
 solutions -- hardhat = Ethereum development environment https://github.com/NomicFoundation/hardhat
 solutions -- https://www.infura.io/

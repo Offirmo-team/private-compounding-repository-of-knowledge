@@ -1,6 +1,10 @@
 
 ## TODO LinkedIn
 
+
+review in NEW session
+
+
 ### Web formats
 
 https://jakearchibald.com/2026/jpeg-xl-vs-avif/
@@ -20,6 +24,9 @@ Why did the empty folder see a therapist? Nobody would track it, and all it had 
 
 Why did the SSH key break up with the password? It needed a relationship with less exposure.
 
+Why did the pirate's PR get rejected? Too many arrr-guments in one function.
+
+
 
 
 ## TODO blog posts
@@ -27,6 +34,13 @@ Why did the SSH key break up with the password? It needed a relationship with le
 - https://refactoringenglish.com/blog/anti-patterns-software-blogging/
 
 ### TODO my CLAUDE.md as of October 2026
+
+### TODO help Claude
+
+latest bash
+fd
+etc.
+
 
 ### TODO Tree of load-bearing
 

@@ -19,16 +19,18 @@ const SPEC: Partial<InfiniteMonorepoSpec> = {
 		"3-engine--node/0-dev-tools/*",
 		"3-engine--node/1-libs--simple/*",
 		"3-engine--node/2-libs--cross-cutting/*",
+		"3-engine--node/3-libs--advanced/*",
 		"3-engine--node/X-incubator/active/*",
 
 		"4-engine--browser/0-dev-tools/*",
 		"4-engine--browser/1-libs--simple/*",
 		"4-engine--browser/2-libs--cross-cutting/*",
+		"4-engine--browser/3-libs--advanced/*",
 		"4-engine--browser/X-incubator/active/*",
 
 		"7-multimorphic/@oh-my-rpg/*",
 
-		"B-backend/*",
+		//"B-backend/*",
 
 		"S-skus/*/*",
 		/*"S-skus/@dev-docs--web3/*",

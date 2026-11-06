@@ -44,6 +44,7 @@
 		// must be listed in this file as well, even if no annotation.
 		// REMINDER: we need to follow some conventions for this to work, see TODO
 		"check": {},
+		"_check": {},
 		"clean": {
 			// cleans any low-value generated / built / temporary files
 			"cache": false

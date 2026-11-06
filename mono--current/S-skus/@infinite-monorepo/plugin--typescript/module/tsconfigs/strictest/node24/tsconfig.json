@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"extends": [
-		/* https://github.com/tsconfig/bases?tab=readme-ov-file#node-24-tsconfigjson (update marker) */
+		/* https://github.com/tsconfig/bases?tab=readme-ov-file#node-24-tsconfigjson */
 		"@tsconfig/node24/tsconfig.json",
 		/* https://github.com/tsconfig/bases?tab=readme-ov-file#node-with-typescript-ts-58-only-tsconfigjson */
 		"@tsconfig/node-ts/tsconfig.json",

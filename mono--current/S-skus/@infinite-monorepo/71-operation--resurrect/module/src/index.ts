@@ -45,7 +45,7 @@ export type * from "./types.ts"
 
 async function _ↆloadꓽgraph(monorepo_root‿abs: PathⳇAbsolute): Promise<PackageGraph> {
 	const graph‿abs = nodeꓽpath.normalize(manifestꓽgraphᐧjson5.path‿ar.replace(PATHVARⵧROOTⵧMONOREPO, monorepo_root‿abs))
-	const graph = (await ↆloadꓽfileⵧjson5(graph‿abs)) as unknown as Partial<PackageGraph>
+	const graph = (await ↆreadꓽfileⵧjson5(graph‿abs)) as unknown as Partial<PackageGraph>
 
 	const isꓽup_to_date =
 		Array.isArray(graph.packages) &&
@@ -63,7 +63,7 @@ async function _ೱgetꓽissues(
 	if (pkg.isꓽphantom) return issuesⵧgraph // no folder = nothing to run
 
 	const pkg‿abs: PathⳇAbsolute = nodeꓽpath.join(monorepo_root‿abs, pkg.path‿rel)
-	const packageᐧjson = (await ↆloadꓽfileⵧjson5(nodeꓽpath.join(pkg‿abs, "package.json"))) as {
+	const packageᐧjson = (await ↆreadꓽfileⵧjson5(nodeꓽpath.join(pkg‿abs, "package.json"))) as {
 		scripts?: Record<string, string>
 	}
 	const issuesⵧscripts = await getꓽscripts_to_run(packageᐧjson.scripts).reduce<
@@ -78,22 +78,68 @@ function _getꓽissuesⵧgraph(pkg: Immutable<PackageGraphⳇPackage>): Array<Re
 }
 
 // 0 or 1 issue
+// the log only exists if the last run failed (removed on success = never stale)
 async function _ೱrunꓽscript(script: string, pkg‿abs: PathⳇAbsolute): Promise<Array<ResurrectionIssueⵧscript>> {
-	try {
-		await ೱspawnCorrectlyAndResolvesWithStdout({
-			spawnCommand: "pnpm",
-			spawnArgs: ["run", script],
-			spawnOptions: { cwd: pkg‿abs },
-		})
-		return []
-	} catch {
-		return [{ source: "script", script }]
+	const log‿abs: PathⳇAbsolute = nodeꓽpath.join(pkg‿abs, ".monorepo", `resurrect--${script.replaceAll(":", "--")}.log`)
+	const started_at‿ms = Date.now()
+	const err = await ೱspawnCorrectlyAndResolvesWithStdout({
+		spawnCommand: "pnpm",
+		spawnArgs: ["run", script],
+		spawnOptions: { cwd: pkg‿abs },
+	}).then(
+		() => undefined,
+		(err: SpawnError) => err,
+	)
+
+	if (err) {
+		await fs.mkdir(nodeꓽpath.dirname(log‿abs), { recursive: true })
+		await fs.writeFile(
+			log‿abs,
+			_formatꓽscript_log(err, {
+				pkg‿abs,
+				started_at‿ms,
+				ended_at‿ms: Date.now(),
+				load‿1min: loadavg()[0] ?? NaN,
+				cores: availableParallelism(),
+			}),
+		)
+		return [{ source: "script", script, log‿abs }]
 	}
+
+	await fs.rm(log‿abs, { force: true })
+	return []
+}
+
+// load >> cores = overloaded machine = likely timeouts = flaky failure
+function _formatꓽscript_log(
+	{ commandForLog, code, signal, message, stdout, stderr }: Immutable<SpawnError>,
+	{
+		pkg‿abs,
+		started_at‿ms,
+		ended_at‿ms,
+		load‿1min,
+		cores,
+	}: { pkg‿abs: PathⳇAbsolute; started_at‿ms: number; ended_at‿ms: number; load‿1min: number; cores: number },
+): string {
+	return [
+		`$ cd ${pkg‿abs} && ${commandForLog}`,
+		`failed at ${new Date(ended_at‿ms).toISOString()} after ${((ended_at‿ms - started_at‿ms) / 1000).toFixed(1)}s, code=${code} signal=${signal}`,
+		`load avg (1 min) at failure = ${load‿1min.toFixed(1)} for ${cores} cores`,
+		`error: ${message}`,
+		"",
+		"------- stdout -------",
+		stdout,
+		"",
+		"------- stderr -------",
+		stderr,
+		"",
+	].join("\n")
 }
 
 /////////////////////////////////////////////////
 
-import { availableParallelism } from "node:os"
+import fs from "node:fs/promises"
+import { availableParallelism, loadavg } from "node:os"
 import nodeꓽpath from "node:path"
 import process from "node:process"
 import { styleText } from "node:util"
@@ -107,8 +153,8 @@ import {
 import { PATHVARⵧROOTⵧMONOREPO } from "@infinite-monorepo/types-for-plugins"
 
 import { assert } from "@monorepo-private/assert"
-import { ↆloadꓽfileⵧjson5 } from "@monorepo-private/read-write-any-structured-file/read"
-import { ೱspawnCorrectlyAndResolvesWithStdout } from "@monorepo-private/spawn-correctly"
+import { ↆreadꓽfileⵧjson5 } from "@monorepo-private/read-write-any-structured-file/read"
+import { ೱspawnCorrectlyAndResolvesWithStdout, type SpawnError } from "@monorepo-private/spawn-correctly"
 import type { Immutable, PathⳇAbsolute, PathⳇAny } from "@monorepo-private/ts--types"
 
 import { ೱexploreꓽzones } from "./explore.ts"

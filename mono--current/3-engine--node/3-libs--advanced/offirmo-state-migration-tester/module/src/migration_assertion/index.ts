@@ -1,3 +1,4 @@
+import * as nodeꓽassert from "node:assert/strict"
 import * as fs from "node:fs"
 import * as path from "node:path"
 import { fileURLToPath } from "node:url"
@@ -6,6 +7,7 @@ import { loadJsonFileSync } from "load-json-file"
 import * as sinon from "sinon"
 import { writeJsonFileSync } from "write-json-file"
 
+import { assert } from "@monorepo-private/assert"
 import { lsFilesSync } from "@monorepo-private/fs--ls"
 import { getꓽschema_version, getꓽschema_versionⵧloose } from "@monorepo-private/offirmo-state"
 import { prettifyꓽjson } from "@monorepo-private/prettify-any"
@@ -13,6 +15,11 @@ import { TEST_TIMESTAMP_MS, getꓽUTC_timestampⵧhuman_readable‿minutes } fro
 
 import { get_advanced_diff as base_get_json_diff } from "../advanced-json-diff/index.ts"
 import { LIB, HINTS_FILENAME } from "../consts.ts"
+
+// the minimal subset of a test runner we need,
+// typed structurally to be satisfied by mocha's, vitest's… describe/it
+type SuiteFunction = (title: string, fn: () => void) => void
+type TestFunction = (title: string, fn: () => void) => void
 
 interface Options {
 	use_hints?: boolean
@@ -29,10 +36,8 @@ interface Options {
 		migrated_data: any
 	}) => ReturnType<typeof base_get_json_diff>
 
-	describe: Mocha.SuiteFunction
-	context: Mocha.SuiteFunction
-	it: Mocha.TestFunction
-	expect: Chai.ExpectStatic
+	describe: SuiteFunction & { skip: SuiteFunction }
+	it: TestFunction
 
 	can_update_snapshots?: boolean
 	should_skip?: boolean
@@ -49,19 +54,13 @@ export function itㆍshouldㆍmigrateㆍcorrectly({
 	advanced_diff_json = undefined,
 	clean_json_diff = undefined,
 	describe,
-	context,
 	it,
-	expect,
 
 	can_update_snapshots = false,
 	should_skip = false, // allow skipping the test, like it.skip
 }: Options) {
 	if (typeof LATEST_EXPECTED_DATA === "function") {
-		// wrap the call with the fake timers
-		const clock = sinon.useFakeTimers(TEST_TIMESTAMP_MS)
-		expect(+Date.now()).to.equal(TEST_TIMESTAMP_MS) // sanity check
-		LATEST_EXPECTED_DATA = LATEST_EXPECTED_DATA()
-		clock.restore()
+		LATEST_EXPECTED_DATA = withꓽfake_timers(LATEST_EXPECTED_DATA)
 	}
 
 	// https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c#what-do-i-use-instead-of-__dirname-and-__filename
@@ -75,7 +74,7 @@ export function itㆍshouldㆍmigrateㆍcorrectly({
 	if (should_skip) console.log(`${LOG_PREFIX} note: skip mode, will do the minimum`)
 
 	// propagate the skip
-	describe = should_skip ? (describe.skip.bind(describe) as Mocha.SuiteFunction) : describe
+	const describeⵧmaybe_skipped: SuiteFunction = should_skip ? describe.skip.bind(describe) : describe
 
 	function get_json_diff(a: any, b: any) {
 		let diff = base_get_json_diff(a, b)
@@ -90,36 +89,31 @@ export function itㆍshouldㆍmigrateㆍcorrectly({
 	}
 
 	// early tests, always valid
-	describe(`[${LIB} - automatically generated migration tests]`, function () {
-		beforeEach(function () {
-			this["clock"] = sinon.useFakeTimers(TEST_TIMESTAMP_MS)
-		})
-		afterEach(function () {
-			this["clock"].restore()
-		})
+	describeⵧmaybe_skipped(`[${LIB} - automatically generated migration tests]`, () => {
+		describe("when the version is more recent", () => {
+			it("should throw with a meaningful error", () =>
+				withꓽfake_timers(() => {
+					function load() {
+						migrate_toꓽlatest({ schema_version: 99999 })
+					}
 
-		context("when the version is more recent", function () {
-			it("should throw with a meaningful error", () => {
-				function load() {
-					migrate_toꓽlatest({ schema_version: 99999 })
-				}
-
-				expect(load).to.throw("ore recent version")
-			})
+					nodeꓽassert.throws(load, { message: /ore recent version/ })
+				}))
 		})
 
-		context("when the version is up to date", function () {
-			it("should return the state without change", () => {
-				try {
-					expect(getꓽschema_version(LATEST_EXPECTED_DATA), "schema version").to.equal(SCHEMA_VERSION) // make sure our tests are up-to-date
-					const migrated_data = migrate_toꓽlatest(LATEST_EXPECTED_DATA)
-					expect(migrated_data, "deep no change").to.deep.equal(LATEST_EXPECTED_DATA)
-					expect(migrated_data, "immutability").to.equal(LATEST_EXPECTED_DATA)
-				} catch (err: any) {
-					err.message = err.message + ` [${LIB} hint: check param LATEST_EXPECTED_DATA]`
-					throw err
-				}
-			})
+		describe("when the version is up to date", () => {
+			it("should return the state without change", () =>
+				withꓽfake_timers(() => {
+					try {
+						nodeꓽassert.strictEqual(getꓽschema_version(LATEST_EXPECTED_DATA), SCHEMA_VERSION, "schema version") // make sure our tests are up-to-date
+						const migrated_data = migrate_toꓽlatest(LATEST_EXPECTED_DATA)
+						nodeꓽassert.deepStrictEqual(migrated_data, LATEST_EXPECTED_DATA, "deep no change")
+						nodeꓽassert.strictEqual(migrated_data, LATEST_EXPECTED_DATA, "immutability")
+					} catch (err: any) {
+						err.message = err.message + ` [${LIB} hint: check param LATEST_EXPECTED_DATA]`
+						throw err
+					}
+				}))
 		})
 
 		/////// validate params before continuing further
@@ -239,10 +233,9 @@ export function itㆍshouldㆍmigrateㆍcorrectly({
 		ALL_SNAPSHOTS.forEach((snapshot_path) => {
 			const LEGACY_DATA = loadJsonFileSync(snapshot_path) as any
 
-			context(
-				`when the version is ${getꓽschema_versionⵧloose(LEGACY_DATA) === SCHEMA_VERSION ? "UP TO DATE" : "OUTDATED"}: v${getꓽschema_versionⵧloose(LEGACY_DATA)} from ${path.basename(snapshot_path)}`,
-				function () {
-					it("should migrate it to the latest version", () => {
+			describe(`when the version is ${getꓽschema_versionⵧloose(LEGACY_DATA) === SCHEMA_VERSION ? "UP TO DATE" : "OUTDATED"}: v${getꓽschema_versionⵧloose(LEGACY_DATA)} from ${path.basename(snapshot_path)}`, () => {
+				it("should migrate it to the latest version", () =>
+					withꓽfake_timers(() => {
 						try {
 							const migrated_data = migrate_toꓽlatest(LEGACY_DATA, migration_hints_for_chaining)
 
@@ -260,15 +253,14 @@ export function itㆍshouldㆍmigrateㆍcorrectly({
 							}
 							if (json_diff) {
 								console.warn("Test failure: additional diff (json) for info:", prettifyꓽjson(json_diff))
-								expect(migrated_data).to.deep.equal(LATEST_EXPECTED_DATA)
+								nodeꓽassert.deepStrictEqual(migrated_data, LATEST_EXPECTED_DATA)
 							}
 						} catch (err: any) {
 							err.message = err.message + ` [${LIB} hint: check file ${path.basename(snapshot_path)}]`
 							throw err
 						}
-					})
-				},
-			)
+					}))
+			})
 		})
 	})
 }
@@ -279,4 +271,17 @@ itㆍshouldㆍmigrateㆍcorrectly.skip = function (options: Options) {
 		...options,
 		should_skip: true,
 	})
+}
+
+/////////////////////////////////////////////////
+
+// runner-agnostic replacement for beforeEach/afterEach
+function withꓽfake_timers<T>(fn: () => T): T {
+	const clock = sinon.useFakeTimers(TEST_TIMESTAMP_MS)
+	try {
+		assert(Date.now() === TEST_TIMESTAMP_MS, "fake timers should be active")
+		return fn()
+	} finally {
+		clock.restore()
+	}
 }

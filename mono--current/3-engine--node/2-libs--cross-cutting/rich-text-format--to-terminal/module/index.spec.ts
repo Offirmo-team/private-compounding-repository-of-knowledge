@@ -1,10 +1,3 @@
-import { expect } from "chai"
-
-import * as RichText from "@monorepo-private/rich-text-format"
-import * as DEMOS from "@monorepo-private/rich-text-format/examples"
-
-import { LIB, renderⵧto_terminal } from "./index.ts"
-
 /////////////////////////////////////////////////
 
 describe(`${LIB} -- renderers -- to terminal`, () => {
@@ -13,19 +6,34 @@ describe(`${LIB} -- renderers -- to terminal`, () => {
 		rendering_options = {}
 	})
 
-	describe("with default styles", function () {
-		describe("primitives", function () {
+	describe("with default styles", () => {
+		describe("primitives", () => {
 			it("should work", () => {
 				RichText.Enum.values(RichText.NodeType)
 					.filter((k) => k !== "_li")
 					.forEach((k) => {
 						console.log(`------- ${k}: -------`)
 
-						const $node = RichText._create(k)
-							.pushText(k === "emoji" ? "🏆" : k)
-							.done()
+						const $wrapper = RichText.fragmentⵧblock().assemble((builder) => {
+							builder.pushText("[pre]")
+							switch (k) {
+								case "br":
+									builder.pushLineBreak()
+									break
+								case "hr":
+									builder.pushHorizontalRule()
+									break
+								default:
+									builder.pushSubNode(
+										RichText._create(k)
+											.pushText(k === "emoji" ? "🏆" : k)
+											.done(),
+									)
+									break
+							}
 
-						const $wrapper = RichText.fragmentⵧblock().pushText("[pre]").pushNode($node).pushText("[post]").done()
+							builder.pushText("[post]")
+						})
 
 						const str = renderⵧto_terminal($wrapper, rendering_options)
 						console.log(str)
@@ -33,7 +41,7 @@ describe(`${LIB} -- renderers -- to terminal`, () => {
 			})
 		})
 
-		describe("combinations", function () {
+		describe("combinations", () => {
 			it("should work -- demos", () => {
 				Object.values(DEMOS).forEach(($doc) => {
 					const str = renderⵧto_terminal($doc, rendering_options)
@@ -43,3 +51,12 @@ describe(`${LIB} -- renderers -- to terminal`, () => {
 		})
 	})
 })
+
+/////////////////////////////////////////////////
+
+import { beforeEach, describe, expect, it } from "vitest"
+
+import * as RichText from "@monorepo-private/rich-text-format"
+import * as DEMOS from "@monorepo-private/rich-text-format/examples"
+
+import { LIB, renderⵧto_terminal } from "./index.ts"

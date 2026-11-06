@@ -556,7 +556,7 @@ genAI -- use cases -- Search = Search call transcripts, internal knowledge sourc
 genAI -- use cases -- Stylistic conversion = Rewrite content in a different style or language.
 genAI -- use cases -- Text classification = Classify intent in customer chat logs, support tickets and more.
 GenAI take on humans https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans
-gender shade = accuracy of AI powered gender classification products http://gendershades.org/
+gender shade = accuracy of AI-powered gender classifiers = bad at darker females http://gendershades.org/
 GPT "Generative Pre-trained Transformer" = understand language (natural & formal)
 graveyard = list of dead AI tools https://tooldirectory.ai/ai-graveyard
 Grounded Generation = see [RAG]

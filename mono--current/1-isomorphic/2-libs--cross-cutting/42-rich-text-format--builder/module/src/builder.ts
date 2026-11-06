@@ -1,33 +1,73 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import { assertꓽstringⵧnormalized, assertꓽstringⵧnormalized_and_trimmed } from "@monorepo-private/normalize-string"
-import { LIB, SCHEMA_VERSION } from "@monorepo-private/rich-text-format--core"
-import {
+/////////////////////////////////////////////////
+
+export {
+	// for convenience
 	NodeType,
-	type SubNodeKey,
-	type Hints as DefaultHints,
-	type NodeⳇNormalized,
-	type Node,
 	type Document,
-	type NodeⳇLike,
-	isꓽNode,
-} from "@monorepo-private/rich-text-format--core"
-import { simplifyꓽnode, getꓽtype, getꓽdisplay_type, isꓽlist } from "@monorepo-private/rich-text-format--core"
-import { promoteꓽto_node, promoteꓽto_string_for_node_content } from "@monorepo-private/rich-text-format--core"
-import { wrap } from "@monorepo-private/rich-text-format--core"
-import type { Immutable } from "@monorepo-private/ts--types"
-import { hasꓽemoji } from "@monorepo-private/type-detection"
+}
 
 /////////////////////////////////////////////////
 
-interface CommonPushOptions {
-	id?: SubNodeKey
-	classes?: string[]
+export function fragmentⵧinline(content?: Immutable<NodeⳇLike>): Builder {
+	return _create(NodeType.fragmentⵧinline, content)
+}
+export function strong(content?: Immutable<NodeⳇLike>): Builder {
+	return _create(NodeType.strong, content)
+}
+export function weak(content?: Immutable<NodeⳇLike>): Builder {
+	return _create(NodeType.weak, content)
+}
+export function em(content?: Immutable<NodeⳇLike>): Builder {
+	return _create(NodeType.em, content)
+}
+export function emoji(content?: Immutable<NodeⳇLike>): Builder {
+	return _create(NodeType.emoji, content)
 }
 
-type SubNodes = NodeⳇNormalized["$refs"]
-type SubNode = NodeⳇNormalized["$refs"][string]
+export function fragmentⵧblock(content?: Immutable<NodeⳇLike>): Builder {
+	return _create(NodeType.fragmentⵧblock, content)
+}
 
-interface Builder {
+// reminder: lists should then be pushed addSub/addSubs/pushKeyValue
+export function listⵧordered(
+	content?: Immutable<
+		| Array<NodeⳇLike> // items
+		| Record<string, NodeⳇLike> // KV TODO review
+	>,
+): Builder {
+	const list = _create(NodeType.ol)
+	if (content) {
+		if (Array.isArray(content)) {
+			;(content as Array<NodeⳇLike>).forEach((item) => list.addSub(item))
+		} else {
+			Object.entries(content as Record<string, NodeⳇLike>).forEach(([key, value]) => list.pushKeyValue(key, value))
+		}
+	}
+	return list
+}
+export function listⵧunordered(
+	content?: Immutable<
+		| Array<NodeⳇLike> // items
+		| Record<string, NodeⳇLike> // KV
+	>,
+): Builder {
+	const list = _create(NodeType.ul)
+	if (content) {
+		if (Array.isArray(content)) {
+			;(content as Array<NodeⳇLike>).forEach((item) => list.addSub(item))
+		} else {
+			Object.entries(content as Record<string, NodeⳇLike>).forEach(([key, value]) => list.pushKeyValue(key, value))
+		}
+	}
+	return list
+}
+// reminder: hr is through pushHorizontalRule
+
+// reminder: br is through pushLineBreak
+
+/////////////////////////////////////////////////
+
+export interface Builder {
 	setHeading(node: SubNode): Builder
 
 	// content NOT a node = text/number only
@@ -69,6 +109,41 @@ interface Builder {
 	assemble(fn: ($builder: Builder) => void): NodeⳇLike
 
 	$node: NodeⳇNormalized
+}
+
+// internal, used by some unit tests
+export function _create($type: NodeType, content: Immutable<NodeⳇLike> = ""): Builder {
+	const is_block = getꓽdisplay_type({ $type }) === "block"
+
+	const $node_base = ((): Immutable<Node> => {
+		if (isꓽNode(content)) {
+			// ensure right type (will "lift" if possible to avoid an unneeded subnode)
+			content = wrap(content, $type)
+		}
+
+		return promoteꓽto_node(content)
+	})()
+
+	let $content = $node_base.$content
+		? structuredClone<NodeⳇNormalized["$content"]>($node_base.$content as any)
+		: is_block
+			? []
+			: ""
+	if (is_block && !Array.isArray($content)) {
+		$content = [$content]
+	}
+
+	const $node: NodeⳇNormalized = {
+		$v: SCHEMA_VERSION,
+		$type,
+		$heading: null,
+		$classes: [...($node_base.$classes || [])],
+		$content,
+		$refs: $node_base.$refs ? structuredClone<NodeⳇNormalized["$refs"]>($node_base.$refs as any) : {},
+		$hints: $node_base.$hints ? structuredClone<NodeⳇNormalized["$hints"]>($node_base.$hints as any) : {},
+	}
+
+	return _createꓽbuilder($node)
 }
 
 /////////////////////////////////////////////////
@@ -309,97 +384,6 @@ function _createꓽbuilder($node: NodeⳇNormalized): Builder {
 	return builder
 }
 
-function _create($type: NodeType, content: Immutable<NodeⳇLike> = ""): Builder {
-	const is_block = getꓽdisplay_type({ $type }) === "block"
-
-	const $node_base = ((): Immutable<Node> => {
-		if (isꓽNode(content)) {
-			// ensure right type (will "lift" if possible to avoid an unneeded subnode)
-			content = wrap(content, $type)
-		}
-
-		return promoteꓽto_node(content)
-	})()
-
-	let $content = $node_base.$content
-		? structuredClone<NodeⳇNormalized["$content"]>($node_base.$content as any)
-		: is_block
-			? []
-			: ""
-	if (is_block && !Array.isArray($content)) {
-		$content = [$content]
-	}
-
-	const $node: NodeⳇNormalized = {
-		$v: SCHEMA_VERSION,
-		$type,
-		$heading: null,
-		$classes: [...($node_base.$classes || [])],
-		$content,
-		$refs: $node_base.$refs ? structuredClone<NodeⳇNormalized["$refs"]>($node_base.$refs as any) : {},
-		$hints: $node_base.$hints ? structuredClone<NodeⳇNormalized["$hints"]>($node_base.$hints as any) : {},
-	}
-
-	return _createꓽbuilder($node)
-}
-
-function fragmentⵧinline(content?: Immutable<NodeⳇLike>): Builder {
-	return _create(NodeType.fragmentⵧinline, content)
-}
-function strong(content?: Immutable<NodeⳇLike>): Builder {
-	return _create(NodeType.strong, content)
-}
-function weak(content?: Immutable<NodeⳇLike>): Builder {
-	return _create(NodeType.weak, content)
-}
-function em(content?: Immutable<NodeⳇLike>): Builder {
-	return _create(NodeType.em, content)
-}
-function emoji(content?: Immutable<NodeⳇLike>): Builder {
-	return _create(NodeType.emoji, content)
-}
-
-function fragmentⵧblock(content?: Immutable<NodeⳇLike>): Builder {
-	return _create(NodeType.fragmentⵧblock, content)
-}
-
-// reminder: lists should then be pushed addSub/addSubs/pushKeyValue
-function listⵧordered(
-	content?: Immutable<
-		| Array<NodeⳇLike> // items
-		| Record<string, NodeⳇLike> // KV TODO review
-	>,
-): Builder {
-	const list = _create(NodeType.ol)
-	if (content) {
-		if (Array.isArray(content)) {
-			;(content as Array<NodeⳇLike>).forEach((item) => list.addSub(item))
-		} else {
-			Object.entries(content as Record<string, NodeⳇLike>).forEach(([key, value]) => list.pushKeyValue(key, value))
-		}
-	}
-	return list
-}
-function listⵧunordered(
-	content?: Immutable<
-		| Array<NodeⳇLike> // items
-		| Record<string, NodeⳇLike> // KV
-	>,
-): Builder {
-	const list = _create(NodeType.ul)
-	if (content) {
-		if (Array.isArray(content)) {
-			;(content as Array<NodeⳇLike>).forEach((item) => list.addSub(item))
-		} else {
-			Object.entries(content as Record<string, NodeⳇLike>).forEach(([key, value]) => list.pushKeyValue(key, value))
-		}
-	}
-	return list
-}
-// reminder: hr is through pushHorizontalRule
-
-// reminder: br is through pushLineBreak
-
 // TODO review, this is a table
 function keyꓺvalue(key: SubNode, value: SubNode): Builder {
 	return fragmentⵧinline() // K/V are meant to be separated, but this will happen atomatically thanks to the list parent
@@ -408,21 +392,31 @@ function keyꓺvalue(key: SubNode, value: SubNode): Builder {
 		.pushSubNode(value, { id: "value" })
 }
 
+interface CommonPushOptions {
+	id?: SubNodeKey
+	classes?: string[]
+}
+
+type SubNodes = NodeⳇNormalized["$refs"]
+type SubNode = NodeⳇNormalized["$refs"][string]
+
 /////////////////////////////////////////////////
 
-export {
-	// for convenience
+import { assert_from, assert } from "@monorepo-private/assert"
+import { assertꓽstringⵧnormalized_and_trimmed } from "@monorepo-private/normalize-string"
+import { LIB, SCHEMA_VERSION } from "@monorepo-private/rich-text-format--core"
+import {
 	NodeType,
+	type SubNodeKey,
+	type Hints as DefaultHints,
+	type NodeⳇNormalized,
+	type Node,
 	type Document,
-	type Builder,
-	_create,
-	fragmentⵧinline,
-	strong,
-	em,
-	weak,
-	emoji,
-	fragmentⵧblock,
-	listⵧordered,
-	listⵧunordered,
-	keyꓺvalue,
-}
+	type NodeⳇLike,
+	isꓽNode,
+} from "@monorepo-private/rich-text-format--core"
+import { simplifyꓽnode, getꓽtype, getꓽdisplay_type, isꓽlist } from "@monorepo-private/rich-text-format--core"
+import { promoteꓽto_node, promoteꓽto_string_for_node_content } from "@monorepo-private/rich-text-format--core"
+import { wrap } from "@monorepo-private/rich-text-format--core"
+import type { Immutable } from "@monorepo-private/ts--types"
+import { hasꓽemoji } from "@monorepo-private/type-detection"

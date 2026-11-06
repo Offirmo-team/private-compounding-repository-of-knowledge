@@ -1,22 +1,23 @@
-import type { JsonⳇObject } from "@monorepo-private/ts--types"
+/////////////////////////////////////////////////
 
 export const STRUCTURED_FILE_FORMATS = [
 	// in order of preference
 
 	/////// TS
-	// TODO review: TS is flexible but risk code injection (cf. contractor hiding a process exfiltration payload in a config file)
+	// TODO review: TS is flexible but risk code injection (cf. hiding a process exfiltration payload in a config file https://news.ycombinator.com/item?id=39866102)
 	"default-export", // js/ts exporting a default JSONObject
 	// TODO ad-hoc defineConfig()
 
 	/////// JSON
 	"json5", // https://json5.org/
 	"jsonc", // https://jsonc.org/ but missing trailing comma 🤯
-	"jsoncⵧwith_trailing_comma", // common extension
+	"jsoncⵧwith_trailing_comma", // common extension 🤦
 	"json", // https://www.json.org
 
 	/////// xML
 	"yaml",
 	"toml",
+	// XML = TODO 1D but very complicated
 
 	/////// document markup languages https://en.wikipedia.org/wiki/Comparison_of_document_markup_languages
 	"markupⵧmarkdown", // with optional frontmatter
@@ -26,7 +27,8 @@ export const STRUCTURED_FILE_FORMATS = [
 	// csv TODO 1D
 	// ini TODO 1D
 	//| 'kv-simple' // multiple lines `k v` ex. .yarnrc
-	"list", // multiple lines ex. .gitignore WILL STRIP COMMENTS
+	"list", // multiple lines e.g. .gitignore. WILL STRIP COMMENTS
+	//"listⵧgitignore", // multiple lines e.g. .gitignore. WILL STRIP COMMENTS
 	"single-value", // single line, ex .nvmrc
 
 	// last resort
@@ -62,7 +64,12 @@ export interface StructuredContent {
 export type ContentⳇDefaultExport = JsonⳇObject
 export type ContentⳇJson5 = JsonⳇObject
 export type ContentⳇYaml = JsonⳇObject
+export type ContentⳇToml = JsonⳇObject
 export type ContentⳇList = { entries: string[] }
 export type ContentⳇSingleValue = { value: string }
 export type ContentⳇText = { text: string }
 export type ContentⳇMarkup = { text: string; frontmatter?: JsonⳇObject }
+
+/////////////////////////////////////////////////
+
+import type { JsonⳇObject } from "@monorepo-private/ts--types"

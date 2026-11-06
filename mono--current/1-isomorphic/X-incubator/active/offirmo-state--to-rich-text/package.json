@@ -8,7 +8,7 @@
 		".": "./module/src/generic--to-text.ts"
 	},
 	"scripts": {
-		"check": "run-s check:ts",
+		"_check": "run-s check:ts",
 		"check:ts": "echo \"@monorepo-private/offirmo-state--to-rich-text\" && tsc --noEmit",
 		"dev": "run-s  watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"

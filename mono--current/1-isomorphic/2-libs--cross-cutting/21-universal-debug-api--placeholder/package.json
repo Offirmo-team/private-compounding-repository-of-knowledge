@@ -11,7 +11,7 @@
 	"scripts": {
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@monorepo-private/universal-debug-api--placeholder\" && tsc --noEmit",
-		"demo": "node --env-file-if-exists=.env.local --experimental-webstorage --localstorage-file=.node-ls.local ./module/##doc/demo.ts",
+		"demo": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./module/##doc/demo.ts",
 		"dev": "run-s  watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
