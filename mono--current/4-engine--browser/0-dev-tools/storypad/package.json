@@ -31,7 +31,6 @@
 	"dependencies": {
 		"@monorepo-private/assert": "workspace:*",
 		"@monorepo-private/better-console-groups": "workspace:*",
-		"@monorepo-private/browser-features-detection": "workspace:*",
 		"@monorepo-private/data-structures": "workspace:*",
 		"@monorepo-private/rich-text-format": "workspace:*",
 		"@monorepo-private/soft-execution-context--browser": "workspace:*",
@@ -45,7 +44,6 @@
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
-		"@monorepo-private/css--utils--diagnostics": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/soft-execution-context": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",

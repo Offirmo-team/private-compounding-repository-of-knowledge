@@ -1,8 +1,6 @@
-import { LIB } from "../../../consts.ts"
-import { _setꓽlogger } from "../logger.ts"
-
 /////////////////////////////////////////////////
 
+export default init
 async function init(): Promise<void> {
 	try {
 		// x@ts-expect-error during monorepo resurrection, the package below may not yet be available
@@ -22,4 +20,5 @@ async function init(): Promise<void> {
 
 /////////////////////////////////////////////////
 
-export default init
+import { LIB } from "../../../consts.ts"
+import { _setꓽlogger } from "../logger.ts"

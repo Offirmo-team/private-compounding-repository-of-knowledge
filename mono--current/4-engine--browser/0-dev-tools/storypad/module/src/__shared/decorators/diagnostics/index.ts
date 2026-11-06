@@ -1,10 +1,11 @@
-function decorateWithCSSDiagnostics(story: any) {
-	// @ts-expect-error TODO fake TS
-	import("@monorepo-private/css--utils--diagnostics")
+/////////////////////////////////////////////////
+// TODO 1D make it a toggable integrated feature
+
+export function decorateWithCSSDiagnostics(story: any) {
+	// @ts-expect-error TODO fix CSS import typing
+	import("../../../__vendor/@monorepo-private/css--utils--diagnostics/index.css")
 	return story
 }
+export default decorateWithCSSDiagnostics
 
 /////////////////////////////////////////////////
-
-export { decorateWithCSSDiagnostics }
-export default decorateWithCSSDiagnostics

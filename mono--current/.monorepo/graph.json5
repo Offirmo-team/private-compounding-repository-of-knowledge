@@ -2401,6 +2401,70 @@
 					type: "normal",
 				},
 				{
+					fqname: "limit-once",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/better-console-groups",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 3,
+			path‿rel: "1-isomorphic/3-libs--advanced/better-console-groups/",
+			precedence_group: 1,
+			precedence_pkg: 999,
+			precedence_subgroup: 3,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
 					fqname: "tslib",
 					isꓽmonorepo: false,
 					type: "peer",
@@ -4274,23 +4338,9 @@
 				},
 			],
 			fqname: "@monorepo-private/css--utils--diagnostics",
-			issues: [
-				{
-					message: "in a dependency cycle with @monorepo-private/better-console-groups, @monorepo-private/browser-features-detection, @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
-					peers: [
-						"@monorepo-private/better-console-groups",
-						"@monorepo-private/browser-features-detection",
-						"@monorepo-private/practical-logger--browser",
-						"@monorepo-private/soft-execution-context--browser",
-						"@monorepo-private/storypad",
-						"@monorepo-private/universal-debug-api--browser",
-					],
-					type: "dep_cycle",
-				},
-			],
 			isꓽphantom: false,
 			isꓽpublic: false,
-			layer: 2,
+			layer: 3,
 			monorepo_deps_count: 5,
 			path‿rel: "4-engine--browser/0-dev-tools/css--utils--diagnostics/",
 			precedence_group: 4,
@@ -4450,7 +4500,7 @@
 			],
 			isꓽphantom: false,
 			isꓽpublic: false,
-			layer: 4,
+			layer: 3,
 			monorepo_deps_count: 9,
 			path‿rel: "4-engine--browser/0-dev-tools/rich-text-format--devtools/",
 			precedence_group: 4,
@@ -4467,11 +4517,6 @@
 				},
 				{
 					fqname: "@monorepo-private/better-console-groups",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/browser-features-detection",
 					isꓽmonorepo: true,
 					type: "normal",
 				},
@@ -4537,11 +4582,6 @@
 				},
 				{
 					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/css--utils--diagnostics",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -4639,16 +4679,6 @@
 			fqname: "@monorepo-private/storypad",
 			issues: [
 				{
-					dep: "@monorepo-private/better-console-groups",
-					message: 'depends on "@monorepo-private/better-console-groups" which comes later in the explicit order (4.1.999 > 4.0.999)',
-					type: "precedence_violation",
-				},
-				{
-					dep: "@monorepo-private/browser-features-detection",
-					message: 'depends on "@monorepo-private/browser-features-detection" which comes later in the explicit order (4.1.999 > 4.0.999)',
-					type: "precedence_violation",
-				},
-				{
 					dep: "@monorepo-private/soft-execution-context--browser",
 					message: 'depends on "@monorepo-private/soft-execution-context--browser" which comes later in the explicit order (4.2.999 > 4.0.999)',
 					type: "precedence_violation",
@@ -4659,11 +4689,8 @@
 					type: "precedence_violation",
 				},
 				{
-					message: "in a dependency cycle with @monorepo-private/better-console-groups, @monorepo-private/browser-features-detection, @monorepo-private/css--utils--diagnostics, @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/universal-debug-api--browser",
+					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/universal-debug-api--browser",
 					peers: [
-						"@monorepo-private/better-console-groups",
-						"@monorepo-private/browser-features-detection",
-						"@monorepo-private/css--utils--diagnostics",
 						"@monorepo-private/practical-logger--browser",
 						"@monorepo-private/soft-execution-context--browser",
 						"@monorepo-private/universal-debug-api--browser",
@@ -4673,13 +4700,13 @@
 			],
 			isꓽphantom: false,
 			isꓽpublic: false,
-			layer: 3,
-			monorepo_deps_count: 15,
+			layer: 2,
+			monorepo_deps_count: 13,
 			path‿rel: "4-engine--browser/0-dev-tools/storypad/",
 			precedence_group: 4,
 			precedence_pkg: 999,
 			precedence_subgroup: 0,
-			sibling_deps_count: 2,
+			sibling_deps_count: 1,
 		},
 		{
 			deps: [
@@ -5035,99 +5062,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "limit-once",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/better-console-groups",
-			issues: [
-				{
-					message: "in a dependency cycle with @monorepo-private/browser-features-detection, @monorepo-private/css--utils--diagnostics, @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
-					peers: [
-						"@monorepo-private/browser-features-detection",
-						"@monorepo-private/css--utils--diagnostics",
-						"@monorepo-private/practical-logger--browser",
-						"@monorepo-private/soft-execution-context--browser",
-						"@monorepo-private/storypad",
-						"@monorepo-private/universal-debug-api--browser",
-					],
-					type: "dep_cycle",
-				},
-			],
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 5,
-			path‿rel: "4-engine--browser/1-libs--simple/better-console-groups/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
 					fqname: "memoize-one",
 					isꓽmonorepo: false,
 					type: "normal",
@@ -5189,20 +5123,6 @@
 				},
 			],
 			fqname: "@monorepo-private/browser-features-detection",
-			issues: [
-				{
-					message: "in a dependency cycle with @monorepo-private/better-console-groups, @monorepo-private/css--utils--diagnostics, @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
-					peers: [
-						"@monorepo-private/better-console-groups",
-						"@monorepo-private/css--utils--diagnostics",
-						"@monorepo-private/practical-logger--browser",
-						"@monorepo-private/soft-execution-context--browser",
-						"@monorepo-private/storypad",
-						"@monorepo-private/universal-debug-api--browser",
-					],
-					type: "dep_cycle",
-				},
-			],
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 0,
@@ -6765,11 +6685,8 @@
 			fqname: "@monorepo-private/practical-logger--browser",
 			issues: [
 				{
-					message: "in a dependency cycle with @monorepo-private/better-console-groups, @monorepo-private/browser-features-detection, @monorepo-private/css--utils--diagnostics, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
+					message: "in a dependency cycle with @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
 					peers: [
-						"@monorepo-private/better-console-groups",
-						"@monorepo-private/browser-features-detection",
-						"@monorepo-private/css--utils--diagnostics",
 						"@monorepo-private/soft-execution-context--browser",
 						"@monorepo-private/storypad",
 						"@monorepo-private/universal-debug-api--browser",
@@ -7121,11 +7038,8 @@
 			fqname: "@monorepo-private/soft-execution-context--browser",
 			issues: [
 				{
-					message: "in a dependency cycle with @monorepo-private/better-console-groups, @monorepo-private/browser-features-detection, @monorepo-private/css--utils--diagnostics, @monorepo-private/practical-logger--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
+					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
 					peers: [
-						"@monorepo-private/better-console-groups",
-						"@monorepo-private/browser-features-detection",
-						"@monorepo-private/css--utils--diagnostics",
 						"@monorepo-private/practical-logger--browser",
 						"@monorepo-private/storypad",
 						"@monorepo-private/universal-debug-api--browser",
@@ -7224,11 +7138,8 @@
 			fqname: "@monorepo-private/universal-debug-api--browser",
 			issues: [
 				{
-					message: "in a dependency cycle with @monorepo-private/better-console-groups, @monorepo-private/browser-features-detection, @monorepo-private/css--utils--diagnostics, @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad",
+					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad",
 					peers: [
-						"@monorepo-private/better-console-groups",
-						"@monorepo-private/browser-features-detection",
-						"@monorepo-private/css--utils--diagnostics",
 						"@monorepo-private/practical-logger--browser",
 						"@monorepo-private/soft-execution-context--browser",
 						"@monorepo-private/storypad",

@@ -1,9 +1,9 @@
 import EventEmitter from "emittery"
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import { isꓽframed } from "@monorepo-private/browser-features-detection/is-framed"
 import type { Immutable, JsonⳇPrimitive } from "@monorepo-private/ts--types"
 
+import { isꓽframed } from "../../__vendor/@monorepo-private/browser-features-detection/is-framed"
 import type { ImportGlob } from "../../l0-types/l0-glob/index.ts"
 import { type CommonRenderParams } from "../../l0-types/l1-csf/index.ts"
 import type { Config } from "../../l0-types/l2-config/index.ts"

@@ -7,7 +7,7 @@ import { getꓽlogger } from "../logger.ts"
 
 async function init(): Promise<void> {
 	try {
-		// x@ts-expect-error during monorepo resurrection, the package below may not yet be available
+		// during monorepo resurrection, the package below may not yet be available
 		const { getRootSXC, decorateWithDetectedEnv } = await import("@monorepo-private/soft-execution-context--browser")
 
 		const rootSXC: SoftExecutionContext = getRootSXC()

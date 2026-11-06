@@ -26,6 +26,12 @@ main() {
 		2-engine--winter/prettify-any/module/src/__vendor/@monorepo-private/type-detection/index.ts
 
 	ensure_symlink \
+		4-engine--browser/0-dev-tools/css--utils--diagnostics/module/src/index.css \
+		4-engine--browser/0-dev-tools/storypad/module/src/__vendor/@monorepo-private/css--utils--diagnostics/index.css
+	ensure_symlink \
+		4-engine--browser/1-libs--simple/browser-features-detection/module/src/l1-is-framed/index.ts \
+		4-engine--browser/0-dev-tools/storypad/module/src/__vendor/@monorepo-private/browser-features-detection/is-framed/index.ts
+	ensure_symlink \
 		4-engine--browser/1-libs--simple/css--1-foundation/module/src/root/box-model.css \
 		4-engine--browser/0-dev-tools/storypad/module/src/__vendor/@monorepo-private/css--foundation/root/box-model.css
 	ensure_symlink \

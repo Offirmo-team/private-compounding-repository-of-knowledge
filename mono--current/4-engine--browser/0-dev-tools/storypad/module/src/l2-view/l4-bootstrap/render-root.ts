@@ -1,17 +1,7 @@
-/* Root render function
- */
-
-import { isꓽframed } from "@monorepo-private/browser-features-detection/is-framed"
-
-import { LIB } from "../../consts.ts"
-import { RenderMode } from "../../l1-flux/l1-state/types.ts"
-import type { ObservableState } from "../../l1-flux/l2-observable/index.ts"
-import renderⵧmanager from "../l1-components/manager/index.ts"
-import renderⵧstory from "../l1-components/preview/index.ts"
-import renderꓽstoryᝍarea from "../l1-components/story-area/index.ts"
-
 /////////////////////////////////////////////////
+// Root render function
 
+export default renderꓽroot
 function renderꓽroot(state: ObservableState, container: HTMLElement = document.body) {
 	console.group(`[${LIB}] ROOT RENDER [${isꓽframed() ? "SUB frame" : "TOP frame"}]`)
 
@@ -52,4 +42,10 @@ function renderꓽroot(state: ObservableState, container: HTMLElement = document
 
 /////////////////////////////////////////////////
 
-export default renderꓽroot
+import { isꓽframed } from "../../__vendor/@monorepo-private/browser-features-detection/is-framed"
+import { LIB } from "../../consts.ts"
+import { RenderMode } from "../../l1-flux/l1-state/types.ts"
+import type { ObservableState } from "../../l1-flux/l2-observable/index.ts"
+import renderⵧmanager from "../l1-components/manager/index.ts"
+import renderⵧstory from "../l1-components/preview/index.ts"
+import renderꓽstoryᝍarea from "../l1-components/story-area/index.ts"

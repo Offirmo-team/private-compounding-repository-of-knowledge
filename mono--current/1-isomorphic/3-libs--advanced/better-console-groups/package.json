@@ -9,11 +9,9 @@
 		".": "./module/index.ts"
 	},
 	"scripts": {
-		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@monorepo-private/better-console-groups\" && tsc --noEmit",
-		"clean": "npm-run-all _clean--pkg",
-		"dev": "run-s clean watch:check:ts",
+		"dev": "run-s  watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -23,13 +21,10 @@
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@monorepo-private/storypad": "workspace:*",
-		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",
 		"npm-run-all": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
-		"vite": "catalog:",
 		"vitest": "catalog:"
 	},
 	"peerDependencies": {
