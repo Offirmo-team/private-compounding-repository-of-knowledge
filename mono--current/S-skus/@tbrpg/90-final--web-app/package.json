@@ -9,16 +9,13 @@
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
-		"_start:main--parcel": "parcel serve module/src/index.html --port 1981 --lazy --no-autoinstall",
 		"_start:main--vite": "vite --port 1981 --strictPort --logLevel info --open module/src/index.html",
 		"build": "run-s build--vite",
 		"build--vite": "vite build",
 		"clean": "npm-run-all _clean--pkg",
-		"start": "npm-run-all clean --parallel _start:main--vite",
-		"startp": "npm-run-all clean --parallel _start:main--parcel"
+		"start": "npm-run-all clean --parallel _start:main--vite"
 	},
 	"devDependencies": {
-		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"vite": "catalog:"

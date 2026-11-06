@@ -23,7 +23,6 @@
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/fs--parent": "workspace:*",
-		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/spawn-correctly": "workspace:*",
 		"@monorepo-private/storypad": "workspace:*",

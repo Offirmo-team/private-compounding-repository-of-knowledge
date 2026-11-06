@@ -1,4 +1,7 @@
 /////////////////////////////////////////////////
+// 2026/11 Parcel is about to go v3
+// no need to invest in it atm
+const isꓽenabled = false
 
 import { assert } from "@monorepo-private/assert"
 
@@ -35,7 +38,7 @@ export const PLUGIN: Plugin = {
 					break
 				}
 
-				if (pkg_details.target === "browser") {
+				if (isꓽenabled && pkg_details.target === "browser") {
 					state = StateLib.addꓽdependency(state, node, "@monorepo-private/parcel-config", {
 						type: "dev",
 					})
@@ -178,7 +181,7 @@ export const PLUGIN: Plugin = {
 				}
 
 				const output_specꓽᐧparcelrc = (() => {
-					if (pkg_details.target !== "browser") {
+					if (pkg_details.target !== "browser" || !isꓽenabled) {
 						return {
 							parent_node: node,
 							path‿ar: manifestꓽᐧparcelrc.path‿ar,

@@ -2,5 +2,6 @@
 *.iml
 /shelf/
 /workspace.xml
+markdown.xml
 modules.xml
 vcs.xml

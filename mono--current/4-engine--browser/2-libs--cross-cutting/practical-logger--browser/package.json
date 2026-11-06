@@ -10,19 +10,15 @@
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
-		"_start:demo--parcel": "parcel serve module/__demo/index.html --port 1981 --lazy --no-autoinstall",
 		"_start:demo--vite": "vite --port 1981 --strictPort --logLevel info --open module/__demo/index.html",
-		"_start:storypad--parcel": "parcel serve module/__fixtures/storypad/index.html --port 1981 --lazy --no-autoinstall",
 		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
 		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@monorepo-private/practical-logger--browser\" && tsc --noEmit",
 		"check:unit-tests": "run-s test",
 		"clean": "npm-run-all _clean--pkg",
 		"demo": "npm-run-all clean --parallel _start:demo--vite",
-		"demop": "npm-run-all clean --parallel _start:demo--parcel",
 		"dev": "run-s clean watch:check:ts",
 		"stories": "npm-run-all clean --parallel _start:storypad--vite",
-		"storiesp": "npm-run-all clean --parallel _start:storypad--parcel",
 		"test": "run-s test--vitest",
 		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
@@ -35,7 +31,6 @@
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
-		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",

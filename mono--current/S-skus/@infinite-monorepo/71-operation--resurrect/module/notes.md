@@ -48,8 +48,8 @@ Display:
   - the **end of the zone** with blocking issues
   - OR **>= 5 packages with blocking issues** (enough work for now)
 - then list the packages with issues, in resurrection order, with their issues
-  - script failure = the failed script + the path of its log `<pkg>/.monorepo/resurrect--<script>.log` (`:` → `--`)
-    = command, duration, exit code, load avg vs. cores (= overloaded machine?), stdout, stderr
+  - script failure = the failed script + the path of its log `<pkg>/.monorepo/resurrect--<script>.log` (`:` → `--`) =
+    command, duration, exit code, load avg vs. cores (= overloaded machine?), stdout, stderr
     - removed on success = a log exists only if the last run failed
 - exit code = 1 if blocking issues (set by the caller, ex. the sandbox: `pnpm sandbox --from 1.2 --all`)
 

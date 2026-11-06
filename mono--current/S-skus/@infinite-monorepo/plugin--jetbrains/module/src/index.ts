@@ -12,9 +12,9 @@ export const manifestꓽᐧideaⳇrequired_plugins: StructuredFsⳇFileManifest 
 	doc: ["https://www.jetbrains.com/help/idea/managing-plugins.html#required-plugins"],
 }
 
-const webstormⳇtestsⵧunit__path‿ar: PackagePathⳇRelative = `${PATHVARⵧROOTⵧPACKAGE}/webstorm--tests--unit.run.xml`
-export const manifestꓽwebstormⳇtestsⵧunit: StructuredFsⳇFileManifest = {
-	path‿ar: webstormⳇtestsⵧunit__path‿ar,
+const webstormⳇrunfileⳇtestsⵧunitⵧvitest__path‿ar: PackagePathⳇRelative = `${PATHVARⵧROOTⵧPACKAGE}/webstorm--vitest.run.xml`
+export const manifestꓽwebstormⳇrunfileⳇtestsⵧunitⵧvitest: StructuredFsⳇFileManifest = {
+	path‿ar: webstormⳇrunfileⳇtestsⵧunitⵧvitest__path‿ar,
 	format: "text", // .xml is not inferrable
 	doc: [
 		"https://www.jetbrains.com/help/webstorm/vitest.html",
@@ -31,7 +31,7 @@ export const PLUGIN: Plugin = {
 	onꓽload(state: Immutable<State>): Immutable<State> {
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧideaⳇᐧgitignore)
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧideaⳇrequired_plugins)
-		state = StateLib.declareꓽfile_manifest(state, manifestꓽwebstormⳇtestsⵧunit)
+		state = StateLib.declareꓽfile_manifest(state, manifestꓽwebstormⳇrunfileⳇtestsⵧunitⵧvitest)
 
 		return state
 	},
@@ -64,7 +64,7 @@ export const PLUGIN: Plugin = {
 				break
 			}
 			case "package": {
-				//state = requestꓽrun_configⵧtestsⵧunit(state, node)
+				state = requestꓽrun_configⵧtestsⵧunit(state, node)
 				break
 			}
 			default:
@@ -84,43 +84,75 @@ function requestꓽrun_configⵧtestsⵧunit(state: Immutable<State>, node: Immu
 		return state // not our concern
 	}
 
-	if (!pkg_details.hasꓽtestsⵧunit || !pkg_details.depsⵧdev.has("vitest")) {
-		// also cleans up the legacy mocha configs
+	// Cleanup: legacy mocha-only config
+	const cleanup_spec: FileOutputAbsent = {
+		parent_node: node,
+		path‿ar: `${PATHVARⵧROOTⵧPACKAGE}/webstorm--tests--unit.run.xml`,
+		intent: "not-present",
+	}
+	state = StateLib.requestꓽfile_output(state, cleanup_spec)
+
+	if (!pkg_details.hasꓽtestsⵧunit) {
+		// cleanup if any
 		const output_spec: FileOutputAbsent = {
 			parent_node: node,
-			path‿ar: webstormⳇtestsⵧunit__path‿ar,
+			path‿ar: webstormⳇrunfileⳇtestsⵧunitⵧvitest__path‿ar,
 			intent: "not-present",
 		}
 		return StateLib.requestꓽfile_output(state, output_spec)
 	}
 
 	const pkg_dir = `$PROJECT_DIR$/${path.relative(getꓽide_project_root‿abs(state), node.path‿abs)}`
-	const output_spec: FileOutputPresent = {
-		parent_node: node,
-		manifest: manifestꓽwebstormⳇtestsⵧunit,
-		intent: "present--exact",
-		content: {
-			text: `<component name="ProjectRunConfigurationManager">
-	<configuration default="false" name="${escapeꓽxml_attribute(`${pkg_details.fqname} -- TESTS -- UNIT`)}" type="JavaScriptTestRunnerVitest">
+
+	if (pkg_details.depsⵧdev.has("vitest")) {
+		/* Real seen:
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" name="Demo" type="JavaScriptTestRunnerVitest">
 		<node-interpreter value="project" />
-		<vitest-package value="${escapeꓽxml_attribute(`${pkg_dir}/node_modules/vitest`)}" />
-		<working-dir value="${escapeꓽxml_attribute(pkg_dir)}" />
+		<node-options value="--nodeopts" />
+		<vitest-package value="$PROJECT_DIR$/S-skus/@infinite-monorepo/plugin--readme/node_modules/vitest" />
+		<working-dir value="$PROJECT_DIR$/1-isomorphic/1-libs--simple/0-assert" />
+		<vitest-options value="--vitops" />
+		<envs />
+		<scope-kind value="ALL" />
+		<EXTENSION ID="com.github.l34130.mise.core.run.MiseRunConfigurationSettingsEditor" myConfigEnvironmentStrategy="use_project_settings" myMiseDirEnvCb="true" myMiseConfigEnvironmentTf="" />
+		<method v="2" />
+	</configuration>
+</component>
+*/
+		const output_spec: FileOutputPresent = {
+			parent_node: node,
+			manifest: manifestꓽwebstormⳇrunfileⳇtestsⵧunitⵧvitest,
+			intent: "present--exact",
+			content: {
+				text: `
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" name="${escapeꓽxml_attribute(`${pkg_details.fqname} -- vitest`)}" type="JavaScriptTestRunnerVitest">
+		<node-interpreter value="project" />
+		<vitest-package value="${escapeꓽxml_attribute(`${pkg_dir}/node_modules/vitest/`)}" />
+		<working-dir value="${escapeꓽxml_attribute(pkg_dir)}/" />
 		<vitest-options value="${escapeꓽxml_attribute(VITEST_OPTIONS)}" />
 		<envs />
 		<scope-kind value="ALL" />
+		<EXTENSION ID="com.github.l34130.mise.core.run.MiseRunConfigurationSettingsEditor" myConfigEnvironmentStrategy="use_project_settings" myMiseDirEnvCb="true" myMiseConfigEnvironmentTf="" />
 		<method v="2" />
 	</configuration>
 </component>
 `,
-		},
+			},
+		}
+		state = StateLib.requestꓽfile_output(state, output_spec)
 	}
-	return StateLib.requestꓽfile_output(state, output_spec)
+
+	// no more mocha
+
+	return state
 }
 
-// = $PROJECT_DIR$, assuming the JetBrains project is opened at the git repo root
+// = $PROJECT_DIR$
 function getꓽide_project_root‿abs(state: Immutable<State>): string {
-	const repo_node = Object.values(state.graphs.nodesⵧscm).find((n) => n.type === "repository")
-	return repo_node?.path‿abs ?? StateLib.getꓽnodeⵧmonorepo(state).path‿abs
+	// assuming the JetBrains project is opened at the monorepo root
+	return StateLib.getꓽnodeⵧmonorepo(state).path‿abs
 }
 
 function escapeꓽxml_attribute(raw: string): string {

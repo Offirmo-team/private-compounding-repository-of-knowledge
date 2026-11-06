@@ -13,7 +13,6 @@
 		"clean": "npm-run-all _clean--pkg"
 	},
 	"devDependencies": {
-		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"vite": "catalog:"

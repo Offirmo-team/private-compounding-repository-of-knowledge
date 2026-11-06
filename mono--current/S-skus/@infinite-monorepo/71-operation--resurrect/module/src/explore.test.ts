@@ -102,7 +102,11 @@ describe("@infinite-monorepo/operation--resurrect -- explore", () => {
 
 /////////////////////////////////////////////////
 
-const ISSUE: ResurrectionIssue = { source: "script", script: "check:ts", log‿abs: "/a/.monorepo/resurrect--check--ts.log" }
+const ISSUE: ResurrectionIssue = {
+	source: "script",
+	script: "check:ts",
+	log‿abs: "/a/.monorepo/resurrect--check--ts.log",
+}
 
 // zones of paths. Returns what was actively checked / passively displayed, in order
 async function _explore(

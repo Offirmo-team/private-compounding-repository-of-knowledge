@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+	<configuration default="false" name="@monorepo-private/assert -- vitest" type="JavaScriptTestRunnerVitest">
+		<node-interpreter value="project" />
+		<vitest-package value="$PROJECT_DIR$/1-isomorphic/1-libs--simple/0-assert/node_modules/vitest/" />
+		<working-dir value="$PROJECT_DIR$/1-isomorphic/1-libs--simple/0-assert/" />
+		<vitest-options value="--dir module --exclude **/~~*/**" />
+		<envs />
+		<scope-kind value="ALL" />
+		<EXTENSION ID="com.github.l34130.mise.core.run.MiseRunConfigurationSettingsEditor" myConfigEnvironmentStrategy="use_project_settings" myMiseDirEnvCb="true" myMiseConfigEnvironmentTf="" />
+		<method v="2" />
+	</configuration>
+</component>

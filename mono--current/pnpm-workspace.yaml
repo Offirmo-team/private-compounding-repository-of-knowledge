@@ -5,7 +5,6 @@ autoInstallPeers: false
 catalog:
    "@earendil-works/pi-tui": ^1
    "@nodelib/fs.walk": ^3
-   "@parcel/plugin": ^2
    "@pnpm/constants": ^1102
    "@tsconfig/node-ts": ^23
    "@tsconfig/node24": ^24
