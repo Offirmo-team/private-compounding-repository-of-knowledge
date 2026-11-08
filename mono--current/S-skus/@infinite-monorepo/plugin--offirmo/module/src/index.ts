@@ -151,6 +151,12 @@ export const PLUGIN: Plugin = {
 
 				// TODO also cross-cutting
 
+				if (node.details.target === "browser" && node.details.languages.has("ts")) {
+					state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@monorepo-private/web-types", {
+						type: "dev",
+					})
+				}
+
 				break
 
 			default:

@@ -71,6 +71,7 @@ alias  mono.@monorepo-private.rich-text-format--devtools='cd "$MONOREPO_ROOT__CU
 alias  mono.@monorepo-private.storypad='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/storypad/'
 alias  mono.@monorepo-private.vite--config--default='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/vite--config--default/'
 alias  mono.@monorepo-private.vite-plugin-parcel-features='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/vite-plugin-parcel-features/'
+alias  mono.@monorepo-private.web-types='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/0-dev-tools/web-types/'
 alias  mono.@monorepo-private.assets--background='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/assets--background/'
 alias  mono.@monorepo-private.assets--heroes='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/assets--heroes/'
 alias  mono.@monorepo-private.browser-features-detection='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/browser-features-detection/'

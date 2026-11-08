@@ -1,0 +1,39 @@
+{
+	"name": "@monorepo-private/web-types",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"types": "./module/src/index.d.ts"
+		}
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/web-types\" && tsc --noEmit",
+		"clean": "npm-run-all _clean--pkg",
+		"dev": "run-s clean watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/storypad": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/node": "catalog:",
+		"npm-run-all": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vite": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
+}
