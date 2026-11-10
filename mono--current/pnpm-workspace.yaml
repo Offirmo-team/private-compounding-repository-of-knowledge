@@ -16,7 +16,6 @@ catalog:
    "@types/chroma-js": ^3
    "@types/core-js": ^2
    "@types/cross-spawn": ^6
-   "@types/mocha": ^10
    "@types/murmurhash3js-revisited": ^3
    "@types/node": ^26
    "@types/prettyjson": ^0.0.33

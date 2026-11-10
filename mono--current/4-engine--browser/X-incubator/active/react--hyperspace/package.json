@@ -8,9 +8,9 @@
 		".": "./module/src/index.tsx"
 	},
 	"scripts": {
+		"_check": "run-s check:ts",
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
 		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
-		"check": "run-s check:ts",
 		"check:ts": "echo \"@monorepo-private/react--hyperspace\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
 		"dev": "run-s clean watch:check:ts",

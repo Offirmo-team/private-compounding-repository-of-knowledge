@@ -4292,6 +4292,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -4303,11 +4308,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -4345,7 +4345,7 @@
 			fqname: "@monorepo-private/css--utils--diagnostics",
 			isꓽphantom: false,
 			isꓽpublic: false,
-			layer: 4,
+			layer: 3,
 			monorepo_deps_count: 6,
 			path‿rel: "4-engine--browser/0-dev-tools/css--utils--diagnostics/",
 			precedence_group: 4,
@@ -4400,26 +4400,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "@monorepo-private/css--framework",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/rich-text-format",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/rich-text-format--to-textual",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
 					fqname: "tslib",
 					isꓽmonorepo: false,
 					type: "peer",
@@ -4435,47 +4415,12 @@
 					type: "dev",
 				},
 				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/ts--types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
 					fqname: "@types/node",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
 				{
-					fqname: "@types/react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4490,33 +4435,21 @@
 					type: "dev",
 				},
 				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "vitest",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
 			],
-			fqname: "@monorepo-private/rich-text-format--devtools",
-			issues: [
-				{
-					dep: "@monorepo-private/css--framework",
-					message: 'depends on "@monorepo-private/css--framework" which comes later in the explicit order (4.1.999 > 4.0.999)',
-					type: "precedence_violation",
-				},
-			],
+			fqname: "@monorepo-private/engine--browser--types",
 			isꓽphantom: false,
 			isꓽpublic: false,
-			layer: 4,
-			monorepo_deps_count: 10,
-			path‿rel: "4-engine--browser/0-dev-tools/rich-text-format--devtools/",
+			layer: 0,
+			monorepo_deps_count: 3,
+			path‿rel: "4-engine--browser/0-dev-tools/engine--browser--types/",
 			precedence_group: 4,
 			precedence_pkg: 999,
 			precedence_subgroup: 0,
-			sibling_deps_count: 3,
+			sibling_deps_count: 0,
 		},
 		{
 			deps: [
@@ -4596,6 +4529,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -4617,11 +4555,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -4704,19 +4637,18 @@
 					type: "precedence_violation",
 				},
 				{
-					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/universal-debug-api--browser, @monorepo-private/web-types",
+					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/universal-debug-api--browser",
 					peers: [
 						"@monorepo-private/practical-logger--browser",
 						"@monorepo-private/soft-execution-context--browser",
 						"@monorepo-private/universal-debug-api--browser",
-						"@monorepo-private/web-types",
 					],
 					type: "dep_cycle",
 				},
 			],
 			isꓽphantom: false,
 			isꓽpublic: false,
-			layer: 3,
+			layer: 2,
 			monorepo_deps_count: 14,
 			path‿rel: "4-engine--browser/0-dev-tools/storypad/",
 			precedence_group: 4,
@@ -4895,285 +4827,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/web-types",
-			issues: [
-				{
-					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
-					peers: [
-						"@monorepo-private/practical-logger--browser",
-						"@monorepo-private/soft-execution-context--browser",
-						"@monorepo-private/storypad",
-						"@monorepo-private/universal-debug-api--browser",
-					],
-					type: "dep_cycle",
-				},
-			],
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 2,
-			monorepo_deps_count: 5,
-			path‿rel: "4-engine--browser/0-dev-tools/web-types/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 0,
-			sibling_deps_count: 2,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/credits",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/ts--types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/assets--background",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 8,
-			path‿rel: "4-engine--browser/1-libs--simple/assets--background/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/credits",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ts--types--hypermedia",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/assets--heroes",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 8,
-			path‿rel: "4-engine--browser/1-libs--simple/assets--heroes/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
 					fqname: "memoize-one",
 					isꓽmonorepo: false,
 					type: "normal",
@@ -5189,6 +4842,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -5200,11 +4858,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -5268,6 +4921,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -5279,11 +4937,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -5352,6 +5005,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -5363,11 +5021,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -5446,6 +5099,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -5457,11 +5115,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -5520,17 +5173,17 @@
 					type: "normal",
 				},
 				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
 					fqname: "tslib",
 					isꓽmonorepo: false,
 					type: "peer",
 				},
 				{
 					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -5546,228 +5199,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/font--comics",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 6,
-			path‿rel: "4-engine--browser/1-libs--simple/font--comics/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/font--pixel",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 2,
-			path‿rel: "4-engine--browser/1-libs--simple/font--pixel/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/credits",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/font--smallest",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 7,
-			path‿rel: "4-engine--browser/1-libs--simple/font--smallest/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -5836,6 +5267,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -5847,11 +5283,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -5905,162 +5336,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "@monorepo-private/css--framework",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/page-loaded",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/react--error-boundary",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ts--types--hypermedia",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/assets--background",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/credits",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/ts--types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "@types/react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/react--background-img",
-			issues: [
-				{
-					dep: "@monorepo-private/react--error-boundary",
-					message: 'depends on "@monorepo-private/react--error-boundary" which comes later in the explicit order (4.2.999 > 4.1.999)',
-					type: "precedence_violation",
-				},
-			],
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 3,
-			monorepo_deps_count: 13,
-			path‿rel: "4-engine--browser/1-libs--simple/react--background-img/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 3,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/page-loaded",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/poll",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
 					fqname: "tslib",
 					isꓽmonorepo: false,
 					type: "peer",
@@ -6071,7 +5346,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "@monorepo-private/css--framework",
+					fqname: "@monorepo-private/engine--browser--types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -6087,432 +5362,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "@types/react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/react--fake-inset",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 3,
-			monorepo_deps_count: 9,
-			path‿rel: "4-engine--browser/1-libs--simple/react--fake-inset/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 2,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ts--types--hypermedia",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/css--framework",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "@types/react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/react--hyperspace",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 3,
-			monorepo_deps_count: 8,
-			path‿rel: "4-engine--browser/1-libs--simple/react--hyperspace/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 1,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@tsparticles/basic",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "@tsparticles/engine",
-					isꓽmonorepo: false,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/css--framework",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/ts--types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/ts--types--hypermedia",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "@types/react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/react--starry-sky",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 3,
-			monorepo_deps_count: 9,
-			path‿rel: "4-engine--browser/1-libs--simple/react--starry-sky/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 1,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/react--window",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 0,
-			monorepo_deps_count: 6,
-			path‿rel: "4-engine--browser/1-libs--simple/react--window/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 1,
-			sibling_deps_count: 0,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -6581,6 +5430,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/marketing--creator",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -6602,11 +5456,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -6670,130 +5519,6 @@
 					type: "normal",
 				},
 				{
-					fqname: "@monorepo-private/ohateoas",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/rich-text-format",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/rich-text-format--to-react",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "@monorepo-private/ts--types--hypermedia",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "peer",
-				},
-				{
-					fqname: "@monorepo-private/config--typescript",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/scripts",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/storypad",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/ts--types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "@types/react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "react-dom",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "tslib",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "typescript",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vite",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "vitest",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-			],
-			fqname: "@monorepo-private/ohateoas-browser--react",
-			isꓽphantom: false,
-			isꓽpublic: false,
-			layer: 1,
-			monorepo_deps_count: 11,
-			path‿rel: "4-engine--browser/2-libs--cross-cutting/ohateoas-browser--react/",
-			precedence_group: 4,
-			precedence_pkg: 999,
-			precedence_subgroup: 2,
-			sibling_deps_count: 1,
-		},
-		{
-			deps: [
-				{
-					fqname: "@monorepo-private/assert",
-					isꓽmonorepo: true,
-					type: "normal",
-				},
-				{
 					fqname: "@monorepo-private/better-console-groups",
 					isꓽmonorepo: true,
 					type: "normal",
@@ -6819,6 +5544,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -6830,11 +5560,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -6882,12 +5607,11 @@
 			fqname: "@monorepo-private/practical-logger--browser",
 			issues: [
 				{
-					message: "in a dependency cycle with @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser, @monorepo-private/web-types",
+					message: "in a dependency cycle with @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
 					peers: [
 						"@monorepo-private/soft-execution-context--browser",
 						"@monorepo-private/storypad",
 						"@monorepo-private/universal-debug-api--browser",
-						"@monorepo-private/web-types",
 					],
 					type: "dep_cycle",
 				},
@@ -6945,6 +5669,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -6961,11 +5690,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -7084,6 +5808,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -7100,11 +5829,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -7193,6 +5917,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -7209,11 +5938,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -7251,12 +5975,11 @@
 			fqname: "@monorepo-private/soft-execution-context--browser",
 			issues: [
 				{
-					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser, @monorepo-private/web-types",
+					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/storypad, @monorepo-private/universal-debug-api--browser",
 					peers: [
 						"@monorepo-private/practical-logger--browser",
 						"@monorepo-private/storypad",
 						"@monorepo-private/universal-debug-api--browser",
-						"@monorepo-private/web-types",
 					],
 					type: "dep_cycle",
 				},
@@ -7304,6 +6027,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -7315,11 +6043,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -7357,12 +6080,11 @@
 			fqname: "@monorepo-private/universal-debug-api--browser",
 			issues: [
 				{
-					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad, @monorepo-private/web-types",
+					message: "in a dependency cycle with @monorepo-private/practical-logger--browser, @monorepo-private/soft-execution-context--browser, @monorepo-private/storypad",
 					peers: [
 						"@monorepo-private/practical-logger--browser",
 						"@monorepo-private/soft-execution-context--browser",
 						"@monorepo-private/storypad",
-						"@monorepo-private/web-types",
 					],
 					type: "dep_cycle",
 				},
@@ -7376,6 +6098,1239 @@
 			precedence_pkg: 999,
 			precedence_subgroup: 2,
 			sibling_deps_count: 1,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/credits",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/ts--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/assets--background",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 8,
+			path‿rel: "4-engine--browser/X-incubator/active/assets--background/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/credits",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ts--types--hypermedia",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/assets--heroes",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 8,
+			path‿rel: "4-engine--browser/X-incubator/active/assets--heroes/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/font--comics",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 6,
+			path‿rel: "4-engine--browser/X-incubator/active/font--comics/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/font--pixel",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 2,
+			path‿rel: "4-engine--browser/X-incubator/active/font--pixel/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/credits",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/font--smallest",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 7,
+			path‿rel: "4-engine--browser/X-incubator/active/font--smallest/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ohateoas",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/rich-text-format",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/rich-text-format--to-react",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ts--types--hypermedia",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/ts--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "@types/react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/ohateoas-browser--react",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 11,
+			path‿rel: "4-engine--browser/X-incubator/active/ohateoas-browser--react/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/css--framework",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/page-loaded",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/react--error-boundary",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ts--types--hypermedia",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/assets--background",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/credits",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/ts--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "@types/react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/react--background-img",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 1,
+			monorepo_deps_count: 13,
+			path‿rel: "4-engine--browser/X-incubator/active/react--background-img/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 1,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/page-loaded",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/poll",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/css--framework",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "@types/react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/react--fake-inset",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 9,
+			path‿rel: "4-engine--browser/X-incubator/active/react--fake-inset/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/ts--types--hypermedia",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/css--framework",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "@types/react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/react--hyperspace",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 8,
+			path‿rel: "4-engine--browser/X-incubator/active/react--hyperspace/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@tsparticles/basic",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "@tsparticles/engine",
+					isꓽmonorepo: false,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/css--framework",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/ts--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/ts--types--hypermedia",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "@types/react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/react--starry-sky",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 9,
+			path‿rel: "4-engine--browser/X-incubator/active/react--starry-sky/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/react--window",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 6,
+			path‿rel: "4-engine--browser/X-incubator/active/react--window/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
+		},
+		{
+			deps: [
+				{
+					fqname: "@monorepo-private/assert",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/css--framework",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/rich-text-format",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "@monorepo-private/rich-text-format--to-textual",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "peer",
+				},
+				{
+					fqname: "@monorepo-private/config--typescript",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/scripts",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/storypad",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/ts--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@monorepo-private/vite--config--default",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
+					fqname: "@types/node",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "@types/react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "npm-run-all",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "react-dom",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "tslib",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "typescript",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vite",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+				{
+					fqname: "vitest",
+					isꓽmonorepo: false,
+					type: "dev",
+				},
+			],
+			fqname: "@monorepo-private/rich-text-format--devtools",
+			isꓽphantom: false,
+			isꓽpublic: false,
+			layer: 0,
+			monorepo_deps_count: 10,
+			path‿rel: "4-engine--browser/X-incubator/active/rich-text-format--devtools/",
+			precedence_group: 4,
+			precedence_pkg: 999,
+			precedence_subgroup: 99,
+			sibling_deps_count: 0,
 		},
 		{
 			deps: [
@@ -8116,6 +8071,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -8132,11 +8092,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -8221,6 +8176,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -8232,11 +8192,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -10015,17 +9970,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "@types/mocha",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "@types/node",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "mocha",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10790,6 +10735,11 @@
 					type: "normal",
 				},
 				{
+					fqname: "@infinite-monorepo/plugin--typescript",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
+				{
 					fqname: "@infinite-monorepo/state",
 					isꓽmonorepo: true,
 					type: "normal",
@@ -10859,12 +10809,12 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 3,
-			monorepo_deps_count: 9,
+			monorepo_deps_count: 10,
 			path‿rel: "S-skus/@infinite-monorepo/plugin--offirmo/",
 			precedence_group: 99,
 			precedence_pkg: 999,
 			precedence_subgroup: 1,
-			sibling_deps_count: 4,
+			sibling_deps_count: 5,
 			sku: "@infinite-monorepo",
 		},
 		{
@@ -12265,6 +12215,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -12276,11 +12231,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -12360,6 +12310,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -12371,11 +12326,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -12450,6 +12400,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -12461,11 +12416,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -13478,11 +13428,6 @@
 					type: "dev",
 				},
 				{
-					fqname: "@types/sinon",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "chai",
 					isꓽmonorepo: false,
 					type: "dev",
@@ -13494,11 +13439,6 @@
 				},
 				{
 					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "sinon",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13603,22 +13543,12 @@
 					type: "dev",
 				},
 				{
-					fqname: "@types/sinon",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
 					fqname: "chai",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
 				{
 					fqname: "npm-run-all",
-					isꓽmonorepo: false,
-					type: "dev",
-				},
-				{
-					fqname: "sinon",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -14218,6 +14148,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -14234,11 +14169,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -14413,6 +14343,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/prettify-any",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -14444,11 +14379,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -14598,6 +14528,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/ohateoas-browser--react",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -14614,11 +14549,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -14743,6 +14673,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -14759,11 +14694,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -14848,6 +14778,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -14859,11 +14794,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -14938,6 +14868,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -14954,11 +14889,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -15068,6 +14998,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -15084,11 +15019,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -15178,6 +15108,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/fs--parent",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -15209,11 +15144,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -15308,6 +15238,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -15319,11 +15254,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},
@@ -15755,6 +15685,11 @@
 					type: "dev",
 				},
 				{
+					fqname: "@monorepo-private/engine--browser--types",
+					isꓽmonorepo: true,
+					type: "dev",
+				},
+				{
 					fqname: "@monorepo-private/scripts",
 					isꓽmonorepo: true,
 					type: "dev",
@@ -15771,11 +15706,6 @@
 				},
 				{
 					fqname: "@monorepo-private/vite--config--default",
-					isꓽmonorepo: true,
-					type: "dev",
-				},
-				{
-					fqname: "@monorepo-private/web-types",
 					isꓽmonorepo: true,
 					type: "dev",
 				},

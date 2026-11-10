@@ -1,5 +1,5 @@
 {
-	"name": "@monorepo-private/react--window",
+	"name": "@monorepo-private/react--background-img",
 	"version": "0.0.1",
 	"private": true,
 	"type": "module",
@@ -8,25 +8,33 @@
 		".": "./module/src/index.tsx"
 	},
 	"scripts": {
+		"_check": "run-s check:ts",
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
 		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
-		"check": "run-s check:ts",
-		"check:ts": "echo \"@monorepo-private/react--window\" && tsc --noEmit",
+		"check:ts": "echo \"@monorepo-private/react--background-img\" && tsc --noEmit",
 		"clean": "npm-run-all _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
 		"stories": "npm-run-all clean --parallel _start:storypad--vite",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
-		"@monorepo-private/assert": "workspace:*"
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/css--framework": "workspace:*",
+		"@monorepo-private/page-loaded": "workspace:*",
+		"@monorepo-private/react--error-boundary": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*"
 	},
 	"devDependencies": {
+		"@monorepo-private/assets--background": "workspace:*",
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/credits": "workspace:*",
 		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/storypad": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",
+		"@types/react": "catalog:",
 		"npm-run-all": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:",

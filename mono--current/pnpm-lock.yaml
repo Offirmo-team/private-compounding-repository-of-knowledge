@@ -46,9 +46,6 @@ catalogs:
     '@types/cross-spawn':
       specifier: ^6
       version: 6.0.6
-    '@types/mocha':
-      specifier: ^10
-      version: 10.0.10
     '@types/murmurhash3js-revisited':
       specifier: ^3
       version: 3.0.3
@@ -2383,6 +2380,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -2392,9 +2392,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -2430,20 +2427,11 @@ importers:
         specifier: 'catalog:'
         version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
 
-  4-engine--browser/0-dev-tools/rich-text-format--devtools:
+  4-engine--browser/0-dev-tools/engine--browser--types:
     dependencies:
       '@monorepo-private/assert':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@monorepo-private/css--framework':
-        specifier: workspace:*
-        version: link:../../1-libs--simple/css--2-framework
-      '@monorepo-private/rich-text-format':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/2-libs--cross-cutting/49-rich-text-format
-      '@monorepo-private/rich-text-format--to-textual':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/2-libs--cross-cutting/41-rich-text-format--to-textual
     devDependencies:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
@@ -2451,42 +2439,18 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../storypad
-      '@monorepo-private/ts--types':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/1-ts--types
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
-      '@types/react':
-        specifier: 'catalog:'
-        version: 19.3.0
       npm-run-all:
         specifier: 'catalog:'
         version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
       tslib:
         specifier: 'catalog:'
         version: 2.9.1
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
       vitest:
         specifier: 'catalog:'
         version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
@@ -2533,6 +2497,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -2548,9 +2515,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../web-types
       '@types/chai':
         specifier: 'catalog:'
         version: 5.2.3
@@ -2674,141 +2638,6 @@ importers:
         specifier: 'catalog:'
         version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
 
-  4-engine--browser/0-dev-tools/web-types:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../storypad
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../vite--config--default
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/1-libs--simple/assets--background:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@monorepo-private/credits':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/2-libs--cross-cutting/credits
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/ts--types':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/1-ts--types
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/1-libs--simple/assets--heroes:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@monorepo-private/credits':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/2-libs--cross-cutting/credits
-      '@monorepo-private/ts--types--hypermedia':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
   4-engine--browser/1-libs--simple/browser-features-detection:
     dependencies:
       '@monorepo-private/assert':
@@ -2821,6 +2650,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -2830,9 +2662,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -2861,6 +2690,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -2870,9 +2702,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -2904,6 +2733,9 @@ importers:
       '@monorepo-private/css--reset':
         specifier: workspace:*
         version: link:../css--0-reset
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -2913,9 +2745,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -2953,6 +2782,9 @@ importers:
       '@monorepo-private/css--foundation':
         specifier: workspace:*
         version: link:../css--1-foundation
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -2962,9 +2794,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -2987,113 +2816,6 @@ importers:
         specifier: 'catalog:'
         version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
 
-  4-engine--browser/1-libs--simple/font--comics:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/1-libs--simple/font--pixel:
-    devDependencies:
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-
-  4-engine--browser/1-libs--simple/font--smallest:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@monorepo-private/credits':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/2-libs--cross-cutting/credits
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
   4-engine--browser/1-libs--simple/page-loaded:
     dependencies:
       '@monorepo-private/assert':
@@ -3103,6 +2825,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -3112,9 +2837,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -3146,6 +2868,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -3155,308 +2880,12 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
       npm-run-all:
         specifier: 'catalog:'
         version: 4.1.5
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/1-libs--simple/react--background-img:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@monorepo-private/css--framework':
-        specifier: workspace:*
-        version: link:../css--2-framework
-      '@monorepo-private/page-loaded':
-        specifier: workspace:*
-        version: link:../page-loaded
-      '@monorepo-private/react--error-boundary':
-        specifier: workspace:*
-        version: link:../../2-libs--cross-cutting/react--error-boundary
-      '@monorepo-private/ts--types--hypermedia':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
-    devDependencies:
-      '@monorepo-private/assets--background':
-        specifier: workspace:*
-        version: link:../assets--background
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/credits':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/2-libs--cross-cutting/credits
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/ts--types':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/1-ts--types
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      '@types/react':
-        specifier: 'catalog:'
-        version: 19.3.0
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/1-libs--simple/react--fake-inset:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@monorepo-private/page-loaded':
-        specifier: workspace:*
-        version: link:../page-loaded
-      '@monorepo-private/poll':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/1-poll
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/css--framework':
-        specifier: workspace:*
-        version: link:../css--2-framework
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      '@types/react':
-        specifier: 'catalog:'
-        version: 19.3.0
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/1-libs--simple/react--hyperspace:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@monorepo-private/ts--types--hypermedia':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/css--framework':
-        specifier: workspace:*
-        version: link:../css--2-framework
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      '@types/react':
-        specifier: 'catalog:'
-        version: 19.3.0
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/1-libs--simple/react--starry-sky:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@tsparticles/basic':
-        specifier: 'catalog:'
-        version: 4.5.1
-      '@tsparticles/engine':
-        specifier: 'catalog:'
-        version: 4.5.1
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/css--framework':
-        specifier: workspace:*
-        version: link:../css--2-framework
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/ts--types':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/1-ts--types
-      '@monorepo-private/ts--types--hypermedia':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      '@types/react':
-        specifier: 'catalog:'
-        version: 19.3.0
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/1-libs--simple/react--window:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
       tslib:
         specifier: 'catalog:'
         version: 2.9.1
@@ -3479,6 +2908,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -3488,9 +2920,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -3519,6 +2948,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/marketing--creator':
         specifier: workspace:*
         version: link:../../../1-isomorphic/1-libs--simple/marketing--creator
@@ -3534,76 +2966,9 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
-      npm-run-all:
-        specifier: 'catalog:'
-        version: 4.1.5
-      react:
-        specifier: 'catalog:'
-        version: 19.3.1
-      react-dom:
-        specifier: 'catalog:'
-        version: 19.3.1(react@19.3.1)
-      tslib:
-        specifier: 'catalog:'
-        version: 2.9.1
-      typescript:
-        specifier: 'catalog:'
-        version: 6.0.3
-      vite:
-        specifier: 'catalog:'
-        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
-      vitest:
-        specifier: 'catalog:'
-        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
-
-  4-engine--browser/2-libs--cross-cutting/ohateoas-browser--react:
-    dependencies:
-      '@monorepo-private/assert':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/0-assert
-      '@monorepo-private/ohateoas':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/X-incubator/active/50-ohateoas
-      '@monorepo-private/rich-text-format':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/2-libs--cross-cutting/49-rich-text-format
-      '@monorepo-private/rich-text-format--to-react':
-        specifier: workspace:*
-        version: link:../rich-text-format--to-react
-      '@monorepo-private/ts--types--hypermedia':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
-    devDependencies:
-      '@monorepo-private/config--typescript':
-        specifier: workspace:*
-        version: link:../../../0-meta/config--typescript
-      '@monorepo-private/scripts':
-        specifier: workspace:*
-        version: link:../../../0-meta/scripts
-      '@monorepo-private/storypad':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/storypad
-      '@monorepo-private/ts--types':
-        specifier: workspace:*
-        version: link:../../../1-isomorphic/1-libs--simple/1-ts--types
-      '@monorepo-private/vite--config--default':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
-      '@types/node':
-        specifier: 'catalog:'
-        version: 26.6.6
-      '@types/react':
-        specifier: 'catalog:'
-        version: 19.3.0
       npm-run-all:
         specifier: 'catalog:'
         version: 4.1.5
@@ -3644,6 +3009,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -3653,9 +3021,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/chai':
         specifier: 'catalog:'
         version: 5.2.3
@@ -3699,6 +3064,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -3711,9 +3079,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -3772,6 +3137,9 @@ importers:
       '@monorepo-private/css--framework':
         specifier: workspace:*
         version: link:../../1-libs--simple/css--2-framework
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -3784,9 +3152,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -3827,6 +3192,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -3839,9 +3207,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -3879,6 +3244,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -3888,15 +3256,635 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
       npm-run-all:
         specifier: 'catalog:'
         version: 4.1.5
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/assets--background:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@monorepo-private/credits':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/2-libs--cross-cutting/credits
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/1-ts--types
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/assets--heroes:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@monorepo-private/credits':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/2-libs--cross-cutting/credits
+      '@monorepo-private/ts--types--hypermedia':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/font--comics:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/font--pixel:
+    devDependencies:
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+
+  4-engine--browser/X-incubator/active/font--smallest:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@monorepo-private/credits':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/2-libs--cross-cutting/credits
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/ohateoas-browser--react:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@monorepo-private/ohateoas':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/X-incubator/active/50-ohateoas
+      '@monorepo-private/rich-text-format':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/2-libs--cross-cutting/49-rich-text-format
+      '@monorepo-private/rich-text-format--to-react':
+        specifier: workspace:*
+        version: link:../../../2-libs--cross-cutting/rich-text-format--to-react
+      '@monorepo-private/ts--types--hypermedia':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/1-ts--types
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.3.0
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/react--background-img:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@monorepo-private/css--framework':
+        specifier: workspace:*
+        version: link:../../../1-libs--simple/css--2-framework
+      '@monorepo-private/page-loaded':
+        specifier: workspace:*
+        version: link:../../../1-libs--simple/page-loaded
+      '@monorepo-private/react--error-boundary':
+        specifier: workspace:*
+        version: link:../../../2-libs--cross-cutting/react--error-boundary
+      '@monorepo-private/ts--types--hypermedia':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
+    devDependencies:
+      '@monorepo-private/assets--background':
+        specifier: workspace:*
+        version: link:../assets--background
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/credits':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/2-libs--cross-cutting/credits
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/1-ts--types
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.3.0
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/react--fake-inset:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@monorepo-private/page-loaded':
+        specifier: workspace:*
+        version: link:../../../1-libs--simple/page-loaded
+      '@monorepo-private/poll':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/1-poll
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/css--framework':
+        specifier: workspace:*
+        version: link:../../../1-libs--simple/css--2-framework
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.3.0
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/react--hyperspace:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@monorepo-private/ts--types--hypermedia':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/css--framework':
+        specifier: workspace:*
+        version: link:../../../1-libs--simple/css--2-framework
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.3.0
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/react--starry-sky:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@tsparticles/basic':
+        specifier: 'catalog:'
+        version: 4.5.1
+      '@tsparticles/engine':
+        specifier: 'catalog:'
+        version: 4.5.1
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/css--framework':
+        specifier: workspace:*
+        version: link:../../../1-libs--simple/css--2-framework
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/1-ts--types
+      '@monorepo-private/ts--types--hypermedia':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/ts--types--hypermedia
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.3.0
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/react--window:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
+      tslib:
+        specifier: 'catalog:'
+        version: 2.9.1
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.3.6(@types/node@26.6.6)(yaml@2.9.1)
+      vitest:
+        specifier: 'catalog:'
+        version: 5.1.0(@types/node@26.6.6)(vite@8.3.6)
+
+  4-engine--browser/X-incubator/active/rich-text-format--devtools:
+    dependencies:
+      '@monorepo-private/assert':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/0-assert
+      '@monorepo-private/css--framework':
+        specifier: workspace:*
+        version: link:../../../1-libs--simple/css--2-framework
+      '@monorepo-private/rich-text-format':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/2-libs--cross-cutting/49-rich-text-format
+      '@monorepo-private/rich-text-format--to-textual':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/2-libs--cross-cutting/41-rich-text-format--to-textual
+    devDependencies:
+      '@monorepo-private/config--typescript':
+        specifier: workspace:*
+        version: link:../../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/engine--browser--types
+      '@monorepo-private/scripts':
+        specifier: workspace:*
+        version: link:../../../../0-meta/scripts
+      '@monorepo-private/storypad':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/storypad
+      '@monorepo-private/ts--types':
+        specifier: workspace:*
+        version: link:../../../../1-isomorphic/1-libs--simple/1-ts--types
+      '@monorepo-private/vite--config--default':
+        specifier: workspace:*
+        version: link:../../../0-dev-tools/vite--config--default
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.6
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.3.0
+      npm-run-all:
+        specifier: 'catalog:'
+        version: 4.1.5
+      react:
+        specifier: 'catalog:'
+        version: 19.3.1
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.3.1(react@19.3.1)
       tslib:
         specifier: 'catalog:'
         version: 2.9.1
@@ -4275,6 +4263,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -4287,9 +4278,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -4327,6 +4315,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -4336,9 +4327,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -5177,15 +5165,9 @@ importers:
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
-      '@types/mocha':
-        specifier: 'catalog:'
-        version: 10.0.10
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
-      mocha:
-        specifier: 'catalog:'
-        version: 12.0.3
       npm-run-all:
         specifier: 'catalog:'
         version: 4.1.5
@@ -5564,6 +5546,9 @@ importers:
       '@infinite-monorepo/plugin--pm--pnpm':
         specifier: workspace:*
         version: link:../plugin--pm--pnpm
+      '@infinite-monorepo/plugin--typescript':
+        specifier: workspace:*
+        version: link:../plugin--typescript
       '@infinite-monorepo/state':
         specifier: workspace:*
         version: link:../50-state
@@ -6302,6 +6287,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -6311,9 +6299,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -6348,6 +6333,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -6357,9 +6345,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -6397,6 +6382,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -6406,9 +6394,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@rpg--space/marketing':
         specifier: workspace:*
         version: link:../30-marketing
@@ -6919,9 +6904,6 @@ importers:
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
-      '@types/sinon':
-        specifier: 'catalog:'
-        version: 22.0.2
       chai:
         specifier: 'catalog:'
         version: 6.3.0
@@ -6931,9 +6913,6 @@ importers:
       npm-run-all:
         specifier: 'catalog:'
         version: 4.1.5
-      sinon:
-        specifier: 'catalog:'
-        version: 22.1.0
       tslib:
         specifier: 'catalog:'
         version: 2.9.1
@@ -6983,18 +6962,12 @@ importers:
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
-      '@types/sinon':
-        specifier: 'catalog:'
-        version: 22.0.2
       chai:
         specifier: 'catalog:'
         version: 6.3.0
       npm-run-all:
         specifier: 'catalog:'
         version: 4.1.5
-      sinon:
-        specifier: 'catalog:'
-        version: 22.1.0
       tslib:
         specifier: 'catalog:'
         version: 2.9.1
@@ -7297,6 +7270,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -7309,9 +7285,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@oh-my-rpg/state--engagement':
         specifier: workspace:*
         version: link:../../../7-multimorphic/@oh-my-rpg/state--engagement
@@ -7403,6 +7376,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/prettify-any':
         specifier: workspace:*
         version: link:../../../2-engine--winter/prettify-any
@@ -7424,9 +7400,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@oh-my-rpg/state--prng':
         specifier: workspace:*
         version: link:../../../7-multimorphic/@oh-my-rpg/state--prng
@@ -7503,9 +7476,12 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/ohateoas-browser--react':
         specifier: workspace:*
-        version: link:../../../4-engine--browser/2-libs--cross-cutting/ohateoas-browser--react
+        version: link:../../../4-engine--browser/X-incubator/active/ohateoas-browser--react
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -7515,9 +7491,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/chai':
         specifier: 'catalog:'
         version: 5.2.3
@@ -7562,7 +7535,7 @@ importers:
         version: link:../../../4-engine--browser/1-libs--simple/page-loaded
       '@monorepo-private/react--background-img':
         specifier: workspace:*
-        version: link:../../../4-engine--browser/1-libs--simple/react--background-img
+        version: link:../../../4-engine--browser/X-incubator/active/react--background-img
       '@monorepo-private/react--error-boundary':
         specifier: workspace:*
         version: link:../../../4-engine--browser/2-libs--cross-cutting/react--error-boundary
@@ -7576,6 +7549,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -7588,9 +7564,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -7631,6 +7604,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -7640,9 +7616,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -7677,6 +7650,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -7689,9 +7665,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -7718,7 +7691,7 @@ importers:
         version: link:../../../1-isomorphic/1-libs--simple/0-assert
       '@monorepo-private/assets--background':
         specifier: workspace:*
-        version: link:../../../4-engine--browser/1-libs--simple/assets--background
+        version: link:../../../4-engine--browser/X-incubator/active/assets--background
       '@monorepo-private/css--framework':
         specifier: workspace:*
         version: link:../../../4-engine--browser/1-libs--simple/css--2-framework
@@ -7727,7 +7700,7 @@ importers:
         version: link:../../../4-engine--browser/1-libs--simple/page-loaded
       '@monorepo-private/react--background-img':
         specifier: workspace:*
-        version: link:../../../4-engine--browser/1-libs--simple/react--background-img
+        version: link:../../../4-engine--browser/X-incubator/active/react--background-img
       '@monorepo-private/react--error-boundary':
         specifier: workspace:*
         version: link:../../../4-engine--browser/2-libs--cross-cutting/react--error-boundary
@@ -7741,6 +7714,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -7753,9 +7729,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -7799,6 +7772,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/fs--parent':
         specifier: workspace:*
         version: link:../../../3-engine--node/1-libs--simple/fs--parent
@@ -7820,9 +7796,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -7872,6 +7845,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -7881,9 +7857,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/node':
         specifier: 'catalog:'
         version: 26.6.6
@@ -8093,6 +8066,9 @@ importers:
       '@monorepo-private/config--typescript':
         specifier: workspace:*
         version: link:../../../0-meta/config--typescript
+      '@monorepo-private/engine--browser--types':
+        specifier: workspace:*
+        version: link:../../../4-engine--browser/0-dev-tools/engine--browser--types
       '@monorepo-private/scripts':
         specifier: workspace:*
         version: link:../../../0-meta/scripts
@@ -8105,9 +8081,6 @@ importers:
       '@monorepo-private/vite--config--default':
         specifier: workspace:*
         version: link:../../../4-engine--browser/0-dev-tools/vite--config--default
-      '@monorepo-private/web-types':
-        specifier: workspace:*
-        version: link:../../../4-engine--browser/0-dev-tools/web-types
       '@types/chai':
         specifier: 'catalog:'
         version: 5.2.3
@@ -8909,9 +8882,6 @@ packages:
 
   '@types/estree@1.0.10':
     resolution: {integrity: sha512-lTyOMnOcmRBzdCv6/4zUZCrEhV0xrqQiUZBZtVcbmLHBXKLnN8q89v/wKRF/Q0HbwVsqbIG3o5HDoFl9sduM+g==}
-
-  '@types/mocha@10.0.10':
-    resolution: {integrity: sha512-xPyYSz1cMPnJQhl0CLMH68j3gprKZaTjG3s5Vi+fDgx+uhG9NOXwbVt52eFS8ECyXhyKcjDLCBEqBExKuiZb7Q==}
 
   '@types/murmurhash3js-revisited@3.0.3':
     resolution: {integrity: sha512-QvlqvYtGBYIDeO8dFdY4djkRubcrc+yTJtBc7n8VZPlJDUS/00A+PssbvERM8f9bYRmcaSEHPZgZojeQj7kzAA==}
@@ -10623,8 +10593,6 @@ snapshots:
   '@types/deep-eql@4.0.2': {}
 
   '@types/estree@1.0.10': {}
-
-  '@types/mocha@10.0.10': {}
 
   '@types/murmurhash3js-revisited@3.0.3': {}
 
