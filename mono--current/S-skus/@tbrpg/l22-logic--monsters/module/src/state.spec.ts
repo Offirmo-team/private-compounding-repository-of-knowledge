@@ -1,6 +1,7 @@
 import { MAX_LEVEL } from "@tbrpg/definitions"
 import { expect } from "chai"
 import { Enum } from "typescript-string-enums"
+import { describe, it } from "vitest"
 
 import { getꓽengine } from "@monorepo-private/random"
 

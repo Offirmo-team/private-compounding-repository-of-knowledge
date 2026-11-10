@@ -1,6 +1,7 @@
 //////////////////////////////////////////////////////////////////////
 
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { LIB } from "../consts.ts"
 import { migrate_toꓽlatest } from "../migrations/index.ts"

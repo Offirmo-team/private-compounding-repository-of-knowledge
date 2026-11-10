@@ -1,5 +1,6 @@
 import { create, play, getꓽachievements_snapshot } from "@tbrpg/state"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { renderⵧto_text } from "@monorepo-private/rich-text-format--to-textual"
 

@@ -36,6 +36,7 @@
 2025-08-27 The reality of AI-Assisted software engineering productivity https://addyo.substack.com/p/the-reality-of-ai-assisted-software
 2025-10-17 "AGI is still 10y away" influential podcast https://www.dwarkesh.com/p/andrej-karpathy
 2025-11 "November moment" = inflexion point in coding capabilities https://simonwillison.net/2026/Jan/4/inflection/ https://x.com/gdb/status/2019566641491963946
+2025-11 start of global memory supply shortage. OpenAI consumes ~40% of global DRAM supply https://en.wikipedia.org/wiki/2025%E2%80%93present_global_memory_supply_shortage
 2025-11-14 AI espionage? https://www.anthropic.com/news/disrupting-AI-espionage
 2025-11-20 A Microsoft executive questioned why more people aren't impressed with AI, immediately triggering backlash. https://au.pcmag.com/ai/114305/microsoft-exec-asks-why-arent-more-people-impressed-with-ai
 2025-12 "soul document" https://soul.md/
@@ -65,6 +66,7 @@
 2026-07 AI sell-off = https://www.theguardian.com/business/2026/jul/28/ai-sell-off-chip-stocks-sk-hynix-samsung https://www.wsws.org/en/articles/2026/08/17/gnmb-a17.html
 2026-07-21 agentic containment escape https://openai.com/index/hugging-face-model-evaluation-security-incident/
 2026-08-27 Amazon shut downs mechanical turk https://www.mturk.com/help
+2026-09-16 Jev https://typesafe.ai/blog/introducing-system-one-models-and-jev
 2026-09-27 AI companies in fierce arms race to demonstrate their model is the most existentially threatening to humanity https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/ https://calnewport.com/its-time-to-investigate-the-ai-labs/
 2026-09-x = trying to 1) regulatory capture 2) abdicate of responsibility and blame https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067
 2026-09-x Dario Amodei "we must pace the frontier" https://darioamodei.com/post/we-must-pace-the-frontier
@@ -249,6 +251,7 @@ ASL -- ASL-2 = At this stage, larger, more complex AI models are introduced, req
 ASL -- ASL-3 = This level signifies a significantly higher risk as AI models become increasingly powerful. More sophisticated safety and security measures are essential because the technology is now capable of complex problem-solving and may pose unintended risks if misused or uncontrolled.
 ASL -- ASL-4+ = (Speculative) The highest level, ASL-4, is where AI technology enters speculative, highly autonomous territory. Models at this level may start exhibiting autonomous behaviors, making independent decisions, and even potentially circumventing certain safety checks—creating complex and unprecedented risks.
 assistant = entities capable of performing tasks for users. assistants operate based on the instructions in a context window + tools https://platform.openai.com/docs/introduction/assistants
+ATIF "Agent Trajectory Interchange" = records an agent’s complete interaction history as JSON: messages, reasoning, tool calls, observations, and metrics https://docs.harborframework.com/agents/atif
 attention -- "attention is all you need" = ???
 attention -- flash attention = ???
 attention = ??
@@ -372,6 +375,7 @@ coding -- "minions" coding subagents https://stripe.dev/blog/minions-stripes-one
 coding -- "skeptics are all nuts" = advocacy https://fly.io/blog/youre-all-nuts/
 coding -- "The Eternal Promise: A History of Attempts to Eliminate Programmers" https://www.ivanturkovic.com/2026/01/22/history-software-simplification-cobol-ai-hype/
 coding -- "the spell of vibe coding" = Executives push lay-offs claiming AI can handle the work. Managers pressure employees to meet quotas of how much of their code must be AI-generated or risk poor performance reviews. Software developers worry that everyone around them is a “10x developer” and that they’ve fallen behind. College students wonder if it is worth studying computer science now that AI has automated coding. People of all career stages hesitate to invest in their own career development. Won’t AI be able to do their jobs for them anyway a year from now? What is the point? https://www.fast.ai/posts/2026-01-28-dark-flow/
+coding -- ad-hoc systems = they rely on programmers applying them correctly and consistently throughout a program https://www.stroustrup.com/Contracts_fundamental_flaws.pdf
 coding -- AI-first software delivery = https://www.linkedin.com/pulse/what-ai-first-software-delivery-thoughtworks-4krff/
 coding -- background agents -- Remove the human from the invocation loop = scheduled, event driven, fleets, swarms
 coding -- background agents = https://background-agents.com/

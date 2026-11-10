@@ -503,6 +503,7 @@ startup anti-patterns -- Weak board
 startup anti-patterns -- Yes man
 startup anti-patterns -- Zombie
 startup anti-patterns = +++ https://www.itamarnovick.com/intro-to-startup-anti-pattern-series/
+startup power = https://paulgraham.com/powerful.html
 startups should avoid being held hostage by the preferences of their early user base if it deviates from the broader market, ex. social feed or reels
 stay fast = https://newsletter.posthog.com/p/how-to-design-your-company-for-speed
 Stock Keeping Unit (SKU) = a clearly identified product https://en.wikipedia.org/wiki/Stock_keeping_unit

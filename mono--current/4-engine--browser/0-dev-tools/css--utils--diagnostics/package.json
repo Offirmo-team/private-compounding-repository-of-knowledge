@@ -23,10 +23,10 @@
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
-		"@monorepo-private/web-types": "workspace:*",
 		"@types/node": "catalog:",
 		"npm-run-all": "catalog:",
 		"tslib": "catalog:",

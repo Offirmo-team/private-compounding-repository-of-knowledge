@@ -12,4 +12,4 @@ describe(`Lib`, function () {
 
 /////////////////////////////////////////////////
 
-import { describe, it } from "mocha"
+import { describe, it } from "vitest"

@@ -1,5 +1,6 @@
 import { generate_random_demo_weapon, DEMO_WEAPON_1, DEMO_WEAPON_2 } from "@tbrpg/logic--weapons"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { dumpꓽanyⵧprettified } from "@monorepo-private/prettify-any"
 import * as RichText from "@monorepo-private/rich-text-format"
@@ -11,7 +12,7 @@ import { LIB } from "./sub-elements/consts.ts"
 /////////////////////////////////////////////////
 
 describe(`🔠  ${LIB} - items -- weapon`, function () {
-	context("when not enhanced", function () {
+	describe("when not enhanced", function () {
 		it("should render properly", () => {
 			const $doc = render_weapon_detailed(DEMO_WEAPON_1)
 			const str = renderⵧto_text($doc)
@@ -23,7 +24,7 @@ describe(`🔠  ${LIB} - items -- weapon`, function () {
 		})
 	})
 
-	context("when enhanced", function () {
+	describe("when enhanced", function () {
 		it("should render properly", () => {
 			const $doc = render_weapon_detailed(DEMO_WEAPON_2)
 			const str = renderⵧto_text($doc)

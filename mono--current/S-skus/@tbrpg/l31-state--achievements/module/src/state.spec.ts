@@ -1,5 +1,5 @@
 import { expect } from "chai"
-import * as sinon from "sinon"
+import { describe, it, beforeEach, afterEach, vi } from "vitest"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"
 import { getꓽSXC } from "./sxc.ts"
@@ -8,12 +8,10 @@ import { type State, AchievementStatus, create, on_played, on_achieved } from ".
 
 describe(`${LIB} - state`, function () {
 	beforeEach(function () {
-		// @ts-expect-error
-		this.clock = sinon.useFakeTimers() // needed to have a reproducible timestamp
+		vi.useFakeTimers({ now: 0 }) // needed to have a reproducible timestamp
 	})
 	afterEach(function () {
-		// @ts-expect-error
-		this.clock.restore()
+		vi.useRealTimers()
 	})
 
 	describe("🆕  create()", function () {
@@ -54,7 +52,7 @@ describe(`${LIB} - state`, function () {
 	})
 
 	describe("on_played", function () {
-		context("bad", function () {
+		describe("bad", function () {
 			it("should correct updates relevant values", function () {
 				let state = create(getꓽSXC())
 
@@ -93,7 +91,7 @@ describe(`${LIB} - state`, function () {
 			})
 		})
 
-		context("good", function () {
+		describe("good", function () {
 			it("should correct updates relevant values", function () {
 				let state = create(getꓽSXC())
 

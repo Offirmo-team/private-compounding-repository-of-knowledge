@@ -5,3 +5,5 @@
 - TODO same https://nodesource.com/blog/nodejs-22-features
 - TODO review https://kashw1n.com/blog/nodejs-2025/
 - TODO limit-once / invariant
+- TODO purge "offirmo-monorepo" references
+- TODO remove ~tosort

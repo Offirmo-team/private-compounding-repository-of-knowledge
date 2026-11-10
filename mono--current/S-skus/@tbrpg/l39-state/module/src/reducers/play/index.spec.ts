@@ -4,7 +4,7 @@ describe(`${LIB} - reducer - play`, function () {
 	beforeEach(() => xxx_internal_reset_prng_cache())
 
 	describe("🤘🏽 play", function () {
-		context("🚫  when NOT allowed (the cooldown has NOT passed / not enough energy)", function () {
+		describe("🚫  when NOT allowed (the cooldown has NOT passed / not enough energy)", function () {
 			it("should generate a negative adventure", () => {
 				let state = create()
 
@@ -63,7 +63,7 @@ describe(`${LIB} - reducer - play`, function () {
 			})
 		})
 
-		context("✅  when allowed (the cooldown has passed / enough energy)", function () {
+		describe("✅  when allowed (the cooldown has passed / enough energy)", function () {
 			it("should sometime generate a story adventure", () => {
 				const state = play(create())
 
@@ -86,7 +86,7 @@ describe(`${LIB} - reducer - play`, function () {
 			// hard to test
 			it("should sometime generate a fight adventure")
 
-			context("when the adventure is a story", function () {
+			describe("when the adventure is a story", function () {
 				describe("the outcome", function () {
 					it("should sometime be a coin gain", () => {
 						let state = create()
@@ -152,7 +152,7 @@ describe(`${LIB} - reducer - play`, function () {
 				})
 			})
 
-			context("when the adventure is a fight", function () {
+			describe("when the adventure is a fight", function () {
 				it("should generate a suitable enemy", () => {
 					let state = create()
 					state =
@@ -207,6 +207,7 @@ import { ALL_ADVENTURE_ARCHETYPES } from "@tbrpg/logic--adventures"
 import { InventorySlot, get_unequipped_item_count, get_equipped_item_count } from "@tbrpg/state--inventory"
 import { Currency, get_currency_amount } from "@tbrpg/state--wallet"
 import { expect } from "chai"
+import { describe, it, beforeEach } from "vitest"
 
 import { setꓽpropertyⵧdeep } from "@monorepo-private/set-deep-property"
 

@@ -15,6 +15,7 @@
 [ ] https://www.cisa.gov/spotlight
 [ ] https://www.reddit.com/r/privacy/ https://www.reddit.com/r/PrivacyGuides/
 account takeover (ATO) https://www.kasada.io/use-cases/account-takeover/
+ads -- How I advertise malicious software on Google Ads = https://xlii.space/eng/malicious-software-on-google-ads/
 Alice & Bob https://en.wikipedia.org/wiki/Alice_and_Bob#Cast_of_characters
 attacks -- 0 click && = exploit in software that handles incoming data, like messaging apps, email clients, or web browsers https://medium.com/@davidsehyeonbaek/zero-click-attacks-how-your-device-can-be-infected-with-spyware-without-even-opening-a-message-1e1699850ecc
 attacks -- business email compromise (BEC)
@@ -160,6 +161,7 @@ passkeys -- advocacy = https://scotthelme.co.uk/passkeys-are-not-a-trap/
 passkeys -- test https://github.com/Dashlane/passkeys-resources
 passkeys = a modern cryptographic alternative to passwords and seed phrases. Passkeys combine something you have (a physical device such as a laptop, mobile phone, or a security key like YubiKey) with something you are or know (a fingerprint, face, or PIN) to generate a cryptographic public/private key pair that secures an account.
 password -- peppering (pwd managers) https://passwordbits.com/salting-passwords/
+permission systems = should be at ~OS level or false sense of security https://goldstein.lol/posts/deno-security/
 persistent, self-updating background daemon = bad https://news.ycombinator.com/item?id=50060694
 pin codes -- most common https://informationisbeautiful.net/visualizations/most-common-pin-codes/
 PKI = Public Key Infrastructure
@@ -204,6 +206,7 @@ risks -- software -- supply chain https://david-gilbertson.medium.com/im-harvest
 SAML "Security Assertion Markup Language" = https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/
 sandbox
 sandbox -- escape https://googleprojectzero.blogspot.com/2025/05/breaking-sound-barrier-part-i-fuzzing.html
+sandboxing -- bwrap
 sanitization -- data as part of database query
 sanitization -- data as part of the query string in a link's URL
 sanitization -- data as the value for a JavaScript variable

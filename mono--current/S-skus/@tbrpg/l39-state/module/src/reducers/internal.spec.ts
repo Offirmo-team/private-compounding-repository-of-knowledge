@@ -1,5 +1,6 @@
 import { xxx_internal_reset_prng_cache } from "@oh-my-rpg/state--prng"
 import { expect } from "chai"
+import { describe, it, beforeEach } from "vitest"
 
 import { LIB } from "../consts.ts"
 import { getꓽavailable_energy‿float } from "../selectors/energy.ts"

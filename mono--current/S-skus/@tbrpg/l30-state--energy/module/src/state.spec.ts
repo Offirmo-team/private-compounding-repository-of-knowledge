@@ -1,5 +1,5 @@
 import { expect } from "chai"
-import * as sinon from "sinon"
+import { describe, it, beforeEach, afterEach, vi } from "vitest"
 
 import { dumpꓽanyⵧprettified } from "@monorepo-private/prettify-any"
 import { TEST_TIMESTAMP_MS } from "@monorepo-private/timestamps"
@@ -20,10 +20,10 @@ const HOUR_ms = 3600 * SECOND_ms
 
 describe(`${LIB} - state`, function () {
 	beforeEach(function () {
-		this["clock"] = sinon.useFakeTimers()
+		vi.useFakeTimers({ now: 0 })
 	})
 	afterEach(function () {
-		this["clock"].restore()
+		vi.useRealTimers()
 	})
 
 	describe("🆕  create()", function () {
@@ -55,13 +55,13 @@ describe(`${LIB} - state`, function () {
 				expect(t_state.timestamp_ms).to.equal(TEST_TIMESTAMP_MS)
 			})
 
-			context("when using sinon", function () {
+			describe("when using fake timers", function () {
 				beforeEach(function () {
-					this["clock"].restore()
-					this["clock"] = sinon.useFakeTimers(TEST_TIMESTAMP_MS)
+					vi.useRealTimers()
+					vi.useFakeTimers({ now: TEST_TIMESTAMP_MS })
 				})
 				afterEach(function () {
-					this["clock"].restore()
+					vi.useRealTimers()
 				})
 
 				it("should be affected by useFakeTimers()", function () {
@@ -96,19 +96,19 @@ describe(`${LIB} - state`, function () {
 			}
 
 			// all in short sequence
-			this["clock"].tick(+new Date(2017, 1, 1, 1, 1, 1))
+			vi.advanceTimersByTime(+new Date(2017, 1, 1, 1, 1, 1))
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
 
 			// not yet
@@ -130,30 +130,30 @@ describe(`${LIB} - state`, function () {
 			}
 
 			// time to time but less than full reload
-			this["clock"].tick(+new Date(2017, 1, 1, 1, 1, 1))
+			vi.advanceTimersByTime(+new Date(2017, 1, 1, 1, 1, 1))
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
 			expect(getꓽavailable_energy‿float(t_state), "p3").to.be.within(4, 5)
 
-			this["clock"].tick(3 * HOUR_ms) // not enough to refill 1 energy
+			vi.advanceTimersByTime(3 * HOUR_ms) // not enough to refill 1 energy
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
 			expect(getꓽavailable_energy‿float(t_state), "p4").to.be.within(3, 4)
-			this["clock"].tick(1 * SECOND_ms)
+			vi.advanceTimersByTime(1 * SECOND_ms)
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
 			expect(getꓽavailable_energy‿float(t_state), "p5").to.be.within(2, 3)
 
-			this["clock"].tick(4 * HOUR_ms) // 2 energy refilled due to all waits combined
+			vi.advanceTimersByTime(4 * HOUR_ms) // 2 energy refilled due to all waits combined
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
 			expect(getꓽavailable_energy‿float(t_state), "p6").to.be.within(3, 4)
-			this["clock"].tick(1 * HOUR_ms) // no energy refilled
+			vi.advanceTimersByTime(1 * HOUR_ms) // no energy refilled
 			;[u_state, t_state] = use_energy([u_state, t_state], 1)
 			expect(getꓽavailable_energy‿float(t_state), "p7").to.be.within(2, 3)
 
 			// not yet
-			this["clock"].tick(+new Date(2017, 1, 1, 23) - this["clock"].now)
+			vi.advanceTimersByTime(+new Date(2017, 1, 1, 23) - Date.now())
 			t_state = update_to_now([u_state, t_state])
 			expect(getꓽavailable_energy‿float(t_state)).to.be.below(7)
 
@@ -233,7 +233,7 @@ describe(`${LIB} - state`, function () {
 	})
 
 	describe("use_energy()", function () {
-		context("when having enough energy", function () {
+		describe("when having enough energy", function () {
 			it("should decrement energy correctly", function () {
 				let [u_state, t_state] = create()
 
@@ -321,7 +321,7 @@ describe(`${LIB} - state`, function () {
 			})
 		})
 
-		context("when not having enough energy", function () {
+		describe("when not having enough energy", function () {
 			it("should throw", function () {
 				let [u_state, t_state] = create()
 
@@ -351,7 +351,7 @@ describe(`${LIB} - state`, function () {
 	})
 
 	describe("restore_energy() = artificial energy replenishment", function () {
-		context("when not going over the limit", function () {
+		describe("when not going over the limit", function () {
 			it("should increment energy correctly", function () {
 				let [u_state, t_state] = create()
 
@@ -367,7 +367,7 @@ describe(`${LIB} - state`, function () {
 			})
 		})
 
-		context("when going over the limit", function () {
+		describe("when going over the limit", function () {
 			it("should increment but cap", function () {
 				let [u_state, t_state] = create()
 

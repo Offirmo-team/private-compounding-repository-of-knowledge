@@ -1,5 +1,6 @@
 import { generate_random_demo_monster } from "@tbrpg/logic--monsters"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { renderⵧto_text } from "@monorepo-private/rich-text-format--to-textual"
 

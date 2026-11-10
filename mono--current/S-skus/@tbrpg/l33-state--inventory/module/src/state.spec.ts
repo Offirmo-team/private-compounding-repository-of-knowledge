@@ -2,6 +2,7 @@ import { InventorySlot, ItemQuality } from "@tbrpg/definitions"
 import { generate_random_demo_armor } from "@tbrpg/logic--armors"
 import { generate_random_demo_weapon } from "@tbrpg/logic--weapons"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"
 

@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { LIB } from "./consts.ts"
 import { createꓽitemⵧbase, compareꓽitemsⵧby_slot, compareꓽitemsⵧby_quality } from "./item.ts"

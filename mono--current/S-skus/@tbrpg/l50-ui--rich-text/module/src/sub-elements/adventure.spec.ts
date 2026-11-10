@@ -10,6 +10,7 @@ import {
 import { ALL_GOOD_ADVENTURE_ARCHETYPES, ALL_BAD_ADVENTURE_ARCHETYPES } from "@tbrpg/logic--adventures"
 import { create, play } from "@tbrpg/state"
 import { expect } from "chai"
+import { describe, it, beforeEach } from "vitest"
 
 import { renderⵧto_text } from "@monorepo-private/rich-text-format--to-textual"
 

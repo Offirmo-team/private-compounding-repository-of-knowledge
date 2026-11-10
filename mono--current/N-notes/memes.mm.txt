@@ -198,6 +198,7 @@ brain -- fast & slow -- slow = real you
 brain -- left & right & hippocamp = (debunked?)
 brain -- reptilian
 brain -- rot = the sort of stuff that keeps you watching, but doesn’t provide lasting value https://en.wikipedia.org/wiki/Brain_rot
+brain https://dailyneuron.com/aphantasia-mental-imagery-brain-network/
 brainstorming -- technique -- decoy = suggest sth bad as a bottom baseline to trigger defense of better alternatives
 brainstorming -- technique -- reverse = come up with ideas to make things worse https://www.mural.co/blog/reverse-brainstorming
 brainstorming -- technique -- veto = "anyone who vetoes a suggestion has to pay for that veto with a suggestion of their own" https://www.reddit.com/r/LifeProTips/comments/1cyvsz/lpt_cant_decide_on_dinner_use_the_veto_rule/
@@ -287,6 +288,7 @@ conformism = https://paulgraham.com/conformism.html
 consciousness -- sleepwalking https://en.wikipedia.org/wiki/Sleepwalking
 constructive confrontation -- spot threats/issues/problems, debate aggressively, make bold moves before competitors/enemies
 constructive discharge = when a worker's resignation or retirement may be found not to be voluntary because the employer has created a hostile or intolerable work environment or has applied other forms of pressure or coercion which forced the employee to quit or resign https://webapps.dol.gov/elaws/eta/warn/glossary.asp?p=constructive%20discharge
+contagion of fear = shouting fire in a crowded theater. People panicked https://bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear/
 contempt
 content -- creators
 content -- independence https://blog.cloudflare.com/content-independence-day-no-ai-crawl-without-compensation/

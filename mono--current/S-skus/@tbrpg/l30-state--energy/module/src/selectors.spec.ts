@@ -1,5 +1,5 @@
 import { expect } from "chai"
-import * as sinon from "sinon"
+import { describe, it, beforeEach, afterEach, vi } from "vitest"
 
 import { dumpꓽanyⵧprettified } from "@monorepo-private/prettify-any"
 import { getꓽUTC_timestamp‿ms } from "@monorepo-private/timestamps"
@@ -22,10 +22,10 @@ import {
 // TODO fix energy limit
 describe(`${LIB} - selectors`, function () {
 	beforeEach(function () {
-		this["clock"] = sinon.useFakeTimers()
+		vi.useFakeTimers({ now: 0 })
 	})
 	afterEach(function () {
-		this["clock"].restore()
+		vi.useRealTimers()
 	})
 
 	describe("get_current_energy_refilling_rate_per_ms()", function () {
@@ -130,7 +130,7 @@ describe(`${LIB} - selectors`, function () {
 	})
 
 	describe("get_milliseconds_to_next()", function () {
-		context("on full state", function () {
+		describe("on full state", function () {
 			it("should throw", function () {
 				const [u_state, t_state] = create(getꓽUTC_timestamp‿ms())
 
@@ -138,8 +138,8 @@ describe(`${LIB} - selectors`, function () {
 			})
 		})
 
-		context("on a fully depleted state", function () {
-			context("depleted in one shot", function () {
+		describe("on a fully depleted state", function () {
+			describe("depleted in one shot", function () {
 				it("should yield a correct value", function () {
 					let [u_state, t_state] = create(getꓽUTC_timestamp‿ms())
 
@@ -155,7 +155,7 @@ describe(`${LIB} - selectors`, function () {
 				})
 			})
 
-			context("depleted in consecutive shots", function () {
+			describe("depleted in consecutive shots", function () {
 				it("should yield a correct value", function () {
 					let [u_state, t_state] = create(getꓽUTC_timestamp‿ms())
 
@@ -179,7 +179,7 @@ describe(`${LIB} - selectors`, function () {
 			})
 		})
 
-		context("on an intermediate state", function () {
+		describe("on an intermediate state", function () {
 			it("should yield a correct value - rounded", function () {
 				let [u_state, t_state] = create(getꓽUTC_timestamp‿ms())
 
@@ -211,7 +211,7 @@ describe(`${LIB} - selectors`, function () {
 	})
 
 	describe("getꓽavailable_energy‿float()", function () {
-		context("on initial state", function () {
+		describe("on initial state", function () {
 			it("should yield a correct value", function () {
 				const [u_state, t_state] = create(getꓽUTC_timestamp‿ms())
 
@@ -219,8 +219,8 @@ describe(`${LIB} - selectors`, function () {
 			})
 		})
 
-		context("on a fully depleted state", function () {
-			context("depleted in one shot", function () {
+		describe("on a fully depleted state", function () {
+			describe("depleted in one shot", function () {
 				it("should yield a correct value", function () {
 					let [u_state, t_state] = create(getꓽUTC_timestamp‿ms())
 
@@ -236,7 +236,7 @@ describe(`${LIB} - selectors`, function () {
 				})
 			})
 
-			context("depleted in consecutive shots", function () {
+			describe("depleted in consecutive shots", function () {
 				it("should yield a correct value", function () {
 					let [u_state, t_state] = create(getꓽUTC_timestamp‿ms())
 
@@ -260,7 +260,7 @@ describe(`${LIB} - selectors`, function () {
 			})
 		})
 
-		context("on an intermediate state", function () {
+		describe("on an intermediate state", function () {
 			it("should yield a correct value - rounded", function () {
 				let [u_state, t_state] = create(getꓽUTC_timestamp‿ms())
 
@@ -292,7 +292,7 @@ describe(`${LIB} - selectors`, function () {
 	})
 
 	describe("getꓽhuman_time_to_next()", function () {
-		context("on initial state", function () {
+		describe("on initial state", function () {
 			it("should yield a correct value", function () {
 				const [u_state, t_state] = create()
 
@@ -300,7 +300,7 @@ describe(`${LIB} - selectors`, function () {
 			})
 		})
 
-		context("on a fully depleted state (established)", function () {
+		describe("on a fully depleted state (established)", function () {
 			it("should yield a correct value", function () {
 				let [u_state, t_state] = create()
 
@@ -316,7 +316,7 @@ describe(`${LIB} - selectors`, function () {
 			})
 		})
 
-		context("on an intermediate state (established)", function () {
+		describe("on an intermediate state (established)", function () {
 			it("should yield a correct value", function () {
 				let [u_state, t_state] = create()
 

@@ -1,5 +1,6 @@
 import { generate_random_demo_armor, DEMO_ARMOR_1, DEMO_ARMOR_2 } from "@tbrpg/logic--armors"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import * as RichText from "@monorepo-private/rich-text-format"
 import { renderⵧto_text } from "@monorepo-private/rich-text-format--to-textual"
@@ -10,7 +11,7 @@ import { LIB } from "./sub-elements/consts.ts"
 /////////////////////////////////////////////////
 
 describe(`🔠  ${LIB} - items -- armor`, function () {
-	context("when not enhanced", function () {
+	describe("when not enhanced", function () {
 		it("should render properly", () => {
 			const $doc = render_armor_detailed(DEMO_ARMOR_1)
 			const str = renderⵧto_text($doc)
@@ -22,7 +23,7 @@ describe(`🔠  ${LIB} - items -- armor`, function () {
 		})
 	})
 
-	context("when enhanced", function () {
+	describe("when enhanced", function () {
 		it("should render properly", () => {
 			const $doc = render_armor_detailed(DEMO_ARMOR_2)
 			const str = renderⵧto_text($doc)

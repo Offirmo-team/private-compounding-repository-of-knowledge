@@ -40,6 +40,7 @@
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/prettify-any": "workspace:*",
 		"@monorepo-private/rich-text-format--to-react": "workspace:*",
 		"@monorepo-private/rich-text-format--to-textual": "workspace:*",

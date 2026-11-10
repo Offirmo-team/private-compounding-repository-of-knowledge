@@ -152,7 +152,6 @@ bugs -- TOCTOU "Time-of-check to time-of-use" = a software bug and security vuln
 build & delivery part of a product
 build vs buy
 building blocks that just work = create building blocks that handle the undifferentiated heavy lifting, which freed developers to focus on higher-level work https://aws.amazon.com/blogs/aws/twenty-years-of-amazon-s3-and-building-whats-next/
-C++ 26 https://thenewstack.io/coming-to-iso-c-26-standard-an-ai-acceleration-edge/
 C10k problem https://en.wikipedia.org/wiki/C10k_problem
 cache
 cache -- caching tiers = edge cache → upper tier cache → central data store https://developers.cloudflare.com/kv/concepts/how-kv-works/
@@ -292,6 +291,7 @@ content age rating -- G (General) = aka Safe for School, Appropriate for ages 13
 content age rating -- identify = content need to be identified and labelled as safe or unsafe for each age rating. Given the volume, human review may not be a practical option.
 content age rating -- PG (Parental Guidance) = aka Not Safe For School (NSFS) = Appropriate for ages 15+
 context switch
+contract programming = (see also Design by Contract) https://dlang.org/spec/contracts.html https://prydt.xyz/blog/a-few-good-ideas-in-pl/
 convention over configuration
 Conway's law https://en.wikipedia.org/wiki/Conway%27s_law
 copyright -- clean-room design = copying a design by reverse engineering and then recreating it without infringing any of the copyrights associated with the original design https://en.m.wikipedia.org/wiki/Clean-room_design
@@ -595,6 +595,8 @@ grug brain = complexity, readability https://grugbrain.dev/
 Grug Brained Developer = A layman's guide to thinking like the self-aware smol brained https://grugbrain.dev/
 hallway usability testing https://en.wikipedia.org/wiki/Usability_testing#Hallway_testing
 handle
+hardened = made more resistant to bugs, esp. turning into exploitable problems
+hardened libraries = (usually C++) a standard-library implementation that adds runtime checks for operations whose misuse would otherwise result in undefined behavior (UB)
 hashbang (aka. shebang) https://github.com/tc39/proposal-hashbang
 helping -- XY problem = wrongly asking about your attempted solution rather than your actual problem https://xyproblem.info/
 HI-C (High-impact IC) = An individual contributor who can complete a project that delivers business value, end-to-end, on their own. Usually an ex-leader (manager, director, VP). https://www.elenaverna.com/p/ic-work-is-the-new-career-flex
@@ -699,7 +701,10 @@ l10n -- i18n -- ICU format https://formatjs.github.io/
 l10n -- i18n -- pseudolocalization = [Lóôõrēĕėęm iìíîpsúûüũm]
 l10n -- i18n -- text size change https://www.w3.org/International/articles/article-text-size
 l10n -- truly local = more than just translation
+langs -- a few good ideas = https://prydt.xyz/blog/a-few-good-ideas-in-pl/
 langs -- Bend = massively parallel, high-level programming language https://github.com/HigherOrderCO/Bend
+langs -- C++ -- 26 https://thenewstack.io/coming-to-iso-c-26-standard-an-ai-acceleration-edge/
+langs -- C++ -- challenges = as of 2026, crumbling under its own weight https://isocpp.org/files/papers/p0977r0.pdf
 langs -- Clojure = ~lisp https://clojure.org/ https://clojure.org/guides/getting_started
 langs -- E = https://www.crockford.com/ec/etut.html
 langs -- F# = https://en.wikipedia.org/wiki/F_Sharp_(programming_language)

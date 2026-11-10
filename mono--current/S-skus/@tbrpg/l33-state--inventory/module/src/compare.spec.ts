@@ -1,6 +1,7 @@
 import { generate_random_demo_armor } from "@tbrpg/logic--armors"
 import { generate_random_demo_weapon } from "@tbrpg/logic--weapons"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { LIB } from "./consts.ts"
 

@@ -8,3 +8,7 @@ Page not found
 
 Uh oh, we can’t seem to find the page you’re looking for. Try going back to the previous page or to the LinkedIn
 Business Solutions homepage.
+
+Great ones:
+
+- https://www.ft.com/article/404

@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { itㆍshouldㆍmigrateㆍcorrectly } from "@monorepo-private/state-migration-tester"
@@ -20,9 +21,7 @@ describe(`${LIB} - migration`, function () {
 			import_meta_url: import.meta.url, // for resolving the path below
 			relative_dir_path: "./migrations_of_blank_state_specs",
 			describe,
-			context,
 			it,
-			expect,
 		})
 	})
 
@@ -37,9 +36,7 @@ describe(`${LIB} - migration`, function () {
 			import_meta_url: import.meta.url, // for resolving the path below
 			relative_dir_path: "./migrations_of_active_state_specs",
 			describe,
-			context,
 			it,
-			expect,
 		})
 	})
 })

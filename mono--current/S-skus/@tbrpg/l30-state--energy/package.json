@@ -32,11 +32,9 @@
 		"@monorepo-private/state-migration-tester": "workspace:*",
 		"@types/chai": "catalog:",
 		"@types/node": "catalog:",
-		"@types/sinon": "catalog:",
 		"chai": "catalog:",
 		"fraction.js": "catalog:",
 		"npm-run-all": "catalog:",
-		"sinon": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

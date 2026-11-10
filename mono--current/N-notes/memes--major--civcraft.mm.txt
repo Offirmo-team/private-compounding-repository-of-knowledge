@@ -17,6 +17,7 @@ A sheng of rice earns gratitude, a dou of rice earns enmity = Give someone a sma
 Abenomics = the economic strategy implemented by Shinzo Abe of Japan and is comprised of three arrows: monetary policy, fiscal stimulus and structural reforms https://coinmarketcap.com/academy/glossary/abenomics
 aeronautics https://en.wikipedia.org/wiki/International_Air_&_Space_Hall_of_Fame
 agriculture https://en.wikipedia.org/wiki/British_Agricultural_Revolution
+alien life
 amity-enmity complex https://en.m.wikipedia.org/wiki/Amity-enmity_complex
 And then the men with guns tell you to do it anyway = https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/
 archives = Hittite royal archive https://www.thehistoryblog.com/archives/77107
@@ -30,6 +31,7 @@ bateau https://en.wikipedia.org/wiki/File:Uluburun1.jpg
 bateau https://en.wikipedia.org/wiki/List_of_surviving_ancient_ships
 beggar-thy-neighbour policy = economic policy through which one country attempts to remedy its economic problems by means that tend to worsen the economic problems of other countries https://en.wikipedia.org/wiki/Beggar_thy_neighbour
 big companies / balance of power / democracy
+Big Tech and Silicon Valley
 biodiversity damage = https://www.oxfordmartin.ox.ac.uk/news/beef-and-dairy-drive-41-of-biodiversity-damage-linked-to-global-farmland
 bipolarity / unipolarity / multipolarity https://en.wikipedia.org/wiki/Hegemony
 black legend -- spanish inquisition = https://en.wikipedia.org/wiki/Black_Legend_of_the_Spanish_Inquisition
@@ -89,6 +91,7 @@ cosmos -- 1610 https://en.wikipedia.org/wiki/Copernican_Revolution
 cosmos -- 1920 galaxies https://en.wikipedia.org/wiki/Great_Debate_(astronomy)
 cosmos -- 1965 no life on Mars https://en.wikipedia.org/wiki/Martian_canals
 dark age of internet
+deep biosphere = layer of slow-living bacteria and archaea many kilometers deep, living contentedly in rock https://mceglowski.substack.com/p/how-long-can-life-wait
 democracy -- education https://politics.stackexchange.com/questions/84583/is-democracy-possible-in-a-country-with-a-relatively-low-educated-population
 democracy -- guided https://en.wikipedia.org/wiki/Guided_democracy
 democracy -- representation = https://fortune.com/2026/07/27/shopify-ceo-voting-rights-stripping-americans-19th-century/
@@ -124,6 +127,7 @@ energy -- superusers https://hardware.slashdot.org/story/25/10/31/1646235/the-wo
 environment -- toxic substance contamination = https://www.audubon.org/magazine/internet-has-rat-poison-problem
 every world power has its time in the sun, thanks to the uniqueness of their circumstances and the nature of their character and culture (e.g., they have the essential elements of a strong work ethic, smarts, discipline, education, etc.), but they all eventually decline. Some do so more gracefully than others, with less trauma, but they nevertheless decline https://x.com/RayDalio/status/2022788750388998543
 expand human potential
+extreme wealth https://www.theguardian.com/books/2026/sep/12/naomi-klein-extreme-wealth-has-a-deranging-effect-it-turns-you-into-a-supremacist
 family
 farming -- rice https://xd009642.github.io/2026/04/01/My-Experience-as-a-Rice-Farmer.html
 Five Eyes intelligence-sharing alliance = includes Australia, along with NATO, the US-led military alliance
@@ -199,6 +203,7 @@ https://whoisinspace.com/
 https://worldoffinewine.com/news-features/did-charles-darwin-save-wine
 https://www.construction-physics.com/p/how-an-oil-refinery-works
 https://www.famillechretienne.fr/40361/article/remi-brague-nous-voyons-lislam-avec-des-lunettes-chretiennes
+human space flight https://mceglowski.substack.com/p/radiation-tradeoffs-for-mars
 infrastructure -- "the lights of Europe still trace the paths of ancient Roman roads" https://x.com/ccatalini/status/1983588222921023552
 infrastructure = roads, canals, telephone networks...
 International Criminal Court (ICC) = https://www.bbc.com/news/articles/cnvnl0elz47o
@@ -227,9 +232,11 @@ mafia -- https://en.wikipedia.org/wiki/Five_Families
 mafia -- Racketeer Influenced and Corrupt Organizations (RICO) Act =  1970 U.S. federal law designed to combat organized crime by targeting the leaders of criminal enterprises rather than just subordinates. It allows prosecutors to charge individuals with a "pattern of racketeering" (at least two acts within 10 years) for crimes committed on behalf of an organization.
 making big things
 martial arts https://en.wikipedia.org/wiki/Historical_European_martial_arts
+mass surveillance https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html
 medias
 Melian dialogue
 military tactics https://civilization.fandom.com/wiki/Military_Tactics_(Civ6)
+Military-Industrial Complex
 military–industrial complex (MIC) = relationship between a country's military and the defense industry that supplies it, seen together as a vested interest which influences public policy. https://en.wikipedia.org/wiki/Military%E2%80%93industrial_complex
 money -- "Such are the dangers of outsourcing your monetary policy" = https://mail.blockworks.com/p/hard-money-is-bad-money
 money -- conversion to gold https://mail.blockworks.com/p/operation-return-to-gold
@@ -243,6 +250,7 @@ natural resource https://en.wikipedia.org/wiki/Natural_resource
 numeral system https://en.wikipedia.org/wiki/Positional_notation
 O-ring theory of economic development https://en.wikipedia.org/wiki/O-ring_theory_of_economic_development
 open lawlessness
+origin of life on Earth -- lithopanspermia = spallation + limited burning (no more than 40°) https://mceglowski.substack.com/p/how-long-can-life-wait
 peaceful transition of power = from a leadership to another, e.g. election, independance... https://en.wikipedia.org/wiki/Peaceful_transition_of_power
 pollution -- 12xx https://en.wikipedia.org/wiki/Pea_soup_fog
 population renewal
@@ -274,6 +282,7 @@ slavery
 social domination = "natural order of things in society" established by the dominant ideology
 social medias / attention marketplace
 social networks
+social networks = https://strategictree.bearblog.dev/i-think-i-hate-the-internet/
 societal -- & collapse = fall of a complex human society characterized by the loss of cultural identity and of social complexity as an adaptive system, the downfall of government, and the rise of violence https://en.wikipedia.org/wiki/Societal_collapse
 societal -- & longevity = https://en.wikipedia.org/wiki/Societal_collapse
 societal self-deception = societies are capable of telling themselves stories for years that have little basis in reality and lead to poor society-wide decision making. For example, fears over nuclear plant safety led to under-investment in nuclear power. Fears of the “population bomb” in the 1960s led countries to implement harsh policies to reduce their populations. And worries about dietary fat led governments to promote unhealthy high-sugar diets for decades.

@@ -13,6 +13,8 @@
 		files: {
 			packageᐧjson: {
 				sideEffects: true,
+				"|exports|./stories/css/typography/*": "./module/src/__shared/stories/css/typography/*",
+
 				"|exports|./stories/html/html5-kitchen-sink": "./module/src/__shared/stories/html/html5-kitchen-sink_by_dbox.stories.ts",
 				"|exports|./stories/html/html-demos--offirmo": "./module/src/__shared/stories/html/html-demos-by-offirmo.stories.ts",
 				"|exports|./stories/html/html-demos--others": "./module/src/__shared/stories/html/html-demos-misc.stories.ts",

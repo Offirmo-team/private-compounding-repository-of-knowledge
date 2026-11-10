@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it, beforeEach } from "vitest"
 
 import { getꓽrandom } from "@monorepo-private/random"
 import { xxx_test_unrandomize_element } from "@monorepo-private/uuid"

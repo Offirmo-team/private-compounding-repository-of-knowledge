@@ -1,3 +1,4 @@
++++ backups = “There are two types of people: those who have suffered a catastrophic loss of data, and those who will.” https://filipovski.net/2026/09/16/backups-arent-simple.html
 +++ Oops, You Wrote a Database = those who fail to study databases are doomed to write them https://dx.tips/oops-database
 ? https://www.dbpro.app/blog/do-you-even-need-a-database
 [ ] Database Design Patterns Every https://www.bytebase.com/blog/database-design-patterns/
@@ -167,6 +168,7 @@ solutions -- Google Spreadsheet -- npm https://github.com/theoephraim/node-googl
 solutions -- Google Spreadsheet = https://www.levels.fyi/blog/scaling-to-millions-with-google-sheets.html
 solutions -- GUI tool -- DataGrip
 solutions -- GUI tool -- TablePlus https://tableplus.com/
+solutions -- https://planetscale.com/
 solutions -- MySQL = NO, destroyed by Oracle https://dev.mysql.com/
 sql
 sql -- CURRENT_TIMESTAMP()
@@ -197,7 +199,6 @@ transactions -- isolation levels =  https://dev.mysql.com/doc/refman/8.4/en/inno
 underlying os -- upgrade -- collation = data corruption
 underlying os -- upgrade -- locks = perf reduction https://www.phoronix.com/news/Linux-7.0-AWS-PostgreSQL-Drop
 UUID "Universally Unique Identifier" = label used to uniquely identify a resource among all other resources of that type https://developer.mozilla.org/en-US/docs/Glossary/UUID
-UUIDs = https://alexsci.com/blog/uuid-collection/
 UUIDs -- as primary keys https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html
 UUIDs -- challenges -- perf, security, privacy
 UUIDs -- comparison https://www.linkedin.com/posts/raul-junco_uuidv7-for-everything-is-starting-to-sound-share-7457040861004980224-Icdf
@@ -209,3 +210,4 @@ UUIDs -- v4 https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID
 UUIDs -- v7 -- challenges -- privacy = generally discouraged for security when the primary key is exposed to end users in external-facing applications or APIs. The main issue is that UUIDv7 incorporates a 48-bit Unix timestamp as its most significant part, meaning the identifier itself leaks the record's creation time. This leakage is primarily a privacy concern https://aiven.io/blog/exploring-postgresql-18-new-uuidv7-support
 UUIDs -- v7 -- weird = https://alexsci.com/blog/uuidv7-is-weird/
 UUIDs -- v7 = 128-bit structure, incorporates a timestamp as the most significant part, allowing for natural sortability based on the creation time https://aiven.io/blog/exploring-postgresql-18-new-uuidv7-support
+UUIDs = https://alexsci.com/blog/uuid-collection/

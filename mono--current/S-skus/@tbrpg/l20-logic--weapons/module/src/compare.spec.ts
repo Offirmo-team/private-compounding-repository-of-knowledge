@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { getꓽengine } from "@monorepo-private/random"
 
@@ -25,10 +26,10 @@ describe(`${LIB} - compare`, function () {
 	})
 
 	// extremely rare cases, hard to compute, not even sure it's possible since quality impacts strength
-	context("when potential is equal", function () {
+	describe("when potential is equal", function () {
 		it("should take into account the quality")
 
-		context("when quality is also equal", function () {
+		describe("when quality is also equal", function () {
 			it("should fallback to uuid")
 		})
 	})

@@ -28,6 +28,7 @@
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",

@@ -3,6 +3,7 @@ import { InventorySlot } from "@tbrpg/definitions"
 import { type Armor, matches as matches_armor } from "@tbrpg/logic--armors"
 import { type Weapon, matches as matches_weapon } from "@tbrpg/logic--weapons"
 import { expect } from "chai"
+import { describe, it, beforeEach } from "vitest"
 
 import { dumpꓽanyⵧprettified } from "@monorepo-private/prettify-any"
 

@@ -1,3 +1,5 @@
+import { describe, it } from "vitest"
+
 import { ALL_LOG_LEVELS } from "@monorepo-private/practical-logger--core"
 import type { LogSink, LogPayload } from "@monorepo-private/practical-logger--types"
 

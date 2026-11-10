@@ -466,6 +466,7 @@ export default extend_default_config({})
 	})()
 	_schedule_root_file_creation("package.json", packageᐧjson)
 
+	// ✅ MIGRATED ✅
 	if (pkg_details.hasꓽtestsⵧunit) {
 		_schedule_root_file_creation(
 			"webstorm--tests--unit.run.xml",

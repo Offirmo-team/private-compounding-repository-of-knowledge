@@ -3,6 +3,9 @@
 // 1 package per core: its checks are separate processes (tsc, vitest…)
 const CONCURRENCY = availableParallelism()
 
+// by default, each vitest spawns cores-1 workers = ~cores² with CONCURRENCY = overloaded machine = flaky 5s timeouts
+const ENVⵧSCRIPTS = { VITEST_MAX_WORKERS: "1" }
+
 /////////////////////////////////////////////////
 
 // see notes.md
@@ -85,7 +88,7 @@ async function _ೱrunꓽscript(script: string, pkg‿abs: PathⳇAbsolute): Pro
 	const err = await ೱspawnCorrectlyAndResolvesWithStdout({
 		spawnCommand: "pnpm",
 		spawnArgs: ["run", script],
-		spawnOptions: { cwd: pkg‿abs },
+		spawnOptions: { cwd: pkg‿abs, env: { ...process.env, ...ENVⵧSCRIPTS } },
 	}).then(
 		() => undefined,
 		(err: SpawnError) => err,

@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { LIB, ITEM_QUALITIES, ITEM_QUALITIES_TO_INT, ITEM_SLOTS, ITEM_SLOTS_TO_INT } from "./consts.ts"
 import { InventorySlot } from "./types.ts"

@@ -151,10 +151,18 @@ export const PLUGIN: Plugin = {
 
 				// TODO also cross-cutting
 
-				if (node.details.target === "browser" && node.details.languages.has("ts")) {
-					state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@monorepo-private/web-types", {
-						type: "dev",
-					})
+				// TODO move into an "engine--browser" dedicated plugin
+				if (node.details.target === "browser") {
+					if (node.details.languages.has("ts")) {
+						state = StateLib.addꓽdependency<NodeⳇPackage>(
+							state,
+							node,
+							"@monorepo-private/engine--browser--types",
+							{
+								type: "dev",
+							},
+						)
+					}
 				}
 
 				break
@@ -325,6 +333,25 @@ alias  ${alias_name}='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.s
 
 				break
 			}
+
+			case "package":
+				// TODO move into an "engine--browser" dedicated plugin
+				if (node.details.target === "browser") {
+					if (node.details.languages.has("ts")) {
+						const output_spec: FileOutputPresent = {
+							parent_node: node,
+							manifest: manifestꓽtsconfigᐧjson,
+							intent: "present--containing",
+							content: {
+								include: [`node_modules/@monorepo-private/engine--browser--types/module/src/*.d.ts`],
+							},
+						}
+						state = StateLib.requestꓽfile_output(state, output_spec)
+					}
+				}
+
+				break
+
 			default:
 				break
 		}
@@ -358,6 +385,7 @@ import * as path from "node:path"
 
 import { deriveꓽgit_clone_dir } from "@infinite-monorepo/heuristics"
 import { manifestꓽpnpmᝍworkspaceᐧyaml } from "@infinite-monorepo/plugin--pm--pnpm"
+import { manifestꓽtsconfigᐧjson } from "@infinite-monorepo/plugin--typescript"
 import * as StateLib from "@infinite-monorepo/state"
 import { type FileOutputPresent, getꓽnodeⵧmonorepo, getꓽruntimeⵧlocal, type State } from "@infinite-monorepo/state"
 import {

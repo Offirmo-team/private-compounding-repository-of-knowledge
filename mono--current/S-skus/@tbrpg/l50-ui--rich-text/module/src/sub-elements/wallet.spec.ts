@@ -1,5 +1,6 @@
 import { Currency, DEMO_STATE, create as create_wallet, add_amount } from "@tbrpg/state--wallet"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import * as RichText from "@monorepo-private/rich-text-format"
 import { renderⵧto_text } from "@monorepo-private/rich-text-format--to-textual"
@@ -10,7 +11,7 @@ import { LIB } from "./sub-elements/consts.ts"
 /////////////////////////////////////////////////
 
 describe(`🔠  ${LIB} - wallet`, function () {
-	context("when empty", function () {
+	describe("when empty", function () {
 		it("should render properly", () => {
 			const wallet = create_wallet()
 			const $doc = render_wallet(wallet)
@@ -22,7 +23,7 @@ describe(`🔠  ${LIB} - wallet`, function () {
 		})
 	})
 
-	context("when not empty", function () {
+	describe("when not empty", function () {
 		it("should render properly", () => {
 			let wallet = create_wallet()
 			wallet = add_amount(wallet, Currency.coin, 12345)

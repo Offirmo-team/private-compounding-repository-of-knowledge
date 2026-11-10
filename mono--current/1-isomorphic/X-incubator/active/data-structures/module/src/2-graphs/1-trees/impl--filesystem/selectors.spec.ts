@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { createⵧroot, createⵧsub } from "./__examples/foo-bar-gnokman/index.ts"
 import { LIB } from "./consts.ts"

@@ -1,5 +1,6 @@
 import { expect } from "chai"
 import { Enum } from "typescript-string-enums"
+import { describe, it } from "vitest"
 
 import { LIB } from "../consts.ts"
 import { CoinsGain } from "../types.ts"

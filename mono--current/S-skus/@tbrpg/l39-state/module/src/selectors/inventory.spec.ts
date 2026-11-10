@@ -1,5 +1,6 @@
 import { xxx_internal_reset_prng_cache } from "@oh-my-rpg/state--prng"
 import { expect } from "chai"
+import { describe, it, beforeEach } from "vitest"
 
 import { LIB } from "../consts.ts"
 import { create } from "../reducers/index.ts"
@@ -10,7 +11,7 @@ describe(`${LIB} - selectors - inventory`, function () {
 	beforeEach(() => xxx_internal_reset_prng_cache())
 
 	describe("appraise_item_value() by uuid", function () {
-		context("when the element refers to an item", function () {
+		describe("when the element refers to an item", function () {
 			it("should find it and appraise its value", () => {
 				const state = create()
 
@@ -22,7 +23,7 @@ describe(`${LIB} - selectors - inventory`, function () {
 			})
 		})
 
-		context("when the uuid refers to nothing", function () {
+		describe("when the uuid refers to nothing", function () {
 			it("should throw", () => {
 				const state = create()
 

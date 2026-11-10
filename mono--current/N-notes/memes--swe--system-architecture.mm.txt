@@ -20,6 +20,7 @@
 [ ] https://htmx.org/essays/
 [ ] https://medium.com/@sureshpodeti/system-design-twitter-a98e7d134634
 [ ] https://newsletter.pragmaticengineer.com/p/building-the-threads-app
+[ ] https://nvartolomei.com/dist-sys-classics/ Distributed Systems Classics
 [ ] https://slack.engineering/scaling-datastores-at-slack-with-vitess/
 [ ] https://www.infoq.com/news/2024/01/discord-midjourney-performance/
 [ ] https://www.youtube.com/watch?v=paTtLhZFsGE

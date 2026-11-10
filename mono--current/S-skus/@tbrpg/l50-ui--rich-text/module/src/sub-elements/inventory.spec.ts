@@ -3,6 +3,7 @@ import { generate_random_demo_weapon, DEMO_WEAPON_1, DEMO_WEAPON_2 } from "@tbrp
 import { create as create_inventory, equip_item, add_item, remove_item_from_unslotted } from "@tbrpg/state--inventory"
 import { Currency, create as create_wallet, add_amount } from "@tbrpg/state--wallet"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import * as RichText from "@monorepo-private/rich-text-format"
 import { renderⵧto_text } from "@monorepo-private/rich-text-format--to-textual"
@@ -14,7 +15,7 @@ import { LIB } from "./sub-elements/consts.ts"
 
 describe(`🔠  ${LIB} - inventory`, function () {
 	describe("backpack rendering", function () {
-		context("when empty", function () {
+		describe("when empty", function () {
 			it("should render properly", () => {
 				const inventory = create_inventory()
 				const $doc = renderꓽbackpack(inventory)
@@ -25,7 +26,7 @@ describe(`🔠  ${LIB} - inventory`, function () {
 			})
 		})
 
-		context("when not empty", function () {
+		describe("when not empty", function () {
 			it("should render properly", () => {
 				let inventory = create_inventory()
 				inventory = add_item(inventory, generate_random_demo_weapon())
@@ -80,7 +81,7 @@ describe(`🔠  ${LIB} - inventory`, function () {
 	})
 
 	describe("active equipment rendering", function () {
-		context("when empty", function () {
+		describe("when empty", function () {
 			it("should render properly", () => {
 				const inventory = create_inventory()
 				const $doc = renderꓽequipment(inventory)
@@ -91,7 +92,7 @@ describe(`🔠  ${LIB} - inventory`, function () {
 			})
 		})
 
-		context("when not empty", function () {
+		describe("when not empty", function () {
 			it("should render properly", () => {
 				let inventory = create_inventory()
 				inventory = add_item(inventory, DEMO_WEAPON_1)

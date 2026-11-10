@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { SCHEMA_VERSION, LIB } from "./consts.ts"
 import { getꓽSXC } from "./sxc.ts"

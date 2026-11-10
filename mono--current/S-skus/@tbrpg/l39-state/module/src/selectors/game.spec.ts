@@ -1,6 +1,7 @@
 import { xxx_internal_reset_prng_cache } from "@oh-my-rpg/state--prng"
 import { CharacterClass } from "@tbrpg/state--character"
 import { expect } from "chai"
+import { describe, it, beforeEach } from "vitest"
 
 import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 import { TEST_TIMESTAMP_MS } from "@monorepo-private/timestamps"

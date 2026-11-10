@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
@@ -29,7 +30,7 @@ describe(`${LIB} - state`, function () {
 			is_player_since_alpha: true,
 		})
 
-		context("when the code is unknown or when the conditions are NOT met", function () {
+		describe("when the code is unknown or when the conditions are NOT met", function () {
 			// no need to test detailed, see selectors
 			it("should reject and not update the state", () => {
 				const state = create()
@@ -42,7 +43,7 @@ describe(`${LIB} - state`, function () {
 			})
 		})
 
-		context("when the conditions are met", function () {
+		describe("when the conditions are met", function () {
 			it("should update the state", () => {
 				let state = create()
 				const code_spec = CODESPECS_BY_KEY["TESTALWAYS"]!

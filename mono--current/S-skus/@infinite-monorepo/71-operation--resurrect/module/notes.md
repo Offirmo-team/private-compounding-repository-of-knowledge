@@ -60,6 +60,10 @@ Display:
   - started and reported in resurrection order, whatever the completion order (the dots are in completion order)
   - no new check started once >= 5 packages with issues, but the running ones are completed (= may report a few more)
   - the checks of a package run sequentially
+  - the scripts run with `VITEST_MAX_WORKERS=1`: by default each `vitest run` spawns `cores - 1` workers = ~cores²
+    threads (+ the `tsc`s) = overloaded machine = flaky 5s test timeouts (seen ~1 run in 3). Cost: a zone with few
+    packages runs its tests on 1 worker. Rejected: lower concurrency (slows `tsc` for nothing), raise `testTimeout`
+    (hides slow tests), retry (hides flaky tests)
 - the exploration takes the issue detection as a parameter → testable without spawning anything
 - the monorepo root is passed already absolute (the sandbox resolves `~` with `homedir()`) = no `~` parsing here
 - passive packages with known issues are NOT reported, only a red dot (= the report = what to fix next)
@@ -70,6 +74,3 @@ Display:
 ## Open questions / TODO
 
 - speed: cache the results (ex. by content hash), stop a package's checks at its 1st failure
-- flaky `check:unit-tests` (~1 run in 3, OK on rerun). Suspected: oversubscription = 1 package per core, BUT each
-  `vitest run` also spawns `cores - 1` workers (= ~cores² threads + `tsc`s) → default 5s test timeouts. To confirm with
-  the logs (load avg), then fix ex. `VITEST_MAX_WORKERS=1` in the env of the spawned scripts

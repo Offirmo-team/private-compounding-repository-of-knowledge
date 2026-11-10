@@ -16,6 +16,7 @@
 	"dependencies": {
 		"@infinite-monorepo/heuristics": "workspace:*",
 		"@infinite-monorepo/plugin--pm--pnpm": "workspace:*",
+		"@infinite-monorepo/plugin--typescript": "workspace:*",
 		"@infinite-monorepo/state": "workspace:*",
 		"@infinite-monorepo/types-for-plugins": "workspace:*",
 		"@monorepo-private/assert": "workspace:*",

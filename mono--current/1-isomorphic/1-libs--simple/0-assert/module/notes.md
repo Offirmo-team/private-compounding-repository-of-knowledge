@@ -9,6 +9,10 @@ Concepts
 - https://en.wikipedia.org/wiki/Precondition
 - https://en.wikipedia.org/wiki/Postcondition
 - DbC https://en.wikipedia.org/wiki/Design_by_contract
+  - BUT against contracts: https://www.stroustrup.com/Contracts_fundamental_flaws.pdf
+    - "ad-hoc" system relying on the devs
+    - runtime impact
+    - should be seen as a "debug aid" rather than a feature
 - require vs assert https://ethereum.org/developers/docs/smart-contracts/security/#use-require-assert-revert
   - detect internal errors and check for violations of “invariants” in your code.
   - An invariant is a logical assertion about a contract’s state that should hold true for all function executions.

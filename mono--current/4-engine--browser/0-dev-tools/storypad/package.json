@@ -8,6 +8,7 @@
 	"exports": {
 		".": "./module/src/index.ts",
 		"./decorators/diagnostics": "./module/src/__shared/decorators/diagnostics/_entrypoint.ts",
+		"./stories/css/typography/*": "./module/src/__shared/stories/css/typography/*",
 		"./stories/html/elements/*": "./module/src/__shared/stories/html/elements/*.stories.ts",
 		"./stories/html/html-demos--offirmo": "./module/src/__shared/stories/html/html-demos-by-offirmo.stories.ts",
 		"./stories/html/html-demos--others": "./module/src/__shared/stories/html/html-demos-misc.stories.ts",
@@ -44,6 +45,7 @@
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/soft-execution-context": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",

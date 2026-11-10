@@ -2,6 +2,7 @@ import { xxx_internal_reset_prng_cache } from "@oh-my-rpg/state--prng"
 import { AchievementStatus, type AchievementDefinition } from "@tbrpg/state--achievements"
 import { expect } from "chai"
 import { Enum } from "typescript-string-enums"
+import { describe, it, beforeEach } from "vitest"
 
 import { LIB } from "../../consts.ts"
 import ACHIEVEMENT_DEFINITIONS from "../../data/achievements.ts"
@@ -14,7 +15,7 @@ describe(`${LIB} - reducer`, function () {
 	beforeEach(() => xxx_internal_reset_prng_cache())
 
 	describe("_refresh_achievements()", function () {
-		context("🚫  when having no new achievements", function () {
+		describe("🚫  when having no new achievements", function () {
 			it("should not change the state at all", () => {
 				const state = create() // includes an initial refresh
 
@@ -25,7 +26,7 @@ describe(`${LIB} - reducer`, function () {
 			})
 		})
 
-		context("✅  when having new achievements", function () {
+		describe("✅  when having new achievements", function () {
 			it("should generate only a bunch of basic achievements", () => {
 				let state = create()
 

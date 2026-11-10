@@ -23,6 +23,7 @@
 	},
 	"devDependencies": {
 		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/marketing--creator": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/storypad": "workspace:*",

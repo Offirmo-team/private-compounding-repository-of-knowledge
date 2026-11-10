@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
@@ -11,7 +12,7 @@ import { is_code, is_code_redeemable, create, attempt_to_redeem_code } from "./i
 
 describe(`${LIB} - selectors`, function () {
 	describe("is_code()", function () {
-		context("when the code is not a string", function () {
+		describe("when the code is not a string", function () {
 			it("should return false", () => {
 				const fut: any = is_code
 				expect(fut()).to.be.false
@@ -20,14 +21,14 @@ describe(`${LIB} - selectors`, function () {
 			})
 		})
 
-		context("when the code normalizes to an empty string", function () {
+		describe("when the code normalizes to an empty string", function () {
 			it("should return false", () => {
 				expect(is_code(" 	 ")).to.be.false
 				expect(is_code(" - ")).to.be.false
 			})
 		})
 
-		context("when the code is correct", function () {
+		describe("when the code is correct", function () {
 			it("should return true", () => {
 				expect(is_code(" TESTNEVER")).to.be.true
 			})
@@ -38,7 +39,7 @@ describe(`${LIB} - selectors`, function () {
 		// using is_code() so no need to re-test
 		//context('when the code is not valid')
 
-		context("when the code is known", function () {
+		describe("when the code is known", function () {
 			const BASE_INFOS = enforceꓽimmutable<CodesConditions>({
 				has_energy_depleted: false,
 				good_play_count: 0,
@@ -67,14 +68,14 @@ describe(`${LIB} - selectors`, function () {
 			})
 
 			describe("is_redeemable custom condition", function () {
-				context("when the conditions are met", function () {
+				describe("when the conditions are met", function () {
 					it("should always return true", () => {
 						const code_spec = CODESPECS_BY_KEY["TESTALWAYS"]!
 						expect(is_code_redeemable(create(), code_spec, BASE_INFOS)).to.be.true
 					})
 				})
 
-				context("when the condition are NOT met", function () {
+				describe("when the condition are NOT met", function () {
 					it("should return false", () => {
 						const code_spec = CODESPECS_BY_KEY["TESTNEVER"]!
 						expect(is_code_redeemable(create(), code_spec, BASE_INFOS)).to.be.false

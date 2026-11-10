@@ -1,13 +1,10 @@
-import {
-	Normalization as _Norm,
-	DemoꓽAll,
-} from "@monorepo-private/storypad/src/__shared/stories/css/typography/index.stories.ts"
+import { Normalization as _Norm, DemoꓽAll } from "@monorepo-private/storypad/stories/css/typography/index.stories.ts"
 
 import { All } from "../__shared/use-cases.stories"
 
 import "./index.css"
 
-const KLASS = "omr⋄font⁚Ames--free"
+const KLASS = "omr⋄font⁚Ames--Free"
 
 export function FontDemoⵧraw() {
 	return `

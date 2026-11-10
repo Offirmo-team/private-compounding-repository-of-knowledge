@@ -1,6 +1,7 @@
 /////////////////////
 
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { LIB } from "./consts.ts"
 import { DEMO_STATE } from "./examples.ts"

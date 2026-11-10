@@ -1,5 +1,6 @@
 import { ActionType, type ActionAcknowledgeEngagementMsgSeen } from "@tbrpg/interfaces"
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { createꓽserver } from "./server.ts"
 

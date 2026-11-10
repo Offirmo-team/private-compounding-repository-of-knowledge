@@ -23,8 +23,10 @@ Every package in this monorepo follows a precise structure:
 
 ## Notes
 
-1. `git diff --staged --patch --binary > ~/work/tmp/otpcrk.patch`
-1. `git apply --3way ~/work/tmp/otpcrk.patch`
-1. `node ./scripts/cleanup-empty-dirs.ts`
-1. `bash ./scripts/check-forbidden-keywords.bash`
-1. `git fetch && git pull --recurse-submodules --rebase --autostash`
+1. ALIEN `git diff --staged --patch --binary > ~/work/tmp/otpcrk.patch`
+1. PERSO `git apply --3way ~/work/tmp/otpcrk.patch`
+   1. `node ./scripts/cleanup-empty-dirs.ts`
+   1. `bash ./scripts/check-forbidden-keywords.bash`
+   1. (commit)
+1. ALIEN (optional) `git stash push --staged -m "before pull $(date +%Y/%m/%d)"`
+1. ALIEN `git fetch && git pull --recurse-submodules --rebase --autostash`

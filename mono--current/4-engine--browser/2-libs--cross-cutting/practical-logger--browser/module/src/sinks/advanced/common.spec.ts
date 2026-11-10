@@ -1,4 +1,5 @@
 import { expect } from "chai"
+import { describe, it } from "vitest"
 
 import { ALL_LOG_LEVELS } from "@monorepo-private/practical-logger--core"
 
