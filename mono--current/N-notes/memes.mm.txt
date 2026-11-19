@@ -519,6 +519,7 @@ evolution -- gene-centered = https://en.wikipedia.org/wiki/Gene-centered_view_of
 evolution -- greater male variability hypothesis (heretic) = more variance among males: overrepresented at both extremes of traits (ex. IQ) https://en.wikipedia.org/wiki/Variability_hypothesis
 evolution -- LUCA = Last Universal Common Ancestor of all current life https://en.wikipedia.org/wiki/Last_universal_common_ancestor
 evolution -- mammals -- nest, follow, cache, carry = humans are carry https://www.instagram.com/p/CopnsFXpEMS/?igshid=MDJmNzVkMjY%3D&img_index=2
+evolution -- mitochondria https://www.asimov.press/p/mitochondria
 evolution -- not just species = "The struggle for existence holds as much in the intellectual as in the physical world. A theory is a species of thinking, and its right to exist is coextensive with its power of resisting extinction by its rivals" https://en.wikipedia.org/wiki/Meme#Early_formulations
 evolution -- pinnacle of evolution
 evolution -- quirks of human anatomy https://www.sdbonline.org/sites/fly/lewheldquirk/figlegq6.htm
@@ -772,6 +773,7 @@ intellectual honesty = willingness to see and admit the truth, even if it goes a
 intelligence -- encephalization quotient = advanced body to brain, humans ranking highest https://en.wikipedia.org/wiki/Encephalization_quotient
 intelligence -- forms -- Kim-puter = developmental disability leading to a different brain https://en.wikipedia.org/wiki/Kim_Peek
 intelligence -- working memory = https://substack.davidepiffer.com/p/ai-isnt-outthinking-mathematicians
+intelligence = https://aworkinglibrary.com/writing/toolmen
 internalising feelings of inferiority and alienation (colonialism, race...)
 International law = more what you'd call "guidelines" than actual rules. Violating it really only matters if the countries that actually care to object are collectively powerful enough to stop you https://politics.stackexchange.com/a/91479
 intrinsic/extrinsic motivation https://www.swyx.io/js-tooling
@@ -947,6 +949,7 @@ life -- high economic connectedness = https://julienreszka.com/blog/your-key-to-
 life -- le petit pecheur
 life -- lines of life = most common to rarest: criticize > gossip > get involved > encourage > help
 life -- my steak is too juicy and my lobster is too buttery
+life -- NPC = "such NPCs" https://boingboing.net/2024/08/14/theyre-such-npcs-why-elon-musk-thinks-youre-not-real.html
 life -- NPC = "watching life pass you by while doomscrolling on your phone" https://signalundefied.bearblog.dev/i-wanna-live-an-npc-life/
 life -- old people smell = https://www.theguardian.com/wellness/2026/sep/03/old-person-smell
 life -- reach one's full potential = "The will to win, the desire to succeed, the urge to reach your full potential … these are the keys that will unlock the door to personal excellence."
@@ -1467,6 +1470,7 @@ SBI https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-be
 SBI https://www.mindtools.com/pages/article/situation-behavior-impact-feedback.htm
 schadenfreude = happy ppl misfortune
 science -- currently most accurate model
+science -- dead salmon = a dead salmon respond under fMRI https://www.psychology.mcmaster.ca/bennett/psy710/readings/BennettDeadSalmon.pdf
 science -- epicycles = “fixed” miscalculations of a model by making it more complex, while the model itself could be simplified https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/#footnote-1
 science -- ethics -- "Your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should" https://www.reddit.com/r/videos/comments/1at69qj/your_scientists_were_so_preoccupied_with_whether/
 science -- example of science review of a claim https://dynomight.net/creatine/
@@ -1822,7 +1826,7 @@ when in Rome…
 where there smoke there's fire
 whitewashing
 who moved my cheese?
-Who's Who -- Aristote
+Who's Who -- Aristotle
 Who's Who -- Jesus
 Who's Who -- Platon
 Who's Who = biographical entries of notable people https://en.wikipedia.org/wiki/Who%27s_Who
@@ -1846,11 +1850,18 @@ work -- 4-hour workweek
 work -- 996 = https://lucumr.pocoo.org/2025/9/4/996/
 work -- anger = don't https://www.seangoedecke.com/you-should-never-be-angry-at-work/
 work -- blue & white collar = https://ptrbrynt.com/posts/were-we-blue-collar-workers-all-along
+work -- bullshit jobs = https://aworkinglibrary.com/reading/bullshit-jobs
 work -- busy work https://en.wikipedia.org/wiki/Busy_work
+work -- career lottery https://notnottalmud.substack.com/p/the-lottery-of-career-success-or
 work -- corporate slave (but also never achieving anything?)
-work -- ghostworking = https://www.linkedin.com/news/story/the-ghostworking-trend-explained-7359850/
+work -- ghostworking = looking busy in the office with strictly performative behaviors like carrying prop notebooks, scheduling fake meetings or typing random words https://www.linkedin.com/news/story/the-ghostworking-trend-explained-7359850/
+work -- job hugging
+work -- job titles https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/
+work -- laborer exploitation = make the work required to scrape together a meager living so great there is no energy left at the end of the day for anything other than a dead and dreamless sleep https://aworkinglibrary.com/writing/against-disliteracy
+work -- Peter Principle = people are promoted until they reach their level of incompetence https://aworkinglibrary.com/writing/petered
 work -- quiet quitting
 work = every occupation has its pro/cons
+Work = movement of energy from one system to another, eye to page, hand to keyboard, paw to snapping branch https://aworkinglibrary.com/writing/against-disliteracy
 workaholic
 works of mercy -- corporal
 works of mercy -- spiritual

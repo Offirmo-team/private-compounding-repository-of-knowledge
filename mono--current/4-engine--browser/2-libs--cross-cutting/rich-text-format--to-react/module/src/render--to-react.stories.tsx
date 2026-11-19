@@ -1,6 +1,7 @@
+import type { Meta, Story } from "@storypad/storypad/types"
+
 import type { NodeⳇLike } from "@monorepo-private/rich-text-format"
 import * as RichTextExamples from "@monorepo-private/rich-text-format/examples"
-import type { Meta, Story } from "@monorepo-private/storypad/types"
 
 import renderⵧto_react from "./render--to-react.tsx"
 

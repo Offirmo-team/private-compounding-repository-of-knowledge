@@ -127,6 +127,7 @@ client/server -- multi-tier architecture -- 03 business
 client/server -- multi-tier architecture -- 04 data access
 client/server -- multi-tier architecture https://en.wikipedia.org/wiki/Multitier_architecture
 coding -- Claude -- version history https://cchistory.mariozechner.at/
+color -- primary -- 3 or 4? = +++ https://www.redblobgames.com/x/1708-color-yellow/
 colors -- colour schemes --
 colors -- colour schemes -- cubehelix = increasing intensity, good for astronomy https://people.phy.cam.ac.uk/dag9/CUBEHELIX/
 components https://www.componentdriven.org/

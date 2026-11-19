@@ -1,0 +1,2 @@
+- NOT AI
+- full license to use

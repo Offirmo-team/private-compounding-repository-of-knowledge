@@ -1,5 +1,6 @@
+import type { Meta‿v3, Story‿v3 } from "@storypad/storypad/types"
+
 import * as RichTextExamples from "@monorepo-private/rich-text-format/examples"
-import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad/types"
 
 import { RichText } from "./index.tsx"
 

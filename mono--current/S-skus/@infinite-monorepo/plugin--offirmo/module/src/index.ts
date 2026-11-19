@@ -4,7 +4,7 @@ export const PLUGIN: Plugin = {
 	onꓽload(state: Immutable<StateLib.State>): Immutable<StateLib.State> {
 		// utils
 		state.pkg_infos_resolver.preload("zx")
-		state.pkg_infos_resolver.preload("npm-run-all")
+		state.pkg_infos_resolver.preload(PKGꓽNPM_RUN_ALL)
 
 		// UT
 		state.pkg_infos_resolver.preload("vitest")
@@ -102,14 +102,16 @@ export const PLUGIN: Plugin = {
 			case "package":
 				// encourage best practices
 				if (node.details.languages.has("js") || node.details.languages.has("ts")) {
+					state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, PKGꓽNPM_RUN_ALL, {
+						type: "dev",
+					})
+
 					if (node.path‿abs.includes("0-meta")) {
 						// no: minimal deps
 						// TODO improve "rings"
 					} else {
 						// utils
-						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "npm-run-all", {
-							type: "dev",
-						})
+
 						state = StateLib.addꓽdependency<NodeⳇPackage>(state, node, "@monorepo-private/scripts", {
 							type: "dev",
 						})
@@ -153,6 +155,10 @@ export const PLUGIN: Plugin = {
 
 				// TODO move into an "engine--browser" dedicated plugin
 				if (node.details.target === "browser") {
+					// NO we hoist storypad to prevent cycles (considered an external tool like Storybook)
+					//details = addꓽdependency(details, "@storypad/storypad", { type: "dev" })
+					state = StateLib.removeꓽdependency<NodeⳇPackage>(state, node, "@storypad/storypad") // remove if present, depend on hoist (see pnpm)
+
 					if (node.details.languages.has("ts")) {
 						state = StateLib.addꓽdependency<NodeⳇPackage>(
 							state,
@@ -268,7 +274,7 @@ pnpm i ...
 								path‿ar: `${PATHVARⵧROOTⵧNODE}/${path‿ar}`,
 								doc: [],
 							},
-							intent: "present",
+							intent: "present--init",
 							content,
 						}
 						state = StateLib.requestꓽfile_output(state, output_spec)
@@ -317,16 +323,22 @@ pnpm i ...
 export MONOREPO_ROOT__CURRENT=\${${state.specⵧroot.key || "MONOREPO"}_ROOT:-"${monorepo_root__default}"};
 
 ` +
-								package_nodes
-									.map((node) => {
-										const alias_name = `mono.${node.details.namespace}.${node.details.name}`
-										const relative_path = path.relative(monorepo_root_node.path‿abs, node.path‿abs)
-										// TODO 1D re-activate tabset (not in Warp) tabset --badge ${node.details.fqname} https://github.com/warpdotdev/warp/issues/2743#issuecomment-4422611574
-										return `
-alias  ${alias_name}='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd ${relative_path}/'
-`.trim()
-									})
-									.join("\n"),
+								Array.from(
+									Map.groupBy(package_nodes, (node) =>
+										path.dirname(path.relative(monorepo_root_node.path‿abs, node.path‿abs)),
+									),
+								)
+									.map(([parent_dir‿rel, nodes]) =>
+										[
+											`### ${parent_dir‿rel}/`,
+											...nodes.map((node) => {
+												const alias_name = `mono.${node.details.namespace}.${node.details.name}`
+												const relative_path = path.relative(monorepo_root_node.path‿abs, node.path‿abs)
+												return `alias  ${alias_name}='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd ${relative_path}/; tabset --badge "${node.details.fqname}"'`
+											}),
+										].join("\n"),
+									)
+									.join("\n\n"),
 						},
 					} satisfies FileOutputPresent)
 				})()
@@ -395,7 +407,10 @@ import {
 	type NodeⳇPackage,
 	type NodeⳇWorkspace,
 	type StructuredFsⳇFileManifest,
+	isꓽtargeting_browser,
+	addꓽdependency,
 } from "@infinite-monorepo/types-for-plugins"
 
 import type { Immutable, JsonⳇObject } from "@monorepo-private/ts--types"
 import { isꓽError } from "@monorepo-private/utils--error/v2"
+import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"

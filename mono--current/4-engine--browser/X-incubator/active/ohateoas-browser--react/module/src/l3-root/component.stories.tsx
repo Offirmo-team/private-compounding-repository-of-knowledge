@@ -1,5 +1,6 @@
+import type { Meta‿v3, Story‿v3 } from "@storypad/storypad"
+
 import { createꓽserver as createꓽserverⵧhello_world } from "@monorepo-private/ohateoas/examples/01-hello_world"
-import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"
 
 import { ᄆComponent } from "./component.tsx"
 //import { createꓽserver as createꓽserverⵧcfu } from '@monorepo-private/ohateoas/examples/10-check-for-updates'

@@ -2,6 +2,7 @@ import { type TBRSoftExecutionContext } from "@tbrpg/definitions"
 import * as TBRPGState from "@tbrpg/state"
 import { type State } from "@tbrpg/state"
 
+import { assertⵧnever_reached } from "@monorepo-private/assert"
 import {
 	type AllStoreFns,
 	type Snapshot,
@@ -61,7 +62,7 @@ export function reducer(state: Immutable<State>, action: Immutable<TBRPGAction>)
 			return reduceꓽhack(state, action_ts_discrimination_not_working)
 
 		default:
-			throw new Error(`Unknown action type "${action.type}"!`)
+			assertⵧnever_reached({ action }, { discriminant: "type" })
 	}
 }
 

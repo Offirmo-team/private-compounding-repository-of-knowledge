@@ -29,6 +29,8 @@ const plugins: Record<string, Plugin> = {
 	pluginꓽyarnᝍᝍv1,
 }
 
+const MARKERⵧCUSTOMIZED = "[IM:CUSTOMIZED]"
+
 export async function apply(from?: PathⳇAny) {
 	console.log(styleText(["bold", "italic"], "------------ @infinite-monorepo ------------"))
 
@@ -366,22 +368,27 @@ export async function apply(from?: PathⳇAny) {
 
 		// 2. re-create files we explicitly requested
 		const ios = Object.entries(state.output_files).map(([path, spec]) => {
+			if (spec.intent === "not-present") {
+				console.log(`- Removing file ${path}…`)
+				return nodeꓽfs.rm(path, { force: true })
+			}
+
+			function ೱwrite(): Promise<void> {
+				const spec_ = spec as Immutable<FileOutputPresent>
+				return ೱwriteꓽfile(path, trim_before_stringify(spec_.content), spec_.manifest.format)
+			}
+
 			switch (spec.intent) {
 				case "not-present":
-					console.log(`- Removing file ${path}…`)
-					return nodeꓽfs.rm(path, { force: true })
+					// not possible
+					break
 
-				case "present":
-					console.log(`- Writing file if not exist ${path}…`)
-					return ensureFile(path, async () => {
-						return ೱwriteꓽfile(path, trim_before_stringify(spec.content as any), spec.manifest.format)
-					})
-
-				case "present--exact":
+				case "present--exact": {
 					console.log(`- Writing exact file ${path}…`)
-					return ೱwriteꓽfile(path, trim_before_stringify(spec.content as any), spec.manifest.format)
+					return ೱwrite()
+				}
 
-				case "present--containing":
+				case "present--containing": {
 					console.log(`- Augmenting file ${path}…`)
 					const SSoT = true // XXX advanced!
 					const ↆexisting_content = SSoT ? Promise.resolve({}) : ↆreadꓽfile(path, { format: spec.manifest.format })
@@ -398,17 +405,40 @@ export async function apply(from?: PathⳇAny) {
 								throw err
 							}
 
-							return ೱwriteꓽfile(path, trim_before_stringify(spec.content as any), spec.manifest.format)
+							return ೱwrite()
 						},
 					)
+				}
 
 				case "symlink": {
 					console.log(`- Ensuring symlink ${path}…`)
-					return ensureSymlink("../AGENTS.md", ".claude/CLAUDE.md")
+					throw new Error("NIMP")
+					return ensureꓽsymlink("../AGENTS.md", ".claude/CLAUDE.md")
 				}
 
+				case "present--unless-customized": {
+					console.log(`- Writing file if not customized ${path}…`)
+					return ensureꓽfile_exist(path, {
+						onꓽnot_exist: ೱwrite,
+						onꓽalready_exist: async () => {
+							// raw text = format-agnostic: the marker can be in a comment, a string value…
+							const content‿raw = await nodeꓽfs.readFile(path, "utf8")
+							if (content‿raw.includes(MARKERⵧCUSTOMIZED)) {
+								console.log(`  ↳ marked as customized, skipping.`)
+								return
+							}
+
+							return ೱwrite()
+						},
+					})
+				}
+
+				case "present--init":
+					console.log(`- Writing file if not exist ${path}…`)
+					return ensureꓽfile_exist(path, { onꓽnot_exist: ೱwrite })
+
 				default:
-					throw new Error(`Unsupported intent: ${spec.intent}!`)
+					assertⵧnever_reached({ spec }, { discriminant: "intent" })
 			}
 		})
 		console.log("Finalizing i/o…")
@@ -425,7 +455,7 @@ export async function apply(from?: PathⳇAny) {
 
 /////////////////////////////////////////////////
 
-async function ensureSymlink(target: string, linkPath: string) {
+async function ensureꓽsymlink(target: string, linkPath: string) {
 	await nodeꓽfs.mkdir(nodeꓽpath.dirname(linkPath), { recursive: true })
 
 	try {
@@ -448,12 +478,25 @@ async function ensureSymlink(target: string, linkPath: string) {
 	}
 }
 
-async function ensureFile(path: PathⳇAbsolute, onCreate: () => Promise<void>): Promise<void> {
-	try {
-		await nodeꓽfs.access(path)
-	} catch {
-		await onCreate()
-	}
+async function ensureꓽfile_exist(
+	path: PathⳇAbsolute,
+	{
+		onꓽnot_exist,
+		onꓽalready_exist = async () => {},
+	}: {
+		onꓽnot_exist: () => Promise<void>
+		onꓽalready_exist?: () => Promise<void>
+	},
+): Promise<void> {
+	const exists = await nodeꓽfs.access(path).then(
+		() => true,
+		(err) => {
+			if (err?.code !== "ENOENT") throw err
+			return false
+		},
+	)
+
+	return exists ? onꓽalready_exist() : onꓽnot_exist()
 }
 
 /////////////////////////////////////////////////
@@ -494,10 +537,10 @@ import pluginꓽunit_tests from "@infinite-monorepo/plugin--unit-tests"
 import pluginꓽvite from "@infinite-monorepo/plugin--vite"
 import { loadꓽspecⵧchainⵧraw } from "@infinite-monorepo/spec--load"
 import * as StateLib from "@infinite-monorepo/state"
-import { reportꓽstep_completed, type State } from "@infinite-monorepo/state"
+import { reportꓽstep_completed, type FileOutputPresent, type State } from "@infinite-monorepo/state"
 import { type Plugin } from "@infinite-monorepo/types-for-plugins"
 
-import { assert } from "@monorepo-private/assert"
+import { assert, assertⵧnever_reached } from "@monorepo-private/assert"
 import { trim_before_stringify } from "@monorepo-private/json-stable-stringify"
 import { mergeⵧdeepⵧno_conflict } from "@monorepo-private/merge"
 import { ↆreadꓽfile } from "@monorepo-private/read-write-any-structured-file/read"

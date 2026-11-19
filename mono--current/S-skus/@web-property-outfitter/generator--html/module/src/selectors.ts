@@ -5,7 +5,7 @@ import snippetꓽhtmlⳇreact_root from "@web-property-outfitter/generator--html
 import snippetꓽjsⳇnormalizeᝍtrailingᝍslash from "@web-property-outfitter/generator--html--snippets/js/snippet--normalize-url.ts"
 import { Enum } from "typescript-string-enums"
 
-import { assert_from, assert } from "@monorepo-private/assert"
+import { assert_from, assert, assertⵧnever_reached } from "@monorepo-private/assert"
 import { normalize_unicode } from "@monorepo-private/normalize-string"
 import type { Immutable, IETFLanguageType, Charset } from "@monorepo-private/ts--types"
 import type { Url‿str, Css‿str, Html‿str, JS‿str, Contentⳇweb } from "@monorepo-private/ts--types--hypermedia"
@@ -224,7 +224,7 @@ function getꓽspecⵧwith_features_expanded(spec: Immutable<HtmlFileSpec>): Imm
 					break
 
 				default:
-					throw new Error(`Unknown feature: ${feature_id}!`)
+					assertⵧnever_reached({ feature_id })
 			}
 		})
 

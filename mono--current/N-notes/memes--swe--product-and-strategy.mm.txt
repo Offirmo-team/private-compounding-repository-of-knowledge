@@ -334,6 +334,13 @@ network effect = key dynamic behind many successful software companies
 never-ending feature party = but tech debt "clean up and restocking" https://corgibytes.com/blog/2018/01/02/neverending-feature-party/
 no one was ever fired for using...
 novelty tax = problem where users found the novel product too different to adopt it widely
+Nvidia lessons -- Bet on zero-billion dollar markets = Nvidia’s biggest pivots—into 3D graphics for PCs and later into AI—were bets on markets that didn’t yet exist
+Nvidia lessons -- Decide on your first principles, and then just start = If first principles say you’re right about a non-consensus view of how the future will work, bet on it
+Nvidia lessons -- Don’t discount the value of a little good luck = Nvidia would have died without some good luck
+Nvidia lessons -- Network effects even benefit hardware = A robust developer community programming software for Nvidia’s hardware has helped encourage widespread adoption and make the hardware “sticky.”
+Nvidia lessons -- Pay attention to unexpected ways people use your product = researchers were adapting their video game GPUs for other kinds of computation, they embraced it
+Nvidia lessons -- Take the (very) long view = It took six years and three product lines for Nvidia to find product-market fit
+Nvidia lessons https://sequoiacap.com/podcast/crucible-moments-nvidia
 only the paranoid survive (Andy Grove) = success breeds complacency, complacency breeds failure, only the paranoid survives. If you're winning, that's when you should be the most paranoid, bc disruption is always coming
 only the paranoid survive -- 1 assume disaster is coming
 only the paranoid survive -- 2 spot threats before they explode = if you wait until a crisis is obvious, it's already too late

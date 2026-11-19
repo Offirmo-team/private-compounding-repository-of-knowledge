@@ -251,6 +251,8 @@ export function addꓽscript(
 
 // after changes, reconcile some infos
 export function reconcile(details: Immutable<PureModuleDetails>): Immutable<PureModuleDetails> {
+	const ǃ = assert_from({ reconcile })
+
 	details = updateꓽfqname(details)
 
 	////////////
@@ -299,12 +301,6 @@ export function reconcile(details: Immutable<PureModuleDetails>): Immutable<Pure
 		details = addꓽdependency(details, "react-dom", { type: details.isꓽapp ? "normal" : "dev" })
 	}
 
-	if (isꓽtargeting_browser(details)) {
-		// NO we hoist to prevent cycles
-		details = addꓽdependency(details, "@monorepo-private/storypad", { type: "dev" })
-		//details = removeꓽdependency(details, "@monorepo-private/storypad") // try to break cycles
-	}
-
 	////////////
 	/// REMOVE dependencies
 	details = removeꓽdependency(details, details.fqname) // may happen if base dev pkg
@@ -337,19 +333,20 @@ export function reconcile(details: Immutable<PureModuleDetails>): Immutable<Pure
 	}
 	for (const tuple of details.depsⵧnormal) {
 		const [dep_name, dep_details] = tuple
-		// small control TODO clean
-		if (
-			[
+		// small control TODO clean, Offirmo specific
+		ǃ.forⵧvalue({ dep_name }).assert(
+			![
 				"@monorepo-private/monorepo-scripts",
-				"@monorepo-private/storypad",
+				"@storypad/storypad",
 				"@monorepo-private/toolbox--parcel",
 				"@monorepo-private/toolbox--vite",
 				// TODO all meta pks
 				"npm-run-all",
+				"npm-run-all2",
 				"typescript",
-			].includes(dep_name)
+			].includes(dep_name),
+			`Unexpected dev dep in normal deps (should be dev)`,
 		)
-			throw new Error(`Unexpected dep "${dep_name}" in normal deps! (should be dev)`)
 
 		const is_peer_candidate = ["tslib", "react", "@monorepo-private/soft-execution-context"].includes(dep_name)
 		if (is_peer_candidate && !details.isꓽapp) {
@@ -387,6 +384,10 @@ function _addꓽdependency(
 	const deps = new Map(previous)
 
 	const { type, ...rest } = dep_details // cleans up the redundant type (SSoT)
+	if (details.fqname === dep_name) {
+		// no need to depend on oneself
+		return details
+	}
 	if (deps.has(dep_name)) {
 		// TODO 1D check conflicts
 		return details

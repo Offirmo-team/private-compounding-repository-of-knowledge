@@ -1,5 +1,6 @@
+import type { Meta‿v3, Story‿v3 } from "@storypad/storypad"
+
 import { $EXAMPLE_COMPLETE_NODEⵧBLOCK } from "@monorepo-private/rich-text-format/examples"
-import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"
 
 import { RichTextCombinedRender as Component } from "./index.tsx"
 import { type BaseProps } from "./types.ts"

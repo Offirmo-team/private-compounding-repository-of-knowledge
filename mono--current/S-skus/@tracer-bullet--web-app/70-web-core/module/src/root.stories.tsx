@@ -18,4 +18,4 @@ export const Default: Story‿v3 = {}
 
 /////////////////////////////////////////////////
 
-import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"
+import type { Meta‿v3, Story‿v3 } from "@storypad/storypad"

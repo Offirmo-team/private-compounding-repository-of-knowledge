@@ -1,3 +1,4 @@
+import { assertⵧnever_reached } from "@monorepo-private/assert"
 import assert from "@monorepo-private/assert/v1"
 import {
 	normalize_unicode,
@@ -101,7 +102,7 @@ function parseꓽclaimⵧdate(claim: string): [string, LooseDateAnnotated] {
 				id += c
 				return
 			default:
-				throw new Error(`Unknown status!`)
+				assertⵧnever_reached({ status })
 		}
 	})
 
@@ -315,7 +316,7 @@ function deserialize(text: string): Immutable<State> {
 							description += c
 							return
 						default:
-							throw new Error(`Unknown status!`)
+							assertⵧnever_reached({ status })
 					}
 				})
 				emoji = emoji.trim()
@@ -374,7 +375,7 @@ function serialize(state: Immutable<State>): string {
 					unhandled_keys.delete("status")
 					break
 				default:
-					throw new Error(`Unknown status: ${p.status}`)
+					assertⵧnever_reached({ "p.status": p.status })
 			}
 
 			;(() => {

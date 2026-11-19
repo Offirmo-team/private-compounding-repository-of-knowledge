@@ -1,5 +1,6 @@
+import type { Meta‿v3, Story‿v3 } from "@storypad/storypad"
+
 import { type OHABrowserRootProps, ᄆOHABrowserRoot } from "@monorepo-private/ohateoas-browser--react"
-import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"
 
 import { createꓽserver } from "./server.ts"
 

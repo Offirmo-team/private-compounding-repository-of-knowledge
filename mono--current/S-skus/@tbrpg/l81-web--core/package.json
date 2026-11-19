@@ -29,7 +29,6 @@
 		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/soft-execution-context": "workspace:*",
-		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",

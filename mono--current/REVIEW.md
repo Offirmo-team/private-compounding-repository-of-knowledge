@@ -69,9 +69,9 @@ Clean.
 
 ## Notes
 
-- 🔵 Suspected, not checked: `@monorepo-private/storypad` is listed in `publicHoistPattern`. Packages can therefore use
-  it without declaring it, and the generated `package.json` files won't show that edge. Because storypad depends on
-  several layer-4 libs (D5), this could hide a cycle.
+- 🔵 Suspected, not checked: `@storypad/storypad` is listed in `publicHoistPattern`. Packages can therefore use it
+  without declaring it, and the generated `package.json` files won't show that edge. Because storypad depends on several
+  layer-4 libs (D5), this could hide a cycle.
 - 🔵 Small naming mismatch: the ADR says vendored code goes in `__vendor/`, but
   `0-meta/config--typescript/module/_vendor/strictest` uses a single underscore.
 - Not flagged: `0-dev-tools` packages depending on other `0-dev-tools` packages (parcel/vite configs composing each

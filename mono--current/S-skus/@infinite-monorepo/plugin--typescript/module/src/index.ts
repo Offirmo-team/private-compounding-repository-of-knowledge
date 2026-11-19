@@ -130,6 +130,7 @@ const PLUGIN: Plugin = {
 					// tweak
 					const s = state.plugin_area[PLUGIN_ENTRY] as PluginStateⳇSpec
 					if (s.config_node) {
+						// TODO 1D  make it more clever. see 4-engine--browser/0-dev-tools/engine--browser--types
 						tsconfig.include.unshift(
 							"./node_modules/@monorepo-private/config--typescript/module/_custom-typings/*.d.ts",
 							//path.relative(node.path‿abs, path.resolve(s.config_node.path‿abs, "module/_custom-typings")) + "/*.d.ts",

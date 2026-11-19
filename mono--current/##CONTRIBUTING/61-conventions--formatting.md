@@ -142,7 +142,7 @@ export function Div() {
 
 /////////////////////////////////////////////////
 
-import type { Meta‿v3, Story‿v3, StoryContext } from "@monorepo-private/storypad"
+import type { Meta‿v3, Story‿v3, StoryContext } from "@storypad/storypad"
 ```
 
 ## Core Unicode

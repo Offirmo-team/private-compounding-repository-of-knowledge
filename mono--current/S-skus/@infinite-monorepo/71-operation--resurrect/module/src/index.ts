@@ -37,7 +37,7 @@ export async function resurrect(
 		concurrency: CONCURRENCY,
 	})
 	process.stdout.write("\n\n")
-	console.log(formatꓽreport(packages_with_issues))
+	console.log(formatꓽreport(packages_with_issues, zones))
 
 	return packages_with_issues
 }
@@ -83,7 +83,8 @@ function _getꓽissuesⵧgraph(pkg: Immutable<PackageGraphⳇPackage>): Array<Re
 // 0 or 1 issue
 // the log only exists if the last run failed (removed on success = never stale)
 async function _ೱrunꓽscript(script: string, pkg‿abs: PathⳇAbsolute): Promise<Array<ResurrectionIssueⵧscript>> {
-	const log‿abs: PathⳇAbsolute = nodeꓽpath.join(pkg‿abs, ".monorepo", `resurrect--${script.replaceAll(":", "--")}.log`)
+	const log‿rel: FilePathⳇRelative = nodeꓽpath.join(".monorepo", `resurrect--${script.replaceAll(":", "--")}.log`)
+	const log‿abs: PathⳇAbsolute = nodeꓽpath.join(pkg‿abs, log‿rel)
 	const started_at‿ms = Date.now()
 	const err = await ೱspawnCorrectlyAndResolvesWithStdout({
 		spawnCommand: "pnpm",
@@ -106,7 +107,7 @@ async function _ೱrunꓽscript(script: string, pkg‿abs: PathⳇAbsolute): Pro
 				cores: availableParallelism(),
 			}),
 		)
-		return [{ source: "script", script, log‿abs }]
+		return [{ source: "script", script, log‿rel }]
 	}
 
 	await fs.rm(log‿abs, { force: true })
@@ -158,7 +159,7 @@ import { PATHVARⵧROOTⵧMONOREPO } from "@infinite-monorepo/types-for-plugins"
 import { assert } from "@monorepo-private/assert"
 import { ↆreadꓽfileⵧjson5 } from "@monorepo-private/read-write-any-structured-file/read"
 import { ೱspawnCorrectlyAndResolvesWithStdout, type SpawnError } from "@monorepo-private/spawn-correctly"
-import type { Immutable, PathⳇAbsolute, PathⳇAny } from "@monorepo-private/ts--types"
+import type { FilePathⳇRelative, Immutable, PathⳇAbsolute, PathⳇAny } from "@monorepo-private/ts--types"
 
 import { ೱexploreꓽzones } from "./explore.ts"
 import {

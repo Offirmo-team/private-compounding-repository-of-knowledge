@@ -1,0 +1,16 @@
+{
+	"name": "@monorepo-private/axo",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"clean": "npm-run-all _clean--pkg"
+	},
+	"devDependencies": {
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"vite": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
+}

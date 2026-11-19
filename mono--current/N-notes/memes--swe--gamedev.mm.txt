@@ -5,11 +5,13 @@ $1 reward strategy https://updates.kickstarter.com/the-1-reward-strategy/
 5 major video game award ceremonies: the Golden Joystick Awards, The Game Awards, the D.I.C.E. Awards, the Game Developers Choice Awards, and the British Academy Games Awards https://en.wikipedia.org/wiki/Baldur%27s_Gate_3
 [ ] https://bottomfeeder.substack.com/
 [ ] Magic the gathering -- https://magic.wizards.com/en/news/making-magic/state-of-design-2024
+[ ] worldbuilding https://www.erichgrunewald.com/posts/what-made-world-of-warcrafts-environments-so-compelling/
 AAA
 AAA - mockery = AAA minesweeper https://minesweeper.mikelacher.com/
 AI
 ambience = help set the tone for the atmosphere of a space
 assets -- audio -- music
+assets -- audio -- music -- not too strong = "HOMM4 has the best music, but it can be too much (...)) Some of the tracks go beyond ambiance and mood and they can be distracting
 assets -- audio -- sound effect -- braam = big, brassy, cinematic hit that conveys to the audience that they are about to witness something epic, grand, and exciting; something unlike anything they’ve seen before (esp. trailer)
 assets -- audio -- sound effect -- drone = add texture and atmosphere by underscoring the scene
 assets -- audio -- sound effect -- drop = brings the action to a dead stop – a deliberate pause emphasized using a sound effect. It releases tension and serves as a moment for the viewer to soak it all in
@@ -22,7 +24,7 @@ assets -- audio -- sound effect -- walla = the murmur of a crowd, the sound of p
 assets -- audio -- sound effect -- whoosh = underscore movement of some kind: a fist flying in a fight scene, a speed ramp
 assets -- audio -- sound effect https://blog.prosoundeffects.com/sound-effects-terms-explained-part-1
 assets -- audio -- soundscape
-assets https://www.openxcell.com/blog/common-types-game-assets/
+assets -- types = https://www.openxcell.com/blog/common-types-game-assets/
 autosave
 avatar
 balance
@@ -77,6 +79,7 @@ endgame -- GW2 -- Story and exploration-based content — playing new story chap
 endgame -- GW2 = https://wiki.guildwars2.com/wiki/Endgame
 endgame https://wiki.guildwars2.com/wiki/Endgame
 Environmental Storytelling = arranging a careful selection of the objects available in a game world so that they suggest a story to the player who sees them https://www.gamedeveloper.com/design/environmental-storytelling
+ESRB "Entertainment Software Rating Board" = the organization that rates the content of video games https://www.esrb.org/
 fantasy -- untainted by cynicism = one aspect of the genre https://kotaku.com/pragmata-preview-impressions-capcom-diana-hacking-2000679655
 fun
 fun & cool -- "a theory of fun for game design"

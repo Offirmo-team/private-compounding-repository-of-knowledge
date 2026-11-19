@@ -5,7 +5,7 @@
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
-		".": "./module/index.ts",
+		".": "./module/src/index.ts",
 		"./*": "./module/licensed/*/index.ts"
 	},
 	"scripts": {
@@ -24,7 +24,6 @@
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",

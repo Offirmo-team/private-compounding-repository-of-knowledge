@@ -2,6 +2,7 @@
 2024-11 https://vercel.com/blog/how-we-built-the-v0-ios-app
 2026-02 https://cpojer.net/posts/fastest-frontend-tooling
 [ ] +++ Technology Radar https://www.thoughtworks.com/en-us/radar https://www.thoughtworks.com/en-us/radar/tools
+[ ] example of stack 2026/11 https://shipfa.st/
 [ ] https://blog.cloudflare.com/voidzero-joins-cloudflare/
 [ ] https://github.com/millionco/react-doctor/issues/105#issuecomment-4265013082
 [ ] https://stackingthebricks.com/bootstrapper-tech-stack/
@@ -77,6 +78,7 @@ generic heuristic = "At TanStack, we have always strived to build tools that cov
 GHA https://github.com/step-security
 git -- git crypt https://github.com/AGWA/git-crypt
 git -- https://codeberg.org/
+github -- .github-private
 GitHub -- ⚠ https://sfconservancy.org/GiveUpGitHub/
 GraphQL https://gql-tada.0no.co/
 https://npmx.dev/package/gitpick = Clone exactly what you need aka straightforward project scaffolding

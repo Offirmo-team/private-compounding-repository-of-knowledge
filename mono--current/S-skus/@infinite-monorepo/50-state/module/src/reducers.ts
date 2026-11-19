@@ -408,7 +408,28 @@ export function addꓽdependency<NodeType extends NodeⳇWorkspace | NodeⳇPack
 
 	return reduceꓽnode(state, node_ref, (node) => {
 		const details_before = node.details
+
 		const details_after = PkgDetailsLib.addꓽdependency(node.details, dep_name, dep_details)
+		if (details_after === details_before) return node
+
+		return {
+			...node,
+			details: details_after,
+		}
+	})
+}
+export function removeꓽdependency<NodeType extends NodeⳇWorkspace | NodeⳇPackage>(
+	state: Immutable<State>,
+	node_ref: Immutable<NodeRef<NodeType>>,
+	dep_name: PkgFQName,
+	dep_type: DependencyType | "*" = "*",
+): Immutable<State> {
+	const ǃ = assert_from({ addꓽdependency })
+	ǃ.forⵧparam({ node: node_ref }).require(node_ref.details, `Node with details expected: ${node_ref.path‿abs}!`)
+
+	return reduceꓽnode(state, node_ref, (node) => {
+		const details_before = node.details
+		const details_after = PkgDetailsLib.removeꓽdependency(node.details, dep_name, dep_type)
 		if (details_after === details_before) return node
 
 		return {

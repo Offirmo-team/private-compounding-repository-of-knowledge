@@ -34,9 +34,10 @@ Every package is displayed, either:
 
 Display:
 
-- headers = the group folder name when it changes, then the subgroup folder name (or the SKU) + its path, followed by a
-  dot per package, as soon as checked: green = OK, red = issues, yellow = non-blocking issues, gray = passive without
-  known issues (passive WITH known issues = red). All the dots aligned (subgroup names right-aligned). Ex.:
+- headers = the group folder name when it changes, then the zone name = the subgroup folder name (or the SKU, or the
+  group folder name if no subgroup, ex. `0-meta/config--mocha/` → `0-meta/`) + its path, followed by a dot per package,
+  as soon as checked: green = OK, red = issues, yellow = non-blocking issues, gray = passive without known issues
+  (passive WITH known issues = red). All the dots aligned (subgroup names right-aligned). Ex.:
   ```
   1-isomorphic/
              1-libs--simple/ 1.1  ●●●●●●●
@@ -47,9 +48,17 @@ Display:
 - active checks until (then passive), unless `--all` (= never stop, everything is checked and reported):
   - the **end of the zone** with blocking issues
   - OR **>= 5 packages with blocking issues** (enough work for now)
-- then list the packages with issues, in resurrection order, with their issues
-  - script failure = the failed script + the path of its log `<pkg>/.monorepo/resurrect--<script>.log` (`:` → `--`) =
-    command, duration, exit code, load avg vs. cores (= overloaded machine?), stdout, stderr
+- then list the packages with issues: the blocking ones first, then the non-blocking ones, each in resurrection order.
+  Per package = `<zone id> > <zone name> > <fqname> [<layer score>]` (same zone names as the headers, layer score = the
+  sort key from plugin--graph), its path relative to the monorepo root, then its issues. Ex.:
+  ```
+  1. 1.1 > 1-libs--simple/ > @offirmo/foo [1.1.5.0]
+     1-isomorphic/1-libs--simple/foo/
+     - [check:ts] failed, see .monorepo/resurrect--check--ts.log
+  ```
+  - script failure = the failed script + the path of its log, relative to the package (= the line above):
+    `.monorepo/resurrect--<script>.log` (`:` → `--`) = command, duration, exit code, load avg vs. cores (= overloaded
+    machine?), stdout, stderr
     - removed on success = a log exists only if the last run failed
 - exit code = 1 if blocking issues (set by the caller, ex. the sandbox: `pnpm sandbox --from 1.2 --all`)
 

@@ -48,7 +48,7 @@ catalog:
    murmurhash3js-revisited: ^3
    nanoid: ^6
    npm-run-all: ^4
-   oxfmt: ^0.77
+   oxfmt: ^0.79
    oxlint: ^1
    oxlint-tsgolint: ^7
    parse-imports-ts: ^1
@@ -69,7 +69,7 @@ catalog:
    tinyglobby: ^0.2
    tslib: ^2
    turbo: ^2
-   type-fest: ^5
+   type-fest: ^6
    typescript: ^6
    typescript-string-enums: ^1
    vite: ^8
@@ -109,9 +109,10 @@ packages:
    - 7-multimorphic/@oh-my-rpg/*
    - S-skus/*/*
 publicHoistPattern:
-   - tslib
-   - "*oxlint*"
    - "*oxfmt*"
+   - "*oxlint*"
+   - "@storypad/storypad"
+   - tslib
 savePrefix: ^
 strictPeerDependencies: true
 trustPolicy: no-downgrade

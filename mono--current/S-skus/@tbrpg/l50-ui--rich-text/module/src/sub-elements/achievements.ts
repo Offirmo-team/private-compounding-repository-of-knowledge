@@ -1,5 +1,6 @@
 import { AchievementStatus, type AchievementSnapshot } from "@tbrpg/state--achievements"
 
+import { assertⵧnever_reached } from "@monorepo-private/assert"
 import * as RichText from "@monorepo-private/rich-text-format"
 import type { Immutable } from "@monorepo-private/ts--types"
 
@@ -29,7 +30,7 @@ function renderꓽachievement_snapshotⵧshort(achievement_snapshot: Immutable<A
 			break
 
 		default:
-			throw new Error(`Unknown achievement status for "${name}"!`)
+			assertⵧnever_reached({ status }, { extra_description: () => `achievement "${name}"` })
 	}
 
 	if (icon_text) {
@@ -89,7 +90,7 @@ function renderꓽachievement_snapshotⵧdetailed(achievement_snapshot: Immutabl
 			break
 
 		default:
-			throw new Error("Unknown achievement status!")
+			assertⵧnever_reached({ status })
 	}
 
 	if (icon_text) {
@@ -150,7 +151,7 @@ function renderꓽachievements_snapshot(
 					break
 
 				default:
-					throw new Error("Unknown achievement status!")
+					assertⵧnever_reached({ status })
 			}
 
 			return acc

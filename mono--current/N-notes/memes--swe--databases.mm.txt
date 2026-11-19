@@ -143,6 +143,7 @@ pg "PostgreSQL" = https://www.postgresql.org/
 pg -- backup https://thebuild.com/blog/pgxbackup-continuity-support-for-pgbackrest/
 pg -- durable exec = https://lucumr.pocoo.org/2025/11/3/absurd-workflows/
 pg -- exam https://www.postgresql.org/about/news/call-for-technical-members-3233/
+pg -- full text search = https://planetscale.com/blog/introducing-tin
 pg -- job queue https://github.com/timgit/pg-boss
 pg -- pgmq
 pg -- survival guide = +++ https://hatchet.run/blog/postgres-survival-guide

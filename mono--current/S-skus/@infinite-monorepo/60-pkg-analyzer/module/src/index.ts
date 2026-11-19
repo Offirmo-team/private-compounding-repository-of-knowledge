@@ -357,8 +357,8 @@ export async function updateⵧfrom_files(
 <meta charset="utf-8" />
 
 <script type="module">
-	import startꓽstorypad from '@monorepo-private/storypad'
-	import decoratorⵧdiagnostics from '@monorepo-private/storypad/decorators/diagnostics'
+	import startꓽstorypad from '@storypad/storypad'
+	import decoratorⵧdiagnostics from '@storypad/storypad/decorators/diagnostics'
 	import nearest_pkg from '../../../package.json'
 
 	const DEBUG = false

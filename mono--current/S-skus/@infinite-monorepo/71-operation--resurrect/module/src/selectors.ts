@@ -88,24 +88,39 @@ export function getꓽscripts_to_run(scripts: Immutable<Record<string, string>> 
 		.toSorted(compareꓽstringsⵧfast_good_enough)
 }
 
-export function formatꓽreport(packages_with_issues: Immutable<Array<PackageWithIssues>>): string {
+// the blocking ones first, then the non-blocking ones, each in resurrection order
+export function formatꓽreport(
+	packages_with_issues: Immutable<Array<PackageWithIssues>>,
+	zones: Immutable<Array<Zone>>, // to name the zones, see formatꓽzone_header()
+): string {
 	if (packages_with_issues.length === 0) return styleText("green", "✔ nothing to fix, all packages OK!")
+
+	const zone_name_by_id = new Map(zones.map((zone) => [getꓽzone_id(zone[0]!), _getꓽzone_name(zone)]))
+	const packages_with_issuesⵧsorted = [
+		...packages_with_issues.filter(({ isꓽblocking }) => isꓽblocking),
+		...packages_with_issues.filter(({ isꓽblocking }) => !isꓽblocking),
+	]
 
 	return [
 		styleText(
 			[packages_with_issues.some(({ isꓽblocking }) => isꓽblocking) ? "red" : "yellow", "bold"],
 			"✖ next package(s) to fix, in this order:",
 		),
-		...packages_with_issues.map(({ pkg, issues, isꓽblocking }, index) =>
-			[`${index + 1}. ${_formatꓽpackage(pkg, isꓽblocking)}`, ...issues.map(_formatꓽissue)].join("\n"),
+		...packages_with_issuesⵧsorted.map(({ pkg, issues, isꓽblocking }, index) =>
+			[
+				`${index + 1}. ${_formatꓽpackage(pkg, zone_name_by_id.get(getꓽzone_id(pkg)) ?? "?", isꓽblocking)}`,
+				...issues.map(_formatꓽissue),
+			].join("\n"),
 		),
 	].join("\n\n")
 }
 
 /////////////////////////////////////////////////
 
+// no subgroup = the group, ex. "0-meta/config--mocha/" → "0-meta/"
 function _getꓽzone_name(zone: Immutable<Zone>): string {
-	return _getꓽfolder_names(zone).subgroup ?? "(no subgroup)"
+	const { group, subgroup } = _getꓽfolder_names(zone)
+	return subgroup ?? group
 }
 
 // from the 1st real package of the zone, ex. "1-isomorphic/1-libs--simple/foo/" → "1-isomorphic/" + "1-libs--simple/"
@@ -119,11 +134,16 @@ function _getꓽfolder_names(zone: Immutable<Zone>): { group: string; subgroup: 
 	return { group: `${group}/`, subgroup: isꓽin_subgroup ? `${subgroup}/` : undefined }
 }
 
-function _formatꓽpackage(pkg: Immutable<PackageGraphⳇPackage>, isꓽblocking: boolean): string {
-	const location = pkg.isꓽphantom ? "(phantom = missing from the packages list)" : pkg.path‿rel
+// ex. "1.1 > 1-libs--simple/ > @foo/bar [1.1.5.0]" then, on the next line, its path relative to the monorepo root
+function _formatꓽpackage(pkg: Immutable<PackageGraphⳇPackage>, zone_name: string, isꓽblocking: boolean): string {
+	const location = pkg.isꓽphantom ? styleText("gray", "(phantom = missing from the packages list)") : pkg.path‿rel
 	const remark = isꓽblocking ? "" : ` ${styleText("yellow", "(not blocking)")}`
+	const score = styleText("gray", `[${getꓽlayer_score(pkg).join(".")}]`)
 
-	return `${styleText("bold", pkg.fqname)} ${styleText("gray", `${location} [${getꓽlayer_score(pkg).join(".")}]`)}${remark}`
+	return [
+		`${styleText("gray", getꓽzone_id(pkg))} > ${styleText("cyan", zone_name)} > ${styleText("bold", pkg.fqname)}${remark} ${score}`,
+		`   ${location}`,
+	].join("\n")
 }
 
 function _formatꓽissue(issue: Immutable<ResurrectionIssue>): string {
@@ -131,7 +151,7 @@ function _formatꓽissue(issue: Immutable<ResurrectionIssue>): string {
 		case "graph":
 			return `   - [graph] ${styleText("yellow", issue.issue.type)}: ${issue.issue.message}`
 		case "script":
-			return `   - [${styleText("yellow", issue.script)}] failed, see ${styleText("gray", issue.log‿abs)}`
+			return `   - [${styleText("yellow", issue.script)}] failed, see ${styleText("gray", issue.log‿rel)}`
 		default:
 			assertⵧnever_reached({ issue }, { discriminant: "source" })
 	}

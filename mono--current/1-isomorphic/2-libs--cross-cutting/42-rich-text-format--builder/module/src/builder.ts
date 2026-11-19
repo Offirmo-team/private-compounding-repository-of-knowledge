@@ -238,7 +238,7 @@ function _createꓽbuilder($node: NodeⳇNormalized): Builder {
 			}
 
 			default:
-				assert(false, `${LIB}: sugar: pushText(): Unknown pseudo-node type!`)
+				assertⵧnever_reached({ content })
 		}
 
 		if (built_node__display_type === "inline") {
@@ -402,7 +402,7 @@ type SubNode = NodeⳇNormalized["$refs"][string]
 
 /////////////////////////////////////////////////
 
-import { assert_from, assert } from "@monorepo-private/assert"
+import { assert_from, assert, assertⵧnever_reached } from "@monorepo-private/assert"
 import { assertꓽstringⵧnormalized_and_trimmed } from "@monorepo-private/normalize-string"
 import { LIB, SCHEMA_VERSION } from "@monorepo-private/rich-text-format--core"
 import {

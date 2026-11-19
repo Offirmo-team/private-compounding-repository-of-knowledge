@@ -137,6 +137,8 @@ books -- https://www.developing.dev/p/5-books-every-software-engineer-should
 books -- Philosophy of Software Design = controversed https://www.reddit.com/r/ExperiencedDevs/comments/1g2l3wc/book_club_i_dont_understand_why_philosophy_of/
 books -- SWE at Google = +++ https://abseil.io/resources/swe-book/html/toc.html
 bootcamps https://www.sandofsky.com/lambda-school/
+bootstrap -- trusting -- DCC "diverse double compilation" https://michael.bacarella.com/2026/10/01/ocaml-compiler-implemented-in-cxx/
+bootstrap -- trusting = “wouldn’t it be hilarious if your beloved compiler authors had introduced a backdoor years (decades) ago that was still lurking today???” https://michael.bacarella.com/2026/10/01/ocaml-compiler-implemented-in-cxx/
 bossware https://ia.acs.org.au/article/2024/workers-and-bosses-engage-in-sneaky-tactics.html
 bro culture in tech https://www.smh.com.au/technology/australias-tech-darling-atlassian-in-sexism-row-20140605-zryjd.html
 BSOD "blue screen of death" https://ia.acs.org.au/article/2025/microsoft-retires-blue-screen-of-death-after-40-years.html?ref=newsletter&deliveryName=DM26606
@@ -373,6 +375,7 @@ database fundamentals https://tontinton.com/posts/database-fundementals/
 databases = (see dedicated file)
 dataset
 datastreams -- scatter/gather
+debootstrapping https://arxiv.org/pdf/2202.09231
 debugger
 debugging
 defensive programming = Always think about what can go wrong, what will happen on invalid input, and what might fail, which will help you catch many bugs before they happen https://opensource.com/article/17/5/30-best-practices-software-development-and-testing
@@ -708,6 +711,7 @@ langs -- C++ -- challenges = as of 2026, crumbling under its own weight https://
 langs -- Clojure = ~lisp https://clojure.org/ https://clojure.org/guides/getting_started
 langs -- E = https://www.crockford.com/ec/etut.html
 langs -- F# = https://en.wikipedia.org/wiki/F_Sharp_(programming_language)
+langs -- gleam https://nchagnet.eu/blog/you-should-try-gleam
 langs -- go -- advocacy https://github.com/microsoft/typescript-go/discussions/411
 langs -- go -- challenges = google, inferior to Rust, specific trade-offs https://codeandcake.dev/posts/2026-10-22-docker-is-weird
 langs -- JS -- engines http://developer.telerik.com/featured/a-guide-to-javascript-engines-for-idiots/
@@ -1040,6 +1044,7 @@ Rust -- TRACTOR "Translating All C to Rust"
 SAAS -- Shared responsibility model
 safety -- defense in depth = incident only when all the layers failed (rare but happens)
 sandboxing https://www.computesdk.com/benchmarks/
+SARIF "Static Analysis Results Interchange Format"
 schema
 schema -- normalization https://www.npmjs.com/package/normalize-url
 schema -- sanitization  https://www.npmjs.com/package/normalize-url

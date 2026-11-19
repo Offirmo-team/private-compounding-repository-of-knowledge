@@ -1,6 +1,5 @@
+import type { Meta‿v3, Story‿v3 } from "@storypad/storypad"
 import React, { useReducer, useSyncExternalStore, useEffect } from "react"
-
-import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"
 
 import { init, reducer } from "./index.ts"
 

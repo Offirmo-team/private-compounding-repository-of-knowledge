@@ -1,3 +1,4 @@
+2001-09-11 11 Sept + backlash on liberties https://news.slashdot.org/story/01/09/17/1758231/stallman-thousands-dead-millions-deprived-of-liberties
 2009 Stuxnet https://en.wikipedia.org/wiki/Stuxnet
 2014-04-07 heart bleed = serious vulnerability in the popular OpenSSL cryptographic software library. This weakness allows stealing the information protected https://heartbleed.com/
 2015-09 XcodeGhost https://en.wikipedia.org/wiki/XcodeGhost
@@ -23,8 +24,7 @@ attacks -- credential stuffing https://owasp.org/www-community/attacks/Credentia
 attacks -- direct blackmail = example of letter to individual https://www.reddit.com/r/cybersecurity_help/comments/1f7tbec/demand_for_bitcoin_payment_made_with_threats/
 attacks -- DPRK remote IT  = https://www.dfat.gov.au/news/media-release/combating-dprk-remote-it-worker-threats https://cloud.google.com/blog/topics/threat-intelligence/mitigating-dprk-it-worker-threat
 attacks -- griefing
-attacks -- harvest-now-decrypt-later
-attacks -- harvest-now/decrypt-later = advancein cryptography
+attacks -- harvest-now/decrypt-later = advance in cryptography
 attacks -- hash collision https://en.wikipedia.org/wiki/Collision_attack
 attacks -- homographs = using unicode for visual deception https://x.com/sheeki03/status/2018382483465867444
 attacks -- Local Privilege Escalation (LPE) = a type of security vulnerability that allows a user who already has limited access to a system to elevate their permissions to a higher level — typically root (full administrative control) on Linux/Unix systems.
@@ -163,6 +163,7 @@ passkeys = a modern cryptographic alternative to passwords and seed phrases. Pas
 password -- peppering (pwd managers) https://passwordbits.com/salting-passwords/
 permission systems = should be at ~OS level or false sense of security https://goldstein.lol/posts/deno-security/
 persistent, self-updating background daemon = bad https://news.ycombinator.com/item?id=50060694
+phone unlocking https://osservatorionessuno.org/blog/2026/05/demystifying-phone-unlocking-tools-a-technical-overview/
 pin codes -- most common https://informationisbeautiful.net/visualizations/most-common-pin-codes/
 PKI = Public Key Infrastructure
 plan for security from the start - it's not something you can bolt on at the end
@@ -174,6 +175,7 @@ privacy pass -- token
 privacy pass = ???
 private relay -- iCloud = "ensures that no single party handling user data has complete information on both who the user is and what they are trying to access." = Internet privacy service from Apple that allows users with iOS 15, iPadOS 15, or macOS Monterey on (...) their devices and an iCloud+ subscription, to connect to the Internet and browse with Safari in a more secure and private way  https://blog.cloudflare.com/icloud-private-relay/
 production-grade cryptography
+public DNS resolvers = 1.1.1.1 8.8.8.8 9.9.9.9 https://blog.cloudflare.com/quad9-withdrawal-from-france/
 pwned = https://haveibeenpwned.com/API/v3 https://github.com/BlinqOSS/is-pwned
 randomness -- "nothing up my sleeve" (hard to prove) https://en.wikipedia.org/wiki/Nothing-up-my-sleeve_number
 RAT "remote-access trojan" = gives the attacker control over infected computers
@@ -203,6 +205,7 @@ risks -- software -- supply chain -- famous examples zx https://www.akamai.com/b
 risks -- software -- supply chain -- solutions https://github.blog/changelog/2025-07-31-npm-trusted-publishing-with-oidc-is-generally-available/
 risks -- software -- supply chain -- solutions https://github.com/google/oss-rebuild
 risks -- software -- supply chain https://david-gilbertson.medium.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5 https://david-gilbertson.medium.com/part-2-how-to-stop-me-harvesting-credit-card-numbers-and-passwords-from-your-site-844f739659b9
+safety culture = reactive -> proactive
 SAML "Security Assertion Markup Language" = https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/
 sandbox
 sandbox -- escape https://googleprojectzero.blogspot.com/2025/05/breaking-sound-barrier-part-i-fuzzing.html
@@ -260,6 +263,7 @@ Trusted Execution Environments (TEEs, sometimes referred to as “enclaves”) a
 VPN = spy and sell private data https://ia.acs.org.au/article/2025/popular-free-vpn-caught-spying-on-users.html
 VPNs -- are lawful technical tools = https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling
 vulnerability -- sourcemaps leak = sourcemaps = https://neciudan.dev/everything-you-need-to-know-about-sourcemaps
+vulnerability disclosure policy https://projectzero.google/2026/11/disclosure-policy.html
 weakness -- CWE "Common Weakness Enumeration" https://cwe.mitre.org/
 weakness =
 who's who -- Bruce Schneier https://www.schneier.com/essays/

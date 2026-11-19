@@ -14,6 +14,7 @@
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
+		"@infinite-monorepo/decisions": "workspace:*",
 		"@infinite-monorepo/plugin--git": "workspace:*",
 		"@infinite-monorepo/plugin--pm--package-json": "workspace:*",
 		"@infinite-monorepo/state": "workspace:*",

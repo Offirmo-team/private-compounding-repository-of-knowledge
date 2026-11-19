@@ -1,5 +1,6 @@
 /////////////////////
 
+import { assertⵧnever_reached } from "@monorepo-private/assert"
 import { type Immutable, enforceꓽimmutable } from "@monorepo-private/offirmo-state"
 
 import { LIB, SCHEMA_VERSION } from "./consts.ts"
@@ -28,7 +29,7 @@ function _currency_to_state_entry(currency: Currency): keyof State {
 			return `${currency}_count`
 
 		default:
-			throw new Error(`${LIB}: unrecognized currency: "${currency}`)
+			assertⵧnever_reached({ currency })
 	}
 }
 

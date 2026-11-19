@@ -33,6 +33,14 @@ describe("@infinite-monorepo/operation--resurrect -- selectors", () => {
 			expect(stripVTControlCharacters(formatꓽzone_header([x], [b], widths))).toBe("\nS-skus/\n  @tbrpg/ 99.3 ")
 		})
 
+		it("should fall back to the group name when there is no subgroup", () => {
+			const a = _createꓽpackage("0-meta/config--mocha/", { precedence_group: 0, precedence_subgroup: 99 })
+
+			expect(stripVTControlCharacters(formatꓽzone_header([a], undefined, { name: 0, id: 0 }))).toBe(
+				"\n0-meta/\n  0-meta/ 0.99 ",
+			)
+		})
+
 		it("should align all the dots, across all the zones", () => {
 			const a = _createꓽpackage("1-isomorphic/1-libs--simple/a/")
 			const x = _createꓽpackage("S-skus/@tbrpg/x/", { precedence_group: 99, precedence_subgroup: 13, sku: "@tbrpg" })
@@ -104,41 +112,78 @@ describe("@infinite-monorepo/operation--resurrect -- selectors", () => {
 
 	describe("formatꓽreport()", () => {
 		it("should congratulate when nothing to fix", () => {
-			expect(stripVTControlCharacters(formatꓽreport([]))).toContain("nothing to fix")
+			expect(stripVTControlCharacters(formatꓽreport([], []))).toContain("nothing to fix")
 		})
 
-		it("should list the packages in order, with their issues", () => {
+		it("should list the blocking packages first, each with its zone, path and issues", () => {
+			const a = _createꓽpackage("1-isomorphic/1-libs--simple/a/", { fqname: "@test/a" })
+			const b = _createꓽpackage("1-isomorphic/1-libs--simple/b/", { fqname: "@test/b" })
+			const phantom: PackageGraphⳇPackageⵧphantom = {
+				isꓽphantom: true,
+				fqname: "@test/phantom",
+				precedence_group: 1,
+				precedence_subgroup: 1,
+				precedence_pkg: 5,
+				sibling_deps_count: 0,
+				monorepo_deps_count: 0,
+				layer: 0,
+				isꓽpublic: false,
+			}
+
 			const report = stripVTControlCharacters(
-				formatꓽreport([
-					{
-						pkg: _createꓽpackage("a/"),
-						issues: [
-							{
-								source: "graph",
-								issue: {
-									type: "dep_cycle",
-									peers: ["@test/b/"],
-									message: "in a dependency cycle with @test/b/",
+				formatꓽreport(
+					[
+						{
+							pkg: a,
+							issues: [{ source: "script", script: "check:ts", log‿rel: ".monorepo/resurrect--check--ts.log" }],
+							isꓽblocking: false,
+						},
+						{
+							pkg: phantom,
+							issues: [
+								{
+									source: "graph",
+									issue: { type: "missing_package", dependents: ["@test/b"], message: "needed by @test/b" },
 								},
-							},
-						],
-						isꓽblocking: true,
-					},
-					{
-						pkg: _createꓽpackage("b/"),
-						issues: [{ source: "script", script: "check:ts", log‿abs: "/b/.monorepo/resurrect--check--ts.log" }],
-						isꓽblocking: false,
-					},
-				]),
+							],
+							isꓽblocking: true,
+						},
+						{
+							pkg: b,
+							issues: [
+								{
+									source: "graph",
+									issue: {
+										type: "dep_cycle",
+										peers: ["@test/a"],
+										message: "in a dependency cycle with @test/a",
+									},
+								},
+							],
+							isꓽblocking: true,
+						},
+					],
+					getꓽzones([phantom, a, b]),
+				),
 			)
 
-			expect(report).toContain("✖ next package(s) to fix")
-			expect(report.indexOf("1. @test/a/ a/ [1.1.5.0]")).toBeGreaterThan(-1)
-			expect(report).toContain("[graph] dep_cycle: in a dependency cycle with @test/b/")
-			expect(report.indexOf("2. @test/b/ b/")).toBeGreaterThan(report.indexOf("1. @test/a/"))
-			expect(report).toContain("[check:ts] failed, see /b/.monorepo/resurrect--check--ts.log")
-			expect(report).toContain("b/ [1.1.5.0] (not blocking)")
-			expect(report).not.toContain("a/ [1.1.5.0] (not blocking)")
+			expect(report).toBe(
+				[
+					"✖ next package(s) to fix, in this order:",
+					"",
+					"1. 1.1 > 1-libs--simple/ > @test/phantom [1.1.5.0]",
+					"   (phantom = missing from the packages list)",
+					"   - [graph] missing_package: needed by @test/b",
+					"",
+					"2. 1.1 > 1-libs--simple/ > @test/b [1.1.5.0]",
+					"   1-isomorphic/1-libs--simple/b/",
+					"   - [graph] dep_cycle: in a dependency cycle with @test/a",
+					"",
+					"3. 1.1 > 1-libs--simple/ > @test/a (not blocking) [1.1.5.0]",
+					"   1-isomorphic/1-libs--simple/a/",
+					"   - [check:ts] failed, see .monorepo/resurrect--check--ts.log",
+				].join("\n"),
+			)
 		})
 	})
 })
@@ -168,7 +213,7 @@ function _createꓽpackage(
 
 import { stripVTControlCharacters, styleText } from "node:util"
 
-import type { PackageGraphⳇPackageⵧreal } from "@infinite-monorepo/plugin--graph"
+import type { PackageGraphⳇPackageⵧphantom, PackageGraphⳇPackageⵧreal } from "@infinite-monorepo/plugin--graph"
 import { describe, it, expect } from "vitest"
 
 import type { DirPathⳇRelative } from "@monorepo-private/ts--types"

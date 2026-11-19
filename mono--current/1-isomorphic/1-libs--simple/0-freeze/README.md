@@ -12,7 +12,7 @@ Behavior:
   - gotcha: a shallow-frozen (`Object.freeze()`) object with mutable children stays partially mutable
 - inherent `Object.freeze()` limitations:
   - Map / Set / Date internal state is NOT frozen
-  - typed arrays with elements can't be frozen = throws
+  - typed arrays with elements can't be frozen = throws (since we assume POD)
 
 ```ts
 import { freezeⵧdeep } from "@monorepo-private/freeze"

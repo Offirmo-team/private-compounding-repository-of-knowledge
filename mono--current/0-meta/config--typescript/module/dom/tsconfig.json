@@ -4,6 +4,7 @@
 	"extends": ["../_vendor/strictest/dom/tsconfig.json"],
 
 	"compilerOptions": {
+		"allowArbitraryExtensions": true, // to type non-TS imports via sibling "x.d.css.ts" etc., ex. CSS-only packages
 		"noUnusedLocals": false, // too inconvenient
 		"noUnusedParameters": false,
 		"isolatedDeclarations": false, // Unfortunately this causes much headache for few benefit (for me) TODO activate it manually on PUBLIC modules

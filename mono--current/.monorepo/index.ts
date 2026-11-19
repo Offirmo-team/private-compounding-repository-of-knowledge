@@ -49,7 +49,9 @@ const SPEC: Partial<InfiniteMonorepoSpec> = {
 	package_manager__configⵧspecific: {
 		minimumReleaseAge: 1440,
 		minimumReleaseAgeStrict: false,
-		//publicHoistPattern: ["@monorepo-private/storypad"],
+		publicHoistPattern: [
+			"@storypad/storypad", // to break dep loops. Storypad is considered an independent tool
+		],
 		//overrides: {
 		// TypeScript 7 changed the interface
 		//"parse-imports-ts>typescript": "npm:@typescript/typescript6",

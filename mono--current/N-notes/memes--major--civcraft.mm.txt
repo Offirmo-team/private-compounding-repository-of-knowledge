@@ -15,6 +15,7 @@ a country is a farm
 a prohibition is only as strong as its enforcement
 A sheng of rice earns gratitude, a dou of rice earns enmity = Give someone a small measure of rice (sheng, about one liter) in a crisis, and they feel deep thankfulness. Give them a huge measure (dou, about ten liters), and they begin to expect it, grow greedy, and eventually resent you when it stops or when they feel overly indebted. Core lesson: Excessive, unconditional, or long-term financial and material handouts can foster dependency, breed entitlement, and turn a benefactor into an enemy. Kindness works best with boundaries and moderation.
 Abenomics = the economic strategy implemented by Shinzo Abe of Japan and is comprised of three arrows: monetary policy, fiscal stimulus and structural reforms https://coinmarketcap.com/academy/glossary/abenomics
+adequate regulatory oversight = to ensure the associated risks are addressed
 aeronautics https://en.wikipedia.org/wiki/International_Air_&_Space_Hall_of_Fame
 agriculture https://en.wikipedia.org/wiki/British_Agricultural_Revolution
 alien life
@@ -99,6 +100,7 @@ democracy -- Socrates' challenge = if you are on a large ship at sea, who should
 democracy -- types = https://en.wikipedia.org/wiki/Guided_democracy
 democracy but powerless
 democratic backsliding https://en.wikipedia.org/wiki/Democratic_backsliding_in_the_United_States
+dictatorships -- proposed origin = "from structures that produce career pressure (as of fear of not climbing)". engaging in surveillance, intimidation, detention, torture, and worse; and the ever present threat of a violent coup—emerge from structures that produce career pressure. Officers left at the bottom of the career ladder will do whatever it takes to improve their lot, even if that means taking on the dirty work or leading a revolt https://aworkinglibrary.com/reading/making-a-career-in-dictatorship
 dimensions of national cultures -- Individualism vs. collectivism (IDV) = the degree to which people in a society are integrated into groups. Individualistic societies have loose ties that often only relate an individual to his/her immediate family. They emphasize the "I" versus the "we". Its counterpart, collectivism, describes a society in which tightly integrated relationships tie extended families and others into in-groups. These in-groups are laced with undoubted loyalty and support each other when a conflict arises with another in-group.
 dimensions of national cultures -- Indulgence vs. restraint (IVR) = the degree of freedom that societal norms give to citizens in fulfilling their human desires. Indulgence is defined as "a society that allows relatively free gratification of basic and natural human desires related to enjoying life and having fun". Its counterpart is defined as "a society that controls gratification of needs and regulates it by means of strict social norms".
 dimensions of national cultures -- Long-term orientation vs. short-term orientation (LTO) = associates the connection of the past with the current and future actions/challenges. A lower degree of this index (short-term) indicates that traditions are honored and kept, while steadfastness is valued. Societies with a high degree in this index (long-term) view adaptation and circumstantial, pragmatic problem-solving as a necessity. A poor country that is short-term oriented usually has little to no economic development, while long-term oriented countries continue to develop to a level of prosperity.
@@ -131,6 +133,8 @@ extreme wealth https://www.theguardian.com/books/2026/sep/12/naomi-klein-extreme
 family
 farming -- rice https://xd009642.github.io/2026/04/01/My-Experience-as-a-Rice-Farmer.html
 Five Eyes intelligence-sharing alliance = includes Australia, along with NATO, the US-led military alliance
+forcing one's way up -- 1. coup = participation in a coup attempt in the hope of commending themselves to successor regimes https://aworkinglibrary.com/reading/making-a-career-in-dictatorship
+forcing one's way up -- 2. detouring = applying for unpopular assignments (surveillance, intimidation, detention, torture, extrajudicial murders) where they can stand out and demonstrate their value in the hope that their loyalty will be rewarded by the current regime https://aworkinglibrary.com/reading/making-a-career-in-dictatorship
 forever chemicals = https://www.propublica.org/podcast/forever-chemicals-pfas-pfos-3m-secret-kris-hansen
 free market -- example of dysfunctionment https://sschueller.github.io/posts/the-free-market-lie/
 free-market fundamentalism = an ideology and a term applied to a strong belief in the ability of unregulated laissez-faire or free-market capitalist policies to solve most economic and social problems.[2] It is often used as pejorative by critics of said beliefs. https://en.wikipedia.org/wiki/Market_fundamentalism
@@ -204,6 +208,7 @@ https://worldoffinewine.com/news-features/did-charles-darwin-save-wine
 https://www.construction-physics.com/p/how-an-oil-refinery-works
 https://www.famillechretienne.fr/40361/article/remi-brague-nous-voyons-lislam-avec-des-lunettes-chretiennes
 human space flight https://mceglowski.substack.com/p/radiation-tradeoffs-for-mars
+ineffective gov interventions = https://www.experimental-history.com/p/we-need-more-goat-sacrifices
 infrastructure -- "the lights of Europe still trace the paths of ancient Roman roads" https://x.com/ccatalini/status/1983588222921023552
 infrastructure = roads, canals, telephone networks...
 International Criminal Court (ICC) = https://www.bbc.com/news/articles/cnvnl0elz47o
@@ -211,6 +216,7 @@ international economic disparity https://en.wikipedia.org/wiki/International_ine
 internet -- Taking Down Governments -- Which Encryption Apps Are Strong Enough to Help You Take Down a Government? https://www.kitklarenberg.com/p/signal-facing-collapse-after-cia
 intimidation of dissidents https://tech.slashdot.org/story/26/02/26/2045225/chinese-officials-use-of-chatgpt-revealed-a-global-intimidation-opperation
 intrinsic motivation comes from working in an environment where Autonomy, Mastery and Purpose can flourish.
+involution = a condition in which a system, institution, or competitive process continues to intensify in effort, complexity, or participation without a corresponding increase in output, efficiency, or collective benefit. when a society reaches its final form it cannot evolve nor stabilize itself. Instead, it can only complicate its internal elements. Or bad competition. https://en.wikipedia.org/wiki/Neijuan
 language -- grading -- EGIDS "Expanded Graded Intergenerational Disruption Scale" https://en.wikipedia.org/wiki/Expanded_Graded_Intergenerational_Disruption_Scale
 language -- grading -- EGIDS -- 00 International = The language is widely used between nations in trade, knowledge exchange, and international policy
 language -- grading -- EGIDS -- 01 National = The language is used in education, work, mass media, and government at the national level
@@ -227,12 +233,14 @@ language -- grading -- EGIDS -- 09 Dormant = The language serves as a reminder o
 language -- grading -- EGIDS -- 10 Extinct = The language is no longer used and no one retains a sense of ethnic identity associated with the language
 language -- https://en.wikipedia.org/wiki/Na-Dene_languages
 law -- simple and accessible https://en.wikipedia.org/wiki/Napoleonic_Code
+left-coded / right-coded failures = “-coded” means perceived, culturally associated, or stereotypically identified with that political side. For example, someone might call a failed progressive policy a “left-coded failure,” while calling a failed conservative policy or institution a “right-coded failure.”
 loi du talion
 mafia -- https://en.wikipedia.org/wiki/Five_Families
 mafia -- Racketeer Influenced and Corrupt Organizations (RICO) Act =  1970 U.S. federal law designed to combat organized crime by targeting the leaders of criminal enterprises rather than just subordinates. It allows prosecutors to charge individuals with a "pattern of racketeering" (at least two acts within 10 years) for crimes committed on behalf of an organization.
 making big things
 martial arts https://en.wikipedia.org/wiki/Historical_European_martial_arts
 mass surveillance https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html
+maths https://www.quantabooks.org/books/six-math-essentials/
 medias
 Melian dialogue
 military tactics https://civilization.fandom.com/wiki/Military_Tactics_(Civ6)
@@ -255,6 +263,7 @@ peaceful transition of power = from a leadership to another, e.g. election, inde
 pollution -- 12xx https://en.wikipedia.org/wiki/Pea_soup_fog
 population renewal
 potholes = https://thewalrus.ca/montreal-potholes/
+pre-bronze age = https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua
 precision manufacturing = https://admiralcloudberg.medium.com/a-matter-of-millimeters-the-story-of-qantas-flight-32-bdaa62dc98e7
 private healthcare makes industries less innovative = because trapped by jobs providing healthcare https://werd.io/private-healthcare-makes-industries-less-innovative-its-time-for-change/
 problems -- & are the conduit of progress https://mail.blockworks.com/p/problems-are-the-conduit-of-progress
@@ -266,6 +275,11 @@ Psychological Operations (PSYOPs) = planned, non-kinetic operations designed to 
 public holidays = https://www.not-ship.com/when-do-most-people-have-the-day-off/
 public religious expression
 ransom
+reading -- as a luxury connected with wealth = looked for escape from their condition only in the possibility of becoming slaveholders themselves https://aworkinglibrary.com/writing/against-disliteracy
+reading -- as a prerogative = no blacks, women, servants https://aworkinglibrary.com/writing/against-disliteracy
+reading -- disliteracy =
+reading -- illiteracy =
+reading = paying attention to what’s in front of you and trying to make sense of it https://aworkinglibrary.com/writing/against-disliteracy#fn:1
 robber barons https://en.wikipedia.org/wiki/Robber_baron_(industrialist)
 robust, comprehensive and world-leading legislation https://www.linkedin.com/news/story/australia-faces-new-125-tariff-8938602/
 rsrc depletion -- peak https://en.wikipedia.org/wiki/Peak_minerals
@@ -283,6 +297,7 @@ social domination = "natural order of things in society" established by the domi
 social medias / attention marketplace
 social networks
 social networks = https://strategictree.bearblog.dev/i-think-i-hate-the-internet/
+socially intolerable = public opinion
 societal -- & collapse = fall of a complex human society characterized by the loss of cultural identity and of social complexity as an adaptive system, the downfall of government, and the rise of violence https://en.wikipedia.org/wiki/Societal_collapse
 societal -- & longevity = https://en.wikipedia.org/wiki/Societal_collapse
 societal self-deception = societies are capable of telling themselves stories for years that have little basis in reality and lead to poor society-wide decision making. For example, fears over nuclear plant safety led to under-investment in nuclear power. Fears of the “population bomb” in the 1960s led countries to implement harsh policies to reduce their populations. And worries about dietary fat led governments to promote unhealthy high-sugar diets for decades.
@@ -319,11 +334,13 @@ vexillology = flags https://en.wikipedia.org/wiki/Vexillology
 video games https://en.wikipedia.org/wiki/List_of_best-selling_video_games
 violence
 vs. elements https://en.wikipedia.org/wiki/Megathrust_earthquake
+wantok = “one talk” = the people who speak your language are the people you “care” about https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua
 war -- "a short war would settle everything" WW1
 war -- Allied Plans to Occupy France, 1942-1944 https://web.archive.org/web/20060507015256/http://www.rall.com/longarticle_011.htm
 war -- https://en.wikipedia.org/wiki/Irredentism
 war -- https://en.wikipedia.org/wiki/July_Crisis
 war -- https://en.wikipedia.org/wiki/Winter_War
+war -- prevention = https://aworkinglibrary.com/writing/into-the-gap
 war -- war-elephants https://www.cambridge.org/core/journals/classical-quarterly/article/hellenistic-warelephants-and-the-use-of-alcohol-before-battle/39A749F62E21ED16C9CCA3B03E176561
 war https://en.wikipedia.org/wiki/List_of_established_military_terms
 watches https://www.casio.com/intl/watches/Heritage/1970s/

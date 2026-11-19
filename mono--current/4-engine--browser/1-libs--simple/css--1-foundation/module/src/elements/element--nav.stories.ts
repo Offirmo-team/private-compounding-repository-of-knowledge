@@ -1,1 +1,1 @@
-export * from "@monorepo-private/storypad/stories/html/elements/nav"
+export * from "@storypad/storypad/stories/html/elements/nav"

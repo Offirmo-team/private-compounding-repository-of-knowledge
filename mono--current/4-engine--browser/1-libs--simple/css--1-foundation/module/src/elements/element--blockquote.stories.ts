@@ -1,1 +1,1 @@
-export * from "@monorepo-private/storypad/stories/html/elements/blockquote"
+export * from "@storypad/storypad/stories/html/elements/blockquote"

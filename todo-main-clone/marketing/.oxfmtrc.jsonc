@@ -1,0 +1,8 @@
+{
+	"$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxfmt/configuration_schema.json",
+
+	// indentation, EOL, final newline: inherited from the repo root .editorconfig
+
+	"printWidth": 79, // dev.to code blocks cap at 80
+	"proseWrap": "always",
+}

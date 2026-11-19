@@ -174,7 +174,7 @@ export const PLUGIN: Plugin = {
 
 				const scriptsⵧclean = Object.keys(scripts).filter((k) => k.startsWith("clean") || k.startsWith("_clean"))
 				if (scriptsⵧclean.length) {
-					scripts["clean"] = `npm-run-all ${scriptsⵧclean.join(" ")}`
+					scripts["clean"] = `${PKGꓽNPM_RUN_ALL} ${scriptsⵧclean.join(" ")}`
 				}
 
 				/////// Dev
@@ -331,8 +331,8 @@ export const PLUGIN: Plugin = {
 			})()
 			if (Object.keys(pkg.scripts).length === 0) {
 				delete pkg.scripts
-				if (pkg.devDependencies?.["npm-run-all"]) {
-					delete pkg.devDependencies["npm-run-all"]
+				if (pkg.devDependencies?.[PKGꓽNPM_RUN_ALL]) {
+					delete pkg.devDependencies[PKGꓽNPM_RUN_ALL]
 				}
 			}
 
@@ -387,3 +387,4 @@ import { trim_before_stringify } from "@monorepo-private/json-stable-stringify"
 import { mergeⵧdeep } from "@monorepo-private/merge"
 import { setꓽpropertyⵧdeep } from "@monorepo-private/set-deep-property"
 import type { Immutable } from "@monorepo-private/ts--types"
+import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"

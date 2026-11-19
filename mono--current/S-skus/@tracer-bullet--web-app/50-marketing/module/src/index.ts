@@ -28,7 +28,7 @@ export const LANDING_PAGE: WebPage = {
 	...THINGⵧONLINE,
 
 	icon: {
-		emoji: "🛠️",
+		emoji: "🛠",
 	},
 	keywords: ["demo"],
 	content: {
@@ -43,7 +43,7 @@ export const LANDING_PAGE: WebPage = {
 
 	/////// PWA
 	app_categories: ["entertainment", "utilities"],
-	titleⵧapp: "My Cool App",
+	titleⵧapp: "My Cool PWA",
 	captionⵧapp: "(Pinnable App Demo)",
 	// see @/web-property for technical options
 

@@ -67,7 +67,7 @@ export const PLUGIN: Plugin = {
 							state,
 							node,
 							"storiesp",
-							`npm-run-all clean --parallel _start:storypad--parcel`,
+							`${PKGꓽNPM_RUN_ALL} clean --parallel _start:storypad--parcel`,
 						)
 					}
 					if (pkg_details.entrypointⵧdemo) {
@@ -83,7 +83,7 @@ export const PLUGIN: Plugin = {
 									state,
 									node,
 									"demop",
-									`npm-run-all clean --parallel _start:demo--parcel`,
+									`${PKGꓽNPM_RUN_ALL} clean --parallel _start:demo--parcel`,
 								)
 								break
 							}
@@ -105,7 +105,7 @@ export const PLUGIN: Plugin = {
 									state,
 									node,
 									"sandboxp",
-									`npm-run-all clean --parallel _start:sandbox--parcel`,
+									`${PKGꓽNPM_RUN_ALL} clean --parallel _start:sandbox--parcel`,
 								)
 
 								break
@@ -126,7 +126,12 @@ export const PLUGIN: Plugin = {
 						)
 					}
 					if (pkg_details.isꓽapp && pkg_details.target === "browser") {
-						state = StateLib.addꓽscript(state, node, "startp", `npm-run-all clean --parallel _start:main--parcel`)
+						state = StateLib.addꓽscript(
+							state,
+							node,
+							"startp",
+							`${PKGꓽNPM_RUN_ALL} clean --parallel _start:main--parcel`,
+						)
 					}
 				}
 
@@ -231,3 +236,4 @@ import type {
 } from "@infinite-monorepo/types-for-plugins"
 
 import type { Immutable } from "@monorepo-private/ts--types"
+import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"

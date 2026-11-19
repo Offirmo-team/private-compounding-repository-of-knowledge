@@ -16,7 +16,6 @@
 		"start": "npm-run-all clean --parallel _start:main--vite"
 	},
 	"devDependencies": {
-		"@monorepo-private/storypad": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"vite": "catalog:"
 	},

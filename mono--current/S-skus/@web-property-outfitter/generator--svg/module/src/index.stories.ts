@@ -1,4 +1,5 @@
-import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad/types"
+import type { Meta‿v3, Story‿v3 } from "@storypad/storypad/types"
+
 import type { Immutable } from "@monorepo-private/ts--types"
 
 import { getꓽcontentꘌcat } from "../__fixtures/examples"

@@ -20,7 +20,7 @@
 2025-04 multimodal img gen https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image
 2025-04 Shopify threatening internal memo = "Reflexive AI usage is now a baseline expectation" https://x.com/tobi/status/1909251946235437514
 2025-04-16 o3 https://openai.com/index/introducing-o3-and-o4-mini/
-2025-05 AI's Trillion-Dollar Opportunity: Sequoia AI Ascent 2025 Keynote https://www.youtube.com/watch?v=v9JBMnxuPX8
+2025-05 AI's Trillion-Dollar Opportunity = Sequoia AI Ascent 2025 Keynote https://www.youtube.com/watch?v=v9JBMnxuPX8
 2025-05-20 infamous Copilot .net PR https://github.com/dotnet/runtime/pull/115762
 2025-06 blog fight about ai coding https://ludic.mataroa.blog/blog/contra-ptaceks-terrible-article-on-ai/
 2025-06 dev AI perf framework
@@ -67,10 +67,12 @@
 2026-07-21 agentic containment escape https://openai.com/index/hugging-face-model-evaluation-security-incident/
 2026-08-27 Amazon shut downs mechanical turk https://www.mturk.com/help
 2026-09-16 Jev https://typesafe.ai/blog/introducing-system-one-models-and-jev
+2026-09-16 Model Welfare https://mustafa-suleyman.ai/a-warning-about-model-welfare
 2026-09-27 AI companies in fierce arms race to demonstrate their model is the most existentially threatening to humanity https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/ https://calnewport.com/its-time-to-investigate-the-ai-labs/
 2026-09-x = trying to 1) regulatory capture 2) abdicate of responsibility and blame https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067
 2026-09-x Dario Amodei "we must pace the frontier" https://darioamodei.com/post/we-must-pace-the-frontier
 2026-10 SI "Super Intelligence" = https://www.si.gov/
+2026-11-13 case study of vibe-coding debacle: Humble Bundle https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/
 [ ] https://claude.dev/
 [ ] https://earendil.com/
 [ ] https://github.com/earendil-works
@@ -243,6 +245,7 @@ alignment -- super alignment =  https://openai.com/blog/introducing-superalignme
 alignment = making AI do what its users want it to do (and nothing more) see also "paper clip"
 ambient intelligence (AmI) = environments with electronic devices that are aware of and can recognize the presence of human beings and adapt accordingly https://en.wikipedia.org/wiki/Ambient_intelligence
 ambient intelligence = AI always there, working in the background. It understands what’s going on and helps without you needing to ask.
+AMP "Agentic Multiplayer Protocol" = Atlassian's suggestion for live collab https://www.atlassian.com/platform/agentic-multiplayer-protocol
 annotation https://www.peopleforai.com/ https://www.isahit.com/
 anthropomorphization = models are not really "thinking" or "reasoning" https://tech.slashdot.org/story/25/05/29/1411236/researchers-warn-against-treating-ai-outputs-as-human-like-reasoning
 ASL "AI Safety Level" = https://www.linkedin.com/pulse/what-ai-safety-level-asl-where-we-now-siddhesh-joglekar-gieof/
@@ -401,6 +404,7 @@ coding -- gas town https://www.dolthub.com/blog/2026-01-15-a-day-in-gas-town/
 coding -- hand-coding vs. vibe-coding vs. craft-coding = hand doesn't scale, vibe is cheap but slop = trade-off, craft is better quality but more expensive = different trade-off https://peterbloem.nl/blog/craft-coding
 coding -- hype cycle = challenge the coding claims (pre-Claude code but still interesting read) https://www.linkedin.com/posts/svpino_literally-everyone-is-freaking-out-over-codex-activity-7329865083411402752-T8KU
 coding -- infinite bugs = https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/
+coding -- interviewing = taste and abstractions https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/
 coding -- just fucking code = "Put the LLM down. Programming isn’t that goddamn hard." https://www.justfuckingcode.com/
 coding -- knowledge graph
 coding -- legacy code https://martinfowler.com/articles/legacy-modernization-gen-ai.html
@@ -526,6 +530,7 @@ evals/guardrails -- risk thresholds -- regulatory exposure = Does a rule, contra
 evals/guardrails -- risk thresholds -- reversibility = Can the action be undone? An irreversible step (a sent client deliverable, a filed report) clears a higher bar than a draft you can revise.
 evals/guardrails -- risk thresholds -- stakes = What is the cost if this is wrong? High-cost errors demand human review regardless of how confident the output appears.
 faithfulness = not certain that what’s in the thought process truly represents what’s going on in the model’s mind https://www.anthropic.com/research/visible-extended-thinking
+FOOM = (onomatopoeic) aka. Hard takeoff = hypothesis that once AI becomes sufficiently capable at improving AI, its capabilities could increase extremely rapidly because improvement creates a positive feedback loop.
 formulaic -- "I am deeply, deeply sorry. This is a critical failure on my part" https://www.tomshardware.com/tech-industry/artificial-intelligence/googles-agentic-ai-wipes-users-entire-hard-drive-without-permission-after-misinterpreting-instructions-to-clear-a-cache-i-am-deeply-deeply-sorry-this-is-a-critical-failure-on-my-part
 formulaic -- "You're absolutely right"
 formulaic -- vocabulary = e.g. delve https://tropes.fyi/tropes-md
@@ -686,6 +691,7 @@ memory -- holographic https://github.com/NeoVertex1/nuggets
 memory -- humans https://pmc.ncbi.nlm.nih.gov/articles/PMC8573634/
 metaphors -- exoskeleton
 metaphors -- second brain
+METR "Model Evaluation & Threat Research" = (some think tank) a nonprofit that studies the most advanced AI agents to understand whether their developers are on track to lose control of them https://metr.org/
 metrics -- latency -- TPOT "Time per output token" = how long it takes for the model to generate each token
 metrics -- latency -- TTFT "Time to first token" = how long it takes for the model to start generating a response
 midtraining = ?
@@ -733,7 +739,12 @@ models -- specialized -- embeddings
 models -- specialized -- moderation -- OpenAi = https://developers.openai.com/api/docs/guides/moderation?lang=javascript
 models -- token-efficient = optimized to be cheap (relatively)
 models -- vintage= https://talkie-lm.com/introducing-talkie
+models -- weights -- fingerprint = it seems we can infer what chip a model was trained on https://unemploymentlabs.com/checkpoint-forensics
 models -- world && = not just language https://www.quantamagazine.org/world-models-an-old-idea-in-ai-mount-a-comeback-20250902/
+models -- world models -- generative = predict the future by generating it, usually in pixels. bad technique bc Most of the pixels don't matter for deciding what to do, and many of them can't be predicted at all https://haddyalchaer.com/jepa
+models -- world models -- JEPA "joint-embedding predictive architecture" = https://haddyalchaer.com/jepa
+models -- world models -- Push-T = eval where the model must push a T shape https://haddyalchaer.com/jepa
+models -- world models = https://haddyalchaer.com/jepa
 Moravec’s paradox = counterintuitive truth: high-level reasoning requires very little computation, but low-level sensorimotor and social skills require enormous resources. In robotics, playing grandmaster-level chess is easy; walking up stairs is incredibly hard. https://medium.com/@froger_mcs/moravecs-paradox-c79bf638103f
 NLG "Natural Language Generation"
 NLP "Natural Language Processing" = proofreading, grammar check, sentiment analysis, translation…
@@ -749,6 +760,7 @@ papers -- https://arxiv.org/pdf/2510.18395
 parallelism = smarter not harder https://aisle.com/blog/system-over-model-zero-day-discovery-at-the-jagged-frontier
 parameter
 parameter -- hyperparameter = values provided to the model from the outside to make adjustments that can influence the learning process and its performance, among other things
+PASTA "Process for Automating Scientific and Technological Advancement" = imagine automating the whole technological R&D pipeline: AI proposes ideas → designs experiments → writes code → analyses results → develops improved methods → runs the next experiments → repeat
 pathways = broader AU architecture underpinning PaLM
 pathways Autoregressive Text-to-Image model (Parti), is an autoregressive text-to-image generation model that achieves high-fidelity photorealistic image generation and supports content-rich synthesis involving complex compositions and world knowledge.
 people want steak, not the farm = JIT system generation. "They don’t want the restaurant, the cow, the cotton for the tablecloths, the knives, the wait staff training program. They don’t want the total cost of ownership" https://justanotherdot.substack.com/p/people-want-steak-not-the-farm
@@ -818,6 +830,7 @@ prompt -- xml tags -- <env> https://kirshatrov.com/posts/claude-code-internals
 prompt -- xml tags -- <filepaths>
 prompt -- xml tags -- <policy_spec>
 prompt -- xml tags https://glthr.com/XML-fundamental-to-Claude
+proportionality thesis = An AI's ability to improve AI systems grows approximately in proportion to its general cognitive capability = if an AI becomes 2× as capable at reasoning/coding/research, perhaps it becomes roughly 2× as effective at AI R&D
 public AI = publicly accessible, publicly accountable, creates permanent public goods https://publicai.network/
 queries -- dangerous user queries = related to the production of chemical, biological, radiological, or nuclear weapons (CBRN) https://www.anthropic.com/research/next-generation-constitutional-classifiers
 queries -- disallowed content = Violent Illicit behavior, Nonviolent illicit behavior, harassment, extremism, hate, self-harm (standard), violence, sexual, sexual/minors https://deploymentsafety.openai.com/gpt-5-4-thinking/disallowed-content-evaluations-with-challenging-prompts
@@ -829,6 +842,7 @@ RAG -- pipeline -- 1 retrieval -- 2 reranker = asks "does this document actually
 RAG -- pipeline -- 2 generation -- 1 response generation = may be parallelized
 RAG -- pipeline -- 2 generation -- 2 model fusion = (optional) can fuse fultiple parallel responses into a higher quality response
 RAG -- pipeline = the full RAG setup, ex. embedding search -> reranking ...
+reasoning = as pathfinding through token space https://alexwang.ai/posts/reasoning-as-pathfinding/
 reasoning trace = see [ITG] https://arstechnica.com/information-technology/2024/09/openai-threatens-bans-for-probing-new-ai-models-reasoning-process/
 regulation -- EU privacy = https://legallayer.substack.com/p/i-read-every-edpb-document-on-llm
 regulation -- European AI act https://www.reddit.com/r/ArtificialInteligence/comments/1fqmcds/i_worked_on_the_eus_artificial_intelligence_act/
@@ -839,6 +853,9 @@ research directions -- Interpretability = How can we understand model internals?
 research directions -- Scalable oversight = How can we use AI systems to assist humans in evaluating the outputs of other AI systems on complex tasks?
 research directions -- Weak-to-strong generalization = Humans will be weak supervisors relative to superhuman models. Can we understand and control how strong models generalize from weak supervision?
 research directions ⵧ Continual Learning = model can self-improve https://www.a16z.news/p/why-we-need-continual-learning
+returns on cognitive reinvestment = investing AI capacity into AI research to increase the improvement loop https://metr.org/notes/2026-07-22-economics-of-recursive-self-improvement/
+RSI "Recursive Self-Improvement" = (disputed definition) ~when the feedback is strong enough to cause super-exponential growth https://tecunningham.github.io/posts/2026-06-05-rsi-definitions.html
+RSI -- self-sustaining acceleration =
 rsrc -- tools https://multimedia-explorer.openrouter.ai/
 rsrcs -- learning -- https://9elements.com/blog/ai-glossary/
 rsrcs -- learning -- https://github.com/SkalskiP/courses crème de la crème of AI courses
@@ -966,6 +983,7 @@ tasks -- vision -- Unconditional Image Generation
 tasks -- vision -- Video Classification
 tasks -- vision -- Zero-Shot Image Classification
 tasks -- vision -- Zero-Shot Object Detection
+technique -- hierarchical planning = a high level picks subgoals and a low level reaches them
 Tempo blockchain https://www.msuiche.com/posts/when-machines-pay-machines-the-economics-of-agentic-ai/
 temptation to over-automate = need balance vs overwork https://uxdesign.cc/the-effort-paradox-in-ai-design-996a0bc2f7f6
 tensor ??

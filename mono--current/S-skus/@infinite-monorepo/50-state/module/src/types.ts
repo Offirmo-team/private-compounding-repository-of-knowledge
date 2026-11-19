@@ -1,10 +1,14 @@
 /////////////////////////////////////////////////
 
 export type FileOutputIntent =
+	// strict intents, preferred
 	| "not-present"
-	| "present" // default content if not present, won't touch if present
-	| "present--exact" // fully overwrite
+	| "present--exact" // always fully overwrite (conflicts forbidden)
 	| "present--containing" // deep-merge content
+	// not recommended, can drift
+	| "present--unless-customized" // overwrite unless containing special keyword "[IM:CUSTOMIZED]"
+	| "present--init" // initial content if not present, won't touch if present
+	// Not implemented (single case hardcoded)
 	| "symlink"
 
 interface BaseFileOutput {
@@ -14,11 +18,11 @@ interface BaseFileOutput {
 }
 
 export interface FileOutputAbsent extends BaseFileOutput {
-	path‿ar: AnyRepoFilePathⳇRelative // mandatory TODO why??
+	path‿ar: AnyRepoFilePathⳇRelative // mandatory (instead of requiring a manifest)
 	intent: "not-present"
 }
 export interface FileOutputPresent extends BaseFileOutput {
-	intent: "present" | "present--exact" | "present--containing" | "symlink"
+	intent: "present--exact" | "present--containing" | "present--unless-customized" | "present--init" | "symlink"
 	manifest: StructuredFsⳇFileManifest
 	content: Immutable<JsonⳇObject>
 }

@@ -1,4 +1,5 @@
 "engage and farm"
++++ identity
 0 -- marketing funnel = TOFU -> MOFU -> BOFU, TOFU casts the widest net, while BOFU is the narrowest and most conversion-focused
 1 -- TOFU "Top of Funnel" = the earliest stage of the marketing (or sales) funnel = potential customers are becoming aware of a problem they have or discovering your brand for the first time. They're not ready to buy yet; they're just exploring or learning.
 1 -- TOFU goals -- Attract a broad audience
@@ -27,10 +28,12 @@
 [ ] https://speedrun.substack.com/p/the-founders-guide-to-blogging
 [ ] SEO -- advices https://www.kalzumeus.com/2010/01/24/startup-seo/ + follow up https://www.kalzumeus.com/2010/01/25/followup-questions-for-strategic-seo-for-startups/
 ads -- https://ads.openai.com/
+ads = help people find what they’re looking for or discover something they hadn’t considered. But seeing an interesting product or service is often just the beginning. A shopper might be curious about a dining table they see in an ad but have questions about whether it fits their space, how many people it seats, or how to care for its finish. https://openai.com/index/reimagining-advertising-with-ai/
 affiliation -- ambassador program = e.g. https://qwen.ai/ambassador
 astroturfing https://www.petervijeh.com/projects/reddit-astroturf
 best practices -- don't build castles in others people's kingdoms
 brand -- 6 what's? = what we stand for, what we believe in, what people we seek to engage, what distinguishes us, what we offer, what we say and show https://hbr.org/2014/06/start-ups-need-a-minimum-viable-brand
+brand -- Brand & Style = holistic description of a product's look and feel: brand personality, target audience, and the emotional response the UI should evoke, such as whether it should feel playful or professional, dense or spacious https://github.com/google-labs-code/design.md/blob/main/docs/spec.md
 brand -- PERSONAL -- dev blog https://adamcoster.com/
 brand -- rebrand = https://www.msrebrandregistry.com/index.html
 brand -- relationship = https://en.wikipedia.org/wiki/Brand_relationship
@@ -43,6 +46,7 @@ CEMs -- SPAM compliance = consent of the recipient, accurate sender identificati
 CEMs = offers, advertises, or promotes a product, service, or supplier, and includes promotional language, imagery, or links
 channels -- attacks = fishing https://fly.io/blog/kurt-got-got/
 coding challenges = e.g. https://dev.to/challenges
+creativity is the new moat
 creator strategy
 cringe = https://www.cringebot3000.com/
 discoverability -- AEO "agentic-engine-optimization" = https://addyosmani.com/blog/agentic-engine-optimization/
@@ -77,10 +81,10 @@ material -- https://www.getmimic.lol/
 material -- screenshots?
 material -- video https://www.capcut.com/newsroom/dreamina-seedance-2
 mind share = When people think of examples of a product type or category, they usually think of a limited number of brand names https://en.wikipedia.org/wiki/Mind_share
-other people's castle
 other people's castle = https://xlii.space/eng/malicious-software-on-google-ads/
 presence -- AI skills = e.g. https://clerk.com/docs/guides/ai/skills
 presence -- GitHub = e.g. https://github.com/langchain-ai
+presence -- Hacker News = algorithm / penalties https://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html
 presence -- Hacker News = https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic
 presence -- marketplaces
 presence -- reddit = very important for LLMs.
@@ -97,8 +101,16 @@ reputation example of Meta = long history of anti-competitive, censorial, and in
 reputation management -- REPCOM
 reputation management = https://en.wikipedia.org/wiki/Reputation_management
 SEO -- agentic -- insights = https://knownagents.com/insights
+SEO -- AI -- AEO "answer engine optimization" = focus on direct answers https://en.wikipedia.org/wiki/Generative_engine_optimization = see [AIO]
+SEO -- AI -- AIO "artificial intelligence optimization" = https://en.wikipedia.org/wiki/Generative_engine_optimization
+SEO -- AI -- GEO "generative engine optimization" = AI narratives https://en.wikipedia.org/wiki/Generative_engine_optimization = see [AIO]
+SEO -- AI -- visibility -- audit
+SEO -- AI -- visibility = do the AI even know the product exist?
+SEO -- AI = aka. [GEO] / [AEO] = see [AIO]
+SEO -- traditional = foundation, still useful even with agents, establish authority
 social media -- handle -- confiscation = https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/
 social media -- reverse engineering the algorithm https://www.barchart.com/story/news/5472260/mrbeast-told-billionaire-mark-cuban-he-spends-millions-of-dollars-reverse-engineering-the-algorithms-on-each-platform-so-he-never-runs-out-of-ideas
+sponsored agents https://openai.com/index/reimagining-advertising-with-ai/
 talks -- how to speak = +++ https://gist.github.com/StevenMaude/280eadc60938ce4b6960dc60e830662d
 transfer of enthusiasm https://x.com/jasonfried/status/1961157371235111304
 trust building

@@ -3,7 +3,7 @@ import React, { useSyncExternalStore } from "react"
 
 import { RichText } from "@monorepo-private/rich-text-format--to-react"
 import { renderⵧto_text } from "@monorepo-private/rich-text-format--to-textual"
-import type { Meta‿v3, Story‿v3 } from "@monorepo-private/storypad"
+import type { Meta‿v3, Story‿v3 } from "@storypad/storypad"
 import { createꓽstore } from "@tbrpg/interfaces"
 import type { State } from "@tbrpg/state"
 

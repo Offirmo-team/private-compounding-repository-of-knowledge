@@ -2,8 +2,8 @@
 <meta charset="utf-8" />
 
 <script type="module">
-	import startꓽstorypad from "@monorepo-private/storypad"
-	import decoratorⵧdiagnostics from "@monorepo-private/storypad/decorators/diagnostics"
+	import startꓽstorypad from "@storypad/storypad"
+	import decoratorⵧdiagnostics from "@storypad/storypad/decorators/diagnostics"
 
 	import nearest_pkg from "../../../package.json"
 
@@ -11,7 +11,7 @@
 
 	// important to load async so that the stories don't pollute the global scope too early (ex. before SXC)
 	//import stories from './**/*.stories.(js|jsx|ts|tsx|mdx)'
-	const storiesⵧshared = {} //import('@monorepo-private/storypad/module/src/__shared/stories/**/*.stories.(js|jsx|ts|tsx|mdx)')
+	const storiesⵧshared = {} //import('@storypad/storypad/module/src/__shared/stories/**/*.stories.(js|jsx|ts|tsx|mdx)')
 	const stories = import.meta.glob("../../src/**/*.stories.(js|jsx|ts|tsx|mdx)")
 	if (DEBUG)
 		console.log("BOOTSTRAP stories", {

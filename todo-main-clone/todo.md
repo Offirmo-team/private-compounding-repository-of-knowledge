@@ -1,8 +1,5 @@
 
 move pulse to 3-
-move ohateoas and ostate-to-rich-text to X-
-
-move browser to X-
 
 do a size check
 
@@ -11,3 +8,6 @@ https://jellyfin.org/downloads/server
 
 mbo
 - ...
+
+ydl
+- https://www.youtube.com/watch?v=ftM6xTCqvZU

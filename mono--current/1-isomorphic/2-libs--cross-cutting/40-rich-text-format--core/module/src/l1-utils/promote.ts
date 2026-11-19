@@ -33,7 +33,7 @@ export function promoteꓽto_string_for_node_content(str: Immutable<Exclude<Node
 			break
 
 		default:
-			assert(false, `${LIB}: sugar: pushText(): Unknown pseudo-node type!`)
+			assertⵧnever_reached({ str })
 	}
 
 	return "" + str
@@ -41,10 +41,9 @@ export function promoteꓽto_string_for_node_content(str: Immutable<Exclude<Node
 
 /////////////////////////////////////////////////
 
-import { assert_from, assert } from "@monorepo-private/assert"
+import { assert_from, assert, assertⵧnever_reached } from "@monorepo-private/assert"
 import { assertꓽstringⵧnormalized } from "@monorepo-private/normalize-string"
 import type { Immutable } from "@monorepo-private/ts--types"
 import { isꓽobjectⵧplain } from "@monorepo-private/type-detection"
 
-import { LIB } from "../consts.ts"
 import { NodeType, type NodeⳇLike, type Node, assertꓽNode } from "../l1-types/index.ts"

@@ -1,4 +1,4 @@
-import { AllTogether as Anchors } from '@monorepo-private/storypad/src/__shared/stories/html/elements/a.stories'
+import { AllTogether as Anchors } from '@storypad/storypad/src/__shared/stories/html/elements/a.stories'
 
 ////////////////////////////////////////////////////////////////////////////////////
 

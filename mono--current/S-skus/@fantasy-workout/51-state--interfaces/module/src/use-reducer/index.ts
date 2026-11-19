@@ -31,7 +31,7 @@ export function reducer(state: Immutable<State>, action: Immutable<Action>): Imm
 			return reduceꓽhack(state, action_ts_discrimination_not_working)
 
 		default:
-			throw new Error(`Unknown action type "${action.type}"!`)
+			assertⵧnever_reached({ action }, { discriminant: "type" })
 	}
 }
 
@@ -47,6 +47,7 @@ export function reducer_bulk(state: Immutable<State>, actions: Immutable<Array<A
 import type { State, CreateParams } from "@fantasy-workout/state"
 import * as StateLib from "@fantasy-workout/state"
 
+import { assertⵧnever_reached } from "@monorepo-private/assert"
 import { reduceꓽhack, reduceꓽnoop, reduceꓽset, type SyncReducerFns } from "@monorepo-private/sync-store"
 import type { Immutable } from "@monorepo-private/ts--types"
 import {

@@ -1,7 +1,5 @@
 /////////////////////////////////////////////////
 
-import { assert } from "@monorepo-private/assert"
-
 const vite_config__path‿ar: PackagePathⳇRelative = `${PATHVARⵧROOTⵧPACKAGE}/vite.config.ts`
 export const manifestꓽvite_config: StructuredFsⳇFileManifest = {
 	path‿ar: vite_config__path‿ar,
@@ -52,7 +50,7 @@ export const PLUGIN: Plugin = {
 							state,
 							node,
 							"stories",
-							`npm-run-all clean --parallel _start:storypad--vite`,
+							`${PKGꓽNPM_RUN_ALL} clean --parallel _start:storypad--vite`,
 						)
 					}
 
@@ -63,7 +61,12 @@ export const PLUGIN: Plugin = {
 							"_start:demo--vite",
 							`vite ${VITE__COMMON_OPTIONS} --open ${path.join(PURE_MODULE_CONTENT_RELPATH, pkg_details.entrypointⵧdemo.path‿rel)}`,
 						)
-						state = StateLib.addꓽscript(state, node, "demo", `npm-run-all clean --parallel _start:demo--vite`)
+						state = StateLib.addꓽscript(
+							state,
+							node,
+							"demo",
+							`${PKGꓽNPM_RUN_ALL} clean --parallel _start:demo--vite`,
+						)
 					}
 
 					if (pkg_details.entrypointⵧsandbox?.ext === ".html") {
@@ -77,7 +80,7 @@ export const PLUGIN: Plugin = {
 							state,
 							node,
 							"sandbox",
-							`npm-run-all clean --parallel _start:sandbox--vite`,
+							`${PKGꓽNPM_RUN_ALL} clean --parallel _start:sandbox--vite`,
 						)
 					}
 
@@ -91,7 +94,12 @@ export const PLUGIN: Plugin = {
 						)
 					}
 					if (pkg_details.isꓽapp) {
-						state = StateLib.addꓽscript(state, node, "start", `npm-run-all clean --parallel _start:main--vite`)
+						state = StateLib.addꓽscript(
+							state,
+							node,
+							"start",
+							`${PKGꓽNPM_RUN_ALL} clean --parallel _start:main--vite`,
+						)
 
 						state = StateLib.addꓽscript(state, node, "build--vite", `vite build`)
 					}
@@ -131,7 +139,7 @@ export const PLUGIN: Plugin = {
 					return {
 						parent_node: node,
 						manifest: manifestꓽvite_config,
-						intent: "present--containing",
+						intent: "present--unless-customized",
 						content: {
 							text: pkg_details.isꓽapp
 								? `
@@ -187,4 +195,6 @@ import type {
 } from "@infinite-monorepo/types-for-plugins"
 import { PATHVARⵧROOTⵧPACKAGE } from "@infinite-monorepo/types-for-plugins"
 
+import { assert } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"
+import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"

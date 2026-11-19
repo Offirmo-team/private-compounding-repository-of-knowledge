@@ -27,10 +27,11 @@ export function compare<T>(
 		case "<=":
 			return index_a <= index_b
 		default:
-			throw new Error(`ts-utils.compare: unknown comparison operator "${operator}"!`)
+			assertⵧnever_reached({ operator })
 	}
 }
 
 /////////////////////////////////////////////////
 
+import { assertⵧnever_reached } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"

@@ -39,6 +39,8 @@ alternatively:
 Activated through classes: (ideally as semantic as possible)
 
 ```
+<html data-o-theme="light">
+
 o⋄error-report
 
 

@@ -87,3 +87,5 @@ Your inbox wouldn't just deliver email to you—it would deliver you from email
 https://it.slashdot.org/story/25/05/05/1817247/microsoft-cracks-down-on-bulk-email-with-strict-new-outlook-rules
 
 tech stack https://en.andros.dev/blog/d7ed8b07/modern-email-can-be-built-from-borrowed-parts/
+
+capsule https://withcapsule.app/

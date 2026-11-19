@@ -43,7 +43,7 @@ export const PLUGIN: Plugin = {
 				const output_specꓽAGENTSᐧmd: FileOutputPresent = {
 					parent_node: node,
 					manifest: manifestꓽAGENTSᐧmd,
-					intent: "present",
+					intent: "present--init", // TODO 1D formatted markdown mergeable
 					content: {
 						// TODO review
 						// reminder: https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/
@@ -70,7 +70,7 @@ export const PLUGIN: Plugin = {
 						path‿ar: `${PATHVARⵧROOTⵧNODE}/.agents/skills/.keep`,
 						doc: ["https://code.claude.com/docs/en/skills", "https://github.com/bgreenwell/dotagents"],
 					},
-					intent: "present",
+					intent: "present--exact",
 					content: {
 						entries: [`https://code.claude.com/docs/en/skills`],
 					},

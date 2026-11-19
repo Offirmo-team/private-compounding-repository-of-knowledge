@@ -27,7 +27,7 @@
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/parcel-config": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
-		"@monorepo-private/storypad": "workspace:*",
+		"@storypad/storypad": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",
 		"npm-run-all": "catalog:",
