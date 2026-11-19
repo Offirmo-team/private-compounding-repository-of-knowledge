@@ -34,7 +34,7 @@
 		"@types/node": "catalog:",
 		"chai": "catalog:",
 		"fraction.js": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

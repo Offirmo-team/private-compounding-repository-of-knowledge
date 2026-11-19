@@ -20,7 +20,7 @@
 		"@tsconfig/node24": "catalog:",
 		"@tsconfig/node26": "catalog:",
 		"@tsconfig/strictest": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:"
 	},

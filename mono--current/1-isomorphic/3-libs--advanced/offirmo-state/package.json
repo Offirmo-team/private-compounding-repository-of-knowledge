@@ -33,7 +33,7 @@
 		"@monorepo-private/soft-execution-context": "workspace:*",
 		"@monorepo-private/utils--error": "workspace:*",
 		"@types/node": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

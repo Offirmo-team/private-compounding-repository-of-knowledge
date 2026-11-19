@@ -221,6 +221,7 @@ export default PLUGIN
 
 import path from "node:path"
 
+import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"
 import { manifestꓽᐧgitignore } from "@infinite-monorepo/plugin--git"
 import { manifestꓽpackageᐧjson } from "@infinite-monorepo/plugin--pm--package-json"
 import * as StateLib from "@infinite-monorepo/state"
@@ -236,4 +237,3 @@ import type {
 } from "@infinite-monorepo/types-for-plugins"
 
 import type { Immutable } from "@monorepo-private/ts--types"
-import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"

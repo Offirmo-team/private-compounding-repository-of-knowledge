@@ -11,7 +11,7 @@
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@fantasy-workout/web-core\" && tsc --noEmit",
-		"clean": "npm-run-all _clean--pkg",
+		"clean": "npm-run-all2 _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
@@ -24,7 +24,7 @@
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:",
 		"tslib": "catalog:",

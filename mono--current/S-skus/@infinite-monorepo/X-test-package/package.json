@@ -23,7 +23,7 @@
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
 		"@types/node": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

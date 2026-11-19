@@ -47,7 +47,7 @@ catalog:
    mocha: ^12
    murmurhash3js-revisited: ^3
    nanoid: ^6
-   npm-run-all: ^4
+   npm-run-all2: ^9
    oxfmt: ^0.79
    oxlint: ^1
    oxlint-tsgolint: ^7

@@ -6,7 +6,7 @@
 	"sideEffects": false,
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
-		"clean": "npm-run-all _clean--pkg"
+		"clean": "npm-run-all2 _clean--pkg"
 	},
 	"devDependencies": {
 		"@monorepo-private/vite--config--default": "workspace:*",

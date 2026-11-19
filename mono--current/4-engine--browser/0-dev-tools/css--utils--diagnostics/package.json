@@ -13,9 +13,9 @@
 		"_start:storypad--vite": "vite --port 1981 --strictPort --logLevel info --open module/__fixtures/storypad/index.html",
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@monorepo-private/css--utils--diagnostics\" && tsc --noEmit",
-		"clean": "npm-run-all _clean--pkg",
+		"clean": "npm-run-all2 _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
-		"stories": "npm-run-all clean --parallel _start:storypad--vite",
+		"stories": "npm-run-all2 clean --parallel _start:storypad--vite",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -27,7 +27,7 @@
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vite": "catalog:",

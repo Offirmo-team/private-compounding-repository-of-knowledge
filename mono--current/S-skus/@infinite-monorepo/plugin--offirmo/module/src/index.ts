@@ -18,6 +18,7 @@ export const PLUGIN: Plugin = {
 		// overrides
 		state.pkg_infos_resolver.declareꓽversion_override("fraction.js", "^4") // v5+ switched to BigInt, which is not json-compatible unless we switch to superjson
 		state.pkg_infos_resolver.declareꓽversion_override("typescript", "^6") // need to switch away from parse-ts-import
+    state.pkg_infos_resolver.declareꓽversion_override("@tsparticles/engine", "4.5.4"); // possible takeover after this one https://npmx.dev/package/@tsparticles/engine
 
 		return state
 	},
@@ -395,6 +396,7 @@ function _getꓽgit_remote_urlⵧorigin(repo_root‿abs: string): string | undef
 import { execFileSync } from "node:child_process"
 import * as path from "node:path"
 
+import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"
 import { deriveꓽgit_clone_dir } from "@infinite-monorepo/heuristics"
 import { manifestꓽpnpmᝍworkspaceᐧyaml } from "@infinite-monorepo/plugin--pm--pnpm"
 import { manifestꓽtsconfigᐧjson } from "@infinite-monorepo/plugin--typescript"
@@ -413,4 +415,3 @@ import {
 
 import type { Immutable, JsonⳇObject } from "@monorepo-private/ts--types"
 import { isꓽError } from "@monorepo-private/utils--error/v2"
-import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"

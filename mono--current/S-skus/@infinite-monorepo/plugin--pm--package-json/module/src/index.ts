@@ -370,6 +370,7 @@ export default PLUGIN
 
 import * as path from "node:path"
 
+import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"
 import * as PkgDetailsLib from "@infinite-monorepo/package-details"
 import * as StateLib from "@infinite-monorepo/state"
 import type { State, FileOutputPresent } from "@infinite-monorepo/types-for-plugins"
@@ -387,4 +388,3 @@ import { trim_before_stringify } from "@monorepo-private/json-stable-stringify"
 import { mergeⵧdeep } from "@monorepo-private/merge"
 import { setꓽpropertyⵧdeep } from "@monorepo-private/set-deep-property"
 import type { Immutable } from "@monorepo-private/ts--types"
-import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"

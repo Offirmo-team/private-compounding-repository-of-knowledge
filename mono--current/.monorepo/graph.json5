@@ -28,7 +28,7 @@
 					type: "normal",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -72,7 +72,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -126,7 +126,7 @@
 					type: "normal",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -165,7 +165,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -224,7 +224,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -283,7 +283,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -342,7 +342,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -401,7 +401,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -460,7 +460,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -524,7 +524,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -583,7 +583,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -642,7 +642,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -711,7 +711,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -775,7 +775,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -844,7 +844,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -908,7 +908,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -977,7 +977,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1051,7 +1051,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1130,7 +1130,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1199,7 +1199,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1263,7 +1263,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1327,7 +1327,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1386,7 +1386,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1450,7 +1450,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1514,7 +1514,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1583,7 +1583,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1642,7 +1642,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1711,7 +1711,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1780,7 +1780,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1844,7 +1844,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1918,7 +1918,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -1997,7 +1997,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2086,7 +2086,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2165,7 +2165,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2249,7 +2249,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2318,7 +2318,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2392,7 +2392,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2456,7 +2456,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2515,7 +2515,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2614,7 +2614,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2683,7 +2683,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2787,7 +2787,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2866,7 +2866,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -2940,7 +2940,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3039,7 +3039,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3098,7 +3098,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3177,7 +3177,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3241,7 +3241,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3310,7 +3310,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3369,7 +3369,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3433,7 +3433,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3507,7 +3507,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3576,7 +3576,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3670,7 +3670,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3739,7 +3739,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3823,7 +3823,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3907,7 +3907,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -3981,7 +3981,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4060,7 +4060,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4164,7 +4164,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4268,7 +4268,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4332,7 +4332,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4401,7 +4401,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4455,7 +4455,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4504,7 +4504,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4588,7 +4588,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4662,7 +4662,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4741,7 +4741,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4815,7 +4815,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4899,7 +4899,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -4988,7 +4988,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5062,7 +5062,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5141,7 +5141,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5260,7 +5260,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5381,7 +5381,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5465,7 +5465,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5554,7 +5554,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5663,7 +5663,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5772,7 +5772,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -5906,7 +5906,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6005,7 +6005,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6094,7 +6094,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6178,7 +6178,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6267,7 +6267,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6380,7 +6380,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6464,7 +6464,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6548,7 +6548,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6667,7 +6667,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6771,7 +6771,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6890,7 +6890,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -6979,7 +6979,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7093,7 +7093,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7212,7 +7212,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7311,7 +7311,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7400,7 +7400,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7509,7 +7509,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7578,7 +7578,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7638,7 +7638,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7718,7 +7718,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7808,7 +7808,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7908,7 +7908,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -7998,7 +7998,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8073,7 +8073,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8133,7 +8133,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8193,7 +8193,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8253,7 +8253,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8338,7 +8338,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8408,7 +8408,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8478,7 +8478,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8553,7 +8553,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8623,7 +8623,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8698,7 +8698,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8768,7 +8768,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8838,7 +8838,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -8973,7 +8973,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9048,7 +9048,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9143,7 +9143,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9213,7 +9213,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9333,7 +9333,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9558,7 +9558,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9765,7 +9765,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9832,7 +9832,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9917,7 +9917,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -9992,7 +9992,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10072,7 +10072,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10147,7 +10147,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10232,7 +10232,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10307,7 +10307,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10382,7 +10382,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10462,7 +10462,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10547,7 +10547,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10581,6 +10581,11 @@
 		},
 		{
 			deps: [
+				{
+					fqname: "@infinite-monorepo/decisions",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
 				{
 					fqname: "@infinite-monorepo/heuristics",
 					isꓽmonorepo: true,
@@ -10642,7 +10647,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10666,12 +10671,12 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 3,
-			monorepo_deps_count: 10,
+			monorepo_deps_count: 11,
 			path‿rel: "S-skus/@infinite-monorepo/plugin--offirmo/",
 			precedence_group: 99,
 			precedence_pkg: 999,
 			precedence_subgroup: 1,
-			sibling_deps_count: 5,
+			sibling_deps_count: 6,
 			sku: "@infinite-monorepo",
 		},
 		{
@@ -10717,7 +10722,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10792,7 +10797,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10826,6 +10831,11 @@
 		},
 		{
 			deps: [
+				{
+					fqname: "@infinite-monorepo/decisions",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
 				{
 					fqname: "@infinite-monorepo/plugin--git",
 					isꓽmonorepo: true,
@@ -10877,7 +10887,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -10901,12 +10911,12 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 1,
-			monorepo_deps_count: 8,
+			monorepo_deps_count: 9,
 			path‿rel: "S-skus/@infinite-monorepo/plugin--parcel/",
 			precedence_group: 99,
 			precedence_pkg: 999,
 			precedence_subgroup: 1,
-			sibling_deps_count: 4,
+			sibling_deps_count: 5,
 			sku: "@infinite-monorepo",
 		},
 		{
@@ -10972,7 +10982,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11006,6 +11016,11 @@
 		},
 		{
 			deps: [
+				{
+					fqname: "@infinite-monorepo/decisions",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
 				{
 					fqname: "@infinite-monorepo/package-details",
 					isꓽmonorepo: true,
@@ -11067,7 +11082,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11091,12 +11106,12 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 0,
-			monorepo_deps_count: 10,
+			monorepo_deps_count: 11,
 			path‿rel: "S-skus/@infinite-monorepo/plugin--pm--package-json/",
 			precedence_group: 99,
 			precedence_pkg: 999,
 			precedence_subgroup: 1,
-			sibling_deps_count: 3,
+			sibling_deps_count: 4,
 			sku: "@infinite-monorepo",
 		},
 		{
@@ -11192,7 +11207,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11277,7 +11292,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11352,7 +11367,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11417,7 +11432,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11502,7 +11517,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11607,7 +11622,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11677,7 +11692,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11711,6 +11726,11 @@
 		},
 		{
 			deps: [
+				{
+					fqname: "@infinite-monorepo/decisions",
+					isꓽmonorepo: true,
+					type: "normal",
+				},
 				{
 					fqname: "@infinite-monorepo/state",
 					isꓽmonorepo: true,
@@ -11752,7 +11772,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11776,12 +11796,12 @@
 			isꓽphantom: false,
 			isꓽpublic: false,
 			layer: 0,
-			monorepo_deps_count: 6,
+			monorepo_deps_count: 7,
 			path‿rel: "S-skus/@infinite-monorepo/plugin--vite/",
 			precedence_group: 99,
 			precedence_pkg: 999,
 			precedence_subgroup: 1,
-			sibling_deps_count: 2,
+			sibling_deps_count: 3,
 			sku: "@infinite-monorepo",
 		},
 		{
@@ -11837,7 +11857,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -11912,7 +11932,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12012,7 +12032,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12087,7 +12107,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12177,7 +12197,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12272,7 +12292,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12347,7 +12367,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12547,7 +12567,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12632,7 +12652,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12775,7 +12795,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12870,7 +12890,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -12965,7 +12985,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13065,7 +13085,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13150,7 +13170,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13270,7 +13290,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13365,7 +13385,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13480,7 +13500,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13590,7 +13610,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13690,7 +13710,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13805,7 +13825,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -13905,7 +13925,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -14110,7 +14130,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -14240,7 +14260,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -14455,7 +14475,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -14595,7 +14615,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -14735,7 +14755,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -14825,7 +14845,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -14910,7 +14930,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15045,7 +15065,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15165,7 +15185,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15270,7 +15290,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15375,7 +15395,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15462,7 +15482,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15532,7 +15552,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15622,7 +15642,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15717,7 +15737,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},
@@ -15847,7 +15867,7 @@
 					type: "dev",
 				},
 				{
-					fqname: "npm-run-all",
+					fqname: "npm-run-all2",
 					isꓽmonorepo: false,
 					type: "dev",
 				},

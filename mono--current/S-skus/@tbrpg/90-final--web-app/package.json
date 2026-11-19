@@ -12,8 +12,8 @@
 		"_start:main--vite": "vite --port 1981 --strictPort --logLevel info --open module/src/index.html",
 		"build": "run-s build--vite",
 		"build--vite": "vite build",
-		"clean": "npm-run-all _clean--pkg",
-		"start": "npm-run-all clean --parallel _start:main--vite"
+		"clean": "npm-run-all2 _clean--pkg",
+		"start": "npm-run-all2 clean --parallel _start:main--vite"
 	},
 	"devDependencies": {
 		"@monorepo-private/vite--config--default": "workspace:*",

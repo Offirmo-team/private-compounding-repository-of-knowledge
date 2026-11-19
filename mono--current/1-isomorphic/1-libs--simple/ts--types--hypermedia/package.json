@@ -29,7 +29,7 @@
 		"@monorepo-private/timestamps": "workspace:*",
 		"@monorepo-private/ts--types": "workspace:*",
 		"@types/node": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

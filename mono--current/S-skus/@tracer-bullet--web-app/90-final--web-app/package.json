@@ -14,9 +14,9 @@
 		"build--vite": "vite build",
 		"check": "run-s check:ts",
 		"check:ts": "echo \"@tracer-bullet--web-app/final--web-app\" && tsc --noEmit",
-		"clean": "npm-run-all _clean--pkg",
+		"clean": "npm-run-all2 _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
-		"start": "npm-run-all clean --parallel _start:main--vite",
+		"start": "npm-run-all2 clean --parallel _start:main--vite",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -35,7 +35,7 @@
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
 		"@types/react-dom": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"typescript": "catalog:",
 		"vite": "catalog:",
 		"vitest": "catalog:"

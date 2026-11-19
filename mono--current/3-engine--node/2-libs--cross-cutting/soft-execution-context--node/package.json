@@ -24,7 +24,7 @@
 		"@monorepo-private/scripts": "workspace:*",
 		"@monorepo-private/soft-execution-context": "workspace:*",
 		"@types/node": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"

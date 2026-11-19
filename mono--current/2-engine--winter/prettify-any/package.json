@@ -28,7 +28,7 @@
 		"@types/node": "catalog:",
 		"@types/prettyjson": "catalog:",
 		"chalk": "catalog:",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"prettyjson": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

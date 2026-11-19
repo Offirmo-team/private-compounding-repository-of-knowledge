@@ -182,6 +182,7 @@ export default PLUGIN
 
 import path from "node:path"
 
+import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"
 import * as StateLib from "@infinite-monorepo/state"
 import type {
 	PackagePathⳇRelative,
@@ -197,4 +198,3 @@ import { PATHVARⵧROOTⵧPACKAGE } from "@infinite-monorepo/types-for-plugins"
 
 import { assert } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"
-import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"

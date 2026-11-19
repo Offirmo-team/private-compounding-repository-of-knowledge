@@ -23,7 +23,7 @@
 		"@monorepo-private/ts--types": "workspace:*",
 		"@types/node": "catalog:",
 		"@web-property-outfitter/spec": "workspace:*",
-		"npm-run-all": "catalog:",
+		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",
 		"vitest": "catalog:"
