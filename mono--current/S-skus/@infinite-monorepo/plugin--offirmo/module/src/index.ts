@@ -18,7 +18,7 @@ export const PLUGIN: Plugin = {
 		// overrides
 		state.pkg_infos_resolver.declareꓽversion_override("fraction.js", "^4") // v5+ switched to BigInt, which is not json-compatible unless we switch to superjson
 		state.pkg_infos_resolver.declareꓽversion_override("typescript", "^6") // need to switch away from parse-ts-import
-    state.pkg_infos_resolver.declareꓽversion_override("@tsparticles/engine", "4.5.4"); // possible takeover after this one https://npmx.dev/package/@tsparticles/engine
+		state.pkg_infos_resolver.declareꓽversion_override("@tsparticles/engine", "4.5.4") // possible takeover after this one https://npmx.dev/package/@tsparticles/engine
 
 		return state
 	},

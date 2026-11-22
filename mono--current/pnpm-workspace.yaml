@@ -10,8 +10,8 @@ catalog:
    "@tsconfig/node24": ^24
    "@tsconfig/node26": ^26
    "@tsconfig/strictest": ^2
-   "@tsparticles/basic": ^4
-   "@tsparticles/engine": ^4
+   "@tsparticles/basic": ~4.5
+   "@tsparticles/engine": ~4.5
    "@types/chai": ^5
    "@types/chroma-js": ^3
    "@types/core-js": ^2
