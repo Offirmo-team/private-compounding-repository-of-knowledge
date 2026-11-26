@@ -5,7 +5,10 @@ monorepo
 
 Ops
 - create a domain(s) for tracer bullet
-- restore https://www.offirmo.net/open-source/adventurers/index.html
+  - -> pcrk--tracer-bullet.offirmo.ovh
+- restore https://www.offirmo.net/open-source/adventurers/index.html -> it's https://www.offirmo.net/open-source/adventurers-fantasy-illustration/index.html
+
+Home is https://offirmo-team.github.io/private-compounding-repository-of-knowledge/
 
 
 mbo
@@ -18,7 +21,6 @@ ydl
 
 
 misc
-- https://jellyfin.org/downloads/server
 - proxy
   - FF in wasm https://fzakaria.com/2026/11/23/2035-came-early
   - wisp relay https://github.com/MercuryWorkshop/wisp-protocol + everything mentioned
