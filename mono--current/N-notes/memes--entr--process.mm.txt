@@ -61,6 +61,7 @@ hiring -- flexibility
 hiring -- paper ceiling https://www.tearthepaperceiling.org/
 hiring -- Skilled Through Alternative Routes (STAR)
 How Might We? (HMW) = technique used to frame design challenges by formulating questions that focus on the desired outcome, are broad, and are phrased positively to encourage creativity and generate ideas
+https://en.wikipedia.org/wiki/Aviation_accidents_and_incidents
 https://trustmrr.com/
 Kanban https://en.wikipedia.org/wiki/Kanban_(development)
 KPI "Key Product Indicators"

@@ -44,6 +44,6 @@ export function getꓽcontent‿nodes_list($node: Immutable<NodeⳇNormalized>):
 /////////////////////////////////////////////////
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import type { NodeⳇNormalized, NodeⳇLike } from "@monorepo-private/rich-text-format--core"
 import { wrap, isꓽlist, isꓽNodeLike } from "@monorepo-private/rich-text-format--core"
+import type { NodeⳇNormalized, NodeⳇLike } from "@monorepo-private/rich-text-format--core"
 import { type Immutable } from "@monorepo-private/ts--types"

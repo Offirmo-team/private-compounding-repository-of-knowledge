@@ -72,15 +72,15 @@ async function render(
 	// TODO error boundary
 	root.render(
 		<StrictWrapper>
-			{render_params.parameters.layout === "fullscreen" && (
-				/* reminder: FakeInset needs geometry CSS vars = ~offirmo framework, will display nothing if absent */
-				<FakeInset />
-			)}
 			<Suspense fallback="<Suspense… />">
 				<Profiler id="storypad-story" onRender={onRender}>
 					<StoryAsReactComponent />
 				</Profiler>
 			</Suspense>
+			{render_params.parameters.layout === "fullscreen" && (
+				/* reminder: FakeInset needs geometry CSS vars = ~offirmo framework, will display nothing if absent */
+				<FakeInset />
+			)}
 		</StrictWrapper>,
 	)
 

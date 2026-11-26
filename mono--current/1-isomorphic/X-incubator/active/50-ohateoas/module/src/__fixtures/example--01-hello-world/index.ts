@@ -1,5 +1,5 @@
-import type { OHARichTextHints, OHAServer } from "@monorepo-private/ohateoas"
 import { OHALinkRelation, ROOT_URI } from "@monorepo-private/ohateoas"
+import type { OHARichTextHints, OHAServer } from "@monorepo-private/ohateoas"
 import * as RichText from "@monorepo-private/rich-text-format"
 import { normalizeꓽuri‿str, getꓽscheme_specific_part } from "@monorepo-private/ts--types--hypermedia"
 

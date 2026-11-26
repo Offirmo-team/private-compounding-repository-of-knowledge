@@ -130,6 +130,8 @@ coding -- Claude -- version history https://cchistory.mariozechner.at/
 color -- primary -- 3 or 4? = +++ https://www.redblobgames.com/x/1708-color-yellow/
 colors -- colour schemes --
 colors -- colour schemes -- cubehelix = increasing intensity, good for astronomy https://people.phy.cam.ac.uk/dag9/CUBEHELIX/
+colors -- neutral = neutral mid-toned greys or tans are considered to be the best color to use, because they aren't any other color https://aviation.stackexchange.com/questions/16464/why-are-most-cockpits-gray
+colors -- stress-reducing = Russian Cockpit Turquoise https://aviation.stackexchange.com/questions/16434/why-are-russian-cockpit-panels-painted-in-turquoise
 components https://www.componentdriven.org/
 composition -- embed
 composition -- shared view

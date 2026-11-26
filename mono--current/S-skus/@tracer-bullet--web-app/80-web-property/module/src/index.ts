@@ -64,6 +64,9 @@ export const SPECⵧnightly: WebPropertySpec = {
 	host: "github-pages",
 	env: "development",
 
+	// TODO specific icon for easy recognition
+	// TODO or maybe special color
+
 	/////// META
 	isꓽpublic: false,
 	isꓽdebug: true,
@@ -71,9 +74,5 @@ export const SPECⵧnightly: WebPropertySpec = {
 
 /////////////////////////////////////////////////
 
-import * as path from "node:path"
-import { fileURLToPath } from "node:url"
-const __dirname = path.dirname(fileURLToPath(import.meta.url)) // TODO favicon
-
 import { LANDING_PAGE, THINGⵧONLINE } from "@tracer-bullet--web-app/marketing"
-import type { WebPage, WebPropertySpec } from "@web-property-outfitter/spec"
+import type { WebPage, WebPropertySpec } from "@web-property-outfitter/input"

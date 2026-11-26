@@ -282,8 +282,8 @@ export const callbacksⵧto_text: Partial<WalkerCallbacks<State, RenderingOption
 /////////////////////////////////////////////////
 
 import { assert_from, assert } from "@monorepo-private/assert"
-import type { NodeⳇLike } from "@monorepo-private/rich-text-format--core"
 import { getꓽdisplay_type, getꓽtype } from "@monorepo-private/rich-text-format--core"
+import type { NodeⳇLike } from "@monorepo-private/rich-text-format--core"
 import type { Immutable } from "@monorepo-private/ts--types"
 
 import { isꓽlink } from "../common.ts"

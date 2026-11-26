@@ -25,7 +25,10 @@ export function expectㆍtoㆍbeㆍaㆍvalidㆍSocialNetworkLink(snl: SocialNetw
 	}
 }
 
-export function expectㆍtoㆍbeㆍaㆍvalidㆍWithOnlinePresence(wop: WithOnlinePresence, msg: string): void {
+export function expectㆍtoㆍbeㆍaㆍvalidㆍWithOnlinePresence(
+	wop: WithOnlinePresence,
+	msg: string = "WithOnlinePresence",
+): void {
 	expectㆍtoㆍbeㆍaㆍvalidㆍUrl‿str(
 		wop.urlⵧcanonical,
 		`${msg} -- expectㆍtoㆍbeㆍaㆍvalidㆍWithOnlinePresence -- .urlⵧcanonical should be a Url‿str!`,

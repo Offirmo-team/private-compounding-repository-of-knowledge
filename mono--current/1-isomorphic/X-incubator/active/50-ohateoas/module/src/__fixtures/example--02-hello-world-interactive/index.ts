@@ -1,3 +1,4 @@
+import { OHALinkRelation } from "@monorepo-private/ohateoas"
 import type {
 	OHAHyperMedia,
 	OHARichTextHints,
@@ -9,7 +10,6 @@ import type {
 	OHAServer,
 	OHAFeedback,
 } from "@monorepo-private/ohateoas"
-import { OHALinkRelation } from "@monorepo-private/ohateoas"
 import * as RichText from "@monorepo-private/rich-text-format"
 import { type InputSpec, type InputType, type ValueInputSpec } from "@monorepo-private/ts--types"
 import { normalizeꓽuri‿str, getꓽscheme_specific_part } from "@monorepo-private/ts--types--hypermedia"

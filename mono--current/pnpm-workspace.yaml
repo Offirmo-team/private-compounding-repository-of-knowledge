@@ -10,8 +10,8 @@ catalog:
    "@tsconfig/node24": ^24
    "@tsconfig/node26": ^26
    "@tsconfig/strictest": ^2
-   "@tsparticles/basic": ~4.5
-   "@tsparticles/engine": ~4.5
+   "@tsparticles/basic": 4.5.4
+   "@tsparticles/engine": 4.5.4
    "@types/chai": ^5
    "@types/chroma-js": ^3
    "@types/core-js": ^2
@@ -26,6 +26,7 @@ catalog:
    "@types/sinon": ^22
    "@vitejs/plugin-react": ^6
    bowser: ^2
+   button-sounds: ^1
    chai: ^6
    chai-as-promised: ^8
    chalk: ^6
@@ -42,13 +43,13 @@ catalog:
    limit-once: ^0.16
    load-json-file: ^7
    magic-string: ^1
-   memoize-one: ^6
+   memoize-one: ^7
    meow: ^14
    mocha: ^12
    murmurhash3js-revisited: ^3
    nanoid: ^6
    npm-run-all2: ^9
-   oxfmt: ^0.79
+   oxfmt: ^0.80
    oxlint: ^1
    oxlint-tsgolint: ^7
    parse-imports-ts: ^1

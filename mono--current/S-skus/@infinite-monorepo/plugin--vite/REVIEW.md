@@ -7,6 +7,7 @@ Adds Vite dev-server scripts (demo/sandbox/storypad/start) and manages `vite.con
 - **G10-P1-01 (Major, compile error — duplicate import)** — `module/src/index.ts` imports `Node` and `State` twice from
   the same module:
   ```ts
+  import { type Node, PATHVARⵧROOTⵧPACKAGE, type State } from "@infinite-monorepo/types-for-plugins"
   import type {
     PackagePathⳇRelative,
     StructuredFsⳇFileManifest,
@@ -16,7 +17,6 @@ Adds Vite dev-server scripts (demo/sandbox/storypad/start) and manages `vite.con
     FileOutputAbsent,
     FileOutputPresent,
   } from "@infinite-monorepo/types-for-plugins"
-  import { type Node, PATHVARⵧROOTⵧPACKAGE, type State } from "@infinite-monorepo/types-for-plugins"
   ```
   `Node` and `State` are each imported once in the `import type {...}` block and again in the second `import {...}`
   statement from the same module — TypeScript will report a duplicate-identifier error for both (`tsc --noEmit` should

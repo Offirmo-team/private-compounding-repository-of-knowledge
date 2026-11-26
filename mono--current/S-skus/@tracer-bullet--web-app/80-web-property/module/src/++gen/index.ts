@@ -42,7 +42,7 @@ console.groupEnd()
 
 /////////////////////////////////////////////////
 
-// TODO filter .map ?
+// TODO filter *.map files?
 
 ;(async function refreshꓽnightly() {
 	console.group(`Refreshing "nightly"…`)
@@ -69,7 +69,7 @@ console.groupEnd()
 			process.stdout.write(stdoutFragment)
 		},
 	}).catch((_) => {
-		// formatting is best effort, we don't care about issues
+		// formatting is best-effort, we don't care about issues
 	})
 
 	console.group(`Bundling…`)

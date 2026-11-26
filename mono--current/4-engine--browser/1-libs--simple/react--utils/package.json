@@ -1,0 +1,41 @@
+{
+	"name": "@monorepo-private/react--utils",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.tsx"
+	},
+	"scripts": {
+		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@monorepo-private/react--utils\" && tsc --noEmit",
+		"clean": "npm-run-all2 _clean--pkg",
+		"dev": "run-s clean watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/engine--browser--types": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/vite--config--default": "workspace:*",
+		"@types/node": "catalog:",
+		"@types/react": "catalog:",
+		"npm-run-all2": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vite": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"react": "catalog:",
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
+}

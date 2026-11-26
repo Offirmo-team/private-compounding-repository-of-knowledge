@@ -27,7 +27,7 @@ export default function renderꓽtitlebar(state: ObservableState): HTMLElement {
 <strong>${title}</strong>
 <small><code>${storyEntry.uid}</code></small>
 <div class="storypad⋄controlbar__filler"></div>
-<a target="_blank" href="${state.getꓽstory_frame_url(storyEntry.uid)}">↗</a>
+<a target="_blank" class="own-indicator" href="${state.getꓽstory_frame_url(storyEntry.uid)}">↗</a>
 		`
 
 	return root

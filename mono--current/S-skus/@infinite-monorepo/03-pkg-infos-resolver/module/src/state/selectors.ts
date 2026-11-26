@@ -58,6 +58,12 @@ export function ǃgetꓽlatest_known_packageᐧjson(state: Immutable<State>, pkg
 	throw new Error(`No package.json for "${pkg_name}" found! Did you forget to preload?`)
 }
 
+export function getꓽversionⵧoverride(state: Immutable<State>, pkg_name: PkgFQName) {
+	assertꓽallowed_package(state, pkg_name)
+
+	return state.configⵧcritical.specifier_overrides_by_fqname[pkg_name]
+}
+
 export function ǃgetꓽversionⵧlatest_known(state: Immutable<State>, pkg_name: PkgFQName) {
 	assertꓽallowed_package(state, pkg_name)
 
@@ -80,6 +86,14 @@ export function ǃgetꓽversionⵧfor_catalog(state: Immutable<State>, pkg_name:
 
 	const latest_pkg_version = ǃgetꓽversionⵧlatest_known(state, pkg_name)
 
+	const overriden_pkg_version = getꓽversionⵧoverride(state, pkg_name)
+	if (overriden_pkg_version) {
+		// if a pkg version was overriden
+		// it may be for security reasons, hence we shouldn't allow ^major
+		return overriden_pkg_version
+	}
+
+	// loosely request the ~major-like
 	const major = semver.major(latest_pkg_version)
 	//console.log(`latest_pkg_version for ${pkg_name}`, { latest_pkg_version, major })
 	if (major !== 0) return `^${major}`

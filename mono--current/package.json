@@ -6,7 +6,8 @@
 	"sideEffects": false,
 	"scripts": {
 		"check:boundaries": "turbo boundaries",
-		"clean:x": ".config/mise/tasks/clean.bash"
+		"clean:x": ".config/mise/tasks/clean.bash",
+		"format": "pnpm exec oxfmt"
 	},
 	"devDependencies": {
 		"oxfmt": "catalog:",

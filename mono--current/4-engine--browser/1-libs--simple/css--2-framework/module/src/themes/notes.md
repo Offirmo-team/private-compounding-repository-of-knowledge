@@ -11,3 +11,10 @@ Use a data attribute:
 ```
 
 If no data attribute, light theme is active.
+
+##
+
+palettes
+
+- https://uchu.style/
+-

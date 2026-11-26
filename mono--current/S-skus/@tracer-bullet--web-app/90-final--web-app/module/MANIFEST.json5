@@ -1,3 +1,12 @@
 {
 	isꓽapp: true,
+
+	_overrides: {
+		files: {
+			packageᐧjson: {
+				//"nightly": "npm-run-all clean --parallel _start:main--vite",
+				nightly: "web-property-outfitter__build --in=@tracer-bullet--web-app/web-property.SPECⵧnightly --out=./module/src --build-script=build",
+			},
+		},
+	},
 }

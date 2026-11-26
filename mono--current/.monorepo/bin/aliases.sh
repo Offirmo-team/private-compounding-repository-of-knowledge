@@ -1,5 +1,5 @@
 #@IgnoreInspection BashAddShebang
-[[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!" >&2
+[[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)       ↳ […monorepo/…/aliases.sh] hello!" >&2
 
 ## default = where "gitc" is supposed to clone it
 export MONOREPO_ROOT__CURRENT=${PCRK_ROOT:-"$HOME/work/src/x-external/off/offirmo-team/private-compounding-repository-of-knowledge/mono--current/"};
@@ -102,6 +102,7 @@ alias  mono.@monorepo-private.page-loaded='cd "$MONOREPO_ROOT__CURRENT"; mise in
 alias  mono.@monorepo-private.poll-window-variable='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/poll-window-variable/; tabset --badge "@monorepo-private/poll-window-variable"'
 alias  mono.@monorepo-private.react--background-img='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/react--background-img/; tabset --badge "@monorepo-private/react--background-img"'
 alias  mono.@monorepo-private.react--fake-inset='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/react--fake-inset/; tabset --badge "@monorepo-private/react--fake-inset"'
+alias  mono.@monorepo-private.react--utils='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/react--utils/; tabset --badge "@monorepo-private/react--utils"'
 alias  mono.@monorepo-private.style-once='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/style-once/; tabset --badge "@monorepo-private/style-once"'
 alias  mono.@monorepo-private.wc--social='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd 4-engine--browser/1-libs--simple/wc--social/; tabset --badge "@monorepo-private/wc--social"'
 
@@ -231,9 +232,10 @@ alias  mono.@tracer-bullet--web-app.web-property='cd "$MONOREPO_ROOT__CURRENT"; 
 alias  mono.@tracer-bullet--web-app.final--web-app='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@tracer-bullet--web-app/90-final--web-app/; tabset --badge "@tracer-bullet--web-app/final--web-app"'
 
 ### S-skus/@web-property-outfitter/
-alias  mono.@web-property-outfitter.spec='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/10-spec/; tabset --badge "@web-property-outfitter/spec"'
-alias  mono.@web-property-outfitter.output='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/50-output/; tabset --badge "@web-property-outfitter/output"'
-alias  mono.@web-property-outfitter.generator--html--snippets='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/generator--html--snippets/; tabset --badge "@web-property-outfitter/generator--html--snippets"'
-alias  mono.@web-property-outfitter.generator--html='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/generator--html/; tabset --badge "@web-property-outfitter/generator--html"'
-alias  mono.@web-property-outfitter.generator--svg='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/generator--svg/; tabset --badge "@web-property-outfitter/generator--svg"'
-alias  mono.@web-property-outfitter.generator--website-entry-points='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/generator--website-entry-points/; tabset --badge "@web-property-outfitter/generator--website-entry-points"'
+alias  mono.@web-property-outfitter.input='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/10-input/; tabset --badge "@web-property-outfitter/input"'
+alias  mono.@web-property-outfitter.output='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/20-output/; tabset --badge "@web-property-outfitter/output"'
+alias  mono.@web-property-outfitter.generator--html='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/30-generator--html/; tabset --badge "@web-property-outfitter/generator--html"'
+alias  mono.@web-property-outfitter.generator--html--snippets='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/31-generator--html--snippets/; tabset --badge "@web-property-outfitter/generator--html--snippets"'
+alias  mono.@web-property-outfitter.generator--svg='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/35-generator--svg/; tabset --badge "@web-property-outfitter/generator--svg"'
+alias  mono.@web-property-outfitter.generator--website-entry-points='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/40-generator--website-entry-points/; tabset --badge "@web-property-outfitter/generator--website-entry-points"'
+alias  mono.@web-property-outfitter.bin='cd "$MONOREPO_ROOT__CURRENT"; mise install; git--offirmo.sh; cd S-skus/@web-property-outfitter/50-bin/; tabset --badge "@web-property-outfitter/bin"'

@@ -59,7 +59,7 @@ export const WEBSITE: WebPage = {
 
 /////////////////////////////////////////////////
 
-import type { WebPage } from "@web-property-outfitter/spec"
+import type { WebPage } from "@web-property-outfitter/input"
 
 import { CREATOR } from "@monorepo-private/marketing--creator"
 import type {

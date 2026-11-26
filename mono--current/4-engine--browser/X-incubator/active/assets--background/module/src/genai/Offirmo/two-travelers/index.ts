@@ -47,9 +47,8 @@ export default BG
 
 /////////////////////////////////////////////////
 
+import { type Background } from "@monorepo-private/assets--background"
 import { registerꓽasset_usageⵧload } from "@monorepo-private/credits"
 import type { Thing, Asset } from "@monorepo-private/credits"
 import liuzishan from "@monorepo-private/credits/authors/liuzishan"
 import Offirmo from "@monorepo-private/credits/authors/Offirmo"
-
-import { type Background } from "../../../types.ts"

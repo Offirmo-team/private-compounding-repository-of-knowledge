@@ -9,6 +9,8 @@
 [ ] https://en.wikipedia.org/wiki/Portal:Money
 accounting -- bottom line -- 3BL "triple bottom line" = an accounting framework with three parts: social, environmental (or ecological) and economic https://en.wikipedia.org/wiki/Triple_bottom_line
 accounting system
+adverse selection -- may spiral into market collapse = destroy high quality producers, customers don't trade etc. https://en.wikipedia.org/wiki/Adverse_selection
+adverse selection = a market situation where asymmetric information results in a party taking advantage of undisclosed information to benefit more from a contract or trade. Ex. car with hidden defect https://en.wikipedia.org/wiki/Adverse_selection
 adverse selection = in case of finance, fear the market is rigged and not entering https://en.wikipedia.org/wiki/Adverse_selection
 alt currency -- frequent flyer miles = building a currency in that airline’s name, has ~intrinsic value (to the specific airline) 1) “Fun with accounting” 2) the airlines can release the liability in a breakage process if "look like lost account" https://weekly.visualapproach.io/p/airlines-as-loss-leaders
 alt currency -- gift cards
@@ -164,6 +166,7 @@ payment rail = a payment platform or a payment network that moves money from a p
 peg = ex. HKD's peg to the USD https://privatebank.jpmorgan.com/apac/en/insights/markets-and-investing/demystifying-stablecoins
 pouvoir d'achat
 poverty -- Sherman Alexie = It sucks to be poor, and it sucks to feel that you somehow deserve to be poor. You start believing that you're poor because you're stupid and ugly. And then you start believing that you're stupid and ugly because you're Indian. And because you're Indian you start believing you're destined to be poor. It's an ugly circle and there's nothing you can do about it. Poverty doesn't give you strength or teach you lessons about perseverance. No, poverty only teaches you how to be poor.
+private equity = https://www.thebignewsletter.com/p/did-a-private-equity-fire-truck-roll
 private extortion of debt, labour and waste
 purchasing power https://en.wikipedia.org/wiki/Purchasing_power
 recessions
@@ -184,10 +187,12 @@ spot
 stock = all the shares https://en.wikipedia.org/wiki/Stock
 stock market
 stock market -- crash = https://en.wikipedia.org/wiki/Stock_market_crash
+supermoney = fake money from betting of future benefits. Mainly Stock prices, Real Estate https://www.oreilly.com/radar/checking-jeff-bezoss-math/
 tax loss harvesting https://en.wikipedia.org/wiki/Tax_loss_harvesting
 terminal value
 The Big Short = https://www.techspot.com/news/114065-big-short-investor-rooting-crash-stop-openai-anthropic.html
 tips = complicated https://www.bbc.com/news/articles/c4g36yze692o
+treasury securities = low risk government thing https://wolfstreet.com/2026/09/17/treasuries-have-become-badly-unappetizing-for-foreign-central-banks-governments/
 value
 value -- created internally = ex. fiat money since no backing value
 value -- intrinsic = calculated with regard to an inherent, objective measure https://en.wikipedia.org/wiki/Intrinsic_value_(finance)

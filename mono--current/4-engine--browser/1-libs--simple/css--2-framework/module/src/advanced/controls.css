@@ -48,10 +48,13 @@ button {
 	text-decoration: none;
 	text-align: center;
 }
+
+/* ok to keep hover when disabled */
 button:hover {
 	background-color: var(--o⋄color⁚bg--highlight--2);
 }
-button:active {
+/* absolutely not when disabled */
+button:active:not(:disabled) {
 	background-color: var(--o⋄color⁚activity-outline);
 	/* reminder: button may not have a border, cf. "inline button" */
 }

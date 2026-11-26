@@ -21,7 +21,7 @@ const { format: formatForSize } = new Intl.NumberFormat("en", {
 	useGrouping: false,
 })
 
-const DEBUG = true
+const DEBUG = false
 const RESIZE_DEBOUNCE_MSⳇauto_view_sizing = 200
 
 /////////////////////////////////////////////////
@@ -107,9 +107,9 @@ function BackgroundImgⵧloaded(props: Props) {
 	const { bg, _debug = DEBUG } = props
 
 	const viewᄆ: Dimensions2D = isꓽview_explicitly_sized
-		? getꓽdimensions2D(props.view__dimension)
+		? getꓽdimensions2D(props.view__dimension!)
 		: auto_view__dimension
-	console.log(`${NAME} render()`, { view__dimension: viewᄆ })
+	DEBUG && console.log(`${NAME} render()`, { view__dimension: viewᄆ })
 
 	const viewBox‿arr: SvgⳇViewBox = (() => {
 		// We reproduce this algorithm
@@ -134,7 +134,7 @@ function BackgroundImgⵧloaded(props: Props) {
 					focusesⵧhorizontal: bg.focusesⵧhorizontal,
 				})
 			}
-			return [max_x * Math.min(100, Math.max(0, focus)), 0, viewport_width, bg.height]
+			return [max_x * Math.min(100, Math.max(0, focus!)), 0, viewport_width, bg.height]
 		}
 
 		const viewport_height = bg.width / ratioⵧview
@@ -150,9 +150,9 @@ function BackgroundImgⵧloaded(props: Props) {
 				focusesⵧvertical: bg.focusesⵧvertical,
 			})
 		}
-		return [0, max_y * Math.min(100, Math.max(0, focus)), bg.width, viewport_height]
+		return [0, max_y * Math.min(100, Math.max(0, focus!)), bg.width, viewport_height]
 	})()
-	console.log({ viewBox‿arr })
+	DEBUG && console.log({ viewBox‿arr })
 
 	// https://alistapart.com/article/practical-svg/
 	return (

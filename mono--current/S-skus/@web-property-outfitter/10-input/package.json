@@ -1,0 +1,41 @@
+{
+	"name": "@web-property-outfitter/input",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./module/src/index.ts"
+	},
+	"scripts": {
+		"check": "run-s check:ts",
+		"check:ts": "echo \"@web-property-outfitter/input\" && tsc --noEmit",
+		"dev": "run-s  watch:check:ts",
+		"watch:check:ts": "tsc --noEmit --watch"
+	},
+	"dependencies": {
+		"@monorepo-private/assert": "workspace:*",
+		"@monorepo-private/normalize-string": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*",
+		"@web-property-outfitter/generator--html": "workspace:*",
+		"chroma-js": "catalog:",
+		"typescript-string-enums": "catalog:"
+	},
+	"devDependencies": {
+		"@monorepo-private/config--typescript": "workspace:*",
+		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/timestamps": "workspace:*",
+		"@monorepo-private/ts--types": "workspace:*",
+		"@types/chroma-js": "catalog:",
+		"@types/node": "catalog:",
+		"@web-property-outfitter/generator--svg": "workspace:*",
+		"npm-run-all2": "catalog:",
+		"tslib": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	},
+	"peerDependencies": {
+		"tslib": "catalog:"
+	},
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
+}

@@ -1,10 +1,6 @@
-import { assert_from, assert } from "@monorepo-private/assert"
-import type { Immutable } from "@monorepo-private/ts--types"
-
-import { getꓽlogger } from "../logger.ts"
-
 /////////////////////////////////////////////////
 
+export default init
 async function init(): Promise<void> {
 	if (false) {
 		// @ts-expect-error
@@ -36,4 +32,7 @@ async function init(): Promise<void> {
 
 /////////////////////////////////////////////////
 
-export default init
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import { getꓽlogger } from "../logger.ts"

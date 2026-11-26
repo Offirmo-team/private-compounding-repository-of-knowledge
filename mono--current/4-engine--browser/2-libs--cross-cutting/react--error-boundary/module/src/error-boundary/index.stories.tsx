@@ -4,12 +4,24 @@ export default {}
 
 /////////////////////////////////////////////////
 
-export const NoChildren = {
+export const IssuesⳇNoChildren = {
 	render: () => <ErrorBoundary name="no-children" />,
+}
+export const IssuesⳇCompetingChildrenAndRender = {
+	render: () => (
+		<ErrorBoundary name="conflicting-children" render={() => "bad1"}>
+			{() => "bad2"}
+		</ErrorBoundary>
+	),
+
+	args: {
+		children: "a string",
+		render: () => "a string",
+	},
 }
 
 export const String = {
-	render: () => <ErrorBoundary name="str">String</ErrorBoundary>,
+	render: () => <ErrorBoundary name="str">Hello</ErrorBoundary>,
 }
 
 export const Strings = {

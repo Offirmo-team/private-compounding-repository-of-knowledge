@@ -13,6 +13,7 @@
 		"check:ts": "echo \"@tracer-bullet--web-app/web-property\" && tsc --noEmit",
 		"clean": "npm-run-all2 _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
+		"nightly": "node ./module/src/++gen/index.ts",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -31,7 +32,7 @@
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",
 		"@web-property-outfitter/generator--website-entry-points": "workspace:*",
-		"@web-property-outfitter/spec": "workspace:*",
+		"@web-property-outfitter/input": "workspace:*",
 		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

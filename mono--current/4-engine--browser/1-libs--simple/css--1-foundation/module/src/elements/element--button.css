@@ -1,3 +1,12 @@
 /* see elements--controls.css */
 
 /* TODO improved buttons */
+
+button {
+	cursor: pointer; /* really nice and clear */
+}
+
+button:disabled {
+	cursor: not-allowed; /* really nice and clear */
+	opacity: 0.6; /* trivially good */
+}

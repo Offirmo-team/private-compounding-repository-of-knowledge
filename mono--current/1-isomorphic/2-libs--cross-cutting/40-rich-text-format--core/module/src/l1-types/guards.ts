@@ -189,5 +189,5 @@ import { hasꓽshape, isꓽobjectⵧdefined_non_array } from "@monorepo-private/
 
 import { $EXAMPLE_COMPLETE_NODEⵧBLOCK, $EXAMPLE_COMPLETE_NODEⵧINLINE } from "../__examples/index.ts"
 
-import type { Node, NodeⳇPromotable, NodeⳇNormalized, NodeⳇLike } from "./types.ts"
 import { NodeType } from "./types.ts"
+import type { Node, NodeⳇPromotable, NodeⳇNormalized, NodeⳇLike } from "./types.ts"

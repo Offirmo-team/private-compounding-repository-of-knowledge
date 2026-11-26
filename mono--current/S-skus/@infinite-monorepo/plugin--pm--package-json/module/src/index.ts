@@ -348,6 +348,8 @@ export const PLUGIN: Plugin = {
 				throw new Error(`Not implemented!`)
 			}
 
+			// TODO move into a generic place
+			// TODO turn into content merge
 			Object.entries(pkg_details._manifest._overrides?.files?.packageᐧjson || {}).forEach(([path, value]) => {
 				pkg = setꓽpropertyⵧdeep(pkg, path, value)
 			})
@@ -373,7 +375,6 @@ import * as path from "node:path"
 import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"
 import * as PkgDetailsLib from "@infinite-monorepo/package-details"
 import * as StateLib from "@infinite-monorepo/state"
-import type { State, FileOutputPresent } from "@infinite-monorepo/types-for-plugins"
 import {
 	type StructuredFsⳇFileManifest,
 	type Node,
@@ -382,6 +383,7 @@ import {
 	type PkgFQName,
 	type Plugin,
 } from "@infinite-monorepo/types-for-plugins"
+import type { State, FileOutputPresent } from "@infinite-monorepo/types-for-plugins"
 
 import { assert_from, assert } from "@monorepo-private/assert"
 import { trim_before_stringify } from "@monorepo-private/json-stable-stringify"

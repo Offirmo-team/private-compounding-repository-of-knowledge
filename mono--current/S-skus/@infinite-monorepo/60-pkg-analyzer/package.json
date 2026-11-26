@@ -9,10 +9,13 @@
 		".": "./module/src/index.ts"
 	},
 	"scripts": {
-		"check": "run-s check:ts",
+		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@infinite-monorepo/pkg-analyzer\" && tsc --noEmit",
+		"check:unit-tests": "run-s test",
 		"demo": "node --env-file-if-exists=.env.local --localstorage-file=.node-ls.local ./module/##demo/index.ts",
 		"dev": "run-s  watch:check:ts",
+		"test": "run-s test--vitest",
+		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {

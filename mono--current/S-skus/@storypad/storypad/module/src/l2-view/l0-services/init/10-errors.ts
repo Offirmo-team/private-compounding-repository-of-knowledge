@@ -1,7 +1,8 @@
-import type { SoftExecutionContext } from "@monorepo-private/soft-execution-context"
+/////////////////////////////////////////////////
 
 const STYLES = "padding: .5em; background-color: red; color: white; font-weight: bold;"
 
+export default init
 async function init(): Promise<void> {
 	function on_error(err: unknown, src: string) {
 		try {
@@ -70,4 +71,4 @@ async function init(): Promise<void> {
 
 /////////////////////////////////////////////////
 
-export default init
+import type { SoftExecutionContext } from "@monorepo-private/soft-execution-context"

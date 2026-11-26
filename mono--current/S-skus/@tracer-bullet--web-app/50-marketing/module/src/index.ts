@@ -9,6 +9,8 @@
 */
 /////////////////////////////////////////////////
 
+export { CREATOR }
+
 export const THINGⵧONLINE: ThingWithOnlinePresence = {
 	urlⵧcanonical: "https://todo.example/", // TODO offirmo.net something
 	title: "My Cool PWA",
@@ -28,14 +30,14 @@ export const LANDING_PAGE: WebPage = {
 	...THINGⵧONLINE,
 
 	icon: {
-		emoji: "🛠",
+		emoji: "🚀",
 	},
 	keywords: ["demo"],
 	content: {
-		// see @/web-property
+		// managed by @/web-property
 	},
 	features: [
-		// see @/web-property
+		// managed by @/web-property
 	],
 
 	/////// SOCIAL
@@ -55,6 +57,6 @@ export const LANDING_PAGE: WebPage = {
 
 /////////////////////////////////////////////////
 
-import type { WebPage, ThingWithOnlinePresence } from "@web-property-outfitter/spec"
+import type { WebPage, ThingWithOnlinePresence } from "@web-property-outfitter/input"
 
 import { CREATOR } from "@monorepo-private/marketing--creator"

@@ -278,15 +278,6 @@ function _getꓽrendererⵧdedicated(
 
 import { assert_from, assert } from "@monorepo-private/assert"
 import * as NORMALIZERS from "@monorepo-private/normalize-string"
-import type {
-	WithRevision,
-	WithTimestamp,
-	WithLastUserInvestmentTimestamp,
-	BaseRootState,
-	UTBundle,
-	BaseUState,
-	BaseTState,
-} from "@monorepo-private/offirmo-state"
 import {
 	is_time_stamped,
 	getꓽschema_versionⵧloose,
@@ -296,6 +287,15 @@ import {
 	isꓽTState,
 	isꓽUTBundle,
 	isꓽRootState,
+} from "@monorepo-private/offirmo-state"
+import type {
+	WithRevision,
+	WithTimestamp,
+	WithLastUserInvestmentTimestamp,
+	BaseRootState,
+	UTBundle,
+	BaseUState,
+	BaseTState,
 } from "@monorepo-private/offirmo-state"
 import * as RichText from "@monorepo-private/rich-text-format"
 import { getꓽUTC_timestampⵧhuman_readable‿ms } from "@monorepo-private/timestamps"

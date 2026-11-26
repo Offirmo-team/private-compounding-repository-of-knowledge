@@ -93,8 +93,12 @@
 	/* tree-style
 	 */
 	details[open] {
-		border-left: dotted var(--line-width);
-		border-color: var(--o⋄color⁚fg--main);
 		margin-left: calc(-1 * var(--line-width)); /* to compensate */
+
+		border-color: var(--o⋄color⁚fg--main);
+		border-width: 0;
+
+		border-left-width: var(--line-width);
+		border-left-style: dashed;
 	}
 }

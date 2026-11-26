@@ -25,7 +25,7 @@ export function sendꓽmessageⵧto_parent_frameⵧif_any(message: FrameMessage)
 }
 
 // to be called from the parent frame
-export function listenꓽmessagesⵧfrom_iframe(
+export function listen_toꓽmessagesⵧfrom_iframe(
 	iframe_elt: HTMLIFrameElement,
 	on_message: (message: Immutable<FrameMessage>) => void,
 ): void {
@@ -39,6 +39,20 @@ export function listenꓽmessagesⵧfrom_iframe(
 
 		on_message(message)
 	})
+}
+
+// for staggered iframe load
+export function getꓽfirst_message_from_iframe_seen(iframe_elt: HTMLIFrameElement): Promise<void> {
+	const first_message_seen = Promise.withResolvers<void>()
+
+	function listener() {
+		first_message_seen.resolve()
+		iframe_elt.removeEventListener(EVENT_NAME, listener)
+	}
+
+	iframe_elt.addEventListener(EVENT_NAME, listener)
+
+	return first_message_seen.promise
 }
 
 function isꓽFrameMessage(x: unknown): x is FrameMessage {

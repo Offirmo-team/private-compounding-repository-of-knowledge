@@ -9,6 +9,8 @@ export default function renderⵧsidebar(state: ObservableState): HTMLElement {
 	import("./index.css")
 	_append_folder(state, state.getꓽtree_root(), [], root)
 
+	load("sd-distorted")
+
 	console.groupEnd()
 
 	return root
@@ -62,14 +64,19 @@ function _append_leaf(state: ObservableState, story: Immutable<StoryEntry>, path
 	li_elt.innerHTML = `<a id="${story.uid}" href="${state.getꓽmain_frame_url(story.uid)}">${key}</a>`
 	parent_elt.appendChild(li_elt)
 	const current_story‿uid = state.getꓽstoryⵧcurrent()?.uid
-	if (story.uid === current_story‿uid) {
-		setTimeout(() => {
-			document.getElementById(story.uid)!.focus()
-		})
-	}
+	setTimeout(() => {
+		const elt = document.getElementById(story.uid)!
+
+		if (story.uid === current_story‿uid) {
+			elt.focus()
+		}
+		wireUp(elt, "sd-distorted")
+	})
 }
 
 /////////////////////////////////////////////////
+
+import { wireUp, load } from "button-sounds"
 
 import { assert_from, assert } from "@monorepo-private/assert"
 import type { Immutable, Basename } from "@monorepo-private/ts--types"

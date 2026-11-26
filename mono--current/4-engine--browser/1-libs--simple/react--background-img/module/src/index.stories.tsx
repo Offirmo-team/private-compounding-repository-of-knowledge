@@ -9,6 +9,7 @@ import { type Props, BackgroundImg } from "./index.tsx"
 function Component(props: Props) {
 	const [pseudo_random_seed, setPseudoRandomSeed] = useState<number | undefined>(undefined)
 	const props_for_debug = structuredClone(props)
+	// @ts-expect-error we cloned it above, it's no longer immutable
 	props_for_debug.bg.asset.creator = "<deleted>"
 	return (
 		<div className="o⋄full-viewport isolate" style={{ position: "relative" }}>
@@ -23,7 +24,9 @@ function Component(props: Props) {
 				>
 					alt
 				</button>
-				<pre className="o⋄bg-colorꘌtransparent">{JSON.stringify(props_for_debug, null, 2)}</pre>
+				<pre className="o⋄bg-colorꘌtransparent" style={{ overflow: "hidden" }}>
+					{JSON.stringify(props_for_debug, null, 2)}
+				</pre>
 			</div>
 		</div>
 	)

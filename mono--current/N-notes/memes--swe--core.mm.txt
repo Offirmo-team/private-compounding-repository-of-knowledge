@@ -647,6 +647,7 @@ inheritance -- diamond
 inheritance -- prototypal
 inheritance -- substitutability = an object (such as a class) may be replaced by a sub-object (such as a class that extends the first class) without breaking the program
 inner-platform effect https://en.wikipedia.org/wiki/Inner-platform_effect
+interaction nets = an alternate model of computation that is inherently parallel https://t6.fyi/guides/inets
 interface
 interface -- abstract = no implementation, only to be extended (OOP)
 Interface segregation principle = instead of a class interface with all possible methods clients might need, there should be separate interfaces catering to the specific needs of each type of client https://en.wikipedia.org/wiki/Interface_segregation_principle
@@ -730,6 +731,7 @@ langs -- TS -- branded types
 langs -- TS -- discriminated unions = { error: Error } | { result: Result }
 langs -- TS -- module augmentation
 langs -- TS -- tsconfig = https://json.schemastore.org/tsconfig
+langs -- vine = https://vine.dev/docs/features/
 langs -- wasp = high level website / SaaS https://wasp.sh/
 langs -- wolfram = https://woxi.ad-si.com/
 language -- && Server Index Format (LSIF)

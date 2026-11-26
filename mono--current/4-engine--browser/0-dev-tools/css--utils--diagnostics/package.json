@@ -6,7 +6,8 @@
 	"type": "module",
 	"sideEffects": true,
 	"exports": {
-		".": "./module/src/index.css"
+		".": "./module/src/index.css",
+		"./styles_url": "./module/src/_entrypoint.ts"
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",

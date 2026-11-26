@@ -861,6 +861,7 @@ USDC https://www.circle.com/multi-chain-usdc
 use case -- digital passport for devices = warranty tracking https://www.arianee.org/protocol
 use case -- Executive Order 6102 = no right to hold gold coins
 use case -- not -- porn = surprisingly didn't happen https://cointelegraph.com/magazine/porn-payments-crypto-killer-app/
+user profiling for resale = https://huijzer.xyz/posts/174/gta-6-building-personal-behavioral-profile-for-eve
 value -- extraction = just profit, not delivering anything
 vault
 verifiable compute = a way to run complex tasks off-chain & then prove to the chain that it was properly done

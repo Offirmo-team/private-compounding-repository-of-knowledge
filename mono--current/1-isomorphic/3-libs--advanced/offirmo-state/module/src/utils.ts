@@ -256,5 +256,5 @@ import type { Immutable, Mutable, ImmutabilityEnforcer } from "@monorepo-private
 import { getꓽrevision, getꓽrevisionⵧloose } from "./selectors.ts"
 import { isꓽRootState, isꓽTState, isꓽUState, isꓽUTBundle, isꓽWithRevision } from "./type-guards.ts"
 import type { AnyBaseState, AnyRootState } from "./types--internal.ts"
-import type { BaseUState, BaseTState, BaseRootState, UTBundle, BaseAction, ActionⳇReconcile } from "./types.ts"
 import { GenericActionType } from "./types.ts"
+import type { BaseUState, BaseTState, BaseRootState, UTBundle, BaseAction, ActionⳇReconcile } from "./types.ts"

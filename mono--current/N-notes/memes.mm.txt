@@ -87,8 +87,6 @@ accountability -- lines = 1) direct/yourself 2) manager/reviewer/approver 3) ind
 action -- deep dive & low-hanging fruits
 activism -- Boycott, Divestment, and Sanctions (BDS) = a nonviolent Palestinian-led movement promoting boycotts, divestments, and economic sanctions against Israel https://en.wikipedia.org/wiki/Boycott,_Divestment_and_Sanctions
 adventure -- is any inconvenience taken in the right spirit
-adverse selection -- may spiral into market collapse = destroy high quality producers, customers don't trade etc. https://en.wikipedia.org/wiki/Adverse_selection
-adverse selection = a market situation where asymmetric information results in a party taking advantage of undisclosed information to benefit more from a contract or trade. Ex. car with hidden defect https://en.wikipedia.org/wiki/Adverse_selection
 advices -- flaw -- Curse of Brilliance = when dissecting what makes them successful, people unwittingly tend to overemphasize the things they found very difficult and underplay (or altogether ignore) the importance of things at which they were naturally good/brilliant. Ex. a successful repeat founder will often say things like “speed is all that matters” = bc. they take the vision & strategy part for granted. https://x.com/shreyas/status/1442165965769240577
 advices -- flaw -- Curse of Brilliance, Survivorship Bias & the Halo Effect will conspire together to create an inaccurate view of what it really takes to succeed
 advices -- flaw -- Halo Effect
@@ -96,7 +94,6 @@ advices -- flaw -- Survivorship Bias
 advocacy
 agency
 agile -- "what the client wanted" = tree swing cartoon: how each role understood the requirements vs. what was actually needed
-alcohol https://podcastnotes.org/huberman-lab/episode-86-what-alcohol-does-to-your-body-brain-health-huberman-lab/  https://www.soberonadrunkplanet.com/
 alignment -- DnD 9 = 3×3 grid: lawful/neutral/chaotic × good/neutral/evil https://dungeonsdragons.fandom.com/wiki/Alignment
 ally -- barriers = Diffusion of Responsibility, Lack of Awareness or Skills, Fear of Retaliation, Fear of Causing Disruption or Embarrassment
 ally -- howto = Be Present, Provide Options, Know Your Role, follow/beware laws/policies
@@ -615,6 +612,7 @@ gateway effect / gateway hypothesis = gateway drug (cannabis), gateway gambling 
 gender -- no good things about boys = "Good things about boys? I’m really trying here, but I have to say I’m drawing a blank" https://lisamckaywriting.com/ten-good-things-about-boys-attaining-synthetic-happiness-one-gender-stereotype-at-a-time/
 genes -- kenya https://www.letsrun.com/news/2026/04/15930-sabastian-sawe-shatters-the-2-hour-barrier-at-2026-london-marathon/?_bhlid=1a1a4a8ee14d0acb7c63c750cfde547370c42111&utm_campaign=the-negative-split-software-engineering-effect&utm_medium=newsletter&utm_source=newsletter.manager.dev
 genetics -- linkage https://en.wikipedia.org/wiki/Genetic_linkage
+genetics -- selective sweep = a new strongly beneficial mutation also carries the other genes of the initial carrier https://en.wikipedia.org/wiki/Selective_sweep
 genius -- Edison -- Anthropic = "But we see perspiration becoming increasingly automated"
 genius -- Edison = "genius is 1% inspiration and 99% perspiration"
 gifted -- twice-exceptional (2e) — gifted + also has a disability, learning difference, or neurodevelopmental condition. For example, a child might be intellectually gifted and also have ADHD, dyslexia, or autism.
@@ -729,6 +727,7 @@ identity -- "I’d tied my identity and reputation to hard work"
 idées = (no natural upper bound) ne s'usent que si l'on ne s'en sert pas (contre intuitif) https://en.wikipedia.org/wiki/Lindy_effect#History
 If I can't have it, neither can you = (crab mentality / panier de crabes) mindset of people who try to prevent others from gaining a favorable position, even if attaining such position would not directly impact those trying to stop them. It is usually summarized with the phrase: "If I can't have it, neither can you" https://en.wikipedia.org/wiki/Crab_mentality
 If people would just = Bad systems punish everyone for what a few might do, Good systems don't rely on goodwill but the people who were going to behave anyway barely even notice them https://herman.bearblog.dev/if-people-would-just/
+if you can’t explain something in simple terms, you don’t understand it https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it
 if you grow as a frog, you become a shinier, jump higher frog. But you need a kiss from the princess to become you. a core deep in oneself able to do things beyond ordinary
 Ig Nobel = https://arstechnica.com/science/2026/09/meet-the-2026-ig-nobel-prize-winners/
 IKEA effect = labor leads to love https://www.hbs.edu/ris/Publication%20Files/11-091.pdf
@@ -1113,11 +1112,13 @@ most angry people/customers just want to be heard https://www.reddit.com/r/AskRe
 mot juste = “Any word you have to hunt for in a thesaurus is the wrong word. There are no exceptions to this rule.” https://www.goodreads.com/quotes/14337-any-word-you-have-to-hunt-for-in-a-thesaurus
 motivation
 motivation -- addiction
+motivation -- addiction -- alcohol https://podcastnotes.org/huberman-lab/episode-86-what-alcohol-does-to-your-body-brain-health-huberman-lab/  https://www.soberonadrunkplanet.com/
 motivation -- addiction -- casino -- "je vais me refaire"
 motivation -- addiction -- casino -- the house always win
 motivation -- addiction -- chemical
 motivation -- addiction -- comportmental
 motivation -- addiction -- compulsion
+motivation -- addiction -- gambling -- chips = the more transparent the payment form, the less likely a person will spend the money. This means that people are more likely to buy goods and services with virtual representations of money (e.g., credit cards) than with real money https://search.informit.org/doi/abs/10.3316/informit.223149445402224
 motivation -- addiction -- gambling -- sport, casino, trading, crypto
 motivation -- addiction -- gambling https://www.derekthompson.org/p/we-havent-seen-the-worst-of-what
 motivation -- addiction -- to revenge = James Kimmel Jr., author of "The Science of Revenge: Understanding the World's Deadliest Addiction--And How to Overcome It
@@ -1816,8 +1817,15 @@ wantrepreneurs
 war -- rout https://en.wikipedia.org/wiki/Rout
 war https://en.wikipedia.org/wiki/War
 We must remember that entire societies can and often do follow the wrong path for a very long time https://news.vanderbilt.edu/2011/04/13/michael-burry-transcript/
+wealth -- categories -- embodied = general health, which we may infer archaeologically from diet, disease, etc., as well as skills (e.g. in craft), knowledge, etc.
+wealth -- categories -- material = land, food, possessions, storage, dwelling size, etc.;
+wealth -- categories -- relational = position in a social network of an individual or group (e.g. family, lineage, or other kin group)
+wealth -- categories = material, embodied, relational https://quantwealth.eu/
+wealth = applicable both to modern and prehistoric contexts, as well as human and non human animal contexts
 weaponized incompetence
 well adjusted
+What game ought we to be playing? The game of human flourishing = https://www.oreilly.com/radar/what-happened-to-silicon-valley/
+what I cannot create, I do not understand https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it
 what vs. how = OPPOSITE of school +++ https://strategyu.co/consulting-mindset-shifting-from-the-what-to-the-how/
 what we are NOT = ex. https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not
 What would you do if you weren't afraid? - Spencer Johnson

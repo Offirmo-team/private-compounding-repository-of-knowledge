@@ -207,7 +207,7 @@ export async function updateⵧfrom_files(
 			const dep_type = inferꓽdeptype_from_caller(entry)
 			console.log(`${indent}      inferred as: ${dep_type}`)
 
-			const imports = parseImports(content)
+			const imports = parseꓽimported_packages(content)
 			imports.forEach(({ name: dependency_name, type }) => {
 				console.log(`${indent}    ↘ import ${type === 1 ? "type " : ""}${dependency_name}`)
 				assert(!dependency_name.startsWith("npm:"), `Unexpected "npm:" URL scheme in import!`)
@@ -358,7 +358,6 @@ export async function updateⵧfrom_files(
 
 <script type="module">
 	import startꓽstorypad from '@storypad/storypad'
-	import decoratorⵧdiagnostics from '@storypad/storypad/decorators/diagnostics'
 	import nearest_pkg from '../../../package.json'
 
 	const DEBUG = false
@@ -377,10 +376,9 @@ export async function updateⵧfrom_files(
 			root_title: nearest_pkg?.name,
 			decorators: [
 				/*(story) => {
-					import('@monorepo-private/css--foundation')
+					import('@monorepo-private/css--framework')
 					return story
 				},*/
-				decoratorⵧdiagnostics
 			]
 		}
 	)
@@ -764,10 +762,11 @@ import * as fsWalk from "@nodelib/fs.walk/promises"
 import Gitignore from "gitignore-fs"
 // @ts-ignore
 import JSON5 from "json5"
-import { parse as parseImports } from "parse-imports-ts"
 import { writeJsonFile as write_json_file } from "write-json-file"
 
 import { type FileEntry, createꓽfile_entry, updateꓽfile_entry } from "@monorepo-private/file-entry"
 import type { Immutable, PathⳇAbsolute } from "@monorepo-private/ts--types"
 import { type Score, compareꓽscores } from "@monorepo-private/utils--sort"
 //import "@typescript/typescript6" // peer dep for "parse-imports-ts"
+
+import { parseꓽimported_packages } from "./parse-imports.ts"

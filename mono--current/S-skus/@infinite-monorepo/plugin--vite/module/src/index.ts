@@ -184,6 +184,7 @@ import path from "node:path"
 
 import { PKGꓽNPM_RUN_ALL } from "@infinite-monorepo/decisions"
 import * as StateLib from "@infinite-monorepo/state"
+import { PATHVARⵧROOTⵧPACKAGE } from "@infinite-monorepo/types-for-plugins"
 import type {
 	PackagePathⳇRelative,
 	StructuredFsⳇFileManifest,
@@ -194,7 +195,6 @@ import type {
 	FileOutputPresent,
 	NodeⳇPackage,
 } from "@infinite-monorepo/types-for-plugins"
-import { PATHVARⵧROOTⵧPACKAGE } from "@infinite-monorepo/types-for-plugins"
 
 import { assert } from "@monorepo-private/assert"
 import type { Immutable } from "@monorepo-private/ts--types"

@@ -20,7 +20,7 @@ popd > /dev/null
 #################################################
 
 { pnpm i || true; } 2>/dev/null
-{ pnpx oxfmt@catalog: || true; }
+{ pnpm exec oxfmt || true; }
 pnpm i
 
 { pnpm outdated || true; } 2>/dev/null

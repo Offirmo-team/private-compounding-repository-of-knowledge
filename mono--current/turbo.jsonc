@@ -43,7 +43,9 @@
 		// - that we want to call through turbo (for ex. `pnpx turbo clean`)
 		// must be listed in this file as well, even if no annotation.
 		// REMINDER: we need to follow some conventions for this to work, see TODO
-		"check": {},
+		"check": {
+			"dependsOn": ["prepare:pkg"] // own pkg prepare:pkg
+		},
 		"_check": {},
 		"clean": {
 			// cleans any low-value generated / built / temporary files
@@ -51,7 +53,15 @@
 		},
 
 		"prepare:pkg": {
-			"dependsOn": ["^prepare:pkg"],
+			"dependsOn": ["^prepare:pkg"], // deps prepare:pkg
+			"outputs": [
+				// WARN if your task output doesn't match this, either declare here or do a package override https://turborepo.com/docs/reference/package-configurations
+				// WARN do not confuse with "build", see later in this file
+			]
+		},
+
+		"nightly": {
+			"dependsOn": ["^nightly", "prepare:pkg"], // own pkg prepare:pkg, deps' nightly
 			"outputs": [
 				// WARN if your task output doesn't match this, either declare here or do a package override https://turborepo.com/docs/reference/package-configurations
 				// WARN do not confuse with "build", see later in this file

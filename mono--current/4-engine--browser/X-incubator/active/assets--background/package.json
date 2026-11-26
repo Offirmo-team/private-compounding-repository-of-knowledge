@@ -6,7 +6,7 @@
 	"sideEffects": false,
 	"exports": {
 		".": "./module/src/index.ts",
-		"./*": "./module/licensed/*/index.ts"
+		"./*": "./module/src/_exports/*/index.ts"
 	},
 	"scripts": {
 		"_check": "run-s check:ts",

@@ -1,3 +1,6 @@
+/////////////////////////////////////////////////
+
+export default init
 async function init(): Promise<void> {
 	// for stability
 	// TODO 1D make it overridable? Or users can overwrite it with a decorator.
@@ -5,5 +8,3 @@ async function init(): Promise<void> {
 }
 
 /////////////////////////////////////////////////
-
-export default init

@@ -19,6 +19,7 @@ export const PLUGIN: Plugin = {
 		state.pkg_infos_resolver.declareꓽversion_override("fraction.js", "^4") // v5+ switched to BigInt, which is not json-compatible unless we switch to superjson
 		state.pkg_infos_resolver.declareꓽversion_override("typescript", "^6") // need to switch away from parse-ts-import
 		state.pkg_infos_resolver.declareꓽversion_override("@tsparticles/engine", "4.5.4") // possible takeover after this one https://npmx.dev/package/@tsparticles/engine
+		state.pkg_infos_resolver.declareꓽversion_override("@tsparticles/basic", "4.5.4") // sibling
 
 		return state
 	},
@@ -318,7 +319,7 @@ pnpm i ...
 								// TODO proper key with default
 								`
 #@IgnoreInspection BashAddShebang
-[[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)   ↳ […monorepo/…/aliases.sh] hello!" >&2
+[[ "$VERBOSE__RC" == true ]] && echo "$(date +%H:%M:%S)       ↳ […monorepo/…/aliases.sh] hello!" >&2
 
 ## default = where "gitc" is supposed to clone it
 export MONOREPO_ROOT__CURRENT=\${${state.specⵧroot.key || "MONOREPO"}_ROOT:-"${monorepo_root__default}"};

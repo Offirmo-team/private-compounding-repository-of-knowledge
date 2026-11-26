@@ -30,7 +30,7 @@ export function declareꓽversion_override(
 ): Immutable<State> {
 	const ǃ = assert_from({ declareꓽversion_override })
 
-	const existing = state.configⵧcritical.specifier_overrides_by_fqname[pkg_name]
+	const existing = getꓽversionⵧoverride(state, pkg_name)
 	if (existing) {
 		ǃ.forⵧparam({ version }).require(existing === version, `Conflicting override for "${pkg_name}"`)
 		return state
@@ -49,6 +49,7 @@ export function declareꓽversion_override(
 		},
 	}
 }
+
 export function declareꓽminimum_release_age(
 	state: Immutable<State>,
 	minimum_release_age‿minutes: number,
@@ -294,5 +295,10 @@ import { deriveꓽInspectablePromise } from "@monorepo-private/utils--async"
 import { ↆretrieveꓽpackageᐧjsonⵧextended } from "../utils/retrieve-package_json.ts"
 import { isꓽnpm_package, hasꓽembedded_typescript_types } from "../utils/utils--npm.ts"
 
-import { assertꓽallowed_package, isꓽmonorepo_package, ǃgetꓽversionⵧfor_catalog } from "./selectors.ts"
+import {
+	assertꓽallowed_package,
+	getꓽversionⵧoverride,
+	isꓽmonorepo_package,
+	ǃgetꓽversionⵧfor_catalog,
+} from "./selectors.ts"
 import type { State, PackageJson, PkgFQName, PkgNamespace } from "./types.ts"

@@ -44,8 +44,8 @@ export function reducer_bulk(state: Immutable<State>, actions: Immutable<Array<A
 
 /////////////////////////////////////////////////
 
-import type { State, CreateParams } from "@fantasy-workout/state"
 import * as StateLib from "@fantasy-workout/state"
+import type { State, CreateParams } from "@fantasy-workout/state"
 
 import { assertⵧnever_reached } from "@monorepo-private/assert"
 import { reduceꓽhack, reduceꓽnoop, reduceꓽset, type SyncReducerFns } from "@monorepo-private/sync-store"

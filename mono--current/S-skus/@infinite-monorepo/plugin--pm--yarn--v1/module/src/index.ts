@@ -1,7 +1,7 @@
 import { manifestꓽᐧgitattributes } from "@infinite-monorepo/plugin--git"
 import { manifestꓽpackageᐧjson } from "@infinite-monorepo/plugin--pm--package-json"
-import type { State, Plugin } from "@infinite-monorepo/state"
 import * as StateLib from "@infinite-monorepo/state"
+import type { State, Plugin } from "@infinite-monorepo/state"
 import type { FileOutputPresent } from "@infinite-monorepo/state"
 import {
 	type StructuredFsⳇFileManifest,

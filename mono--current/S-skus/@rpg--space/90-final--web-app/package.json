@@ -30,7 +30,7 @@
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@rpg--space/marketing": "workspace:*",
 		"@types/node": "catalog:",
-		"@web-property-outfitter/spec": "workspace:*",
+		"@web-property-outfitter/input": "workspace:*",
 		"npm-run-all2": "catalog:",
 		"typescript": "catalog:",
 		"vite": "catalog:",

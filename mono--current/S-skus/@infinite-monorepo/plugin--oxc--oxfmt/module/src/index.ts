@@ -1,16 +1,3 @@
-import * as StateLib from "@infinite-monorepo/state"
-import type { FileOutputPresent, State } from "@infinite-monorepo/state"
-import {
-	PATHVARⵧROOTⵧNODE,
-	type StructuredFsⳇFileManifest,
-	type NodePathⳇRelative,
-	type Node,
-	type NodeⳇPackage,
-	type NodeⳇWorkspace,
-} from "@infinite-monorepo/types-for-plugins"
-
-import type { Immutable } from "@monorepo-private/ts--types"
-
 /////////////////////////////////////////////////
 
 const oxfmtᐧconfigᐧts__path‿ar: NodePathⳇRelative = `${PATHVARⵧROOTⵧNODE}/oxfmt.config.ts`
@@ -28,7 +15,7 @@ const manifestꓽᐧideaⳇOxfmtSettingsᐧxml: StructuredFsⳇFileManifest = {
 
 /////////////////////////////////////////////////
 
-const PLUGIN: Plugin = {
+export const PLUGIN: Plugin = {
 	onꓽload(state: Immutable<StateLib.State>): Immutable<StateLib.State> {
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽoxfmtᐧconfigᐧts)
 		state = StateLib.declareꓽfile_manifest(state, manifestꓽᐧideaⳇOxfmtSettingsᐧxml)
@@ -143,6 +130,21 @@ export default defineConfig({
 					},
 				}
 				state = StateLib.requestꓽfile_output(state, output_specꓽᐧideaⳇOxfmtSettings)
+
+				//
+				const output_specꓽpackageᐧjson: FileOutputPresent = {
+					parent_node: node,
+					manifest: manifestꓽpackageᐧjson,
+					intent: "present--containing",
+					content: {
+						scripts: {
+							// TODO pm agnostic
+							format: "pnpm exec oxfmt",
+						},
+					},
+				}
+				state = StateLib.requestꓽfile_output(state, output_specꓽpackageᐧjson)
+
 				break
 			}
 
@@ -153,8 +155,21 @@ export default defineConfig({
 		return state
 	},
 }
+export default PLUGIN
 
 /////////////////////////////////////////////////
 
-export default PLUGIN
-export { PLUGIN }
+import { manifestꓽpackageᐧjson } from "@infinite-monorepo/plugin--pm--package-json"
+import * as StateLib from "@infinite-monorepo/state"
+import type { FileOutputPresent, State } from "@infinite-monorepo/state"
+import {
+	type Plugin,
+	PATHVARⵧROOTⵧNODE,
+	type StructuredFsⳇFileManifest,
+	type NodePathⳇRelative,
+	type Node,
+	type NodeⳇPackage,
+	type NodeⳇWorkspace,
+} from "@infinite-monorepo/types-for-plugins"
+
+import type { Immutable } from "@monorepo-private/ts--types"

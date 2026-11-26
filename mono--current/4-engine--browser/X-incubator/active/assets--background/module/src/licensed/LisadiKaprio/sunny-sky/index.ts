@@ -43,8 +43,7 @@ export default BG
 
 /////////////////////////////////////////////////
 
+import { type Background } from "@monorepo-private/assets--background"
 import { type Creator, registerꓽasset_usageⵧload, type Url‿str } from "@monorepo-private/credits"
 import type { Thing, WithOnlinePresence, ThingWithOnlinePresence, Asset } from "@monorepo-private/credits"
 import LisadiKaprio from "@monorepo-private/credits/authors/LisadiKaprio"
-
-import { type Background } from "../../../types.ts"

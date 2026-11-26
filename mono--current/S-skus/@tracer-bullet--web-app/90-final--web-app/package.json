@@ -40,5 +40,6 @@
 		"vite": "catalog:",
 		"vitest": "catalog:"
 	},
-	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file"
+	"// @infinite-monorepo/plugin--pm--package-json": "auto generated some content in this file",
+	"nightly": "web-property-outfitter__build --in=@tracer-bullet--web-app/web-property.SPECⵧnightly --out=./module/src --build-script=build"
 }

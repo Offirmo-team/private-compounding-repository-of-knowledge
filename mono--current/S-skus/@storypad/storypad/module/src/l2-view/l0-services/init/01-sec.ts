@@ -1,10 +1,6 @@
-import type { SoftExecutionContext } from "@monorepo-private/soft-execution-context"
-
-import { LIB } from "../../../consts.ts"
-import { getꓽlogger } from "../logger.ts"
-
 /////////////////////////////////////////////////
 
+export default init
 async function init(): Promise<void> {
 	try {
 		// during monorepo resurrection, the package below may not yet be available
@@ -34,4 +30,7 @@ async function init(): Promise<void> {
 
 /////////////////////////////////////////////////
 
-export default init
+import type { SoftExecutionContext } from "@monorepo-private/soft-execution-context"
+
+import { LIB } from "../../../consts.ts"
+import { getꓽlogger } from "../logger.ts"

@@ -299,6 +299,7 @@ challenges -- dead economy theory = vicious cycle of jobs / wealth destruction b
 challenges -- deceptions = Pretends Partial Answer is Complete, Gives Overconfident Answer, Fabricated Fact, Fabricated Tool Result, Pretends to be a Human, Requesting Unnecessary Confirmations, Pretends To Be Working in the Background, Uses Calculator Tool to Avoid Citations https://deploymentsafety.openai.com/data/eval-sets/gpt-5-4-thinking/assets/images/deceptionevals.png
 challenges -- deployment gap = between lab/demo to actual use
 challenges -- deskilling of operators = "frog in a well" leading to inability to troubleshoot => Research. Think. Control. Argue. Challenge. https://dontpastetheai.com/student/
+challenges -- economic disruption
 challenges -- existential = https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence
 challenges -- first-mover disadvantage = OpenAI, Anthropic & Nvidia may not end up on top https://en.wikipedia.org/wiki/Law_of_the_handicap_of_a_head_start
 challenges -- frontier scarcity = access to frontier AI will soon be limited by economic and security constraints https://writing.antonleicht.me/p/cut-off
@@ -315,6 +316,7 @@ challenges -- incentives re-adjustment = many previous behaviors are no longer i
 challenges -- incorrect self-preservation = trolley problem
 challenges -- inference speed = improved by dedicated engines e.g. https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai
 challenges -- influence = e.g. https://responsiblestatecraft.org/israel-influence-chatgpt/
+challenges -- lack of accountability
 challenges -- language = not English
 challenges -- last mile = LLMs can output text / code but often can't interact with systems
 challenges -- laziness = cases where the model doesn’t complete a task https://openai.com/blog/new-embedding-models-and-api-updates
@@ -327,6 +329,7 @@ challenges -- money aligned LLMs = ads, preferred providers
 challenges -- no more community = missing Stack Overflow https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/
 challenges -- over-delegation see [[AI fluency -- delegation]]
 challenges -- overeager = How Far Will AI Assistants Go for a Refund They Can’t Get? https://www.vals.ai/blogs/impossible-refund
+challenges -- power concentration
 challenges -- predictability + consistency -- Clarifying question = Before doing a task, some models are prone to asking clarifying questions, or asking permission https://tombedor.dev/yes-or-no-please/
 challenges -- predictability + consistency -- Off topic replies = The assistant goes off script and tries to make friendly conversation, rather than answering a question directly https://tombedor.dev/yes-or-no-please/
 challenges -- predictability + consistency -- Pedantic replies and subjective questions = the assistant is unsure or split hair https://tombedor.dev/yes-or-no-please/
@@ -343,6 +346,7 @@ challenges -- sandbagging = strategic behavior involving the intentional underpe
 challenges -- sleeper agent -- covert actions = where a model strategically misrepresents, omits, or conceals information that users or developers would consider important
 challenges -- sleeper agents = (accidentally or maliciously) pretend to be good but engage in strategic deception, in-context scheming, and sabotage (e.g. insert security issues)
 challenges -- stuck in local maxima = output stuck in a well with only minor corrections possible, need re-architecture or start from scratch to get a better result. Techniques: beam-of-candidates https://sankalp.bearblog.dev/autoresearch/#problem-intro
+challenges -- subagents explosion = (and other $78_000 explosions) https://news.ycombinator.com/item?id=49861047
 challenges -- temu-ficatiom = we will probably end up with a two-tier market, in which we have a large and massively profitable lower tier of generated slop, and a smaller, more expensive upper tier of work that is still recognizably human https://マリウス.com/the-temu-fication-of-software-digital-goods-services/
 challenges -- training poisoning = https://ron.stoner.com/how-i-won-a-championship-that-doesnt-exist/
 challenges -- training theft = https://x.com/elonmusk/status/2026052687423562228

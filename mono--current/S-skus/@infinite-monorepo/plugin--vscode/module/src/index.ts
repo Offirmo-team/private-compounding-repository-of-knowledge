@@ -1,5 +1,5 @@
-import type { State, Plugin } from "@infinite-monorepo/state"
 import * as StateLib from "@infinite-monorepo/state"
+import type { State, Plugin } from "@infinite-monorepo/state"
 import type { FileOutputPresent } from "@infinite-monorepo/state"
 import {
 	PATHVARⵧROOTⵧNODE,

@@ -1,8 +1,6 @@
 /////////////////////////////////////////////////
 
-export interface Props extends React.PropsWithChildren, React.Attributes {
-	render?: () => React.ReactNode
-
+export interface Props extends RenderAnyⳇProps {
 	/** Name of the boundary for identification */
 	name: string
 
@@ -192,5 +190,5 @@ import { asap_but_not_synchronous } from "@monorepo-private/utils--async"
 import { normalizeError } from "@monorepo-private/utils--error"
 
 import { ErrorOverlay } from "../error-overlay/index.tsx"
-import { render_any_children } from "../render-anything/index.tsx"
+import { render_any_children, type RenderAnyⳇProps } from "../render-anything/index.tsx"
 import type { ErrorBoundaryPayload } from "../type.ts"

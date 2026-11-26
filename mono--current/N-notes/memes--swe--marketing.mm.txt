@@ -86,6 +86,7 @@ presence -- AI skills = e.g. https://clerk.com/docs/guides/ai/skills
 presence -- GitHub = e.g. https://github.com/langchain-ai
 presence -- Hacker News = algorithm / penalties https://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html
 presence -- Hacker News = https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic
+presence -- Hacker News -- case studies = https://news.ycombinator.com/from?site=uber.com
 presence -- marketplaces
 presence -- reddit = very important for LLMs.
 presence -- social networks -- LinkedIn

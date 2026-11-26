@@ -9,10 +9,13 @@
 	},
 	"scripts": {
 		"_clean--pkg": "monorepo-script--clean-package …cache …dist",
-		"check": "run-s check:ts",
+		"check": "run-s check:ts check:unit-tests",
 		"check:ts": "echo \"@tracer-bullet--web-app/marketing\" && tsc --noEmit",
+		"check:unit-tests": "run-s test",
 		"clean": "npm-run-all2 _clean--pkg",
 		"dev": "run-s clean watch:check:ts",
+		"test": "run-s test--vitest",
+		"test--vitest": "vitest run --dir module --exclude '**/~~*/**'",
 		"watch:check:ts": "tsc --noEmit --watch"
 	},
 	"dependencies": {
@@ -23,9 +26,10 @@
 		"@monorepo-private/config--typescript": "workspace:*",
 		"@monorepo-private/engine--browser--types": "workspace:*",
 		"@monorepo-private/scripts": "workspace:*",
+		"@monorepo-private/ts--types--hypermedia": "workspace:*",
 		"@monorepo-private/vite--config--default": "workspace:*",
 		"@types/node": "catalog:",
-		"@web-property-outfitter/spec": "workspace:*",
+		"@web-property-outfitter/input": "workspace:*",
 		"npm-run-all2": "catalog:",
 		"tslib": "catalog:",
 		"typescript": "catalog:",

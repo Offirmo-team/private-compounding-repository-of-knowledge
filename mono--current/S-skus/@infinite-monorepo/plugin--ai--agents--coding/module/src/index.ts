@@ -120,8 +120,8 @@ export default PLUGIN
 
 /////////////////////////////////////////////////
 
-import type { State, Plugin, FileOutputAbsent } from "@infinite-monorepo/state"
 import * as StateLib from "@infinite-monorepo/state"
+import type { State, Plugin, FileOutputAbsent } from "@infinite-monorepo/state"
 import type { FileOutputPresent } from "@infinite-monorepo/state"
 import {
 	PATHVARⵧROOTⵧNODE,

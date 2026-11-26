@@ -51,3 +51,8 @@ utm https://en.wikipedia.org/wiki/UTM_parameters
 
 Google Safe Browsing https://transparencyreport.google.com/safe-browsing/search https://developers.google.com/safe-browsing/reference
 Google Search Console
+
+
+
+URL query → Base64URL → protobuf → opaque/cryptographic payload
+https://www.google.com/goto?url=CAESaw...

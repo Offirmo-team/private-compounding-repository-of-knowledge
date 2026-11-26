@@ -1,0 +1,23 @@
+// Reminder: code will be prettified, no need to indent or format it.
+// put the comments in the code, it's up to the consumer to optimize or not
+
+/////////////////////////////////////////////////
+
+// Well-known https://en.wikipedia.org/wiki/Well-known_URI
+function generate(spec: Immutable<WebPropertySpec>): FilesMap {
+	return {
+		[`${getꓽdirⵧfiles_to_serve(spec)}/.well-known/security.txt`]: { content: generateꓽsecurityᐧtxt(spec) },
+	}
+}
+export default generate
+
+/////////////////////////////////////////////////
+
+import { getꓽdirⵧfiles_to_serve } from "@web-property-outfitter/input"
+
+import { assert_from, assert } from "@monorepo-private/assert"
+import type { Immutable } from "@monorepo-private/ts--types"
+
+import type { WebPropertySpec, FilesMap } from "../types.ts"
+
+import generateꓽsecurityᐧtxt from "./security-txt/index.ts"

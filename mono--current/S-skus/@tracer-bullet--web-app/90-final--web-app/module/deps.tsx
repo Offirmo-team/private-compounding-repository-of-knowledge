@@ -1,6 +1,6 @@
 // fake file for declaring deps
 
-// because vite react plugin expects React to be a root dep
+// because Vite react plugin expects React to be a root dep
 import "react-dom"
 import "react"
 // because autoops can't read html yet TODO 1D

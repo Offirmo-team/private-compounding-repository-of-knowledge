@@ -430,6 +430,7 @@ function reduceꓽdependencies(
 
 import * as path from "node:path"
 
+import { DEPENDENCY_TYPES } from "@infinite-monorepo/primitives"
 import type {
 	DependencyDetails,
 	DependencyType,
@@ -440,7 +441,6 @@ import type {
 	QualityStatus,
 	Runtime,
 } from "@infinite-monorepo/primitives"
-import { DEPENDENCY_TYPES } from "@infinite-monorepo/primitives"
 
 import { assert_from, assert } from "@monorepo-private/assert"
 import type { Immutable, PathⳇAbsolute, SemVer, SoftwareLicense‿SPDX } from "@monorepo-private/ts--types"

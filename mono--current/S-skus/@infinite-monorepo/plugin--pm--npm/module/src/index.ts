@@ -144,6 +144,7 @@ import { manifestꓽᐧgitattributes, manifestꓽᐧgitignore } from "@infinite-
 import { manifestꓽpackageᐧjson } from "@infinite-monorepo/plugin--pm--package-json"
 import * as StateLib from "@infinite-monorepo/state"
 import type { FileOutputPresent } from "@infinite-monorepo/state"
+import { PATHVARⵧROOTⵧMONOREPO } from "@infinite-monorepo/types-for-plugins"
 import type {
 	StructuredFsⳇFileManifest,
 	Node,
@@ -151,7 +152,6 @@ import type {
 	State,
 	Plugin,
 } from "@infinite-monorepo/types-for-plugins"
-import { PATHVARⵧROOTⵧMONOREPO } from "@infinite-monorepo/types-for-plugins"
 import * as semver from "semver"
 
 import { assert_from, assert } from "@monorepo-private/assert"
